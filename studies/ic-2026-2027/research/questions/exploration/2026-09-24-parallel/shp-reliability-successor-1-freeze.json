@@ -1,0 +1,46 @@
+{
+  "schema": "ic-study.shp-reliability-successor-freeze.v1",
+  "frozen_at_utc": "2026-09-28T07:51:17Z",
+  "branch": "research/shp-anchor-successor-1",
+  "code_commit": "17a0dbedc06fbcabd2ebfe907b3c96c13a743f6b",
+  "successor": {
+    "markdown": {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1.md",
+      "sha256": "b1edba66fa1155e658a1fdfe32de75bb3842e1a33777ecb5ebc822948d4ddc4a"
+    },
+    "machine_json": {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1.json",
+      "sha256": "c7e301320a4e172e65756f2f73d8ce3120f876704cc70abd008aa0c4241a822c"
+    }
+  },
+  "predecessor_freeze": {
+    "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-freeze.json",
+    "sha256": "0bb175914e9ce7e15398d28d5de9f5d02fff77d11e98b8d560b05d8e3359f10d"
+  },
+  "code": {
+    "studies/ic-2026-2027/src/ic_study/analysis/shp_reliability.py": "d3616d3e301aa65f9a9e35a7ed35c591f41c53ab6cbc5af5427205829a79cf6f",
+    "studies/ic-2026-2027/src/ic_study/analysis/shp_crosswalk.py": "1050990bec4334be4bd66cfe07cd18729d3a99df4b5c37a4c5dd5729c9fa3244",
+    "studies/ic-2026-2027/tests/unit/test_shp_reliability.py": "50bbc4343362a0d84e3e68244d3c1f98b4b5340798851a0cb5e3b545c2d2b979",
+    "studies/ic-2026-2027/tests/unit/test_shp_crosswalk.py": "cda1fbaeec114a0dca762317ed73a825f6644c2ebf55ab3c70cb68cd7260a8f8"
+  },
+  "data_state_at_freeze": "Restricted SHP directory exists with mode 0700 and is empty; no contracted SHP microdata were accessed or present",
+  "scope": "Successor 1 additions only (STARTS sensitivity, exploratory synthetic crosswalk, 2004-wave description); primary anchor, frozen a*(r) v4 inputs and gate unchanged",
+  "implementation_choices_fixed_before_data": [
+    "STARTS starting values from simple data moments, fixed in code",
+    "STARTS optimizer: more accurate gradient and tighter tolerances than the primary fit, fixed in code and recorded in the output",
+    "variance floor applies to the four free variances; mean observed variance is the average of per-wave variances",
+    "persistence bounded just beyond |phi| = 0.99 so that reaching the bound triggers the declared failure rule",
+    "crosswalk seeds offset by 2**64 from every v4 seed; shared across a and family within each r and replicate",
+    "a polychoric Heise estimate outside (0, 1) counts as a crosswalk failure"
+  ],
+  "verification_before_freeze": {
+    "study_pytest": "608 passed",
+    "ruff": "format check and lint passed",
+    "mypy": "78 source files passed",
+    "check_repository": "6 of 7 on this branch; the failing link check is a false positive in an unrelated manuscript draft (clip[0,1](...) inside inline code), fixed on integration/ic-20260928 in d14c3a4a",
+    "starts_recovery": "r_2004 0.663 against true 0.660; delta-method SE mean 0.0222 against replicate spread 0.0214; 39 of 40 intervals cover",
+    "crosswalk_panels": "byte-identical to frozen PanelSource output for the same seeds"
+  },
+  "run_rule": "The SHP analysis may run only after this record exists; the Research Owner runs it locally; only aggregates leave the restricted directory",
+  "successor_rule": "Preserve these bytes; changes require a dated linked successor with reason and exposure record"
+}

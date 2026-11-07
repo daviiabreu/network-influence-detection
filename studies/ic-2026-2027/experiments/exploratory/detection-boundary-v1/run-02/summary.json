@@ -1,0 +1,11 @@
+{
+  "interior_at_r070": true,
+  "status": "complete",
+  "matched_cells": 9,
+  "declared_cells": 9,
+  "elapsed_seconds": 151.29883600003086,
+  "panels": 13824,
+  "namespace": "ic-detection-boundary-v1-calibration",
+  "matching_count_per_cell": 256,
+  "matching_absolute_tolerance_cap": 0.0003
+}

@@ -1,0 +1,76 @@
+% Background trimmed 2026-09-28 after the pre-results referee report (R1 minor 1,
+% ranked change 9): the voter, Sznajd and q-voter subsection (C08--C15, A03), the
+% social-impact and macro-outcome material (C20, C21, C24, C25--C30, A05) and the
+% repeated-observation subsection that duplicated the Introduction and Related
+% work (C42--C46, A08) were removed. Their ledger rows are marked retired.
+\subsection{Influence rules and opinion states}
+
+% C01
+Opinion-dynamics models link rules for individual change to collective outcomes, but their states, contacts, and update schedules differ \cite{flache2017,sirbu2016}.
+% C02
+Flache and colleagues distinguish assimilative influence, which reduces differences along existing ties; similarity-biased influence, which limits assimilation to sufficiently similar agents; and repulsive influence, which can increase differences after contact \cite{flache2017}.
+% A01
+These classes motivate the partner-drift generator, although the comparison is restricted to its declared update rule.
+
+% C03
+In DeGroot's model, the opinion vector follows $x(t+1)=Wx(t)$, where $w_{ij}\geq0$, $\sum_jw_{ij}=1$, and $w_{ii}$ permits an agent to retain weight on its own current opinion \cite{degroot1974}.
+% C04
+Consensus depends on the influence structure: for example, with positive self-weights, it requires a directed spanning tree in the graph of $W$ \cite{proskurnikov2017}.
+% C05
+The Friedkin--Johnsen formulation instead retains an anchor to initial opinions, $x(t+1)=\Lambda Wx(t)+(I-\Lambda)x(0)$, with $\Lambda$ specifying susceptibility to current social influence \cite{friedkin1990,proskurnikov2017}.
+% C06
+Setting $\Lambda=I$ recovers DeGroot's update, whereas a component with $\lambda_i<1$ repeatedly receives weight from $x_i(0)$ \cite{proskurnikov2017}.
+% C07
+Later network formulations also allow time-varying interaction matrices \cite{proskurnikov2018}.
+% A02
+The methods specify the synthetic network and update schedule; neither is inferred from the panel.
+
+\subsection{Bounded confidence and repulsion}
+
+% C16
+In the Deffuant--Weisbuch model, a randomly selected pair $(i,j)$ compromises only when $|x_i-x_j|<\varepsilon$; then $x_i'=x_i+\mu(x_j-x_i)$ and $x_j'=x_j+\mu(x_i-x_j)$, and otherwise neither changes \cite{deffuant2000,lorenz2007}.
+% C17
+At smaller confidence bounds, the model can leave several internally agreeing opinion clusters instead of one common opinion \cite{deffuant2000}.
+% C18
+The original Hegselmann--Krause model updates all agents simultaneously by $x_i(t+1)=|N_i(t)|^{-1}\sum_{j\in N_i(t)}x_j(t)$, where $N_i(t)=\{j:|x_j(t)-x_i(t)|\leq\varepsilon\}$ includes $i$ \cite{hegselmann2002}.
+% C19
+The Deffuant--Weisbuch rule updates a sampled pair, whereas the Hegselmann--Krause rule averages each agent's eligible neighborhood at once \cite{deffuant2000,hegselmann2002,lorenz2007}.
+
+% C22
+Repulsive models change the sign of influence beyond a disagreement threshold, moving an agent away from a sufficiently dissimilar source rather than merely withholding compromise \cite{jager2005,flache2017}.
+% C23
+Jager and Amblard's simulations produce uniformity, bipolarization, or multiple opinion groups under different attitude-change settings \cite{jager2005}.
+% A04
+Our generator fixes the population marginal through rank transport at every step, so it cannot reproduce clustering or bipolarization in that marginal. It borrows only the local shape of the bounded-confidence and repulsion kernel; comparing marginal distributions carries no information here.
+
+\subsection{Calibration and empirical validation}
+
+% C31
+Flache and colleagues call for empirical tests of micro-level influence assumptions as well as macro-level predictions \cite{flache2017}.
+% C32
+Gestefeld and Lorenz calibrate a pairwise-interaction opinion model with assimilation, idiosyncratic change, and motivated cognition against institutional-trust distributions from the European Social Survey and individual trust transitions from the Swiss Household Panel \cite{gestefeld2023}.
+% C33
+Their model reproduces most of the 1,235 survey distributions well, and removing motivated cognition substantially weakens the fit; the panel comparison still shows shortcomings at the center and extremes \cite{gestefeld2023}.
+% C34
+Banisch and Shamon test an argument-based model with confirmation-biased processing and external-information noise against a survey experiment measuring both individual attitude changes and aggregate opinion distributions \cite{banisch2024}.
+% C35
+They find that moderate biased processing fits both individual changes and aggregate distributions, with broadly compatible micro- and macro-level estimates despite differences in their ranking across issues \cite{banisch2024}.
+% A06
+Our proposed comparison specifies the observable, matching targets, and discrimination statistic before confirmatory simulation.
+
+\subsection{Measurement error and reliability in attitude panels}
+
+% C36
+Heise's test--retest decomposition and Wiley and Wiley's panel formulation separate persistence of an underlying state from unreliability of its recorded measure, under different assumptions about the latent trajectory \cite{heise1969,wiley1970}.
+% C37
+Achen showed that measurement error can explain much of the apparent inconsistency of survey responses about political issues \cite{achen1975}.
+% C38
+Alwin's account of survey reliability treats question design and response conditions as part of the measurement problem, while Alwin and Krosnick use panel data to examine age and cohort differences in the stability of sociopolitical orientations \cite{alwin2007,alwinkrosnick1991}.
+% C39
+Hout and Hastings estimate item-specific reliability for the General Social Survey's three-wave panels and report that assumptions about true change affect the available decompositions \cite{hout2016}.
+% C40
+Their supplemental Alwin--Heise estimate for the seven-category political-views item is approximately $0.69$, a useful comparison point rather than an estimate for the SHP item \cite{hout2016}.
+% C41
+Poses and colleagues use multitrait--multimethod experiments in the European Social Survey to estimate measurement quality across questions, countries, and languages; that quality combines reliability and validity and should not be substituted directly for the variance share of a single observation-error channel \cite{poses2021}.
+% A07
+Here $r$ is the signal share of the continuous response channel before discretization, fixed externally across the simulation grid. We reserve the word reliability for survey estimates such as these. Transporting published estimates to this channel is an explicit modeling assumption, not a measured reliability for SHP item \texttt{P\$\$P04}.

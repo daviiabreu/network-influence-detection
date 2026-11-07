@@ -1,0 +1,83 @@
+% Technical passages cut from the rule-assembled Methods are kept in
+% esm/design-details.tex (Online Resource 1, Section S3). Unbound numbers in
+% this file are design constants or analytic values of the frozen kernel, not
+% results.
+\subsection{Synthetic panels and network influence}\label{sec:methods-panels}
+
+Each synthetic panel (Fig.~\ref{fig:design}) follows 10,626 people in two-person households over eleven annual waves ($t=0,\ldots,10$): 7,084 enter at $t=0$ and 3,542 at $t=5$ as a refreshment sample. Households stay from one wave to the next with probability 0.89, independently of attitudes. This approximates the size of the SHP trust series analyzed by Gestefeld and Lorenz \cite{gestefeld2023} and the SHP's refreshment design \cite{voorpostel2025shp}, not its observed counts, persistence or selective attrition \cite{lipps2007,voorpostel2010}. In the SHP, co-residents aged 14 and older answer individual questionnaires \cite{voorpostel2025shp} and form a partially observed dyadic exposure of the kind that actor--partner models use \cite{kennykashy2006,kim2024}; our synthetic households carry no attitude coupling.
+
+In the influence arm, each person $i$ has a latent attitude $z_{it}$ on a standard-normal scale and eight contacts drawn at random once per panel; the network never changes, and the analysis never sees it. The influence term averages a distance-dependent kernel over the contacts,
+\begin{equation}
+\begin{aligned}
+D_{it}&=\frac18\sum_{j\in\mathcal N_i}f(z_{jt}-z_{it}),\\
+f(g)&=\begin{cases}g,&|g|\le1,\\-b\,g,&|g|>1,\end{cases}
+\end{aligned}
+\end{equation}
+with $b=0.25$: people are pulled toward contacts within distance one and pushed weakly away from farther ones, an assimilation--contrast shape like that of bounded-confidence models with repulsion \cite{flache2017,jager2005}. The term is standardized across the population to $d_{it}$, and
+\begin{equation}
+\begin{aligned}
+h_{i,t+1}&=0.85\,z_{it}+\sqrt{1-0.85^2}\,\bigl(\sqrt a\,d_{it}\\
+&\qquad+\sqrt{1-a}\,\xi_{it}\bigr),\\
+\mathbf z_{t+1}&=R_N(\mathbf h_{t+1}),
+\end{aligned}
+\end{equation}
+where $\xi_{it}$ is standard-normal noise and the rank transport $R_N$ replaces the updated values by fixed normal quantiles in the same order.
+
+The influence strength $a$ is the nominal fraction of innovation variance assigned to contacts, not a realized or causal share of attitude change, and is not comparable with the parameters of standard opinion models. An exploratory analysis measures the drift term's partial $R^2$ for the next latent attitude beyond linear persistence (Section~\ref{sec:results-exploratory}). Because $R_N$ restores the same distribution at every step, the process cannot produce clustering or polarization in the population marginal; this does not exclude dependence between connected individuals. It retains the local shape of the kernel as a test bed for detection, not a model of how trust evolves. Panels start without burn-in from states unrelated to the network, so the dependence between people and their contacts builds up during the observed waves, and this start-up adjustment is part of what can be detected. There is one update per wave, and $a$ takes the values $G=\{0,0.001,0.003,0.01,0.03,0.10,0.30,0.60,0.90\}$.
+
+\subsection{Persistence models and matching}\label{sec:methods-persistence}
+
+The persistence arm has no network. Its five alternatives use the same rank transport: autoregressive persistence (A); a stable individual trait plus autoregression (B, the main comparison); autoregression with an altered response channel (C); state-dependent persistence, with greater stability at extreme attitudes (D); and mover--stayer persistence, with a subgroup fixed at its initial position (E). Their equations and parameter boxes are in \esmresource, Sections~\ref{esm-sec:dd-channels} and~\ref{esm-sec:dd-matching}.
+
+At $a=0$ the influence arm is model A with $\phi=0.85$, and with $\lambda=\pi=\gamma=0$ models A, B, D and E coincide exactly with it when they share random numbers, so their comparison at zero strength is an identity, a property of the simulator rather than evidence that social mechanisms are identifiable; model C lacks this identity, because only its arm receives the altered channel.
+
+Each persistence model is matched at the same $(a,r)$ on within-person correlations of answers one wave apart (A and C) or one and two waves apart (B, D and E), pooled over people and waves and averaged over many simulated panels. Fits must meet the prespecified numerical tolerance and pass validation on fresh panel pairs. The sample sizes, solver, retry and acceptance rules are in \esmresource, Section~\ref{esm-sec:dd-matching}. A failed fit at one $(a,r)$ is a gap, recorded by reason and never treated as evidence of discrimination. Reported family limits concern the operational feasibility screen or the declared solver and parameter box; they do not prove that the broader persistence family cannot match (\esmresource, Section~\ref{esm-sec:dd-feasibility}).
+
+\subsection{Response channel}\label{sec:methods-channel}
+
+Both arms are observed through the same response channel, $w_{it}=\sqrt r\,z_{it}+\sqrt{1-r}\,e_{it}$, with standard-normal response error $e_{it}$. The signal share $r$ is the latent state's share of variance in this continuous response before discretization, that is, its reliability. It is a design parameter known to both arms, not an estimate for a survey item; reliability estimates cannot be transferred between items, wordings, countries and models without validation \cite{antoun2026,lucasdonnellan2012,alwinkrosnick1991reliability}. We use $r\in\{0.50,0.55,\ldots,0.90\}$; $r=0.70$ was examined during the calibration that preceded the frozen protocol and is marked $\dagger$ in tables. In each wave, the respondents' continuous responses are ranked and allocated to eleven approximately equiprobable categories, 0 to 10, so both arms have the same category distribution in every wave and shifts in the response margins are removed; temporal dependence can still vary.
+
+In comparisons with model C, only the persistence arm receives response error that is larger near the center of the scale and heaping at the center with probability 0.10. Secondary channels add persistent response style, a signal share that rises with earlier interviews (a stand-in for panel conditioning), and error-free and rank-based versions of the responses (\esmresource, Section~\ref{esm-sec:dd-channels}).
+
+\subsection{Classifier, criterion and boundaries}\label{sec:methods-classifier}
+
+The classifier scores whole panels from the pooled within-person correlations of answers three, four and five waves apart, $L_3$, $L_4$ and $L_5$, treating categories as equally spaced scores. The linear-discriminant specification is fixed, but a separate rule is trained for each comparison, strength and signal share, using panels separate from evaluation and without threshold or tuning search. Its standardization, covariance regularization and sample sizes are specified in \esmresource, Section~\ref{esm-sec:dd-classifier}. For a given matched model and trained rule, AUC is the probability that a new influence panel receives a higher score than a new persistence panel, counting ties as half.
+
+Let $\mathcal A(a,r)$ be the population AUC for new panels from the two laws, averaged over the prespecified matching, validation and training procedure and conditional on a successful fit. The first boundary is
+\begin{equation}
+a^*(r)=\min\{a\in G:\mathcal A(a,r)\ge0.70\},
+\end{equation}
+estimated as the lowest grid strength whose point AUC reaches 0.70, or not attained if none does on a complete grid; a sustained boundary $a^*_s(r)$, from which the AUC stays at or above 0.70 at every higher strength, guards against a curve that falls back. The primary estimand is the whole curve $a^*(r)$ against model B; targets 0.60 and 0.80 are secondary. An AUC of 0.70 is often read as the lower end of acceptable discrimination \cite{hosmer2013}, but the protocol records no reason for this target, for the shrinkage of the discriminant or for the parameter box, all inherited conventions (\esmresource, Table~\ref{esm-tab:design-conventions}).
+
+\begin{table}[t]
+\caption{Normal-theory translation of the AUC targets into the power of a test on one panel}\label{tab:auc-translation}
+\begin{tabular}{@{}lll@{}}
+\toprule
+AUC target & $\delta$ (score SDs) & Power, one panel \\
+\midrule
+\resultnum{j.target.r060}{0.60} (secondary) & \resultnum{j.auc_translation.target060.delta}{0.36} & \resultnum{j.auc_translation.target060.power}{0.10} \\
+\resultnum{j.target.r070}{0.70} (primary) & \resultnum{j.auc_translation.target070.delta}{0.74} & \resultnum{j.auc_translation.target070.power}{0.18} \\
+\resultnum{j.target.r080}{0.80} (secondary) & \resultnum{j.auc_translation.target080.delta}{1.19} & \resultnum{j.auc_translation.target080.power}{0.32} \\
+\botrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:auc-translation} translates AUC into the power of a one-panel test against a known persistence score distribution, under an equal-variance normal approximation. It is an illustration of practical discrimination, not a measured rejection rate or a test available for an observed survey without further assumptions; the formula is in \esmresource, Section~\ref{esm-sec:dd-classifier}.
+
+Approximate nominal 95\% bands combine network-cluster resampling with local propagation of matching and training uncertainty. They are simultaneous over the available strengths of one comparison at one signal share, not over all comparisons or reliabilities; their construction and inversion are in \esmresource, Section~\ref{esm-sec:dd-band}. The grid is coarse above 0.10: $a^*(r)=0.10$ means that no lower grid strength attained the target, not that a continuous threshold was estimated. No interpolation, smoothing or monotonicity constraint is imposed.
+
+One comparison at one signal share forms a unit, valid if its zero-strength cell was fitted with a band containing 0.5 and otherwise complete but invalid, with its boundaries suppressed. The main curve is valid only if all nine units against B are complete and valid; a reading across persistence models also required every unit of models A, C, D and E to be complete and valid. Gaps censor rather than invalidate: no boundary is declared across a gap (\esmresource, Section~\ref{esm-sec:dd-band}).
+
+\subsection{What separates the arms}\label{sec:methods-identification}
+
+Two analytic observations frame what the classifier can find. First, if each person were instead pulled linearly toward the population mean, the influence term would be proportional to the person's own state, because transport fixes the mean at zero. The update would remain an autoregression, model A matched at lag one would have exactly the same law, and the population AUC would be 0.5 for any classifier.
+
+Second, treating random contacts as independent of the person's own state gives a first-order decomposition into an own-state conditional mean and a deviation contributed by the particular contacts (\esmresource, Section~\ref{esm-supp:drift-mean}). Because those contacts are fixed and their attitudes persist, their contribution is serially correlated. Even linear averaging over fixed contacts, as in DeGroot's model \cite{degroot1974}, can generate such an input. No tested persistence model contains that component. The classifier observes only pooled lag correlations, so it cannot attribute their differences specifically to contact between people. The possible role of this correlated input in the observed separation is an interpretation developed after the results, not a tested explanation.
+
+The estimand also uses privileged information: both arms share known reliability, and matching targets population moments estimated from many panels rather than one observed survey. With one indicator per wave, reliability estimates depend on a model of latent dynamics \cite{heise1969,wiley1970,kenny1995tse}; the simulation holds this source of ambiguity fixed. Consequently, the boundary describes successful fits of two specified laws, not an empirical test that estimates reliability and identifies influence from one panel. \esmresource, Sections~\ref{esm-supp:matching-scope} and~\ref{esm-sec:dd-band}, detail the scope of matching and uncertainty.
+
+\subsection{Prespecification, validation and verification}\label{sec:methods-record}
+
+The protocol, code, acceptance criteria and reading rules were frozen before the confirmatory run; archived records bind their file hashes. They were prespecified rather than publicly registered, and their dates have no external timestamp. The design followed partial exposure to calibration results, mainly at $r=0.70$, so new seeds were used without making this a fully blind confirmation. A validation gate preceded confirmatory execution. An operational amendment during the run specified how one particular nuisance-projection error becomes a recorded gap without changing acceptance criteria; its timing and approvals are documented in \esmresource, Section~\ref{esm-sec:record}, together with the protocol history and execution record.
+
+Sections~\ref{sec:results-B}--\ref{sec:results-controls} apply the prespecified reading rules; Section~\ref{sec:results-exploratory} and the Discussion distinguish subsequent exploratory findings and interpretations. The unchanged rule-assembled record is described in \esmresource, Section~\ref{esm-sec:rule-record}. Verification included unit tests, the validation procedure and component comparisons with independent implementations. These checks do not establish full independent reproduction: bitwise replay of the complete release has not been demonstrated, and the recorded Linux checks failed their declared criteria. The reproduction routes and their limits are explicit in \esmresource, Section~\ref{esm-sec:verification}.

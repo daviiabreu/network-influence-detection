@@ -1,0 +1,12 @@
+........F                                                                [100%]
+=================================== FAILURES ===================================
+__________ test_state_persistence_has_stable_tails_without_a_network ___________
+
+    def test_state_persistence_has_stable_tails_without_a_network() -> None:
+>       from ic_study.models.detection_panel import state_persistence, state_dependent_panel
+E       ImportError: cannot import name 'state_persistence' from 'ic_study.models.detection_panel' (/Users/davi/.local/state/research-workbench/ic-question-consolidation/studies/ic-2026-2027/src/ic_study/models/detection_panel.py)
+
+tests/unit/test_detection_panel.py:101: ImportError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_panel.py::test_state_persistence_has_stable_tails_without_a_network
+1 failed, 8 passed in 0.20s

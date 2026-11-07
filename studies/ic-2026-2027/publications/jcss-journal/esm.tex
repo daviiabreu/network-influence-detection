@@ -1,0 +1,89 @@
+% Online Resource 1 (electronic supplementary material) of the JCSS article.
+% Built with the same class as main.tex, in one column; build.py compiles it
+% before and after main.tex so that references between the two resolve.
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+\usepackage{amsmath,amssymb,xcolor}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage{xr-hyper}
+\maxdeadcycles=1000
+\newcommand{\bjtitle}[1]{\textit{#1}}
+\newcommand{\bbtitle}[1]{\textit{#1}}
+\newcommand{\burl}[1]{\url{#1}}
+\newcommand{\resultnum}[2]{#2}
+\newcommand{\resultplural}[3]{#3}
+\newcommand{\esmresource}{Online Resource~1}
+\newcommand{\allunitsresource}{Online Resource~2}
+\DeclareUrlCommand\code{\urlstyle{tt}\def\UrlBreaks{\do\_\do\.\do\:\do\/\do\-\do\|\do\,}}
+% Import the other document's labels only after its caption macros exist.
+\externaldocument[main-]{main}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\ifdefined\theHsection
+  \renewcommand{\theHsection}{esm.\arabic{section}}
+\fi
+\ifdefined\theHtable
+  \renewcommand{\theHtable}{esm.\arabic{table}}
+\fi
+\ifdefined\theHfigure
+  \renewcommand{\theHfigure}{esm.\arabic{figure}}
+\fi
+
+\raggedbottom
+\begin{document}
+
+\title[Online Resource 1]{Online Resource 1: supplementary material for ``Limits of Detecting Network Influence in Attitude Panels''}
+
+\author*[1]{\fnm{Davi} \sur{Abreu da Silveira}}\email{davi.silveira@sou.inteli.edu.br}
+
+\author[1]{\fnm{Henrique Mohallem} \sur{Paiva}}\email{henrique@inteli.edu.br}
+
+\affil*[1]{\orgname{Inteli -- Instituto de Tecnologia e Liderança}, \orgaddress{\city{São Paulo}, \state{SP}, \country{Brazil}}}
+
+\abstract{This document is Online Resource~1 of the article in the \emph{Journal of Computational Social Science}. It contains the glossary of protocol codes, the full model description, design and inference details, the validation and execution record, the unit inventory, additional confirmatory results, the exploratory analyses in full, the empirical reliability anchor, implementation verification, the positioning search record, the detailed account of generative-AI use and a description of the prespecified record archived with the code. Online Resource~2 is the table of all 414 analysis units (CSV). Tables and figures here are numbered S1, S2, \ldots; numbers without the prefix refer to the article.}
+
+\maketitle
+
+\section{Glossary of protocol codes and labels}\label{sec:glossary}
+\input{esm/glossary}
+
+\section{Model description (ODD+D)}\label{sec:odd}\label{app:odd}
+\input{esm/odd}
+
+\section{Design and inference details}\label{sec:design-details}
+\input{esm/design-details}
+
+\section{Prespecification, validation gate and execution record}\label{sec:record}
+\input{esm/record}
+
+\section{Unit inventory}\label{sec:inventory}
+\input{esm/inventory}
+
+\section{Additional confirmatory results}\label{sec:additional}
+\input{esm/additional-results}
+
+\section{Exploratory analyses}\label{sec:exploratory}
+\input{esm/exploratory}
+
+\section{Empirical reliability anchor}\label{sec:shp}
+\input{esm/shp-anchor}
+
+\section{Implementation verification}\label{sec:verification}
+\input{esm/verification}
+
+\section{Positioning search record}\label{sec:search}
+\input{esm/search-record}
+
+\section{Use of generative AI}\label{sec:ai}
+\input{esm/ai-provenance}
+
+\section{Prespecified reading rules and the rule-assembled record}\label{sec:rule-record}
+\input{esm/rule-record}
+
+\phantomsection\addcontentsline{toc}{section}{References}
+\bibliography{references}
+
+\end{document}

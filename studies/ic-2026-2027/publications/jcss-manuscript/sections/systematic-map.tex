@@ -1,0 +1,67 @@
+\providecommand{\placeholder}[1]{\textcolor{red}{[#1]}}
+
+% Methods of the prioritized systematic map v5.1, drafted 2026-09-28 from the
+% v5.1 closing records. Markers % MAPxx name rows of claim-evidence.md;
+% MAP09--MAP17 are proposed rows that the integrating editor has yet to add.
+% Every screening, reference, adjudication, audit, identity and extraction
+% judgment described here was made by language-model agents.
+
+\subsection*{Prioritized systematic map: methods}
+
+\paragraph{Scope and corpus.}
+The map covers computational and mathematical studies of human opinion, belief, attitude, consensus, polarization and social-influence dynamics. % MAP03
+Its registered scope is English-language articles and preprints published from 1 January 1970 to 11 September 2026. % MAP01 MAP03
+The acquisition, run on 12 September 2026 (UTC), closed 1,027 registered queries: 60 thematic searches in OpenAlex, DBLP and arXiv, and 967 identifier lookups in Crossref and arXiv. % MAP01
+They returned 54,570 source observations from 49,333 distinct provider records; 14,878 observations had no abstract. % MAP01
+These formed 46,400 initial work proposals; a deterministic projection merging only on normalized DOI, version-free arXiv identifier or full normalized title, year and first author yielded 43,906, keeping ambiguous pairs apart. % MAP02 MAP03
+Work proposals are corpus projections, neither included studies nor verified unique works. % MAP02
+
+\paragraph{Protocol and prioritization.}
+Protocol v5, adopted under delegation on 25 September 2026, replaced the census planned in v4 with prioritized screening that stops at conceptual saturation and checks coverage by a random audit, so the map is not a census. % MAP03 MAP06
+After the first calibration failure, v5.1 clarified that canonical opinion models, such as voter, Deffuant and DeGroot models, count as human-opinion models unless explicitly applied to a non-human system. % MAP06
+Layer 0, the 1,017 review or survey candidates screened first to set up the category frame, is not counted among primary works. % MAP03 MAP04
+Other proposals were ranked without language models by lexical similarity and a Rocchio classifier on TF--IDF vectors, seeded with focused-review inclusions and adopted positive references and retrained on adopted decisions; uncertain records trained neither centroid, and unlabelled ones were never negatives. % MAP03
+Ranked screening used batches of 500; batches 3 and 5--14 were selected before their predecessor's adoption, with its concordant screener judgments as provisional labels, and never reselected. % MAP03 MAP11 MAP14
+
+\paragraph{Screening, adjudication and audit.}
+Screeners A (\texttt{gpt-5.6-luna}) and B (\texttt{claude-sonnet-5}) independently and blindly judged each title and abstract as include, exclude or uncertain. % MAP09
+Concordant include or exclude judgments were adopted directly; any other pair went to blind reference judgments by \texttt{claude-opus-5-5} and \texttt{gpt-6-astra}, each quoting a supplied observation. % MAP09 MAP12
+Unless both references agreed on include or exclude, the coordinator agent (\texttt{claude-opus-5-5}) decided with a recorded rationale and could leave the record uncertain. % MAP09 MAP12
+Under protocol rule 1, a record with no abstract in any observation could not be excluded on model or domain grounds. % MAP03
+Routed records lacking an abstract first went through a metadata lookup (OpenAlex, Crossref, Semantic Scholar), and recovery passes for layer 0 and batches 1--3 rescreened uncertain records whose abstracts were found. % MAP12
+With no full-text stage, records left uncertain are unresolved, not excluded. % MAP09
+Before adoption, each phase passed an identity audit, which merged versions of one work, and a blind audit of a pre-drawn random 10\% sample by \texttt{gpt-6-sol} (\texttt{claude-opus-5-5} for layer 0). % MAP09 MAP13
+Audit agreement with adopted judgments was 100 of 102 layer-0 records, 668 of 700 batch records (95.4\%; 43 to 50 per batch), 9 of 9 recovery records and 39 of 40 remainder records. % MAP13
+Audit disagreements did not change adopted judgments; three contested inclusions, accepted as errors, await correction by a successor, and a fourth awaits full-text reading. % MAP13
+
+\paragraph{Calibration.}
+Before production, screeners were calibrated on cohorts of 200 works, 20 per ranking decile, disjoint from 12,381 proposals previously exposed to models. % MAP17
+References came from \texttt{claude-fable-5-1} and \texttt{gpt-6-astra}, with coordinator adjudication of disagreements and missing outputs, so calibration measures agreement with agent-adopted references, not accuracy against human gold labels. % MAP05 MAP06 MAP17
+A reference inclusion counted as retained unless the screener excluded it, and each screener needed observed retention of at least 0.95, reported with 95\% Wilson intervals. % MAP03 MAP05 MAP17
+On the first cohort A failed, retaining 23 of 25 reference inclusions (0.920; interval 0.750--0.978), while B retained 25 of 25 (1.000; 0.867--1.000); \texttt{gpt-5.6-sol}, tried as A, repeated the same two false exclusions. % MAP05 MAP17
+After the v5.1 clarification and the single permitted prompt revision, a disjoint second cohort passed: A retained 22 of 23 (0.957; 0.790--0.992) and B 23 of 23 (1.000; 0.857--1.000). % MAP05
+These intervals describe small reference-positive samples and do not establish population recall. % MAP05
+
+\paragraph{Extraction.}
+Included works were coded on ten multi-label fields: model family, influence mechanism, opinion representation, network topology, study design, reported outcomes, empirical grounding, validation method, reproducibility artifacts and author-stated evidence gaps. % MAP04 MAP15
+Coding used only titles and available abstracts, binding each code to a literal source passage, so ``not reported'' means not reported there, not absent from the work. % MAP08 MAP09 MAP15
+The layer-0 extraction set the category frame, which gained two categories in batch 1 and was then unchanged. % MAP15
+Primary works were extracted by \texttt{gpt-6-astra} under codebook v1.1, and a random 10\% independently by \texttt{claude-sonnet-5}; layer 0 was coded earlier with these roles reversed. % MAP09 MAP15
+No full-text screening, full-text extraction or quality appraisal was performed. % MAP09 MAP15
+
+\paragraph{Stopping rule and remainder audit.}
+The protocol fixed three joint stopping conditions in advance: (1) at least 500 distinct included primary works; (2) two consecutive batch transitions without a new category or a shift above two percentage points in any cumulative category share; and (3) a fully screened and extracted random audit of 400 proposals from the frozen unscreened remainder, where a category missing from the map resumes ranked screening. % MAP03
+The audit's estimate scales the sample share of positives and its Wilson interval to the $N-n$ unsampled proposals; it is descriptive, not a recall gate. % MAP03 MAP16
+Condition 1 held from batch 2 (624 primary works) and condition 2 at batches 13 and 14, with maximum shifts of 1.37 and 1.20 percentage points in the last two transitions; batch 15 was not prepared. % MAP16
+Because the seeds brought bounded-confidence work forward, shares still drifted late, and condition 2 held mainly because the denominator grew. % MAP16
+The remainder audit drew 400 of the 35,489 proposals unscreened after batch 14 (seed 20260925): 17 included, 282 excluded and 101 uncertain for lack of an abstract; its inclusions added no category. % MAP16
+Condition 3 thus remained incomplete. % MAP16
+The estimate is 1,491 relevant proposals among the 35,089 still unscreened (interval 937 to 11,982), the upper end counting all 101 unresolved records as relevant. % MAP16
+The map was closed on 28 September 2026 with coverage declared incomplete and reduced confidence; we do not claim that the stopping rule was met. % MAP16
+
+\paragraph{Limitations and language models.}
+Every eligibility, reference, adjudication, audit, identity and extraction judgment was made by a language-model agent under the Research Owner's delegation, without human verification, and awaits ratification. % MAP06 MAP09
+Reference and audit models share the screeners' Claude and GPT families, so blinding gives independent execution, not independent validation. % MAP06 MAP09
+Category shares describe screened inclusions, not prevalence in the literature, and a rare or absent category shows neither a gap nor novelty. % MAP03 MAP09
+Missing abstracts, the English-only scope and four bibliographic sources further limit coverage. % MAP01 MAP09
+Language models also drafted this text; human authors remain responsible for checking it and its claims before submission. % MAP08

@@ -1,0 +1,958 @@
+{
+  "auditor_sha256": "ec40cd2d07dc7283e1fab16ebe6eb276b2f798238ece59e23c034044de38804e",
+  "case_count": 24,
+  "cases": [
+    {
+      "case": "passed-shp",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone",
+        "shp.state",
+        "shp.grid_position"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "shp.grid_position": {
+            "source": {
+              "locator": "/anchor; compare estimate then Wald endpoints with inclusive [0.50,0.90], without rounding; Results shell block B13",
+              "record": "shp.json",
+              "sha256": "9cdf97a45965663779ceb1ba748ed0ccaa271686c438fe45c45eb7a0239d4243"
+            },
+            "value": "inside"
+          },
+          "shp.state": {
+            "source": {
+              "locator": "/multiwave/at_parameter_bound; Results shell block B14",
+              "record": "shp.json",
+              "sha256": "9cdf97a45965663779ceb1ba748ed0ccaa271686c438fe45c45eb7a0239d4243"
+            },
+            "value": "admissible"
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "316b58ecbcb39b01e94aa5420093e4a6b3dec763b4e0f9115d7904463c598e56",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b",
+        "shp.json": "9cdf97a45965663779ceb1ba748ed0ccaa271686c438fe45c45eb7a0239d4243"
+      },
+      "not_applicable": []
+    },
+    {
+      "case": "failed-G0",
+      "compared": [
+        "gate.G0.failed_criteria"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "gate.G0.failed_criteria": {
+            "source": {
+              "locator": "JSONL line 3 (gate=G0); exact failed clauses over unrounded aggregates; Results shell block B1b-G0",
+              "record": "criteria.jsonl",
+              "sha256": "1e0c53201869f4e39b9b00ea2acc09f99c7d42ed9aa610cb7216b36fc9726590"
+            },
+            "value": [
+              "budget"
+            ]
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "dc166b3e651c848ca34eba761ed11bbaece6a43fa9cfe54e91413e38c3179c71",
+      "input_sha256": {
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "1e0c53201869f4e39b9b00ea2acc09f99c7d42ed9aa610cb7216b36fc9726590"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "invalid-main",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "59d4595864ae5545f0ae6d6250954ea328fb12991662dc89eee76e940f2e86e4",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "c09ba1e457719ccb5b5a1d34388db671e15f2e490dc4ffc4d02e8b5d84e29798",
+        "released-curves.json": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "incomplete-tier2",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "9c24a3d39bfc146fb69e8046defc59c0732deb501578f488b1e6753ea3476273",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "7a0741ec304db7aef878d29bc93dafe8c324988d89b2ca5db25cb7e5c013e0fc",
+        "released-curves.json": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "unavailable",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "1cbb5f53c9c7be63d119be42f5bca0273103a06df8d9de08795efb916053cd2f",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-no-reading",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "cfe644a43fdbdcb7afe133ad1d88350b30a839a9d5d1761576c7bf1066fbce19",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-subnominal",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "07f014057b89ad04fd62136bad50a8b2f42fd098e94c0619f2b410eaad9d3290",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-failure",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "37e2fb0fa0205707ab521a8f8efa5ddecfc0fb36240da99924fe726e4f1d3460",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-inconclusive",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "release-day",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "c85aac4130149a2a12e9598da3c62b454004998cfb45b5f167c455fea140191c",
+      "input_sha256": {
+        "G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "i-comparison-failed",
+      "compared": [
+        "gate.G2c.failed_comparisons"
+      ],
+      "dataset": "g2c-failure",
+      "derived": {
+        "facts": {
+          "gate.G2c.failed_comparisons": {
+            "source": {
+              "locator": "JSONL line 5 (gate=G2c); exact failed clauses over unrounded aggregates; Results shell block B1b-G2c",
+              "record": "criteria.jsonl",
+              "sha256": "1985ff52dfd147d8ca27f63b4f6bee147f9f0c440caff6346c030d8fafecdba5"
+            },
+            "value": [
+              "a010"
+            ]
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "53c0a57a9c6883bcd6b50972d41c441f0df064c36f059ab5f150de8558c5eeb4",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "1985ff52dfd147d8ca27f63b4f6bee147f9f0c440caff6346c030d8fafecdba5"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "ii-comparison-no-ratio",
+      "compared": [],
+      "dataset": "g2c-failure",
+      "derived": {
+        "facts": {},
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "f48d8beb406ca0f7633de777b485b20dbfc8163e6b5f847a6e2ed682421ce322",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "d831de6587070208b098c5fc111443272165ebade7c274505e84c062bd88231d"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "iii-comparisons-absent",
+      "compared": [],
+      "dataset": "g2c-failure",
+      "derived": {
+        "facts": {},
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "74826542b05e1465c72bd3149d7a79cc0d24aa92ad5489df25fc3aaeb491767a",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "76732882666ecb1bea0a713ecdecdcfa2e3924832bd1890366ff31acd7352751"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "passed-shp",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone",
+        "shp.state",
+        "shp.grid_position"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "shp.grid_position": {
+            "source": {
+              "locator": "/anchor; compare estimate then Wald endpoints with inclusive [0.50,0.90], without rounding; Results shell block B13",
+              "record": "shp.json",
+              "sha256": "518f4e32725dda832edb07a6acfd4e6b5de41b06dffc00957515abcb161c9446"
+            },
+            "value": "inside"
+          },
+          "shp.state": {
+            "source": {
+              "locator": "/multiwave/at_parameter_bound; Results shell block B14",
+              "record": "shp.json",
+              "sha256": "518f4e32725dda832edb07a6acfd4e6b5de41b06dffc00957515abcb161c9446"
+            },
+            "value": "admissible"
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "e5ae76b22f19ffba653592a4ecf6a6cca4f8e3cf51a8df89287fa4c6e3f86311",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b",
+        "shp.json": "518f4e32725dda832edb07a6acfd4e6b5de41b06dffc00957515abcb161c9446"
+      },
+      "not_applicable": []
+    },
+    {
+      "case": "failed-G0",
+      "compared": [
+        "gate.G0.failed_criteria"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "gate.G0.failed_criteria": {
+            "source": {
+              "locator": "JSONL line 3 (gate=G0); exact failed clauses over unrounded aggregates; Results shell block B1b-G0",
+              "record": "criteria.jsonl",
+              "sha256": "1e0c53201869f4e39b9b00ea2acc09f99c7d42ed9aa610cb7216b36fc9726590"
+            },
+            "value": [
+              "budget"
+            ]
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "1130655cff8541dab170846bf902621780ac7859eff41d3ceaa75e7d7ce62d51",
+      "input_sha256": {
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "1e0c53201869f4e39b9b00ea2acc09f99c7d42ed9aa610cb7216b36fc9726590"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "invalid-main",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "b9895ef6132d7e1ae1e5603ef4ae88bd5efdc29ca0e465de696c5a59fb3ae360",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "c09ba1e457719ccb5b5a1d34388db671e15f2e490dc4ffc4d02e8b5d84e29798",
+        "released-curves.json": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "incomplete-tier2",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "960a7171dbb6b73b47239aa5e510961c9bf62a5fdbd86eb49e76588890ff5f4e",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "7a0741ec304db7aef878d29bc93dafe8c324988d89b2ca5db25cb7e5c013e0fc",
+        "released-curves.json": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "unavailable",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "423cc9d3972cdb2a5ebe9dbb532dda05bc579c88922eb25d14b2b04fb1bd00c0",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-no-reading",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "d469bbdbf4fcdac1f6d10619d0ba6afe4c6d9f0477b4624d4f26cf2b6adcb1f9",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-subnominal",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "d3e4b9415b6625cce51aaa4371f7777a6a705815bbb467decc934ebb29e6c08a",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-failure",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "ac1841128419ac6805477a08c86fbbb3f7c2a0417cd05c491c9d87432546250d",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "x6-inconclusive",
+      "compared": [
+        "tier2.boundaries_differ",
+        "main.boundary_nonmonotone"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "main.boundary_nonmonotone": {
+            "source": {
+              "locator": "/curves; defined ordinals by r: idx(first) if ATT, 9 if uncensored null, otherwise omitted; Results shell block B07",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          },
+          "tier2.boundaries_differ": {
+            "source": {
+              "locator": "/curves; any VALID tier-2 first/sustained four-tuples differ; Results shell block B06",
+              "record": "released-curves.json",
+              "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+            },
+            "value": false
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "4412f62ea61e44bb99606d609bc52de36394fe634ab6acaf24c6270431b4aa5a",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "64a1a16ea89e82a1d1ab110f507cf5e9fa533528c861b7ba2b0d58616251388b",
+        "release-record.json": "31a2f9e6185a598d98b7b267fc95becabab5a870c287229c648c3ea6298114ae",
+        "released-curves.json": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    },
+    {
+      "case": "i-comparison-failed",
+      "compared": [
+        "shp.state",
+        "gate.G2c.failed_comparisons"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "gate.G2c.failed_comparisons": {
+            "source": {
+              "locator": "JSONL line 19 (gate=G2c); exact failed clauses over unrounded aggregates; Results shell block B1b-G2c",
+              "record": "criteria.jsonl",
+              "sha256": "974b5c1f52c5f81f5ef26b3c3548d68da70ec88d9a2efda74cc9077d0d8c7977"
+            },
+            "value": [
+              "a010"
+            ]
+          },
+          "shp.state": {
+            "source": {
+              "locator": "/multiwave/at_parameter_bound; Results shell block B14",
+              "record": "shp.json",
+              "sha256": "518f4e32725dda832edb07a6acfd4e6b5de41b06dffc00957515abcb161c9446"
+            },
+            "value": "admissible"
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "23c873214268c627b10b46941a08ffa1bacb62f0c64bba5905b88467f9bc8ff5",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "974b5c1f52c5f81f5ef26b3c3548d68da70ec88d9a2efda74cc9077d0d8c7977",
+        "shp.json": "518f4e32725dda832edb07a6acfd4e6b5de41b06dffc00957515abcb161c9446"
+      },
+      "not_applicable": [
+        "shp.grid_position"
+      ]
+    },
+    {
+      "case": "ii-comparison-no-ratio",
+      "compared": [
+        "shp.state"
+      ],
+      "dataset": "dress",
+      "derived": {
+        "facts": {
+          "shp.state": {
+            "source": {
+              "locator": "/multiwave/at_parameter_bound; Results shell block B14",
+              "record": "shp.json",
+              "sha256": "ed32049c1a886dca7b7ed648576eb8c1a58864f9ba5b0f8748688245aff41260"
+            },
+            "value": "parameter-bound"
+          }
+        },
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "2f126aa21d768dca52b2ba75690fd6c63c40be0ad6ac57a7296a7ccb8bf7123f",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "efb2d3e41d1931aa49df235eb6cc2d9bf3563ff96e84362e4b89c91e04783274",
+        "shp.json": "ed32049c1a886dca7b7ed648576eb8c1a58864f9ba5b0f8748688245aff41260"
+      },
+      "not_applicable": [
+        "shp.grid_position"
+      ]
+    },
+    {
+      "case": "iii-comparisons-absent",
+      "compared": [],
+      "dataset": "dress",
+      "derived": {
+        "facts": {},
+        "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+        "synthetic": true
+      },
+      "fixture_sha256": "721d7e5c1c7ba012cf20c45818e0f02eabdc82e204ec118c3bb3cb84987547cb",
+      "input_sha256": {
+        "G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "criteria-v43.json": "397441861fdd960e6b4b3fb634ce9ccef78134ca935a5786d8348b79e035b84d",
+        "gate/criteria.jsonl": "3b4b9381db27e39f3906f012fa8b873720de2cb874fe3da6760e071ca0b3efdd"
+      },
+      "not_applicable": [
+        "shp.state"
+      ]
+    }
+  ],
+  "comparison_count": 42,
+  "derivation_sha256": "b2ac0fd940c5bd601e0cea425959b1a3aae21fd25a95c39efae86a287b4b1648",
+  "divergences": [
+    {
+      "block": "B14",
+      "case": "ii-comparison-no-ratio",
+      "dataset": "dress",
+      "derived": "parameter-bound",
+      "fact": "shp.state",
+      "manual": "admissible",
+      "shell": "pipeline/drafts/2026-09-28/results-shells.tex"
+    }
+  ],
+  "facts_validator_sha256": "39b76b61c922d9bb3e84d7a7d358ee608d48bc660c33bd3fc2483c3fe5a4a5bb",
+  "schema": "ic-study.v4-manuscript-assembly-derive-audit.v1",
+  "scientific_acceptance": false,
+  "shell_sha256": "02928c54809f88ec11f15e536b14563d53fbc98a3920853cf17925f679dcb191",
+  "synthetic": true,
+  "synthetic_inputs_sha256": "56eeba3daa7e5485ef1f5fab5c6600544abcf272a46012afe55c9161fc9596f1"
+}

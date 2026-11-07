@@ -1,0 +1,12 @@
+{
+ "note": "post-hoc, exploratory; not part of the pre-declared comparison",
+ "cases": 20,
+ "discretiser_bitwise_equal": {
+  "equiprobable": 20,
+  "c_marginal_no_heap": 20
+ },
+ "project_mask_entry_matches_spec_geometry": 20,
+ "c_scale_norm_project_empirical_N1002": 2.477077434581586,
+ "c_scale_norm_dock_analytic": 2.4774640666424794,
+ "c_scale_relative_difference": -0.00015605960389064588
+}

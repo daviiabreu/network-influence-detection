@@ -1,0 +1,481 @@
+{
+ "schema": "ic-study.v4-exploratory-declaration.v1",
+ "date": "2026-09-28",
+ "status": "declared-before-implementation-and-before-any-confirmatory-result",
+ "readme": "README-x3-x7.md",
+ "frozen_protocol": {
+  "freeze_record": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/freeze-v4.json",
+  "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+  "commit": "37513841"
+ },
+ "release_amendment": {
+  "file": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-v4-release-amendment.md",
+  "commit": "428ca7cd",
+  "state_at_its_registration": "gate at G2 with about 200 of 700 tasks; no confirmatory tier started"
+ },
+ "reason": "internal adversarial review 2026-09-28, items R2-M1, R2-M2 with R2-M3, R2-M5, R2-M6 and R1-M7; claim-evidence row DS10 lists R2-M1, R2-M2 and R2-M5 as unplanned limitations",
+ "label": "exploratory; never promoted to confirmatory evidence",
+ "unchanged": "grid, targets, nulls, discriminator, bands, censoring, gates, tier order, confirmatory seeds and release rule of the frozen v4; the X1/X2 declaration",
+ "common_rules": {
+  "declared_before": "any confirmatory result",
+  "forbidden_inputs": "any confirmatory or gate seed, gate result, tier output, a*(r) value, sealed store (~/.local/state/research-workbench/sealed-*), tier log or restricted material",
+  "frozen_code": "imported, never edited; every unit checks the SHA-256 of the 80 frozen Python files against freeze-v4.json and records commit, clean tree and successor module SHA-256",
+  "comparison_with_confirmatory_curve": "only after the release (release-record.json exists), side by side, labelled exploratory",
+  "fixed_in_advance": "sizes, cells, statistics and readings; nothing changes after any output is read",
+  "retry": "frozen D4 retry wherever the frozen fit is used; no opportunistic restarts",
+  "errors": "a ValueError from the frozen pipeline is recorded and leaves the cell without a result",
+  "gaps": "frozen gap statuses; never converted into AUC below target"
+ },
+ "sealing": {
+  "sealed_until_release": [
+   "x3",
+   "x4",
+   "x6",
+   "x7"
+  ],
+  "why": "they estimate interaction-versus-matched-null contrasts at tier-1 settings and would anticipate the confirmatory curve",
+  "store": "~/.local/state/research-workbench/sealed-v4-exploratory-x3-x7/ on the producing host, outside any checkout, directories 0700, files 0600, SHA-256 and access log",
+  "readable_before_release": "fit statuses, counts, failures, timings, seeds and precondition results",
+  "not_read_before_release": "AUCs, scores, powers, coverages, truths and boundaries",
+  "open_when_complete": [
+   "x5"
+  ],
+  "x5_reason": "a = 0 only, no interaction, estimates no point of the curve"
+ },
+ "bitwise_precondition_rule": {
+  "model": "X1b precondition",
+  "procedure": "same host and commit, two separate processes, same exploratory seeds, declared sizes; frozen executor (v4_curve.execute_cell or the frozen function named per analysis) versus successor executor with its new component at the neutral setting",
+  "comparison": "every file of each cell store byte for byte except access.jsonl, whose (action, key) sequence must also match",
+  "minimum": "at least two cells with a result",
+  "scope": "each host class (CPU model, system, environment hash) before that host runs units of the analysis",
+  "on_failure": "the analysis does not run on that host; the failure is recorded",
+  "fixes": "successor code may be corrected before any declared-size execution, with a complete new verification at the new commit; every attempt stays in the record"
+ },
+ "seeds": {
+  "namespace": "v4-exploratory-x3-x7",
+  "root": 20260928,
+  "material": "{namespace}|{root}|{analysis}|{block}|{phase}|{role}|{index}",
+  "digest": "sha256(material)[:8] as big-endian unsigned",
+  "why_new_namespace": [
+   "separate seed audit per declaration",
+   "v4_exploratory.py (whose analysis list the running X1b checks) is not edited",
+   "disjointness holds by the leading field of the material"
+  ],
+  "disjoint_from": [
+   "every frozen ic-detection-boundary-v4 namespace (calibration, gate and confirmatory)",
+   "v4-exploratory-x1-x2",
+   "shp-crosswalk-v1"
+  ],
+  "audit": "a test records every material SeedPlan, ConfirmatorySeedPlan and the X1b plan pass to SHA-256 in a complete small-N cell and shows none starts with v4-exploratory-x3-x7; where shp_crosswalk exists, its seeds fall outside this namespace's seed range",
+  "frozen_executor_plan": "SeedPlan interface with the frozen 2 * block + attempt layout; refuses any other namespace"
+ },
+ "hosts": {
+  "allowed": "any exploration host: lab PCs and homelab (after X1b ends); never the Mac that runs the gate and tiers",
+  "environment": "uv.lock (NumPy 2.5.3), BLAS one thread, one process per logical thread",
+  "recorded": "per unit",
+  "cross_host_equivalence": "not required and not claimed",
+  "timing_probe": "per host before launch, seeds outside any namespace, output discarded"
+ },
+ "execution_window": {
+  "from": "registration",
+  "until_utc": "2026-10-10T02:59:00Z",
+  "incomplete_units": "reported as incomplete; no extension, reduction or reordering by result"
+ },
+ "compute_basis": {
+  "unit": "CPU hour of one homelab thread with 12 processes active (slowest measured rate)",
+  "measured": {
+   "null_B_panel_cpu_s": 0.066,
+   "social_panel_cpu_s": 0.083,
+   "twin_panel_cpu_s": 0.112,
+   "x1a_cell_cpu_s_mean": 1240,
+   "x1a_cell_panels": 12000,
+   "x1b_precondition_cell_cpu_s": [
+    710,
+    2168
+   ],
+   "sources": [
+    "REPORT.md",
+    "results/x1a.json",
+    "results/x1b-precondition.json"
+   ]
+  },
+  "derived": {
+   "interior_cell_no_retry": "13,072 social + about 37,800 null panels, about 1.0 h, with 23.2 matching evaluations (mean of the 22 validated v4.2 fits recorded in the amendment; by checkpoint counts the three interior X1b precondition cells used 11, 16 and 23; the single cell measured in compute-projection-verified.json used 32)",
+   "anchor_exact_cell": "9,072 panels per arm, about 0.38 h",
+   "unit_of_nine_strengths": "about 8.4 h",
+   "retry_factor": "about 3.3 (tier-1 ratio in compute-projection-verified.json)",
+   "adverse_scenario": "32 evaluations per fit plus retries"
+  },
+  "capacity": "about 50 lab threads (middle of 40-60) plus 12 homelab threads, about 1,490 thread-hours per day; lab threads assumed at least as fast as a loaded homelab thread, checked by the timing probe",
+  "estimates_cpu_hours": {
+   "preconditions_and_probes": {
+    "nominal": "25 per host class",
+    "adverse": "40 per host class"
+   },
+   "x3": {
+    "nominal": 255,
+    "adverse": 640
+   },
+   "x4a": {
+    "nominal": 60,
+    "adverse": 120
+   },
+   "x4b": {
+    "nominal": 610,
+    "adverse": 700
+   },
+   "x5": {
+    "nominal": 75,
+    "adverse": 240
+   },
+   "x6a": {
+    "nominal": 2740,
+    "adverse": 3600
+   },
+   "x6b": {
+    "nominal": 660,
+    "adverse": 860
+   },
+   "x7": {
+    "nominal": 90,
+    "adverse": 300
+   },
+   "total": {
+    "nominal": "about 4,550",
+    "adverse": "about 6,500"
+   }
+  },
+  "duration": "about 3 days nominal and 4.5 days adverse at the assumed capacity; within one to one and a half weeks at half the assumed lab speed",
+  "priority_if_short": [
+   "preconditions",
+   "x5",
+   "x7",
+   "x3",
+   "x4a",
+   "x4b",
+   "x6a",
+   "x6b"
+  ],
+  "within_analysis_order": "declared index order, independent of results",
+  "x6a_minimum_for_reading": 100
+ },
+ "x3_free_signal_share_null": {
+  "objection": "R2-M1",
+  "question": "does the fixed-LDA separation between the interaction arm and B shrink when B may also choose its own signal share?",
+  "null": "frozen B latent law (phi, eta) through the frozen observed channel with a free signal share r_B; null panels from frozen PanelSource._profiles built with replace(cell, reliability=r_B) and the same seeds",
+  "social_arm": "frozen tier-1 interaction arm with the cell's r",
+  "fit": {
+   "moments": "means of L1, L2 and L3 over the 1,024 coupled matching panels, frozen common random numbers",
+   "inner": "frozen profile_match solves (phi, eta) on L1 and L2 for each r_B, unchanged",
+   "outer": "one-dimensional secant with Illinois safeguard and bisection for L3 in r_B, starting at r_B = r, bracket [|mean target L1|, 0.999], budget 12 outer evaluations",
+   "tolerance": "frozen rule min(5e-5, max(1e-6, 0.25 SE_fit)) on L3",
+   "statuses": "interior accepted; no L3 root in bracket (family limit), inner solver failure and budget are gaps",
+   "validation": "2,048 fresh coupled pairs, |res_k| <= 4 sqrt(SE_fit_k^2 + SE_val_k^2) for k = 1..3, one retry at M = 4,096"
+  },
+  "discriminator": "frozen fit_discriminant on L4 and L5 (profile columns 3:5)",
+  "contrasts": {
+   "known": "frozen two-parameter B fitted by frozen fit_cell with the cell's r",
+   "free": "B_r fitted as above",
+   "shared": "the same social train and check panels"
+  },
+  "cells": "72 tier-1 cells with a > 0 (family B, observed channel, r in R); a = 0 is anchor-exact by construction",
+  "sizes": {
+   "matching": 1024,
+   "retry_matching": 4096,
+   "validation": 2048,
+   "train_per_arm": 2000,
+   "check_per_arm": 4000,
+   "bootstrap_resamples": 1000
+  },
+  "statistic": "AUC_known, AUC_free, delta = AUC_free - AUC_known with a paired 95% percentile bootstrap over network rows (same indices in both contrasts); fitted (phi, eta, r_B), statuses, evaluations, residuals in SE units, mean L1..L5 by arm",
+  "reading": {
+   "supports_objection": "delta interval entirely below 0",
+   "against_objection": "delta interval inside [-0.02, 0.02] (one fifth of the distance between the primary and the nearest secondary target)",
+   "inconclusive": "every other case",
+   "lost_crossing": "AUC_known >= 0.70 with the AUC_free upper bound below 0.70, reported separately",
+   "limits": "no multiplicity correction; no whole-curve claim; the L4-L5 LDA is not the frozen discriminator and neither contrast estimates a*(r); interval conditional on fit and training, three-parameter matching noise not propagated"
+  },
+  "failures": "a failed free fit is a gap of the free contrast only, reported with its status; a failed known fit makes the whole cell a gap",
+  "bitwise_precondition": "successor source with r_B = r inside frozen pipeline reproduces the frozen v4_curve.execute_cell store at (0, 0.9), (0.03, 0.5) and (0.3, 0.6); the first outer evaluation at r_B = r reproduces the first frozen fit_cell attempt record at the two a > 0 cells",
+  "compute": {
+   "per_cell_hours": 3.5,
+   "nominal": 255,
+   "adverse": 640,
+   "basis": "known fit 0.54 h, free fit about 6 outer x 23 inner evaluations 2.6 h, train and check of both contrasts 0.4 h"
+  },
+  "seeds": {
+   "analysis": "x3",
+   "block": "2 * reliability index + attempt",
+   "phases": [
+    "match",
+    "validate",
+    "train",
+    "check",
+    "bootstrap"
+   ],
+   "common_across_strengths": true
+  },
+  "outputs": "per-cell JSON in the sealed store; results/x3.json after the release"
+ },
+ "x4_single_panel_power": {
+  "objection": "R2-M2 with R2-M3",
+  "question": "with one observed interaction panel, how often does a one-sided test of B at the 5% level, with B fitted to that panel and the frozen LDA score, reject B; how much of the loss comes from fitting the null to one panel?",
+  "frozen_part": "frozen fit_cell on 1,024 matching panels, frozen train phase (2,000 per arm) giving the frozen LDA on L3-L5 (oracle direction), frozen check phase (4,000 per arm) giving AUC_ref and the null score distribution",
+  "test_panels": "1,000 fresh interaction panels in phase test, frozen layout of two events per network (500 networks)",
+  "x4a": {
+   "name": "critical value from the population-matched null",
+   "rule": "reject if the test panel's score exceeds the 0.95 quantile of the 4,000 check null scores",
+   "statistic": "P_or",
+   "cells": "all 81 tier-1 cells (family B, observed channel, r in R, a in G); a = 0 measures size"
+  },
+  "x4b": {
+   "name": "single-panel parametric bootstrap",
+   "panels": "the first 200 test panels (first 100 networks), paired with X4a",
+   "fit": "frozen profile_match on that panel's L1 and L2 alone, budget 96, frozen tolerance; target is the observed row repeated; each evaluation is the mean over 256 simulated B panels with analyst seeds fixed across the evaluations of one fit and independent of the observed panel; no validation (no fresh coupled pairs); frozen accepted statuses only",
+   "null_distribution": "199 fresh B panels at the fitted parameters, scored by the same LDA",
+   "rule": "p = (1 + #{null scores >= observed score}) / 200; reject if p <= 0.05",
+   "statistic": "P_pu",
+   "cells": "reduced subset: the 27 cells with r in {0.50, 0.70, 0.90} and all a in G, a = 0 included; the full design would cost about 1,830 h"
+  },
+  "normal_theory": "P_NT = Phi(sqrt(2) * Phi^-1(AUC) - 1.6449): about 0.10, 0.18 and 0.33 at AUC 0.60, 0.70 and 0.80 (R2-M3)",
+  "statistic": "per cell AUC_ref with a 95% percentile interval over 1,000 resamples of check networks; P_NT at AUC_ref and at its interval ends; P_or and P_pu with 95% intervals from 2,000 bootstrap resamples of test networks; D = P_pu - P_or with the same paired bootstrap",
+  "reading": {
+   "normal_theory": "evaluated at each cell's own AUC_ref, not at 0.18: P_NT inside the P_or interval means the normal translation describes the known-null test; above means it overstates power; below means it understates it; summary over cells with AUC_ref in [0.55, 0.95]",
+   "single_panel_effect": "D interval entirely below 0: fitting the null to one panel removes power beyond what the AUC predicts; D interval inside [-0.05, 0.05]: no material change; otherwise inconclusive",
+   "size": "a = 0 cells: interval containing 0.05 means calibrated; lower bound above 0.05 flags a liberal test and X4b powers at that r are not read as power; upper bound below 0.05 means conservative, powers are lower bounds",
+   "after_release": "P_or and P_pu read at the confirmatory a*(r) cell of each r, side by side",
+   "limits": "oracle LDA direction, so both powers bound from above the power of an analyst who must estimate the direction; nothing about the optimal single-panel test"
+  },
+  "failures": "a failed single-panel fit counts as non-rejection in the primary power; power without those cases and the failure rate also reported; a failed frozen fit_cell leaves the cell without X4",
+  "bitwise_precondition": "the X4 fitting wrapper, given the frozen coupled target and frozen evaluation at M = 1,024, reproduces the first frozen fit_cell attempt record (parameters, residuals, SE, tolerances, evaluations, status) at (0.03, 0.5) and (0.3, 0.6); simulated analyst panels come from frozen PanelSource._profiles with parameters in the uncoupled layout",
+  "compute": {
+   "x4a_nominal": 60,
+   "x4b_nominal": 610,
+   "basis": "X4a about 0.75 h per cell; one single-panel fit about 23 evaluations x 256 panels plus 199 null panels, about 400 s, 200 per cell"
+  },
+  "seeds": {
+   "analysis": "x4",
+   "block": "2 * reliability index + attempt",
+   "phases": [
+    "match",
+    "validate",
+    "train",
+    "check",
+    "test",
+    "single-fit",
+    "single-null",
+    "bootstrap"
+   ],
+   "single_fit_index": "1000 * test panel + simulated panel",
+   "single_null_index": "1000 * test panel + null panel"
+  },
+  "outputs": "per-cell JSON in the sealed store; results/x4.json after the release"
+ },
+ "x5_misspecification_stress": {
+  "objection": "R2-M5",
+  "question": "at a = 0, if the observed panel departs from the assumed measurement model in documented ways, how much separation does the frozen pipeline find against a correctly specified B matched to it (AUC of misspecification)?",
+  "data_arm": "frozen interaction arm at a = 0 (AR(0.85) rank-transported path, identical to B(0.85, 0)) through a misspecified channel",
+  "null_arm": "frozen B with the assumed channel (constant r, MCAR household mask, retention 0.89), fitted by frozen fit_cell to the data arm's L1 and L2",
+  "pipeline": "frozen pipeline as execute_cell calls it (validation, D4 retry, train, check, reference, D5 nuisance); single-cell uncertainty from frozen score_uncertainty on the stored scores and deviations with the plan's bootstrap seed",
+  "conditions": {
+   "wave_trend": {
+    "rule": "r_t = r + A (t - 5) / 5",
+    "A": [
+     0.03,
+     0.08
+    ]
+   },
+   "step_at_wave_5": {
+    "rule": "r_t = r - A for t <= 4, r + A for t >= 5",
+    "A": [
+     0.03,
+     0.08
+    ]
+   },
+   "tenure_conditioning_data_arm_only": {
+    "rule": "frozen tenure_reliability(mask, r, delta)",
+    "delta": [
+     0.1,
+     0.2
+    ]
+   },
+   "mnar_household_attrition": {
+    "rule": "same uniforms u_ht as frozen panel_mask (same seed and draw order); a household active at t-1 stays at t if u_ht < p_ht, logit p_ht = alpha_t + beta * zbar_h,t-1 (mean latent state of both members at t-1); alpha_t solved each wave so the mean p over active households is 0.89; entries at waves 0 and 5 and permanent exit unchanged; beta = 0 reduces to the frozen u < 0.89",
+    "beta": [
+     "ln 1.5",
+     "ln 2"
+    ],
+    "direction": "lower latent trust raises dropout; the review speaks of attrition related to political trust and the SHP prereg anticipates possible MNAR, neither fixes the direction",
+    "beta_scale": "odds ratio of annual retention per unit of zbar, which is on the individual latent SD scale"
+   }
+  },
+  "magnitude_justification": {
+   "A_0.03": "half the spread of MTMM quality of the same 11-point trust-in-parliament item across ESS rounds 1, 2 and 4 (0.78, 0.76, 0.72; Poses et al. 2021)",
+   "A_0.08": "half the range of quasi-simplex reliabilities of GSS confidence-in-institutions items (0.48-0.64; Alwin and Tufis 2023), a between-item range used as a stress value for between-wave variation",
+   "trend_direction": "rising, as the conditioning direction of Kraemer et al. 2025",
+   "step_wave": "wave 5 is 2004 in the synthetic geometry, the SHP_II refreshment year (SHP user guide section 2.1); Hout and Hastings 2016 show confidence-item reliabilities becoming unusable across a change of government, so period effects can exceed both values",
+   "delta": "the frozen v1 tier-4 values motivated by Kraemer et al. 2025, here in the data arm only",
+   "beta": "the cited literature gives no effect size for trust-dependent attrition in the SHP; the SHP prereg records MNAR as not identified by its model, and Hirano et al. 2001 (cited in the design review) show that refreshment samples allow identifying classes of attrition models; geometric stress scenarios, not estimates: with SD(zbar) = 0.71 and calibrated alpha_t, mean annual dropout of about 15% versus 7.5% (bottom versus top household quintile) at ln 1.5 and about 18.5% versus 5.5% at ln 2 (arithmetic with normal zbar, not the simulator)",
+   "source_dossier": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/reliability-and-prior-art.md"
+  },
+  "cells": "8 conditions x 9 values of r = 72 cells",
+  "statistic": "AUC of misspecification, frozen total SE (score bootstrap plus V_nuis), pointwise 95% logit interval (critical 1.96) and interval at the frozen 2.7729; fit status, (phi, eta), D5 mean shift, mean L1..L5 by arm",
+  "reading": {
+   "crosses_primary": "95% lower bound above 0.70: that misspecification alone crosses the primary target at that r; strong support for the objection",
+   "crosses_secondary": "95% lower bound above 0.60",
+   "below_targets": "95% upper bound below 0.60",
+   "intermediate": "every other case",
+   "null_gate": "2.7729 interval excluding 0.5 means the frozen null gate would invalidate that r under that misspecification; reported",
+   "fit_failure": "reported as the correctly specified B not reproducing the misspecified L1 and L2 at that r; information, not an AUC",
+   "after_release": "smallest a in G whose confirmatory point AUC reaches the AUC of misspecification (equivalent strength) and whether its interval meets the confirmatory band at a*(r), labelled exploratory"
+  },
+  "readable": "when complete; estimates no point of the curve",
+  "bitwise_precondition": "neutral settings (A = 0, delta = 0, beta = 0) reproduce the frozen v4_curve.execute_cell store at (0, 0.5) and (0, 0.9) (anchor-exact branch) and (0.03, 0.5) and (0.3, 0.6) (interior fit, validation, stencil and nuisance)",
+  "compute": {
+   "per_cell_hours": 1.0,
+   "nominal": 75,
+   "adverse": 240
+  },
+  "seeds": {
+   "analysis": "x5",
+   "block": "2 * reliability index + attempt",
+   "common_across_conditions": true
+  },
+  "outputs": "per-cell JSON and results/x5.json with a short PT-BR report"
+ },
+ "x6_interior_coverage": {
+  "objection": "R2-M6",
+  "question": "at interior cells, do the frozen pointwise intervals and the within-r max-t band cover the frozen estimand at their nominal rates?",
+  "not_answered_by_gates": "G1c tests a = 0 only, G1b tests band mechanics with zero nuisance, G2 tests SE dispersion, not coverage",
+  "estimand_read_literally": "D1: expectation over the matching draw (M = 1,024) and the training draw (1,000 networks x 2 events per class) of the population AUC of the trained frozen LDA against the fitted null, conditional on successful fits (methods M23; R2-M9 on the retry target)",
+  "truth_primary": {
+   "name": "T_D1",
+   "definition": "the D1 estimand, which includes M = 1,024 matching noise; not the AUC against the population-matched null",
+   "estimator": "mean of K = 100 independent complete frozen pipelines per cell, seeds disjoint from the coverage repetitions; each point estimate is unbiased for T_D1 because the check set is independent of matching and training",
+   "relation_to_amendment": "the amendment's rule against a truth from the mean of pipelines concerns the pipelines whose coverage is assessed; this truth set is separate",
+   "target_mc_se": 0.002,
+   "if_exceeded": "coverage readings repeated at T +/- 2 SE; a reading that changes within that range is inconclusive by truth precision",
+   "retries": "pipelines with a D4 retry enter as the frozen procedure produces them; the retry fraction is reported"
+  },
+  "truth_secondary": {
+   "name": "T_pop",
+   "definition": "population-matched null: theta* from frozen profile_match on a coupled matching sample of M = 16,384 panels (16 times the declared M)",
+   "estimator": "mean of K_pop = 50 independent trainings at theta* (2,000 per class), each on its own fresh check set (4,000 per class)",
+   "use": "T_D1 - T_pop measures how much M = 1,024 matching noise inflates or reduces the estimand; coverage also reported against T_pop as a secondary reading",
+   "limit": "theta* approximates the population limit with moment SE four times smaller than declared; that residual is not in the SE of T_pop"
+  },
+  "x6a": {
+   "cells": "the whole r = 0.70 unit: all nine strengths of G, including five of the seven G2 cells (0.003 to 0.30 at r = 0.70), a = 0.001, 0.6, 0.9, and a = 0 with truth 0.5 by construction",
+   "why_whole_unit": "the band is simultaneous over the strengths of one r, so its coverage needs a whole unit",
+   "repetitions": 200,
+   "repetition": "frozen v4_curve.execute_cell on the nine strengths and frozen complete_curve, common random numbers across strengths within a repetition, independent seeds across repetitions",
+   "truth_cells": 8
+  },
+  "x6b": {
+   "cells": [
+    "(0.03, 0.50)",
+    "(0.03, 0.90)"
+   ],
+   "repetitions_per_cell": 200,
+   "repetition": "frozen execute_cell plus frozen score_uncertainty at one strength",
+   "reading": "pointwise only"
+  },
+  "why_g2_cells": "fixed before any result, span a from 0.003 to 0.3 and the r extremes, and G2 already tested dispersion there; r = 0.70 being calibration-exposed (D8) does not affect coverage because X6 reads no boundary",
+  "statistic": {
+   "per_repetition_and_strength": "point p, total SE recomputed by frozen score_uncertainty from the stored arrays and the unit's bootstrap seed, pointwise 95% interval (logit, critical 1.959964, floor 1/(2n), band formula with fixed critical) and the frozen band interval (critical max(empirical max-t, 2.7729))",
+   "pointwise_coverage": "fraction of repetitions whose interval contains T, with a Wilson 95% interval",
+   "band_coverage": "fraction of repetitions whose band contains the truth at every available strength, a = 0 included",
+   "also": "per-cell coverage of each band interval, frequency of empirical max-t above 2.7729, standardized errors z = (logit p - logit T) / SE_logit (mean, SD, tails)"
+  },
+  "matching_bias_component": [
+   "mean over repetitions of the D5 mean shift (result.json)",
+   "empirical bias mean(p - T_D1) with Monte Carlo SE",
+   "T_D1 - T_pop",
+   "fit residuals in SE_fit units and amplification from the fit records",
+   "ratio of empirical mean squared error to mean SE_total^2"
+  ],
+  "reading": {
+   "adequate": "Wilson 95% upper bound of coverage at least 0.95",
+   "failure_of_interior_inference": "upper bound below 0.90",
+   "subnominal_without_failure": "upper bound in [0.90, 0.95)",
+   "conservative": "lower bound above 0.99",
+   "band": "same cuts on joint coverage; conservative by construction through the 2.7729 floor; band coverage below 0.95 is the most serious outcome",
+   "uncovered_bias": "Monte Carlo interval of mean z excluding 0 with |mean z| > 0.25, reported with its sign",
+   "precision": "Wilson half-width about 0.03 at R = 200 and true coverage 0.95",
+   "minimum": "no reading below 100 complete repetitions"
+  },
+  "failures": "primary denominators count repetitions whose unit or cell is complete; a secondary reading counts gap repetitions as non-coverage; gaps, retries and errors counted; T_D1 flagged if more than 5% of its truth pipelines fail",
+  "bitwise_precondition": "repetitions and T_D1 pipelines run the frozen executor unchanged with an exploratory unit, as the frozen side of the X1b precondition, and recombine nothing; the T_pop fitting wrapper at M = 1,024 reproduces the first frozen fit_cell attempt at (0.03, 0.70) and (0.30, 0.70); training and checking at theta* come from frozen PanelSource.profiles with fixed parameters",
+  "compute": {
+   "x6a_nominal": 2740,
+   "x6b_nominal": 660,
+   "basis": "X6a 200 units x 8.4 h = 1,680 h; T_D1 8 cells x 100 pipelines x 1.0 h = 800 h; T_pop about 7 h fit plus 25 h training and checking per cell = 260 h; X6b 2 x (200 + 100) pipelines plus T_pop"
+  },
+  "seeds": {
+   "x6-rep": "block 2 * repetition + attempt",
+   "x6b-rep": "block 2 * (1000 * cell + repetition) + attempt",
+   "x6-truth": "block 2 * (1000 * cell + k) + attempt",
+   "x6-pop": "block 2 * cell + attempt, training k in the index"
+  },
+  "outputs": "per-repetition records in the sealed store; results/x6.json after the release"
+ },
+ "x7_discriminator_ceiling": {
+  "objection": "R1-M7",
+  "question": "with the same arms and the same fitted null, how far does the boundary fall when the discriminator uses more of each panel's information than the three frozen correlations?",
+  "fit": "frozen B fit on L1 and L2",
+  "discriminator": "frozen fit_discriminant (training standardization, covariance 0.8 S + 0.2 I) on a fixed 36-feature vector",
+  "features": {
+   "lags": "L3..L10 pooled Pearson correlations, frozen lag_profile formula extended to lags 6-10 (8)",
+   "mobility": "mean |delta| of observed categories between consecutive waves in the three position terciles, the frozen selected_features mobility summary (3)",
+   "transitions": "lag-1 transition matrix between category groups {0,1}, {2,3}, {4,5,6}, {7,8}, {9,10}, row-conditional frequencies over all consecutive observed pairs, last column of each row dropped (20)",
+   "person_level": "among persons with at least six observed waves, the 0.1, 0.25, 0.5, 0.75 and 0.9 quantiles (NumPy linear) of within-person SD of observed categories (5)",
+   "excluded": "L1 and L2, the fitted moments, as in the frozen design",
+   "fixed": "no feature search, no hyperparameter, no other classifier",
+   "non_finite": "makes the cell a recorded numerical gap, no imputation"
+  },
+  "sizes": {
+   "train_per_arm": 2000,
+   "check_per_arm": 4000,
+   "reference_per_arm": 4000,
+   "bootstrap_resamples": 1000
+  },
+  "pairing": "each panel generated once; frozen and rich features extracted from the same panels",
+  "nuisance": "frozen nuisance_draws with the rich features; mean-feature Jacobian by CRN finite differences with step 0.01 on the matching realizations (3,072 extra null panels per cell)",
+  "curve": "frozen complete_curve on the rich stores gives a*_rich(r), sustained boundary, band, censoring and null gate; the frozen-feature stores of the same run give a*_x7(r), the frozen boundary on exploratory seeds, paired",
+  "cells": "all 81 tier-1 cells (family B, observed channel, r in R, a in G)",
+  "statistic": "per r a*_rich(r) and a*_x7(r) with inverted intervals and censoring; per cell delta = AUC_rich - AUC_x7 with a paired bootstrap of 1,000 resamples and the same network indices",
+  "reading": {
+   "frozen_far_from_ceiling": "upper end of the a*_rich(r) interval below the point a*_x7(r), or delta intervals above 0 at the cells between the two boundaries",
+   "frozen_close_to_ceiling": "equal boundaries and delta intervals around a*_x7(r) inside [-0.02, 0.02]",
+   "inconclusive": "every other case",
+   "null_gate": "frozen rule at a = 0 for the rich LDA; an invalid unit is reported as invalid",
+   "not_bayes": "population AUC_rich is at most the Bayes AUC, so the population a*_rich bounds the optimal first crossing on the grid from above, like the frozen boundary; possibly tighter, still a bound; equality does not prove optimality; the Bayes procedure uses the likelihood of all 10,626 trajectories",
+   "after_release": "a*_rich(r) side by side with the confirmatory a*(r), with a*_x7(r) as the paired same-seed reference"
+  },
+  "bitwise_precondition": "the X7 pipeline is the frozen pipeline generalized by a feature extractor; with the frozen extractor (profile columns 2:5) it reproduces the frozen v4_curve.execute_cell store byte for byte at the X1b cells (0, 0.9), (0.003, 0.7), (0.03, 0.5) and (0.3, 0.6) with X7 seeds",
+  "compute": {
+   "per_cell_hours": 1.1,
+   "nominal": 90,
+   "adverse": 300
+  },
+  "seeds": {
+   "analysis": "x7",
+   "block": "2 * reliability index + attempt",
+   "phases": "frozen",
+   "common_across_strengths": true
+  },
+  "outputs": "per-cell stores in the sealed store; results/x7.json after the release"
+ },
+ "implementation": "a separate successor module with tests; imports frozen components and the X1/X2 utilities unedited; records the SHA-256 of README-x3-x7.md and declaration-x3-x7.json",
+ "outputs": "aggregate JSON in this folder with code commit, derived seeds, hosts and timings, plus a short PT-BR report; X5 when complete, X3, X4, X6 and X7 only after the release",
+ "paper_use": "reported as pre-declared exploratory analyses with whatever result they give, including null, failure or incomplete execution; the headline stays the confirmatory curve; on registration, claim-evidence row DS10 stops listing R2-M1, R2-M2 and R2-M5 as unplanned limitations and points here",
+ "coordinator_confirmations": [
+  "X6 truth: frozen estimand D1 (expected AUC over 1,024-panel matching draws) primary; population-matched null secondary",
+  "X3, X4, X6 and X7 sealed until the confirmatory release; X5 readable on completion",
+  "X5 attrition magnitudes are labelled stress scenarios, not estimates",
+  "X4b uses the reduced 27-cell subset",
+  "A failed bitwise precondition may be fixed in successor code before any declared-size run, with full re-verification and every attempt recorded",
+  "Execution cutoff 2026-10-10T02:59Z; priority order if compute runs short: preconditions, X5, X7, X3, X4a, X4b, X6a, X6b",
+  "X6 cells: the whole r = 0.70 unit plus the two remaining G2 cells"
+ ]
+}

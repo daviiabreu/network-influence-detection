@@ -1,0 +1,204 @@
+{
+  "format": "exploratory-rational-counterexample-1",
+  "executed_at_utc": "2026-09-12T23:06:18.200267+00:00",
+  "python_version": "3.9.6",
+  "base_commit": "623704c4a7aa3db4fcf4e44f445bbaf6f8e4b34a",
+  "model": "symmetric Deffuant-Weisbuch; fixed undirected base graph; strict confidence",
+  "primary_method": "https://arxiv.org/html/2605.20418v2",
+  "method_locator": "SectionsII-III; SectionV.2Eq31; Theorem4",
+  "parameters": {
+    "mu": "1/2",
+    "confidence": "1/10",
+    "tolerance": "1/100",
+    "initial_edge_weights": "1/2",
+    "weight_increase_gamma": "1/2",
+    "weight_decrease_delta": "1/2"
+  },
+  "trace": [
+    {
+      "step": 0,
+      "conditioned_update": null,
+      "opinions_rational": [
+        "0",
+        "9/1000",
+        "12/125",
+        "21/200"
+      ],
+      "edge_weights_rational": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "effective_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "effective_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "component_diameters_rational": [
+        "9/1000",
+        "9/1000"
+      ],
+      "diameter_rule_accepts": true,
+      "component_interval_separation_holds": false,
+      "bridge_gap_rational": "21/200"
+    },
+    {
+      "step": 1,
+      "conditioned_update": [
+        0,
+        1
+      ],
+      "opinions_rational": [
+        "9/2000",
+        "9/2000",
+        "12/125",
+        "21/200"
+      ],
+      "edge_weights_rational": [
+        "3/4",
+        "1/2",
+        "1/2"
+      ],
+      "effective_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "effective_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "component_diameters_rational": [
+        "0",
+        "9/1000"
+      ],
+      "diameter_rule_accepts": true,
+      "component_interval_separation_holds": false,
+      "bridge_gap_rational": "201/2000"
+    },
+    {
+      "step": 2,
+      "conditioned_update": [
+        2,
+        3
+      ],
+      "opinions_rational": [
+        "9/2000",
+        "9/2000",
+        "201/2000",
+        "201/2000"
+      ],
+      "edge_weights_rational": [
+        "3/4",
+        "3/4",
+        "1/2"
+      ],
+      "effective_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "effective_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "component_diameters_rational": [
+        "12/125"
+      ],
+      "diameter_rule_accepts": false,
+      "component_interval_separation_holds": true,
+      "bridge_gap_rational": "12/125"
+    },
+    {
+      "step": 3,
+      "conditioned_update": [
+        0,
+        3
+      ],
+      "opinions_rational": [
+        "21/400",
+        "9/2000",
+        "201/2000",
+        "21/400"
+      ],
+      "edge_weights_rational": [
+        "3/4",
+        "3/4",
+        "3/4"
+      ],
+      "effective_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "effective_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "component_diameters_rational": [
+        "12/125"
+      ],
+      "diameter_rule_accepts": false,
+      "component_interval_separation_holds": true,
+      "bridge_gap_rational": "0"
+    }
+  ],
+  "seed": null,
+  "seed_reason": "Deterministic conditional path evaluated using fractions.Fraction; no stochastic simulation.",
+  "verification": "All three selected updates satisfy strict confidence. Component calculation uses only receptive base edges. Rational assertions passed.",
+  "interpretation": "The diameter stopping predicate can accept a transient partition on a sparse graph. Does not claim actual external code checks at t=0, violation of complete-graph theorem, experimental prevalence, or change of published aggregate results.",
+  "source_code_executed": false,
+  "scientific_acceptance": false
+}

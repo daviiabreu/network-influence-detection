@@ -1,0 +1,45 @@
+% IN04
+Opinion-dynamics models explain collective patterns through rules for individual change, including accommodation to contacts, resistance to distant opinions, and responses to outside information \cite{flache2017}. A good fit to population distributions can still leave competing accounts of individual change unresolved.
+% IN08
+We ask how much nominal partner drift a synthetic opinion process needs before a fixed discriminator can separate its trajectories from matched no-network persistence at different response signal shares. The study specifies an operational detection boundary $a^*(r)$: a curve of drift strength against response signal share, conditional on the simulated laws and discriminator. It does not identify causal social influence.
+
+% IN05
+Survey panels follow respondents, but each recorded category is an imperfect report of an attitude at a particular occasion. A response that changes between annual interviews could reflect durable movement, a temporary state, or reporting error. An unchanged category could conceal latent movement within it. Classical panel methods address the fact that observed stability combines stability of the underlying construct with measurement reliability \cite{heise1969,wiley1970}. Achen showed how vague survey questions can make political attitudes appear more volatile than they are \cite{achen1975}. These results require the observation process to enter comparisons of dynamic models.
+
+% IN06
+Kiley and Vaisey contrast active updating with settled dispositions in three-wave General Social Survey panels \cite{kiley2020}. They argue that frequent between-wave updating can resemble settled dispositions with high measurement error. Lersch extends the comparison to longer panels, including the Swiss Household Panel (SHP) \cite{lersch2023}. These studies already establish stability versus updating as a substantive and methodological question. We infer from this ambiguity that separation in a clean simulation need not survive noisy annual observation.
+
+% Paragraphs 4 and 5 integrated 2026-09-28 from
+% pipeline/drafts/2026-09-28/introduction-positioning-v4.tex. Markers IPxx and
+% INxx map to rows in claim-evidence.md, section "Introduction (integrated
+% 2026-09-28)". No v4 gate or tier result is stated or implied.
+% IP01
+Gestefeld and Lorenz calibrate a model with interpersonal updating to European Social Survey opinion distributions and to individual transitions in the SHP, using 11 annual waves of trust in government. They note that these data contain no information about individuals' communication, which limits what they can establish about the modeled interactions \cite{gestefeld2023}.
+% IP02
+Using repeated individual responses and communication records, the CoDiNG preprint concludes that opinion-dynamics models often fail to outperform trivial baselines such as keeping one's opinion \cite{coding2024}.
+% IP03
+Moor-Smith and Carpentras find that a minimum amount of drift is needed before a model beats a no-change baseline on repeated cross-sectional distributions, and report signs that under noise the calibration optimizer learns to mimic that baseline and ``freeze'' \cite{moor2026}.
+% IP04
+Carpentras and Quayle show that transforming a measurement scale can alter the apparent predictive fit of an agent-based model \cite{carpentras2023}.
+% IP05
+Separately, power analysis shows that reliability, number of waves and sample size jointly limit detection of within-person lagged effects \cite{dang2026}, using a simulation tool built to vary those conditions \cite{mulder2023}, and that influence effects can have low power even when the network is observed \cite{stadtfeld2020}.
+% IP06
+For a household panel that records no exposure beyond co-residence, the relevant model comparison concerns what temporal information remains after a persistence rival reproduces short-term stability. Varying the response signal share makes the observation assumptions part of that comparison.
+
+% IN01 IN09
+Our generator is a rank-transported autoregression: rank transport reorders the updated states and places them on the same fixed set of quantiles at each wave, preserving the marginal distribution. Its innovation is shared between noise and a standardized drift toward near partners and away from distant ones on an unobserved random network; we call this component \emph{partner drift}, and its nominal strength $a$ is a share of the pre-transport innovation budget, not a measured share of realized attitude change. Eleven-wave panels use SHP-like geometry, and the response signal share $r$ is the latent state's share of variance in the continuous response before discretization. The frozen-protocol estimand is the entire boundary $a^{*}(r)$ on a fixed grid $r=0.50$--$0.90$; $r=0.70$ is illustrative.
+
+% IN01 IN09
+The confirmatory null family, trait-plus-autoregressive persistence (B), combines a stable trait with autoregressive updating. The secondary nulls are autoregressive persistence (A), the same process observed with mid-scale response error and heaping (C), state-dependent persistence (D) and mover--stayer persistence (E). Arms share observation geometry and category targets. Matching makes each persistence rival reproduce selected observed short-lag population moments of the drift arm: two-parameter nulls match lag-one and lag-two correlations, and one-parameter nulls match lag one and report the lag-two residual. Both arms receive the same known signal share, fixed outside the outcome analysis. The discriminator scores a whole simulated panel, not a respondent, and its area under the receiver operating characteristic curve (AUC) measures how well these scores rank panels from the drift arm above panels from persistence.
+
+% IP07 IP08 IP09
+No single component of this design is new. In a documented but limited search of OpenAlex, Semantic Scholar and arXiv on 27--28 September 2026, we found no study that combines them to estimate how the drift strength needed to separate panels from matched persistence nulls varies with the response signal share, although such a search cannot show that none exists (Section~\ref{sec:related}). The combination gives researchers studying attitude change a controlled comparison of dynamic models under declared measurement conditions, rather than treating a good short-lag fit as sufficient validation. The boundary concerns the information used by this discriminator; non-attainment does not establish indistinguishability. Any separation could reflect individual persistence shaped by state rather than an interpersonal mechanism.
+
+% IN02
+The resulting boundary is conditional on the generators, observation channel, matching rule, panel size, and prespecified discriminator. It is a property of two simulated laws, not a universal identifiability threshold or a test for actual interpersonal influence: both arms share a known signal share, and each null is matched to the interaction arm's population lag moments, averaged over many simulated panels, so the boundary is not the power of a test that an analyst holding one observed panel could run. The SHP-like geometry approximates, without reconstructing it from microdata, the survey's pattern of annual observation, attrition and renewal, but apart from household co-residence the SHP records no contacts or exposures. Manski's reflection problem shows why group outcomes alone do not identify endogenous peer effects without information about reference groups \cite{manski1993}; Shalizi and Thomas show how homophily and contagion can be confounded in observational network data \cite{shalizi2011}. Even if panels with partner drift become distinguishable, a different individual process could reproduce the same observed transition law. We therefore interpret any separation as discrimination between dynamic patterns under stated assumptions.
+
+% IN03
+The frozen design requires first and sustained boundaries, non-attainment, infeasible cells, matching failures and uncertainty to be reported for every value of $r$. The hash-bound validation gate is a prerequisite for evaluation on reserved seeds. Execution follows a fixed tier order and a fixed compute close: the confirmatory comparison comes first and secondary nulls second. Later tiers with controls, mobility summaries, and sensitivities may therefore be incomplete. The design, including every reporting rule, was fixed before any confirmatory result was released.
+
+% IN07
+The following sections relate this finite-design discrimination question to longitudinal measurement and opinion-model comparisons, then specify the generators, observation channel, matching and inference. Results and Discussion follow the registered release and interpretation rules.

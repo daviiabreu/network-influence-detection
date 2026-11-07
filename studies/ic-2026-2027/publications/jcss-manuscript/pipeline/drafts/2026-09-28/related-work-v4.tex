@@ -1,0 +1,85 @@
+% Draft 2026-09-28: full replacement for sections/related-work.tex.
+% Source: research/literature/positioning-a-star-r/dossier.md (verdict: partial
+% overlap). Markers R23--R59 map to pipeline/drafts/2026-09-28/related-work-v4-ledger.md;
+% they continue after the R01--R22 rows of claim-evidence.md, which describe the
+% superseded section. No v4 gate or tier result is stated or implied.
+
+% R23
+Gestefeld and Lorenz calibrate an interaction model to European Social Survey distributions and to 50,008 annual opinion transitions from 10,627 SHP respondents \cite{gestefeld2023}.
+% R24
+Their fit is assessed against a binomial reference rather than a persistence null, and they note that such data cannot validate the modeled interactions because they contain no information about communication \cite{gestefeld2023}.
+% R25
+With repeated individual surveys and observed communication events, the CoDiNG study finds that a baseline in which everyone keeps their opinion reaches a high overall F1 while detecting no change, and concludes that opinion-dynamics models often fail to outperform trivial baselines on real-world data \cite{coding2024}.
+% R26
+Achitouv and colleagues contrast interaction and persistence mechanisms using observed retweet exposures \cite{achitouv2026}.
+% R27
+Moor-Smith and Carpentras compare four opinion-dynamics models with a ``no change'' baseline on synthetic data and European Social Survey series, and report that a minimum amount of opinion drift is required before a model's explained variance exceeds that baseline \cite{moor2026}.
+% R28
+Adding noise to locate where reconstruction becomes infeasible, they find signs that the optimizer learns to mimic the null and ``freeze'' where the signal becomes unclear \cite{moor2026}.
+% R29
+This is the closest antecedent in spirit, and $a^*(r)$ could be read as its panel version.
+% R30
+They use cross-sectional distributions as a proxy for longitudinal ground truth and add noise to the evolving process \cite{moor2026}; we analyze individual trajectories, place error only in a response channel with externally fixed reliability $r$, match flexible persistence nulls on observed lag-one and lag-two moments, and evaluate panel-level AUC with a fixed discriminator.
+
+% R31
+Carpentras and Quayle find that random noise and scale distortions, unlike binning, can strongly affect the predictions of the Deffuant model \cite{carpentras2022}, and that because monotone distortions can make a model's own data look incompatible with it, poor predictions are not necessarily evidence that a model is poor \cite{carpentras2023}.
+% R32
+Neither study compares an influence model with a no-influence null or varies reliability in a panel.
+% R33
+Survey research frames the same ambiguity as real change versus response instability: Hill and Kriesi's four-wave Swiss panel analysis separates stable, unstable and changing respondents and reports results that undermine a pure measurement-error account \cite{hill2001,hillkriesi2001}.
+% R34
+Kiley and Vaisey note that if active updating is frequent enough for people to change between every wave, it becomes indistinguishable from settled dispositions with high measurement error \cite{kiley2020}.
+% R35
+Lersch shows with simulated data that persistent change cannot be reliably identified in a three-wave panel, and turns to long household panels, the SHP among them \cite{lersch2023}.
+% R36
+We therefore separate the response channel from latent updating and include trait-plus-autoregressive and mover--stayer structures among the persistence nulls.
+% R37
+The grid value $r$ is a declared sensitivity parameter rather than an estimate for the SHP trust item, since published panel reliabilities concern other items \cite{antoun2026,lucasdonnellan2012}.
+
+% R38
+Mulder presents simulation-based power analysis for the random-intercept cross-lagged panel model in the powRICLPM package, whose conditions include sample size, number of waves, between-unit variance and indicator reliability \cite{mulder2023}.
+% R39
+With that tool, reliability of 0.60, 0.70 or 0.80, three to five waves and up to 10,000 respondents, Dang and Ma show that power to detect within-person cross-lagged effects depends jointly on reliability, intraclass correlation, number of waves, sample size and target effect size \cite{dang2026}.
+% R40
+Lucas shows in simulated data that the cross-lagged panel model is very likely to find spurious cross-lagged effects when they do not exist, which motivates our trait-plus-autoregressive null \cite{lucas2023}.
+% R41
+For influence in observed networks, Stadtfeld and colleagues show that power in stochastic actor-oriented models is strongly affected by network size, waves, effect sizes, missing data and turnover; with two waves and 30 actors, power for the influence effect is only 10 percent \cite{stadtfeld2020}.
+% R42
+Agent-based ground truth has also been used to test whether longitudinal estimators separate influence from homophily, without a response-error channel of the present kind \cite{zachrison2016,daza2021}.
+% R43
+Two further studies treat measurement error in social-influence inference as error in the observed network, not the response: Xu and Frank propose a simulation-based sensitivity analysis for selection mechanisms that bias network observations, and Advani and Malde review identification of social effects when networks form endogenously or are imperfectly observed \cite{xu2021sensitivity,advani2018credibly}.
+% R44
+Our study could be read as an applied power analysis, but it differs in generator, null and criterion.
+% R45
+The generator is a nonlinear interaction process among people rather than a within-person linear path; the alternative is a family of no-influence generators matched on observed moments rather than a zero coefficient; and the criterion is the AUC of a fixed discriminator on lag-three to lag-five features rather than the significance of an estimated parameter.
+% R46
+That more waves or higher reliability ease detection is expected from this literature and is not a result we claim.
+
+% R47
+Lenti, Monti and De Francisci Morales estimate bounded-confidence parameters by likelihood with fully observed opinions and interactions, partially observed interactions, and noisy opinion proxies \cite{lenti2024}; Borile and colleagues show that joint estimation is affected by identifiability issues in specific regions of parameter space \cite{borile2026}.
+% R48
+Tang, Snijders and Flache separate bounded confidence from negative influence with a stochastic actor-oriented model on longitudinal friendship-network data \cite{tang2025empirical}.
+% R49
+Ureña-Carrion, Peixoto and Iñiguez assume a known network and fully observed node states, compare the detectability of binary spreading mechanisms, including an independent one, across parameter space, and show that statistical model selection can fail under common conditions \cite{urena2026}.
+% R50
+They present this, to their knowledge, as the first systematic effort to assess detectability limits and the prevalence of paradigmatic mechanisms in networked spreading \cite{urena2026}.
+% R51
+Our question shares the idea of a detectability map but not its observation regime: opinions are continuous and recorded through a noisy ordinal channel, the network is unobserved, and the discriminator is a fixed summary classifier rather than an exact likelihood.
+% R52
+Without observed exposure, influence is not causally identified \cite{manski1993}, so any separation is read as discrimination between dynamic patterns.
+
+% R53
+Gelastopoulos, Sage and van de Rijt prove that any longitudinal data with systematic differences can also be produced by a reinforcement-driven process, so that pure reinforcement and pure heterogeneity models are generically confounded \cite{gelastopoulos2025}.
+% R54
+Their reinforcement is within-person, not interpersonal, but the result warns that trait-based nulls can mimic dynamics; $a^*(r)$ is a finite contrast against a fixed family matched only at lags one and two, with the signal sought at lags three to five, so it does not contradict generic equivalence, and non-attainment is read as compatibility with the declared nulls, never as indistinguishability.
+% R55
+Because the AUC of the fixed linear discriminant bounds the Bayes-optimal AUC from below, an attained $a^*(r)$ on a complete grid is an upper bound on the threshold of an optimal discriminator under the same laws, not a minimax or asymptotic limit.
+
+% R56
+We ran ten pre-declared English-language queries unchanged on OpenAlex, Semantic Scholar and arXiv on 27--28 September 2026 and screened the first 20 results per query and service, 399 titles in all; eight records were relevant, five of them corresponding to works discussed above and three new \cite{carpentras2022,xu2021sensitivity,advani2018credibly}.
+% R57
+Coverage was limited: two Semantic Scholar queries failed on rate limits, the unavailable arXiv API was replaced by the site search, relevance ranking favored highly cited work from other fields, several of the closest works surfaced only through citation, and theses, non-English literature and survey methodology were not searched.
+% R58
+Within this search and the works read, we did not identify a study that estimates the minimum influence strength at which individual panel trajectories become distinguishable from a family of matched no-influence persistence nulls as a function of response reliability; absence from a limited search is not proof of absence.
+% R59
+No single component is new: minimum signal against persistence \cite{moor2026,coding2024}, reliability-dependent sensitivity \cite{mulder2023,dang2026}, power for influence \cite{stadtfeld2020} and detectability maps \cite{urena2026} all have antecedents; what we did not find is their conjunction, namely an interpersonal influence generator without an observed network, response error separated from the process with $r$ fixed externally on a grid, persistence nulls matched to the same observed lag-one and lag-two moments, a pre-registered fixed discriminator with panel-level AUC, and a minimum strength on a fixed grid reported as a censored curve $a^*(r)$.

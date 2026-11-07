@@ -1,0 +1,6452 @@
+{
+  "schema": "ic-study.v4-manuscript-assembly-repin.v1",
+  "sources": {
+    "results": {
+      "path": "pipeline/drafts/2026-09-28/results-shells.tex",
+      "before": "ec298bd932a26b6843d0b6ddff719dfb339f8d6a3f1b8684bcac0f3106381771",
+      "after": "ec298bd932a26b6843d0b6ddff719dfb339f8d6a3f1b8684bcac0f3106381771"
+    },
+    "abstract": {
+      "path": "pipeline/drafts/2026-09-28/results-shells-abstract.md",
+      "before": "e298e27f79a0f6b4f51515233c64dfb7886747fd745a321be4840147f8b54b52",
+      "after": "e298e27f79a0f6b4f51515233c64dfb7886747fd745a321be4840147f8b54b52"
+    },
+    "discussion": {
+      "path": "pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+      "before": "75e5044a8388f2f4334f99e01fa94740466fff882d49e4955c5450d5326e6354",
+      "after": "454609f214b6da0c1cdb9e89a5fcd1a4f7fa0858f477a4188f3eaaac084ab53f"
+    },
+    "exploratory": {
+      "path": "pipeline/drafts/2026-09-30/exploratory-results-shells.tex",
+      "before": "1f48cadaf1cedf280782ee1539d65efe17f79a9b209f3fd815f9907b9fa9cd6f",
+      "after": "1f48cadaf1cedf280782ee1539d65efe17f79a9b209f3fd815f9907b9fa9cd6f"
+    }
+  },
+  "rules": [
+    {
+      "id": "B1a",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        117,
+        135
+      ],
+      "new_locator": [
+        117,
+        135
+      ],
+      "diff_candidate_locator": [
+        117,
+        135
+      ],
+      "before_sha256": "2addee6a8518e388e83cbfdb831835f4d7637afbc8970e3618d8eeb9196e8ca9",
+      "after_sha256": "2addee6a8518e388e83cbfdb831835f4d7637afbc8970e3618d8eeb9196e8ca9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1b-G0",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        139,
+        156
+      ],
+      "new_locator": [
+        139,
+        156
+      ],
+      "diff_candidate_locator": [
+        139,
+        156
+      ],
+      "before_sha256": "2ddf03f3daa15f97c8b09f00ae1fad1afa8ac43f001ec00aeec115cee944daa6",
+      "after_sha256": "2ddf03f3daa15f97c8b09f00ae1fad1afa8ac43f001ec00aeec115cee944daa6",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1b-G1b",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        160,
+        177
+      ],
+      "new_locator": [
+        160,
+        177
+      ],
+      "diff_candidate_locator": [
+        160,
+        177
+      ],
+      "before_sha256": "a74481e946b99823b22d64ec2041974f067bfb9b0a70e3d0e42284c308c62a89",
+      "after_sha256": "a74481e946b99823b22d64ec2041974f067bfb9b0a70e3d0e42284c308c62a89",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1b-G1c",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        181,
+        198
+      ],
+      "new_locator": [
+        181,
+        198
+      ],
+      "diff_candidate_locator": [
+        181,
+        198
+      ],
+      "before_sha256": "4004d53f7947aa03edfcf43d51039246c5930767ea349a529acb756a2110398d",
+      "after_sha256": "4004d53f7947aa03edfcf43d51039246c5930767ea349a529acb756a2110398d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1c",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        202,
+        215
+      ],
+      "new_locator": [
+        202,
+        215
+      ],
+      "diff_candidate_locator": [
+        202,
+        215
+      ],
+      "before_sha256": "99866a0317972e1773264ad9830aa37edc3995615c78ed27bf6de51104c12074",
+      "after_sha256": "99866a0317972e1773264ad9830aa37edc3995615c78ed27bf6de51104c12074",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1b-G2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        219,
+        247
+      ],
+      "new_locator": [
+        219,
+        247
+      ],
+      "diff_candidate_locator": [
+        219,
+        247
+      ],
+      "before_sha256": "98d691da1d3b5bffd3965cdec0cf3482ec611d157b546dbf7dcced9502c2fa33",
+      "after_sha256": "98d691da1d3b5bffd3965cdec0cf3482ec611d157b546dbf7dcced9502c2fa33",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1b-G2c",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        251,
+        270
+      ],
+      "new_locator": [
+        251,
+        270
+      ],
+      "diff_candidate_locator": [
+        251,
+        270
+      ],
+      "before_sha256": "620effaf1a200a4723d4c9d3540fbad885cb0281ef1b1ad66093ff47a79e1682",
+      "after_sha256": "620effaf1a200a4723d4c9d3540fbad885cb0281ef1b1ad66093ff47a79e1682",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1d",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        274,
+        285
+      ],
+      "new_locator": [
+        274,
+        285
+      ],
+      "diff_candidate_locator": [
+        274,
+        285
+      ],
+      "before_sha256": "f680ddcf1d088f9671f9a5997c9b9e36a54613e9200d076f8d873a10e246cd18",
+      "after_sha256": "f680ddcf1d088f9671f9a5997c9b9e36a54613e9200d076f8d873a10e246cd18",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1-END",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        289,
+        296
+      ],
+      "new_locator": [
+        289,
+        296
+      ],
+      "diff_candidate_locator": [
+        289,
+        296
+      ],
+      "before_sha256": "52724b54bf404d2d2cef1b63ca023ce1570ffec14305b7692b78adc78ac5a7be",
+      "after_sha256": "52724b54bf404d2d2cef1b63ca023ce1570ffec14305b7692b78adc78ac5a7be",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B1-SHP",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        300,
+        323
+      ],
+      "new_locator": [
+        300,
+        323
+      ],
+      "diff_candidate_locator": [
+        300,
+        323
+      ],
+      "before_sha256": "ab36c27b00b849244ea7ea4e7c902c2c173cccfecbcf6ebc041ddb6346a6901c",
+      "after_sha256": "ab36c27b00b849244ea7ea4e7c902c2c173cccfecbcf6ebc041ddb6346a6901c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        327,
+        347
+      ],
+      "new_locator": [
+        327,
+        347
+      ],
+      "diff_candidate_locator": [
+        327,
+        347
+      ],
+      "before_sha256": "57b8e977dfe9e696acf5f134dd9bd4bb4612bae932a9e076679ca2395eea81ed",
+      "after_sha256": "57b8e977dfe9e696acf5f134dd9bd4bb4612bae932a9e076679ca2395eea81ed",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02.lead",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        340,
+        340
+      ],
+      "new_locator": [
+        340,
+        340
+      ],
+      "diff_candidate_locator": [
+        340,
+        340
+      ],
+      "before_sha256": "5bfcc1a875d18c32447eb9cead1b253b493ae62f9a2da436db597fa5798599cd",
+      "after_sha256": "5bfcc1a875d18c32447eb9cead1b253b493ae62f9a2da436db597fa5798599cd",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02.gate",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        342,
+        342
+      ],
+      "new_locator": [
+        342,
+        342
+      ],
+      "diff_candidate_locator": [
+        342,
+        342
+      ],
+      "before_sha256": "2fe975922c987b3c122b4c30844783f5da36f5d3f32a9ed88d505cf80482c528",
+      "after_sha256": "2fe975922c987b3c122b4c30844783f5da36f5d3f32a9ed88d505cf80482c528",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02.a0gap",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        343,
+        343
+      ],
+      "new_locator": [
+        343,
+        343
+      ],
+      "diff_candidate_locator": [
+        343,
+        343
+      ],
+      "before_sha256": "571ba6daf95d683bb75ef528a8d495ef2f78b629a3f659b52bf9f8f410762911",
+      "after_sha256": "571ba6daf95d683bb75ef528a8d495ef2f78b629a3f659b52bf9f8f410762911",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02.clock",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        344,
+        344
+      ],
+      "new_locator": [
+        344,
+        344
+      ],
+      "diff_candidate_locator": [
+        344,
+        344
+      ],
+      "before_sha256": "c9b837ff725dad4cdb7d4fcf347642da71d9fe5f2b4b22e6ff61a3873d32d0c7",
+      "after_sha256": "c9b837ff725dad4cdb7d4fcf347642da71d9fe5f2b4b22e6ff61a3873d32d0c7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02.limits.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        345,
+        345
+      ],
+      "new_locator": [
+        345,
+        345
+      ],
+      "diff_candidate_locator": [
+        345,
+        345
+      ],
+      "before_sha256": "9bb9829b0c3327dc0a4fc8e9c7e6b43acb5c8912b91b37396955d63bde1812c2",
+      "after_sha256": "9bb9829b0c3327dc0a4fc8e9c7e6b43acb5c8912b91b37396955d63bde1812c2",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B02.limits.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        346,
+        346
+      ],
+      "new_locator": [
+        346,
+        346
+      ],
+      "diff_candidate_locator": [
+        346,
+        346
+      ],
+      "before_sha256": "de390d89c9d21db6fa663fd9927e9758bf0af3715432ff0d514c55d899e83e94",
+      "after_sha256": "de390d89c9d21db6fa663fd9927e9758bf0af3715432ff0d514c55d899e83e94",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B03",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        351,
+        365
+      ],
+      "new_locator": [
+        351,
+        365
+      ],
+      "diff_candidate_locator": [
+        351,
+        365
+      ],
+      "before_sha256": "1360c440232d3babbf127e7d01a08d3f047e845030658366c1ea3e9bc1767455",
+      "after_sha256": "1360c440232d3babbf127e7d01a08d3f047e845030658366c1ea3e9bc1767455",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        369,
+        389
+      ],
+      "new_locator": [
+        369,
+        389
+      ],
+      "diff_candidate_locator": [
+        369,
+        389
+      ],
+      "before_sha256": "effafde5740395d3f0f8e5892624fd693ad07ea26c3429cc3873420817ad5823",
+      "after_sha256": "effafde5740395d3f0f8e5892624fd693ad07ea26c3429cc3873420817ad5823",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.low.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        378,
+        378
+      ],
+      "new_locator": [
+        378,
+        378
+      ],
+      "diff_candidate_locator": [
+        378,
+        378
+      ],
+      "before_sha256": "fc3c3f4cdcdc111b662b65e33864e86cdd3c8f8f4fd4d34710eb7b661bbbe8a7",
+      "after_sha256": "fc3c3f4cdcdc111b662b65e33864e86cdd3c8f8f4fd4d34710eb7b661bbbe8a7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.low.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        379,
+        379
+      ],
+      "new_locator": [
+        379,
+        379
+      ],
+      "diff_candidate_locator": [
+        379,
+        379
+      ],
+      "before_sha256": "db0fee92d754c2a3cb3be54c7770b39da0f2df43959d93e10a12f86cbd25a2ab",
+      "after_sha256": "db0fee92d754c2a3cb3be54c7770b39da0f2df43959d93e10a12f86cbd25a2ab",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.low.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        380,
+        380
+      ],
+      "new_locator": [
+        380,
+        380
+      ],
+      "diff_candidate_locator": [
+        380,
+        380
+      ],
+      "before_sha256": "2c0998708af3ba63f10238750a765ad650ad59b886909a8ec2bcdef5d4d95ac1",
+      "after_sha256": "2c0998708af3ba63f10238750a765ad650ad59b886909a8ec2bcdef5d4d95ac1",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.low.4",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        381,
+        381
+      ],
+      "new_locator": [
+        381,
+        381
+      ],
+      "diff_candidate_locator": [
+        381,
+        381
+      ],
+      "before_sha256": "a4508a67497abe05d5ba44985a609b3a0da9ccf5a0b36b76c255a9ad67541305",
+      "after_sha256": "a4508a67497abe05d5ba44985a609b3a0da9ccf5a0b36b76c255a9ad67541305",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.low.5",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        382,
+        382
+      ],
+      "new_locator": [
+        382,
+        382
+      ],
+      "diff_candidate_locator": [
+        382,
+        382
+      ],
+      "before_sha256": "a3a24f05381d9cfb9a1f4926f48be2cc71d143943765740b195d9a0c7f4c9acb",
+      "after_sha256": "a3a24f05381d9cfb9a1f4926f48be2cc71d143943765740b195d9a0c7f4c9acb",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.low.6",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        386,
+        386
+      ],
+      "new_locator": [
+        386,
+        386
+      ],
+      "diff_candidate_locator": [
+        386,
+        386
+      ],
+      "before_sha256": "8a2ffd7f9ed4f947d75a9413b4a0a5d3612769ab521c46dc72491bb8e3c590ce",
+      "after_sha256": "8a2ffd7f9ed4f947d75a9413b4a0a5d3612769ab521c46dc72491bb8e3c590ce",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B04.zero",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        388,
+        388
+      ],
+      "new_locator": [
+        388,
+        388
+      ],
+      "diff_candidate_locator": [
+        388,
+        388
+      ],
+      "before_sha256": "671f27ed44688080e3decde0d413e4a41d98074a6e95a17ff3e7e8c2251b1191",
+      "after_sha256": "671f27ed44688080e3decde0d413e4a41d98074a6e95a17ff3e7e8c2251b1191",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B05",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        393,
+        407
+      ],
+      "new_locator": [
+        393,
+        407
+      ],
+      "diff_candidate_locator": [
+        393,
+        407
+      ],
+      "before_sha256": "8d78697c9e870c87eeb4a96ef660f829eb16fefc893ea94894cd9aa326f0dad8",
+      "after_sha256": "8d78697c9e870c87eeb4a96ef660f829eb16fefc893ea94894cd9aa326f0dad8",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B06",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        411,
+        425
+      ],
+      "new_locator": [
+        411,
+        425
+      ],
+      "diff_candidate_locator": [
+        411,
+        425
+      ],
+      "before_sha256": "13cf1e885e48b910d8a07a38ec5b1ce3095f7bceeafbc00cfcf7dc9a4091d40e",
+      "after_sha256": "13cf1e885e48b910d8a07a38ec5b1ce3095f7bceeafbc00cfcf7dc9a4091d40e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B07",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        429,
+        440
+      ],
+      "new_locator": [
+        429,
+        440
+      ],
+      "diff_candidate_locator": [
+        429,
+        440
+      ],
+      "before_sha256": "02999aa3fba7c3a41349790c38843997cdb34baaebffffe00057e8c0e8d054c3",
+      "after_sha256": "02999aa3fba7c3a41349790c38843997cdb34baaebffffe00057e8c0e8d054c3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        444,
+        466
+      ],
+      "new_locator": [
+        444,
+        466
+      ],
+      "diff_candidate_locator": [
+        444,
+        466
+      ],
+      "before_sha256": "32f656bbf5a7793f35f308189b9d13448eed931ccbfdf00274b0fbdffba72052",
+      "after_sha256": "32f656bbf5a7793f35f308189b9d13448eed931ccbfdf00274b0fbdffba72052",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08.main.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        459,
+        459
+      ],
+      "new_locator": [
+        459,
+        459
+      ],
+      "diff_candidate_locator": [
+        459,
+        459
+      ],
+      "before_sha256": "adf920c8ffa2e889d9474e7da0c64b65d6f082d152277fc961cbb8d41758852b",
+      "after_sha256": "adf920c8ffa2e889d9474e7da0c64b65d6f082d152277fc961cbb8d41758852b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08.main.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        460,
+        460
+      ],
+      "new_locator": [
+        460,
+        460
+      ],
+      "diff_candidate_locator": [
+        460,
+        460
+      ],
+      "before_sha256": "aab95951866e780e9b53f110bab3c83b7c0f964ecda182a5101b5306dee411cd",
+      "after_sha256": "aab95951866e780e9b53f110bab3c83b7c0f964ecda182a5101b5306dee411cd",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08.main.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        461,
+        461
+      ],
+      "new_locator": [
+        461,
+        461
+      ],
+      "diff_candidate_locator": [
+        461,
+        461
+      ],
+      "before_sha256": "1362f9d7942347dc74405f4c6829c657bd75214597187e594add35c5828eb18e",
+      "after_sha256": "1362f9d7942347dc74405f4c6829c657bd75214597187e594add35c5828eb18e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08.main.4",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        462,
+        462
+      ],
+      "new_locator": [
+        462,
+        462
+      ],
+      "diff_candidate_locator": [
+        462,
+        462
+      ],
+      "before_sha256": "27b81788edea4bc4551f31cc858565128c5a90d66cfcc25cd70b4d53c0760f7c",
+      "after_sha256": "27b81788edea4bc4551f31cc858565128c5a90d66cfcc25cd70b4d53c0760f7c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08.main.5",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        463,
+        463
+      ],
+      "new_locator": [
+        463,
+        463
+      ],
+      "diff_candidate_locator": [
+        463,
+        463
+      ],
+      "before_sha256": "5f3b257e3b5178cfaf1308aba253e719c492ba73ffa684bff50da311b3a8cad9",
+      "after_sha256": "5f3b257e3b5178cfaf1308aba253e719c492ba73ffa684bff50da311b3a8cad9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B08.dependency",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        465,
+        465
+      ],
+      "new_locator": [
+        465,
+        465
+      ],
+      "diff_candidate_locator": [
+        465,
+        465
+      ],
+      "before_sha256": "6019db4a4f5e490e4ada8b861e7d5169ce851c8f3d9b56153b4fa5f9fbeb3053",
+      "after_sha256": "6019db4a4f5e490e4ada8b861e7d5169ce851c8f3d9b56153b4fa5f9fbeb3053",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B09",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        470,
+        480
+      ],
+      "new_locator": [
+        470,
+        480
+      ],
+      "diff_candidate_locator": [
+        470,
+        480
+      ],
+      "before_sha256": "f65b2a4d2dd8e308baf715ca33268da9ba64d8c7ef4ec247ff5fce86cc8cce0c",
+      "after_sha256": "f65b2a4d2dd8e308baf715ca33268da9ba64d8c7ef4ec247ff5fce86cc8cce0c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B10",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        484,
+        502
+      ],
+      "new_locator": [
+        484,
+        502
+      ],
+      "diff_candidate_locator": [
+        484,
+        502
+      ],
+      "before_sha256": "a8a7d9bdc9bd4f8420c95a9f1db1b16b9c64781fa41ae1a81b73f1ee626e4805",
+      "after_sha256": "a8a7d9bdc9bd4f8420c95a9f1db1b16b9c64781fa41ae1a81b73f1ee626e4805",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B10.bd.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        495,
+        495
+      ],
+      "new_locator": [
+        495,
+        495
+      ],
+      "diff_candidate_locator": [
+        495,
+        495
+      ],
+      "before_sha256": "d454a48a6ab154879f94836c2124215ccd5bbe1434eb0c84e7e808c92bfced88",
+      "after_sha256": "d454a48a6ab154879f94836c2124215ccd5bbe1434eb0c84e7e808c92bfced88",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B10.bd.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        496,
+        496
+      ],
+      "new_locator": [
+        496,
+        496
+      ],
+      "diff_candidate_locator": [
+        496,
+        496
+      ],
+      "before_sha256": "31298fde2977299140e235c5edf939f2bcf68091f2f4239a261b7f74a396c33f",
+      "after_sha256": "31298fde2977299140e235c5edf939f2bcf68091f2f4239a261b7f74a396c33f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B10.bd.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        497,
+        497
+      ],
+      "new_locator": [
+        497,
+        497
+      ],
+      "diff_candidate_locator": [
+        497,
+        497
+      ],
+      "before_sha256": "e828e68620b9caf58d636390eeec8785271d570c17980061ca0a01a658cafc6d",
+      "after_sha256": "e828e68620b9caf58d636390eeec8785271d570c17980061ca0a01a658cafc6d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B10.be",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        500,
+        500
+      ],
+      "new_locator": [
+        500,
+        500
+      ],
+      "diff_candidate_locator": [
+        500,
+        500
+      ],
+      "before_sha256": "e358e2e9832563228b9f02a4cff154338eb7c3fbfd1eb822041a29199525e156",
+      "after_sha256": "e358e2e9832563228b9f02a4cff154338eb7c3fbfd1eb822041a29199525e156",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B10.bc",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        501,
+        501
+      ],
+      "new_locator": [
+        501,
+        501
+      ],
+      "diff_candidate_locator": [
+        501,
+        501
+      ],
+      "before_sha256": "1220dfd24f3e54ba6604d161eb55a899825997566efb4f3b159ce54ca6a61157",
+      "after_sha256": "1220dfd24f3e54ba6604d161eb55a899825997566efb4f3b159ce54ca6a61157",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B11",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        506,
+        526
+      ],
+      "new_locator": [
+        506,
+        526
+      ],
+      "diff_candidate_locator": [
+        506,
+        526
+      ],
+      "before_sha256": "7fc4c4d67003edf975466ac9c77dcb1b30aa116583b5f64f059c85ba3c3d4c6f",
+      "after_sha256": "7fc4c4d67003edf975466ac9c77dcb1b30aa116583b5f64f059c85ba3c3d4c6f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        530,
+        544
+      ],
+      "new_locator": [
+        530,
+        544
+      ],
+      "diff_candidate_locator": [
+        530,
+        544
+      ],
+      "before_sha256": "22b74abdd4aa8e5c45d43844cc7d919c31b6a4994b708daa039b68bb9aacaacf",
+      "after_sha256": "22b74abdd4aa8e5c45d43844cc7d919c31b6a4994b708daa039b68bb9aacaacf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12.inventory",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        537,
+        537
+      ],
+      "new_locator": [
+        537,
+        537
+      ],
+      "diff_candidate_locator": [
+        537,
+        537
+      ],
+      "before_sha256": "000bcf78779ece30ecb1138965ee5a8777c2a3c932da5f3404358fa4a5aa7937",
+      "after_sha256": "000bcf78779ece30ecb1138965ee5a8777c2a3c932da5f3404358fa4a5aa7937",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12.region.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        539,
+        539
+      ],
+      "new_locator": [
+        539,
+        539
+      ],
+      "diff_candidate_locator": [
+        539,
+        539
+      ],
+      "before_sha256": "264d9365375bc10e2abd7a70736baeca05d434369bf6c9d3a10ce0a5591c857d",
+      "after_sha256": "264d9365375bc10e2abd7a70736baeca05d434369bf6c9d3a10ce0a5591c857d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12.region.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        540,
+        540
+      ],
+      "new_locator": [
+        540,
+        540
+      ],
+      "diff_candidate_locator": [
+        540,
+        540
+      ],
+      "before_sha256": "551a3b00d92bba56160e6c9a68b7331b95b0114235bc31297b80d79b3100f63c",
+      "after_sha256": "551a3b00d92bba56160e6c9a68b7331b95b0114235bc31297b80d79b3100f63c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12.scope.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        541,
+        541
+      ],
+      "new_locator": [
+        541,
+        541
+      ],
+      "diff_candidate_locator": [
+        541,
+        541
+      ],
+      "before_sha256": "32fb8975591e693bf0f66164f782c2ed9f056a657b4aed26e2a213f592ce15eb",
+      "after_sha256": "32fb8975591e693bf0f66164f782c2ed9f056a657b4aed26e2a213f592ce15eb",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12.scope.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        542,
+        542
+      ],
+      "new_locator": [
+        542,
+        542
+      ],
+      "diff_candidate_locator": [
+        542,
+        542
+      ],
+      "before_sha256": "40aa07856ab675a739db684a180cfe7897d2e84eb6e7b76aa929d6cb783e384e",
+      "after_sha256": "40aa07856ab675a739db684a180cfe7897d2e84eb6e7b76aa929d6cb783e384e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B12.scope.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        543,
+        543
+      ],
+      "new_locator": [
+        543,
+        543
+      ],
+      "diff_candidate_locator": [
+        543,
+        543
+      ],
+      "before_sha256": "f23d5d973af87ebd5004713a216b368eef62c1ef0842441a4490feb78aae7ecf",
+      "after_sha256": "f23d5d973af87ebd5004713a216b368eef62c1ef0842441a4490feb78aae7ecf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B13",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        548,
+        563
+      ],
+      "new_locator": [
+        548,
+        563
+      ],
+      "diff_candidate_locator": [
+        548,
+        563
+      ],
+      "before_sha256": "d53093af369e49b8807433dd9f6ca6752e3def53cb31aed1152c9e11496ed0e8",
+      "after_sha256": "d53093af369e49b8807433dd9f6ca6752e3def53cb31aed1152c9e11496ed0e8",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B14",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        567,
+        589
+      ],
+      "new_locator": [
+        567,
+        589
+      ],
+      "diff_candidate_locator": [
+        567,
+        589
+      ],
+      "before_sha256": "4669165d4bf5429f1d83c59410b655e408acb4110f82e38311f0a51dca307dda",
+      "after_sha256": "4669165d4bf5429f1d83c59410b655e408acb4110f82e38311f0a51dca307dda",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B15",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        593,
+        603
+      ],
+      "new_locator": [
+        593,
+        603
+      ],
+      "diff_candidate_locator": [
+        593,
+        603
+      ],
+      "before_sha256": "7f5308b303be37beb766ae4f1fdc01946f1367c49f75b9e1b7070c90f8aee433",
+      "after_sha256": "7f5308b303be37beb766ae4f1fdc01946f1367c49f75b9e1b7070c90f8aee433",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B16",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        607,
+        619
+      ],
+      "new_locator": [
+        607,
+        619
+      ],
+      "diff_candidate_locator": [
+        607,
+        619
+      ],
+      "before_sha256": "ad71a3b7364129e477f0dc5df9eda021fcda9aa7703ec90e412726e71dd73380",
+      "after_sha256": "ad71a3b7364129e477f0dc5df9eda021fcda9aa7703ec90e412726e71dd73380",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B17",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        623,
+        632
+      ],
+      "new_locator": [
+        623,
+        632
+      ],
+      "diff_candidate_locator": [
+        623,
+        632
+      ],
+      "before_sha256": "11dc1768578669e1732a26b74c5ee329c1dfccc7290f1207010b4610c1a12ce3",
+      "after_sha256": "11dc1768578669e1732a26b74c5ee329c1dfccc7290f1207010b4610c1a12ce3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "B00",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        636,
+        776
+      ],
+      "new_locator": [
+        636,
+        776
+      ],
+      "diff_candidate_locator": [
+        636,
+        776
+      ],
+      "before_sha256": "bd98311e5af84bada31470e755bef1b74864e2264ac879aafed9d2b363c0fd86",
+      "after_sha256": "bd98311e5af84bada31470e755bef1b74864e2264ac879aafed9d2b363c0fd86",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "SECONDARY-SUPPLEMENT",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        779,
+        785
+      ],
+      "new_locator": [
+        779,
+        785
+      ],
+      "diff_candidate_locator": [
+        779,
+        785
+      ],
+      "before_sha256": "a4f5834e6fe29de9e9e901204b34ba9c9ee8c3f23cb2d6a0ae6d42538b49f827",
+      "after_sha256": "a4f5834e6fe29de9e9e901204b34ba9c9ee8c3f23cb2d6a0ae6d42538b49f827",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P1.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        703,
+        703
+      ],
+      "new_locator": [
+        703,
+        703
+      ],
+      "diff_candidate_locator": [
+        703,
+        703
+      ],
+      "before_sha256": "98d30a33887b790f253df1fa131bb705fa57f9bc72e09fc294d9401c6df3ae02",
+      "after_sha256": "98d30a33887b790f253df1fa131bb705fa57f9bc72e09fc294d9401c6df3ae02",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P1.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        704,
+        704
+      ],
+      "new_locator": [
+        704,
+        704
+      ],
+      "diff_candidate_locator": [
+        704,
+        704
+      ],
+      "before_sha256": "af283bcdd0636f82ac8f2e4b0e30c7b3593d73b325d8db9ef2eb6ec88c2155a6",
+      "after_sha256": "af283bcdd0636f82ac8f2e4b0e30c7b3593d73b325d8db9ef2eb6ec88c2155a6",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P1.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        705,
+        705
+      ],
+      "new_locator": [
+        705,
+        705
+      ],
+      "diff_candidate_locator": [
+        705,
+        705
+      ],
+      "before_sha256": "c3f21a694b8db20bc4e381a868ce2f6704c8be7a518f7dd404664ad05e7a6974",
+      "after_sha256": "c3f21a694b8db20bc4e381a868ce2f6704c8be7a518f7dd404664ad05e7a6974",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P3.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        710,
+        710
+      ],
+      "new_locator": [
+        710,
+        710
+      ],
+      "diff_candidate_locator": [
+        710,
+        710
+      ],
+      "before_sha256": "e95eec0a56a2c30790662f0b3e5ae816c0c078de77bbf31760aaf7223e5631cf",
+      "after_sha256": "e95eec0a56a2c30790662f0b3e5ae816c0c078de77bbf31760aaf7223e5631cf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P3.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        711,
+        711
+      ],
+      "new_locator": [
+        711,
+        711
+      ],
+      "diff_candidate_locator": [
+        711,
+        711
+      ],
+      "before_sha256": "6d71ef857f77e05441cb5be8f5e3678dbaa4092ad85f70405efdf8b2b92755ab",
+      "after_sha256": "6d71ef857f77e05441cb5be8f5e3678dbaa4092ad85f70405efdf8b2b92755ab",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P3.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        712,
+        712
+      ],
+      "new_locator": [
+        712,
+        712
+      ],
+      "diff_candidate_locator": [
+        712,
+        712
+      ],
+      "before_sha256": "3e683ce84f4c97919951866daccc93072bbd34879c11dc452a76002195a2c223",
+      "after_sha256": "3e683ce84f4c97919951866daccc93072bbd34879c11dc452a76002195a2c223",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P4",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        715,
+        715
+      ],
+      "new_locator": [
+        715,
+        715
+      ],
+      "diff_candidate_locator": [
+        715,
+        715
+      ],
+      "before_sha256": "b178242111255eb7e811ec7e5eaafba888d689c03e8c35438ff7bf46db4f0033",
+      "after_sha256": "b178242111255eb7e811ec7e5eaafba888d689c03e8c35438ff7bf46db4f0033",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P5-a.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        719,
+        719
+      ],
+      "new_locator": [
+        719,
+        719
+      ],
+      "diff_candidate_locator": [
+        719,
+        719
+      ],
+      "before_sha256": "cbbb1d5c52a4ac2beb866eea8bc51fd96ecd249647c5b27e0393b9ef391e57f5",
+      "after_sha256": "cbbb1d5c52a4ac2beb866eea8bc51fd96ecd249647c5b27e0393b9ef391e57f5",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P5-a.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        720,
+        720
+      ],
+      "new_locator": [
+        720,
+        720
+      ],
+      "diff_candidate_locator": [
+        720,
+        720
+      ],
+      "before_sha256": "5b70ded823d3d7f4ff4d32d9b90c76fb655c99da09edb9122cc963034ff9f109",
+      "after_sha256": "5b70ded823d3d7f4ff4d32d9b90c76fb655c99da09edb9122cc963034ff9f109",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P5-b.range",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        723,
+        723
+      ],
+      "new_locator": [
+        723,
+        723
+      ],
+      "diff_candidate_locator": [
+        723,
+        723
+      ],
+      "before_sha256": "d6635bd71f58b2c79d93dff280ad54432b7c45f70e0af8f1b210204398b965ca",
+      "after_sha256": "d6635bd71f58b2c79d93dff280ad54432b7c45f70e0af8f1b210204398b965ca",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P5-b.crossing",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        724,
+        724
+      ],
+      "new_locator": [
+        724,
+        724
+      ],
+      "diff_candidate_locator": [
+        724,
+        724
+      ],
+      "before_sha256": "0136c327465411f1c20274bcc31b6851b8fc8cdb145fa6e8e70e5e11b302fdbb",
+      "after_sha256": "0136c327465411f1c20274bcc31b6851b8fc8cdb145fa6e8e70e5e11b302fdbb",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P5-c",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        726,
+        726
+      ],
+      "new_locator": [
+        726,
+        726
+      ],
+      "diff_candidate_locator": [
+        726,
+        726
+      ],
+      "before_sha256": "7d1a0e2550b8fd358e79ad6aa59a948b653b1f7d7f979c11647f520c4adb1591",
+      "after_sha256": "7d1a0e2550b8fd358e79ad6aa59a948b653b1f7d7f979c11647f520c4adb1591",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6-a",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        730,
+        730
+      ],
+      "new_locator": [
+        730,
+        730
+      ],
+      "diff_candidate_locator": [
+        730,
+        730
+      ],
+      "before_sha256": "7d1f8c322a70df4644047cbdf6e005c72aa5844ba160c7c66e267c9ff6fba975",
+      "after_sha256": "7d1f8c322a70df4644047cbdf6e005c72aa5844ba160c7c66e267c9ff6fba975",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6.lead",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        732,
+        732
+      ],
+      "new_locator": [
+        732,
+        732
+      ],
+      "diff_candidate_locator": [
+        732,
+        732
+      ],
+      "before_sha256": "a21e7b6e2c213339fa89fe8b5e24103f5587bb5880b71f41379b954b85550bb6",
+      "after_sha256": "a21e7b6e2c213339fa89fe8b5e24103f5587bb5880b71f41379b954b85550bb6",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6.counts",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        734,
+        734
+      ],
+      "new_locator": [
+        734,
+        734
+      ],
+      "diff_candidate_locator": [
+        734,
+        734
+      ],
+      "before_sha256": "086a2851007eaa923bed52cbeabe72e5ee257cdf6e44bb41b6668a3f17b2df0d",
+      "after_sha256": "086a2851007eaa923bed52cbeabe72e5ee257cdf6e44bb41b6668a3f17b2df0d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6-c",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        737,
+        737
+      ],
+      "new_locator": [
+        737,
+        737
+      ],
+      "diff_candidate_locator": [
+        737,
+        737
+      ],
+      "before_sha256": "4709c1d9e758ec84c269b1b9d3976e97858c1469a52225d080151bdab04e5ae3",
+      "after_sha256": "4709c1d9e758ec84c269b1b9d3976e97858c1469a52225d080151bdab04e5ae3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6-d",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        740,
+        740
+      ],
+      "new_locator": [
+        740,
+        740
+      ],
+      "diff_candidate_locator": [
+        740,
+        740
+      ],
+      "before_sha256": "d4d5fd47773377204d8140151729e49a271fc0fbac8c57047eef942919413a98",
+      "after_sha256": "d4d5fd47773377204d8140151729e49a271fc0fbac8c57047eef942919413a98",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6-e",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        742,
+        742
+      ],
+      "new_locator": [
+        742,
+        742
+      ],
+      "diff_candidate_locator": [
+        742,
+        742
+      ],
+      "before_sha256": "33447204a9370fcc73e6af1ba7c54aad65a0e6106e5db764ee95473f96e2af08",
+      "after_sha256": "33447204a9370fcc73e6af1ba7c54aad65a0e6106e5db764ee95473f96e2af08",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P6-f",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        744,
+        744
+      ],
+      "new_locator": [
+        744,
+        744
+      ],
+      "diff_candidate_locator": [
+        744,
+        744
+      ],
+      "before_sha256": "534ab2e352626dd0c23e4f6b9894663806dfde241743ba50767bff5c59a5207f",
+      "after_sha256": "534ab2e352626dd0c23e4f6b9894663806dfde241743ba50767bff5c59a5207f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7-a",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        748,
+        748
+      ],
+      "new_locator": [
+        748,
+        748
+      ],
+      "diff_candidate_locator": [
+        748,
+        748
+      ],
+      "before_sha256": "988d79999f4f69aaf9e99fcec0481294656f5ee7e259c4ae5dafe392db99d69b",
+      "after_sha256": "988d79999f4f69aaf9e99fcec0481294656f5ee7e259c4ae5dafe392db99d69b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7-b",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        750,
+        750
+      ],
+      "new_locator": [
+        750,
+        750
+      ],
+      "diff_candidate_locator": [
+        750,
+        750
+      ],
+      "before_sha256": "70c7ae609553b8c9d666a6e820fb5b8c4773f06fd67fa3456581a79ba6331f3e",
+      "after_sha256": "70c7ae609553b8c9d666a6e820fb5b8c4773f06fd67fa3456581a79ba6331f3e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7.offset",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        752,
+        752
+      ],
+      "new_locator": [
+        752,
+        752
+      ],
+      "diff_candidate_locator": [
+        752,
+        752
+      ],
+      "before_sha256": "ddb9dc1632c3a5f744d26446c4d9303769217a85bb1c581c9f1a79a637fc2e0d",
+      "after_sha256": "ddb9dc1632c3a5f744d26446c4d9303769217a85bb1c581c9f1a79a637fc2e0d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7-c",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        754,
+        754
+      ],
+      "new_locator": [
+        754,
+        754
+      ],
+      "diff_candidate_locator": [
+        754,
+        754
+      ],
+      "before_sha256": "caa04b761138e6411dbd08616fe74db249898228aafbfbec4bb6bcaa37292ecf",
+      "after_sha256": "caa04b761138e6411dbd08616fe74db249898228aafbfbec4bb6bcaa37292ecf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7-c1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        756,
+        756
+      ],
+      "new_locator": [
+        756,
+        756
+      ],
+      "diff_candidate_locator": [
+        756,
+        756
+      ],
+      "before_sha256": "9ffa8ae6dc7b37b8bd264b09886004fabb085e61d4c8625ea5aa66fce87b04e9",
+      "after_sha256": "9ffa8ae6dc7b37b8bd264b09886004fabb085e61d4c8625ea5aa66fce87b04e9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7-c2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        758,
+        758
+      ],
+      "new_locator": [
+        758,
+        758
+      ],
+      "diff_candidate_locator": [
+        758,
+        758
+      ],
+      "before_sha256": "f186dc6c481f1431726bdd20a69eeb530041284c9e7ce2a943aa527a44c64d07",
+      "after_sha256": "f186dc6c481f1431726bdd20a69eeb530041284c9e7ce2a943aa527a44c64d07",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P7-d",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        762,
+        762
+      ],
+      "new_locator": [
+        762,
+        762
+      ],
+      "diff_candidate_locator": [
+        762,
+        762
+      ],
+      "before_sha256": "707ae450416d294d2faaa8b87047140c47d0469d4ba19cf966dadc09f679ce46",
+      "after_sha256": "707ae450416d294d2faaa8b87047140c47d0469d4ba19cf966dadc09f679ce46",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P8.1",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        765,
+        765
+      ],
+      "new_locator": [
+        765,
+        765
+      ],
+      "diff_candidate_locator": [
+        765,
+        765
+      ],
+      "before_sha256": "3aa10c83a873fa3526a2f7a4a4523e81ae14ae487105b4da5cc6ac917aaf251c",
+      "after_sha256": "3aa10c83a873fa3526a2f7a4a4523e81ae14ae487105b4da5cc6ac917aaf251c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P8.2",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        766,
+        766
+      ],
+      "new_locator": [
+        766,
+        766
+      ],
+      "diff_candidate_locator": [
+        766,
+        766
+      ],
+      "before_sha256": "29edbf7aed59873dd9044ab579b64978dfd8379fd419aa21cd4bedd25674bfc5",
+      "after_sha256": "29edbf7aed59873dd9044ab579b64978dfd8379fd419aa21cd4bedd25674bfc5",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P8.3",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        767,
+        767
+      ],
+      "new_locator": [
+        767,
+        767
+      ],
+      "diff_candidate_locator": [
+        767,
+        767
+      ],
+      "before_sha256": "948af341ae297de3389c74694395849720b4f63ac754afd123ea3a6558ef0717",
+      "after_sha256": "948af341ae297de3389c74694395849720b4f63ac754afd123ea3a6558ef0717",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P8.4",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        768,
+        768
+      ],
+      "new_locator": [
+        768,
+        768
+      ],
+      "diff_candidate_locator": [
+        768,
+        768
+      ],
+      "before_sha256": "d485920bdde835a82b86581f9b63390db62674eb0a2c46f6e7b1002b3596b909",
+      "after_sha256": "d485920bdde835a82b86581f9b63390db62674eb0a2c46f6e7b1002b3596b909",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P9",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        771,
+        771
+      ],
+      "new_locator": [
+        771,
+        771
+      ],
+      "diff_candidate_locator": [
+        771,
+        771
+      ],
+      "before_sha256": "3047fc3091d6a6c0206850d1cdfdf59b8f5cbd6b5861123807d27e892edec191",
+      "after_sha256": "3047fc3091d6a6c0206850d1cdfdf59b8f5cbd6b5861123807d27e892edec191",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P9.diagnostics",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        772,
+        772
+      ],
+      "new_locator": [
+        772,
+        772
+      ],
+      "diff_candidate_locator": [
+        772,
+        772
+      ],
+      "before_sha256": "dff46ed98819ac3737a33dff669a1c04ae29a6ae95d5363a7a1bb04712b63e9c",
+      "after_sha256": "dff46ed98819ac3737a33dff669a1c04ae29a6ae95d5363a7a1bb04712b63e9c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "P10",
+      "source": "results",
+      "kind": "unchanged",
+      "old_locator": [
+        775,
+        775
+      ],
+      "new_locator": [
+        775,
+        775
+      ],
+      "diff_candidate_locator": [
+        775,
+        775
+      ],
+      "before_sha256": "3e62ea61803e8be6bf4f1ed1e65ee139431d0f6314552c2091cb08405ea9329d",
+      "after_sha256": "3e62ea61803e8be6bf4f1ed1e65ee139431d0f6314552c2091cb08405ea9329d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-H-BD",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        51,
+        57
+      ],
+      "new_locator": [
+        51,
+        57
+      ],
+      "diff_candidate_locator": [
+        51,
+        57
+      ],
+      "before_sha256": "81782987de8be40107ed05f8ee5396b406824e5a79900b4d8d437094592a6ea7",
+      "after_sha256": "81782987de8be40107ed05f8ee5396b406824e5a79900b4d8d437094592a6ea7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-H-BD",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        59,
+        66
+      ],
+      "new_locator": [
+        59,
+        66
+      ],
+      "diff_candidate_locator": [
+        59,
+        66
+      ],
+      "before_sha256": "71d45f68c14b995a6bcf50ad4cd9f8706798251624aebe38b137200f86a8e4cc",
+      "after_sha256": "71d45f68c14b995a6bcf50ad4cd9f8706798251624aebe38b137200f86a8e4cc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-H-B",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        68,
+        74
+      ],
+      "new_locator": [
+        68,
+        74
+      ],
+      "diff_candidate_locator": [
+        68,
+        74
+      ],
+      "before_sha256": "251bb7cadc2c037cbfa5dda5554436cf1b32d19e21ec8cddc5fcc4c8fb10cd69",
+      "after_sha256": "251bb7cadc2c037cbfa5dda5554436cf1b32d19e21ec8cddc5fcc4c8fb10cd69",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-H-B",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        76,
+        83
+      ],
+      "new_locator": [
+        76,
+        83
+      ],
+      "diff_candidate_locator": [
+        76,
+        83
+      ],
+      "before_sha256": "9215c0892e692aaaf77b3e07841b6d01c35d7febf3556270dae7c33893a79e37",
+      "after_sha256": "9215c0892e692aaaf77b3e07841b6d01c35d7febf3556270dae7c33893a79e37",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B03",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        85,
+        93
+      ],
+      "new_locator": [
+        85,
+        93
+      ],
+      "diff_candidate_locator": [
+        85,
+        93
+      ],
+      "before_sha256": "fab2c46a165c45f552e454b695789f41110ff4fee9035a0b95750bedd36e168b",
+      "after_sha256": "fab2c46a165c45f552e454b695789f41110ff4fee9035a0b95750bedd36e168b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-B03",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        95,
+        101
+      ],
+      "new_locator": [
+        95,
+        101
+      ],
+      "diff_candidate_locator": [
+        95,
+        101
+      ],
+      "before_sha256": "48eac83ec914a3c421ffd7338d8d15c5df15c4c571753236071440a13a835613",
+      "after_sha256": "48eac83ec914a3c421ffd7338d8d15c5df15c4c571753236071440a13a835613",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-D-AFTER-B03",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        103,
+        109
+      ],
+      "new_locator": [
+        103,
+        109
+      ],
+      "diff_candidate_locator": [
+        103,
+        109
+      ],
+      "before_sha256": "1ee1a3256166d2d87832cd1ef2f6913f557c360d2d5aed8ce227cd22e449ca19",
+      "after_sha256": "1ee1a3256166d2d87832cd1ef2f6913f557c360d2d5aed8ce227cd22e449ca19",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-D-AFTER-B03",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        111,
+        116
+      ],
+      "new_locator": [
+        111,
+        116
+      ],
+      "diff_candidate_locator": [
+        111,
+        116
+      ],
+      "before_sha256": "2e53ef4b338b3e4df451dad47f436b132c0ca99f761070d8fc8e3181ec97dfa9",
+      "after_sha256": "2e53ef4b338b3e4df451dad47f436b132c0ca99f761070d8fc8e3181ec97dfa9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B02",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        118,
+        124
+      ],
+      "new_locator": [
+        118,
+        124
+      ],
+      "diff_candidate_locator": [
+        118,
+        124
+      ],
+      "before_sha256": "9d20d5f9725ea14645837b1b1c1c6c2cc209f455941c3854ef26b1bbc38001be",
+      "after_sha256": "9d20d5f9725ea14645837b1b1c1c6c2cc209f455941c3854ef26b1bbc38001be",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-B02",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        126,
+        132
+      ],
+      "new_locator": [
+        126,
+        132
+      ],
+      "diff_candidate_locator": [
+        126,
+        132
+      ],
+      "before_sha256": "bae772fb94af85aff1ea508acbb2d6fe2521140527a39c7deb76185494dfbd3b",
+      "after_sha256": "bae772fb94af85aff1ea508acbb2d6fe2521140527a39c7deb76185494dfbd3b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-NO-PERMISSION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        134,
+        140
+      ],
+      "new_locator": [
+        134,
+        140
+      ],
+      "diff_candidate_locator": [
+        134,
+        140
+      ],
+      "before_sha256": "5df77c8424b9778451b9bad599c063b6c6d57b2fcdadde46a5e799664920a445",
+      "after_sha256": "5df77c8424b9778451b9bad599c063b6c6d57b2fcdadde46a5e799664920a445",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-NO-PERMISSION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        142,
+        147
+      ],
+      "new_locator": [
+        142,
+        147
+      ],
+      "diff_candidate_locator": [
+        142,
+        147
+      ],
+      "before_sha256": "7df0fd86e7e5cff497cbe6fef9d69994c53f0caf36d2593ee34e9e595af2bb38",
+      "after_sha256": "7df0fd86e7e5cff497cbe6fef9d69994c53f0caf36d2593ee34e9e595af2bb38",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-T2-INCOMPLETE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        149,
+        155
+      ],
+      "new_locator": [
+        149,
+        155
+      ],
+      "diff_candidate_locator": [
+        149,
+        155
+      ],
+      "before_sha256": "000b291ebb33e747acc7a3d7f9751c0e9306152a3b3b50f651ce3ff442865c47",
+      "after_sha256": "000b291ebb33e747acc7a3d7f9751c0e9306152a3b3b50f651ce3ff442865c47",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-T2-INCOMPLETE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        157,
+        162
+      ],
+      "new_locator": [
+        157,
+        162
+      ],
+      "diff_candidate_locator": [
+        157,
+        162
+      ],
+      "before_sha256": "449c8ba2665e8bb86c0cd773eac4b0c906557a24a92d7da2c71cddd27d431a11",
+      "after_sha256": "449c8ba2665e8bb86c0cd773eac4b0c906557a24a92d7da2c71cddd27d431a11",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-PERMISSION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        164,
+        170
+      ],
+      "new_locator": [
+        164,
+        170
+      ],
+      "diff_candidate_locator": [
+        164,
+        170
+      ],
+      "before_sha256": "660f4248da61a023ff9e748184c3d0a58ba7c73028b028bf30c72b292ae4108c",
+      "after_sha256": "660f4248da61a023ff9e748184c3d0a58ba7c73028b028bf30c72b292ae4108c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-PERMISSION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        172,
+        177
+      ],
+      "new_locator": [
+        172,
+        177
+      ],
+      "diff_candidate_locator": [
+        172,
+        177
+      ],
+      "before_sha256": "e1d0c56393dd77be3177960cdd19cb7ce3eeae751787544053bc3389e4abbf66",
+      "after_sha256": "e1d0c56393dd77be3177960cdd19cb7ce3eeae751787544053bc3389e4abbf66",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-EMPTY-PAIRS",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        179,
+        184
+      ],
+      "new_locator": [
+        179,
+        184
+      ],
+      "diff_candidate_locator": [
+        179,
+        184
+      ],
+      "before_sha256": "3e631d7f62c9c077a630821ac7385470a23d643818c125ed6f3a73475e6c8fd6",
+      "after_sha256": "3e631d7f62c9c077a630821ac7385470a23d643818c125ed6f3a73475e6c8fd6",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-EMPTY-PAIRS",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        186,
+        191
+      ],
+      "new_locator": [
+        186,
+        191
+      ],
+      "diff_candidate_locator": [
+        186,
+        191
+      ],
+      "before_sha256": "3ba0b321f46b9d8780ea97ee0277241444c575f56d36c5ff5f8c3b7a35c16c55",
+      "after_sha256": "3ba0b321f46b9d8780ea97ee0277241444c575f56d36c5ff5f8c3b7a35c16c55",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BD-PERSISTENCE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        193,
+        199
+      ],
+      "new_locator": [
+        193,
+        199
+      ],
+      "diff_candidate_locator": [
+        193,
+        199
+      ],
+      "before_sha256": "5af91a569f68844dc14c98dd27f128ed95cbaf1748d16315e30dd63e687040db",
+      "after_sha256": "5af91a569f68844dc14c98dd27f128ed95cbaf1748d16315e30dd63e687040db",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-BD-PERSISTENCE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        201,
+        207
+      ],
+      "new_locator": [
+        201,
+        207
+      ],
+      "diff_candidate_locator": [
+        201,
+        207
+      ],
+      "before_sha256": "3280e9f694583dc6b338cdc3b6fb28abd19c0b4603267559dabfc6668ba1bdec",
+      "after_sha256": "3280e9f694583dc6b338cdc3b6fb28abd19c0b4603267559dabfc6668ba1bdec",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BD-INCONCLUSIVE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        209,
+        214
+      ],
+      "new_locator": [
+        209,
+        214
+      ],
+      "diff_candidate_locator": [
+        209,
+        214
+      ],
+      "before_sha256": "1d2780f0adc3621663076ed61f0e7337419147650c3e050238fdfcc989421ded",
+      "after_sha256": "1d2780f0adc3621663076ed61f0e7337419147650c3e050238fdfcc989421ded",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BD-BOTH",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        216,
+        222
+      ],
+      "new_locator": [
+        216,
+        222
+      ],
+      "diff_candidate_locator": [
+        216,
+        222
+      ],
+      "before_sha256": "624d3a09ac639c3c64a4ec5b1c0d1522ea5ddf48eedfe2c9fc58a23cecbe4c12",
+      "after_sha256": "624d3a09ac639c3c64a4ec5b1c0d1522ea5ddf48eedfe2c9fc58a23cecbe4c12",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BD-NO-CROSSING",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        224,
+        229
+      ],
+      "new_locator": [
+        224,
+        229
+      ],
+      "diff_candidate_locator": [
+        224,
+        229
+      ],
+      "before_sha256": "5b38e8d041d1b62e32acad6206600fe5b7b91ef346d604a0ecb12adf0387a8a3",
+      "after_sha256": "5b38e8d041d1b62e32acad6206600fe5b7b91ef346d604a0ecb12adf0387a8a3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BE-PERSISTENCE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        231,
+        236
+      ],
+      "new_locator": [
+        231,
+        236
+      ],
+      "diff_candidate_locator": [
+        231,
+        236
+      ],
+      "before_sha256": "4fcaa5b7537ed2fb0412a5dc13af0a5a974d22a4b63aef97573a352f86709a4e",
+      "after_sha256": "4fcaa5b7537ed2fb0412a5dc13af0a5a974d22a4b63aef97573a352f86709a4e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BC-PERSISTENCE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        238,
+        243
+      ],
+      "new_locator": [
+        238,
+        243
+      ],
+      "diff_candidate_locator": [
+        238,
+        243
+      ],
+      "before_sha256": "90b56455c9483925af4b00c1d75b5bf71b18a104358ae1a5d1cc2fa76663f649",
+      "after_sha256": "90b56455c9483925af4b00c1d75b5bf71b18a104358ae1a5d1cc2fa76663f649",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BOUNDARIES-DIFFER",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        245,
+        251
+      ],
+      "new_locator": [
+        245,
+        251
+      ],
+      "diff_candidate_locator": [
+        245,
+        251
+      ],
+      "before_sha256": "5407830b025ea9fe08d57fc8bb6e01f8de5fe0e551306d7f197c5cd754c160a7",
+      "after_sha256": "5407830b025ea9fe08d57fc8bb6e01f8de5fe0e551306d7f197c5cd754c160a7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-BOUNDARIES-DIFFER",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        253,
+        258
+      ],
+      "new_locator": [
+        253,
+        258
+      ],
+      "diff_candidate_locator": [
+        253,
+        258
+      ],
+      "before_sha256": "8743e0054ccaecd65bef57b181874d4f7a06318a717ccb3c1a5c936a00689299",
+      "after_sha256": "8743e0054ccaecd65bef57b181874d4f7a06318a717ccb3c1a5c936a00689299",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BOUNDARIES-SAME",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        260,
+        265
+      ],
+      "new_locator": [
+        260,
+        265
+      ],
+      "diff_candidate_locator": [
+        260,
+        265
+      ],
+      "before_sha256": "9b133ce23f80828b129af429e2ff2d448a67d5bb4408611a361bfc3e369ef2c5",
+      "after_sha256": "9b133ce23f80828b129af429e2ff2d448a67d5bb4408611a361bfc3e369ef2c5",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-BOUNDARIES-SAME",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        267,
+        272
+      ],
+      "new_locator": [
+        267,
+        272
+      ],
+      "diff_candidate_locator": [
+        267,
+        272
+      ],
+      "before_sha256": "4568d545d7f2b64543b51853787ac3ade1766523a39835876787d64b5f4b32ef",
+      "after_sha256": "4568d545d7f2b64543b51853787ac3ade1766523a39835876787d64b5f4b32ef",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-BOUNDARIES-NO-VALID",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        274,
+        279
+      ],
+      "new_locator": [
+        274,
+        279
+      ],
+      "diff_candidate_locator": [
+        274,
+        279
+      ],
+      "before_sha256": "5541eea4c7cc1a5c0a8df581a47f0a4484e032002c3d8a955bcad178309b26a7",
+      "after_sha256": "5541eea4c7cc1a5c0a8df581a47f0a4484e032002c3d8a955bcad178309b26a7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-BOUNDARIES-NO-VALID",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        281,
+        286
+      ],
+      "new_locator": [
+        281,
+        286
+      ],
+      "diff_candidate_locator": [
+        281,
+        286
+      ],
+      "before_sha256": "40cbf05dd927ef6165e503b93e77eae48ee40e50efdec3aa9bb576060460529d",
+      "after_sha256": "40cbf05dd927ef6165e503b93e77eae48ee40e50efdec3aa9bb576060460529d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-PRECISION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        295,
+        301
+      ],
+      "new_locator": [
+        295,
+        301
+      ],
+      "diff_candidate_locator": [
+        295,
+        301
+      ],
+      "before_sha256": "a2c2847288ffd659891bb15618ab2f57b4713577c392bde2ab2fa477614d99a3",
+      "after_sha256": "a2c2847288ffd659891bb15618ab2f57b4713577c392bde2ab2fa477614d99a3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-IMPLICATION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        303,
+        308
+      ],
+      "new_locator": [
+        303,
+        308
+      ],
+      "diff_candidate_locator": [
+        303,
+        308
+      ],
+      "before_sha256": "543e0ff22d41f6841b95947ba5609d1b3910853976bf547d393938053a8db063",
+      "after_sha256": "543e0ff22d41f6841b95947ba5609d1b3910853976bf547d393938053a8db063",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X5",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        310,
+        315
+      ],
+      "new_locator": [
+        310,
+        315
+      ],
+      "diff_candidate_locator": [
+        310,
+        315
+      ],
+      "before_sha256": "793600a4cbeeb73a9ae83c8e9271f6379be7185e6305f1f3ba6d333a575fddc4",
+      "after_sha256": "793600a4cbeeb73a9ae83c8e9271f6379be7185e6305f1f3ba6d333a575fddc4",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-X5",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        317,
+        322
+      ],
+      "new_locator": [
+        317,
+        322
+      ],
+      "diff_candidate_locator": [
+        317,
+        322
+      ],
+      "before_sha256": "fe48a87ec3dc71a4a3616799d03e640f11d2a261a3c44dc36f2e23bd5c57427f",
+      "after_sha256": "fe48a87ec3dc71a4a3616799d03e640f11d2a261a3c44dc36f2e23bd5c57427f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X5-POST",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        324,
+        332
+      ],
+      "new_locator": [
+        324,
+        332
+      ],
+      "diff_candidate_locator": [
+        324,
+        332
+      ],
+      "before_sha256": "71eaf22d97a69c63abdd7d569e46c365fa6ecb06e563feb40ebbf98013d86df9",
+      "after_sha256": "71eaf22d97a69c63abdd7d569e46c365fa6ecb06e563feb40ebbf98013d86df9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-DENOMINATORS",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        342,
+        352
+      ],
+      "new_locator": [
+        342,
+        352
+      ],
+      "diff_candidate_locator": [
+        342,
+        352
+      ],
+      "before_sha256": "24a8de6fc4e872a434e07e30a90c47ce27b2cfd4d3d9137bf28ded10481176dc",
+      "after_sha256": "24a8de6fc4e872a434e07e30a90c47ce27b2cfd4d3d9137bf28ded10481176dc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-INTERVAL",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        354,
+        359
+      ],
+      "new_locator": [
+        354,
+        359
+      ],
+      "diff_candidate_locator": [
+        354,
+        359
+      ],
+      "before_sha256": "8497869219696d64a6cbe0f729beb5019e68bc07dd6be3d16aee6e6436c1f0b4",
+      "after_sha256": "8497869219696d64a6cbe0f729beb5019e68bc07dd6be3d16aee6e6436c1f0b4",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-FAILURE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        361,
+        367
+      ],
+      "new_locator": [
+        361,
+        367
+      ],
+      "diff_candidate_locator": [
+        361,
+        367
+      ],
+      "before_sha256": "fccc23cdac5b70e90b4be0b46d6d97e7268a7e68402f9af1127fe98d73cee1ef",
+      "after_sha256": "fccc23cdac5b70e90b4be0b46d6d97e7268a7e68402f9af1127fe98d73cee1ef",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-SUBNOMINAL",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        369,
+        375
+      ],
+      "new_locator": [
+        369,
+        375
+      ],
+      "diff_candidate_locator": [
+        369,
+        375
+      ],
+      "before_sha256": "3290283d54a1a064dacfb8d9410bf8d9beed4f613b1fe5f4bc72f9bc3e007f8a",
+      "after_sha256": "3290283d54a1a064dacfb8d9410bf8d9beed4f613b1fe5f4bc72f9bc3e007f8a",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-INCONCLUSIVE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        377,
+        383
+      ],
+      "new_locator": [
+        377,
+        383
+      ],
+      "diff_candidate_locator": [
+        377,
+        383
+      ],
+      "before_sha256": "5c92e9793c0f70a1623b56370368261be0cfefa3fb3eb0fbb949d83dbb751e45",
+      "after_sha256": "5c92e9793c0f70a1623b56370368261be0cfefa3fb3eb0fbb949d83dbb751e45",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-NO-READING",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        385,
+        391
+      ],
+      "new_locator": [
+        385,
+        391
+      ],
+      "diff_candidate_locator": [
+        385,
+        391
+      ],
+      "before_sha256": "9e77207d67df9580a9bf7f251328531d288ccb94c7ca61a6f88b08c327e877cc",
+      "after_sha256": "9e77207d67df9580a9bf7f251328531d288ccb94c7ca61a6f88b08c327e877cc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-ABSENT",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        393,
+        399
+      ],
+      "new_locator": [
+        393,
+        399
+      ],
+      "diff_candidate_locator": [
+        393,
+        399
+      ],
+      "before_sha256": "aa1fc8cc56ad91e91268072783e0ddb5be8e468adc535d32513ed6a36cd9b847",
+      "after_sha256": "aa1fc8cc56ad91e91268072783e0ddb5be8e468adc535d32513ed6a36cd9b847",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-ADEQUATE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        401,
+        407
+      ],
+      "new_locator": [
+        401,
+        407
+      ],
+      "diff_candidate_locator": [
+        401,
+        407
+      ],
+      "before_sha256": "e5c4f6787947813c53c5a93743c4a4247b24b04ea824c9ebffb7555ac1dcffd3",
+      "after_sha256": "e5c4f6787947813c53c5a93743c4a4247b24b04ea824c9ebffb7555ac1dcffd3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X6-CONSERVATIVE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        409,
+        414
+      ],
+      "new_locator": [
+        409,
+        414
+      ],
+      "diff_candidate_locator": [
+        409,
+        414
+      ],
+      "before_sha256": "f80cac230d4df51d47db7d8bc413434535918603ee2d419fbf2bbc56e09f234e",
+      "after_sha256": "f80cac230d4df51d47db7d8bc413434535918603ee2d419fbf2bbc56e09f234e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-X6-UNDERCOVERAGE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        416,
+        421
+      ],
+      "new_locator": [
+        416,
+        421
+      ],
+      "diff_candidate_locator": [
+        416,
+        421
+      ],
+      "before_sha256": "3287cc7651d29035b5ab34a615c1f4c051301556dac289f913aa00e9f2fa5e03",
+      "after_sha256": "3287cc7651d29035b5ab34a615c1f4c051301556dac289f913aa00e9f2fa5e03",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-X6-NOT-ESTABLISHED",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        423,
+        428
+      ],
+      "new_locator": [
+        423,
+        428
+      ],
+      "diff_candidate_locator": [
+        423,
+        428
+      ],
+      "before_sha256": "4ccd6acd85f352ad4d589449498145f1d3ee539ada852c3a7c75b2d9d7bf0bb4",
+      "after_sha256": "4ccd6acd85f352ad4d589449498145f1d3ee539ada852c3a7c75b2d9d7bf0bb4",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-X6-RESTRICTED",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        430,
+        435
+      ],
+      "new_locator": [
+        430,
+        435
+      ],
+      "diff_candidate_locator": [
+        430,
+        435
+      ],
+      "before_sha256": "6fcc94011d1888c8cc3deee3792cea2d02104a380c14f47fe66c29bd9857a564",
+      "after_sha256": "6fcc94011d1888c8cc3deee3792cea2d02104a380c14f47fe66c29bd9857a564",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X1B",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        437,
+        445
+      ],
+      "new_locator": [
+        437,
+        445
+      ],
+      "diff_candidate_locator": [
+        437,
+        445
+      ],
+      "before_sha256": "f1bda8f92d0303d65c7a2510adad221db2be913439dc32a22a39a31d97c6e49f",
+      "after_sha256": "f1bda8f92d0303d65c7a2510adad221db2be913439dc32a22a39a31d97c6e49f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X1B-NO-RELEASE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        447,
+        452
+      ],
+      "new_locator": [
+        447,
+        452
+      ],
+      "diff_candidate_locator": [
+        447,
+        452
+      ],
+      "before_sha256": "8a0fe1e666f09c9cb6c502cff7056275ab65b048a285cebc340034facb7b38e4",
+      "after_sha256": "8a0fe1e666f09c9cb6c502cff7056275ab65b048a285cebc340034facb7b38e4",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-SCOPE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        454,
+        461
+      ],
+      "new_locator": [
+        454,
+        461
+      ],
+      "diff_candidate_locator": [
+        454,
+        461
+      ],
+      "before_sha256": "38f1db0dcb2a3b48292cfa63e2077dfdf5c310e6b8670144d4f4e7f0fe3b3d70",
+      "after_sha256": "38f1db0dcb2a3b48292cfa63e2077dfdf5c310e6b8670144d4f4e7f0fe3b3d70",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-READINGS",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        463,
+        470
+      ],
+      "new_locator": [
+        463,
+        470
+      ],
+      "diff_candidate_locator": [
+        463,
+        470
+      ],
+      "before_sha256": "d7f87c15c8a35ec0351acc9642f44cff885601296b7190ba734c3b1498129c0f",
+      "after_sha256": "d7f87c15c8a35ec0351acc9642f44cff885601296b7190ba734c3b1498129c0f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-GAPS",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        472,
+        479
+      ],
+      "new_locator": [
+        472,
+        479
+      ],
+      "diff_candidate_locator": [
+        472,
+        479
+      ],
+      "before_sha256": "175ed3359bce1bdde611a354cc347bfef25dfb67bb83b33a073e7570f3d9da57",
+      "after_sha256": "175ed3359bce1bdde611a354cc347bfef25dfb67bb83b33a073e7570f3d9da57",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOST",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        481,
+        487
+      ],
+      "new_locator": [
+        481,
+        487
+      ],
+      "diff_candidate_locator": [
+        481,
+        487
+      ],
+      "before_sha256": "3197f7414d96e67f10354cb162e7daa1724e73d0057876f6150ea89097ea59bb",
+      "after_sha256": "3197f7414d96e67f10354cb162e7daa1724e73d0057876f6150ea89097ea59bb",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-DOMAIN",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        489,
+        494
+      ],
+      "new_locator": [
+        489,
+        494
+      ],
+      "diff_candidate_locator": [
+        489,
+        494
+      ],
+      "before_sha256": "0bbf9fe2f0f4495d638c2b8182d8219637dd57b793f20d4eafc63f6dc0ed5ae4",
+      "after_sha256": "0bbf9fe2f0f4495d638c2b8182d8219637dd57b793f20d4eafc63f6dc0ed5ae4",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X4-SCOPE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        496,
+        502
+      ],
+      "new_locator": [
+        496,
+        502
+      ],
+      "diff_candidate_locator": [
+        496,
+        502
+      ],
+      "before_sha256": "44721c5b94a8273a4872b0d23d7107b919c658dcf6cea9bdae912bf64423faf7",
+      "after_sha256": "44721c5b94a8273a4872b0d23d7107b919c658dcf6cea9bdae912bf64423faf7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X4-NORMAL",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        504,
+        510
+      ],
+      "new_locator": [
+        504,
+        510
+      ],
+      "diff_candidate_locator": [
+        504,
+        510
+      ],
+      "before_sha256": "8b901cba3e3320df4266ac809090888ef803bb75b4ffeee5d2912608dabb494d",
+      "after_sha256": "8b901cba3e3320df4266ac809090888ef803bb75b4ffeee5d2912608dabb494d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X4-PAIRED",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        512,
+        518
+      ],
+      "new_locator": [
+        512,
+        518
+      ],
+      "diff_candidate_locator": [
+        512,
+        518
+      ],
+      "before_sha256": "267f606bc943cd9d282fc76bed89b9f45828a19b35cbdb0fef5cbfeac010e7ed",
+      "after_sha256": "267f606bc943cd9d282fc76bed89b9f45828a19b35cbdb0fef5cbfeac010e7ed",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X4-SIZE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        520,
+        526
+      ],
+      "new_locator": [
+        520,
+        526
+      ],
+      "diff_candidate_locator": [
+        520,
+        526
+      ],
+      "before_sha256": "79fcdfff95890fe79bfe2b78bb1c757e14f553fe8ba2266e7feb21881f3781b9",
+      "after_sha256": "79fcdfff95890fe79bfe2b78bb1c757e14f553fe8ba2266e7feb21881f3781b9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X4-DOMAIN",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        528,
+        533
+      ],
+      "new_locator": [
+        528,
+        533
+      ],
+      "diff_candidate_locator": [
+        528,
+        533
+      ],
+      "before_sha256": "c52018c452aea6f0efbad82f95ee2453d44932270869cde5ddbb4c7f02021873",
+      "after_sha256": "c52018c452aea6f0efbad82f95ee2453d44932270869cde5ddbb4c7f02021873",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-POST-AVAILABILITY",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        535,
+        542
+      ],
+      "new_locator": [
+        535,
+        542
+      ],
+      "diff_candidate_locator": [
+        535,
+        542
+      ],
+      "before_sha256": "bc4c4546a4b17caf36d885f8c2c3b6e247146a64b3d845ac3441710c886983f6",
+      "after_sha256": "bc4c4546a4b17caf36d885f8c2c3b6e247146a64b3d845ac3441710c886983f6",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X7-SCOPE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        544,
+        552
+      ],
+      "new_locator": [
+        544,
+        552
+      ],
+      "diff_candidate_locator": [
+        544,
+        552
+      ],
+      "before_sha256": "9b0c034c06915e98e59565555c4181bbdde468658d70ce6d7e1dcae492cc826e",
+      "after_sha256": "9b0c034c06915e98e59565555c4181bbdde468658d70ce6d7e1dcae492cc826e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X7-GAIN",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        554,
+        560
+      ],
+      "new_locator": [
+        554,
+        560
+      ],
+      "diff_candidate_locator": [
+        554,
+        560
+      ],
+      "before_sha256": "e0e326787e208a3f14ac85f2b89726b3a089b879b923c58945657a66a541a0f8",
+      "after_sha256": "e0e326787e208a3f14ac85f2b89726b3a089b879b923c58945657a66a541a0f8",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X7-CLOSE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        562,
+        568
+      ],
+      "new_locator": [
+        562,
+        568
+      ],
+      "diff_candidate_locator": [
+        562,
+        568
+      ],
+      "before_sha256": "19548eab8d489d22a6bccc95ba1e640e8cb0a1df9d19585a14dfb495c45b44d7",
+      "after_sha256": "19548eab8d489d22a6bccc95ba1e640e8cb0a1df9d19585a14dfb495c45b44d7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X7-OTHER-STATES",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        570,
+        576
+      ],
+      "new_locator": [
+        570,
+        576
+      ],
+      "diff_candidate_locator": [
+        570,
+        576
+      ],
+      "before_sha256": "ce403ed8d26aa799bc82b409aef00b4385247aba83e18877599732fd382c41dd",
+      "after_sha256": "ce403ed8d26aa799bc82b409aef00b4385247aba83e18877599732fd382c41dd",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-SHP-ADMISSIBLE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        578,
+        584
+      ],
+      "new_locator": [
+        578,
+        584
+      ],
+      "diff_candidate_locator": [
+        578,
+        584
+      ],
+      "before_sha256": "74b0b13d1f537ee2a987f4d02dd8838ce36e56fe7bae8431f66df3fe07200950",
+      "after_sha256": "74b0b13d1f537ee2a987f4d02dd8838ce36e56fe7bae8431f66df3fe07200950",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B13-OUT",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        586,
+        592
+      ],
+      "new_locator": [
+        586,
+        592
+      ],
+      "diff_candidate_locator": [
+        586,
+        592
+      ],
+      "before_sha256": "f19286282f361b4b676777cae50654fb76b971c764762ddba6627fdc8e8d8a7c",
+      "after_sha256": "f19286282f361b4b676777cae50654fb76b971c764762ddba6627fdc8e8d8a7c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B13-PART",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        594,
+        599
+      ],
+      "new_locator": [
+        594,
+        599
+      ],
+      "diff_candidate_locator": [
+        594,
+        599
+      ],
+      "before_sha256": "9beb3ae3d3108b53a09f7c6935417cf8e618d73f168e21b475ff808f6e887b4d",
+      "after_sha256": "9beb3ae3d3108b53a09f7c6935417cf8e618d73f168e21b475ff808f6e887b4d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B14",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        601,
+        608
+      ],
+      "new_locator": [
+        601,
+        608
+      ],
+      "diff_candidate_locator": [
+        601,
+        608
+      ],
+      "before_sha256": "97958328f0752daf2016904d86c20eb0626266f7229809527ca3e698d927ed50",
+      "after_sha256": "97958328f0752daf2016904d86c20eb0626266f7229809527ca3e698d927ed50",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B14-ENVELOPE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        610,
+        615
+      ],
+      "new_locator": [
+        610,
+        615
+      ],
+      "diff_candidate_locator": [
+        610,
+        615
+      ],
+      "before_sha256": "c2f68833b67c32117861d5b7eeea9e7faca637adb3a28e7dac40e4d3d1f18ec2",
+      "after_sha256": "c2f68833b67c32117861d5b7eeea9e7faca637adb3a28e7dac40e4d3d1f18ec2",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-B15",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        617,
+        623
+      ],
+      "new_locator": [
+        617,
+        623
+      ],
+      "diff_candidate_locator": [
+        617,
+        623
+      ],
+      "before_sha256": "d20fb6f839a7f63cbaff78ba6c6741335cb42fb9a9ccd2b2ca2a81240f578730",
+      "after_sha256": "d20fb6f839a7f63cbaff78ba6c6741335cb42fb9a9ccd2b2ca2a81240f578730",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-GATE-SHP",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        625,
+        631
+      ],
+      "new_locator": [
+        625,
+        631
+      ],
+      "diff_candidate_locator": [
+        625,
+        631
+      ],
+      "before_sha256": "aa6c089ed70af6f0aba1deb2d303908df484504da71fa2cb8f0f9ff39ba08aab",
+      "after_sha256": "aa6c089ed70af6f0aba1deb2d303908df484504da71fa2cb8f0f9ff39ba08aab",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-SHP-NOT-RUN",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        633,
+        638
+      ],
+      "new_locator": [
+        633,
+        638
+      ],
+      "diff_candidate_locator": [
+        633,
+        638
+      ],
+      "before_sha256": "94eebf49e3eb1973a561d912f5bf27891e0ef78ea29c2dbc44017373f7bf70af",
+      "after_sha256": "94eebf49e3eb1973a561d912f5bf27891e0ef78ea29c2dbc44017373f7bf70af",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-SHP-ADMISSIBLE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        640,
+        645
+      ],
+      "new_locator": [
+        640,
+        645
+      ],
+      "diff_candidate_locator": [
+        640,
+        645
+      ],
+      "before_sha256": "8312694c38dc428a3bb26341fdcefeaa94ce2d590b7e23805a5b63aafaba6863",
+      "after_sha256": "8312694c38dc428a3bb26341fdcefeaa94ce2d590b7e23805a5b63aafaba6863",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-B13",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        647,
+        652
+      ],
+      "new_locator": [
+        647,
+        652
+      ],
+      "diff_candidate_locator": [
+        647,
+        652
+      ],
+      "before_sha256": "8cd52d44c1aa16100ed4cfc9f904b2c96a77f8614151a5f9415792932481d020",
+      "after_sha256": "8cd52d44c1aa16100ed4cfc9f904b2c96a77f8614151a5f9415792932481d020",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-B14",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        654,
+        659
+      ],
+      "new_locator": [
+        654,
+        659
+      ],
+      "diff_candidate_locator": [
+        654,
+        659
+      ],
+      "before_sha256": "ee84abbf0fcf6c50f0e5ce4cdffb933dd91765ef51220e70e4d848304991aec3",
+      "after_sha256": "ee84abbf0fcf6c50f0e5ce4cdffb933dd91765ef51220e70e4d848304991aec3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-B15",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        661,
+        666
+      ],
+      "new_locator": [
+        661,
+        666
+      ],
+      "diff_candidate_locator": [
+        661,
+        666
+      ],
+      "before_sha256": "58ff8fffa7174114193f24beb1386d58b0f62615ce3bf0c678904357762dacf1",
+      "after_sha256": "58ff8fffa7174114193f24beb1386d58b0f62615ce3bf0c678904357762dacf1",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-GATE-SHP",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        668,
+        673
+      ],
+      "new_locator": [
+        668,
+        673
+      ],
+      "diff_candidate_locator": [
+        668,
+        673
+      ],
+      "before_sha256": "4cc58a29b28e457f9a2afb0ac6b0b4ee5a4261d1f1dd468dcb6fafd586f13473",
+      "after_sha256": "4cc58a29b28e457f9a2afb0ac6b0b4ee5a4261d1f1dd468dcb6fafd586f13473",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-SHP-NOT-RUN",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        675,
+        680
+      ],
+      "new_locator": [
+        675,
+        680
+      ],
+      "diff_candidate_locator": [
+        675,
+        680
+      ],
+      "before_sha256": "35bb266afc35a0ad29994b23747e4ca8187b1a00afd39288affc84b2ab70dac3",
+      "after_sha256": "35bb266afc35a0ad29994b23747e4ca8187b1a00afd39288affc84b2ab70dac3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-G2C",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        682,
+        690
+      ],
+      "new_locator": [
+        682,
+        690
+      ],
+      "diff_candidate_locator": [
+        682,
+        690
+      ],
+      "before_sha256": "70f5cdd956e3c5f013efa9963603eb6a16290f2aac98c7f995ee1f512a6f86b1",
+      "after_sha256": "70f5cdd956e3c5f013efa9963603eb6a16290f2aac98c7f995ee1f512a6f86b1",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-G2C",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        692,
+        700
+      ],
+      "new_locator": [
+        692,
+        700
+      ],
+      "diff_candidate_locator": [
+        692,
+        700
+      ],
+      "before_sha256": "ecad825e3a26a25f8f03870cd9160950a1a2a320525461f101f61396eb2eefc5",
+      "after_sha256": "ecad825e3a26a25f8f03870cd9160950a1a2a320525461f101f61396eb2eefc5",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-CLOSE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        702,
+        708
+      ],
+      "new_locator": [
+        702,
+        708
+      ],
+      "diff_candidate_locator": [
+        702,
+        708
+      ],
+      "before_sha256": "14fd14301e45b6b81fce7507b87ab352193525b593700d2231f689d115b158b9",
+      "after_sha256": "14fd14301e45b6b81fce7507b87ab352193525b593700d2231f689d115b158b9",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-CLOSE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        710,
+        716
+      ],
+      "new_locator": [
+        710,
+        716
+      ],
+      "diff_candidate_locator": [
+        710,
+        716
+      ],
+      "before_sha256": "71ccedf29983ae3eabf1e911080c60d4b57374691b880b4acca8fe2be84fdded",
+      "after_sha256": "71ccedf29983ae3eabf1e911080c60d4b57374691b880b4acca8fe2be84fdded",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-GATE-IMPLICATION",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        718,
+        723
+      ],
+      "new_locator": [
+        718,
+        723
+      ],
+      "diff_candidate_locator": [
+        718,
+        723
+      ],
+      "before_sha256": "1bddde7a5d8eb0dc3fade59ea946ac6b379ca52ef9633a3bcf4a78ab56b70f77",
+      "after_sha256": "1bddde7a5d8eb0dc3fade59ea946ac6b379ca52ef9633a3bcf4a78ab56b70f77",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R050",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        727,
+        738
+      ],
+      "new_locator": [
+        727,
+        735
+      ],
+      "diff_candidate_locator": [
+        727,
+        735
+      ],
+      "before_sha256": "4ecfda94eb81185a015234ce0125632ef05a09779dc3fd9295ff60b0d7536cae",
+      "after_sha256": "4e5be0838ee61e885babdf2b76e09710127890f818f6c20071943e5bf2fb76ee",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-5.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-5.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-5.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-5.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-5.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-5.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-5.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-5.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-5.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-5.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-5.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-5.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R055",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        740,
+        751
+      ],
+      "new_locator": [
+        737,
+        745
+      ],
+      "diff_candidate_locator": [
+        737,
+        745
+      ],
+      "before_sha256": "121c21dd26d82346209c1d50df5490f8090a9115e95e837f1390444b2f142146",
+      "after_sha256": "b60ac987610b01242d79ecb8f2be13a8b930eda3bc38d3f0e7dd20fab39024c8",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-55.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-55.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-55.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-55.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-55.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-55.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-55.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-55.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-55.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-55.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-55.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-55.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R060",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        753,
+        764
+      ],
+      "new_locator": [
+        747,
+        755
+      ],
+      "diff_candidate_locator": [
+        747,
+        755
+      ],
+      "before_sha256": "def5a40b5f79b547aed9a9831bd606cc75b6b2cb60ef3752d0fa3bde5332d022",
+      "after_sha256": "f58b9c0b700f7af67d6a187653e2a444cbb99962f378b33ab64564f93eecc030",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-6.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-6.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-6.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-6.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-6.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-6.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-6.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-6.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-6.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-6.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-6.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-6.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R065",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        766,
+        777
+      ],
+      "new_locator": [
+        757,
+        765
+      ],
+      "diff_candidate_locator": [
+        757,
+        765
+      ],
+      "before_sha256": "acff6e0c394fbdceee05f3d7ec72a3b93b2a0ad58412ad5e9ed0ea038b29e263",
+      "after_sha256": "7d4b8b1147591418e7962aabd5b83d4ffc95ad48e336a5756cc2ee9652d33ca5",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-65.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-65.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-65.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-65.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-65.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-65.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-65.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-65.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-65.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-65.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-65.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-65.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R070",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        779,
+        790
+      ],
+      "new_locator": [
+        767,
+        775
+      ],
+      "diff_candidate_locator": [
+        767,
+        775
+      ],
+      "before_sha256": "6cd3eae40c83a96590c512466246af809f697e21f83e1333a04ec49c028533d6",
+      "after_sha256": "630f53a5ac7a7c131572e951985626dd62bf2ac9e7bf398b8a715c50c4e828e1",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-7.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-7.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-7.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-7.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-7.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-7.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-7.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-7.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-7.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-7.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-7.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-7.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R075",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        792,
+        803
+      ],
+      "new_locator": [
+        777,
+        785
+      ],
+      "diff_candidate_locator": [
+        777,
+        785
+      ],
+      "before_sha256": "9240374931ec9ff12765d1e95e80ad81268a006c92914206357fb4c877ff1e19",
+      "after_sha256": "02486e6da2c29d2586d62fb4c28b6c81408ed695be2ddb42b1437360607cb0a6",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-75.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-75.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-75.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-75.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-75.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-75.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-75.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-75.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-75.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-75.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-75.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-75.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R080",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        805,
+        816
+      ],
+      "new_locator": [
+        787,
+        795
+      ],
+      "diff_candidate_locator": [
+        787,
+        795
+      ],
+      "before_sha256": "ae1c7320c5b560dc9f53e440339dddf3401655922da8855230d6ef4c79b7bcf9",
+      "after_sha256": "d7b0dfe47951de209778d4b569cb36ec92de468663f0ebcfdca2120d2a39a74a",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-8.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-8.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-8.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-8.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-8.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-8.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-8.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-8.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-8.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-8.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-8.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-8.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R085",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        818,
+        829
+      ],
+      "new_locator": [
+        797,
+        805
+      ],
+      "diff_candidate_locator": [
+        797,
+        805
+      ],
+      "before_sha256": "da4068cf59b1192ee7cbcc81fb7af2a837f1434105cf995b58f0347b857e84f5",
+      "after_sha256": "285689f1640cac0b28378d6909f37a3ff949d28c41f1a1f4d5aaa84d772cf039",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-85.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-85.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-85.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-85.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-85.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-85.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-85.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-85.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-85.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-85.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-85.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-85.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X3-LOCAL-R090",
+      "source": "discussion",
+      "kind": "visible-text",
+      "old_locator": [
+        831,
+        842
+      ],
+      "new_locator": [
+        807,
+        815
+      ],
+      "diff_candidate_locator": [
+        807,
+        827
+      ],
+      "before_sha256": "e4a8f23005470299c810b9473fb15c0db5d59772c3175ceb2b0b3f912934b086",
+      "after_sha256": "dbf0eab3dba12474a7eacec088e9bd5ce313adb5b6e1c52634067be46866abb4",
+      "before_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-9.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-9.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-9.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-9.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-9.x3.delta.interval_95.i001}{[upper]}. The reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-9.x3.reading}{[reading]}}, using the declared margin $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$. \nThe main B curve was recorded as valid. \nThe main B curve was recorded as invalid. \nThis cell contrast is conditional on fitting and training; it neither validates the whole curve nor estimates its frozen boundary.",
+      "after_visible": "At $r=\\resultnum{v4x.comparisons.by_r.0-9.r}{[share]}$ and $a=\\resultnum{v4x.comparisons.by_r.0-9.x3.a}{[strength]}$, the AUC difference for free minus known response signal share was \\resultnum{v4x.comparisons.by_r.0-9.x3.delta.point}{[difference]}, with interval \\resultnum{v4x.comparisons.by_r.0-9.x3.delta.interval_95.i000}{[lower]} to \\resultnum{v4x.comparisons.by_r.0-9.x3.delta.interval_95.i001}{[upper]}; the reported classification was \\texttt{\\resultnum{v4x.comparisons.by_r.0-9.x3.reading}{[reading]}}.",
+      "explicit_acceptance": true,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.status-and-scope",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        13,
+        20
+      ],
+      "new_locator": [
+        13,
+        20
+      ],
+      "diff_candidate_locator": [
+        13,
+        20
+      ],
+      "before_sha256": "275459e9ecc6018d0f83b3d5235d9227cda4e852c0a2c64663b59633ac173173",
+      "after_sha256": "275459e9ecc6018d0f83b3d5235d9227cda4e852c0a2c64663b59633ac173173",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-reduced-separation",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        21,
+        26
+      ],
+      "new_locator": [
+        21,
+        26
+      ],
+      "diff_candidate_locator": [
+        21,
+        26
+      ],
+      "before_sha256": "c531fbbcdc36864811272be0a07160bef940975780f3c43630b6434df26af87e",
+      "after_sha256": "c531fbbcdc36864811272be0a07160bef940975780f3c43630b6434df26af87e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-local-equivalence",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        27,
+        31
+      ],
+      "new_locator": [
+        27,
+        31
+      ],
+      "diff_candidate_locator": [
+        27,
+        31
+      ],
+      "before_sha256": "2d3b90ab8cdaa3c29ba25b87313db2bb37a77f13c3e4f1ac1415bea2bda9323b",
+      "after_sha256": "2d3b90ab8cdaa3c29ba25b87313db2bb37a77f13c3e4f1ac1415bea2bda9323b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-inconclusive-contrast",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        32,
+        35
+      ],
+      "new_locator": [
+        32,
+        35
+      ],
+      "diff_candidate_locator": [
+        32,
+        35
+      ],
+      "before_sha256": "709432d96e8e0a59c2ba808c9b9e9da4284ec40c2c52e19743795d0745e88080",
+      "after_sha256": "709432d96e8e0a59c2ba808c9b9e9da4284ec40c2c52e19743795d0745e88080",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-execution-errors",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        36,
+        40
+      ],
+      "new_locator": [
+        36,
+        40
+      ],
+      "diff_candidate_locator": [
+        36,
+        40
+      ],
+      "before_sha256": "dd952912bcd30acd46ae94a7f58e282630e9d307d652176d4f22353a9d5ba851",
+      "after_sha256": "dd952912bcd30acd46ae94a7f58e282630e9d307d652176d4f22353a9d5ba851",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-known-fit-gaps",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        41,
+        45
+      ],
+      "new_locator": [
+        41,
+        45
+      ],
+      "diff_candidate_locator": [
+        41,
+        45
+      ],
+      "before_sha256": "f1ce2465052e831624f75ba8499911f7853f245ff2d8843d5d961a06c1a1bed7",
+      "after_sha256": "f1ce2465052e831624f75ba8499911f7853f245ff2d8843d5d961a06c1a1bed7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-free-fit-gaps",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        46,
+        52
+      ],
+      "new_locator": [
+        46,
+        52
+      ],
+      "diff_candidate_locator": [
+        46,
+        52
+      ],
+      "before_sha256": "25057b069980dd8319b3c06a122090d56fc7890c926a672702f65f5700cf4d4b",
+      "after_sha256": "25057b069980dd8319b3c06a122090d56fc7890c926a672702f65f5700cf4d4b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x3-paired-cell-flag",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        53,
+        57
+      ],
+      "new_locator": [
+        53,
+        57
+      ],
+      "diff_candidate_locator": [
+        53,
+        57
+      ],
+      "before_sha256": "7bdaa1b98c83ae8b5badfd63edbccd0fb1804b73a126b4aaa08bdb25c8cd55da",
+      "after_sha256": "7bdaa1b98c83ae8b5badfd63edbccd0fb1804b73a126b4aaa08bdb25c8cd55da",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-conditional-rejection-references",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        58,
+        64
+      ],
+      "new_locator": [
+        58,
+        64
+      ],
+      "diff_candidate_locator": [
+        58,
+        64
+      ],
+      "before_sha256": "17c968dfefafda58d1a5fbe5219600bf0c86533e0add5d142331bc6ed22628ca",
+      "after_sha256": "17c968dfefafda58d1a5fbe5219600bf0c86533e0add5d142331bc6ed22628ca",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-compatible-normal-reference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        65,
+        68
+      ],
+      "new_locator": [
+        65,
+        68
+      ],
+      "diff_candidate_locator": [
+        65,
+        68
+      ],
+      "before_sha256": "4ccbb52e630feaa402d7886bb561a6cb124da1c59eba926ae1cc85a0f23c296e",
+      "after_sha256": "4ccbb52e630feaa402d7886bb561a6cb124da1c59eba926ae1cc85a0f23c296e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-higher-normal-reference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        69,
+        72
+      ],
+      "new_locator": [
+        69,
+        72
+      ],
+      "diff_candidate_locator": [
+        69,
+        72
+      ],
+      "before_sha256": "1b5a137c2f9b5110fd7adbba6bf142b53b9c5fb2f909a856a081af8d8b30efec",
+      "after_sha256": "1b5a137c2f9b5110fd7adbba6bf142b53b9c5fb2f909a856a081af8d8b30efec",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-lower-normal-reference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        73,
+        77
+      ],
+      "new_locator": [
+        73,
+        77
+      ],
+      "diff_candidate_locator": [
+        73,
+        77
+      ],
+      "before_sha256": "d9eef047ee060f6fd1a33dc53e0d65023b5d8bcbc633bc395c989f01a732b12e",
+      "after_sha256": "d9eef047ee060f6fd1a33dc53e0d65023b5d8bcbc633bc395c989f01a732b12e",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-negative-paired-difference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        78,
+        81
+      ],
+      "new_locator": [
+        78,
+        81
+      ],
+      "diff_candidate_locator": [
+        78,
+        81
+      ],
+      "before_sha256": "40bf24a971c536e3d5cddc62f186740d890f990dd2250ea5bfe7f3cbb9d46768",
+      "after_sha256": "40bf24a971c536e3d5cddc62f186740d890f990dd2250ea5bfe7f3cbb9d46768",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-local-equivalence-of-rejection-references",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        82,
+        85
+      ],
+      "new_locator": [
+        82,
+        85
+      ],
+      "diff_candidate_locator": [
+        82,
+        85
+      ],
+      "before_sha256": "d854a2c4210da7188c81594d1d7e35a4546005e1cbf2ecee744425a7935de2e7",
+      "after_sha256": "d854a2c4210da7188c81594d1d7e35a4546005e1cbf2ecee744425a7935de2e7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-inconclusive-paired-difference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        86,
+        90
+      ],
+      "new_locator": [
+        86,
+        90
+      ],
+      "diff_candidate_locator": [
+        86,
+        90
+      ],
+      "before_sha256": "71b7221ef1a2e3f2187b938a54f503eca9306858dfd1e5fd2f2071c93723ccba",
+      "after_sha256": "71b7221ef1a2e3f2187b938a54f503eca9306858dfd1e5fd2f2071c93723ccba",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-zero-strength-compatibility",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        91,
+        94
+      ],
+      "new_locator": [
+        91,
+        94
+      ],
+      "diff_candidate_locator": [
+        91,
+        94
+      ],
+      "before_sha256": "47cad556c951b0002546bfd1bfdbe1ff356d5362d10c097d2f7263fe32aacecc",
+      "after_sha256": "47cad556c951b0002546bfd1bfdbe1ff356d5362d10c097d2f7263fe32aacecc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-above-nominal-zero-strength-reference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        95,
+        98
+      ],
+      "new_locator": [
+        95,
+        98
+      ],
+      "diff_candidate_locator": [
+        95,
+        98
+      ],
+      "before_sha256": "947760809df8eba82e23a41a86111efd4bd1aa519f31c3a395ae3f2a665769ea",
+      "after_sha256": "947760809df8eba82e23a41a86111efd4bd1aa519f31c3a395ae3f2a665769ea",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x4-below-nominal-zero-strength-reference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        99,
+        104
+      ],
+      "new_locator": [
+        99,
+        104
+      ],
+      "diff_candidate_locator": [
+        99,
+        104
+      ],
+      "before_sha256": "b74072e00ccce0b58c9ad17c05a672b3a937290d7b8389266eaff16e3312c368",
+      "after_sha256": "b74072e00ccce0b58c9ad17c05a672b3a937290d7b8389266eaff16e3312c368",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-coverage-denominators.inventory",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        105,
+        106
+      ],
+      "new_locator": [
+        105,
+        106
+      ],
+      "diff_candidate_locator": [
+        105,
+        106
+      ],
+      "before_sha256": "a50adc4d298eb40df96460bc819476d5b6a812f121adeed2d256761364a62cbc",
+      "after_sha256": "a50adc4d298eb40df96460bc819476d5b6a812f121adeed2d256761364a62cbc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-coverage-denominators.joint",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        107,
+        108
+      ],
+      "new_locator": [
+        107,
+        108
+      ],
+      "diff_candidate_locator": [
+        107,
+        108
+      ],
+      "before_sha256": "b16b4b3ff95824d0d441e6fcbe35e7c4ade8d889cf386bbb42fae999bdde4f44",
+      "after_sha256": "b16b4b3ff95824d0d441e6fcbe35e7c4ade8d889cf386bbb42fae999bdde4f44",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-coverage-denominators.accounting",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        109,
+        113
+      ],
+      "new_locator": [
+        109,
+        113
+      ],
+      "diff_candidate_locator": [
+        109,
+        113
+      ],
+      "before_sha256": "092a92757403afe1d5af7e80ad4584bd7dbee1d48d2164296803f6331eae2dba",
+      "after_sha256": "092a92757403afe1d5af7e80ad4584bd7dbee1d48d2164296803f6331eae2dba",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-no-undercoverage-detected",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        114,
+        117
+      ],
+      "new_locator": [
+        114,
+        117
+      ],
+      "diff_candidate_locator": [
+        114,
+        117
+      ],
+      "before_sha256": "e6d3f90f00a4a154cb9b9b5f47757ca908ab343538aa25252759bec2f1b72ca3",
+      "after_sha256": "e6d3f90f00a4a154cb9b9b5f47757ca908ab343538aa25252759bec2f1b72ca3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-below-nominal-reference",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        118,
+        121
+      ],
+      "new_locator": [
+        118,
+        121
+      ],
+      "diff_candidate_locator": [
+        118,
+        121
+      ],
+      "before_sha256": "b74441b57bea6d6b616537bba18bd10dcb1c5d224a387382504e6d3c9d384ace",
+      "after_sha256": "b74441b57bea6d6b616537bba18bd10dcb1c5d224a387382504e6d3c9d384ace",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-failure-criterion",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        122,
+        125
+      ],
+      "new_locator": [
+        122,
+        125
+      ],
+      "diff_candidate_locator": [
+        122,
+        125
+      ],
+      "before_sha256": "55061e32ed09a9aefa5874d6a9d0f70cfe5abb9937923d2b8c151ac4ecf640af",
+      "after_sha256": "55061e32ed09a9aefa5874d6a9d0f70cfe5abb9937923d2b8c151ac4ecf640af",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-no-reading",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        126,
+        129
+      ],
+      "new_locator": [
+        126,
+        129
+      ],
+      "diff_candidate_locator": [
+        126,
+        129
+      ],
+      "before_sha256": "341273dc2680adbef853683bcbab2f283782abca3b49f41085383356368a3f07",
+      "after_sha256": "341273dc2680adbef853683bcbab2f283782abca3b49f41085383356368a3f07",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-reference-precision",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        130,
+        134
+      ],
+      "new_locator": [
+        130,
+        134
+      ],
+      "diff_candidate_locator": [
+        130,
+        134
+      ],
+      "before_sha256": "5fb2710703daa65a57b069d217d11c8cf1d47cb210a6756e5a2625412bbcf9f0",
+      "after_sha256": "5fb2710703daa65a57b069d217d11c8cf1d47cb210a6756e5a2625412bbcf9f0",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-unavailable-procedural-truth",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        135,
+        138
+      ],
+      "new_locator": [
+        135,
+        138
+      ],
+      "diff_candidate_locator": [
+        135,
+        138
+      ],
+      "before_sha256": "bf208fe8712f5b01c7fa2829981ebdd973c665c26dbf0f63be7fa2b0dbdc05bf",
+      "after_sha256": "bf208fe8712f5b01c7fa2829981ebdd973c665c26dbf0f63be7fa2b0dbdc05bf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-conservative-flag",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        139,
+        143
+      ],
+      "new_locator": [
+        139,
+        143
+      ],
+      "diff_candidate_locator": [
+        139,
+        143
+      ],
+      "before_sha256": "e4de44fdfa38cba871fa48da9c9b79fcca27722a6a4a618391136a9decb83e7f",
+      "after_sha256": "e4de44fdfa38cba871fa48da9c9b79fcca27722a6a4a618391136a9decb83e7f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-procedural-and-approximate-population-truth",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        144,
+        150
+      ],
+      "new_locator": [
+        144,
+        150
+      ],
+      "diff_candidate_locator": [
+        144,
+        150
+      ],
+      "before_sha256": "9502970bc8846880b0eed76d0e7d97978ef3708b1a5b2c2e51e4665bb5b4ca5a",
+      "after_sha256": "9502970bc8846880b0eed76d0e7d97978ef3708b1a5b2c2e51e4665bb5b4ca5a",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x6-matching-diagnostics",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        151,
+        155
+      ],
+      "new_locator": [
+        151,
+        155
+      ],
+      "diff_candidate_locator": [
+        151,
+        155
+      ],
+      "before_sha256": "b5b4be1783804d780914ab8c300eca0cb7ffc03b3e19ae6a27b4b4b4290a87fc",
+      "after_sha256": "b5b4be1783804d780914ab8c300eca0cb7ffc03b3e19ae6a27b4b4b4290a87fc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-gain-under-the-paired-criterion",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        156,
+        161
+      ],
+      "new_locator": [
+        156,
+        161
+      ],
+      "diff_candidate_locator": [
+        156,
+        161
+      ],
+      "before_sha256": "8053b25a630ade975faec75cd5c5918764a112312bec4a7fa8187ebe4e452207",
+      "after_sha256": "8053b25a630ade975faec75cd5c5918764a112312bec4a7fa8187ebe4e452207",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-local-equivalence-near-the-boundary",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        162,
+        165
+      ],
+      "new_locator": [
+        162,
+        165
+      ],
+      "diff_candidate_locator": [
+        162,
+        165
+      ],
+      "before_sha256": "8fa9a6e49c7700eeb6b8dc279ccee74f8211a28b72d3d709b7c8a3726f3fb74d",
+      "after_sha256": "8fa9a6e49c7700eeb6b8dc279ccee74f8211a28b72d3d709b7c8a3726f3fb74d",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-inconclusive-comparison",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        166,
+        169
+      ],
+      "new_locator": [
+        166,
+        169
+      ],
+      "diff_candidate_locator": [
+        166,
+        169
+      ],
+      "before_sha256": "c62c0dce39a9c097307d37854882efc4963231247fa0df780d0d9dd768c50927",
+      "after_sha256": "c62c0dce39a9c097307d37854882efc4963231247fa0df780d0d9dd768c50927",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-invalid-comparison",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        170,
+        173
+      ],
+      "new_locator": [
+        170,
+        173
+      ],
+      "diff_candidate_locator": [
+        170,
+        173
+      ],
+      "before_sha256": "3af73f58d00876d4aa676ff4eaa0edd51ee3380fdc3726e7bad291039fe1fa76",
+      "after_sha256": "3af73f58d00876d4aa676ff4eaa0edd51ee3380fdc3726e7bad291039fe1fa76",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-censored-comparison",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        174,
+        177
+      ],
+      "new_locator": [
+        174,
+        177
+      ],
+      "diff_candidate_locator": [
+        174,
+        177
+      ],
+      "before_sha256": "17857719f8450c0073237ee555cf83f4d482b85bf0f7f6ec695eb2c62069a3cf",
+      "after_sha256": "17857719f8450c0073237ee555cf83f4d482b85bf0f7f6ec695eb2c62069a3cf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-unavailable-comparison",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        178,
+        180
+      ],
+      "new_locator": [
+        178,
+        180
+      ],
+      "diff_candidate_locator": [
+        178,
+        180
+      ],
+      "before_sha256": "b6e1d4a905b6e24ff40ce318528795fa215761406eb7f7ad279557835f6b4690",
+      "after_sha256": "b6e1d4a905b6e24ff40ce318528795fa215761406eb7f7ad279557835f6b4690",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.x7-incomplete-comparison",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        181,
+        185
+      ],
+      "new_locator": [
+        181,
+        185
+      ],
+      "diff_candidate_locator": [
+        181,
+        185
+      ],
+      "before_sha256": "33172e00d36d1fdeeb8a2fdeee42d0542fc582f7e7976632b21d8fa5b653f145",
+      "after_sha256": "33172e00d36d1fdeeb8a2fdeee42d0542fc582f7e7976632b21d8fa5b653f145",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.available-local-readings",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        189,
+        194
+      ],
+      "new_locator": [
+        189,
+        194
+      ],
+      "diff_candidate_locator": [
+        189,
+        194
+      ],
+      "before_sha256": "9539d62641fe17bf41341f504e6f0019e3c3f71df992cd5a42c6200227f85612",
+      "after_sha256": "9539d62641fe17bf41341f504e6f0019e3c3f71df992cd5a42c6200227f85612",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.partial-and-unavailable-readings",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        195,
+        200
+      ],
+      "new_locator": [
+        195,
+        200
+      ],
+      "diff_candidate_locator": [
+        195,
+        200
+      ],
+      "before_sha256": "7d179405fae3a271f28cce1daa8bbab677e0e419d0d0f5c6bed1e1c1654e91a0",
+      "after_sha256": "7d179405fae3a271f28cce1daa8bbab677e0e419d0d0f5c6bed1e1c1654e91a0",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.twin-and-expanded-feature-boundaries",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        201,
+        206
+      ],
+      "new_locator": [
+        201,
+        206
+      ],
+      "diff_candidate_locator": [
+        201,
+        206
+      ],
+      "before_sha256": "18f9567326e303e0f46a9d9ad31d22f137cbd8c3a4d05c3978d3bfd0687aa8fe",
+      "after_sha256": "18f9567326e303e0f46a9d9ad31d22f137cbd8c3a4d05c3978d3bfd0687aa8fe",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-equivalent-strength-available",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        207,
+        209
+      ],
+      "new_locator": [
+        207,
+        209
+      ],
+      "diff_candidate_locator": [
+        207,
+        209
+      ],
+      "before_sha256": "c698a2e0983f8e03d256c1f6f2218feb61fb29291ed6b652997cd4783fe77529",
+      "after_sha256": "c698a2e0983f8e03d256c1f6f2218feb61fb29291ed6b652997cd4783fe77529",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-equivalent-strength-censored",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        210,
+        212
+      ],
+      "new_locator": [
+        210,
+        212
+      ],
+      "diff_candidate_locator": [
+        210,
+        212
+      ],
+      "before_sha256": "8bdbe98bae201ac967254f073ffd4684515df80a027f7b351af1467fd6a4efea",
+      "after_sha256": "8bdbe98bae201ac967254f073ffd4684515df80a027f7b351af1467fd6a4efea",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-equivalent-strength-above-the-grid",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        213,
+        215
+      ],
+      "new_locator": [
+        213,
+        215
+      ],
+      "diff_candidate_locator": [
+        213,
+        215
+      ],
+      "before_sha256": "88d486ea07a3e6a475a3899352580f8d1c862313bd61dbe2474a2bc2bf787585",
+      "after_sha256": "88d486ea07a3e6a475a3899352580f8d1c862313bd61dbe2474a2bc2bf787585",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-interval-overlap",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        216,
+        218
+      ],
+      "new_locator": [
+        216,
+        218
+      ],
+      "diff_candidate_locator": [
+        216,
+        218
+      ],
+      "before_sha256": "c736e0b828d71ac53f632131dd7243db18edee46bcdb0a9ec025ad6d22e598f7",
+      "after_sha256": "c736e0b828d71ac53f632131dd7243db18edee46bcdb0a9ec025ad6d22e598f7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-interval-above",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        219,
+        221
+      ],
+      "new_locator": [
+        219,
+        221
+      ],
+      "diff_candidate_locator": [
+        219,
+        221
+      ],
+      "before_sha256": "fb096952db3255a1421704febcd0cb0f8e254dd66b90e369436572f135321c76",
+      "after_sha256": "fb096952db3255a1421704febcd0cb0f8e254dd66b90e369436572f135321c76",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-interval-below",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        222,
+        224
+      ],
+      "new_locator": [
+        222,
+        224
+      ],
+      "diff_candidate_locator": [
+        222,
+        224
+      ],
+      "before_sha256": "8cae425199b3722dea7e2dbaee2698dea1256168b4781aec337afce445967a77",
+      "after_sha256": "8cae425199b3722dea7e2dbaee2698dea1256168b4781aec337afce445967a77",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.misspecification-comparison-unavailable",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        225,
+        229
+      ],
+      "new_locator": [
+        225,
+        229
+      ],
+      "diff_candidate_locator": [
+        225,
+        229
+      ],
+      "before_sha256": "4e20a44147e37f09a7c7e33b34ad44ebd39254becb21aa686180c40ca6e826ff",
+      "after_sha256": "4e20a44147e37f09a7c7e33b34ad44ebd39254becb21aa686180c40ca6e826ff",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "E.tables",
+      "source": "exploratory",
+      "kind": "unchanged",
+      "old_locator": [
+        230,
+        253
+      ],
+      "new_locator": [
+        230,
+        253
+      ],
+      "diff_candidate_locator": [
+        230,
+        253
+      ],
+      "before_sha256": "157d437c8626672617d4c2ec033ae746fad2be75e990a6a6e3b58bc2ce4ff1bc",
+      "after_sha256": "157d437c8626672617d4c2ec033ae746fad2be75e990a6a6e3b58bc2ce4ff1bc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.design",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        13,
+        13
+      ],
+      "new_locator": [
+        13,
+        13
+      ],
+      "diff_candidate_locator": [
+        13,
+        13
+      ],
+      "before_sha256": "dd83d20145f05aab7e5a669e684019ab39211b140f342d8bf990db87714fcb66",
+      "after_sha256": "dd83d20145f05aab7e5a669e684019ab39211b140f342d8bf990db87714fcb66",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.new-seeds",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        19,
+        19
+      ],
+      "new_locator": [
+        19,
+        19
+      ],
+      "diff_candidate_locator": [
+        19,
+        19
+      ],
+      "before_sha256": "2f678ad56e8ac203c41e5ed3540d05d18458402b935cff5ce5d28af1207d7fdf",
+      "after_sha256": "2f678ad56e8ac203c41e5ed3540d05d18458402b935cff5ce5d28af1207d7fdf",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.every-stage",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        23,
+        23
+      ],
+      "new_locator": [
+        23,
+        23
+      ],
+      "diff_candidate_locator": [
+        23,
+        23
+      ],
+      "before_sha256": "90321b81d6068e1b35d8f3ec47a350c8517f39f6542dd403bfc93000118a4c32",
+      "after_sha256": "90321b81d6068e1b35d8f3ec47a350c8517f39f6542dd403bfc93000118a4c32",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.limitation",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        27,
+        27
+      ],
+      "new_locator": [
+        27,
+        27
+      ],
+      "diff_candidate_locator": [
+        27,
+        27
+      ],
+      "before_sha256": "e4c6d9f6918408b865c06117661e77ba346f768b05249f174cff1f3cee6b28b8",
+      "after_sha256": "e4c6d9f6918408b865c06117661e77ba346f768b05249f174cff1f3cee6b28b8",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.G",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        33,
+        33
+      ],
+      "new_locator": [
+        33,
+        33
+      ],
+      "diff_candidate_locator": [
+        33,
+        33
+      ],
+      "before_sha256": "b1587c1e05adce95609ab2fe16d02ebb6e1333a8170131e342633e859086ab1b",
+      "after_sha256": "b1587c1e05adce95609ab2fe16d02ebb6e1333a8170131e342633e859086ab1b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B02",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        37,
+        37
+      ],
+      "new_locator": [
+        37,
+        37
+      ],
+      "diff_candidate_locator": [
+        37,
+        37
+      ],
+      "before_sha256": "9a9ba3024ffcaf7c110bfa5895ccfffeeb2eaa21de26ed68aaf11a0ef7d0e4d2",
+      "after_sha256": "9a9ba3024ffcaf7c110bfa5895ccfffeeb2eaa21de26ed68aaf11a0ef7d0e4d2",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.H-BD",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        41,
+        41
+      ],
+      "new_locator": [
+        41,
+        41
+      ],
+      "diff_candidate_locator": [
+        41,
+        41
+      ],
+      "before_sha256": "adfafcfb9155e6d4f3b623c3c2f2e2ed208776d952884a45bc31d43e8cd1c399",
+      "after_sha256": "adfafcfb9155e6d4f3b623c3c2f2e2ed208776d952884a45bc31d43e8cd1c399",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.H-B",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        45,
+        45
+      ],
+      "new_locator": [
+        45,
+        45
+      ],
+      "diff_candidate_locator": [
+        45,
+        45
+      ],
+      "before_sha256": "02ac184b2c8282ce2a06122eb153fa48ee365593177dec9a2601b210793e4adc",
+      "after_sha256": "02ac184b2c8282ce2a06122eb153fa48ee365593177dec9a2601b210793e4adc",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.P6-a",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        49,
+        49
+      ],
+      "new_locator": [
+        49,
+        49
+      ],
+      "diff_candidate_locator": [
+        49,
+        49
+      ],
+      "before_sha256": "be402395cf46be5397316ffe7a72525198530fad579cdc1a13d48e7fa08cbff7",
+      "after_sha256": "be402395cf46be5397316ffe7a72525198530fad579cdc1a13d48e7fa08cbff7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.P6-empty",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        53,
+        53
+      ],
+      "new_locator": [
+        53,
+        53
+      ],
+      "diff_candidate_locator": [
+        53,
+        53
+      ],
+      "before_sha256": "dcfde28c12341d05f6f3c97fae99e7f01f0b1300126146e26cef8f86a807f759",
+      "after_sha256": "dcfde28c12341d05f6f3c97fae99e7f01f0b1300126146e26cef8f86a807f759",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B03",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        57,
+        57
+      ],
+      "new_locator": [
+        57,
+        57
+      ],
+      "diff_candidate_locator": [
+        57,
+        57
+      ],
+      "before_sha256": "0f96b3297c584b39f60b221613b8d32a4fa93596228efcb4433212aa0d48ef54",
+      "after_sha256": "0f96b3297c584b39f60b221613b8d32a4fa93596228efcb4433212aa0d48ef54",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.D-after-B03",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        61,
+        61
+      ],
+      "new_locator": [
+        61,
+        61
+      ],
+      "diff_candidate_locator": [
+        61,
+        61
+      ],
+      "before_sha256": "ac28db5ddcef42b691b6b6b1888b0383b354eacb8f909fdb4b607cd0853bb111",
+      "after_sha256": "ac28db5ddcef42b691b6b6b1888b0383b354eacb8f909fdb4b607cd0853bb111",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B10",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        65,
+        65
+      ],
+      "new_locator": [
+        65,
+        65
+      ],
+      "diff_candidate_locator": [
+        65,
+        65
+      ],
+      "before_sha256": "a5795cc442f10b5745560c81618c411443f21f131fb9a73ef40ce374da1d76a7",
+      "after_sha256": "a5795cc442f10b5745560c81618c411443f21f131fb9a73ef40ce374da1d76a7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B06",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        69,
+        69
+      ],
+      "new_locator": [
+        69,
+        69
+      ],
+      "diff_candidate_locator": [
+        69,
+        69
+      ],
+      "before_sha256": "c60a8653673e5a53bfc258ba0008c05ed12376e2d6b470741810151d5c175e19",
+      "after_sha256": "c60a8653673e5a53bfc258ba0008c05ed12376e2d6b470741810151d5c175e19",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.X6",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        75,
+        75
+      ],
+      "new_locator": [
+        75,
+        75
+      ],
+      "diff_candidate_locator": [
+        75,
+        75
+      ],
+      "before_sha256": "d8d241fc77cad293d75f99b5b78ff607ed618f9ee2316e29548a39a9dd84f3ee",
+      "after_sha256": "d8d241fc77cad293d75f99b5b78ff607ed618f9ee2316e29548a39a9dd84f3ee",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B09.1",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        87,
+        87
+      ],
+      "new_locator": [
+        87,
+        87
+      ],
+      "diff_candidate_locator": [
+        87,
+        87
+      ],
+      "before_sha256": "95e8a5f456bc6d403e312b56d83b1aaf4295166a1b04b9181a93bf0234d34b6f",
+      "after_sha256": "95e8a5f456bc6d403e312b56d83b1aaf4295166a1b04b9181a93bf0234d34b6f",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B09.2",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        89,
+        89
+      ],
+      "new_locator": [
+        89,
+        89
+      ],
+      "diff_candidate_locator": [
+        89,
+        89
+      ],
+      "before_sha256": "182549c0696f274d3826c9e9aaad1ebbe4b1e4a6dab4e3474eaaac50ef57642a",
+      "after_sha256": "182549c0696f274d3826c9e9aaad1ebbe4b1e4a6dab4e3474eaaac50ef57642a",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B09.3",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        91,
+        91
+      ],
+      "new_locator": [
+        91,
+        91
+      ],
+      "diff_candidate_locator": [
+        91,
+        91
+      ],
+      "before_sha256": "d135915cb8a2f30401043b04287a3d5620e4dd54e5de50e98093cffda8158b26",
+      "after_sha256": "d135915cb8a2f30401043b04287a3d5620e4dd54e5de50e98093cffda8158b26",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B04",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        95,
+        95
+      ],
+      "new_locator": [
+        95,
+        95
+      ],
+      "diff_candidate_locator": [
+        95,
+        95
+      ],
+      "before_sha256": "2dca84937fdae745be385baab528063e2553faac0f1c000e85c3565253754b05",
+      "after_sha256": "2dca84937fdae745be385baab528063e2553faac0f1c000e85c3565253754b05",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B05",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        100,
+        100
+      ],
+      "new_locator": [
+        100,
+        100
+      ],
+      "diff_candidate_locator": [
+        100,
+        100
+      ],
+      "before_sha256": "3cfc8be2039dd7294598f313bbef8483f2828f76150d194ce305023e59de940b",
+      "after_sha256": "3cfc8be2039dd7294598f313bbef8483f2828f76150d194ce305023e59de940b",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B08",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        104,
+        104
+      ],
+      "new_locator": [
+        104,
+        104
+      ],
+      "diff_candidate_locator": [
+        104,
+        104
+      ],
+      "before_sha256": "2415c50e0cb4de029f1c354fbcdf78ddf9014950f0692cc6a3bfcde3bce694c3",
+      "after_sha256": "2415c50e0cb4de029f1c354fbcdf78ddf9014950f0692cc6a3bfcde3bce694c3",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B11",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        109,
+        109
+      ],
+      "new_locator": [
+        109,
+        109
+      ],
+      "diff_candidate_locator": [
+        109,
+        109
+      ],
+      "before_sha256": "a006a7d3099c6d2d9c2ad342ddfc9713f85023576fa8fb9ca68efa3e638e5711",
+      "after_sha256": "a006a7d3099c6d2d9c2ad342ddfc9713f85023576fa8fb9ca68efa3e638e5711",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B14",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        113,
+        113
+      ],
+      "new_locator": [
+        113,
+        113
+      ],
+      "diff_candidate_locator": [
+        113,
+        113
+      ],
+      "before_sha256": "7f085cb18152434d2130c65b9a3eacc7968a49fac250cc6b539a70204c61531c",
+      "after_sha256": "7f085cb18152434d2130c65b9a3eacc7968a49fac250cc6b539a70204c61531c",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1b-G0",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        123,
+        123
+      ],
+      "new_locator": [
+        123,
+        123
+      ],
+      "diff_candidate_locator": [
+        123,
+        123
+      ],
+      "before_sha256": "dd16140e4b41c81976ee69ff384c5878c6f2a94ceee5fbe82d8a5dd45949deb5",
+      "after_sha256": "dd16140e4b41c81976ee69ff384c5878c6f2a94ceee5fbe82d8a5dd45949deb5",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1b-G1b",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        127,
+        127
+      ],
+      "new_locator": [
+        127,
+        127
+      ],
+      "diff_candidate_locator": [
+        127,
+        127
+      ],
+      "before_sha256": "e0491c22a76cf8701b3c839c21027919970eb03e90307a32ecb9aa52eb17e5b4",
+      "after_sha256": "e0491c22a76cf8701b3c839c21027919970eb03e90307a32ecb9aa52eb17e5b4",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1b-G1c",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        131,
+        131
+      ],
+      "new_locator": [
+        131,
+        131
+      ],
+      "diff_candidate_locator": [
+        131,
+        131
+      ],
+      "before_sha256": "78bbe3ddcd85da354eb35f63358ad1c00431a21b077ed1e30bd5423fb0d6c1de",
+      "after_sha256": "78bbe3ddcd85da354eb35f63358ad1c00431a21b077ed1e30bd5423fb0d6c1de",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1c",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        135,
+        135
+      ],
+      "new_locator": [
+        135,
+        135
+      ],
+      "diff_candidate_locator": [
+        135,
+        135
+      ],
+      "before_sha256": "3007225df8350d1e86d99201d000f216c9558346f091d4981c723b3b1662bf18",
+      "after_sha256": "3007225df8350d1e86d99201d000f216c9558346f091d4981c723b3b1662bf18",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1b-G2",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        139,
+        139
+      ],
+      "new_locator": [
+        139,
+        139
+      ],
+      "diff_candidate_locator": [
+        139,
+        139
+      ],
+      "before_sha256": "eb9c7af2da4f48fa8cd1e8e43a812e013f1f780a4fc235cfced9d286f2350f46",
+      "after_sha256": "eb9c7af2da4f48fa8cd1e8e43a812e013f1f780a4fc235cfced9d286f2350f46",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1b-G2c",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        143,
+        143
+      ],
+      "new_locator": [
+        143,
+        143
+      ],
+      "diff_candidate_locator": [
+        143,
+        143
+      ],
+      "before_sha256": "d8e358498bbb9e11fddcb8ef01f748c8ec43fba19e3de708b9626655bab22156",
+      "after_sha256": "d8e358498bbb9e11fddcb8ef01f748c8ec43fba19e3de708b9626655bab22156",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.B1d",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        147,
+        147
+      ],
+      "new_locator": [
+        147,
+        147
+      ],
+      "diff_candidate_locator": [
+        147,
+        147
+      ],
+      "before_sha256": "5f8e3e7a7cdc5d5208cb0fd1f92843e72ddcbc4059650ceddf7c24c4f20045b1",
+      "after_sha256": "5f8e3e7a7cdc5d5208cb0fd1f92843e72ddcbc4059650ceddf7c24c4f20045b1",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "A.X",
+      "source": "abstract",
+      "kind": "unchanged",
+      "old_locator": [
+        151,
+        151
+      ],
+      "new_locator": [
+        151,
+        151
+      ],
+      "diff_candidate_locator": [
+        151,
+        151
+      ],
+      "before_sha256": "91a44eba55b5bbf005281d85486714b9335da5a10430ad8abd193232b55c08b7",
+      "after_sha256": "91a44eba55b5bbf005281d85486714b9335da5a10430ad8abd193232b55c08b7",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "X6-READING-LABEL",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        44,
+        46
+      ],
+      "new_locator": [
+        44,
+        46
+      ],
+      "diff_candidate_locator": [
+        44,
+        46
+      ],
+      "before_sha256": "fb835c7ab39c1a76ba5eb9976747bc054c6d452e53c7d39907f50ea807efae61",
+      "after_sha256": "fb835c7ab39c1a76ba5eb9976747bc054c6d452e53c7d39907f50ea807efae61",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-EVALUATION-PASS",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        288,
+        293
+      ],
+      "new_locator": [
+        288,
+        293
+      ],
+      "diff_candidate_locator": [
+        288,
+        293
+      ],
+      "before_sha256": "b7c669f7fdac887d58e4a30e4959d23ee7939fa5dc69c36449892bb663cc6522",
+      "after_sha256": "b7c669f7fdac887d58e4a30e4959d23ee7939fa5dc69c36449892bb663cc6522",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "D-X5-POST-UNAVAILABLE",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        334,
+        340
+      ],
+      "new_locator": [
+        334,
+        340
+      ],
+      "diff_candidate_locator": [
+        334,
+        340
+      ],
+      "before_sha256": "0ec2414e9a4ba710ce012cbed6248e781fa376e5797d51ffe133c8f8be7d2948",
+      "after_sha256": "0ec2414e9a4ba710ce012cbed6248e781fa376e5797d51ffe133c8f8be7d2948",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    },
+    {
+      "id": "C-EVALUATION-REQUIRED",
+      "source": "discussion",
+      "kind": "unchanged",
+      "old_locator": [
+        699,
+        699
+      ],
+      "new_locator": [
+        699,
+        699
+      ],
+      "diff_candidate_locator": [
+        699,
+        699
+      ],
+      "before_sha256": "84ee10695e7f9644d8cb2f8482b25e021fc5d75c8b81e7d7a701c1fbb93e6deb",
+      "after_sha256": "84ee10695e7f9644d8cb2f8482b25e021fc5d75c8b81e7d7a701c1fbb93e6deb",
+      "before_visible": null,
+      "after_visible": null,
+      "explicit_acceptance": false,
+      "condition_unchanged": true,
+      "action_unchanged": true
+    }
+  ],
+  "before_rules_sha256": "b8cba637979c98c7e2875de69352eb2a92c95588d12b4309831e88a446256201",
+  "after_rules_sha256": "e9da7010684cd4d6e9a5ca92187c0e76b9cc9dc76e18c0ec9350b6513cbbd108",
+  "accepted_visible_ids": [
+    "D-X3-LOCAL-R050",
+    "D-X3-LOCAL-R055",
+    "D-X3-LOCAL-R060",
+    "D-X3-LOCAL-R065",
+    "D-X3-LOCAL-R070",
+    "D-X3-LOCAL-R075",
+    "D-X3-LOCAL-R080",
+    "D-X3-LOCAL-R085",
+    "D-X3-LOCAL-R090"
+  ],
+  "old_revisions": {
+    "discussion": "b26c3ac8ed1ce892f7ec78630a8ad4d3c477ceff"
+  },
+  "script_sha256": "3bacdb9a25ab55b0a00492b769a3e4895580c211daa75170b87c8c8a2eef6281"
+}

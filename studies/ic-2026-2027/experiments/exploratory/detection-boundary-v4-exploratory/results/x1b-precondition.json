@@ -1,0 +1,255 @@
+{
+ "schema": "ic-study.v4-exploratory-x1b-precondition.v1",
+ "label": "exploratory; never promoted to confirmatory evidence",
+ "declaration": {
+  "readme_sha256": "3fb11dbcdc6c7d503bc86f51c133081f77d819372246c6274509661807c33db3",
+  "declaration_sha256": "427cd416392bcfe7440da82b12705d0e4a439b176e89a554105aa990dce072d7"
+ },
+ "rule": "frozen v4_curve.execute_cell and execute_swapped_cell with the original generator, same exploratory unit and seeds, declared sizes, separate processes; every file of each cell store equal byte for byte except access.jsonl, whose (action, key) sequence must be equal",
+ "size": 10626,
+ "cells": [
+  {
+   "a": 0.0,
+   "r": 0.9,
+   "unit": "x1b-t1-u00-r8",
+   "index": 0,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "anchor-exact"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_and_successor": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "a8d73a0006c5fc75478c7ad23b1ac7070cec03e344fe60321435ae9c297ef29f",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 577,
+   "checkpoints": 568,
+   "checkpoints_sha256": "a4d57877ea4f96626b9f6bfb45901b49bb7c16c81027ed97824cd5742acb3e30",
+   "sha256": {
+    "eta-shifts.npy": "f2af4ae0b45266513ec96fe63bd3883e1453f3ba0db8dcabd53ef38c945e3ab1",
+    "nuisance.npy": "f2af4ae0b45266513ec96fe63bd3883e1453f3ba0db8dcabd53ef38c945e3ab1",
+    "phases.jsonl": "14f94f298dbfa9665f51572236caa52d6d7dd931e4e82119aa8c54b011d2063b",
+    "provenance.json": "90b2f14da639cf1f099c3fda22ca12063fb9d7ba6bcbf0845d1fd7e7d26b8bfe",
+    "result.json": "c21917a9047714d1cfab07e7c47949fd2f39fdb582bb0e684e61e9ea486ab4a3",
+    "scores0.npy": "de75bb2615e8eaeae29fb44d545bcba5d2745c035acde0786ad182addf63cff5",
+    "scores1.npy": "2e7c1cc05044ee308bc40dc7706729844bbd5a0964802ee1de82557fb0d131ae",
+    "seal.json": "da6f26a20e37e9c8a626cfae55bef770ab0600d98fa1811998ef12808e181c45",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T16:49:21+00:00",
+     "wall_seconds": 730.5748781790026,
+     "cpu_seconds": 709.793717044
+    },
+    "successor": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T16:49:39+00:00",
+     "wall_seconds": 748.9835505909869,
+     "cpu_seconds": 725.9807230199999
+    }
+   }
+  },
+  {
+   "a": 0.003,
+   "r": 0.7,
+   "unit": "x1b-t1-u00-r4",
+   "index": 2,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_and_successor": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "a8d73a0006c5fc75478c7ad23b1ac7070cec03e344fe60321435ae9c297ef29f",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 1211,
+   "checkpoints": 1202,
+   "checkpoints_sha256": "02d3006b261bea46a4a479062836085689e221b22a35787d455ae35482ca7920",
+   "sha256": {
+    "eta-shifts.npy": "818e9e99110faa7f1ec7f54710020f928fbb1a509c789c6ef509f58c2ed11c7e",
+    "nuisance.npy": "b75bcce5ef15d8f9213793e3acdbe0aeb2759be370ff547cfdae13336646d3fd",
+    "phases.jsonl": "f73e319596a03b85f539a023893aefdc6ab756da2a77d9dcb132594aedb47f8c",
+    "provenance.json": "90b2f14da639cf1f099c3fda22ca12063fb9d7ba6bcbf0845d1fd7e7d26b8bfe",
+    "result.json": "370cdea1fb00485ec9d75903bbee4ff3a800115470ff4898fdd72c23b0352845",
+    "scores0.npy": "0430df8012617cb44ac16d5eb70366ad5fda2b707b3b6cc50721e24bcc0c2e90",
+    "scores1.npy": "3802692fdf8807075238cb874b2a4d3a511c06b302e328ef0fd8c9f9d4d49281",
+    "seal.json": "99b5e686d65eebc6a6f4c42470f02581614227c9ae0bdebcba016cadba737ace",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T17:08:29+00:00",
+     "wall_seconds": 1878.4893981950008,
+     "cpu_seconds": 1843.070085133
+    },
+    "successor": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T17:08:30+00:00",
+     "wall_seconds": 1880.1439457449596,
+     "cpu_seconds": 1844.4678798359998
+    }
+   }
+  },
+  {
+   "a": 0.03,
+   "r": 0.5,
+   "unit": "x1b-t1-u00-r0",
+   "index": 4,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_and_successor": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "a8d73a0006c5fc75478c7ad23b1ac7070cec03e344fe60321435ae9c297ef29f",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 1371,
+   "checkpoints": 1362,
+   "checkpoints_sha256": "b0017708b883c30d772d415f9b29f5bd067db3e25bbb5e186dfaa969e031ed1f",
+   "sha256": {
+    "eta-shifts.npy": "041e822717b2fc49158988980645379021fff4b89250960d71825e07f010d945",
+    "nuisance.npy": "104fdf0687093f1d0cf6e9198862e24d10a11da96e71abfa04ed1c59dec14ab0",
+    "phases.jsonl": "61d2329a83795d3fdd5fb43f62011e8037dc82079a3bbb7e25272678f0e843a2",
+    "provenance.json": "90b2f14da639cf1f099c3fda22ca12063fb9d7ba6bcbf0845d1fd7e7d26b8bfe",
+    "result.json": "a90cfeedbab98246157d43f16ca529b817695b64fe10a825ea8611f747094c32",
+    "scores0.npy": "ce28f4cd28feae1f4fe3ca98b89fd017e53ce0b4c301f94707618af4de5dcfac",
+    "scores1.npy": "655b1070fbe874b99d97049f5208b7f0be0b9ed9474f57616e57d1e1b362200e",
+    "seal.json": "4d34324c1c42667ceb935a2b111d6981ad9d802cff4a3330b86a70661fe9484d",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T17:10:29+00:00",
+     "wall_seconds": 1998.4870681990287,
+     "cpu_seconds": 1962.6160254600002
+    },
+    "successor": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T17:11:28+00:00",
+     "wall_seconds": 2057.616152117029,
+     "cpu_seconds": 2020.34461058
+    }
+   }
+  },
+  {
+   "a": 0.3,
+   "r": 0.6,
+   "unit": "x1b-t1-u00-r2",
+   "index": 6,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_and_successor": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "a8d73a0006c5fc75478c7ad23b1ac7070cec03e344fe60321435ae9c297ef29f",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 1595,
+   "checkpoints": 1586,
+   "checkpoints_sha256": "a6d2267ac8cad80e281bd78040f20f4096b7cb249251b68edf73ed01b4e604ff",
+   "sha256": {
+    "eta-shifts.npy": "34fe0b6e94a017c6e16a4cda63a9ab6af1be68715b4bfa69d87d9c7ad8d14810",
+    "nuisance.npy": "0f37358a77122c976aef7734e49eb626abf2ba601354fd7490cb183d0e37ee7a",
+    "phases.jsonl": "f3083291eee873c4b20be6c9c675034572f50a9188165d7b868837e9c2826318",
+    "provenance.json": "90b2f14da639cf1f099c3fda22ca12063fb9d7ba6bcbf0845d1fd7e7d26b8bfe",
+    "result.json": "d167d10acf1069012dd02863ed3aa3a238b737caeab1fb73db1aa9118fddf082",
+    "scores0.npy": "6cf14a0943bb38b0ace5883172e4cf2057158dd8871b3c6f5713f969e6e5cea2",
+    "scores1.npy": "25d7b8d99c389946beeb0df93a8f04a107e7452dbfa6c8f2eff8675f0444f980",
+    "seal.json": "4687195c6136161d199e6824d6a16a0168ee4ee8b08900adf865f0d58face55c",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T17:13:59+00:00",
+     "wall_seconds": 2208.4037962429575,
+     "cpu_seconds": 2168.270529895
+    },
+    "successor": {
+     "started_utc": "2026-09-28T16:37:10+00:00",
+     "finished_utc": "2026-09-28T17:14:07+00:00",
+     "wall_seconds": 2217.2708189310506,
+     "cpu_seconds": 2177.6477463379997
+    }
+   }
+  }
+ ],
+ "cells_reproduced_with_result": 4,
+ "passed": true,
+ "seeds": {
+  "namespace": "v4-exploratory-x1-x2",
+  "root": 20260928,
+  "material": "{namespace}|{root}|x1b|{block}|{phase}|{role}|{index}",
+  "block": "2 * reliability index + attempt, as in the frozen plans",
+  "digest": "sha256(material)[:8] as big-endian unsigned"
+ },
+ "code": {
+  "commit": "8f6f4cdbf079a6489c5756fb0460e4cb2bfa37f2",
+  "tracked_tree_clean": true,
+  "module_sha256": "5487e7ebbdbc9d511d9b74115dfb5daa895341240be43a47e645e71ae83a6c0d",
+  "lock_sha256": "2af4db0a2fdef85386a6998b5a27017443139a606103c04844050daaa03852d7",
+  "frozen_sources_sha256": {
+   "src/ic_study/analysis/detection_boundary.py": "07b9284a50fca97e39ee4131e483d9b780f95ca412f875aa9f416fc7a95062f3",
+   "src/ic_study/analysis/redesign.py": "60595a33858a9765f80b8d268d1308853fa068086f8ca4b1791f75697af158ff",
+   "src/ic_study/models/anchored_panel.py": "859795afa0ff18dbf55c818f770207d1d125df5f8b38cc96411760037db7d969",
+   "src/ic_study/models/detection_panel.py": "aee847707ca82acb4004e4c6288634ac294c2582da097a9183e80b698ca40be1",
+   "src/ic_study/models/detection_panel_v4.py": "14757fb89344ce24bf585ce685d898d7b71e71c5bfaffc2dd7931af7280e77f4",
+   "src/ic_study/simulation/amendment_a.py": "17d214cd904b4cc9875a1b2b4a12b237798b72b93a5c747d601c9d72609dddfc",
+   "src/ic_study/simulation/detection_v4.py": "63b5c466967d52d8b0f54932493fce8384df2d43f6733d0feddf4c112549679e"
+  },
+  "frozen_sources_match_freeze": true
+ },
+ "successor": {
+  "successor_sha256": "6053dba0070af8386e60ea4d3911e20b5cd1f14478fe0984d3e4e5939c92afd8",
+  "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+  "frozen_python_files": 80,
+  "frozen_python_mismatched": []
+ },
+ "host": {
+  "hostname": "homelab",
+  "system": "Linux",
+  "release": "7.2.5-3-omarchy",
+  "machine": "x86_64",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+  "logical_cpus": 12,
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "threads": {
+   "OPENBLAS_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1"
+  }
+ },
+ "verified_utc": "2026-09-28T17:14:08+00:00"
+}

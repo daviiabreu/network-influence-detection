@@ -1,0 +1,217 @@
+{
+  "format": "forecast-pilot-run-manifest-v1",
+  "recorded_at_utc": "2026-09-13T01:04:13.482247+00:00",
+  "data_kind": "unrestricted synthetic histograms; no human records",
+  "runs": [
+    {
+      "name": "benchmark-r32",
+      "phase": "benchmark",
+      "members": 32,
+      "sha256": "5da4db6753c93ae1fa1c906b813bb7300279835c5761e3af68b77cab8b3847cd",
+      "bytes": 611293,
+      "location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/objects/sha256/5da4db6753c93ae1fa1c906b813bb7300279835c5761e3af68b77cab8b3847cd",
+      "original_location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/benchmark-r32.jsonl",
+      "code_revision": "333938ecddf7f97eec4544d0fda40a0952e54183",
+      "spec_sha256": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+      "source_sha256": {
+        "pyproject.toml": "9f4394ce1733048a86d6ce3b1c3d1889ce50fce6b8952b7a0788c5b1b5490007",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "uv.lock": "b68ff2485ea124d94ef5e4df33ae15f1118e0530266bdd1b38221bc6f1835e7c"
+      },
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; SHA256-derived independent role seeds"
+      },
+      "started_at_utc": "2026-09-13T00:58:16.801455+00:00",
+      "completed_at_utc": "2026-09-13T00:58:17.430487+00:00",
+      "trajectories": 16,
+      "elapsed_seconds": 0.6136659159965347,
+      "timing_seconds": {
+        "generation": 0.571933061175514,
+        "scoring": 0.03041220406885259
+      },
+      "status": "completed"
+    },
+    {
+      "name": "benchmark-r64",
+      "phase": "benchmark",
+      "members": 64,
+      "sha256": "4c3f73fe0093b1949a1cdd3b8f24730feb4b98911ab3bda3db41b3cea79a3559",
+      "bytes": 1029250,
+      "location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/objects/sha256/4c3f73fe0093b1949a1cdd3b8f24730feb4b98911ab3bda3db41b3cea79a3559",
+      "original_location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/benchmark-r64.jsonl",
+      "code_revision": "333938ecddf7f97eec4544d0fda40a0952e54183",
+      "spec_sha256": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+      "source_sha256": {
+        "pyproject.toml": "9f4394ce1733048a86d6ce3b1c3d1889ce50fce6b8952b7a0788c5b1b5490007",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "uv.lock": "b68ff2485ea124d94ef5e4df33ae15f1118e0530266bdd1b38221bc6f1835e7c"
+      },
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; SHA256-derived independent role seeds"
+      },
+      "started_at_utc": "2026-09-13T00:58:26.761891+00:00",
+      "completed_at_utc": "2026-09-13T00:58:28.006542+00:00",
+      "trajectories": 16,
+      "elapsed_seconds": 1.2303367079875898,
+      "timing_seconds": {
+        "generation": 1.136802075925516,
+        "scoring": 0.07804984421818517
+      },
+      "status": "completed"
+    },
+    {
+      "name": "primary-r32",
+      "phase": "primary",
+      "members": 32,
+      "sha256": "f24f66d0764f31ed8375888b92bf186778e78db129d7e97c6799e5ab0cf21607",
+      "bytes": 15617699,
+      "location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/objects/sha256/f24f66d0764f31ed8375888b92bf186778e78db129d7e97c6799e5ab0cf21607",
+      "original_location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/primary-r32.jsonl",
+      "code_revision": "71ae80cf313b6c467abad5eeedfa6a266e5daaa0",
+      "spec_sha256": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+      "source_sha256": {
+        "pyproject.toml": "9f4394ce1733048a86d6ce3b1c3d1889ce50fce6b8952b7a0788c5b1b5490007",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "uv.lock": "b68ff2485ea124d94ef5e4df33ae15f1118e0530266bdd1b38221bc6f1835e7c"
+      },
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; SHA256-derived independent role seeds"
+      },
+      "started_at_utc": "2026-09-13T00:59:12.883439+00:00",
+      "completed_at_utc": "2026-09-13T00:59:31.665260+00:00",
+      "trajectories": 480,
+      "elapsed_seconds": 18.764453791984124,
+      "timing_seconds": {
+        "generation": 17.485214679763885,
+        "scoring": 0.9372190946014598
+      },
+      "status": "completed"
+    },
+    {
+      "name": "precision-r128",
+      "phase": "precision",
+      "members": 128,
+      "sha256": "de4129d0bfbd9ca7763870500ea1f83d43c54e9414268222fb64d18f1bb15cee",
+      "bytes": 53215523,
+      "location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/objects/sha256/de4129d0bfbd9ca7763870500ea1f83d43c54e9414268222fb64d18f1bb15cee",
+      "original_location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/precision-r128.jsonl",
+      "code_revision": "71ae80cf313b6c467abad5eeedfa6a266e5daaa0",
+      "spec_sha256": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+      "source_sha256": {
+        "pyproject.toml": "9f4394ce1733048a86d6ce3b1c3d1889ce50fce6b8952b7a0788c5b1b5490007",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "uv.lock": "b68ff2485ea124d94ef5e4df33ae15f1118e0530266bdd1b38221bc6f1835e7c"
+      },
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; SHA256-derived independent role seeds"
+      },
+      "started_at_utc": "2026-09-13T00:59:31.813759+00:00",
+      "completed_at_utc": "2026-09-13T01:00:52.765115+00:00",
+      "trajectories": 480,
+      "elapsed_seconds": 80.93675362499198,
+      "timing_seconds": {
+        "generation": 72.72150471978239,
+        "scoring": 7.5246159526577685
+      },
+      "status": "completed"
+    },
+    {
+      "name": "confirmation-r128",
+      "phase": "confirmation",
+      "members": 128,
+      "sha256": "8e6ebe12291ec73ccb665394eb267b535ef738da07562913829b19ecc01b94de",
+      "bytes": 53241392,
+      "location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/objects/sha256/8e6ebe12291ec73ccb665394eb267b535ef738da07562913829b19ecc01b94de",
+      "original_location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/confirmation-r128.jsonl",
+      "code_revision": "71ae80cf313b6c467abad5eeedfa6a266e5daaa0",
+      "spec_sha256": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+      "source_sha256": {
+        "pyproject.toml": "9f4394ce1733048a86d6ce3b1c3d1889ce50fce6b8952b7a0788c5b1b5490007",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "uv.lock": "b68ff2485ea124d94ef5e4df33ae15f1118e0530266bdd1b38221bc6f1835e7c"
+      },
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; SHA256-derived independent role seeds"
+      },
+      "started_at_utc": "2026-09-13T01:00:52.982073+00:00",
+      "completed_at_utc": "2026-09-13T01:02:12.484857+00:00",
+      "trajectories": 480,
+      "elapsed_seconds": 79.47636316702119,
+      "timing_seconds": {
+        "generation": 71.40374783956213,
+        "scoring": 7.377608780923765
+      },
+      "status": "completed"
+    }
+  ]
+}

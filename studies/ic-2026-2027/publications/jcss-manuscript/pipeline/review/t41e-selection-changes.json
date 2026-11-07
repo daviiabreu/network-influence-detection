@@ -1,0 +1,9 @@
+{
+  "schema": "ic-study.v4-manuscript-assembly-selection-review.v1",
+  "baseline": "f5743882",
+  "condition_changes": [],
+  "order_changes": [],
+  "predicates_unchanged": true,
+  "actions_unchanged": true,
+  "bindings_unchanged": true
+}

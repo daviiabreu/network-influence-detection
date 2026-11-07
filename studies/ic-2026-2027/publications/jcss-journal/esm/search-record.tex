@@ -1,0 +1,19 @@
+% Positioning search record (Section S10). Moved from sections/supplement.tex
+% (SUP12, SUP13) and sections/related-work.tex (R56, R57, R58, R63) of the
+% rule-assembled attempt; cleaned during the journal revision (agent S,
+% 2026-10-13): repository paths replaced by a pointer to the archive.
+\phantomsection\label{supp:search-record}
+
+The positioning of the article (Section~\ref{main-sec:background}) rests partly on a documented but limited search for studies that combine the components of this design. This section records how the search was run and what it can and cannot support.
+
+\paragraph{Declaration and runs.}
+% SUP12 R56
+Ten English-language queries were declared on 27 September 2026, before any run. The declaration commit in the project repository, \texttt{987acded}, is a local reconstruction of the commit made in the cloud session that ran the search. Each query was run unchanged on OpenAlex and Semantic Scholar; for arXiv, the declaration fixed a Boolean translation of each query. The first 20 results per query and service were screened. OpenAlex returned a rate-limit error on 27 September at 22:59 UTC, and its ten queries ran on 28 September between 00:01 and 00:16 UTC. Two Semantic Scholar queries failed on rate limits. The arXiv export API returned HTTP 406 for all ten Boolean translations, which were then run through the arXiv site search (all metadata fields, terms joined by AND), the closest available substitute rather than the declared API route. The record lists 40 runs and 399 screened titles: 391 were not relevant, five relevant records corresponded to four works already in the antecedent matrix, and three were new \cite{carpentras2022,xu2021sensitivity,advani2018credibly}.
+
+\paragraph{Reconstruction of the record.}
+% SUP13 R63
+The original per-run record did not leave the cloud session. It was reconstructed on 28 September 2026 from the result lists printed in the session transcript, by rerunning the session's own screening scripts on those printouts without changing any decision, and it reproduces the totals above. It has gaps: no run carries a URL or retrieval time, and run times are known only for OpenAlex; DOIs are missing for all 200 OpenAlex hits and for 24 of the 160 Semantic Scholar hits (16 printed with an arXiv identifier, 8 with neither); Semantic Scholar identifiers are truncated for some queries and replaced by placeholders for others; and titles were printed truncated at 100 to 115 characters. The reconstructed record, its dossier and a description of each gap are archived with the journal sources.
+
+\paragraph{Coverage and what the search supports.}
+% R57 R58
+Coverage was limited. Two Semantic Scholar queries failed on rate limits, and the unavailable arXiv API was replaced by the site search. OpenAlex relevance ranking, which weights citations, favored highly cited work from other fields. Several of the closest works surfaced only through citation, and theses, non-English literature and survey methodology were not searched. Within this search and the works read, no study was identified that estimates the minimum influence strength at which individual panel trajectories become distinguishable from a set of matched persistence models without a network, as a function of the signal share of the response channel. Absence from a limited search is not proof of absence, and the article makes no priority claim.

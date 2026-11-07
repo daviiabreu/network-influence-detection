@@ -1,0 +1,46 @@
+tier,family,channel,sensitivity,r,exposure,main_curve_flag,status,null_gate,gaps,gaps_screened,gaps_family_limit,gaps_solver,gaps_validation,gaps_dependency,gaps_propagation,a_star,a_star_lower,a_star_upper,a_s_star,a_s_star_lower,a_s_star_upper,region,derived_a_star_060,derived_a_star_060_lower,derived_a_star_060_upper,derived_a_star_080,derived_a_star_080_lower,derived_a_star_080_upper,nonmonotone_band,critical,max_t_above_floor
+1,B,observed,main,0.50,,main curve invalid,completo válido,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,yes,2.9138,yes
+1,B,observed,main,0.55,,main curve invalid,completo válido,pass,1,0,0,1,0,0,0,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,0.9,0.6,0.9,censored (gap),censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,yes,2.7729,no
+1,B,observed,main,0.60,,main curve invalid,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+1,B,observed,main,0.65,,main curve invalid,completo válido,pass,1,0,0,1,0,0,0,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,0.6,0.3,>0.9,censored (gap),censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,yes,2.8127,yes
+1,B,observed,main,0.70,calibration-exposed,main curve invalid,completo válido,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+1,B,observed,main,0.75,,main curve invalid,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+1,B,observed,main,0.80,,main curve invalid,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.01,0.1,0.1,0.1,no,2.7729,no
+1,B,observed,main,0.85,,main curve invalid,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.01,0.1,0.1,0.1,no,2.9155,yes
+1,B,observed,main,0.90,,main curve invalid,parcial por encerramento operacional,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,A,observed,main,0.50,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7811,yes
+2,A,observed,main,0.55,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.3,0.3,no,2.7729,no
+2,A,observed,main,0.60,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.9929,yes
+2,A,observed,main,0.65,,,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+2,A,observed,main,0.70,calibration-exposed,,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.01,0.1,0.1,0.1,no,2.7993,yes
+2,A,observed,main,0.75,,,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.01,0.1,0.1,0.1,no,2.7729,no
+2,A,observed,main,0.80,,,completo válido,pass,0,0,0,0,0,0,0,0.03,0.01,0.03,0.03,0.01,0.03,small,0.01,0.01,0.01,0.03,0.03,0.1,no,2.8325,yes
+2,A,observed,main,0.85,,,completo válido,pass,0,0,0,0,0,0,0,0.01,0.01,0.03,0.01,0.01,0.03,small,0.01,0.003,0.01,0.03,0.03,0.03,no,2.8951,yes
+2,A,observed,main,0.90,,,completo válido,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.003,0.003,0.01,0.03,0.03,0.03,yes,2.8332,yes
+2,C,observed,main,0.50,,,completo inválido,fail,0,0,0,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.8345,yes
+2,C,observed,main,0.55,,,completo válido,pass,2,2,0,0,0,0,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.3,0.3,0.3,yes,2.7729,no
+2,C,observed,main,0.60,,,completo válido,pass,1,0,1,0,0,0,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.8293,yes
+2,C,observed,main,0.65,,,completo válido,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.1,0.1,0.6,0.6,0.6,yes,2.7729,no
+2,C,observed,main,0.70,calibration-exposed,,completo válido,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.1,0.1,0.6,0.3,0.6,no,2.8408,yes
+2,C,observed,main,0.75,,,completo válido,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.03,0.1,0.3,0.3,0.6,yes,2.7729,no
+2,C,observed,main,0.80,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8465,yes
+2,C,observed,main,0.85,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+2,C,observed,main,0.90,,,parcial por encerramento operacional,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,D,observed,main,0.50,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+2,D,observed,main,0.55,,,completo válido,pass,1,0,0,0,1,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,0.3,0.3,0.3,censored (gap),0.03,0.03,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.9129,yes
+2,D,observed,main,0.60,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.3,0.3,no,2.7729,no
+2,D,observed,main,0.65,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.03,0.03,0.1,0.1,0.3,no,2.8563,yes
+2,D,observed,main,0.70,calibration-exposed,,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.8400,yes
+2,D,observed,main,0.75,,,completo válido,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.03,0.1,0.1,0.1,no,2.8806,yes
+2,D,observed,main,0.80,,,não iniciado,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,D,observed,main,0.85,,,não iniciado,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,D,observed,main,0.90,,,não iniciado,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,E,observed,main,0.50,,,completo válido,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.1,0.3,0.6,0.6,0.6,yes,2.7729,no
+2,E,observed,main,0.55,,,completo válido,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.1,0.1,0.6,0.6,0.6,yes,2.7961,yes
+2,E,observed,main,0.60,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,E,observed,main,0.65,,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.8422,yes
+2,E,observed,main,0.70,calibration-exposed,,completo válido,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.3,0.3,no,2.8133,yes
+2,E,observed,main,0.75,,,completo inválido,fail,1,0,0,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,E,observed,main,0.80,,,parcial por encerramento operacional,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,E,observed,main,0.85,,,parcial por encerramento operacional,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2,E,observed,main,0.90,,,parcial por encerramento operacional,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

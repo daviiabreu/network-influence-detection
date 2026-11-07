@@ -1,0 +1,17 @@
+Building source distribution...
+Building wheel from source distribution...
+Successfully built /var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/research-workbench-build.Hc8Ycq/dist/ic_study-0.0.0.tar.gz
+Successfully built /var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/research-workbench-build.Hc8Ycq/dist/ic_study-0.0.0-py3-none-any.whl
+Using CPython 3.12.13
+Creating virtual environment at: /var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T//research-workbench-build.Hc8Ycq/venv
+Activate with: source /var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/research-workbench-build.Hc8Ycq/venv/bin/activate
+Using Python 3.12.13 environment at: /var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/research-workbench-build.Hc8Ycq/venv
+Resolved 1 package in 105ms
+Installed 1 package in 22ms
+ + numpy==2.5.3
+Using Python 3.12.13 environment at: /var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/research-workbench-build.Hc8Ycq/venv
+Resolved 1 package in 0.98ms
+Prepared 1 package in 3ms
+Installed 1 package in 6ms
+ + ic-study==0.0.0 (from file:///var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/research-workbench-build.Hc8Ycq/dist/ic_study-0.0.0-py3-none-any.whl)
+wheel smoke: studies/ic-2026-2027 passed

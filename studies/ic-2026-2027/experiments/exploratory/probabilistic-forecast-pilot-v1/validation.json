@@ -1,0 +1,51 @@
+{
+  "format": "forecast-pilot-engineering-validation-v1",
+  "recorded_at_utc": "2026-09-13T01:18:21.463811+00:00",
+  "status": "passed",
+  "scope": "Engineering and local reproduction; no scientific owner acceptance or hosted CI claim. Final documentation structure is checked after this record exists.",
+  "implementation_revision": "333938ecddf7f97eec4544d0fda40a0952e54183",
+  "analytical_execution_revision": "71ae80cf313b6c467abad5eeedfa6a266e5daaa0",
+  "source_and_tests_unchanged_during_integration_gate": true,
+  "quality": {
+    "command": "UV=/Users/davi/.local/bin/uv just quality",
+    "exit_code": 0,
+    "workbench_tests_passed": 3498,
+    "study_tests_passed": 34,
+    "study_mypy_sources": 17,
+    "workbench_mypy_sources": 263,
+    "repository_structure_checks_at_gate_start": 7,
+    "lint": "passed",
+    "typecheck": "passed",
+    "wheel_smoke": [
+      "workbench passed",
+      "study passed"
+    ],
+    "warnings": "One expected duplicate ZIP entry warning from adversarial archive test.",
+    "log_location": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/quality.log",
+    "log_sha256": "7db9c3b1c95a68b8d13a875e383bfaf89286d69a06aacf2e1883da59088b3806"
+  },
+  "reproduction_recipe": {
+    "path": "reproduce.md",
+    "sha256": "ea0becc521e08600485994486c6328143677cf116ebf120b36a8471d776811e5",
+    "result": "Executed first Python recipe: all five file hashes/source hashes/footer summaries verified; two confirmation trajectories exactly regenerated."
+  },
+  "independent_results_review": {
+    "path": "results-review.md",
+    "sha256": "f0df5b2ab630c049f6cec5451ed58817c1802b238b77cac8b4e1d85d0ad97faa",
+    "result": "No blockers; independent recalculation of all 147200 scores and all summaries/controls; ten exact trajectory regenerations."
+  },
+  "artifact_sha256": {
+    "README.md": "40221cd68e4eb06888571fc358b9c2fff130b2ec93f9f1205e943b5d7f2d6203",
+    "analysis-input.json": "376fec9728358d1f26ca9f42b5beb3e21afb3395031f6ed5aec19e7326d619cb",
+    "authorization.json": "4cc22c40f449fb9ed2b98775f5a2819457fed039d9242aa6bf083984b9d564ae",
+    "budget-decision.json": "a0e3b6659ef9dc07a1a0a095f835e2f04721c722e06e4eecf80afb757fe5503c",
+    "implementation-review.md": "08a4c89cd9e4c13d5098975bf76f0848142652098943cc7efa77dd680eb0e08b",
+    "protocol.md": "53cda076c6c818792a7331bcde1f631dcabffe72fefaf1b540041b4fbfb72150",
+    "recommendation-input.md": "3b778e33f20ee1720303431d7800996a2c2caed88837077616abae0fe5cb50fb",
+    "reproduce.md": "ea0becc521e08600485994486c6328143677cf116ebf120b36a8471d776811e5",
+    "results-review.md": "f0df5b2ab630c049f6cec5451ed58817c1802b238b77cac8b4e1d85d0ad97faa",
+    "run-manifest.json": "0021bcc6c7b433b72bd7c23fe8120e8062e3cd1a703b534d9fb06209895bf60c",
+    "source-check.md": "ddbc3266bd02847fc56a2bcecf0ebf724ae68833b978f103d237c8a1b3218823",
+    "spec.json": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b"
+  }
+}

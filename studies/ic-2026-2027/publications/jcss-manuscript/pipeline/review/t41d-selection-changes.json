@@ -1,0 +1,90 @@
+[
+  {
+    "id": "A.new-seeds",
+    "field": "order",
+    "before": 16,
+    "after": 950,
+    "source": "abstract",
+    "line": 19,
+    "scope": "abstract only",
+    "authority": "T41d coordinator abstract consolidation; amendment to decisions 91/101 before exposure"
+  },
+  {
+    "id": "A.B06",
+    "field": "condition",
+    "before": {
+      "ref": "B06"
+    },
+    "after": {
+      "all": [
+        {
+          "ref": "B06"
+        },
+        {
+          "gt": [
+            "v4.t1.n_first_ne_sustained",
+            "0"
+          ]
+        }
+      ]
+    },
+    "source": "abstract",
+    "line": 69,
+    "scope": "abstract only",
+    "authority": "T41d coordinator abstract consolidation; amendment to decisions 91/101 before exposure"
+  },
+  {
+    "id": "A.B04",
+    "field": "condition",
+    "before": {
+      "ref": "B04"
+    },
+    "after": {
+      "all": [
+        {
+          "ref": "B04"
+        },
+        {
+          "gt": [
+            "v4.t1.n_first_low",
+            "0"
+          ]
+        }
+      ]
+    },
+    "source": "abstract",
+    "line": 95,
+    "scope": "abstract only",
+    "authority": "T41d coordinator abstract consolidation; amendment to decisions 91/101 before exposure"
+  },
+  {
+    "id": "A.B08",
+    "field": "condition",
+    "before": {
+      "ref": "B08"
+    },
+    "after": {
+      "all": [
+        {
+          "ref": "B08"
+        },
+        {
+          "gt": [
+            "v4.t1.n_first_gap",
+            "0"
+          ]
+        },
+        {
+          "gt": [
+            "v4.t1.n_sustained_gap",
+            "0"
+          ]
+        }
+      ]
+    },
+    "source": "abstract",
+    "line": 104,
+    "scope": "abstract only",
+    "authority": "T41d coordinator abstract consolidation; amendment to decisions 91/101 before exposure"
+  }
+]

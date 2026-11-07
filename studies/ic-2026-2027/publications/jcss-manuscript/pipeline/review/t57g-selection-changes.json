@@ -1,0 +1,44 @@
+{
+ "schema": "ic-study.t57g-selection-changes.v1",
+ "rules_sha256_after_repin": "3a45df3c56c2e7d8d16d7c6a6982ac669fa24b8a096cfcf9a9293690146e1b49",
+ "rules_sha256_after": "446f10948c881601d22e033295b2a3b63fcfd27fce1f283e76db27a41d0d4ac0",
+ "changes": [
+  {
+   "id": "P5-b.single",
+   "field": "locator and fragments",
+   "before": {
+    "line": 734,
+    "end_line": 734,
+    "fragments": null
+   },
+   "after": {
+    "line": 733,
+    "end_line": 734,
+    "fragments": [
+     {
+      "line": 733,
+      "end_line": 733,
+      "condition": {
+       "eq": [
+        "v4.t1.n_attained",
+        "1"
+       ]
+      }
+     },
+     {
+      "line": 734,
+      "end_line": 734,
+      "condition": {
+       "gt": [
+        "v4.t1.n_attained",
+        "1"
+       ]
+      }
+     }
+    ]
+   },
+   "scope": "the block now holds a singular and a plural line; the existing count v4.t1.n_attained selects one (== 1 or > 1). \\resultplural would need the count displayed in the same block, so count-conditioned fragments give the agreement instead; condition and order unchanged",
+   "authority": "T57g coordinator decision (decision log item 192) under the Owner's delegation, 03/10/2026, before the release of any tier result"
+  }
+ ]
+}

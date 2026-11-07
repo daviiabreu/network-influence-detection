@@ -1,0 +1,28 @@
+{
+  "synthetic": true,
+  "assembly": "/private/tmp/v4-shell-assembly-audit-9klj18d2/release-day/passed-shp",
+  "compile_limit": 1,
+  "cached_only": true,
+  "template_sources": {
+    "sn-jnl.cls": {
+      "file": "/private/tmp/t51-work/manuscript-assembled/sn-jnl.cls",
+      "sha256": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc"
+    },
+    "sn-mathphys-num.bst": {
+      "file": "/private/tmp/t51-work/manuscript-assembled/sn-mathphys-num.bst",
+      "sha256": "b3a7c7fbcc1e7f9619de634fcea2f5bb7a245818a5942bc576e40ea001633332"
+    }
+  },
+  "values": "/private/tmp/v4-shell-assembly-audit-9klj18d2/release-day/passed-shp/assembled-values.json",
+  "compile_exit": 0,
+  "compilations": 1,
+  "pdf_sha256": "fad77a7e4485f1e5d374e35dff7ed4ec2fd9aa43ab022ce0a3aa07994d387c33",
+  "paper_check_exit": 0,
+  "paper_check_mode": "draft",
+  "pages": 90,
+  "extracted_words": 51127,
+  "cited_ids": 5139,
+  "abstract_words": 223,
+  "placeholders": 2,
+  "nice_15": "attempted; macOS refused setpriority"
+}

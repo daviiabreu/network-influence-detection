@@ -1,0 +1,1 @@
+{"kind": "reliability_correction_gate", "mean_adjacent_pairs": 52114.84375, "non_floor_non_ceiling": true, "observed_lag1_gap": -0.0026593661988467687, "observed_marginal_total_variation": 0.001191720449118916, "reliability": 0.7, "rho": 0.838961863215152, "strength": 0.4}

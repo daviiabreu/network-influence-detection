@@ -1,0 +1,246 @@
+% The broad systematic map (sections/systematic-map*.tex) is a separate
+% deliverable and was removed from this supplement on 2026-09-28 (referee report,
+% R1 minor 2 and F19); its files are kept unchanged.
+
+\subsection*{Panel channels and null mechanics}
+
+% SUP01
+The drift is $\Delta_{it}=8^{-1}\sum_{j\in\mathcal N_i}f(z_{jt}-z_{it})$, with $f(g)=g$ when $|g|\leq1$ and $f(g)=-0.25g$ otherwise, standardized within each wave before entering the update. Zero drift variance at positive strength raises an error and is not assigned a variance share. The frozen v4 code computes no diagnostic of the realized share of drift in latent change, so $a$ remains a nominal share; the exploratory X2 map in \hyperref[supp:x1-x2]{Supplementary Material: exploratory analyses X1a and X2} reports that share outside the frozen protocol. Anchoring uses $R_N((1-\omega)h+\omega z_0)$ for $\omega\in\{0.25,0.50,0.75,1\}$; $\omega=1$ is a degenerate constant-latent case and is not declared identical to B. D uses $\rho(z)=\rho_0+\gamma(1-\rho_0)(1-e^{-z^2/2})$ inside the transported update. C multiplies response error by a normalized $1+2e^{-z^2/2}$ factor and heaps each response at zero with probability 0.10 before ordinal allocation. Response-style coefficients are 0.25 and 0.50; conditioning increments are 0.10 and 0.20; their strongest combination is exploratory. The same annual category target is used for competing arms. Matching shares masks within coupled pairs; test masks are independently drawn by class.
+
+% SUP02
+For independent response error, continuous lag correlation is $\sqrt{r_t r_s}$ times latent lag correlation, giving the operational $r$ bound at constant response signal share. Persistent style adds $\kappa\sqrt{(1-r_t)(1-r_s)}$ to the bound; conditioning uses the maximum pairwise bound. Cells on the bound remain eligible. Latent and error-free controls use bound one. These are screening rules before ordinal conversion, not empirical reliability estimates or proofs about the ordinal correlations.
+
+\subsection*{Conditional drift mean under independence}\label{supp:drift-mean}
+
+% SUP15
+Under the independence approximation in Methods, let $Z\sim N(0,1)$ and let $\varphi$ and $\Phi$ denote the standard-normal density and distribution function. The symbol $\varphi$ is distinct from the persistence parameter $\phi$. Integrating the frozen kernel at $b=0.25$ gives
+\begin{align*}
+m(z)&=1.25\bigl\{\varphi(z-1)-\varphi(z+1)\\
+    &\quad-z[\Phi(z+1)-\Phi(z-1)]\bigr\}+0.25z,\\
+m'(z)&=0.25+1.25\bigl\{\varphi(z-1)+\varphi(z+1)\\
+     &\quad-[\Phi(z+1)-\Phi(z-1)]\bigr\}.
+\end{align*}
+Set $q(z)=\Phi(z+1)-\Phi(z-1)-\varphi(z-1)-\varphi(z+1)$, so $m'(z)=0.25-1.25q(z)$. The function is even, and
+\begin{equation*}
+q'(z)=2\varphi(z)e^{-1/2}\cosh z\,[z-2\tanh z].
+\end{equation*}
+For $z>0$, $h(z)=z-2\tanh z$ has $h(0)=0$, $h'(0)=-1$ and $h''(z)=4\,\mathrm{sech}^2z\,\tanh z>0$, with $h(z)\to\infty$. Thus $q$ first decreases and then increases to zero; its global maximum is $q(0)=2\Phi(1)-1-2\varphi(1)>0$. Consequently
+\begin{align*}
+m'(z)&\ge m'(0)=0.25-1.25\,c,\\
+c&=2\Phi(1)-1-2\varphi(1),\\
+m'(0)&\approx0.001565>0.
+\end{align*}
+The sign also follows from an explicit series bound. With $T_5=\sum_{k=0}^{5}(-1)^k/(2^k k!)$ and $S_4=\sum_{k=0}^{4}(-1)^k/[2^k k!(2k+1)]$, alternating-series bounds give $e^{-1/2}\ge T_5$ and $\int_0^1e^{-x^2/2}\,dx\le S_4$. Hence
+\begin{equation*}
+m'(0)\ge0.25+2.5\,(T_5-S_4)/\sqrt{2\pi}>0.0015.
+\end{equation*}
+Symmetry gives $m(-z)=-m(z)$ and $m(0)=0$, proving $m(z)>0$ for every $z>0$ and increasing magnitude with $|z|$. This describes the conditional mean before standardization and rank transport under independence, not an exact conditional law for the finite network.
+
+Before standardization, the formula gives $m(0.5)\approx0.013$, $m(1)\approx0.085$ and $m(2)\approx0.40$. With attraction alone ($b=0$), it gives $m(1)\approx-0.13$. Under independence, the mean share of partners within distance one is $P(|N(0,2)|\le1)\approx0.52$; transport restores the marginal but does not establish independence between a person and their finite-network partners. % M61 SUP15
+
+\subsection*{Inherited design conventions}
+
+% SUP14
+Table~\ref{tab:design-conventions} separates the role of three fixed constants from their recorded basis. The frozen v1 protocol declares them, and v4 retains them; no further rationale for their numerical values is recorded in those documents or the linked decisions.
+\begin{table}[h]
+\caption{Fixed conventions inherited from v1}\label{tab:design-conventions}
+\begin{tabular}{@{}p{0.22\linewidth}p{0.30\linewidth}p{0.36\linewidth}@{}}
+\toprule
+Value & Role & Recorded basis and scope \\
+\midrule
+AUC 0.70 & Primary AUC target & Inherited operational convention, without universal substantive meaning; 0.60 and 0.80 remain secondary. \\
+Shrinkage 0.2 & Fixed covariance $0.8S+0.2I$ & Inherited discriminator convention; the procedure includes no AUC-based hyperparameter search. \\
+$\phi,\rho_0\in[0,0.999]$, $\eta\in[0,0.8]$ & Nonnegative null parameter box & Inherited domain of the contrast, not an exhaustive characterization of the mathematical persistence families. \\
+\botrule
+\end{tabular}
+\end{table}
+
+\subsection*{Profile fit and validation details}
+
+% SUP03
+The matching target is the mean across full-size panels of each pooled within-person lag correlation. The first attempt has 1,024 paired panels. Parameters satisfy $\phi,\rho_0\in[0,0.999]$ and $\eta\in[0,0.8]$. The profile prioritizes lag one. An anchor Jacobian seeds the outer bracket; guarded Illinois steps and bisection handle degenerate secants. Provisional inner roots are refined before acceptance and before declaring a non-monotone profile. Cached evaluations do not consume the 96-call budget twice. The lower end of the lag-one-solvable profile is accepted as a boundary only when its lag-one root meets tolerance and a local evaluation at $\eta=\min(0.8,\eta_{lower}+0.01)$ supports the constrained profile direction. An endpoint accepted without a real step is labelled \texttt{boundary}. Accepted statuses are \texttt{anchor-exact}, \texttt{interior} and \texttt{boundary}; \texttt{no-L1-root}, \texttt{non-monotone-profile}, \texttt{ill-conditioned}, \texttt{numerical-limit}, \texttt{family-limit-lower/upper} and \texttt{budget} are gaps. An exact anchor requires equality of all paired differences, not cancellation of their mean.
+
+% SUP04
+The independent validation uses 2,048 new pairs at the fitted parameter. Its rule includes both fitting and validation uncertainty; the 4,096-pair retry has a fresh 2,048-pair validation and its own 96-call budget. For the initial fit, $\mathrm{SE}_{val}/\mathrm{SE}_{fit}$ is about 0.71 under the declared pair counts; for the retry it is about 1.41. Each accepted fit also reports an equivalence statistic $|res|+2.2414\mathrm{SE}_{val}$ against 0.0003 and a local feature-amplification diagnostic. Neither diagnostic overrides the acceptance rule. Controls retain the second parameter from the corresponding observed fit in each retry and nuisance draw.
+
+\subsection*{Scope of matching precision and residual tolerance}\label{supp:matching-scope}
+
+For iid target panels, the standard deviation of one panel's lag statistic is $\sqrt{1024}=32$ times the standard error of its 1,024-panel mean. This identity concerns repeated target panels with the same variance, not the solver's residual standard error or the accuracy of fitting an empirical panel. The code forms paired differences $g=L_{\mathrm{null}}-L_{\mathrm{target}}$ and uses their sample standard deviation divided by the square root of the pair count. Their variance is $\mathrm{Var}(L_{\mathrm{null}})+\mathrm{Var}(L_{\mathrm{target}})-2\mathrm{Cov}(L_{\mathrm{null}},L_{\mathrm{target}})$, so common random numbers matter. % M66
+
+The tolerance limits the fitting sample's mean residual in equations that satisfy the root criterion; it does not bound population mismatch or estimator bias. Unless the $10^{-6}$ floor binds, the limit is at most $0.25\,\mathrm{SE}_{\mathrm{fit}}$. A profiled B, D or E boundary may instead satisfy the lower-face direction rule with a larger lag-two residual and must then pass fresh validation at four combined standard errors. The centered nuisance variance is a variance of local AUC draws, not a mean squared error; it does not by itself cover systematic mismatch. Equivalence and amplification statistics remain diagnostics. % M69
+
+\subsection*{Local uncertainty and band construction}
+
+% SUP05
+For each local draw, resampled matching differences are averaged without centering, then the fitted Jacobian determines a parameter perturbation. Projection onto the box re-solves lag one after projecting $\eta$ and reproduces the boundary decision. The mean-feature Jacobian $D$ shifts null training and reference lag features by $D\Delta\theta$. Common-random-number stencils on matching panels use a step of 0.01, inward at an upper face. G2 alone repeats at 0.005 and evaluates a covariance-Jacobian approximation as a diagnostic; an approximate AUC correction above 10\% of $\sqrt{V_{nuis}}$ is flagged, not silently incorporated. Training networks are resampled separately by class with both events together. The fixed reference has 2,000 networks and two events per class. The local variance is centered; mean shift, fourth-moment Monte Carlo standard error and boundary-projection frequency are diagnostics. Anchor-exact draws set $\Delta\theta=0$ and $V_{nuis}=0$ analytically.
+
+% SUP06
+The score bootstrap uses 2,000 draws and aligned network indices across strengths. Local draws likewise share indices across strengths in one curve at fixed $r$. Score and nuisance components add as $\mathrm{SE}_{total}^2=\mathrm{SE}_{scores}^2+V_{nuis}$. The logit transform clips probabilities only for transformation to $[1/(2n),1-1/(2n)]$; an estimated standard error has the same floor before logit scaling. Raw zero and one band endpoints remain reportable. The critical value is $\max(q_{0.95}(\max_{a\in G}|t_a|),2.7729)$. Inversion uses the first upper-band crossing for the lower grid bound and the first lower-band crossing for the upper bound, including equality. A gap prevents declaring a minimum across it. The $a=0$ band must contain 0.5; its failure invalidates the comparison at that value of $r$. Any tier-1 unit (B on the observed channel) that is not complete valid at the close, including a unit not started or partial, makes the whole primary curve invalid, without deleting other units' boundaries.
+Each band is simultaneous over strengths within one comparison/$r$ unit; no joint coverage is declared across $r$, families, or channels. The B--D reading compares states under separate rules, without a test of their AUC difference or declared joint 95\% confidence. % SUP06
+
+\subsection*{Gate accounting and execution}\label{supp:gate-accounting}
+
+% SUP07
+G0 audits eight grids without reporting parameters or AUCs; all identity-family zero-strength fits must be anchor-exact, no fit may exhaust its budget, and implementation-status gaps may occupy at most 1\%. The G0 implementation-status ratio counts statuses over all attempts, retries included, and divides by the number of fits. % M37
+G1a tests full-population byte identity in the declared channels and zero local variance at the anchor. G1b tests five synthetic-score scenarios with 1,000 repetitions each and requires at least 935 joint covers in each. G1c runs 50 zero-strength pipelines at each of three signal shares; every fit must be anchor-exact, at most three of 150 pointwise intervals may miss 0.5, and the mean AUC must remain within three standard errors of 0.5. % SUP07 M38
+
+% SUP08
+G2 uses 100 independent pipelines in each of seven declared cells, grouped into 50 disjoint pairs. It compares empirical variance of paired logit differences with reported paired standard-error variance and checks the median $V_{nuis}(0.005)/V_{nuis}(0.01)$ in each cell against $[0.8,1.25]$. At most five technical failures per 100 in a cell and 14 per 700 pooled are allowed; failed pairs leave only the ratio calculation and remain in both failure denominators. G2c compares local variance with 100 and 40 full refits in two declared cells. It permits at most three and two failures, respectively. Each refit includes matching, validation and training; its null reference is regenerated at the refit parameter using baseline reference seeds, and its social reference uses fixed seeds. One-sided bootstrap bounds for the local/full-refit variance ratio must not lie wholly below 0.8 or above 2.0. G2c complements G2; G2 alone was calibrated to detect understated uncertainty. These gates do not prove absolute coverage away from zero strength.
+Their end-to-end tasks use B on the observed channel at the declared cells, without establishing uniform adequacy across all families, channels or sensitivities. % SUP08
+
+
+\paragraph{Artificial criterion calibration.}\label{supp:gate-calibration}
+% SUP16
+The public record \code{criteria-v43.json} binds \code{calibrate_criteria.py} and \code{simulation/v4_criteria.py} by SHA-256; the record and code are bound by \code{freeze-v4.json} at \code{37513841}. Development and verification each used 3,000 artificial experiments with distinct seeds. G2 generated seven independent cells with 100 independent pipelines each: logits were $\ell=\mu_c+0.025T/\sqrt{5.2/3.2}$, with equally spaced $\mu_c\in[-0.2,2]$ and $T\sim t_{5.2}$ (ordinary kurtosis 8), and reported AUC errors were $0.025p(1-p)$ for $p=\mathrm{logit}^{-1}(\ell)$. The leave-one-out diagnostic retained its shared-data dependence. G2c generated 2,000 local draws and 100 or 40 refits from $t_{5.2}$. Independent Bernoulli failures at 1\%, independent of the data, affected each G2 pipeline and G2c refit; failed pairs left only the G2 ratio calculation. Individual FD variance ratios were lognormal with log-mean zero and log-standard deviation 0.25, aggregated by the median within each cell. Each interval used 399 resamples, keeping G2 pairs intact and resampling local draws and refits separately in G2c. Verification compared reported standard-error scales 1, 0.8 and 1.4 against the developed thresholds. This calibration calls neither the panel simulator nor the discriminator. It assumes available local draws from the two G2c baselines and does not model their additional failures; a failed real baseline still blocks G2c. Its operating characteristics apply to this artificial model, not uniformly to the full experimental inventory.
+With correct standard errors, the estimated joint pass probability is 95.17\%, with a Monte Carlo error of 0.39 percentage points. Thus, the calibration does not demonstrate that the true probability reaches 0.95. % M77
+
+
+% SUP09
+The first freeze record must bind the amendment, code, inventory, criteria, allocation, seeds and environment before gate execution. A second hash-bound record after G0 fixes its blinded status projection, the actual G2 cell list, failure-rate implication and any prerequired recalibration; a projected pass probability below 0.80 stops before G2. Failed stages do not rerun against altered criteria. Gate repetition estimates and AUC-unit mean shifts remain sealed outside Git until confirmatory results are committed. Confirmatory namespaces remain unavailable until all gates pass. Ordered, resumable tiers preserve shard manifests and the four unit statuses at the operational close.
+The G0-based stop rule is sharp. In the inference docking's evaluation of the rule, one gap among the 54 relevant G0 fits already gives a predictive probability of about 0.445. Thus, a single numerical failure at those cells ends the confirmatory study under the frozen rules. % M78
+
+
+\subsection*{Execution and post-freeze reporting records}\label{supp:execution-records}
+
+The original operational deadline is 18 October 2026 at 23:59 America/Sao\_Paulo (19 October at 02:59 UTC). % M44 RC32
+Eight shards execute the tiers in fixed order on a single host whose environment matches the one bound by the freeze record (see Code and data availability). AUC, band width, or invalidity do not reorder them. % M44
+On 1 October 2026 at 04:18 UTC, the worker of shard 5 ended during tier 2, and a relaunch with the frozen code failed in the same way. With the first author's authorization, the failure was reproduced on a copy of the unit outside the sealed store: in the cell at $a=0.003$ of unit \code{t2-u03-r2}, \code{project_shift} raised \texttt{ValueError("ill-conditioned local profile")} while propagating the nuisance, because the local profile Jacobian was degenerate, and the frozen runner does not handle that exception. Before this diagnosis, no tier-2 or later curve output had been read; only file counts, completion markers and modification times of that shard's units were inspected. % M89
+Amendment v4.4 (\code{AMENDMENT-v4.4.md}, frozen in \code{freeze-v44.json}) records a cell whose frozen execution ends with exactly that error, raised by \code{project_shift}, as a sealed propagation gap with no attempt and the hash of the successor that wrote it. Any other exception still ends the shard. The successor loads the frozen runner and runs its preflight and loop unchanged, replacing only the per-cell worker; it lives outside the frozen checkout, so the code hashes checked by the preflight and by shard resume are unchanged. All eight shards were relaunched with it on 1 October at 14:33 UTC; the shard resumed past its completed cells and recorded the gap at 14:35 UTC. A propagation gap follows the existing gap rules: at a positive strength it censors boundaries without invalidating the unit, and at $a=0$ it removes the null gate. The inventory table reports it in its own column. % M89
+The projected cost of the gate and all six tiers ranges from about 256 hours with measured costs to about 726 hours with 25\% retries. The latter exceeds the time between the freeze and the close, so tiers 3--6 may be partial at the close; their controls and sensitivities are not promised. % M80
+At release, each comparison/$r$ unit is recorded as ``not started'', ``partial at operational close'', ``complete invalid'' or ``complete valid'', preserving attempts. % M45
+A unit is complete valid when all nine strengths have been executed and its zero-strength cell is available with a band containing 0.5. Gaps at positive strengths censor boundaries but do not invalidate the unit. % M45
+The main curve is valid only if all nine tier-1 units (B on the observed channel, one per $r$) are complete valid in the released inventory. % M46
+A tier-1 unit that is not started, partial or complete invalid, for any reason, invalidates the main curve without deleting the boundaries of other units. Tier 1 therefore has to finish before the original deadline if early full-inventory release has not occurred. % M46 RC33
+The main curve can thus be invalidated by chance as well as by the clock. With a correct procedure and a critical value of at least 2.7729, the probability that one unit's $a=0$ band misses 0.5 is at most about 0.0056 under normal logit errors. If the nine B units are independent, the probability that at least one misses by chance alone is up to about 4.9\%. % M75
+A linked amendment registered on 28 September permits release when all 414 units have final curve records and no curve worker is running, or at the original deadline; it permits no partial early release. % M85 RC34
+The frozen code remains revision \texttt{37513841}; the later wrapper \code{release_on_completion.py}, introduced at \texttt{1f74e902} (SHA-256 \code{9acdfcdd}\allowbreak\code{077daa73}\allowbreak\code{e2c18999}\allowbreak\code{5317ae28}\allowbreak\code{e405b202}\allowbreak\code{f66cc024}\allowbreak\code{3566d902}\allowbreak\code{bca5a0c1}), implements this release rule without changing the grid, gates or inferential criteria. % M85 RC35 RC48
+For early release it passes the original deadline to the frozen \code{released_curves} function, so \code{closed_utc} retains that conventional time. % M85 RC36 RC49
+The side record \code{release-record.json} supplies the actual \code{released_utc}, trigger, wrapper hash and released-output hash; the report must cite both records to reconstruct the chronology. % M85 RC37
+% ODD40 RC50
+The G1c successor summary described in Methods is a serialization repair computed by the frozen aggregate, outside the seal, and consumed by the later reporting loader; it does not amend the gate criterion.
+
+\subsection*{Protocol genealogy and cumulative exposure}\label{supp:protocol-lineage}
+
+The v1 protocol was frozen at Git revision \texttt{fd65d2a}, SHA-256 \texttt{fb6b4dcf4316}\allowbreak\texttt{1a52c725e565}\allowbreak\texttt{bf2a4d269742}\allowbreak\texttt{3bec7d138ad1}\allowbreak\texttt{d30388547cfc}\allowbreak\texttt{d706}. % M48
+Its zero-strength coverage check failed operationally and numerically: no full 81-cell repetition completed under the fixed time cap, 14 of 40 refits in a cost probe failed matching, and coverage was therefore not estimated. % M49
+The report also raised a second caveat at $a=0$: the interaction arm transported normal ranks every wave, while v1 B generated a stationary Gaussian AR law matched only at lags one and two. The code did not establish that the two finite-$N$ laws were equal. % M49
+The linked v4 successor changes those laws, the profile fit, nuisance calculation and validation gates while preserving v1 protocol bytes and historical outputs. % M50
+It was frozen at Git revision \texttt{37513841}, freeze-record SHA-256 \texttt{99c4277235d4}\allowbreak\texttt{f2303b6f009d}\allowbreak\texttt{6ead8287a5d7}\allowbreak\texttt{1372744dd678}\allowbreak\texttt{1e1e2d184771}\allowbreak\texttt{0837}, before any gate stage ran. % M51
+The frozen G1c aggregate returned a NumPy boolean that the runner could not serialize into its complete summary line. % M86 RC38
+A successor record stores that summary outside the seal, computed by the frozen aggregating function, with SHA-256 \code{a945e848}\allowbreak\code{4791f886}\allowbreak\code{289d51b0}\allowbreak\code{83886854}\allowbreak\code{b4f540f6}\allowbreak\code{b26dcf14}\allowbreak\code{63d8d4c9}\allowbreak\code{dcd9a4d6}; this repairs the summary record and changes no gate criterion. % M86 RC39
+The later report loader checks the successor's freeze binding, store identifier and completed-task count. It requires the successor's pass to equal the frozen G1c predicate applied to its own fields. It accepts only the digest recorded when the successor was produced and uses the successor only when the sealed criteria log lacks a complete summary. % M86 RC40
+The hash-bound amendment text predates its own freeze record. Its immutable bytes still say that no v4 freeze exists; the freeze record, whose status is \texttt{frozen}, controls. % M81
+The decision specification allowed optional shards on other hosts. The amendment permits additional shards only with the same code and numerical equivalence and binds eight local shards, as does the later review decision taken after the first author dropped multi-host execution. The freeze record fixes eight shards; a host-equivalence check also failed (Code and data availability). % M82
+The v1 protocol was frozen by the coordinating agent under the first author's delegation, and the v4 decision specification records a delegated agent decision (decision log item 19). The authors ratified both, together with the later amendments and delegated decisions, before the confirmatory release (decision log item 161). % M83
+
+Exposure is cumulative. % M52
+Before v1, balanced-accuracy gates at $r=0.65$ and 0.70, an earlier choice at 0.80, and an interiority bit at 0.70 were seen. % M52
+Later v1 and proposal-A probes exposed zero-strength refit AUCs, an interior AUC and positive-strength AUCs at $r=0.70$; proposal B exposed positive-strength matching quantities. % M52
+After the freeze, the model docking study computed discriminator AUCs under the v4 law at positive strength in two cells, $(a,r)=(0.30,0.70)$ and $(0.03,0.50)$, at $N=1{,}002$ and reduced training sizes. A timing probe had earlier printed mean lag correlations $L_1$--$L_5$ of 50 project panels in two cells. % M84
+
+% SUP10
+An interior v1 probe at $(a,r)=(0.30,0.70)$ produced a conditional reference AUC of 0.943912. Twenty-six valid zero-strength v1 refits at $r=0.70$ averaged 0.530. Proposal A's loose-acceptance calibration at $r=0.70$ exposed 40 refits at $a=0.10$ (mean 0.756070, range 0.7317--0.7897) and one $a=0.03$ probe (0.589413). Proposal B exposed positive-strength matching quantities. Earlier balanced-accuracy and interiority exposures are listed above. After the v4 freeze, the model docking study (\texttt{validation/docking-v4/REPORT.md}, Part C) computed mean discriminator AUCs under the v4 law with fitted B nulls at $(a,r)=(0.30,0.70)$ and $(0.03,0.50)$, with $N=1{,}002$, 100 training and 250 test networks per class and 50 replicates. Before its comparison plan was committed, a timing probe printed mean $L_1$--$L_5$ of 50 project panels in two cells (same report, \S1). The docking means were 0.677 at $(0.30,0.70)$ in both implementations and 0.506 and 0.507 at $(0.03,0.50)$. At these reduced sizes, they are not estimates of the study estimand, and they are disclosed only because exposure is cumulative. These historical values document cumulative exposure; they do not determine the v4 curve. % SUP10
+
+% SUP11
+Seed material remains \texttt{namespace|block|phase|role|index}; the first eight SHA-256 bytes are interpreted as a big-endian integer. V4 calibration, gate, nuisance, bootstrap, validation and stencil namespaces are separate from reserved v4 confirmatory namespaces. Matching and validation use coupled class streams within pairs; train, test and reference classes are independent. The seed audit includes all gate plans and derived namespaces. Phase manifests must bind code, environment, host and seed material.
+
+\subsection*{Positioning search record (reconstructed)}\label{supp:search-record}
+
+% SUP12
+The positioning search behind the Related work section used ten English-language queries declared before any run on 27 September 2026. The declaration commit in this repository, \texttt{987acded}, is a local reconstruction of the commit made in the cloud session that ran the search. Each query was run unchanged on OpenAlex and Semantic Scholar; for arXiv, the declaration fixed a Boolean translation of each query, and the first 20 results per query and service were screened. OpenAlex returned a rate-limit error on 27 September at 22:59 UTC, and its ten queries ran on 28 September between 00:01 and 00:16 UTC. Two Semantic Scholar queries failed on rate limits. The arXiv export API returned HTTP 406 for all ten Boolean translations, which were then run through the arXiv site search (\texttt{arxiv.org/search}, all metadata fields, terms joined by AND), the closest available substitute rather than the declared API route. The record lists 40 runs and 399 screened titles: 391 were not relevant, five relevant records corresponded to four works already in the antecedent matrix, and three were new.
+
+% SUP13
+The original per-run record did not leave the cloud session. It was reconstructed on 28 September 2026 from the result lists printed in the session transcript, by rerunning the session's own screening scripts on those printouts without changing any decision, and it reproduces the totals above. It has gaps: no run carries a URL or retrieval time, and run times are known only for OpenAlex; DOIs are missing for all 200 OpenAlex hits and for 24 of the 160 Semantic Scholar hits (16 printed with an arXiv identifier, 8 with neither); Semantic Scholar identifiers are truncated for some queries and replaced by placeholders for others; and titles were printed truncated at 100 to 115 characters. The reconstructed record and a description of each gap are in \code{research/literature/positioning-a-star-r/search-log.json} and in the section ``Registro de execu\c{c}\~ao'' of \texttt{dossier.md} in the same folder.
+
+\subsection*{Implementation verification: tests, preflight and docking}\label{supp:verification-details}
+
+% VER01
+Three layers check the implementation before any confirmatory seed is used: unit tests, the procedural gates and a freeze preflight. Here, verification means that the code does what the frozen protocol specifies. It is not validation of the social mechanism against data.
+
+% VER02
+\paragraph{Test suite.}
+The unit tests cited below belong to the frozen code closure and are grouped by the property they check.
+\begin{itemize}
+\item \emph{Identities (gate G1a).} At full $N$, the zero-strength interaction arm and nulls A, B, D and E must coincide byte for byte. This covers the mask, measured, observed and selected features, in the matching and validation phases, on both attempts, and across the main, mobility, persistent-style, conditioning and 24-step variants (\code{test_detection_v4.py::test_full_n_identity}, \code{test_identity_survives_channels_and_matching_validation_coupling}; \code{test_v42_identity.py::test_full_n_anchor_identity_at_every_channel_stage}, \code{test_full_n_control_channel_anchor_identity}). The optimized transport must reproduce the earlier generator's bytes (\code{test_detection_v4.py::test_optimized_alternative_preserves_frozen_bytes}; \code{test_v41_channels.py::test_selected_features_are_byte_identical}). An anchor-exact fit must give zero shifts and zero nuisance variance (\code{test_v4_propagation.py::test_analytic_anchor_has_zero_shifts_variance_and_mcse}).
+\item \emph{Null laws.} Tests check the declared transported laws of B and E, and the degeneracy at $\omega=1$ (\code{test_detection_v4.py::test_b_iid_trait_and_e_stayer_laws_follow_declared_transport}, \code{test_omega_one_is_strength_independent_degeneracy_without_identity_claim}).
+\item \emph{Profile solver.} Tests cover:
+  \begin{itemize}
+  \item roots on every face and corner;
+  \item impossible targets, non-finite values and exact budget counting;
+  \item non-monotone and flat profiles;
+  \item degenerate secants;
+  \item two historical stall regressions;
+  \item the quarter-SE acceptance rule;
+  \item the rule that an endpoint reached without a solver step is labeled \code{boundary}.
+  \end{itemize}
+  The tests are \code{test_v4_solver.py::test_profile_roots_on_every_face_and_corner}, \code{test_impossible_l1_nan_and_exact_budget_counts}, \code{test_nonmonotone_flat_profile_and_beyond_family_limit}, \code{test_degenerate_secant_uses_bisection_and_ends_without_fake_success}, \code{test_e6_recentred_boundary_surrogate_does_not_stall}, \code{test_a_block7_residual_regression_takes_real_profile_steps} and \code{test_acceptance_bounds_bias_at_quarter_of_fitting_se}; and \code{test_v42_solver.py::test_budget_96_counts_actual_calls_and_rejects_larger_budget} and \code{test_endpoint_prediction_without_solver_step_is_boundary}.
+\item \emph{Validation and retry.} Tests check the combined-variance validation rule and the single retry, which keeps both attempts, happens only after a validation failure and has its own budget (\code{test_v4_validation_pipeline.py::test_validation_combines_fit_and_validation_sampling_error}, \code{test_one_fresh_validation_retry_preserves_both_attempts}; \code{test_v42_verification.py::test_retry_requires_failed_validation_and_receives_own_budget}).
+\item \emph{Nuisance propagation.} The mean-feature shift predicted at a fixed test point must match regenerated panels within 5\% at the vector level. Further tests cover projection with lag-1 priority, a centered variance with cluster resampling, and uncentered boundary draws (\code{test_v4_propagation.py::test_matching_mean_shift_matches_regenerated_vector}, \code{test_projection_prioritizes_l1_and_preserves_observed_control_weight}, \code{test_variance_is_centered_not_mse_and_uses_independent_cluster_draws}; \code{test_v42_solver.py::test_boundary_draws_keep_uncentred_matching_residual}).
+\item \emph{Band, censoring and scheduling.} Tests cover the nine-strength band, the null gate and censoring only across gaps. They also cover the fixed tier order with its barriers and the frozen runner's refusal to release before the original deadline. These tests describe the frozen runner, while the linked release amendment is implemented by a later wrapper (\code{test_v4_curve.py::test_nine_strength_stack_band_null_gate_and_censoring}, \code{test_gap_censors_only_boundaries_crossing_it}, \code{test_null_gap_alone_invalidates_unit_and_other_boundaries_survive}, \code{test_schedule_resumes_fixed_order_and_stops_at_tier_barrier}, \code{test_close_preserves_partial_and_never_releases_early}).
+\item \emph{Gate criteria and seeds.} Tests check that failures stay in the denominators and that the finite-difference check uses one median per cell. They also check that the pooled allowance scales with the allocated cells and that G2c reuses the baseline seeds. They also check that seed domains do not alias (\code{test_v4_criteria.py::test_gaps_drop_intact_pairs_but_allowance_uses_all_attempts}, \code{test_fd_check_is_one_median_per_cell_and_excludes_gaps}, \code{test_pooled_allowance_scales_with_allocated_cells}; \code{test_v42_gate.py::test_g2c_reference_uses_baseline_seeds_for_both_classes}, \code{test_gate_plans_and_auxiliary_namespaces_have_no_unintended_seed_aliases}; \code{test_detection_v4.py::test_seed_audit_phase_disjointness_and_confirmatory_reservation}). A separate seed-role audit record (\code{seed-role-audit-v42.json}) enumerates seed materials across gate plans and namespaces to check for collisions.
+\end{itemize}
+% VER14
+The test suite depends on the environment, so byte-level checks are claimed only for the bound environment; the Linux failures of the frozen-calibration byte test (\code{test_detection_panel.py::test_zero_share_panel_keeps_frozen_calibration_bytes}) are described under the environment diagnostics below.
+
+\paragraph{Environment diagnostics and reproduction limits.}
+Bitwise reproduction is claimed, without a separate test-run record, only for that environment and the frozen tree: later revisions change \texttt{pyproject.toml} and \texttt{uv.lock}, which are in the bound code closure, and add Python files that the preflight also hashes, so the preflight fails there. % AV05
+On Linux x86-64 (Python 3.12.3, NumPy 2.5.3 from the lock), 538 study tests pass and 3 fail, and the same three failures reproduce in a clean worktree of \texttt{37513841}: the two cases of the frozen-calibration byte-hash test ($N=600$ and $N=10{,}626$) and one profile-solver test. % AV06
+The cause has not been verified; the working hypothesis is that the recorded hashes were generated on macOS and that floating-point arithmetic differs between platforms. % AV06
+A second host (Linux x86-64, with a different build of Python 3.12.13) replayed three G0 tasks for equivalence only, not as gate evidence. % AV07
+All 82 code hashes matched the freeze record, the numerical probe agreed within $6.7\times10^{-16}$, states, decisions and counts were equal, and 1,331,544 continuous values agreed to within $7.9\times10^{-12}$ in absolute terms. % AV07
+The pre-declared equivalence criterion nevertheless failed, only on the \texttt{seed\_material\_sha256} field of the phase records (4,448 divergences), because that hash is computed over the numerical parameters at which panels are generated; the platform, interpreter and host fields of the run manifests also differ, as expected between hosts. % AV08
+Gate stages and tiers are therefore to be run on the one bound machine. % AV09
+
+% VER03
+\paragraph{Gates.}
+Gates G0--G2c (Appendix~\ref{app:odd}, Submodel~14) verify the procedure end to end:
+\begin{itemize}
+\item G0 checks matching statuses and budgets;
+\item G1b checks the coverage mechanics of the band on synthetic scores;
+\item G1c checks that the whole pipeline returns anchor-exact fits and AUCs near 0.5 at zero strength;
+\item G2 compares the reported standard errors with the actual dispersion of independent pipelines, and G2c compares the locally propagated nuisance variance with the variance of full refits.
+\end{itemize}
+Gate outcomes are reported in Results.
+% VER15 RC41
+The later release wrapper and reporting loader lie outside the frozen code closure, and the G1c successor summary records the frozen aggregate outside the seal to repair NumPy-boolean serialization (Methods).
+% VER16 RC42
+For an early release, \code{closed_utc} is the original deadline passed to the frozen function, whereas \code{release-record.json} records the actual time and trigger.
+
+% VER04
+\paragraph{Freeze preflight.}
+Before any gate stage or tier runs, \code{simulation/v4_gate.py:preflight} compares the working tree with \code{freeze-v4.json}. It requires:
+\begin{itemize}
+\item schema 2 and status \code{frozen};
+\item SHA-256 equality for every file in the bound code closure, including the lock file, and for the criteria and inventory artifacts;
+\item agreement of the criteria record with the criteria code and calibration script;
+\item hashes of the amendment, specification, revision, review findings and both decision records;
+\item eight workers, eight shards and single-threaded BLAS;
+\item the recorded interpreter, NumPy, platform and lock environment;
+\item agreement of a numerical probe within absolute tolerance $10^{-12}$.
+\end{itemize}
+A second binding record, created after G0 and before G2, must also exist. It binds the freeze record, the G0 statuses, the criteria record, the G2 cell allocation, and the measured G0 gap rate, and is checked against them before G2. The runners refuse to start without these records (\code{test_v4_runners.py::test_gate_refuses_execution_without_freeze_record}; \code{test_v41_binding.py::test_two_stage_binding_rejects_missing_stale_or_changed_inputs}).
+
+\paragraph{Independent docking.}
+% VER06
+Two clean-room docking studies compared independent implementations with the project code at the frozen revision \code{37513841}. Each independent implementation was written from the protocol and specification documents alone, without opening the project's source, tests or experiment scripts. Its first-phase readings of ambiguous points were committed before any project source was read, and readings added after the comparison are marked as such. A comparison plan was committed before any comparison ran. In the model study, a timing probe had earlier printed mean lag correlations of 50 project panels in two cells; no margin or cell was chosen from it. Neither study ran a gate stage or tier or used a reserved confirmatory seed namespace. The phase commits in the repository were reconstructed from the session transcripts in their original order; the original commit objects were not pushed (\code{validation/docking-v4/RECONSTRUCTION.md}; \code{validation/inference-docking-v4/RECONSTRUCTION.md}).
+
+% VER07
+The first study docked the generative model (\code{validation/docking-v4/REPORT.md}). With shared seeds, latent trajectories were bitwise identical for the interaction arm at $a\in\{0,0.03,0.30\}$ and for nulls A, B, D and E, in 20 of 20 seeds per case. In a post hoc check not in the pre-declared plan, the ordinal discretizers were also byte-identical given the same continuous responses and mask. At the level of laws ($N=1{,}002$, 11 waves, 25 cells, 1,000 panels per implementation and cell), all 150 primary endpoints were equivalent by two one-sided tests with a margin of 0.20 standard deviations per panel. None of 2,334 secondary difference tests rejected after Holm correction. For the discriminator, run at reduced training and test sizes in three cells with 50 replicates each, mean AUCs differed by at most 0.002 (equivalence margin 0.02). On identical features, the two LDA implementations differed by at most $9\times10^{-5}$. These reduced-size AUCs are not estimates of $\mathcal A(a,r)$.
+
+% VER08
+Two specification ambiguities affected numerical output, both negligibly. The first concerned the LDA standardization divisor (the project uses the population standard deviation). The second concerned the normalization of the heteroscedastic error in C (the project uses the empirical mean over the panel, which differed from the analytic expectation by a relative $1.6\times10^{-4}$). No discrepancy in the docked scope was classified as a code--specification divergence. The study did not dock matching, nuisance propagation, bootstrap bands, gates, seeds or sealing, the latent, error-free ordinal, latent-rank and mobility channels, the persistent-style, conditioning, anchoring, attraction-only and 24-step sensitivities, the lag-one feasibility rule, or production sizes. Its law-level resolution (0.20 standard deviations, about 0.002--0.005 in units of the ordinal lag correlations) is far coarser than the matching tolerance. Heaping and masks agree only in law because the two implementations consume random draws in a different order.
+
+% VER09
+The second study docked the inference and calibration machinery (\code{validation/inference-docking-v4/REPORT.md}): the profile solver, acceptance tolerance, independent validation and retry, local nuisance propagation, cluster bootstrap, band, gap and gate rules, and the Jeffreys stop rule. Both implementations received identical synthetic inputs, including adversarial ones. Tolerances, validation decisions, the retry protocol, projected parameter shifts (2,500 cases), finite differences, nuisance draws, $V_{\mathrm{nuis}}$, bootstrap standard errors, failure allowances and the shared-seed stop-rule probability agreed to $10^{-12}$ or better, most bitwise. Exceptions were reporting-only differences at 0/0 and non-finite inputs and in one Monte Carlo standard-error formula. At a non-positive Schur slope, the project stops with an error where the docking solves the projection; this was classified as a specification ambiguity. For the nuisance draws, the docking implementation was given the project's discriminator.
+
+% VER10
+Solver status agreed in 16 of 22 synthetic cases; the report's count of 17 is corrected in \code{validation/inference-docking-v4/RECONSTRUCTION.md}. All six divergences (cases S05, S06, S09, S10, S17 and S21) were classified as specification ambiguities (\code{validation/inference-docking-v4/AMBIGUITIES.md}, A03b, A05b, A06b, A24). In three cases the project reports \code{no-L1-root} where the docking reports a family limit; both labels are gaps. The project can also report family limits within the profile solver, so these cases do not imply that such limits arise only in the feasibility screen. In one case with discrete steps the two labels are \code{numerical-limit} and \code{ill-conditioned}. In one case a root lies within tolerance of the endpoint and is labeled \code{interior} by the project and \code{boundary} by the docking; both are accepted states. In the hump-shaped profile case, the project accepted a genuine interior root after sampling only $\eta\leq0.01$, whereas the docking evaluated $\eta=0.8$ early, detected the non-monotone profile and returned a gap. This is the only divergence that changes the accept/gap decision.
+
+% VER11
+The band critical values differed, by up to a factor of 2.1, in the ten random cases compared. A post hoc analysis reproduced the project's values exactly in all ten cases from three readings. These were the logit standard error evaluated at each replicate rather than at $\hat p$, replicates centered on the point estimate, and the \texttt{higher} quantile rule. The per-replicate standard error dominates; in one case the plug-in reading gave a critical value of 7.15 and the project's reading 3.37. The project's band code reproduces the frozen v1 band exactly, and Methods describes that reading. Inversion, gap, censoring, and zero-strength gate rules agreed in 9 of 11 cases. In the other two, adjacent to a gap, the project censors the sustained boundary where the docking declares the first strength above the gap, which is the more conservative reading. No divergence was classified as a probable project error.
+
+% VER12
+The second study left matching on real panels, the feasibility screen, and the mean-feature Jacobian on real realizations unverified. It also left unverified the control path that inherits $\eta$ in the nuisance draws; the amplification and covariance diagnostics; and the calibrated G2 dispersion thresholds and the G2c ratio beyond failure counts. G1b, G1c, the G0 status projection that feeds the stop rule, the curve runner, scheduler, sealing, seed derivation, and collision audit also remained unverified. The study did not verify solver efficiency on real targets, since evaluation counts were reported but not compared, or the statistical coverage of either band reading. The project's reading is the one that gate G1b tests.
+
+% VER13
+Docking establishes agreement between two implementations of the same written specification in the scope docked. Where both made the same choice at an ambiguous point, it cannot detect an error in the specification itself or a misreading shared by both authors. It is not validation of the social mechanism, not an estimate of coverage and not a substitute for the gates.

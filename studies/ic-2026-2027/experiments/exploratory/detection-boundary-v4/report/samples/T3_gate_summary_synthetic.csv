@@ -1,0 +1,51 @@
+stage,item,value,criterion,stage_pass
+G0,tasks completed,81/81,all,pass
+G0,task failures,0,= 0,pass
+G0,fits,648,,pass
+G0,a=0 identity fits not anchor-exact,0,= 0,pass
+G0,budget statuses,0,= 0,pass
+G0,implementation statuses / fits,1/648 = 0.0015,<= 0.01,pass
+G0,status anchor-exact,63,reported,pass
+G0,status boundary,16,reported,pass
+G0,status family-limit-upper,5,reported,pass
+G0,status ill-conditioned,1,reported,pass
+G0,status interior,559,reported,pass
+G0,status no-L1-root,1,reported,pass
+G0,status non-monotone-profile,1,reported,pass
+G1b,tasks completed,5000/5000,all,pass
+G1b,task failures,0,= 0,pass
+G1b,"joint coverage, gaussian-icc0",948/1000,>= 935/1000,pass
+G1b,"joint coverage, gaussian-icc05",943/1000,>= 935/1000,pass
+G1b,"joint coverage, non-gaussian",954/1000,>= 935/1000,pass
+G1b,"joint coverage, ties",962/1000,>= 935/1000,pass
+G1b,"joint coverage, dependent-slots",964/1000,>= 935/1000,pass
+G1b,empirical max-t above 2.7729,1982/5000,reported (D6),pass
+G1c,tasks completed,150/150,all,pass
+G1c,task failures,0,= 0,pass
+G1c,summary source,"successor record, frozen aggregate",,pass
+G1c,anchor-exact fits,150/150,= 150/150,pass
+G1c,pointwise failures at 2.7729,1/150,<= 3,pass
+G1c,|mean AUC - 0.5| / SE,0.759,<= 3,pass
+G1c,tie rate,0.0048,reported,pass
+G2,tasks completed,700/700,all,pass
+G2,task failures,3,<= 2% pooled,pass
+G2,"dispersion ratio, cell 1 (a=0.003, r=0.70)","1.110 [0.657, 1.626]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, cell 2 (a=0.01, r=0.70)","1.267 [0.811, 1.703]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, cell 3 (a=0.03, r=0.70)","0.999 [0.699, 1.317]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, cell 4 (a=0.1, r=0.70)","0.906 [0.554, 1.288]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, cell 5 (a=0.3, r=0.70)","1.034 [0.756, 1.262]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, cell 6 (a=0.03, r=0.50)","1.183 [0.781, 1.542]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, cell 7 (a=0.03, r=0.90)","1.109 [0.673, 1.662]","upper >= 0.498, lower <= 1.288",pass
+G2,"dispersion ratio, pooled","1.032 [0.810, 1.200]","upper >= 0.818, lower <= 1.055",pass
+G2,failures by cell,0 2 0 0 0 0 1,<= 5 per cell; <= 2% pooled,pass
+G2,FD variance ratio median by cell,1.047 1.038 1.036 1.044 1.051 1.034 1.041,"each in [0.8, 1.25]",pass
+G2,LOO tail counts by cell,0 0 0 0 1 2 1,reported,pass
+G2,covariance flags by cell,0 0 0 0 0 0 0,reported (v4.1 R3),pass
+G2c,tasks completed,142/142,all,pass
+G2c,task failures,0,per comparison,pass
+G2c,"Var_D5/Var_refit, a=0.10, 100 refits","0.737 [0.576, 1.017]","upper >= 0.8, lower <= 2.0",pass
+G2c,"refit failures, a=0.10, 100 refits",0/100,<= 3/100,pass
+G2c,"refit tails, a=0.10, 100 refits",0,reported,pass
+G2c,"Var_D5/Var_refit, a=0.03, 40 refits","1.085 [0.791, 1.708]","upper >= 0.8, lower <= 2.0",pass
+G2c,"refit failures, a=0.03, 40 refits",0/40,<= 2/40,pass
+G2c,"refit tails, a=0.03, 40 refits",0,reported,pass

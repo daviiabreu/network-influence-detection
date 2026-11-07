@@ -1,0 +1,79 @@
+{
+  "format": "fragmentation-pilot-run-manifest-v1",
+  "recorded_at_utc": "2026-09-12T23:56:17.801705+00:00",
+  "status": "completed_exploratory_execution",
+  "scientific_acceptance": false,
+  "phases": {
+    "benchmark": {
+      "artifact_path": "/Users/davi/.local/state/research-workbench/fragmentation-pilot-20260912/artifacts/sha256/11/11778292d7c8c7f1dabaab0f45788653babb01f9fe8bbdc05618674712cd5ee4",
+      "sha256": "11778292d7c8c7f1dabaab0f45788653babb01f9fe8bbdc05618674712cd5ee4",
+      "size_bytes": 1059208,
+      "code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+      "spec_sha256": "4fc30997b27ee759e69e39e4a922a8c79f2342367cb29a664639bafcb37efe8c",
+      "trials": 10,
+      "max_attempts": 50000,
+      "elapsed_seconds": 0.7794470840017311,
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; three explicit seed streams"
+      }
+    },
+    "control": {
+      "artifact_path": "/Users/davi/.local/state/research-workbench/fragmentation-pilot-20260912/artifacts/sha256/75/7567d4d06296ac24ebe60fa4406c62089655ae8f57b0b6d5cafb806ae0200112",
+      "sha256": "7567d4d06296ac24ebe60fa4406c62089655ae8f57b0b6d5cafb806ae0200112",
+      "size_bytes": 874583,
+      "code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+      "spec_sha256": "4fc30997b27ee759e69e39e4a922a8c79f2342367cb29a664639bafcb37efe8c",
+      "trials": 10,
+      "max_attempts": 100000,
+      "elapsed_seconds": 0.1888672079949174,
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; three explicit seed streams"
+      }
+    },
+    "pilot": {
+      "artifact_path": "/Users/davi/.local/state/research-workbench/fragmentation-pilot-20260912/artifacts/sha256/8f/8fd935191e3f8f5a06da9c27bfdf9dec425925e014d5a1b8cafbf4fa0114bad3",
+      "sha256": "8fd935191e3f8f5a06da9c27bfdf9dec425925e014d5a1b8cafbf4fa0114bad3",
+      "size_bytes": 9566808,
+      "code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+      "spec_sha256": "4fc30997b27ee759e69e39e4a922a8c79f2342367cb29a664639bafcb37efe8c",
+      "trials": 112,
+      "max_attempts": 100000,
+      "elapsed_seconds": 24.333229957992444,
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; three explicit seed streams"
+      }
+    },
+    "sensitivity": {
+      "artifact_path": "/Users/davi/.local/state/research-workbench/fragmentation-pilot-20260912/artifacts/sha256/fb/fb7dec341b089cb3ea81c7e490ff0d50444caa2821a58d767ebe6ebd1f74e856",
+      "sha256": "fb7dec341b089cb3ea81c7e490ff0d50444caa2821a58d767ebe6ebd1f74e856",
+      "size_bytes": 363575,
+      "code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+      "spec_sha256": "4fc30997b27ee759e69e39e4a922a8c79f2342367cb29a664639bafcb37efe8c",
+      "trials": 16,
+      "max_attempts": 100000,
+      "elapsed_seconds": 1.805914374999702,
+      "environment": {
+        "machine": "arm64",
+        "platform": "macOS-26.6.2-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+        "rng": "random.Random MT19937; three explicit seed streams"
+      }
+    }
+  },
+  "lineage": {
+    "proposal": "research/questions/exploration/2026-09-12",
+    "code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+    "authorization_file": "authorization.json",
+    "budget_decision_file": "budget-decision.json"
+  },
+  "sources_and_parameters": "spec.json and protocol.md; full inputs and source hashes are also embedded in each artifact header."
+}

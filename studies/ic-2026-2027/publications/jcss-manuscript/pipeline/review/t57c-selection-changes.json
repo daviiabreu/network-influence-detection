@@ -1,0 +1,1155 @@
+{
+  "schema": "ic-study.t57c-selection-changes.v1",
+  "rules_sha256_committed": "3b0794934d6496287b026995d0db83dc6e050a995f689aabf595c42b65a713c7",
+  "rules_sha256_before_repin": "3d5bb32fa974086fe0b74890e45f71e54cc3961aa857a60a98f0a7f426e09aef",
+  "rules_sha256_after_repin": "a911b51cc2155425bcf723a1eb3f63dfc7b0ccc8ab94342f9a8622d81698ff03",
+  "rules_sha256_after": "8d8f176d37909b4e083d87480c4e358681da7a7eec213f602978d803c85b67c7",
+  "repin_locator_overrides": {
+    "E.status-and-scope": [
+      12,
+      18
+    ],
+    "E.x6-matching-diagnostics": [
+      154,
+      157
+    ],
+    "reason": "the pinned ranges ended on the next block's leading comment, so the diff placed the inserted X3 design and X7 scope paragraphs inside them; each override keeps the block on its own lines"
+  },
+  "changes": [
+    {
+      "id": "D-EXPLORATORY-SUPPLEMENT",
+      "field": "rule",
+      "before": null,
+      "after": {
+        "id": "D-EXPLORATORY-SUPPLEMENT",
+        "source": "discussion",
+        "line": 437,
+        "end_line": 442,
+        "condition": {
+          "ref": "E.status-and-scope"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 604
+      },
+      "scope": "pointer to the exploratory supplement, selected exactly when its status block (and therefore the section) is assembled; replaces the removed X1b, X3, X4, X7 and availability blocks",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "C-EVALUATION-PASS",
+      "field": "slot",
+      "before": "C2",
+      "after": "CN01-join",
+      "scope": "composition only: the sentence is appended to the fixed CN01 paragraph that precedes the C3 marker instead of standing as a one-line paragraph; condition and order unchanged",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "C-EVALUATION-REQUIRED",
+      "field": "slot",
+      "before": "C2",
+      "after": "CN01-join",
+      "scope": "composition only: the sentence is appended to the fixed CN01 paragraph that precedes the C3 marker instead of standing as a one-line paragraph; condition and order unchanged",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "E.status-and-scope",
+      "field": "locator",
+      "before": [
+        12,
+        18
+      ],
+      "after": [
+        11,
+        18
+      ],
+      "scope": "the block now starts at the section heading with label supp:x3-x7, which was outside every rule and never reached the assembled supplement; condition unchanged",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "E.x3-design",
+      "field": "rule",
+      "before": null,
+      "after": {
+        "id": "E.x3-design",
+        "source": "exploratory",
+        "line": 20,
+        "end_line": 23,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "any": [
+                {
+                  "ref": "EX3"
+                },
+                {
+                  "ref": "EX4"
+                },
+                {
+                  "ref": "EX6"
+                },
+                {
+                  "ref": "EX7"
+                },
+                {
+                  "ref": "POST"
+                }
+              ]
+            },
+            {
+              "ref": "EX3"
+            }
+          ]
+        },
+        "slot": "exploratory",
+        "operation": "append",
+        "order": 1216,
+        "scope_locator": {
+          "source": "exploratory",
+          "line": 4,
+          "end_line": 7
+        }
+      },
+      "scope": "new always-selected paragraph for its analysis, stating its design and common limits once",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "E.x7-scope",
+      "field": "rule",
+      "before": null,
+      "after": {
+        "id": "E.x7-scope",
+        "source": "exploratory",
+        "line": 159,
+        "end_line": 162,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "any": [
+                {
+                  "ref": "EX3"
+                },
+                {
+                  "ref": "EX4"
+                },
+                {
+                  "ref": "EX6"
+                },
+                {
+                  "ref": "EX7"
+                },
+                {
+                  "ref": "POST"
+                }
+              ]
+            },
+            {
+              "ref": "EX7"
+            }
+          ]
+        },
+        "slot": "exploratory",
+        "operation": "append",
+        "order": 1353,
+        "scope_locator": {
+          "source": "exploratory",
+          "line": 4,
+          "end_line": 7
+        }
+      },
+      "scope": "new always-selected paragraph for its analysis, stating its design and common limits once",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X1B",
+      "field": "rule",
+      "before": {
+        "id": "D-X1B",
+        "source": "discussion",
+        "line": 437,
+        "end_line": 445,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 604,
+        "requires": [
+          "v4x.comparisons.by_r.0-5.x1b.state",
+          "v4x.comparisons.by_r.0-55.x1b.state",
+          "v4x.comparisons.by_r.0-6.x1b.state",
+          "v4x.comparisons.by_r.0-65.x1b.state",
+          "v4x.comparisons.by_r.0-7.x1b.state",
+          "v4x.comparisons.by_r.0-75.x1b.state",
+          "v4x.comparisons.by_r.0-8.x1b.state",
+          "v4x.comparisons.by_r.0-85.x1b.state",
+          "v4x.comparisons.by_r.0-9.x1b.state"
+        ]
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X1B-NO-RELEASE",
+      "field": "rule",
+      "before": {
+        "id": "D-X1B-NO-RELEASE",
+        "source": "discussion",
+        "line": 447,
+        "end_line": 452,
+        "condition": {
+          "not": {
+            "ref": "PASS"
+          }
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 614
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-SCOPE",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-SCOPE",
+        "source": "discussion",
+        "line": 454,
+        "end_line": 461,
+        "condition": {
+          "ref": "EX3"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 621
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-READINGS",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-READINGS",
+        "source": "discussion",
+        "line": 463,
+        "end_line": 470,
+        "condition": {
+          "ref": "EX3"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-GAPS",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-GAPS",
+        "source": "discussion",
+        "line": 472,
+        "end_line": 479,
+        "condition": {
+          "all": [
+            {
+              "ref": "EX3"
+            },
+            {
+              "any": [
+                {
+                  "gt": [
+                    "v4x.x3.count.error",
+                    "0"
+                  ]
+                },
+                {
+                  "gt": [
+                    "v4x.x3.count.gap",
+                    "0"
+                  ]
+                },
+                {
+                  "gt": [
+                    "v4x.x3.count.free-gap",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 639
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOST",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOST",
+        "source": "discussion",
+        "line": 481,
+        "end_line": 487,
+        "condition": {
+          "all": [
+            {
+              "ref": "EX3"
+            },
+            {
+              "gt": [
+                "v4x.x3.count.lost_crossing",
+                "0"
+              ]
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 648
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-DOMAIN",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-DOMAIN",
+        "source": "discussion",
+        "line": 489,
+        "end_line": 494,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "gt": [
+                "v4.t1.n_first_zero",
+                "0"
+              ]
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 656
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X4-SCOPE",
+      "field": "rule",
+      "before": {
+        "id": "D-X4-SCOPE",
+        "source": "discussion",
+        "line": 496,
+        "end_line": 502,
+        "condition": {
+          "ref": "EX4"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 663
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X4-NORMAL",
+      "field": "rule",
+      "before": {
+        "id": "D-X4-NORMAL",
+        "source": "discussion",
+        "line": 504,
+        "end_line": 510,
+        "condition": {
+          "ref": "EX4"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 671
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X4-PAIRED",
+      "field": "rule",
+      "before": {
+        "id": "D-X4-PAIRED",
+        "source": "discussion",
+        "line": 512,
+        "end_line": 518,
+        "condition": {
+          "ref": "EX4"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 679
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X4-SIZE",
+      "field": "rule",
+      "before": {
+        "id": "D-X4-SIZE",
+        "source": "discussion",
+        "line": 520,
+        "end_line": 526,
+        "condition": {
+          "ref": "EX4"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 687
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X4-DOMAIN",
+      "field": "rule",
+      "before": {
+        "id": "D-X4-DOMAIN",
+        "source": "discussion",
+        "line": 528,
+        "end_line": 533,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "any": [
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-5.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-5.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-55.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-55.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-6.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-6.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-65.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-65.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-7.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-7.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-75.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-75.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-8.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-8.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-85.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-85.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-9.x4.P_pu.state",
+                    "fora do domínio declarado"
+                  ]
+                },
+                {
+                  "eq": [
+                    "v4x.comparisons.by_r.0-9.x4.calibration.x4b.state",
+                    "fora do domínio declarado"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 695
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-POST-AVAILABILITY",
+      "field": "rule",
+      "before": {
+        "id": "D-POST-AVAILABILITY",
+        "source": "discussion",
+        "line": 535,
+        "end_line": 542,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 702
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X7-SCOPE",
+      "field": "rule",
+      "before": {
+        "id": "D-X7-SCOPE",
+        "source": "discussion",
+        "line": 544,
+        "end_line": 552,
+        "condition": {
+          "ref": "EX7"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 711
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X7-GAIN",
+      "field": "rule",
+      "before": {
+        "id": "D-X7-GAIN",
+        "source": "discussion",
+        "line": 554,
+        "end_line": 560,
+        "condition": {
+          "all": [
+            {
+              "ref": "EX7"
+            },
+            {
+              "gt": [
+                "v4x.x7.count.far",
+                "0"
+              ]
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 721
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X7-CLOSE",
+      "field": "rule",
+      "before": {
+        "id": "D-X7-CLOSE",
+        "source": "discussion",
+        "line": 562,
+        "end_line": 568,
+        "condition": {
+          "all": [
+            {
+              "ref": "EX7"
+            },
+            {
+              "gt": [
+                "v4x.x7.count.close",
+                "0"
+              ]
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 729
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X7-OTHER-STATES",
+      "field": "rule",
+      "before": {
+        "id": "D-X7-OTHER-STATES",
+        "source": "discussion",
+        "line": 570,
+        "end_line": 576,
+        "condition": {
+          "ref": "EX7"
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 737
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R050",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R050",
+        "source": "discussion",
+        "line": 727,
+        "end_line": 735,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-5.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-5.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-5.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-5.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.1
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R055",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R055",
+        "source": "discussion",
+        "line": 737,
+        "end_line": 745,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-55.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-55.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-55.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-55.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.2
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R060",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R060",
+        "source": "discussion",
+        "line": 747,
+        "end_line": 755,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-6.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-6.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-6.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-6.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.3
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R065",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R065",
+        "source": "discussion",
+        "line": 757,
+        "end_line": 765,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-65.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-65.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-65.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-65.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.4
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R070",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R070",
+        "source": "discussion",
+        "line": 767,
+        "end_line": 775,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-7.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-7.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-7.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-7.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.5
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R075",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R075",
+        "source": "discussion",
+        "line": 777,
+        "end_line": 785,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-75.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-75.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-75.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-75.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.6
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R080",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R080",
+        "source": "discussion",
+        "line": 787,
+        "end_line": 795,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-8.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-8.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-8.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-8.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.7
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R085",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R085",
+        "source": "discussion",
+        "line": 797,
+        "end_line": 805,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-85.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-85.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-85.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-85.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.8
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-R090",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-R090",
+        "source": "discussion",
+        "line": 807,
+        "end_line": 815,
+        "condition": {
+          "all": [
+            {
+              "ref": "PASS"
+            },
+            {
+              "ref": "POST"
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-9.x3.state",
+                "disponível"
+              ]
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-9.x3.delta.point"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-9.x3.delta.interval_95.i000"
+            },
+            {
+              "finite": "v4x.comparisons.by_r.0-9.x3.delta.interval_95.i001"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.9
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    },
+    {
+      "id": "D-X3-LOCAL-NOTE",
+      "field": "rule",
+      "before": {
+        "id": "D-X3-LOCAL-NOTE",
+        "source": "discussion",
+        "line": 817,
+        "end_line": 827,
+        "condition": {
+          "any": [
+            {
+              "ref": "D-X3-LOCAL-R050"
+            },
+            {
+              "ref": "D-X3-LOCAL-R055"
+            },
+            {
+              "ref": "D-X3-LOCAL-R060"
+            },
+            {
+              "ref": "D-X3-LOCAL-R065"
+            },
+            {
+              "ref": "D-X3-LOCAL-R070"
+            },
+            {
+              "ref": "D-X3-LOCAL-R075"
+            },
+            {
+              "ref": "D-X3-LOCAL-R080"
+            },
+            {
+              "ref": "D-X3-LOCAL-R085"
+            },
+            {
+              "ref": "D-X3-LOCAL-R090"
+            }
+          ]
+        },
+        "slot": "DS10",
+        "operation": "append",
+        "order": 630.95,
+        "fragments": [
+          {
+            "line": 823,
+            "end_line": 823,
+            "condition": true
+          },
+          {
+            "line": 824,
+            "end_line": 824,
+            "condition": {
+              "eq": [
+                "v4x.comparisons.by_r.0-5.main_curve.main_curve_valid",
+                "true"
+              ]
+            }
+          },
+          {
+            "line": 825,
+            "end_line": 825,
+            "condition": {
+              "eq": [
+                "v4x.comparisons.by_r.0-5.main_curve.main_curve_valid",
+                "false"
+              ]
+            }
+          },
+          {
+            "line": 826,
+            "end_line": 826,
+            "condition": true
+          }
+        ]
+      },
+      "after": null,
+      "scope": "Discussion block removed by item 1; its claims are in the exploratory supplement (see t57c-report.md, claim map)",
+      "authority": "T57c coordinator decision under the Owner's delegation (decision 161), 01/10/2026, before the release of any tier result"
+    }
+  ]
+}

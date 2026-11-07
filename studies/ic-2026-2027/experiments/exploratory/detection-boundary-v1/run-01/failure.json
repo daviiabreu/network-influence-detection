@@ -1,0 +1,11 @@
+{
+  "status": "summary_serialization_failed",
+  "exception": "TypeError: Object of type bool is not JSON serializable (numpy.bool_)",
+  "elapsed_to_seed_ledger_seconds": 152.8830804824829,
+  "conservative_budget_charge_seconds": 160,
+  "remaining_replay_budget_seconds": 440,
+  "summary_written": false,
+  "scientific_auc_or_boundary_disclosed": false,
+  "successor": "../run-02",
+  "repair": "Cast coarse disclosure to builtin bool; same scientific parameters and seeds, only output directory and remaining time allowance differ."
+}

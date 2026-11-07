@@ -1,0 +1,868 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ic-study:ic-release-manifest:v2",
+  "title": "IC release packaging integrity record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "mode",
+    "revisions",
+    "environments",
+    "files",
+    "scientific_acceptance",
+    "regeneration_performed",
+    "scientific_replay_performed",
+    "license_decisions"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ic-release-manifest-v2"
+    },
+    "mode": {
+      "enum": [
+        "source-only",
+        "approved-release",
+        "synthetic"
+      ]
+    },
+    "revisions": {
+      "$ref": "#/$defs/revisions"
+    },
+    "environments": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "confirmatory",
+        "x3-x7",
+        "legacy-x5-x7",
+        "shp-code",
+        "shp-freeze",
+        "v44-successor",
+        "release-wrapper",
+        "bridge",
+        "reporting-export"
+      ],
+      "properties": {
+        "confirmatory": {
+          "$ref": "#/$defs/environment"
+        },
+        "x3-x7": {
+          "$ref": "#/$defs/environment"
+        },
+        "legacy-x5-x7": {
+          "$ref": "#/$defs/environment"
+        },
+        "shp-code": {
+          "$ref": "#/$defs/environment"
+        },
+        "shp-freeze": {
+          "$ref": "#/$defs/environment"
+        },
+        "v44-successor": {
+          "$ref": "#/$defs/environment"
+        },
+        "release-wrapper": {
+          "$ref": "#/$defs/environment"
+        },
+        "bridge": {
+          "$ref": "#/$defs/environment"
+        },
+        "reporting-export": {
+          "$ref": "#/$defs/environment"
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/file"
+      },
+      "uniqueItems": true
+    },
+    "scientific_acceptance": {
+      "const": false
+    },
+    "regeneration_performed": {
+      "const": false
+    },
+    "scientific_replay_performed": {
+      "const": false
+    },
+    "license_decisions": {
+      "const": "MIT"
+    }
+  },
+  "$defs": {
+    "revisions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "confirmatory",
+        "x3-x7",
+        "legacy-x5-x7",
+        "shp-code",
+        "shp-freeze",
+        "v44-successor",
+        "release-wrapper",
+        "bridge",
+        "reporting-export"
+      ],
+      "properties": {
+        "confirmatory": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "x3-x7": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "legacy-x5-x7": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "shp-code": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "shp-freeze": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "v44-successor": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "release-wrapper": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "bridge": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "reporting-export": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 134217728
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "python",
+        "lock_sha256",
+        "pyproject_sha256",
+        "packages"
+      ],
+      "properties": {
+        "python": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lock_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "pyproject_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "packages": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "frozen_environment": {
+          "type": "object"
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "root",
+        "role",
+        "path",
+        "sha256",
+        "bytes",
+        "license_status"
+      ],
+      "properties": {
+        "root": {
+          "enum": [
+            "repository",
+            "release"
+          ]
+        },
+        "role": {
+          "enum": [
+            "confirmatory",
+            "x3-x7",
+            "legacy-x5-x7",
+            "shp-code",
+            "shp-freeze",
+            "v44-successor",
+            "release-wrapper",
+            "bridge",
+            "reporting-export",
+            "approved-artifact"
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 134217728
+        },
+        "license_status": {
+          "enum": [
+            "MIT",
+            "metadata-only"
+          ]
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "root": {
+              "const": "repository"
+            },
+            "role": {
+              "enum": [
+                "confirmatory",
+                "x3-x7",
+                "legacy-x5-x7",
+                "shp-code",
+                "shp-freeze",
+                "v44-successor",
+                "release-wrapper",
+                "bridge",
+                "reporting-export"
+              ]
+            },
+            "path": {
+              "enum": [
+                "studies/ic-2026-2027/.python-version",
+                "studies/ic-2026-2027/README.md",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README-x3-x7.md",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README.md",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/compatibility-c8e4861f.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration-x3-x7.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/launch-x3x7.sh",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/run-x3x7-stages.sh",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/AMENDMENT-v4.4.md",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/freeze-v44.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/v44_run_curve.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/audit_seeds.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/calibrate_criteria.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/criteria-v43.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/freeze-v4.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/inventory.json",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_cost.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_panels.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_v41.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_v42.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/project_compute.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/project_v41.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/project_v42.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/release_on_completion.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/report/README.md",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/report/RELEASE-RUNBOOK.md",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/run_curve.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/run_gate.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/verify_v41.py",
+                "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/verify_v42.py",
+                "studies/ic-2026-2027/experiments/exploratory/shp-anchor-crosswalk-v1/README.md",
+                "studies/ic-2026-2027/experiments/exploratory/shp-anchor-crosswalk-v1/crosswalk.json",
+                "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/ASSEMBLY.md",
+                "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-28/results-shells-abstract.md",
+                "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-28/results-shells.tex",
+                "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+                "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-30/exploratory-results-shells.tex",
+                "studies/ic-2026-2027/publications/reproducibility/Makefile",
+                "studies/ic-2026-2027/publications/reproducibility/README.md",
+                "studies/ic-2026-2027/publications/reproducibility/build_ic_release.py",
+                "studies/ic-2026-2027/publications/reproducibility/ic-release-manifest.schema.json",
+                "studies/ic-2026-2027/publications/reproducibility/verify_short_path.py",
+                "studies/ic-2026-2027/pyproject.toml",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/amendment-v4-1-revision.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/amendment-v4-decision-spec.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-amendment-v4.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-freeze.json",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-preregistration-frozen.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-v4-release-amendment.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-freeze.json",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-guide.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.json",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1-freeze.json",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1.json",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/v4-delta-review-decisions.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/v4-review-decisions.md",
+                "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/v4-review-findings.md",
+                "studies/ic-2026-2027/src/ic_study/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/detection_boundary.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/detection_boundary_v4.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/detection_v4_report.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/forecast_pilot.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/fragmentation_pilot.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/map_saturation_figures.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/redesign.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/shp_crosswalk.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/shp_reliability.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_exploratory_comparisons.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_exploratory_export.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_derive.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_facts.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_facts.schema.json",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_rules.json",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_public_aggregates.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_report_export.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_report_figures.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_report_protocol.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_report_schema.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_report_synthetic.py",
+                "studies/ic-2026-2027/src/ic_study/analysis/v4_report_tables.py",
+                "studies/ic-2026-2027/src/ic_study/literature/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/literature/identity_proposals.py",
+                "studies/ic-2026-2027/src/ic_study/metrics/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/metrics/histogram_scores.py",
+                "studies/ic-2026-2027/src/ic_study/models/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/models/anchored_panel.py",
+                "studies/ic-2026-2027/src/ic_study/models/critical_dose.py",
+                "studies/ic-2026-2027/src/ic_study/models/deffuant.py",
+                "studies/ic-2026-2027/src/ic_study/models/detection_panel.py",
+                "studies/ic-2026-2027/src/ic_study/models/detection_panel_v4.py",
+                "studies/ic-2026-2027/src/ic_study/models/histogram_forecast.py",
+                "studies/ic-2026-2027/src/ic_study/models/mechanism_controls.py",
+                "studies/ic-2026-2027/src/ic_study/py.typed",
+                "studies/ic-2026-2027/src/ic_study/simulation/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/amendment_a.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/detection_calibration.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/detection_coverage_check.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/detection_v4.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/fragmentation.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/redesign_calibration.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_criteria.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_curve.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x1b.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x3.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x3x7.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x4.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x5.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x6.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x7.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_gate.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_plan.py",
+                "studies/ic-2026-2027/src/ic_study/simulation/v4_store.py",
+                "studies/ic-2026-2027/src/ic_study/validation/__init__.py",
+                "studies/ic-2026-2027/src/ic_study/validation/experiments.py",
+                "studies/ic-2026-2027/tests/integration/test_experiment_validation.py",
+                "studies/ic-2026-2027/tests/integration/test_forecast_pilot.py",
+                "studies/ic-2026-2027/tests/integration/test_fragmentation_pilot.py",
+                "studies/ic-2026-2027/tests/scientific/test_fragmentation.py",
+                "studies/ic-2026-2027/tests/scientific/test_histogram_forecast.py",
+                "studies/ic-2026-2027/tests/scientific/test_mechanism_controls.py",
+                "studies/ic-2026-2027/tests/test_package.py",
+                "studies/ic-2026-2027/tests/unit/test_amendment_a.py",
+                "studies/ic-2026-2027/tests/unit/test_anchored_panel.py",
+                "studies/ic-2026-2027/tests/unit/test_critical_dose.py",
+                "studies/ic-2026-2027/tests/unit/test_detection_boundary.py",
+                "studies/ic-2026-2027/tests/unit/test_detection_calibration.py",
+                "studies/ic-2026-2027/tests/unit/test_detection_coverage_check.py",
+                "studies/ic-2026-2027/tests/unit/test_detection_panel.py",
+                "studies/ic-2026-2027/tests/unit/test_detection_v4.py",
+                "studies/ic-2026-2027/tests/unit/test_identity_proposals.py",
+                "studies/ic-2026-2027/tests/unit/test_redesign_analysis.py",
+                "studies/ic-2026-2027/tests/unit/test_v41_binding.py",
+                "studies/ic-2026-2027/tests/unit/test_v41_channels.py",
+                "studies/ic-2026-2027/tests/unit/test_v41_cost.py",
+                "studies/ic-2026-2027/tests/unit/test_v41_covariance.py",
+                "studies/ic-2026-2027/tests/unit/test_v42_cost.py",
+                "studies/ic-2026-2027/tests/unit/test_v42_gate.py",
+                "studies/ic-2026-2027/tests/unit/test_v42_identity.py",
+                "studies/ic-2026-2027/tests/unit/test_v42_solver.py",
+                "studies/ic-2026-2027/tests/unit/test_v42_verification.py",
+                "studies/ic-2026-2027/tests/unit/test_v44_successor_runner.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_criteria.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_curve.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_inventory.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_propagation.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_runners.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_sealing.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_solver.py",
+                "studies/ic-2026-2027/tests/unit/test_v4_validation_pipeline.py",
+                "studies/ic-2026-2027/uv.lock"
+              ]
+            }
+          }
+        },
+        {
+          "properties": {
+            "root": {
+              "const": "release"
+            },
+            "role": {
+              "const": "approved-artifact"
+            },
+            "path": {
+              "enum": [
+                "G1c-aggregate-successor.json",
+                "assembly-facts.json",
+                "assembly-record.json",
+                "comparisons.json",
+                "expected-hashes.json",
+                "legacy-x5.json",
+                "legacy-x7.json",
+                "owner-facts.json",
+                "public-aggregates.json",
+                "release-record.json",
+                "released-curves.json",
+                "report/F1_a_star_by_family.pdf",
+                "report/F1_a_star_by_family.png",
+                "report/F1_a_star_by_family_synthetic.pdf",
+                "report/F1_a_star_by_family_synthetic.png",
+                "report/F2_auc_profiles_A.pdf",
+                "report/F2_auc_profiles_A.png",
+                "report/F2_auc_profiles_A_synthetic.pdf",
+                "report/F2_auc_profiles_A_synthetic.png",
+                "report/F2_auc_profiles_B.pdf",
+                "report/F2_auc_profiles_B.png",
+                "report/F2_auc_profiles_B_synthetic.pdf",
+                "report/F2_auc_profiles_B_synthetic.png",
+                "report/F2_auc_profiles_C.pdf",
+                "report/F2_auc_profiles_C.png",
+                "report/F2_auc_profiles_C_synthetic.pdf",
+                "report/F2_auc_profiles_C_synthetic.png",
+                "report/F2_auc_profiles_D.pdf",
+                "report/F2_auc_profiles_D.png",
+                "report/F2_auc_profiles_D_synthetic.pdf",
+                "report/F2_auc_profiles_D_synthetic.png",
+                "report/F2_auc_profiles_E.pdf",
+                "report/F2_auc_profiles_E.png",
+                "report/F2_auc_profiles_E_synthetic.pdf",
+                "report/F2_auc_profiles_E_synthetic.png",
+                "report/F3_exploratory_family_offsets_vs_B.pdf",
+                "report/F3_exploratory_family_offsets_vs_B.png",
+                "report/F3_exploratory_family_offsets_vs_B_synthetic.pdf",
+                "report/F3_exploratory_family_offsets_vs_B_synthetic.png",
+                "report/F4_gate_diagnostics.pdf",
+                "report/F4_gate_diagnostics.png",
+                "report/F4_gate_diagnostics_synthetic.pdf",
+                "report/F4_gate_diagnostics_synthetic.png",
+                "report/F5_inventory_status.pdf",
+                "report/F5_inventory_status.png",
+                "report/F5_inventory_status_synthetic.pdf",
+                "report/F5_inventory_status_synthetic.png",
+                "report/F6_a_star_shp_anchor.pdf",
+                "report/F6_a_star_shp_anchor.png",
+                "report/F6_a_star_shp_anchor_synthetic.pdf",
+                "report/F6_a_star_shp_anchor_synthetic.png",
+                "report/T1_a_star_grid.csv",
+                "report/T1_a_star_grid.tex",
+                "report/T1_a_star_grid_synthetic.csv",
+                "report/T1_a_star_grid_synthetic.tex",
+                "report/T1s_a_star_all_units.csv",
+                "report/T1s_a_star_all_units.tex",
+                "report/T1s_a_star_all_units_synthetic.csv",
+                "report/T1s_a_star_all_units_synthetic.tex",
+                "report/T3_gate_summary.csv",
+                "report/T3_gate_summary.tex",
+                "report/T3_gate_summary_synthetic.csv",
+                "report/T3_gate_summary_synthetic.tex",
+                "report/T4_inventory.csv",
+                "report/T4_inventory.tex",
+                "report/T4_inventory_synthetic.csv",
+                "report/T4_inventory_synthetic.tex",
+                "report/manifest.json",
+                "result-catalog.json",
+                "result-values.json",
+                "shp-aggregate-successor-1.json",
+                "v4-allocation.json",
+                "x1a.json",
+                "x1b.json",
+                "x2.json",
+                "x3.json",
+                "x4.json",
+                "x5.json",
+                "x6.json",
+                "x7.json"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "mode",
+        "revisions",
+        "files",
+        "withheld",
+        "redacted"
+      ],
+      "properties": {
+        "schema": {
+          "const": "ic-release-plan-v3"
+        },
+        "mode": {
+          "enum": [
+            "source-only",
+            "approved-release",
+            "synthetic"
+          ]
+        },
+        "revisions": {
+          "$ref": "#/$defs/revisions"
+        },
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/selection"
+          }
+        },
+        "withheld": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/withheld"
+          }
+        },
+        "redacted": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/redacted"
+          }
+        }
+      }
+    },
+    "withheld": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "path",
+        "git_blob",
+        "sha256",
+        "bytes",
+        "reasons"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "confirmatory",
+            "x3-x7",
+            "legacy-x5-x7",
+            "shp-code",
+            "shp-freeze",
+            "v44-successor",
+            "release-wrapper",
+            "bridge",
+            "reporting-export"
+          ]
+        },
+        "path": {
+          "enum": [
+            "studies/ic-2026-2027/.python-version",
+            "studies/ic-2026-2027/README.md",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README-x3-x7.md",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README.md",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/compatibility-c8e4861f.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration-x3-x7.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/launch-x3x7.sh",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/run-x3x7-stages.sh",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/AMENDMENT-v4.4.md",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/freeze-v44.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/v44_run_curve.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/audit_seeds.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/calibrate_criteria.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/criteria-v43.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/freeze-v4.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/inventory.json",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_cost.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_panels.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_v41.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/measure_v42.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/project_compute.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/project_v41.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/project_v42.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/release_on_completion.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/report/README.md",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/report/RELEASE-RUNBOOK.md",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/run_curve.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/run_gate.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/verify_v41.py",
+            "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/verify_v42.py",
+            "studies/ic-2026-2027/experiments/exploratory/shp-anchor-crosswalk-v1/README.md",
+            "studies/ic-2026-2027/experiments/exploratory/shp-anchor-crosswalk-v1/crosswalk.json",
+            "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/ASSEMBLY.md",
+            "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-28/results-shells-abstract.md",
+            "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-28/results-shells.tex",
+            "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+            "studies/ic-2026-2027/publications/jcss-manuscript/pipeline/drafts/2026-09-30/exploratory-results-shells.tex",
+            "studies/ic-2026-2027/publications/reproducibility/Makefile",
+            "studies/ic-2026-2027/publications/reproducibility/README.md",
+            "studies/ic-2026-2027/publications/reproducibility/build_ic_release.py",
+            "studies/ic-2026-2027/publications/reproducibility/ic-release-manifest.schema.json",
+            "studies/ic-2026-2027/publications/reproducibility/verify_short_path.py",
+            "studies/ic-2026-2027/pyproject.toml",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/amendment-v4-1-revision.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/amendment-v4-decision-spec.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-amendment-v4.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-freeze.json",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-preregistration-frozen.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/detection-boundary-v4-release-amendment.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-freeze.json",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-guide.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.json",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1-freeze.json",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1.json",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-successor-1.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/v4-delta-review-decisions.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/v4-review-decisions.md",
+            "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/v4-review-findings.md",
+            "studies/ic-2026-2027/src/ic_study/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/detection_boundary.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/detection_boundary_v4.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/detection_v4_report.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/forecast_pilot.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/fragmentation_pilot.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/map_saturation_figures.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/redesign.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/shp_crosswalk.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/shp_reliability.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_exploratory_comparisons.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_exploratory_export.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_derive.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_facts.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_facts.schema.json",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_manuscript_assembly_rules.json",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_public_aggregates.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_report_export.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_report_figures.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_report_protocol.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_report_schema.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_report_synthetic.py",
+            "studies/ic-2026-2027/src/ic_study/analysis/v4_report_tables.py",
+            "studies/ic-2026-2027/src/ic_study/literature/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/literature/identity_proposals.py",
+            "studies/ic-2026-2027/src/ic_study/metrics/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/metrics/histogram_scores.py",
+            "studies/ic-2026-2027/src/ic_study/models/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/models/anchored_panel.py",
+            "studies/ic-2026-2027/src/ic_study/models/critical_dose.py",
+            "studies/ic-2026-2027/src/ic_study/models/deffuant.py",
+            "studies/ic-2026-2027/src/ic_study/models/detection_panel.py",
+            "studies/ic-2026-2027/src/ic_study/models/detection_panel_v4.py",
+            "studies/ic-2026-2027/src/ic_study/models/histogram_forecast.py",
+            "studies/ic-2026-2027/src/ic_study/models/mechanism_controls.py",
+            "studies/ic-2026-2027/src/ic_study/py.typed",
+            "studies/ic-2026-2027/src/ic_study/simulation/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/amendment_a.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/detection_calibration.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/detection_coverage_check.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/detection_v4.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/fragmentation.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/redesign_calibration.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_criteria.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_curve.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x1b.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x3.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x3x7.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x4.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x5.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x6.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_exploratory_x7.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_gate.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_plan.py",
+            "studies/ic-2026-2027/src/ic_study/simulation/v4_store.py",
+            "studies/ic-2026-2027/src/ic_study/validation/__init__.py",
+            "studies/ic-2026-2027/src/ic_study/validation/experiments.py",
+            "studies/ic-2026-2027/tests/integration/test_experiment_validation.py",
+            "studies/ic-2026-2027/tests/integration/test_forecast_pilot.py",
+            "studies/ic-2026-2027/tests/integration/test_fragmentation_pilot.py",
+            "studies/ic-2026-2027/tests/scientific/test_fragmentation.py",
+            "studies/ic-2026-2027/tests/scientific/test_histogram_forecast.py",
+            "studies/ic-2026-2027/tests/scientific/test_mechanism_controls.py",
+            "studies/ic-2026-2027/tests/test_package.py",
+            "studies/ic-2026-2027/tests/unit/test_amendment_a.py",
+            "studies/ic-2026-2027/tests/unit/test_anchored_panel.py",
+            "studies/ic-2026-2027/tests/unit/test_critical_dose.py",
+            "studies/ic-2026-2027/tests/unit/test_detection_boundary.py",
+            "studies/ic-2026-2027/tests/unit/test_detection_calibration.py",
+            "studies/ic-2026-2027/tests/unit/test_detection_coverage_check.py",
+            "studies/ic-2026-2027/tests/unit/test_detection_panel.py",
+            "studies/ic-2026-2027/tests/unit/test_detection_v4.py",
+            "studies/ic-2026-2027/tests/unit/test_identity_proposals.py",
+            "studies/ic-2026-2027/tests/unit/test_redesign_analysis.py",
+            "studies/ic-2026-2027/tests/unit/test_v41_binding.py",
+            "studies/ic-2026-2027/tests/unit/test_v41_channels.py",
+            "studies/ic-2026-2027/tests/unit/test_v41_cost.py",
+            "studies/ic-2026-2027/tests/unit/test_v41_covariance.py",
+            "studies/ic-2026-2027/tests/unit/test_v42_cost.py",
+            "studies/ic-2026-2027/tests/unit/test_v42_gate.py",
+            "studies/ic-2026-2027/tests/unit/test_v42_identity.py",
+            "studies/ic-2026-2027/tests/unit/test_v42_solver.py",
+            "studies/ic-2026-2027/tests/unit/test_v42_verification.py",
+            "studies/ic-2026-2027/tests/unit/test_v44_successor_runner.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_criteria.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_curve.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_inventory.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_propagation.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_runners.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_sealing.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_solver.py",
+            "studies/ic-2026-2027/tests/unit/test_v4_validation_pipeline.py",
+            "studies/ic-2026-2027/uv.lock"
+          ]
+        },
+        "git_blob": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 134217728
+        },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "excluded-by-decision",
+              "private-address",
+              "private-host-name",
+              "absolute-home-path",
+              "non-allowed-email",
+              "access-credential",
+              "coordination-path"
+            ]
+          }
+        }
+      }
+    },
+    "redacted": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "path",
+        "original_git_blob",
+        "original_sha256",
+        "redacted_sha256",
+        "redacted_bytes",
+        "replacements"
+      ],
+      "properties": {
+        "role": {
+          "$ref": "#/$defs/withheld/properties/role"
+        },
+        "path": {
+          "$ref": "#/$defs/withheld/properties/path"
+        },
+        "original_git_blob": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "original_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "redacted_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "redacted_bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 134217728
+        },
+        "replacements": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "private-address": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "private-host-name": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "absolute-home-path": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "non-allowed-email": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "access-credential": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "coordination-path": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

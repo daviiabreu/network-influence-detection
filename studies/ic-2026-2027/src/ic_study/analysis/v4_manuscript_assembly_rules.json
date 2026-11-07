@@ -1,0 +1,599 @@
+{
+  "schema": "ic-study.v4-manuscript-assembly-rules.v1",
+  "sources": {
+    "results": {
+      "path": "pipeline/drafts/2026-09-28/results-shells.tex",
+      "sha256": "64105b304f49a8e41c6f965a21f992d005166aacb8e4b9d02b141cae95164f9e"
+    },
+    "abstract": {
+      "path": "pipeline/drafts/2026-09-28/results-shells-abstract.md",
+      "sha256": "0bbf6abd7d176d9dad94596fa46189ebb307ddfb3a07be7ea2f4d899ebf9cf24"
+    },
+    "discussion": {
+      "path": "pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+      "sha256": "e98b34c976109abf2a20fdfaecafc91b122cf256a8e97dc0a7e798e069407a0c"
+    },
+    "exploratory": {
+      "path": "pipeline/drafts/2026-09-30/exploratory-results-shells.tex",
+      "sha256": "52261ce03209cca11543c4106bec7bb07bc5436b8c82ef806c451851b00a6979"
+    }
+  },
+  "predicates": {
+    "PASS": {
+      "ref": "B1a"
+    },
+    "M": {
+      "eq": [
+        "v4.mechanisms.allowed",
+        "1"
+      ]
+    },
+    "POST": {
+      "exists": "v4x.comparisons.count.x3.available"
+    },
+    "EX3": {
+      "exists": "v4x.x3.recorded"
+    },
+    "EX4": {
+      "all": [
+        {
+          "exists": "v4x.x4a.recorded"
+        },
+        {
+          "exists": "v4x.x4b.recorded"
+        }
+      ]
+    },
+    "EX6": {
+      "exists": "v4x.x6.x6a.recorded"
+    },
+    "EX7": {
+      "exists": "v4x.x7.count.far"
+    },
+    "D1": {
+      "all": [
+        {
+          "exists": "v4x.x6.x6a.band.vs_d1.primary.reading"
+        },
+        {
+          "not": {
+            "eq": [
+              "v4x.x6.x6a.band.vs_d1.primary.reading",
+              "unavailable"
+            ]
+          }
+        }
+      ]
+    },
+    "NONATTAINMENT": {
+      "all": [
+        {
+          "eq": [
+            "v4.t1.n_valid",
+            "9"
+          ]
+        },
+        {
+          "eq": [
+            "v4.t1.gap_cells",
+            "0"
+          ]
+        },
+        {
+          "eq": [
+            "v4.t1.n_not_attained",
+            "9"
+          ]
+        }
+      ]
+    },
+    "MAIN-INVALID": {
+      "gt": [
+        "v4.t1.n_not_valid",
+        "0"
+      ]
+    },
+    "PRECISION": {
+      "gt": [
+        "v4.t1.n_wide",
+        "0"
+      ]
+    },
+    "SHP-STATE": {
+      "fact_eq": [
+        "shp.state",
+        "admissible"
+      ]
+    },
+    "SHP-BOUNDARY": {
+      "not": {
+        "fact_eq": [
+          "shp.grid_position",
+          "inside"
+        ]
+      }
+    },
+    "T2-DIFFER": {
+      "all": [
+        {
+          "gt": [
+            "v4.inv.t2.n_valid",
+            "0"
+          ]
+        },
+        {
+          "fact": "tier2.boundaries_differ"
+        }
+      ]
+    },
+    "X5-SUPPLIED": {
+      "all": [
+        {
+          "fact": "post.x5_supplied"
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-5.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-55.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-6.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-65.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-7.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-75.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-8.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-85.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        },
+        {
+          "eq": [
+            "v4x.comparisons.by_r.0-9.x5_state.state",
+            "dispon\u00edvel"
+          ]
+        }
+      ]
+    },
+    "X5-ABSENT": {
+      "all": [
+        {
+          "not": {
+            "fact": "post.x5_supplied"
+          }
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-5.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-5.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-55.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-55.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-6.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-6.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-65.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-65.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-7.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-7.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-75.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-75.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-8.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-8.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-85.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-85.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-9.x5_state.state",
+                "indispon\u00edvel"
+              ]
+            },
+            {
+              "eq": [
+                "v4x.comparisons.by_r.0-9.x5_state.reason",
+                "agregado X5 n\u00e3o fornecido"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "rules": [
+    {"id": "B1a", "source": "results", "line": 117, "end_line": 135, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G2.verdict.complete", "1"]}, {"eq": ["v4.gate.G2.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G2c.verdict.complete", "1"]}, {"eq": ["v4.gate.G2c.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}]}, "slot": "P2", "operation": "append", "order": 20},
+    {"id": "B1b-G0", "source": "results", "line": 139, "end_line": 156, "condition": {"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "0"]}, {"not": {"exists": "v4.gate.G1b.completed"}}, {"not": {"exists": "v4.gate.G1c.completed"}}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}, {"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}]}, "slot": "gate", "operation": "append", "order": 1, "fragments": [{"line": 149, "end_line": 149, "condition": true}, {"line": 151, "end_line": 151, "condition": {"exists": "v4.gate.G0.fits"}}, {"line": 153, "end_line": 153, "condition": {"not": {"exists": "v4.gate.G0.fits"}}}, {"line": 154, "end_line": 155, "condition": true}], "criteria_clauses": {"fact": "gate.G0.failed_criteria", "line": 151, "clauses": {"anchor": "identity fits were not", "budget": "attempts ended in", "implementation": "attempts ended in"}}},
+    {"id": "B1b-G1b", "source": "results", "line": 160, "end_line": 177, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "0"]}, {"not": {"exists": "v4.gate.G1c.completed"}}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}, {"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}]}, "slot": "gate", "operation": "append", "order": 2, "fragments": [{"line": 169, "end_line": 169, "condition": true}, {"line": 171, "end_line": 171, "condition": {"exists": "v4.gate.G1b.coverage_min"}}, {"line": 173, "end_line": 173, "condition": {"not": {"exists": "v4.gate.G1b.coverage_min"}}}, {"line": 175, "end_line": 175, "condition": {"exists": "v4.gate.G1b.coverage_min"}}, {"line": 176, "end_line": 176, "condition": true}]},
+    {"id": "B1b-G1c", "source": "results", "line": 181, "end_line": 198, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "0"]}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}, {"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}]}, "slot": "gate", "operation": "append", "order": 3, "fragments": [{"line": 191, "end_line": 191, "condition": true}, {"line": 193, "end_line": 193, "condition": {"exists": "v4.gate.G1c.anchor_count"}}, {"line": 195, "end_line": 195, "condition": {"not": {"exists": "v4.gate.G1c.anchor_count"}}}, {"line": 197, "end_line": 197, "condition": {"exists": "v4.gate.G1c.anchor_count"}}], "criteria_clauses": {"fact": "gate.G1c.failed_criteria", "line": 193}},
+    {"id": "B1c", "source": "results", "line": 202, "end_line": 215, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G2.verdict.stop", "1"]}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}]}, "slot": "gate", "operation": "append", "order": 4},
+    {"id": "B1b-G2", "source": "results", "line": 219, "end_line": 247, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G2.verdict.complete", "1"]}, {"eq": ["v4.gate.G2.verdict.approved", "0"]}, {"not": {"exists": "v4.gate.G2c.completed"}}, {"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}]}, "slot": "gate", "operation": "append", "order": 5, "fragments": [{"line": 234, "end_line": 234, "condition": true}, {"line": 236, "end_line": 236, "condition": {"fact_contains": ["gate.G2.failed_criteria", "allowance"]}}, {"line": 238, "end_line": 238, "condition": {"fact_contains": ["gate.G2.failed_criteria", "above"]}}, {"line": 240, "end_line": 240, "condition": {"fact_contains": ["gate.G2.failed_criteria", "below"]}}, {"line": 242, "end_line": 242, "condition": {"fact_contains": ["gate.G2.failed_criteria", "fd"]}}, {"line": 244, "end_line": 244, "condition": {"fact_contains": ["gate.G2.failed_criteria", "insufficient"]}}, {"line": 245, "end_line": 246, "condition": true}]},
+    {"id": "B1b-G2c", "source": "results", "line": 251, "end_line": 270, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G2.verdict.complete", "1"]}, {"eq": ["v4.gate.G2.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G2c.verdict.complete", "1"]}, {"eq": ["v4.gate.G2c.verdict.approved", "0"]}, {"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}]}, "slot": "gate", "operation": "append", "order": 6, "fragments": [{"line": 263, "end_line": 263, "condition": true}, {"line": 265, "end_line": 265, "condition": {"all": [{"exists": "v4.gate.G2c.a010.ratio"}, {"exists": "v4.gate.G2c.a003.ratio"}]}}, {"line": 267, "end_line": 267, "condition": {"not": {"all": [{"exists": "v4.gate.G2c.a010.ratio"}, {"exists": "v4.gate.G2c.a003.ratio"}]}}}, {"line": 268, "end_line": 269, "condition": true}], "comparison_clauses": {"fact": "gate.G2c.failed_comparisons", "line": 265}},
+    {"id": "B1d", "source": "results", "line": 274, "end_line": 285, "condition": {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.stop", "0"]}, {"eq": ["v4.gate.G1b.verdict.stop", "0"]}, {"eq": ["v4.gate.G1c.verdict.stop", "0"]}, {"eq": ["v4.gate.G2.verdict.stop", "0"]}, {"eq": ["v4.gate.G2c.verdict.stop", "0"]}]}, {"fact": "gate.at_close"}, {"any": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "0"]}, {"not": {"exists": "v4.gate.G1b.completed"}}, {"not": {"exists": "v4.gate.G1c.completed"}}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}]}, {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G1b.verdict.complete", "0"]}, {"not": {"exists": "v4.gate.G1c.completed"}}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}]}, {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G1c.verdict.complete", "0"]}, {"not": {"exists": "v4.gate.G2.completed"}}, {"not": {"exists": "v4.gate.G2c.completed"}}]}, {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G2.verdict.complete", "0"]}, {"not": {"exists": "v4.gate.G2c.completed"}}]}, {"all": [{"all": [{"eq": ["v4.gate.G0.verdict.complete", "1"]}, {"eq": ["v4.gate.G0.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1b.verdict.complete", "1"]}, {"eq": ["v4.gate.G1b.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G1c.verdict.complete", "1"]}, {"eq": ["v4.gate.G1c.verdict.approved", "1"]}]}, {"all": [{"eq": ["v4.gate.G2.verdict.complete", "1"]}, {"eq": ["v4.gate.G2.verdict.approved", "1"]}]}, {"eq": ["v4.gate.G2c.verdict.complete", "0"]}]}]}]}, "slot": "gate", "operation": "append", "order": 7},
+    {"id": "B1-END", "source": "results", "line": 289, "end_line": 296, "condition": {"not": {"ref": "PASS"}}, "slot": "gate-end", "operation": "append", "order": 900},
+    {"id": "B1-SHP", "source": "results", "line": 300, "end_line": 323, "condition": {"not": {"ref": "PASS"}}, "slot": "gate-shp", "operation": "append", "order": 9, "fragments": [{"line": 314, "end_line": 316, "condition": {"ref": "SHP-STATE"}}, {"line": 318, "end_line": 319, "condition": {"ref": "B14"}, "reason_fact": "shp.reason"}, {"line": 320, "end_line": 320, "condition": {"fact_eq": ["shp.state", "parameter-bound"]}}, {"line": 322, "end_line": 322, "condition": {"fact_eq": ["shp.state", "not-run"]}, "reason_fact": "shp.reason"}]},
+    {"id": "B02", "source": "results", "line": 327, "end_line": 347, "condition": {"all": [{"ref": "PASS"}, {"ref": "MAIN-INVALID"}]}, "slot": "P4", "operation": "group", "order": 10},
+    {"id": "B02.lead", "source": "results", "line": 340, "end_line": 340, "condition": {"all": [{"ref": "B02"}, true]}, "slot": "P4", "operation": "append", "order": 40.11},
+    {"id": "B02.gate", "source": "results", "line": 342, "end_line": 342, "condition": {"all": [{"ref": "B02"}, {"gt": ["v4.t1.n_invalid_gate", "0"]}]}, "slot": "P4", "operation": "append", "order": 40.12},
+    {"id": "B02.a0gap", "source": "results", "line": 343, "end_line": 343, "condition": {"all": [{"ref": "B02"}, {"gt": ["v4.t1.n_invalid_a0gap", "0"]}]}, "slot": "P4", "operation": "append", "order": 40.13},
+    {"id": "B02.clock", "source": "results", "line": 344, "end_line": 344, "condition": {"all": [{"ref": "B02"}, {"gt": ["v4.t1.n_clock", "0"]}]}, "slot": "P4", "operation": "append", "order": 40.14},
+    {"id": "B02.limits.1", "source": "results", "line": 345, "end_line": 345, "condition": {"all": [{"ref": "B02"}, true]}, "slot": "P4", "operation": "append", "order": 40.15},
+    {"id": "B02.limits.2", "source": "results", "line": 346, "end_line": 346, "condition": {"all": [{"ref": "B02"}, true]}, "slot": "P4", "operation": "append", "order": 40.16},
+    {"id": "B03", "source": "results", "line": 351, "end_line": 365, "condition": {"all": [{"ref": "PASS"}, {"ref": "NONATTAINMENT"}]}, "slot": "P5", "operation": "append", "order": 50},
+    {"id": "B04", "source": "results", "line": 369, "end_line": 389, "condition": {"all": [{"ref": "PASS"}, {"any": [{"gt": ["v4.t1.n_first_low", "0"]}, {"gt": ["v4.t1.n_first_zero", "0"]}]}]}, "slot": "P5-low", "operation": "group", "order": 18},
+    {"id": "B04.low.1", "source": "results", "line": 378, "end_line": 378, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.0},
+    {"id": "B04.low.2", "source": "results", "line": 379, "end_line": 379, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.01},
+    {"id": "B04.low.3", "source": "results", "line": 380, "end_line": 380, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.02},
+    {"id": "B04.low.4", "source": "results", "line": 381, "end_line": 381, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.03},
+    {"id": "B04.low.5", "source": "results", "line": 382, "end_line": 382, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.04},
+    {"id": "B04.low.6", "source": "results", "line": 386, "end_line": 386, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.05},
+    {"id": "B04.zero", "source": "results", "line": 388, "end_line": 388, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_zero", "0"]}]}, "slot": "P5-low", "operation": "append", "order": 54.9},
+    {"id": "B05", "source": "results", "line": 393, "end_line": 407, "condition": {"all": [{"ref": "PASS"}, {"any": [{"gt": ["v4.t1.n_dip", "0"]}, {"gt": ["v4.t1.n_nonmonotone_band", "0"]}]}]}, "slot": "P5-dip", "operation": "append", "order": 55, "fragments": [{"line": 402, "end_line": 402, "condition": {"gt": ["v4.t1.n_dip", "0"]}}, {"line": 403, "end_line": 403, "condition": {"gt": ["v4.t1.n_dip", "0"]}}, {"line": 404, "end_line": 404, "condition": {"gt": ["v4.t1.n_nonmonotone_band", "0"]}}, {"line": 405, "end_line": 405, "condition": true}, {"line": 406, "end_line": 406, "condition": true}]},
+    {"id": "B06", "source": "results", "line": 411, "end_line": 425, "condition": {"all": [{"ref": "PASS"}, {"any": [{"gt": ["v4.t1.n_first_ne_sustained", "0"]}, {"ref": "T2-DIFFER"}]}]}, "slot": "P5-differ", "operation": "append", "order": 56, "fragments": [{"line": 421, "end_line": 421, "condition": true}, {"line": 422, "end_line": 422, "condition": {"gt": ["v4.t1.n_first_ne_sustained", "0"]}}, {"line": 423, "end_line": 423, "condition": {"gt": ["v4.t1.n_sustained_gap", "0"]}}, {"line": 424, "end_line": 424, "condition": true}]},
+    {"id": "B07", "source": "results", "line": 429, "end_line": 440, "condition": {"all": [{"ref": "PASS"}, {"fact": "main.boundary_nonmonotone"}]}, "slot": "P10", "operation": "append", "order": 107},
+    {"id": "B08", "source": "results", "line": 444, "end_line": 466, "condition": {"all": [{"ref": "PASS"}, {"any": [{"gt": ["v4.t1.gap_cells", "0"]}, {"gt": ["v4.tab.T4.2-all-all-all.gaps_screened", "0"]}, {"gt": ["v4.tab.T4.2-all-all-all.gaps_family_limit", "0"]}, {"gt": ["v4.tab.T4.2-all-all-all.gaps_solver", "0"]}, {"gt": ["v4.tab.T4.2-all-all-all.gaps_validation", "0"]}]}]}, "slot": "P5-gaps", "operation": "group", "order": 29},
+    {"id": "B08.main.1", "source": "results", "line": 459, "end_line": 459, "condition": {"ref": "B08"}, "slot": "P5-gaps", "operation": "append", "order": 58.0},
+    {"id": "B08.main.2", "source": "results", "line": 460, "end_line": 460, "condition": {"ref": "B08"}, "slot": "P5-gaps", "operation": "append", "order": 58.01},
+    {"id": "B08.main.3", "source": "results", "line": 461, "end_line": 461, "condition": {"ref": "B08"}, "slot": "P5-gaps", "operation": "append", "order": 58.02},
+    {"id": "B08.main.4", "source": "results", "line": 462, "end_line": 462, "condition": {"ref": "B08"}, "slot": "P5-gaps", "operation": "append", "order": 58.03},
+    {"id": "B08.main.5", "source": "results", "line": 463, "end_line": 463, "condition": {"ref": "B08"}, "slot": "P5-gaps", "operation": "append", "order": 58.04},
+    {"id": "B08.dependency", "source": "results", "line": 465, "end_line": 465, "condition": {"all": [{"ref": "B08"}, {"gt": ["v4.t3.gap.dependency", "0"]}]}, "slot": "P5-gaps", "operation": "append", "order": 58.9},
+    {"id": "B09", "source": "results", "line": 470, "end_line": 480, "condition": {"all": [{"ref": "PASS"}, {"ref": "PRECISION"}]}, "slot": "P5-c", "operation": "append", "order": 53},
+    {"id": "B10", "source": "results", "line": 484, "end_line": 502, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"any": [{"gt": ["v4.bd.n_persistence", "0"]}, {"gt": ["v4.be.n_persistence", "0"]}, {"gt": ["v4.bc.n_persistence", "0"]}]}]}, "slot": "P6", "operation": "group", "order": 37},
+    {"id": "B10.bd.1", "source": "results", "line": 495, "end_line": 495, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_persistence", "0"]}]}, "slot": "P6", "operation": "append", "order": 63.0},
+    {"id": "B10.bd.2", "source": "results", "line": 496, "end_line": 496, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_persistence", "0"]}]}, "slot": "P6", "operation": "append", "order": 63.01},
+    {"id": "B10.bd.3", "source": "results", "line": 497, "end_line": 497, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_persistence", "0"]}]}, "slot": "P6", "operation": "append", "order": 63.02},
+    {"id": "B10.be", "source": "results", "line": 500, "end_line": 500, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.be.n_persistence", "0"]}]}, "slot": "P7", "operation": "append", "order": 66.5},
+    {"id": "B10.bc", "source": "results", "line": 501, "end_line": 501, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bc.n_persistence", "0"]}]}, "slot": "P7", "operation": "append", "order": 66.6},
+    {"id": "B11", "source": "results", "line": 506, "end_line": 527, "condition": {"all": [{"ref": "PASS"}, {"any": [{"gt": ["v4.t3.n_obs_exceeds", "0"]}, {"gt": ["v4.t3.n_channel_dependent", "0"]}, {"gt": ["v4.t3.n_channel_not_assessed", "0"]}]}]}, "slot": "P7-c", "operation": "append", "order": 74, "fragments": [{"line": 520, "end_line": 520, "condition": {"all": [true, true]}}, {"line": 521, "end_line": 521, "condition": {"all": [true, {"gt": ["v4.inv.t3.n_incomplete", "0"]}]}}, {"line": 522, "end_line": 522, "condition": {"gt": ["v4.t3.n_pairs_compared", "0"]}}, {"line": 523, "end_line": 523, "condition": {"gt": ["v4.t3.n_obs_exceeds", "0"]}}, {"line": 524, "end_line": 524, "condition": {"gt": ["v4.t3.n_channel_dependent", "0"]}}, {"line": 525, "end_line": 525, "condition": {"gt": ["v4.t3.n_channel_not_assessed", "0"]}}, {"line": 526, "end_line": 526, "condition": {"gt": ["v4.t3.n_pairs_compared", "0"]}}]},
+    {"id": "B12", "source": "results", "line": 531, "end_line": 546, "condition": {"all": [{"ref": "PASS"}, {"eq": ["v4.sens.use_b12", "1"]}]}, "slot": "P7-d", "operation": "group", "order": 44, "fragments": [{"line": 531, "end_line": 531, "condition": true}, {"line": 532, "end_line": 532, "condition": true}, {"line": 533, "end_line": 533, "condition": true}, {"line": 534, "end_line": 534, "condition": true}, {"line": 535, "end_line": 535, "condition": true}, {"line": 536, "end_line": 536, "condition": true}, {"line": 537, "end_line": 537, "condition": true}, {"line": 538, "end_line": 538, "condition": {"all": [true, true]}}, {"line": 539, "end_line": 539, "condition": {"all": [true, {"not": {"all": [{"eq": ["v4.inv.t4.n_valid", "45"]}, {"eq": ["v4.inv.t5.n_valid", "45"]}, {"eq": ["v4.inv.t6.n_valid", "9"]}]}}]}}, {"line": 540, "end_line": 540, "condition": true}, {"line": 541, "end_line": 541, "condition": true}, {"line": 542, "end_line": 542, "condition": true}, {"line": 543, "end_line": 543, "condition": true}, {"line": 544, "end_line": 544, "condition": true}, {"line": 545, "end_line": 545, "condition": true}, {"line": 546, "end_line": 546, "condition": true}]},
+    {"id": "B12.inventory", "source": "results", "line": 538, "end_line": 539, "condition": {"ref": "B12"}, "slot": "P7-d", "operation": "append", "order": 77.0, "fragments": [{"line": 538, "end_line": 538, "condition": {"all": [true, true]}}, {"line": 539, "end_line": 539, "condition": {"all": [true, {"not": {"all": [{"eq": ["v4.inv.t4.n_valid", "45"]}, {"eq": ["v4.inv.t5.n_valid", "45"]}, {"eq": ["v4.inv.t6.n_valid", "9"]}]}}]}}]},
+    {"id": "B12.region.1", "source": "results", "line": 541, "end_line": 541, "condition": {"all": [{"ref": "B12"}, {"gt": ["v4.sens.n_region_differs", "0"]}]}, "slot": "P7-d", "operation": "append", "order": 77.1},
+    {"id": "B12.region.2", "source": "results", "line": 542, "end_line": 542, "condition": {"all": [{"ref": "B12"}, {"gt": ["v4.sens.n_region_differs", "0"]}]}, "slot": "P7-d", "operation": "append", "order": 77.11},
+    {"id": "B12.scope.1", "source": "results", "line": 543, "end_line": 543, "condition": {"ref": "B12"}, "slot": "P7-d", "operation": "append", "order": 77.5},
+    {"id": "B12.scope.2", "source": "results", "line": 544, "end_line": 544, "condition": {"ref": "B12"}, "slot": "P7-d", "operation": "append", "order": 77.51},
+    {"id": "B12.scope.3", "source": "results", "line": 545, "end_line": 545, "condition": {"ref": "B12"}, "slot": "P7-d", "operation": "append", "order": 77.52},
+    {"id": "B13", "source": "results", "line": 550, "end_line": 565, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"ref": "SHP-BOUNDARY"}]}, "slot": "P8", "operation": "append", "order": 80, "fragments": [{"line": 557, "end_line": 557, "condition": true}, {"line": 559, "end_line": 560, "condition": {"fact_eq": ["shp.grid_position", "below"]}}, {"line": 559, "end_line": 560, "condition": {"fact_eq": ["shp.grid_position", "above"]}, "replace": {"below the smallest": "above the largest", "v4.protocol.r.050": "v4.protocol.r.090", "{0.50}": "{0.90}"}}, {"line": 562, "end_line": 562, "condition": {"fact_eq": ["shp.grid_position", "interval-outside"]}}, {"line": 563, "end_line": 564, "condition": true}]},
+    {"id": "B14", "source": "results", "line": 569, "end_line": 591, "condition": {"any": [{"fact_eq": ["shp.state", "failed"]}, {"fact_eq": ["shp.state", "parameter-bound"]}, {"all": [{"fact_eq": ["shp.state", "pre-run-divergence"]}, {"fact_recorded": "shp.divergence"}]}]}, "slot": "P8", "operation": "append", "order": 80, "allow_empty": true, "fragments": [{"line": 586, "end_line": 587, "condition": {"ref": "PASS"}, "reason_fact": "shp.reason"}, {"line": 589, "end_line": 589, "condition": {"all": [{"ref": "PASS"}, {"fact_eq": ["shp.state", "parameter-bound"]}]}}, {"line": 590, "end_line": 590, "condition": {"ref": "PASS"}}]},
+    {"id": "B15", "source": "results", "line": 595, "end_line": 605, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"gt": ["v4.shp.n_status_classes", "1"]}]}, "slot": "P8", "operation": "append", "order": 81},
+    {"id": "B16", "source": "results", "line": 609, "end_line": 621, "condition": {"all": [{"ref": "PASS"}, {"any": [{"gt": ["v4.all.n_exceeds_floor", "0"]}, {"gt": ["v4.gate.G2.covariance_flags", "0"]}, {"gt": ["v4.gate.G1b.exceeds_floor_count", "0"]}]}]}, "slot": "P9", "operation": "append", "order": 90},
+    {"id": "B17", "source": "results", "line": 625, "end_line": 634, "condition": {"ref": "PASS"}, "slot": "P10", "operation": "append", "order": 108},
+    {"id": "B00", "source": "results", "line": 638, "end_line": 805, "condition": {"ref": "PASS"}, "slot": "", "operation": "group", "order": 56, "fragments": [{"line": 638, "end_line": 638, "condition": true}, {"line": 639, "end_line": 639, "condition": true}, {"line": 640, "end_line": 640, "condition": true}, {"line": 641, "end_line": 641, "condition": true}, {"line": 642, "end_line": 642, "condition": true}, {"line": 643, "end_line": 643, "condition": true}, {"line": 644, "end_line": 644, "condition": true}, {"line": 645, "end_line": 645, "condition": true}, {"line": 646, "end_line": 646, "condition": true}, {"line": 647, "end_line": 647, "condition": true}, {"line": 648, "end_line": 648, "condition": true}, {"line": 649, "end_line": 649, "condition": true}, {"line": 650, "end_line": 650, "condition": true}, {"line": 651, "end_line": 651, "condition": true}, {"line": 652, "end_line": 652, "condition": true}, {"line": 653, "end_line": 653, "condition": true}, {"line": 654, "end_line": 654, "condition": true}, {"line": 655, "end_line": 655, "condition": true}, {"line": 656, "end_line": 656, "condition": true}, {"line": 657, "end_line": 657, "condition": true}, {"line": 658, "end_line": 658, "condition": true}, {"line": 659, "end_line": 659, "condition": true}, {"line": 660, "end_line": 660, "condition": true}, {"line": 661, "end_line": 661, "condition": true}, {"line": 662, "end_line": 662, "condition": true}, {"line": 663, "end_line": 663, "condition": true}, {"line": 664, "end_line": 664, "condition": true}, {"line": 665, "end_line": 665, "condition": true}, {"line": 666, "end_line": 666, "condition": true}, {"line": 667, "end_line": 667, "condition": true}, {"line": 668, "end_line": 668, "condition": true}, {"line": 669, "end_line": 669, "condition": true}, {"line": 670, "end_line": 670, "condition": true}, {"line": 671, "end_line": 671, "condition": true}, {"line": 672, "end_line": 672, "condition": true}, {"line": 673, "end_line": 673, "condition": true}, {"line": 674, "end_line": 674, "condition": true}, {"line": 675, "end_line": 675, "condition": true}, {"line": 676, "end_line": 676, "condition": true}, {"line": 677, "end_line": 677, "condition": true}, {"line": 678, "end_line": 678, "condition": true}, {"line": 679, "end_line": 679, "condition": true}, {"line": 680, "end_line": 680, "condition": true}, {"line": 681, "end_line": 681, "condition": true}, {"line": 682, "end_line": 682, "condition": true}, {"line": 683, "end_line": 683, "condition": true}, {"line": 684, "end_line": 684, "condition": true}, {"line": 685, "end_line": 685, "condition": true}, {"line": 686, "end_line": 686, "condition": true}, {"line": 687, "end_line": 687, "condition": true}, {"line": 688, "end_line": 688, "condition": true}, {"line": 689, "end_line": 689, "condition": true}, {"line": 690, "end_line": 690, "condition": true}, {"line": 691, "end_line": 691, "condition": true}, {"line": 692, "end_line": 692, "condition": true}, {"line": 693, "end_line": 693, "condition": true}, {"line": 694, "end_line": 694, "condition": true}, {"line": 695, "end_line": 695, "condition": true}, {"line": 696, "end_line": 696, "condition": true}, {"line": 697, "end_line": 697, "condition": true}, {"line": 698, "end_line": 698, "condition": true}, {"line": 699, "end_line": 699, "condition": true}, {"line": 700, "end_line": 700, "condition": true}, {"line": 701, "end_line": 701, "condition": true}, {"line": 702, "end_line": 702, "condition": true}, {"line": 703, "end_line": 703, "condition": true}, {"line": 704, "end_line": 704, "condition": true}, {"line": 705, "end_line": 705, "condition": true}, {"line": 706, "end_line": 706, "condition": true}, {"line": 707, "end_line": 707, "condition": true}, {"line": 708, "end_line": 708, "condition": true}, {"line": 709, "end_line": 709, "condition": true}, {"line": 710, "end_line": 710, "condition": true}, {"line": 711, "end_line": 711, "condition": true}, {"line": 712, "end_line": 712, "condition": true}, {"line": 713, "end_line": 713, "condition": true}, {"line": 714, "end_line": 714, "condition": true}, {"line": 715, "end_line": 715, "condition": true}, {"line": 716, "end_line": 716, "condition": true}, {"line": 717, "end_line": 717, "condition": true}, {"line": 718, "end_line": 718, "condition": true}, {"line": 719, "end_line": 719, "condition": true}, {"line": 720, "end_line": 720, "condition": true}, {"line": 721, "end_line": 721, "condition": true}, {"line": 722, "end_line": 722, "condition": true}, {"line": 723, "end_line": 723, "condition": true}, {"line": 724, "end_line": 724, "condition": true}, {"line": 725, "end_line": 725, "condition": true}, {"line": 726, "end_line": 726, "condition": true}, {"line": 727, "end_line": 727, "condition": true}, {"line": 728, "end_line": 728, "condition": {"all": [true, {"not": {"any": [{"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}}]}}, {"line": 729, "end_line": 729, "condition": {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}}, {"line": 730, "end_line": 730, "condition": {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}}, {"line": 731, "end_line": 731, "condition": {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}}, {"line": 732, "end_line": 732, "condition": {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}}, {"line": 733, "end_line": 733, "condition": true}, {"line": 734, "end_line": 734, "condition": true}, {"line": 735, "end_line": 735, "condition": true}, {"line": 736, "end_line": 736, "condition": true}, {"line": 737, "end_line": 737, "condition": true}, {"line": 738, "end_line": 738, "condition": true}, {"line": 739, "end_line": 739, "condition": true}, {"line": 740, "end_line": 740, "condition": true}, {"line": 741, "end_line": 741, "condition": true}, {"line": 742, "end_line": 742, "condition": true}, {"line": 743, "end_line": 743, "condition": true}, {"line": 744, "end_line": 744, "condition": true}, {"line": 745, "end_line": 745, "condition": true}, {"line": 746, "end_line": 746, "condition": true}, {"line": 747, "end_line": 747, "condition": true}, {"line": 748, "end_line": 748, "condition": true}, {"line": 749, "end_line": 749, "condition": true}, {"line": 750, "end_line": 750, "condition": true}, {"line": 751, "end_line": 751, "condition": true}, {"line": 752, "end_line": 752, "condition": {"all": [true, {"ref": "MAIN-INVALID"}]}}, {"line": 753, "end_line": 753, "condition": {"all": [true, {"not": {"ref": "MAIN-INVALID"}}]}}, {"line": 754, "end_line": 754, "condition": {"all": [true, {"all": [{"ref": "MAIN-INVALID"}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}]}}, {"line": 755, "end_line": 755, "condition": true}, {"line": 756, "end_line": 756, "condition": true}, {"line": 757, "end_line": 757, "condition": true}, {"line": 758, "end_line": 758, "condition": true}, {"line": 759, "end_line": 759, "condition": true}, {"line": 760, "end_line": 760, "condition": true}, {"line": 761, "end_line": 761, "condition": true}, {"line": 762, "end_line": 762, "condition": true}, {"line": 763, "end_line": 763, "condition": true}, {"line": 764, "end_line": 764, "condition": true}, {"line": 765, "end_line": 765, "condition": true}, {"line": 766, "end_line": 766, "condition": true}, {"line": 767, "end_line": 767, "condition": true}, {"line": 768, "end_line": 768, "condition": true}, {"line": 769, "end_line": 769, "condition": true}, {"line": 770, "end_line": 770, "condition": true}, {"line": 771, "end_line": 771, "condition": true}, {"line": 772, "end_line": 772, "condition": true}, {"line": 773, "end_line": 773, "condition": true}, {"line": 774, "end_line": 774, "condition": true}, {"line": 775, "end_line": 775, "condition": true}, {"line": 776, "end_line": 776, "condition": true}, {"line": 777, "end_line": 777, "condition": true}, {"line": 778, "end_line": 778, "condition": true}, {"line": 779, "end_line": 779, "condition": true}, {"line": 780, "end_line": 780, "condition": {"all": [true, true]}}, {"line": 781, "end_line": 781, "condition": {"all": [true, {"gt": ["v4.inv.t3.n_incomplete", "0"]}]}}, {"line": 782, "end_line": 782, "condition": true}, {"line": 783, "end_line": 783, "condition": true}, {"line": 784, "end_line": 784, "condition": true}, {"line": 785, "end_line": 785, "condition": true}, {"line": 786, "end_line": 786, "condition": true}, {"line": 787, "end_line": 787, "condition": true}, {"line": 788, "end_line": 788, "condition": true}, {"line": 789, "end_line": 789, "condition": true}, {"line": 790, "end_line": 790, "condition": true}, {"line": 791, "end_line": 791, "condition": true}, {"line": 792, "end_line": 792, "condition": true}, {"line": 793, "end_line": 793, "condition": true}, {"line": 794, "end_line": 794, "condition": true}, {"line": 795, "end_line": 795, "condition": true}, {"line": 796, "end_line": 796, "condition": true}, {"line": 797, "end_line": 797, "condition": true}, {"line": 798, "end_line": 798, "condition": true}, {"line": 799, "end_line": 799, "condition": true}, {"line": 800, "end_line": 800, "condition": true}, {"line": 801, "end_line": 801, "condition": true}, {"line": 802, "end_line": 802, "condition": true}, {"line": 803, "end_line": 803, "condition": true}, {"line": 804, "end_line": 804, "condition": true}, {"line": 805, "end_line": 805, "condition": true}]},
+    {"id": "SECONDARY-SUPPLEMENT", "source": "results", "line": 808, "end_line": 815, "condition": {"ref": "PASS"}, "slot": "secondary", "operation": "append", "order": 1000},
+    {"id": "P1.1", "source": "results", "line": 709, "end_line": 709, "condition": {"ref": "PASS"}, "slot": "P1", "operation": "append", "order": 10.0},
+    {"id": "P1.2", "source": "results", "line": 710, "end_line": 710, "condition": {"ref": "PASS"}, "slot": "P1", "operation": "append", "order": 10.01},
+    {"id": "P1.3", "source": "results", "line": 711, "end_line": 711, "condition": {"ref": "PASS"}, "slot": "P1", "operation": "append", "order": 10.02},
+    {"id": "P2.heading", "source": "results", "line": 714, "end_line": 714, "condition": {"ref": "PASS"}, "slot": "P2.heading", "operation": "append", "order": 19},
+    {"id": "P3.heading", "source": "results", "line": 717, "end_line": 717, "condition": {"ref": "PASS"}, "slot": "P3.heading", "operation": "append", "order": 29},
+    {"id": "P3.1", "source": "results", "line": 718, "end_line": 718, "condition": {"ref": "PASS"}, "slot": "P3", "operation": "append", "order": 30.0},
+    {"id": "P3.2", "source": "results", "line": 719, "end_line": 719, "condition": {"ref": "PASS"}, "slot": "P3", "operation": "append", "order": 30.01},
+    {"id": "P3.3", "source": "results", "line": 720, "end_line": 720, "condition": {"ref": "PASS"}, "slot": "P3", "operation": "append", "order": 30.02},
+    {"id": "P4.heading", "source": "results", "line": 723, "end_line": 723, "condition": {"ref": "PASS"}, "slot": "P4.heading", "operation": "append", "order": 39},
+    {"id": "P4", "source": "results", "line": 724, "end_line": 724, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "MAIN-INVALID"}}]}, "slot": "P4", "operation": "append", "order": 40.0},
+    {"id": "P5-a.1", "source": "results", "line": 728, "end_line": 732, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}]}, "slot": "P5", "operation": "append", "order": 50.0, "fragments": [{"line": 728, "end_line": 728, "condition": {"not": {"any": [{"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}]}]}}}, {"line": 729, "end_line": 729, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 730, "end_line": 730, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 731, "end_line": 731, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 732, "end_line": 732, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}]}}]},
+    {"id": "P5-a.2", "source": "results", "line": 733, "end_line": 733, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}]}, "slot": "P5", "operation": "append", "order": 50.01},
+    {"id": "P5-b.single", "source": "results", "line": 737, "end_line": 739, "condition": {"all": [{"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"gt": ["v4.t1.n_attained", "0"]}]}, {"same": ["v4.t1.first_min", "v4.t1.first_max"]}]}, "slot": "P5", "operation": "append", "order": 51.0, "fragments": [{"line": 737, "end_line": 737, "condition": {"eq": ["v4.t1.n_attained", "1"]}}, {"line": 739, "end_line": 739, "condition": {"gt": ["v4.t1.n_attained", "1"]}}]},
+    {"id": "P5-b.range", "source": "results", "line": 741, "end_line": 741, "condition": {"all": [{"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"gt": ["v4.t1.n_attained", "0"]}]}, {"not": {"same": ["v4.t1.first_min", "v4.t1.first_max"]}}]}, "slot": "P5", "operation": "append", "order": 51.0, "transform": "range-without-sustained-if-B06"},
+    {"id": "P5-b.crossing", "source": "results", "line": 742, "end_line": 742, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}]}, "slot": "P5", "operation": "append", "order": 52.0},
+    {"id": "P5-c", "source": "results", "line": 744, "end_line": 744, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"not": {"ref": "PRECISION"}}]}, "slot": "P5-c", "operation": "append", "order": 53.0},
+    {"id": "P6.heading", "source": "results", "line": 747, "end_line": 747, "condition": {"ref": "PASS"}, "slot": "P6.heading", "operation": "append", "order": 59},
+    {"id": "P6-a", "source": "results", "line": 752, "end_line": 754, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "M"}}]}, "slot": "P7", "operation": "append", "order": 60.0, "fragments": [{"line": 752, "end_line": 752, "condition": {"all": [{"ref": "MAIN-INVALID"}, {"not": {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}}]}}, {"line": 753, "end_line": 753, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}}, {"line": 754, "end_line": 754, "condition": {"all": [{"ref": "MAIN-INVALID"}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}}]},
+    {"id": "P6.lead", "source": "results", "line": 756, "end_line": 756, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}]}, "slot": "P6", "operation": "append", "order": 60.0},
+    {"id": "P6.counts", "source": "results", "line": 758, "end_line": 758, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_eligible", "0"]}]}, "slot": "P6", "operation": "append", "order": 61.0},
+    {"id": "P6-c", "source": "results", "line": 761, "end_line": 761, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_inconclusive", "0"]}]}, "slot": "P6", "operation": "append", "order": 64.0},
+    {"id": "P6-d", "source": "results", "line": 764, "end_line": 764, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_both", "0"]}]}, "slot": "P6", "operation": "append", "order": 65.0},
+    {"id": "P6-e", "source": "results", "line": 766, "end_line": 766, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_no_b_crossing", "0"]}]}, "slot": "P6", "operation": "append", "order": 66.0},
+    {"id": "P6-f", "source": "results", "line": 768, "end_line": 768, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_eligible", "0"]}]}, "slot": "P7", "operation": "append", "order": 67.0},
+    {"id": "P7-a", "source": "results", "line": 772, "end_line": 772, "condition": {"ref": "PASS"}, "slot": "P7", "operation": "append", "order": 70.0},
+    {"id": "P7-b", "source": "results", "line": 774, "end_line": 774, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}, "slot": "P7", "operation": "append", "order": 71.0},
+    {"id": "P7.offset", "source": "results", "line": 776, "end_line": 776, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}]}, "slot": "P7", "operation": "append", "order": 72.0},
+    {"id": "P7-c.heading", "source": "results", "line": 779, "end_line": 779, "condition": {"ref": "PASS"}, "slot": "P7-c.heading", "operation": "append", "order": 73},
+    {"id": "P7-c", "source": "results", "line": 780, "end_line": 781, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "B11"}}]}, "slot": "P7-c", "operation": "append", "order": 74.0, "fragments": [{"line": 780, "end_line": 780, "condition": {"all": [true, true]}}, {"line": 781, "end_line": 781, "condition": {"all": [true, {"gt": ["v4.inv.t3.n_incomplete", "0"]}]}}]},
+    {"id": "P7-c1", "source": "results", "line": 783, "end_line": 783, "condition": {"all": [{"ref": "PASS"}, {"eq": ["v4.t3.n_pairs_compared", "0"]}]}, "slot": "P7-c", "operation": "append", "order": 75.0},
+    {"id": "P7-c2", "source": "results", "line": 785, "end_line": 785, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t3.n_pairs_compared", "0"]}, {"eq": ["v4.t3.n_obs_exceeds", "0"]}]}, "slot": "P7-c", "operation": "append", "order": 75.0},
+    {"id": "P7-d", "source": "results", "line": 789, "end_line": 789, "condition": {"all": [{"ref": "PASS"}, {"eq": ["v4.sens.use_b12", "0"]}, {"not": {"ref": "MAIN-INVALID"}}]}, "slot": "P7-d", "operation": "append", "order": 77.0},
+    {"id": "P8.heading", "source": "results", "line": 792, "end_line": 792, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "P8.1"}, {"ref": "B13"}, {"ref": "B14"}, {"ref": "B15"}]}]}, "slot": "P8.heading", "operation": "append", "order": 79},
+    {"id": "P8.1", "source": "results", "line": 793, "end_line": 793, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"not": {"ref": "B13"}}]}, "slot": "P8", "operation": "append", "order": 80.0},
+    {"id": "P8.2", "source": "results", "line": 794, "end_line": 794, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"not": {"ref": "B13"}}]}, "slot": "P8", "operation": "append", "order": 80.01},
+    {"id": "P8.3", "source": "results", "line": 795, "end_line": 795, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"not": {"ref": "B13"}}, {"eq": ["v4.shp.n_status_classes", "1"]}]}, "slot": "P8", "operation": "append", "order": 80.02},
+    {"id": "P8.4", "source": "results", "line": 796, "end_line": 796, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"not": {"ref": "B13"}}]}, "slot": "P8", "operation": "append", "order": 80.03},
+    {"id": "P9.heading", "source": "results", "line": 799, "end_line": 799, "condition": {"ref": "PASS"}, "slot": "P9.heading", "operation": "append", "order": 89},
+    {"id": "P9", "source": "results", "line": 800, "end_line": 800, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "B16"}}]}, "slot": "P9", "operation": "append", "order": 90.0},
+    {"id": "P9.diagnostics", "source": "results", "line": 801, "end_line": 801, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "B16"}}]}, "slot": "P9", "operation": "append", "order": 91.0},
+    {"id": "P10", "source": "results", "line": 804, "end_line": 804, "condition": {"ref": "PASS"}, "slot": "P10", "operation": "append", "order": 100.0},
+    {"id": "D-H-BD", "source": "discussion", "line": 56, "end_line": 61, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"ref": "M"}, {"gt": ["v4.bd.n_eligible", "0"]}]}, "slot": "DS02", "operation": "append", "order": 240},
+    {"id": "C-H-BD", "source": "discussion", "line": 63, "end_line": 70, "condition": {"ref": "D-H-BD"}, "slot": "C1", "operation": "append", "order": 248, "fragments": [{"line": 67, "end_line": 67, "condition": true}, {"line": 69, "end_line": 69, "condition": {"gt": ["v4.t1.n_attained", "0"]}}]},
+    {"id": "D-H-B", "source": "discussion", "line": 72, "end_line": 78, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"any": [{"not": {"ref": "M"}}, {"eq": ["v4.bd.n_eligible", "0"]}]}]}, "slot": "DS02", "operation": "append", "order": 255},
+    {"id": "C-H-B", "source": "discussion", "line": 80, "end_line": 91, "condition": {"ref": "D-H-B"}, "slot": "C1", "operation": "append", "order": 263, "fragments": [{"line": 84, "end_line": 84, "condition": {"not": {"any": [{"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}]}]}}}, {"line": 85, "end_line": 85, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 86, "end_line": 86, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 87, "end_line": 87, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 88, "end_line": 88, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}]}}, {"line": 90, "end_line": 90, "condition": {"gt": ["v4.t1.n_attained", "0"]}}]},
+    {"id": "D-B03", "source": "discussion", "line": 93, "end_line": 101, "condition": {"all": [{"ref": "PASS"}, {"ref": "NONATTAINMENT"}]}, "slot": "DS02", "operation": "append", "order": 270},
+    {"id": "C-B03", "source": "discussion", "line": 103, "end_line": 109, "condition": {"ref": "D-B03"}, "slot": "C1", "operation": "append", "order": 280},
+    {"id": "D-D-AFTER-B03", "source": "discussion", "line": 111, "end_line": 117, "condition": {"all": [{"ref": "PASS"}, {"ref": "NONATTAINMENT"}, {"ref": "M"}, {"gt": ["v4.bd.n_eligible", "0"]}]}, "slot": "DS02", "operation": "append", "order": 287},
+    {"id": "C-D-AFTER-B03", "source": "discussion", "line": 119, "end_line": 124, "condition": {"ref": "D-D-AFTER-B03"}, "slot": "C1", "operation": "append", "order": 295},
+    {"id": "D-B02", "source": "discussion", "line": 126, "end_line": 132, "condition": {"all": [{"ref": "PASS"}, {"ref": "MAIN-INVALID"}]}, "slot": "DS02", "operation": "append", "order": 199},
+    {"id": "C-B02", "source": "discussion", "line": 134, "end_line": 140, "condition": {"ref": "D-B02"}, "slot": "C1", "operation": "append", "order": 199},
+    {"id": "D-NO-PERMISSION", "source": "discussion", "line": 142, "end_line": 150, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "M"}}]}, "slot": "DS02", "operation": "append", "order": 317, "fragments": [{"line": 142, "end_line": 142, "condition": true}, {"line": 143, "end_line": 143, "condition": true}, {"line": 144, "end_line": 144, "condition": true}, {"line": 145, "end_line": 145, "condition": true}, {"line": 146, "end_line": 146, "condition": {"all": [{"ref": "MAIN-INVALID"}, {"not": {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}}]}}, {"line": 147, "end_line": 147, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}}, {"line": 148, "end_line": 148, "condition": {"all": [{"ref": "MAIN-INVALID"}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}}, {"line": 149, "end_line": 149, "condition": true}, {"line": 150, "end_line": 150, "condition": true}]},
+    {"id": "C-NO-PERMISSION", "source": "discussion", "line": 152, "end_line": 159, "condition": {"ref": "D-NO-PERMISSION"}, "slot": "C2", "operation": "append", "order": 325, "fragments": [{"line": 152, "end_line": 152, "condition": true}, {"line": 153, "end_line": 153, "condition": true}, {"line": 154, "end_line": 154, "condition": true}, {"line": 155, "end_line": 155, "condition": true}, {"line": 156, "end_line": 156, "condition": {"all": [{"ref": "MAIN-INVALID"}, {"not": {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}}]}}, {"line": 157, "end_line": 157, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}}, {"line": 158, "end_line": 158, "condition": {"all": [{"ref": "MAIN-INVALID"}, {"any": [{"gt": ["v4.inv.t2.n_incomplete", "0"]}, {"gt": ["v4.inv.t2.n_invalid", "0"]}]}]}}, {"line": 159, "end_line": 159, "condition": true}]},
+    {"id": "D-T2-INCOMPLETE", "source": "discussion", "line": 161, "end_line": 167, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.inv.t2.n_incomplete", "0"]}]}, "slot": "DS02", "operation": "append", "order": 332},
+    {"id": "C-T2-INCOMPLETE", "source": "discussion", "line": 169, "end_line": 174, "condition": {"ref": "D-T2-INCOMPLETE"}, "slot": "C2", "operation": "append", "order": 340},
+    {"id": "D-PERMISSION", "source": "discussion", "line": 176, "end_line": 181, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}]}, "slot": "DS02", "operation": "append", "order": 239},
+    {"id": "C-PERMISSION", "source": "discussion", "line": 183, "end_line": 188, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}]}, "slot": "C2", "operation": "append", "order": 355},
+    {"id": "D-EMPTY-PAIRS", "source": "discussion", "line": 190, "end_line": 195, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"eq": ["v4.bd.n_eligible", "0"]}]}, "slot": "DS02", "operation": "append", "order": 362},
+    {"id": "C-EMPTY-PAIRS", "source": "discussion", "line": 197, "end_line": 202, "condition": {"ref": "D-EMPTY-PAIRS"}, "slot": "C2", "operation": "append", "order": 369},
+    {"id": "D-BD-PERSISTENCE", "source": "discussion", "line": 204, "end_line": 209, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_persistence", "0"]}]}, "slot": "DS02", "operation": "append", "order": 376},
+    {"id": "C-BD-PERSISTENCE", "source": "discussion", "line": 211, "end_line": 216, "condition": {"ref": "D-BD-PERSISTENCE"}, "slot": "C2", "operation": "append", "order": 384},
+    {"id": "D-BD-INCONCLUSIVE", "source": "discussion", "line": 218, "end_line": 223, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_inconclusive", "0"]}]}, "slot": "DS02", "operation": "append", "order": 391},
+    {"id": "D-BD-BOTH", "source": "discussion", "line": 225, "end_line": 230, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_both", "0"]}]}, "slot": "DS02", "operation": "append", "order": 398},
+    {"id": "D-BD-NO-CROSSING", "source": "discussion", "line": 232, "end_line": 237, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_no_b_crossing", "0"]}, {"not": {"ref": "NONATTAINMENT"}}]}, "slot": "DS02", "operation": "append", "order": 406},
+    {"id": "D-BE-PERSISTENCE", "source": "discussion", "line": 239, "end_line": 244, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.be.n_persistence", "0"]}]}, "slot": "DS02", "operation": "append", "order": 413},
+    {"id": "D-BC-PERSISTENCE", "source": "discussion", "line": 246, "end_line": 251, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bc.n_persistence", "0"]}]}, "slot": "DS02", "operation": "append", "order": 420},
+    {"id": "D-BOUNDARIES-DIFFER", "source": "discussion", "line": 253, "end_line": 259, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_first_ne_sustained", "0"]}]}, "slot": "DS02.records", "operation": "append", "order": 427},
+    {"id": "C-BOUNDARIES-DIFFER", "source": "discussion", "line": 261, "end_line": 266, "condition": {"ref": "D-BOUNDARIES-DIFFER"}, "slot": "C2", "operation": "append", "order": 435},
+    {"id": "D-BOUNDARIES-SAME", "source": "discussion", "line": 268, "end_line": 273, "condition": {"all": [{"ref": "PASS"}, {"eq": ["v4.t1.n_first_ne_sustained", "0"]}, {"gt": ["v4.t1.n_valid", "0"]}]}, "slot": "DS02.records", "operation": "append", "order": 442},
+    {"id": "C-BOUNDARIES-SAME", "source": "discussion", "line": 275, "end_line": 280, "condition": {"ref": "D-BOUNDARIES-SAME"}, "slot": "C2", "operation": "append", "order": 449},
+    {"id": "D-BOUNDARIES-NO-VALID", "source": "discussion", "line": 282, "end_line": 287, "condition": {"all": [{"ref": "PASS"}, {"eq": ["v4.t1.n_valid", "0"]}]}, "slot": "DS02.records", "operation": "append", "order": 456},
+    {"id": "C-BOUNDARIES-NO-VALID", "source": "discussion", "line": 289, "end_line": 294, "condition": {"ref": "D-BOUNDARIES-NO-VALID"}, "slot": "C2", "operation": "append", "order": 463},
+    {"id": "D-PRECISION", "source": "discussion", "line": 303, "end_line": 309, "condition": {"all": [{"ref": "PASS"}, {"ref": "PRECISION"}]}, "slot": "DS02.records", "operation": "append", "order": 470},
+    {"id": "C-IMPLICATION", "source": "discussion", "line": 311, "end_line": 316, "condition": {"ref": "PASS"}, "slot": "C3", "operation": "append", "order": 478},
+    {"id": "D-X5", "source": "discussion", "line": 318, "end_line": 323, "condition": true, "slot": "DS02", "operation": "retain", "order": 485},
+    {"id": "C-X5", "source": "discussion", "line": 325, "end_line": 330, "condition": true, "slot": "C3", "operation": "retain", "order": 492},
+    {"id": "D-X5-POST", "source": "discussion", "line": 332, "end_line": 340, "condition": {"all": [{"ref": "PASS"}, {"ref": "POST"}, {"ref": "X5-SUPPLIED"}]}, "slot": "DS11", "operation": "append", "order": 499},
+    {"id": "D-X6-DENOMINATORS", "source": "discussion", "line": 350, "end_line": 362, "condition": {"all": [{"ref": "EX6"}, {"ref": "D1"}]}, "slot": "DS06", "operation": "append", "order": 509, "fragments": [{"line": 350, "end_line": 350, "condition": true}, {"line": 351, "end_line": 351, "condition": true}, {"line": 352, "end_line": 352, "condition": true}, {"line": 353, "end_line": 353, "condition": true}, {"line": 354, "end_line": 354, "condition": true}, {"line": 355, "end_line": 355, "condition": true}, {"line": 356, "end_line": 356, "condition": true}, {"line": 357, "end_line": 357, "condition": true}, {"line": 358, "end_line": 358, "condition": {"all": [true, true]}}, {"line": 359, "end_line": 359, "condition": {"all": [true, {"any": [{"all": [{"finite": "v4x.x6.x6a.strengths.r070.a0000.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a0000.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a0010.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a0010.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a0030.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a0030.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a0100.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a0100.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a0300.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a0300.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a1000.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a1000.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a3000.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a3000.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a6000.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a6000.truth_d1.retry_fraction", "0"]}]}, {"all": [{"finite": "v4x.x6.x6a.strengths.r070.a9000.truth_d1.retry_fraction"}, {"gt": ["v4x.x6.x6a.strengths.r070.a9000.truth_d1.retry_fraction", "0"]}]}]}]}}, {"line": 360, "end_line": 360, "condition": {"all": [true, true]}}, {"line": 361, "end_line": 361, "condition": {"all": [true, {"any": [{"all": [{"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.band.vs_d1.primary.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.band.vs_d1.primary.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.band.vs_d1.primary.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0010.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0010.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0010.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0010.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0010.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0010.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0030.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0030.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0030.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0030.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0030.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0030.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0100.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0100.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0100.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0100.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0100.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0100.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0300.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0300.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0300.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0300.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a0300.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a0300.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a1000.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a1000.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a1000.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a1000.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a1000.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a1000.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a3000.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a3000.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a3000.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a3000.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a3000.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a3000.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a6000.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a6000.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a6000.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a6000.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a6000.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a6000.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}, {"all": [{"all": [{"exists": "v4x.x6.x6a.strengths.r070.a9000.vs_d1.band_interval.nominal_reading"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a9000.vs_d1.band_interval.nominal_reading", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a9000.vs_d1.band_interval.truth_precision.minus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a9000.vs_d1.band_interval.truth_precision.minus_2se", "unavailable"]}}]}, {"all": [{"exists": "v4x.x6.x6a.strengths.r070.a9000.vs_d1.band_interval.truth_precision.plus_2se"}, {"not": {"eq": ["v4x.x6.x6a.strengths.r070.a9000.vs_d1.band_interval.truth_precision.plus_2se", "unavailable"]}}]}]}]}]}}, {"line": 362, "end_line": 362, "condition": true}]},
+    {"id": "D-X6-INTERVAL", "source": "discussion", "line": 364, "end_line": 369, "condition": {"all": [{"ref": "D-X6-DENOMINATORS"}, {"finite": "v4x.x6.x6a.band.vs_d1.primary.wilson95.i000"}, {"finite": "v4x.x6.x6a.band.vs_d1.primary.wilson95.i001"}]}, "slot": "DS06", "operation": "append", "order": 521},
+    {"id": "D-X6-FAILURE", "source": "discussion", "line": 371, "end_line": 377, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "failure"]}]}, "slot": "DS06.reading", "operation": "append", "order": 528},
+    {"id": "D-X6-SUBNOMINAL", "source": "discussion", "line": 379, "end_line": 385, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "subnominal"]}]}, "slot": "DS06.reading", "operation": "append", "order": 536},
+    {"id": "D-X6-INCONCLUSIVE", "source": "discussion", "line": 387, "end_line": 393, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "inconclusive-truth-precision"]}]}, "slot": "DS06.reading", "operation": "append", "order": 544},
+    {"id": "D-X6-NO-READING", "source": "discussion", "line": 395, "end_line": 401, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "no reading"]}]}, "slot": "DS06.reading", "operation": "append", "order": 552},
+    {"id": "D-X6-ABSENT", "source": "discussion", "line": 403, "end_line": 409, "condition": {"any": [{"not": {"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "unavailable"]}]}, "slot": "DS06.reading", "operation": "append", "order": 560},
+    {"id": "D-X6-ADEQUATE", "source": "discussion", "line": 411, "end_line": 417, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "adequate"]}]}, "slot": "DS06.reading", "operation": "append", "order": 568},
+    {"id": "D-X6-CONSERVATIVE", "source": "discussion", "line": 419, "end_line": 424, "condition": {"all": [{"ref": "D1"}, {"all": [{"eq": ["v4x.x6.x6a.band.vs_d1.primary.conservative", "true"]}, {"finite": "v4x.x6.x6a.band.vs_d1.primary.wilson95.i000"}, {"finite": "v4x.x6.x6a.band.vs_d1.primary.wilson95.i001"}]}]}, "slot": "DS06.reading", "operation": "append", "order": 576},
+    {"id": "C-X6-UNDERCOVERAGE", "source": "discussion", "line": 426, "end_line": 431, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"any": [{"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "failure"]}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "subnominal"]}]}]}, "slot": "C3", "operation": "append", "order": 583},
+    {"id": "C-X6-NOT-ESTABLISHED", "source": "discussion", "line": 433, "end_line": 438, "condition": {"any": [{"ref": "D-X6-ABSENT"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "no reading"]}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "inconclusive-truth-precision"]}]}, "slot": "C3", "operation": "append", "order": 590},
+    {"id": "C-X6-RESTRICTED", "source": "discussion", "line": 440, "end_line": 445, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "adequate"]}]}, "slot": "C3", "operation": "append", "order": 597},
+    {"id": "D-EXPLORATORY-SUPPLEMENT", "source": "discussion", "line": 447, "end_line": 456, "condition": {"ref": "E.status-and-scope"}, "slot": "DS10-join", "operation": "append", "order": 604, "fragments": [{"line": 453, "end_line": 453, "condition": {"ref": "E.twin-and-expanded-feature-boundaries"}}, {"line": 454, "end_line": 454, "condition": {"not": {"ref": "E.twin-and-expanded-feature-boundaries"}}}, {"line": 455, "end_line": 455, "condition": true}]},
+    {"id": "D-SHP-ADMISSIBLE", "source": "discussion", "line": 458, "end_line": 464, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}]}, "slot": "DS05", "operation": "append", "order": 745},
+    {"id": "D-B13-OUT", "source": "discussion", "line": 466, "end_line": 472, "condition": {"all": [{"ref": "B13"}, {"any": [{"fact_eq": ["shp.grid_position", "below"]}, {"fact_eq": ["shp.grid_position", "above"]}]}]}, "slot": "DS05", "operation": "append", "order": 753},
+    {"id": "D-B13-PART", "source": "discussion", "line": 474, "end_line": 479, "condition": {"all": [{"ref": "B13"}, {"fact_eq": ["shp.grid_position", "interval-outside"]}]}, "slot": "DS05", "operation": "append", "order": 761},
+    {"id": "D-B14", "source": "discussion", "line": 481, "end_line": 488, "condition": {"ref": "B14"}, "slot": "DS05", "operation": "append", "order": 768, "fragments": [{"line": 481, "end_line": 488, "condition": true, "reason_fact": "shp.reason"}]},
+    {"id": "D-B14-ENVELOPE", "source": "discussion", "line": 490, "end_line": 495, "condition": {"fact_eq": ["shp.state", "parameter-bound"]}, "slot": "DS05", "operation": "append", "order": 777},
+    {"id": "D-B15", "source": "discussion", "line": 497, "end_line": 503, "condition": {"ref": "B15"}, "slot": "DS05", "operation": "append", "order": 784},
+    {"id": "D-GATE-SHP", "source": "discussion", "line": 505, "end_line": 511, "condition": {"all": [{"any": [{"ref": "B1b-G2c"}, {"ref": "B1d"}]}, {"ref": "SHP-STATE"}]}, "slot": "DS05", "operation": "append", "order": 792},
+    {"id": "D-SHP-NOT-RUN", "source": "discussion", "line": 513, "end_line": 518, "condition": {"all": [{"fact_eq": ["shp.state", "not-run"]}, {"not": {"ref": "B14"}}]}, "slot": "DS05", "operation": "append", "order": 800, "fragments": [{"line": 513, "end_line": 518, "condition": true, "reason_fact": "shp.reason"}]},
+    {"id": "C-SHP-ADMISSIBLE", "source": "discussion", "line": 520, "end_line": 525, "condition": {"all": [{"ref": "PASS"}, {"ref": "SHP-STATE"}, {"not": {"ref": "B13"}}, {"not": {"ref": "B15"}}]}, "slot": "C3", "operation": "append", "order": 807},
+    {"id": "C-B13", "source": "discussion", "line": 527, "end_line": 532, "condition": {"ref": "B13"}, "slot": "C3", "operation": "append", "order": 814},
+    {"id": "C-B14", "source": "discussion", "line": 534, "end_line": 539, "condition": {"ref": "B14"}, "slot": "C3", "operation": "append", "order": 821},
+    {"id": "C-B15", "source": "discussion", "line": 541, "end_line": 546, "condition": {"ref": "B15"}, "slot": "C3", "operation": "append", "order": 828},
+    {"id": "C-GATE-SHP", "source": "discussion", "line": 548, "end_line": 553, "condition": {"all": [{"any": [{"ref": "B1b-G2c"}, {"ref": "B1d"}]}, {"ref": "SHP-STATE"}]}, "slot": "C3", "operation": "append", "order": 835},
+    {"id": "C-SHP-NOT-RUN", "source": "discussion", "line": 555, "end_line": 560, "condition": {"all": [{"fact_eq": ["shp.state", "not-run"]}, {"not": {"ref": "B14"}}]}, "slot": "C3", "operation": "append", "order": 842},
+    {"id": "D-G2C", "source": "discussion", "line": 562, "end_line": 570, "condition": {"ref": "B1b-G2c"}, "slot": "DS02", "operation": "append", "order": 849},
+    {"id": "C-G2C", "source": "discussion", "line": 572, "end_line": 580, "condition": {"ref": "D-G2C"}, "slot": "C1", "operation": "append", "order": 859},
+    {"id": "D-CLOSE", "source": "discussion", "line": 582, "end_line": 588, "condition": {"ref": "B1d"}, "slot": "DS02", "operation": "append", "order": 868},
+    {"id": "C-CLOSE", "source": "discussion", "line": 590, "end_line": 596, "condition": {"ref": "D-CLOSE"}, "slot": "C1", "operation": "append", "order": 876},
+    {"id": "C-GATE-IMPLICATION", "source": "discussion", "line": 598, "end_line": 603, "condition": {"any": [{"ref": "B1b-G2c"}, {"ref": "B1d"}]}, "slot": "C3", "operation": "append", "order": 883},
+    {"id": "E.status-and-scope", "source": "exploratory", "line": 11, "end_line": 18, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, true]}, "slot": "exploratory", "operation": "append", "order": 1212, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-design", "source": "exploratory", "line": 20, "end_line": 23, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"ref": "EX3"}]}, "slot": "exploratory", "operation": "append", "order": 1216, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-reduced-separation", "source": "exploratory", "line": 25, "end_line": 28, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.supports-objection", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1220, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-local-equivalence", "source": "exploratory", "line": 29, "end_line": 33, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.against-objection", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1226, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-inconclusive-contrast", "source": "exploratory", "line": 34, "end_line": 37, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.inconclusive", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1231, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-execution-errors", "source": "exploratory", "line": 38, "end_line": 42, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.error", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1235, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-known-fit-gaps", "source": "exploratory", "line": 43, "end_line": 47, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.gap", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1240, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-free-fit-gaps", "source": "exploratory", "line": 48, "end_line": 54, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.free-gap", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1245, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x3-paired-cell-flag", "source": "exploratory", "line": 55, "end_line": 59, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x3.count.lost_crossing", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1252, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-conditional-rejection-references", "source": "exploratory", "line": 60, "end_line": 67, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, true]}, "slot": "exploratory", "operation": "append", "order": 1257, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-compatible-normal-reference", "source": "exploratory", "line": 68, "end_line": 71, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4a.count.describes", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1264, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-higher-normal-reference", "source": "exploratory", "line": 72, "end_line": 75, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4a.count.overstates", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1268, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-lower-normal-reference", "source": "exploratory", "line": 76, "end_line": 80, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4a.count.understates", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1272, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-negative-paired-difference", "source": "exploratory", "line": 81, "end_line": 84, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4b.count.removes-power", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1277, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-local-equivalence-of-rejection-references", "source": "exploratory", "line": 85, "end_line": 88, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4b.count.no-material-change", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1281, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-inconclusive-paired-difference", "source": "exploratory", "line": 89, "end_line": 93, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4b.count.inconclusive", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1285, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-zero-strength-compatibility", "source": "exploratory", "line": 94, "end_line": 97, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4a.count.calibrated", "0"]}, {"gt": ["v4x.x4b.count.calibrated", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1290, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x4-above-nominal-zero-strength-reference", "source": "exploratory", "line": 98, "end_line": 101, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4a.count.liberal", "0"]}, {"gt": ["v4x.x4b.count.liberal", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1294, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}, "fragments": [{"line": 98, "end_line": 98, "condition": true}, {"line": 99, "end_line": 99, "condition": true}, {"line": 100, "end_line": 100, "condition": {"all": [true, {"any": [{"gt": ["v4x.x4a.count.liberal", "0"]}, {"gt": ["v4x.x4b.count.liberal", "0"]}]}]}}, {"line": 101, "end_line": 101, "condition": true}]},
+    {"id": "E.x4-below-nominal-zero-strength-reference", "source": "exploratory", "line": 102, "end_line": 107, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x4a.count.conservative", "0"]}, {"gt": ["v4x.x4b.count.conservative", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1298, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}, "fragments": [{"line": 102, "end_line": 102, "condition": true}, {"line": 103, "end_line": 103, "condition": true}, {"line": 104, "end_line": 104, "condition": {"all": [true, {"any": [{"gt": ["v4x.x4a.count.conservative", "0"]}, {"gt": ["v4x.x4b.count.conservative", "0"]}]}]}}, {"line": 105, "end_line": 105, "condition": true}, {"line": 106, "end_line": 106, "condition": true}, {"line": 107, "end_line": 107, "condition": true}]},
+    {"id": "E.x6-coverage-denominators.inventory", "source": "exploratory", "line": 108, "end_line": 109, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"ref": "EX6"}]}, "slot": "exploratory", "operation": "append", "order": 1304, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-coverage-denominators.joint", "source": "exploratory", "line": 110, "end_line": 111, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"all": [{"ref": "EX6"}, {"ref": "D1"}]}]}, "slot": "exploratory", "operation": "append", "order": 1304.1, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-coverage-denominators.accounting", "source": "exploratory", "line": 112, "end_line": 116, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"ref": "EX6"}]}, "slot": "exploratory", "operation": "append", "order": 1304.2, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-no-undercoverage-detected", "source": "exploratory", "line": 117, "end_line": 120, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x6.x6a.count.adequate", "0"]}, {"gt": ["v4x.x6.x6b.count.adequate", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1313, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-below-nominal-reference", "source": "exploratory", "line": 121, "end_line": 124, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x6.x6a.count.subnominal", "0"]}, {"gt": ["v4x.x6.x6b.count.subnominal", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1317, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-failure-criterion", "source": "exploratory", "line": 125, "end_line": 128, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x6.x6a.count.failure", "0"]}, {"gt": ["v4x.x6.x6b.count.failure", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1321, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-no-reading", "source": "exploratory", "line": 129, "end_line": 132, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x6.x6a.count.no-reading", "0"]}, {"gt": ["v4x.x6.x6b.count.no-reading", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1325, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-reference-precision", "source": "exploratory", "line": 133, "end_line": 137, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x6.x6a.count.inconclusive-truth-precision", "0"]}, {"gt": ["v4x.x6.x6b.count.inconclusive-truth-precision", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1329, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-unavailable-procedural-truth", "source": "exploratory", "line": 138, "end_line": 141, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"all": [{"ref": "EX6"}, {"any": [{"all": [{"exists": "v4x.x6.x6a.band.vs_d1"}, {"eq": ["v4x.x6.x6a.band.vs_d1", "unavailable"]}]}, {"matching_eq": ["v4x.x6.x6b.cells.*.vs_d1", "unavailable"]}]}]}]}, "slot": "exploratory", "operation": "append", "order": 1334, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-conservative-flag", "source": "exploratory", "line": 142, "end_line": 146, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x6.x6a.count.conservative", "0"]}, {"gt": ["v4x.x6.x6b.count.conservative", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1338, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-procedural-and-approximate-population-truth", "source": "exploratory", "line": 147, "end_line": 153, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, true]}, "slot": "exploratory", "operation": "append", "order": 1343, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x6-matching-diagnostics", "source": "exploratory", "line": 154, "end_line": 157, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, true]}, "slot": "exploratory", "operation": "append", "order": 1350, "requires": ["v4x.x6.x6a.recorded"], "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-scope", "source": "exploratory", "line": 159, "end_line": 162, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"ref": "EX7"}]}, "slot": "exploratory", "operation": "append", "order": 1353, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-gain-under-the-paired-criterion", "source": "exploratory", "line": 164, "end_line": 169, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.far", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1355, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-local-equivalence-near-the-boundary", "source": "exploratory", "line": 170, "end_line": 173, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.close", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1361, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-inconclusive-comparison", "source": "exploratory", "line": 174, "end_line": 176, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.inconclusive", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1365, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-invalid-comparison", "source": "exploratory", "line": 177, "end_line": 180, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.invalid", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1369, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-censored-comparison", "source": "exploratory", "line": 181, "end_line": 184, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.censored", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1373, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-unavailable-comparison", "source": "exploratory", "line": 185, "end_line": 187, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.unavailable", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1377, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.x7-incomplete-comparison", "source": "exploratory", "line": 188, "end_line": 191, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.x7.count.incomplete", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1380, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.post-release-heading", "source": "exploratory", "line": 193, "end_line": 193, "condition": {"any": [{"ref": "E.available-local-readings"}, {"ref": "E.partial-and-unavailable-readings"}, {"ref": "E.twin-and-expanded-feature-boundaries"}, {"ref": "E.misspecification-equivalent-strength-available"}, {"ref": "E.misspecification-equivalent-strength-censored"}, {"ref": "E.misspecification-equivalent-strength-above-the-grid"}, {"ref": "E.misspecification-interval-overlap"}, {"ref": "E.misspecification-interval-above"}, {"ref": "E.misspecification-interval-below"}, {"ref": "E.misspecification-comparison-unavailable"}]}, "slot": "exploratory", "operation": "append", "order": 1385, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.available-local-readings", "source": "exploratory", "line": 196, "end_line": 201, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x3.available", "0"]}, {"gt": ["v4x.comparisons.count.x4.available", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1388, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.partial-and-unavailable-readings", "source": "exploratory", "line": 202, "end_line": 207, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x4.partial", "0"]}, {"gt": ["v4x.comparisons.count.x4.unavailable", "0"]}, {"gt": ["v4x.comparisons.count.x3.unavailable", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1394, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}, "fragments": [{"line": 202, "end_line": 202, "condition": true}, {"line": 203, "end_line": 203, "condition": true}, {"line": 204, "end_line": 204, "condition": {"all": [true, {"any": [{"gt": ["v4x.comparisons.count.x4.unavailable", "0"]}, {"gt": ["v4x.comparisons.count.x3.unavailable", "0"]}]}]}}, {"line": 205, "end_line": 205, "condition": true}, {"line": 206, "end_line": 206, "condition": true}, {"line": 207, "end_line": 207, "condition": true}]},
+    {"id": "E.twin-and-expanded-feature-boundaries", "source": "exploratory", "line": 208, "end_line": 215, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x1b.available", "0"]}, {"gt": ["v4x.comparisons.count.x1b.unavailable", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1400, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}, "requires": ["v4x.comparisons.by_r.0-5.x1b.state", "v4x.comparisons.by_r.0-55.x1b.state", "v4x.comparisons.by_r.0-6.x1b.state", "v4x.comparisons.by_r.0-65.x1b.state", "v4x.comparisons.by_r.0-7.x1b.state", "v4x.comparisons.by_r.0-75.x1b.state", "v4x.comparisons.by_r.0-8.x1b.state", "v4x.comparisons.by_r.0-85.x1b.state", "v4x.comparisons.by_r.0-9.x1b.state"], "fragments": [{"line": 208, "end_line": 208, "condition": true}, {"line": 209, "end_line": 209, "condition": {"all": [{"gt": ["v4x.comparisons.count.x1b.available", "0"]}, {"gt": ["v4x.comparisons.count.x1b.unavailable", "0"]}]}}, {"line": 210, "end_line": 210, "condition": {"all": [{"gt": ["v4x.comparisons.count.x1b.available", "0"]}, {"eq": ["v4x.comparisons.count.x1b.unavailable", "0"]}]}}, {"line": 211, "end_line": 211, "condition": {"eq": ["v4x.comparisons.count.x1b.available", "0"]}}, {"line": 212, "end_line": 212, "condition": true}, {"line": 213, "end_line": 213, "condition": true}, {"line": 214, "end_line": 214, "condition": true}, {"line": 215, "end_line": 215, "condition": true}]},
+    {"id": "E.misspecification-equivalent-strength-available", "source": "exploratory", "line": 216, "end_line": 218, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.equivalent.available", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1406, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.misspecification-equivalent-strength-censored", "source": "exploratory", "line": 219, "end_line": 221, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.equivalent.censored", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1409, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.misspecification-equivalent-strength-above-the-grid", "source": "exploratory", "line": 222, "end_line": 224, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.equivalent.above-grid", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1412, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.misspecification-interval-overlap", "source": "exploratory", "line": 225, "end_line": 227, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.interval.overlap", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1415, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.misspecification-interval-above", "source": "exploratory", "line": 228, "end_line": 230, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.interval.above", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1418, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.misspecification-interval-below", "source": "exploratory", "line": 231, "end_line": 233, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.interval.below", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1421, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "E.misspecification-comparison-unavailable", "source": "exploratory", "line": 234, "end_line": 238, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, {"any": [{"gt": ["v4x.comparisons.count.x5.equivalent.unavailable", "0"]}, {"gt": ["v4x.comparisons.count.x5.interval.unavailable", "0"]}]}]}, "slot": "exploratory", "operation": "append", "order": 1424, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}, "fragments": [{"line": 234, "end_line": 234, "condition": true}, {"line": 235, "end_line": 235, "condition": true}, {"line": 236, "end_line": 236, "condition": true}, {"line": 237, "end_line": 237, "condition": {"all": [true, {"gt": ["v4.t1.n_not_attained", "0"]}]}}, {"line": 238, "end_line": 238, "condition": true}]},
+    {"id": "E.tables", "source": "exploratory", "line": 239, "end_line": 262, "condition": {"all": [{"ref": "PASS"}, {"any": [{"ref": "EX3"}, {"ref": "EX4"}, {"ref": "EX6"}, {"ref": "EX7"}, {"ref": "POST"}]}, true]}, "slot": "exploratory", "operation": "append", "order": 2000, "scope_locator": {"source": "exploratory", "line": 4, "end_line": 7}},
+    {"id": "A.design", "source": "abstract", "line": 13, "end_line": 13, "condition": true, "slot": "abstract", "operation": "abstract", "order": 12, "optional": false},
+    {"id": "A.new-seeds", "source": "abstract", "line": 19, "end_line": 19, "condition": {"ref": "PASS"}, "slot": "abstract", "operation": "abstract", "order": 950, "optional": false},
+    {"id": "A.every-stage", "source": "abstract", "line": 23, "end_line": 23, "condition": {"not": {"ref": "PASS"}}, "slot": "abstract", "operation": "abstract", "order": 20, "optional": false},
+    {"id": "A.limitation", "source": "abstract", "line": 27, "end_line": 27, "condition": true, "slot": "abstract", "operation": "abstract", "order": 10000, "optional": false},
+    {"id": "A.G", "source": "abstract", "line": 33, "end_line": 33, "condition": {"ref": "PASS"}, "slot": "abstract", "operation": "abstract", "order": 30, "optional": false},
+    {"id": "A.B02", "source": "abstract", "line": 37, "end_line": 37, "condition": {"all": [{"ref": "PASS"}, {"ref": "MAIN-INVALID"}]}, "slot": "abstract", "operation": "abstract", "order": 34, "optional": false},
+    {"id": "A.H-BD", "source": "abstract", "line": 41, "end_line": 41, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"ref": "M"}, {"gt": ["v4.bd.n_eligible", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 38, "optional": false},
+    {"id": "A.H-B", "source": "abstract", "line": 45, "end_line": 49, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "NONATTAINMENT"}}, {"any": [{"not": {"ref": "M"}}, {"eq": ["v4.bd.n_eligible", "0"]}]}]}, "slot": "abstract", "operation": "abstract", "order": 42, "optional": false, "fragments": [{"line": 45, "end_line": 45, "condition": {"not": {"any": [{"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}, {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}]}]}}}, {"line": 46, "end_line": 46, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 47, "end_line": 47, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 48, "end_line": 48, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_not_attained", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_censored", "0"]}]}]}]}}, {"line": 49, "end_line": 49, "condition": {"all": [{"not": {"ref": "MAIN-INVALID"}}, {"all": [true, {"all": [{"gt": ["v4.t1.n_censored", "0"]}, {"eq": ["v4.t1.n_small", "0"]}, {"eq": ["v4.t1.n_large", "0"]}, {"eq": ["v4.t1.n_not_attained", "0"]}]}]}]}}]},
+    {"id": "A.P6-a", "source": "abstract", "line": 53, "end_line": 53, "condition": {"all": [{"ref": "PASS"}, {"not": {"ref": "M"}}]}, "slot": "abstract", "operation": "abstract", "order": 46, "optional": false},
+    {"id": "A.P6-empty", "source": "abstract", "line": 57, "end_line": 57, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"eq": ["v4.bd.n_eligible", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 50, "optional": false},
+    {"id": "A.B03", "source": "abstract", "line": 61, "end_line": 61, "condition": {"all": [{"ref": "PASS"}, {"ref": "NONATTAINMENT"}]}, "slot": "abstract", "operation": "abstract", "order": 54, "optional": false},
+    {"id": "A.D-after-B03", "source": "abstract", "line": 65, "end_line": 65, "condition": {"all": [{"ref": "PASS"}, {"ref": "NONATTAINMENT"}, {"ref": "M"}, {"gt": ["v4.bd.n_eligible", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 58, "optional": false},
+    {"id": "A.B10", "source": "abstract", "line": 69, "end_line": 69, "condition": {"all": [{"ref": "PASS"}, {"ref": "M"}, {"gt": ["v4.bd.n_persistence", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 62, "optional": false},
+    {"id": "A.B06", "source": "abstract", "line": 73, "end_line": 73, "condition": {"all": [{"ref": "B06"}, {"gt": ["v4.t1.n_first_ne_sustained", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 66, "optional": false},
+    {"id": "A.X6", "source": "abstract", "line": 79, "end_line": 79, "condition": {"all": [{"exists": "v4x.x6.x6a.band.vs_d1.primary.reading"}, {"any": [{"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "failure"]}, {"eq": ["v4x.x6.x6a.band.vs_d1.primary.reading", "subnominal"]}]}]}, "slot": "abstract", "operation": "abstract", "order": 800, "optional": false},
+    {"id": "A.B09.1", "source": "abstract", "line": 91, "end_line": 91, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_interval_wide_finite", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 84, "optional": true},
+    {"id": "A.B09.2", "source": "abstract", "line": 93, "end_line": 93, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_interval_beyond_grid", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 86, "optional": true},
+    {"id": "A.B09.3", "source": "abstract", "line": 95, "end_line": 95, "condition": {"all": [{"ref": "PASS"}, {"gt": ["v4.t1.n_interval_gap", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 88, "optional": true},
+    {"id": "A.B04", "source": "abstract", "line": 99, "end_line": 99, "condition": {"all": [{"ref": "B04"}, {"gt": ["v4.t1.n_first_low", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 92, "optional": true},
+    {"id": "A.B05", "source": "abstract", "line": 104, "end_line": 104, "condition": {"all": [{"ref": "B05"}, {"gt": ["v4.t1.n_dip", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 96, "optional": true},
+    {"id": "A.B08", "source": "abstract", "line": 108, "end_line": 108, "condition": {"all": [{"ref": "B08"}, {"gt": ["v4.t1.n_first_gap", "0"]}, {"gt": ["v4.t1.n_sustained_gap", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 100, "optional": true},
+    {"id": "A.B11", "source": "abstract", "line": 113, "end_line": 113, "condition": {"all": [{"ref": "B11"}, {"gt": ["v4.t3.n_channel_dependent", "0"]}]}, "slot": "abstract", "operation": "abstract", "order": 104, "optional": true},
+    {"id": "A.B14", "source": "abstract", "line": 117, "end_line": 117, "condition": {"all": [{"ref": "PASS"}, {"ref": "B14"}]}, "slot": "abstract", "operation": "abstract", "order": 108, "optional": true},
+    {"id": "A.B1b-G0", "source": "abstract", "line": 127, "end_line": 127, "condition": {"ref": "B1b-G0"}, "slot": "abstract", "operation": "abstract", "order": 118, "optional": false},
+    {"id": "A.B1b-G1b", "source": "abstract", "line": 131, "end_line": 131, "condition": {"ref": "B1b-G1b"}, "slot": "abstract", "operation": "abstract", "order": 122, "optional": false},
+    {"id": "A.B1b-G1c", "source": "abstract", "line": 135, "end_line": 135, "condition": {"ref": "B1b-G1c"}, "slot": "abstract", "operation": "abstract", "order": 126, "optional": false},
+    {"id": "A.B1c", "source": "abstract", "line": 139, "end_line": 139, "condition": {"ref": "B1c"}, "slot": "abstract", "operation": "abstract", "order": 130, "optional": false},
+    {"id": "A.B1b-G2", "source": "abstract", "line": 143, "end_line": 143, "condition": {"ref": "B1b-G2"}, "slot": "abstract", "operation": "abstract", "order": 134, "optional": false},
+    {"id": "A.B1b-G2c", "source": "abstract", "line": 147, "end_line": 147, "condition": {"ref": "B1b-G2c"}, "slot": "abstract", "operation": "abstract", "order": 138, "optional": false},
+    {"id": "A.B1d", "source": "abstract", "line": 151, "end_line": 151, "condition": {"ref": "B1d"}, "slot": "abstract", "operation": "abstract", "order": 142, "optional": false},
+    {"id": "A.X", "source": "abstract", "line": 155, "end_line": 155, "condition": {"not": {"ref": "PASS"}}, "slot": "abstract", "operation": "abstract", "order": 900, "optional": false},
+    {"id": "X6-READING-LABEL", "source": "discussion", "line": 50, "end_line": 52, "condition": {"labels": {"id": "v4x.x6.x6a.band.vs_d1.primary.reading", "allowed": ["failure", "subnominal", "inconclusive-truth-precision", "no reading", "adequate", "unavailable"]}}, "slot": "", "operation": "group", "order": 263},
+    {"id": "C-EVALUATION-PASS", "source": "discussion", "line": 296, "end_line": 301, "condition": {"ref": "PASS"}, "slot": "CN01-join", "operation": "append", "order": 1000},
+    {"id": "D-X5-POST-UNAVAILABLE", "source": "discussion", "line": 342, "end_line": 348, "condition": {"all": [{"ref": "PASS"}, {"ref": "POST"}, {"ref": "X5-ABSENT"}]}, "slot": "DS11", "operation": "append", "order": 500},
+    {"id": "C-EVALUATION-REQUIRED", "source": "discussion", "line": 579, "end_line": 579, "condition": {"all": [{"not": {"ref": "PASS"}}, {"not": {"ref": "C-G2C"}}, {"not": {"ref": "C-CLOSE"}}]}, "slot": "CN01-join", "operation": "append", "order": 1000, "scope_locator": {"source": "discussion", "line": 27, "end_line": 28, "meaning": "Non-PASS uses the every-stage requirement; other gate clauses supply it already."}}
+  ]
+}

@@ -1,0 +1,30 @@
+% Declarations of the journal version. The SHP acknowledgement keeps the
+% wording FORS requires; the Funding line separates this study's funding from
+% the funding of the SHP.
+\section*{Acknowledgements}
+We thank Inteli for access to the laboratory computers used for the exploratory analyses. This study has been realized using the data collected by the Swiss Household Panel (SHP), which is based at the Swiss Centre of Expertise in the Social Sciences FORS. The project is financed by the Swiss National Science Foundation.
+
+\section*{Statements and Declarations}
+
+% Version DOI reserved on Zenodo; it resolves once the record is published.
+\noindent\textbf{Data and code availability.}
+Every panel in the simulation experiment is simulated; the separate empirical reliability anchor uses SHP microdata, as described below.
+Code, the frozen protocol, criteria and freeze records, the released simulation outputs (boundary curves, result catalog and result values), the manifest of the tables and figures rendered by the reporting code, and the prespecified rule-assembled version of this article are archived at \url{https://doi.org/10.5281/zenodo.23418473}; in the archive, code and data are under the MIT License and the manuscript texts and figures under CC BY 4.0.
+The archive distinguishes the frozen confirmatory code (Git commit \texttt{37513841}) from later reporting, empirical-anchor and journal-export code. It includes sanitized aggregates of the exploratory mean-field twin, variance and stress-test analyses; other exploratory results are in the result catalog. \esmresource, Section~\ref{esm-sec:rule-record}, maps the public evidence and its omissions, including confirmatory score standard errors and mean lag correlations, which were not archived.
+Archived scripts regenerate every result table and figure of the article except Table~\ref{tab:exploratory}, whose numbers are taken by hand from the archived values. Some supplementary exploratory tables cannot be regenerated from the archive because their export requires unarchived aggregates; their values remain in the catalog. The mean-field twin and variance tables are transcribed from the sanitized records. The exact scope and commands are documented in \esmresource, Section~\ref{esm-sec:verification-limits}.
+Independent reproduction of the complete release has not been demonstrated. The frozen runners require the recorded environment, which the original machine no longer satisfies after a subsequent operating-system update; recorded Linux checks also failed their criteria. \esmresource, Section~\ref{esm-sec:verification}, distinguishes component agreement, regeneration from aggregates and simulation reruns outside that environment, for which bitwise agreement is not promised.
+The SHP reliability anchor was computed from SHP microdata (\emph{Living in Switzerland}, version 12.0 \cite{shpgroup2026data}) under the SHP data-use contract, which does not allow redistribution, so only aggregate estimates are archived; the microdata never entered the context of any AI agent (\esmresource, Section~\ref{esm-sec:ai}). Researchers can obtain the SHP data from FORS through SWISSUbase (\url{https://forscenter.ch/projects/swiss-household-panel/data/}).
+
+\noindent\textbf{Other declarations.}
+
+\noindent\emph{Funding.} The first author received an institutional undergraduate research scholarship from Inteli -- Instituto de Tecnologia e Liderança. The SHP is financed by the Swiss National Science Foundation.
+
+\noindent\emph{Competing interests.} The authors have no relevant financial or non-financial interests to disclose.
+
+% Factual statement confirmed by Davi on 29 October 2026; it asserts neither
+% approval nor exemption.
+\noindent\emph{Ethics approval and consent.} This study involved no contact with human participants. The empirical reliability anchor is a secondary analysis of anonymized SHP microdata obtained from FORS under the SHP data-use contract; the authors had no access to identifying information. The microdata were processed in a restricted environment on the first author's computer, and only aggregate results left it and were reported. No participants were recruited and no individual data are published, so consent to participate and consent for publication do not apply. No ethics committee review was sought for this secondary analysis.
+
+% Submission-time attestation: true only after both authors have approved the
+% final PDF.
+\noindent\emph{Author contributions.} D.A.S.: conceptualization, methodology, software, formal analysis, investigation, visualization, project administration and writing (original draft, review and editing); the frozen code was implemented with AI coding agents under the first author's direction, and the text was drafted and revised by AI agents under the first author's delegation and both authors' review (Section~\ref{sec:ai-use}). H.M.P.: supervision, resources and writing (review and editing). Both authors read and approved the final manuscript.

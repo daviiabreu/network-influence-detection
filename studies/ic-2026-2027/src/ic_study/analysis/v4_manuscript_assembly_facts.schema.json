@@ -1,0 +1,324 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ic-study.v4-manuscript-assembly-facts.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "synthetic",
+    "facts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ic-study.v4-manuscript-assembly-facts.v1"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "shp.state": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "not-run",
+                "failed",
+                "pre-run-divergence",
+                "parameter-bound",
+                "admissible"
+              ]
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "shp.reason": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[^\\r\\n]*\\S[^\\r\\n]*$"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "shp.grid_position": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "below",
+                "above",
+                "interval-outside",
+                "inside"
+              ]
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "gate.at_close": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "tier2.boundaries_differ": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "main.boundary_nonmonotone": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "gate.G0.failed_criteria": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "anchor",
+                  "budget",
+                  "implementation"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "gate.G1c.failed_criteria": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "anchor",
+                  "pointwise",
+                  "mean"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "gate.G2.failed_criteria": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "allowance",
+                  "above",
+                  "below",
+                  "fd",
+                  "insufficient"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "gate.G2c.failed_comparisons": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "a010",
+                  "a003"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        },
+        "shp.divergence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "source": {
+              "$ref": "#/$defs/source"
+            },
+            "value": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "recorded_utc",
+                "execution_started_utc"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "item",
+                    "scale",
+                    "mode"
+                  ]
+                },
+                "recorded_utc": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "execution_started_utc": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "description": "Both timestamps must be UTC and recorded_utc must precede execution_started_utc; enforced by the Python validator."
+            }
+          }
+        },
+        "post.x5_supplied": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "source"
+          ],
+          "properties": {
+            "value": {
+              "type": "boolean"
+            },
+            "source": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record",
+        "locator",
+        "sha256"
+      ],
+      "properties": {
+        "record": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

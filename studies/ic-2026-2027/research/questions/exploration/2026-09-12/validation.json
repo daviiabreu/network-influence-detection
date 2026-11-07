@@ -1,0 +1,169 @@
+{
+  "format": "exploratory-proposal-packet-validation-1",
+  "checked_at_utc": "2026-09-12T23:20:33.159349+00:00",
+  "base_commit": "623704c4a7aa3db4fcf4e44f445bbaf6f8e4b34a",
+  "scope": "Exploratory research documentation and read-only projections; not a canonical scientific run.",
+  "delivery": {
+    "candidate_proposals": 2,
+    "provisional_venues": 5,
+    "central_reading_targets": 25,
+    "exact_identifier_matched_targets": 23,
+    "accepted_question": false,
+    "accepted_venue": false,
+    "systematic_review_synthesis_complete": false
+  },
+  "checks": [
+    {
+      "name": "repository_structure",
+      "result": "passed",
+      "command": "just structure",
+      "checks_passed": 7,
+      "evidence": "Same-turn command output; no platform or study code changed."
+    },
+    {
+      "name": "affected_relative_links",
+      "result": "passed",
+      "markdown_files": 10,
+      "links": 34,
+      "note": "Existence checks; external URL reading/access states are recorded in source memos."
+    },
+    {
+      "name": "markdown_footnote_definitions",
+      "result": "passed"
+    },
+    {
+      "name": "json_parse",
+      "result": "passed",
+      "data_files": 3,
+      "note": "This validation file is additionally parsed after writing."
+    },
+    {
+      "name": "whitespace_and_conflict_markers",
+      "result": "passed",
+      "scope": "All packet files and changed question index, including untracked files."
+    },
+    {
+      "name": "credential_pattern_scan",
+      "result": "passed",
+      "note": "Focused token-pattern scan and metadata-only JSON inspection, not a general security audit."
+    },
+    {
+      "name": "git_diff_check",
+      "result": "passed"
+    },
+    {
+      "name": "crosswalk_counts",
+      "result": "passed",
+      "families": {
+        "empirical": 8,
+        "mechanism": 8,
+        "llm": 9
+      }
+    },
+    {
+      "name": "independent_review_input_integrity",
+      "result": "passed",
+      "hashes": {
+        "review-input.md": "a7d37c2ae60b93f8d57d7eda391e35ee0b638d6b517c2ed448443d194315d939",
+        "independent-review.md": "832d4d79b2c8bd701164abd95a93f3687a0e14842930d8ef243e750382c51c36",
+        "review-response.md": "e8fc9b76dd0790ec41c012d4c62c91a596147035015793c3e66a43b927dc6b58"
+      }
+    },
+    {
+      "name": "reviewer_correction_followup",
+      "result": "A1 and A2 resolved at pre-pilot specification level",
+      "evidence": "review-followup.md"
+    },
+    {
+      "name": "correction_propagation",
+      "result": "checked by coordinator in README, empirical and mechanism memos; isolated reviewer checked only review-response.md"
+    },
+    {
+      "name": "deterministic_math",
+      "result": "passed",
+      "source": "independent-review.md Python block",
+      "python_version": "3.9.6",
+      "scope": "Exact four-node example, score-risk example and W1-energy non-separation example; no published model execution."
+    },
+    {
+      "name": "canonical_question_unchanged",
+      "result": "passed",
+      "status": "none selected"
+    }
+  ],
+  "not_executed": [
+    "Broad model simulations",
+    "Published source-code experiments",
+    "ESS empirical validation",
+    "LLM inference",
+    "Full platform/study test matrices for this documentation-only change"
+  ],
+  "files": [
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/README.md",
+      "size_bytes": 22602,
+      "sha256": "2f4e22b4931bf4f214cd16d3d204db2d87e10806cabe1c04f569a7fa49c2db3d"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/corpus-crosswalk.json",
+      "size_bytes": 25329,
+      "sha256": "fb6c06f30aa1a857a60b8dbe87b68d3db106ab82218e96884e19a8ef83dc5138"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/corpus-navigation.json",
+      "size_bytes": 26500,
+      "sha256": "21f961933cf8f68882561ecc70f07221d42fbe710fdab46d683fed6db6ce27a1"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/empirical-evidence.md",
+      "size_bytes": 25453,
+      "sha256": "f3c117edc0a104314e27c8a99bcf2ef4a34f78cf46a3d0021e2fecf21cf01945"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/independent-review.md",
+      "size_bytes": 13638,
+      "sha256": "832d4d79b2c8bd701164abd95a93f3687a0e14842930d8ef243e750382c51c36"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/llm-evidence.md",
+      "size_bytes": 11085,
+      "sha256": "d22ebb95755137765e6ed6f37462d3c92f7734dade3774f7aa4d97459a3845d0"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/mechanism-evidence.md",
+      "size_bytes": 23992,
+      "sha256": "ecec53f250acaf9642631b9ff53dd4348b35d28384976ad144ce81eb63a4ca25"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/review-followup.md",
+      "size_bytes": 3299,
+      "sha256": "3d8ff3628f062859b24a97748cdadb98bf4879c560ec5c89382fc2ff5618054c"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/review-input.md",
+      "size_bytes": 5260,
+      "sha256": "a7d37c2ae60b93f8d57d7eda391e35ee0b638d6b517c2ed448443d194315d939"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/review-response.md",
+      "size_bytes": 3342,
+      "sha256": "e8fc9b76dd0790ec41c012d4c62c91a596147035015793c3e66a43b927dc6b58"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/stopping-counterexample.json",
+      "size_bytes": 4249,
+      "sha256": "aab8cce5e1fd0f95d3a8b8cbee0be08934f95b43d7fe1241f67e46b5f5297ca9"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-12/venue-evidence.md",
+      "size_bytes": 23888,
+      "sha256": "e2921d7fd9d2a5ac0b4c709ae03912abe56abb327b330a5ebe68b758f8f067bf"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/questions/research-questions.md",
+      "size_bytes": 961,
+      "sha256": "5122abfebeee7e50bba052abe91596117b75b3b792bac8e69c8cbc1f5fd4bb86"
+    }
+  ],
+  "manifest_self_excluded": true
+}

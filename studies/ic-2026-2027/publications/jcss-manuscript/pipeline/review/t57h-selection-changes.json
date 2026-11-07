@@ -1,0 +1,21 @@
+{
+ "schema": "ic-study.t57h-selection-changes.v1",
+ "rules_sha256_after_repin": "fae25cc6597e1c59bba17b755c30acbb51c41d3916e94ce760d089e9c28bd0f2",
+ "rules_sha256_after": "fae25cc6597e1c59bba17b755c30acbb51c41d3916e94ce760d089e9c28bd0f2",
+ "changes": [],
+ "operators": [
+  {
+   "operator": "same",
+   "meaning": "true when every operand is a finite Decimal and all are numerically equal (\"0.03\" equals \"0.030\"); a missing operand refuses with \"Missing catalog ID\" and a non-numeric or non-finite operand refuses with \"Non-numeric catalog ID\"",
+   "governs": [
+    "P5-b.single",
+    "P5-b.range"
+   ],
+   "since": "T57g (6ec6d9fa); T57f compared the strings",
+   "authority": "T57h coordinator decision (decision log item 193) under the Owner's delegation, 03/10/2026, before the release of any tier result"
+  }
+ ],
+ "composition_code": [
+  "the explicit joins (DS10-join, C1, CN01-join) no longer rewrite the text before the join point; they refuse with a ValueError naming the join when that text is empty, ends in a comment-only line, ends in a % comment that the joined text would follow on the same line or that is glued to the prose, or has a \\par token on its last prose line; otherwise they join exactly as before T57g, and the composed Discussion and Conclusion of the twelve synthetic cases are byte-identical to those of 81c54614"
+ ]
+}

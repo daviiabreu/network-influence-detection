@@ -1,0 +1,106 @@
+{
+  "format": "fragmentation-pilot-delivery-validation-v1",
+  "checked_at_utc": "2026-09-13T00:06:26.218099+00:00",
+  "scientific_code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+  "status": "exploratory_delivery_checked",
+  "scientific_acceptance": false,
+  "checks": {
+    "repository_quality": {
+      "command": "UV=/Users/davi/.local/bin/uv just quality",
+      "exit_code": 0,
+      "scope": "Both projects: structure, lint, types, tests, builds and wheel installation smoke. Final study fixes also passed targeted checks; no scientific code changed after run revision."
+    },
+    "study_tests": {
+      "passed": 23
+    },
+    "final_document_structure": {
+      "command": "UV=/Users/davi/.local/bin/uv just structure",
+      "checks_passed": 7
+    },
+    "relative_links": {
+      "passed": 16
+    },
+    "json_whitespace_and_credential_pattern_checks": "passed",
+    "source_and_raw_artifact_hashes": "passed for four complete runs and all header source files",
+    "prior_proposal_packet_integrity": "all thirteen indexed file hashes preserved",
+    "independent_implementation_review": "two findings resolved before campaigns; hashes matched",
+    "independent_results_review": "numeric claims and bounded conclusion checked; two central cases regenerated; no open actionable finding",
+    "reproduction_recipe": "Python block executed, summary and case35 reproduced",
+    "scope_boundary": "Research question remains none selected; no venue acceptance or RSL synthesis completion claimed"
+  },
+  "reviewed_input_sha256": {
+    "analysis-input.json": "7422ee1e161825ecc768ba840559ff64e5626aeda3396d24683af2e952af4a01",
+    "run-manifest.json": "14161a72a02036264e0e99eb75782c94a5a1765bd8c56d6e110c7c8c2f7b30e5",
+    "recommendation-input.md": "54929a1496d7f05a5a4cf957c35aaea072f6506022035c1f1514aeed40544dd8",
+    "results-review.md": "546ae4524931a20fa0875d42e5a39fb2363b17aa8613df602268cbca7b1f7423",
+    "implementation-review.md": "77e9c225d3f29558f99b0b79d5d921510f12968758a4b2d8f900a319139c57d2"
+  },
+  "files": [
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/README.md",
+      "sha256": "fa3c250c3125de85ab22556e0373164f5b21da517b250c935123af36cae1ce64",
+      "size_bytes": 8099
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/analysis-input.json",
+      "sha256": "7422ee1e161825ecc768ba840559ff64e5626aeda3396d24683af2e952af4a01",
+      "size_bytes": 27861
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/authorization.json",
+      "sha256": "dfc843acdbc2472478951b737120526453dd1359692b6c80ea7ed1c552759c70",
+      "size_bytes": 1581
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/budget-decision.json",
+      "sha256": "c6f768bd259422d3498272352641ac657e41d50f1f1e21bc6781c9afa7b6afb6",
+      "size_bytes": 579
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/implementation-review.md",
+      "sha256": "77e9c225d3f29558f99b0b79d5d921510f12968758a4b2d8f900a319139c57d2",
+      "size_bytes": 9925
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/protocol.md",
+      "sha256": "5811b352c68c9ebb57d6072c1a1100f4d14f11831a861b603ae5aaf47b541278",
+      "size_bytes": 5957
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/recommendation-input.md",
+      "sha256": "54929a1496d7f05a5a4cf957c35aaea072f6506022035c1f1514aeed40544dd8",
+      "size_bytes": 914
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/reproduce.md",
+      "sha256": "af2cbe0488e6d3f3fff3ed0697e0ccdf03b9f17d328f988e1af44a4573c89cab",
+      "size_bytes": 3213
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/results-review.md",
+      "sha256": "546ae4524931a20fa0875d42e5a39fb2363b17aa8613df602268cbca7b1f7423",
+      "size_bytes": 10473
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/run-manifest.json",
+      "sha256": "14161a72a02036264e0e99eb75782c94a5a1765bd8c56d6e110c7c8c2f7b30e5",
+      "size_bytes": 3891
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/source-check.md",
+      "sha256": "85e4761160680d76b03a4570a4922cf2ab077252cd6c3c5a41295ee2d3c98c40",
+      "size_bytes": 12045
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/spec.json",
+      "sha256": "4fc30997b27ee759e69e39e4a922a8c79f2342367cb29a664639bafcb37efe8c",
+      "size_bytes": 4188
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/README.md",
+      "sha256": "df6dfa7278830c0f44ad0b929e1869f80a4516582a60446b7eb57e0cf7bf3d96",
+      "size_bytes": 523
+    }
+  ],
+  "validation_file_self_excluded": true
+}

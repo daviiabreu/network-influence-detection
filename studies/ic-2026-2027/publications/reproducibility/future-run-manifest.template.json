@@ -1,0 +1,75 @@
+{
+  "format": "ic-future-run-manifest-template-v1",
+  "status": "template_not_executed",
+  "research_question_id": null,
+  "protocol_path": null,
+  "protocol_sha256": null,
+  "protocol_approval_record": null,
+  "registration_path": null,
+  "code_revision": null,
+  "source_sha256": {},
+  "lock_sha256": null,
+  "environment": {
+    "python": null,
+    "platform": null,
+    "machine": null,
+    "uv_version": null,
+    "rng_algorithm": null
+  },
+  "inputs": [
+    {
+      "role": null,
+      "sha256": null,
+      "bytes": null,
+      "access_class": null,
+      "licence": null,
+      "public_location_or_restricted_locator": null
+    }
+  ],
+  "design": {
+    "spec_path": null,
+    "spec_sha256": null,
+    "phase": null,
+    "analysis_unit": null,
+    "parameter_grid": null,
+    "replicate_count": null,
+    "stopping_rule": null,
+    "missing_or_censored_rule": null
+  },
+  "seed_streams": [
+    {
+      "role": null,
+      "derivation": null,
+      "base_seed": null
+    }
+  ],
+  "runs": [
+    {
+      "run_id": null,
+      "phase": null,
+      "started_at_utc": null,
+      "completed_at_utc": null,
+      "status": null,
+      "parameters": {},
+      "seed_ids": [],
+      "outputs": [
+        {
+          "role": null,
+          "sha256": null,
+          "bytes": null,
+          "content_addressed_location": null
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "validator_name_and_version": null,
+    "receipt_path": null,
+    "receipt_sha256": null,
+    "scientific_acceptance_record": null
+  },
+  "lineage": {
+    "supersedes_manifest_sha256": null,
+    "amendment_record": null
+  }
+}

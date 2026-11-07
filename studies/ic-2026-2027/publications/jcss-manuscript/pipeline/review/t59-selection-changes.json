@@ -1,0 +1,60 @@
+{
+  "schema": "ic-study.t59-selection-changes.v1",
+  "authority": "batch-t59-spec.md, items 1 and 4b",
+  "base_revision": "d60370f83b365a04f6a0298660b0a914099c0df5",
+  "rules_sha256_before": "b4e040e7134eac51d731e47713f09f31f70b719f8706a16c83a0f17ba6c0a93d",
+  "rules_sha256_after": "64ffae891b756b57f1743a760cec66f991340695d30bef76b3d91b13b3f065a1",
+  "changes": [],
+  "all_selection_conditions_operations_bindings_and_locators_unchanged": true,
+  "accepted_visible_ids": [
+    "B00",
+    "D-X5-POST",
+    "D-X6-DENOMINATORS",
+    "P6-a"
+  ],
+  "visible_changes": [
+    {
+      "id": "B00",
+      "source": "results",
+      "lines": [
+        638,
+        805
+      ],
+      "before_sha256": "bc9be6e1851b6d5ec2aa51b8f3b2c4b099887732a1c4a841e39baccc33b7e595",
+      "after_sha256": "e6684e8d16057b7cbba6f4572eddc97ea55944d099bb0559e9af3e3b6c1fa998"
+    },
+    {
+      "id": "P6-a",
+      "source": "results",
+      "lines": [
+        752,
+        754
+      ],
+      "before_sha256": "4ab6076c2662be3039ed14f52cc538f14155c9a113e3b12c24f4ebd38a29cbae",
+      "after_sha256": "505c8c0c614c8eca6c6f0fd42b0345d1b814a1d35d1bd97ca0a7ddcb4526606a"
+    },
+    {
+      "id": "D-X5-POST",
+      "source": "discussion",
+      "lines": [
+        332,
+        340
+      ],
+      "before_sha256": "71eaf22d97a69c63abdd7d569e46c365fa6ecb06e563feb40ebbf98013d86df9",
+      "after_sha256": "a3de8bce5ea315a34d4d962da5210d0a526e7fa9c3e6f443d824e5d64774151d"
+    },
+    {
+      "id": "D-X6-DENOMINATORS",
+      "source": "discussion",
+      "lines": [
+        350,
+        362
+      ],
+      "before_sha256": "286c8b47ffb74a9c4153b619fc6a0cf601f3b4cdfde92ee849a6c7e38a9a3cb7",
+      "after_sha256": "0aa6468d17c772f6635f2e124ea81d4edc042a50f413fd56f43810acdd5d119a"
+    }
+  ],
+  "reason": "Clarify the main-curve-invalid Results permission sentence and identify supplementary tables in main-text Discussion citations. B00 overlaps P6-a. No reading, value, threshold or selection rule changed.",
+  "abstract_shell_unchanged": true,
+  "exploratory_shell_unchanged": true
+}

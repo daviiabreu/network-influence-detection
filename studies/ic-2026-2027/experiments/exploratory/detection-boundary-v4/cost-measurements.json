@@ -1,0 +1,238 @@
+{
+  "kind": "isolated-cost-probes-not-G0",
+  "workers": 8,
+  "blas_threads": 1,
+  "size": 10626,
+  "waves": 11,
+  "seed_repetition": 9001,
+  "classifiers_trained": 0,
+  "host": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.13"
+  },
+  "panels": [
+    {
+      "operation": "anchor-social",
+      "cell": {
+        "share": 0,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.0235560000000001,
+      "worker_wall_seconds": 1.3262601649621502,
+      "wall_seconds": 0.33459049998782575
+    },
+    {
+      "operation": "main-social",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.279984,
+      "worker_wall_seconds": 1.4233120809076354,
+      "wall_seconds": 0.18596033402718604
+    },
+    {
+      "operation": "main-null-B",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.386087,
+      "worker_wall_seconds": 1.6195567907998338,
+      "wall_seconds": 0.21898454101756215
+    },
+    {
+      "operation": "main-null-C",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "C",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.039367,
+      "worker_wall_seconds": 1.177027585101314,
+      "wall_seconds": 0.15475262491963804
+    },
+    {
+      "operation": "main-null-D",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "D",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 0.9815370000000001,
+      "worker_wall_seconds": 1.2610278762876987,
+      "wall_seconds": 0.1770246250089258
+    },
+    {
+      "operation": "main-null-E",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "E",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.3957100000000002,
+      "worker_wall_seconds": 1.6259892898378894,
+      "wall_seconds": 0.2160796249518171
+    },
+    {
+      "operation": "c050",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0.5,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.316049,
+      "worker_wall_seconds": 1.5782302909065038,
+      "wall_seconds": 0.2085564580047503
+    },
+    {
+      "operation": "delta020",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0.2,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.2730929999999998,
+      "worker_wall_seconds": 1.504153082962148,
+      "wall_seconds": 0.19658583297859877
+    },
+    {
+      "operation": "omega100",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 1,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.1846029999999999,
+      "worker_wall_seconds": 1.3986853729002178,
+      "wall_seconds": 0.19334491610061377
+    },
+    {
+      "operation": "steps24-social",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 24,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 16.890843,
+      "worker_wall_seconds": 20.551666249870323,
+      "wall_seconds": 2.6104924998944625
+    },
+    {
+      "operation": "steps24-null",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 24,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 11.340708,
+      "worker_wall_seconds": 13.358564082765952,
+      "wall_seconds": 1.7354992498876527
+    }
+  ],
+  "solver": {
+    "panels": 33792,
+    "cpu_seconds": 711.9161970000002,
+    "worker_wall_seconds": 865.5831445206422,
+    "wall_seconds": 111.18214662501123,
+    "evaluations": 32,
+    "status": "interior",
+    "matching_pairs": 1024,
+    "a": 0.03,
+    "r": 0.7,
+    "independent_validation_pass": false,
+    "validation_wall_seconds": 26.880127707961947
+  }
+}

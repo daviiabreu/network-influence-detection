@@ -1,0 +1,59 @@
+% Journal version of the JCSS article; the rule-assembled attempt
+% assembly-xdj406x0 stays the prespecified record (see README.md).
+% The Springer Nature sn-jnl class and bibliography style are not
+% redistributed here; build.py copies them from the local template folder.
+% JCSS recommends the iicol option.
+\documentclass[pdflatex,sn-mathphys-num,iicol]{sn-jnl}
+\usepackage{amsmath,amssymb,xcolor}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{url}
+\usepackage{xr-hyper}
+\maxdeadcycles=1000
+\newcommand{\bjtitle}[1]{\textit{#1}}
+\newcommand{\bbtitle}[1]{\textit{#1}}
+\newcommand{\burl}[1]{\url{#1}}
+% Every result number is bound to values/result-values-final.json or
+% values/journal-values.json; check.py verifies each binding.
+\newcommand{\resultnum}[2]{#2}
+\newcommand{\resultplural}[3]{#3}
+\newcommand{\esmresource}{Online Resource~1}
+\newcommand{\allunitsresource}{Online Resource~2}
+\DeclareUrlCommand\code{\urlstyle{tt}\def\UrlBreaks{\do\_\do\.\do\:\do\/\do\-\do\|\do\,}}
+% Import the other document's labels only after its caption macros exist.
+\externaldocument[esm-]{esm}
+
+\raggedbottom
+\begin{document}
+
+\input{sections/front-matter}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+\input{sections/introduction}
+
+\section{Theoretical background and related work}\label{sec:background}
+\input{sections/background}
+
+\section{Materials and methods}\label{sec:methods}
+\input{sections/methods}
+\input{sections/ai-use}
+
+\section{Results}\label{sec:results}
+\input{sections/results}
+
+\section{Discussion}\label{sec:discussion}
+\input{sections/discussion}
+
+\section{Conclusion}\label{sec:conclusion}
+\input{sections/conclusion}
+
+\input{sections/declarations}
+
+\phantomsection\addcontentsline{toc}{section}{References}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,21 @@
+{
+  "format": "exploratory-pilot-operational-authorization-v1",
+  "recorded_at_utc": "2026-09-13T00:58:08.785066+00:00",
+  "user_instruction": "go on",
+  "scope": "Execute the previously proposed bounded synthetic forecast pilot B, verify and report results; no final question, venue or human-data acceptance.",
+  "basis": "docs/process/research-lifecycle.md: standing operational authorization from unambiguous continuation",
+  "base_git_revision": "34a9b43ce96c5b991f07819ced167f3440c7c641",
+  "reviewed_artifact_sha256": {
+    "experiments/exploratory/probabilistic-forecast-pilot-v1/spec.json": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+    "experiments/exploratory/probabilistic-forecast-pilot-v1/protocol.md": "53cda076c6c818792a7331bcde1f631dcabffe72fefaf1b540041b4fbfb72150",
+    "experiments/exploratory/probabilistic-forecast-pilot-v1/source-check.md": "ddbc3266bd02847fc56a2bcecf0ebf724ae68833b978f103d237c8a1b3218823",
+    "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+    "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+    "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+    "tests/scientific/test_histogram_forecast.py": "b157eaffe999dcd89903dba7ae34a276b29fe346aeb5f6f2627e582c013f6adb",
+    "tests/integration/test_forecast_pilot.py": "3c7c9b0ec4e25f36c57eaf43940e781238d8ec8fa0ccebadf07bb8ed97f15f80"
+  },
+  "implementation_review_sha256": "08a4c89cd9e4c13d5098975bf76f0848142652098943cc7efa77dd680eb0e08b",
+  "focused_validation": "11 tests passed; study mypy and affected ruff passed",
+  "integration_validation": "just quality in progress; no completion claim at this record"
+}

@@ -1,0 +1,15 @@
+{
+  "format": "fragmentation-pilot-validation-followup-v1",
+  "checked_at_utc": "2026-09-13T00:07:33.993157+00:00",
+  "predecessor": {
+    "path": "validation.json",
+    "sha256": "edfd2832ef163d61474b44c59482b4b53262efcb56a086b8355caaa0ca00e69c"
+  },
+  "correction": "The initial final-document structure command ran before validation.json existed and failed only on that forward link. The predecessor recorded this check as passed prematurely. After creating the file, the actual structure command was repeated and passed. This follow-up corrects that chronology without rewriting the predecessor.",
+  "actual_verification": {
+    "command": "UV=/Users/davi/.local/bin/uv just structure && git diff --check",
+    "exit_code": 0,
+    "repository_structure_checks_passed": 7
+  },
+  "scope": "Document-link ordering only. Scientific code, specification, raw runs, analysis inputs, independent reviews and numerical results unchanged."
+}

@@ -1,0 +1,20 @@
+\title[Limits of detecting network influence]{Limits of Detecting Network Influence in Attitude Panels}
+
+\author*[1]{\fnm{Davi} \sur{Abreu da Silveira}}\email{davi.silveira@sou.inteli.edu.br}
+
+\author[1]{\fnm{Henrique Mohallem} \sur{Paiva}}\email{henrique@inteli.edu.br}
+
+\affil*[1]{\orgname{Inteli -- Instituto de Tecnologia e Liderança}, \orgaddress{\city{São Paulo}, \state{SP}, \country{Brazil}}}
+
+% The editorial office asked for each author's Google Scholar profile before
+% the abstract (JCSO-D-26-00852, 31 October 2026).
+\makeatletter
+\let\jcss@printabstract\printabstract
+\def\printabstract{{\addressfont Google Scholar profiles: Davi Abreu da Silveira, not available; Henrique Mohallem Paiva, \url{https://scholar.google.com/citations?user=BMHzItEAAAAJ}.\par}\vskip12pt\jcss@printabstract}
+\makeatother
+
+% \unboldmath: the class's author font sets \boldmath, which would leak
+% into the abstract's math.
+\abstract{\unboldmath Attitude panels record responses without observing social contacts, making network influence difficult to distinguish from individual persistence. We investigate the limits of this discrimination in a prespecified simulation with unobserved networks and explicit measurement error. Synthetic panels approximate the size and refreshment design of the Swiss Household Panel. A prespecified classifier compares their long-lag correlations with those of persistence models matched to short-term stability, while response reliability~$r$ is varied and known. Against trait-plus-autoregressive persistence, the estimated area under the receiver operating characteristic curve (AUC) first reached \resultnum{v4.protocol.target}{0.70} at $a=\resultnum{j.b.r055.first.point}{0.10}$ for $r=\resultnum{v4.tab.T1.B.r055.r}{0.55}$--\resultnum{v4.tab.T1.B.r090.r}{0.90} and at $a=\resultnum{j.b.r050.first.point}{0.30}$ for $r=\resultnum{v4.tab.T1.B.r050.r}{0.50}$; $a$ is the nominal fraction of innovation variance assigned to contacts. The prespecified comparison across persistence models was not interpretable under its eligibility rules. Subsequent exploratory analyses clarify the sensitivity of discrimination: a changing response channel separated panels without influence, while allowing persistence to fit reliability and one additional lag absorbed most separation by a lag-four-and-five classifier, with reliability shifts of only \resultnum{j.x3.free.r_shift.min}{0.0011}--\resultnum{j.x3.free.r_shift.max}{0.0028}. The study quantifies conditional detection limits and demonstrates their sensitivity to measurement and matching assumptions. Discriminating simulated panel distributions therefore requires separate justification before it can support attribution to social influence in observed panels.}
+
+\keywords{Opinion dynamics, Social influence, Panel data, Measurement error, Model discrimination, Agent-based model}

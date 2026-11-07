@@ -1,0 +1,40 @@
+{
+  "kind": "calibration-seed-role-audit",
+  "materials": 1968384,
+  "unique_seeds": 1968384,
+  "collisions": 0,
+  "plans": [
+    {
+      "repetition": 0,
+      "block": 0,
+      "gate": false
+    },
+    {
+      "repetition": 0,
+      "block": 300,
+      "gate": true
+    },
+    {
+      "repetition": 1,
+      "block": 300,
+      "gate": true
+    },
+    {
+      "repetition": 0,
+      "block": 400,
+      "gate": true
+    }
+  ],
+  "indices_per_panel_role": 8192,
+  "attempts": [
+    0,
+    1
+  ],
+  "intentional_aliases": [
+    "target and null share state/mask/error indices in match and validation",
+    "stencils reuse base-phase innovations",
+    "strengths share resampling seeds within a later curve/r"
+  ],
+  "confirmatory_seeds_derived": 0,
+  "implementation_sha256": "85dc2f5a3d7e750ec62fbe1d85ff4f4b9cddab1a727f880d0498d1bf73e61e2a"
+}

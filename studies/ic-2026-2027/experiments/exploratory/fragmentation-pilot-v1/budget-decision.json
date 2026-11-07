@@ -1,0 +1,15 @@
+{
+  "format": "fragmentation-pilot-cost-decision-v1",
+  "recorded_at_utc": "2026-09-12T23:51:08.662899+00:00",
+  "benchmark_sha256": "11778292d7c8c7f1dabaab0f45788653babb01f9fe8bbdc05618674712cd5ee4",
+  "benchmark_trials": 10,
+  "slowest_attempts_per_second": 42844.34777006559,
+  "projected_worst_case_seconds": {
+    "500000": 1493.7793041796613,
+    "100000": 298.75586083593225,
+    "50000": 149.37793041796613
+  },
+  "selected_cap": 100000,
+  "selection_basis": "Predeclared timing-only rule; no outcome or parameter selection.",
+  "benchmark_seconds": 0.7794470840017311
+}

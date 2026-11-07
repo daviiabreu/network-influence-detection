@@ -1,0 +1,54 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/assembly-notes.txt",
+        "sha256": "1ae880467059be31a0751f6fce7d426ccc58109e39dbac25c457a60bbec7ab59"
+      },
+      "value": true
+    },
+    "main.boundary_nonmonotone": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/released-curves.json",
+        "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "value": false
+    },
+    "post.x5_supplied": {
+      "source": {
+        "locator": "artificial provenance.inputs.x5 and every by_r.x5_state",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/aggregates/comparisons.json",
+        "sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484"
+      },
+      "value": false
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/assembly-notes.txt",
+        "sha256": "1ae880467059be31a0751f6fce7d426ccc58109e39dbac25c457a60bbec7ab59"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/assembly-notes.txt",
+        "sha256": "1ae880467059be31a0751f6fce7d426ccc58109e39dbac25c457a60bbec7ab59"
+      },
+      "value": "not-run"
+    },
+    "tier2.boundaries_differ": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/released-curves.json",
+        "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "value": false
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

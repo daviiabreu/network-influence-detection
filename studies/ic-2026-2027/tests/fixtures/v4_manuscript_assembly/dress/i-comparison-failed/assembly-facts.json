@@ -1,0 +1,40 @@
+{
+  "facts": {
+    "gate.G2c.failed_comparisons": {
+      "source": {
+        "locator": "G2c complete summary; comparison pass flags",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/i-comparison-failed/gate/criteria.jsonl",
+        "sha256": "974b5c1f52c5f81f5ef26b3c3548d68da70ec88d9a2efda74cc9077d0d8c7977"
+      },
+      "value": [
+        "a010"
+      ]
+    },
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/i-comparison-failed/assembly-notes.txt",
+        "sha256": "855d5f3d022ba80709146b4c0e4582b12e120bb1b77339b17a1a7e0b99de9527"
+      },
+      "value": true
+    },
+    "shp.grid_position": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/i-comparison-failed/assembly-notes.txt",
+        "sha256": "855d5f3d022ba80709146b4c0e4582b12e120bb1b77339b17a1a7e0b99de9527"
+      },
+      "value": "inside"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/i-comparison-failed/assembly-notes.txt",
+        "sha256": "855d5f3d022ba80709146b4c0e4582b12e120bb1b77339b17a1a7e0b99de9527"
+      },
+      "value": "admissible"
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

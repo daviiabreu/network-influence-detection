@@ -1,0 +1,54 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/assembly-notes.txt",
+        "sha256": "d0252f600de3a20eae026fd3eecc983a49d2afdeab155c14c2a1e8c8508d7f1f"
+      },
+      "value": true
+    },
+    "main.boundary_nonmonotone": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/released-curves.json",
+        "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+      },
+      "value": false
+    },
+    "post.x5_supplied": {
+      "source": {
+        "locator": "artificial provenance.inputs.x5 and every by_r.x5_state",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/aggregates/comparisons.json",
+        "sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484"
+      },
+      "value": false
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/assembly-notes.txt",
+        "sha256": "d0252f600de3a20eae026fd3eecc983a49d2afdeab155c14c2a1e8c8508d7f1f"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/assembly-notes.txt",
+        "sha256": "d0252f600de3a20eae026fd3eecc983a49d2afdeab155c14c2a1e8c8508d7f1f"
+      },
+      "value": "not-run"
+    },
+    "tier2.boundaries_differ": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/released-curves.json",
+        "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+      },
+      "value": false
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

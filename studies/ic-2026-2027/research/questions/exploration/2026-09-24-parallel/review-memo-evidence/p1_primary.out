@@ -1,0 +1,30 @@
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:67: RuntimeWarning: divide by zero encountered in matmul
+  p = 1 / (1 + np.exp(-z @ w))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:67: RuntimeWarning: overflow encountered in matmul
+  p = 1 / (1 + np.exp(-z @ w))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:67: RuntimeWarning: invalid value encountered in matmul
+  p = 1 / (1 + np.exp(-z @ w))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:68: RuntimeWarning: divide by zero encountered in matmul
+  g = z.T @ (p - ytr) + reg @ w
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:68: RuntimeWarning: overflow encountered in matmul
+  g = z.T @ (p - ytr) + reg @ w
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:68: RuntimeWarning: invalid value encountered in matmul
+  g = z.T @ (p - ytr) + reg @ w
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:69: RuntimeWarning: divide by zero encountered in matmul
+  h = (z * (p * (1 - p))[:, None]).T @ z + reg + 1e-8 * np.eye(len(w))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:69: RuntimeWarning: overflow encountered in matmul
+  h = (z * (p * (1 - p))[:, None]).T @ z + reg + 1e-8 * np.eye(len(w))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:69: RuntimeWarning: invalid value encountered in matmul
+  h = (z * (p * (1 - p))[:, None]).T @ z + reg + 1e-8 * np.eye(len(w))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:75: RuntimeWarning: divide by zero encountered in matmul
+  1 / (1 + np.exp(-(np.hstack([np.ones((len(xs), 1)), (xs - mu) / sd]) @ w)))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:75: RuntimeWarning: overflow encountered in matmul
+  1 / (1 + np.exp(-(np.hstack([np.ones((len(xs), 1)), (xs - mu) / sd]) @ w)))
+/private/tmp/claude-501/-Users-davi-Documents-github-research-workbench/ccea0cfa-cbfe-40e0-a2a0-91e611807839/scratchpad/review-memo/p1_primary.py:75: RuntimeWarning: invalid value encountered in matmul
+  1 / (1 + np.exp(-(np.hstack([np.ones((len(xs), 1)), (xs - mu) / sd]) @ w)))
+generated 2200 trajectories in 4.8s (2.2 ms each)
+L1 train=ignored (1,0)    lam=0.0001 val_bacc=1.000 test_bacc(true channel)=1.000
+L1 train=known (1.2,0.1)  lam=0.0001 val_bacc=1.000 test_bacc(true channel)=1.000
+L2 train=ignored (1,0)    lam=0.0001 val_bacc=1.000 test_bacc(true channel)=1.000
+L2 train=known (1.2,0.1)  lam=0.0001 val_bacc=1.000 test_bacc(true channel)=1.000
+total 5.3s

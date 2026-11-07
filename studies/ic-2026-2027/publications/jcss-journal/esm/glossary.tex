@@ -1,0 +1,160 @@
+% Written during the journal revision (agent S, 2026-10-13). Maps the codes and
+% machine labels of the frozen protocol, the archived records and the
+% rule-assembled manuscript to the plain names of the article.
+% Round 5 (2026-10-14): carries the definitions cut from the article's table
+% notes (boundary interval, secondary targets, gap kinds in plain words).
+
+The article uses plain names. The archived protocol, code and records, the rule-assembled manuscript and some tables of this resource keep the original codes and machine labels, so that a quantity can be found by its code in any archived record that holds it. Tables~\ref{tab:glossary-terms}--\ref{tab:glossary-states} map each code and label to the name used in the article and say where it appears; Portuguese strings in the records are translated one to one. AUC is the area under the receiver operating characteristic curve.
+
+\begin{table}[htbp]
+\caption{Terms of the rule-assembled record and of the article}\label{tab:glossary-terms}
+\centering\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.535\textwidth}@{}}
+\toprule
+Record term & Article term & Meaning and where it appears \\
+\midrule
+partner drift; interaction arm; drift arm; data arm; social panels & network influence; influence arm & The drift toward contacts within distance one and away from more distant contacts on a fixed random network (Section~\ref{sec:odd}, Submodel~3). \\
+partners; partner slots & contacts & The eight fixed out-neighbors of each person, drawn by uniform permutations. \\
+nominal partner-drift strength $a$; pre-transport innovation budget & influence strength $a$ & The nominal share of the innovation variance that pulls toward contacts; not the realized share of latent change (Section~\ref{sec:x1-x2} gives an exploratory translation). \\
+null family X; null; persistence null; persistence rival & persistence model X & A autoregressive; B trait-plus-autoregressive (the main comparison); C autoregressive with an altered response channel; D state-dependent; E mover--stayer. \\
+response signal share & signal share $r$ & The latent state's share of variance in the continuous response before discretization, that is, the reliability of that continuous response. \\
+first point boundary; detection boundary & first boundary $a^*(r)$ & The lowest grid strength at which the expected AUC reaches 0.70; estimated from the point AUCs and not declared across a fit gap; its interval inverts the share's band (Section~\ref{sec:dd-band}). Targets 0.60 and 0.80 are secondary. \\
+sustained boundary & sustained boundary $a_s^*(r)$ & The lowest grid strength from which the expected AUC stays at or above 0.70 at every higher strength with a fit (Section~\ref{sec:odd}, Submodel~11), and censored, not declared, when a fit gap lies above it. \\
+small; large; indeterminate; not attained; censored & region labels (tables only) & Small, the whole boundary interval lies within $(0,0.03]$; large, the interval lies entirely above 0.03; indeterminate, $a^*=0$ or an interval that crosses 0.03 or has a censored end; not attained, no strength reaches the target on a complete grid; censored, the first boundary itself is not declared because of a fit gap (this resource and Online Resource~2 only). The 0.03 cut is an inherited convention, not a demonstrated effect size. \\
+crossing & crossing & A strength whose lower band exceeds 0.70; boundaries and their intervals use inclusive inversion of the band. \\
+unit; cell & unit; cell & A unit is one comparison (persistence model, channel and configuration) at one $r$ over the nine strengths; a cell is one $(a,r)$ point of a unit. \\
+gap; gap cell & fit gap & A cell without a validated fit or result; never counted as an AUC below the target. \\
+main curve; tier-1 curve; headline & main result against B & The nine first boundaries against B over $r$. \\
+release; released & results became available & The event of 8 October 2026 that made the confirmatory curves available (Section~\ref{sec:record-execution}). \\
+sealed; sealed store & sealed record & Outputs stored outside Git, written once and not read before the results became available. \\
+successor; linked successor & successor record; amendment & A new record that supersedes or completes an earlier one without editing it. \\
+binding; binding record & binding record & A hash-bound record that fixes the inputs of a stage before it runs. \\
+cross-mechanism permission & condition for comparing models & The prespecified condition for comparing persistence models: a valid main curve and all \resultnum{v4.tab.T4.2-all-all-all.units}{36} secondary-model units complete and valid. \\
+preregistration; preregistered & prespecified & Frozen in the project repository before the confirmatory run; no public preregistration exists. \\
+calibration-exposed $r$ & examined during calibration (\dag) & $r=0.70$ (Section~\ref{sec:record-exposure}); Online Resource~2 and some figure labels keep the record term. \\
+procedural truth (D1) & procedural truth & The expected AUC under the declared fitting, validation and training procedure, conditional on success (Section~\ref{sec:x6}). \\
+Var\_D5; D5 variance & $V_{\mathrm{nuis}}$ & The locally propagated nuisance variance (Section~\ref{sec:odd}, Submodel~12). \\
+docking & docking & A comparison of an independent implementation, written from the specification, with the project code (Section~\ref{sec:verification}). \\
+\botrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Validation gate stages, execution tiers, channels and configurations}\label{tab:glossary-gate}
+\centering\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\textwidth}>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.44\textwidth}@{}}
+\toprule
+Code & Plain name & Content and where it appears \\
+\midrule
+G0 & zero-strength fitting check & Matching statuses and solver budgets on eight grids; zero-strength fits of A, B, D, E and the B controls must be anchor-exact (Section~\ref{sec:record-gate}). \\
+G1a & identity unit tests & Byte identity of the arms at zero strength and zero nuisance variance at the anchor; no separate run record (Section~\ref{sec:record-gate}). \\
+G1b & band calibration on synthetic scores & Joint coverage of the band in five synthetic-score scenarios. \\
+G1c & zero-strength band check & \resultnum{v4.protocol.g1c.fits}{150} end-to-end pipelines at $a=0$. \\
+G2 & positive-strength dispersion check & Reported against observed dispersion of paired pipelines in \resultnum{v4.gate.G2.n_cells}{7} cells. \\
+G2c & nuisance-variance check & Locally propagated nuisance variance against full refits in two cells. \\
+tier 1 & main curve against B & B on the observed channel, \resultnum{v4.tab.T4.1-all-all-all.units}{9} units. \\
+tier 2 & secondary persistence models & A, C, D and E on the observed channel, \resultnum{v4.tab.T4.2-all-all-all.units}{36} units. \\
+tier 3 & measurement controls and mobility & Latent, ordinal ($r=1$) and latent-rank controls and mobility summaries against the five models, \resultnum{v4.protocol.units.t3}{270} units. \\
+tier 4 & response-channel sensitivities & Persistent response style ($c=0.25$ / 0.50; codes c025, c050); panel conditioning ($\delta=0.10$ / 0.20; d010, d020); response style and conditioning ($c=0.50$, $\delta=0.20$; exploratory; c050-d020-exploratory), \resultnum{v4.protocol.units.t4}{45} units against B. \\
+tier 5 & mechanism sensitivities & Attraction only ($b=0$; b000); anchoring ($\omega=0.25$ / 0.50 / 0.75; omega025, omega050, omega075); complete anchoring ($\omega=1$; omega100), \resultnum{v4.protocol.units.t5}{45} units against B. \\
+tier 6 & 24-step sensitivity & 24 update steps per wave (steps24), \resultnum{v4.protocol.units.t6}{9} units against B. \\
+observed & observed channel & Ordinal responses with response error, the channel of every main comparison. \\
+latent & latent control & Error-free latent states under the observation mask. \\
+ordinal\_one & ordinal control ($r=1$) & Ordinal allocation of the masked latent states without response error. \\
+latent\_rank & latent-rank control & Per-wave mid-ranks of the masked latent states. \\
+mobility & mobility summary & Mean absolute one-wave change by tercile of position, in place of the lag features. \\
+\botrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Protocol versions, records and decision items}\label{tab:glossary-versions}
+\centering\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.2\textwidth}>{\raggedright\arraybackslash}p{0.75\textwidth}@{}}
+\toprule
+Code & Meaning and where it appears \\
+\midrule
+v1 & First frozen protocol (25 September 2026, Git revision \texttt{fd65d2a}); its zero-strength coverage check failed and it is kept as history (Section~\ref{sec:record-history}). \\
+Proposal A; Proposal B & Two exploratory amendment proposals of 25 September 2026, not adopted; inputs to v4 and part of the cumulative exposure (Section~\ref{sec:record-exposure}). \\
+v4; D1--D11 & Successor decision specification with items D1--D11 (25 September 2026), a delegated agent decision (decision log item 19). \\
+v4.1; R1--R8 & Revision of the decision specification, items R1--R8, made before any freeze, gate run or AUC. \\
+v4.2 & Intermediate implementation revision preserved by hash in the amendment record. \\
+v4.3 & Amendment text implementing v4 with the review decisions; frozen at Git revision \texttt{37513841} before any gate stage ran (the frozen protocol of the confirmatory run). \\
+release amendment & Linked amendment of 28 September 2026: release when all \resultnum{v4.protocol.units.all}{414} units have final records and no curve worker runs, or at the original deadline (Section~\ref{sec:record-execution}). \\
+v4.4 & Operational amendment of 1 October 2026 that records an ill-conditioned nuisance propagation as a gap (Section~\ref{sec:record-execution}). \\
+D1 & Definition of the target: the expected AUC over the declared matching and training draws, conditional on successful fits (the procedural truth of the coverage check). \\
+D4 & Matching: profile solver, acceptance tolerance, independent validation and single retry. \\
+D5 & Local propagation of the nuisance variance ($V_{\mathrm{nuis}}$; ``Var\_D5'' in the gate records). \\
+D6 & Scores, band and zero-strength check of the run. \\
+D7 & Validation gate. \\
+D8 & Exposure and claims (Section~\ref{sec:record-exposure}). \\
+D9 & Inventory, tier order, compute window and unit statuses. \\
+D10; D11 & Seeds; implementation requirements. \\
+R3 & Item of revision v4.1: propagation by the mean-feature shift, and the covariance-Jacobian diagnostic flag reported in the G2 cells. \\
+Q8; Q12; Q13 & Questions of the manuscript integration of 28 September 2026, decided by the first author: inclusive inversion with strict crossing claims (Q8); sustained boundaries whatever the source of a reversal (Q12); main-curve validity without an eligibility exemption (Q13). \\
+G1c successor record & Record of the G1c summary that the frozen runner could not serialize, computed by the frozen aggregating function (Section~\ref{sec:record-history}). \\
+successor 1 (SHP) & Successor of 28 September 2026 to the prespecified reliability analysis: trait--state--error sensitivity, synthetic crosswalk and 2004 description (Section~\ref{sec:shp}). \\
+decision log item & Numbered entry of the authors' decision log, a private coordination record in Portuguese that is not part of the archive. Archived protocol records cite some of the same item numbers, and this resource states what each cited item records. \\
+\botrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Exploratory analyses and the machine labels of their readings}\label{tab:glossary-analyses}
+\centering\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.26\textwidth}>{\raggedright\arraybackslash}p{0.495\textwidth}@{}}
+\toprule
+Code or label & Plain name & Meaning and where it appears \\
+\midrule
+X1a & mean-field twin & AUC of the fixed LDA between the influence arm and a twin whose drift keeps its conditional mean and variance but redraws the contact term each step (Section~\ref{sec:x1-x2}). \\
+X1b & twin against B & The twin's own boundaries against B under the frozen rules. \\
+X2 (X2a, X2b) & variance explained by influence & Partial $R^2$ of the drift beyond linear persistence (X2a) and its gain beyond a spline of the own state (X2b). \\
+X3 & free signal share & B fitted at its own signal share against B at the known share (Section~\ref{sec:x3}). \\
+X4a & oracle single-panel test & Known-parameter procedure: rejection of B for one panel with the population null critical value (Section~\ref{sec:x4}). \\
+X4b & fitted single-panel test & Fitted-panel procedure: B fitted to one panel and tested by parametric bootstrap. \\
+X5 & channel-misspecification stress test & Separation produced by a misspecified response channel at zero influence (Section~\ref{sec:x5}); conditions trend-003, trend-008 (signal-share trend), step-003, step-008 (wave-5 step), tenure-010, tenure-020 (conditioning), mnar-ln15, mnar-ln2 (latent-dependent attrition). \\
+X6 (X6a, X6b) & band coverage check & Coverage of the intervals and the band at positive strength (Section~\ref{sec:x6}). \\
+X7 & expanded-feature classifier & LDA on 36 panel features against the frozen-feature LDA on the same panels (Section~\ref{sec:x7}); x7, frozen-feature arm; rich, expanded-feature arm. \\
+supports-objection & reduced (X3) & Paired AUC-difference interval entirely below zero. \\
+against-objection & within margin (X3) & Interval inside $\pm$0.02. \\
+inconclusive & neither (X3, X4, X7) & Neither the declared reduction (or gain) criterion nor the equivalence criterion was met; an interval entirely above zero is also labeled so. It is a frozen label, not ordinary uncertainty about the direction of a contrast. \\
+gap; free-gap & known-share or free-share fit gap (X3) & No contrast in that cell. \\
+lost\_crossing & lost crossing (X3) & Known-share point AUC at least 0.70 while the free-share interval's upper end is below 0.70. \\
+calibrated; liberal; conservative & size compatible with, above or below 0.05 (X4) & Zero-strength rejection interval contains 0.05, lies above it or below it; the flag applies to every strength at that $r$. \\
+describes; overstates; understates & inside, above, below (X4a) & Position of the normal-theory power relative to the oracle rejection interval. \\
+removes-power; no-material-change & negative; within margin (X4) & Fitted-minus-oracle difference interval entirely below zero, or inside $\pm$0.05. \\
+rejection-rate; power; power-lower-bound & rejection rate; power; power, lower bound (X4b) & Label of the fitted-panel rates at an $r$ whose size is above, compatible with or below 0.05; every rate is reported as a rejection rate (Section~\ref{sec:x4}). \\
+adequate; subnominal; failure & no undercoverage detected; below nominal; failure (X6) & Wilson upper end at least 0.95; in $[0.90, 0.95)$; below 0.90. ``Adequate'' does not demonstrate nominal coverage. \\
+D1; pop & procedural truth; population-match truth (X6) & The two reference values of the coverage check. \\
+PW; PW+gap; joint & pointwise; gaps as misses; joint band (X6) & Reference of each coverage reading. \\
+far; close & gain; local equivalence (X7) & Gain of the expanded-feature LDA under the declared paired criterion; equal boundaries with differences inside $\pm$0.02. ``Far'' does not mean distance from an information ceiling. \\
+\botrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Unit statuses, fit statuses and the translations of ``unavailable''}\label{tab:glossary-states}
+\centering\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}@{}}
+\toprule
+Label & Meaning \\
+\midrule
+complete and valid (CV) & All nine strengths executed and the zero-strength cell available with a band containing 0.5; an operational status, not a demonstration of coverage (Section~\ref{sec:inventory}). \\
+complete but invalid (CI) & All nine strengths executed, but the zero-strength check failed: the band at $a=0$ excluded 0.5 or the zero-strength cell was a gap; boundaries are suppressed. \\
+partial at the operational close (P) & Some strengths not executed when the compute window closed (none occurred). \\
+not started (NS) & No strength executed at the close (none occurred). \\
+anchor-exact; interior; boundary & Accepted fit statuses: exact identity at $a=0$ for A, B, D and E; an interior root after a real solver step; a constrained face (Section~\ref{sec:odd}, Submodel~8). \\
+no-L1-root; non-monotone-profile; ill-conditioned; numerical-limit; family-limit-lower/upper; budget & Gap statuses of the solver; estimator states, not scientific findings. A family limit on the profile means that the declared solver reached the edge of the model's parameter box without an accepted match to the lag-one and lag-two correlations; the other statuses, ``other solver status'' in the article, mean that the fit stopped for another numerical reason. Family limits are gaps, not failures. \\
+dependency-gap & Control cell whose observed fit failed or is missing. \\
+propagation gap & Cell whose nuisance propagation raised the ill-conditioned-profile error, recorded as a gap under v4.4: the uncertainty of the fitted parameters could not be propagated reliably into the band. \\
+screened & Family limit at the feasibility screen, with no solver evaluation. \\
+validation failure & Accepted fit that failed independent validation in both attempts. \\
+inner-failure; budget (X3) & No accepted fit found by the inner solver; search budget exhausted. \\
+NS, P, CI, CV; scr., fam., sol., val., dep., prop. & Column abbreviations of the inventory (Table~\ref{tab:v4-T4}). \\
+``unavailable'' & A null field of the archived catalog, translated here by meaning: none (no censoring, no flag); gap-censored at $a$ (a boundary not declared across a gap); not attained on grid (no strength reached the target on a complete grid); not estimable (a fit gap or an invalid unit); not computed (a sensitivity that was not triggered); not applicable; not read (a reading the declaration does not make); outside the declared domain. \\
+available; partial; censored at a gap; not reached on the grid; above the grid; below, overlaps, above & English names of the comparison states that the archived records store in Portuguese. \\
+\botrule
+\end{tabular}
+\end{table}
+
+\clearpage

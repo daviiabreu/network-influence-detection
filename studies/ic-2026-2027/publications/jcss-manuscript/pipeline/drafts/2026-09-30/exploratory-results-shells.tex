@@ -1,0 +1,262 @@
+% Exploratory Results shells, written without reading any sealed output.
+% Governed by pipeline/review/x3-x7-reading-restrictions-2026-09-29.md.
+% Not connected to main.tex. Each numbered branch below is a prose option.
+% Copy the status paragraphs, applicable branches and table inputs into the
+% supplement after release. Omit zero-count outcome branches. Every displayed
+% number and machine state comes from v4_exploratory_export; fill from its
+% catalog, optionally merged with the confirmatory catalog. No branch chooses
+% a cell, changes a threshold, or promotes exploratory evidence.
+
+% STATUS: always; incomplete counts refer to the declared operational cut.
+\subsection*{Exploratory analyses of fitting, rejection, coverage and features}\label{supp:x3-x7}
+\paragraph{Status and scope.}
+These analyses used declared exploratory seeds and leave the frozen confirmatory design unchanged.
+X3 recorded \resultnum{v4x.x3.recorded}{[n]} \resultplural{v4x.x3.recorded}{cell}{cells}, with an incomplete count of \resultnum{v4x.x3.incomplete}{[n]} \resultplural{v4x.x3.incomplete}{cell}{cells}, \resultnum{v4x.x3.errors}{[n]} execution \resultplural{v4x.x3.errors}{error}{errors} and \resultnum{v4x.x3.gaps}{[n]} fit \resultplural{v4x.x3.gaps}{gap}{gaps}.
+X4a recorded \resultnum{v4x.x4a.recorded}{[n]} \resultplural{v4x.x4a.recorded}{cell}{cells}, with an incomplete count of \resultnum{v4x.x4a.incomplete}{[n]}. X4b recorded \resultnum{v4x.x4b.recorded}{[n]} \resultplural{v4x.x4b.recorded}{cell}{cells}, with an incomplete count of \resultnum{v4x.x4b.incomplete}{[n]}.
+X4a had \resultnum{v4x.x4a.errors}{[n]} execution \resultplural{v4x.x4a.errors}{error}{errors} and \resultnum{v4x.x4a.gaps}{[n]} fit \resultplural{v4x.x4a.gaps}{gap}{gaps}; X4b had \resultnum{v4x.x4b.errors}{[n]} execution \resultplural{v4x.x4b.errors}{error}{errors} and \resultnum{v4x.x4b.gaps}{[n]} fit \resultplural{v4x.x4b.gaps}{gap}{gaps}.
+The cellwise contrasts have no multiplicity correction or whole-curve reading (Table~\ref{tab:v4x-status}).
+
+% X3-DESIGN: always with X3; the design and the common X3 caveat, stated once.
+\paragraph{X3: design and common limits.}
+X3 lets null B choose its own response signal share. In the free-share arm, B's frozen latent law passes through the observed channel at a fitted share $r_B$, matched together with B's two persistence parameters to the lag-one to lag-three moments. Because lag three becomes a matched moment, both X3 contrasts train the LDA on the lag-four and lag-five features only, unlike the main discriminator, which uses lags three to five. The known-share contrast uses the frozen two-parameter B at the cell's own $r$ and the free-share contrast uses the fitted $r_B$, both on the same social panels; each cell reports the free-minus-known AUC difference with a paired bootstrap interval, read against the declared margin of $\pm\resultnum{v4x.x3.summary.margin}{[value]}$.
+These intervals are conditional on the accepted fits and the trained discriminators and omit the uncertainty of the three-parameter matching; the contrasts do not estimate the frozen boundary.
+
+% X3-SUPPORT: count.supports-objection > 0.
+\paragraph{X3: reduced separation.}
+Allowing B its own response signal share reduced separability for the specified L4--L5 LDA in \resultnum{v4x.x3.count.supports-objection}{[n]} \resultplural{v4x.x3.count.supports-objection}{cell}{cells}. \resultplural{v4x.x3.count.supports-objection}{This cell had}{These cells had} a negative paired AUC-difference interval (reported label \texttt{supports-objection}; Table~\ref{tab:v4x-x3}).
+
+% X3-EQUIVALENCE: count.against-objection > 0.
+\paragraph{X3: local equivalence.}
+In \resultnum{v4x.x3.count.against-objection}{[n]} \resultplural{v4x.x3.count.against-objection}{cell}{cells}, the paired interval lay within the declared margin (\texttt{against-objection}).
+This is local equivalence for the specified contrast; it does not establish equivalence of mechanisms or of their full laws.
+
+% X3-INCONCLUSIVE: count.inconclusive > 0.
+\paragraph{X3: inconclusive contrast.}
+The cellwise contrast was inconclusive in \resultnum{v4x.x3.count.inconclusive}{[n]} \resultplural{v4x.x3.count.inconclusive}{cell}{cells} (\texttt{inconclusive}); \resultplural{v4x.x3.count.inconclusive}{the interval in}{the intervals in} Table~\ref{tab:v4x-x3} \resultplural{v4x.x3.count.inconclusive}{retains}{retain} the uncertainty under the declared conditional analysis.
+
+% X3-ERROR: count.error > 0.
+\paragraph{X3: execution errors.}
+There \resultplural{v4x.x3.count.error}{was}{were} \resultnum{v4x.x3.count.error}{[n]} recorded execution \resultplural{v4x.x3.count.error}{error}{errors} (\texttt{error}).
+\resultplural{v4x.x3.count.error}{The affected cell provides}{The affected cells provide} no AUC contrast.
+
+% X3-GAP: count.gap > 0.
+\paragraph{X3: known-fit gaps.}
+There \resultplural{v4x.x3.count.gap}{was}{were} \resultnum{v4x.x3.count.gap}{[n]} known-fit \resultplural{v4x.x3.count.gap}{gap}{gaps} (\texttt{gap}).
+Both contrasts remain unavailable in those cells, with the known-fit attempts retained.
+
+% X3-FREE-GAP: count.free-gap > 0.
+\paragraph{X3: free-fit gaps.}
+There \resultplural{v4x.x3.count.free-gap}{was}{were} \resultnum{v4x.x3.count.free-gap}{[n]} free-fit \resultplural{v4x.x3.count.free-gap}{gap}{gaps} (\texttt{free-gap}).
+Table~\ref{tab:v4x-x3-attempts} reports each recorded attempt, its matching size and the last free-fit status. The accompanying values catalog reports residuals and evaluations.
+Search budget exhaustion, a numerical search without an accepted fit and a candidate rejected by validation remain distinct outcomes.
+A family-limit or no-root search label alone does not demonstrate that the free-share family cannot reproduce the target moments.
+
+% X3-LOST: count.lost_crossing > 0.
+\paragraph{X3: paired-cell flag.}
+In \resultnum{v4x.x3.count.lost_crossing}{[n]} \resultplural{v4x.x3.count.lost_crossing}{cell}{cells}, the known-share point AUC was at least \resultnum{v4.protocol.target}{[value]} while the free-share interval upper endpoint was below that target (\texttt{lost\_crossing}).
+This is the declared paired-cell flag, without a frozen-band crossing or a confirmatory boundary claim.
+
+% X4-STATUS: always.
+\paragraph{X4: conditional rejection references.}
+The oracle direction knows the alternative.
+Its critical value was estimated from \resultnum{v4x.x4.sizes.check_prose}{[n]} null \resultplural{v4x.x4.sizes.check_prose}{score}{scores}. The fitted-panel procedure used \resultnum{v4x.x4.sizes.analyst}{[n]} simulated \resultplural{v4x.x4.sizes.analyst}{panel}{panels} per fitting evaluation and \resultnum{v4x.x4.sizes.nulls}{[n]} fresh null \resultplural{v4x.x4.sizes.nulls}{panel}{panels} for its bootstrap.
+Tables~\ref{tab:v4x-x4a} and \ref{tab:v4x-x4b} report rejection references, intervals and panel denominators. Table~\ref{tab:v4x-x4-failures} separately reports failures counted as non-rejections and the success-conditioned reference.
+The bootstrap p-value formula establishes neither exact validity over the composite null nor an analyst's attainable power.
+X4b and its zero-strength calibration reference are declared only at the three response signal shares of Table~\ref{tab:v4x-x4b}; values outside this domain are not missing in-domain estimates.
+
+% X4-NORMAL: each positive count is a separate cellwise branch.
+\paragraph{X4: compatible normal reference.}
+The normal-theory reference lay inside the oracle rejection interval in \resultnum{v4x.x4a.count.describes}{[n]} \resultplural{v4x.x4a.count.describes}{cell}{cells} within the declared reference-AUC range of \resultnum{v4x.x4.summary.normal_theory_in_auc_range.range.i000}{[lower]} to \resultnum{v4x.x4.summary.normal_theory_in_auc_range.range.i001}{[upper]} (\texttt{describes}; Table~\ref{tab:v4x-x4-normal}).
+This records interval compatibility in those cells.
+
+\paragraph{X4: higher normal reference.}
+The normal-theory reference lay above the oracle rejection interval in \resultnum{v4x.x4a.count.overstates}{[n]} \resultplural{v4x.x4a.count.overstates}{cell}{cells} within the declared reference-AUC range of \resultnum{v4x.x4.summary.normal_theory_in_auc_range.range.i000}{[lower]} to \resultnum{v4x.x4.summary.normal_theory_in_auc_range.range.i001}{[upper]} (\texttt{overstates}).
+The reference was evaluated at each cell's own AUC.
+
+\paragraph{X4: lower normal reference.}
+The normal-theory reference lay below the oracle rejection interval in \resultnum{v4x.x4a.count.understates}{[n]} \resultplural{v4x.x4a.count.understates}{cell}{cells} within the declared reference-AUC range of \resultnum{v4x.x4.summary.normal_theory_in_auc_range.range.i000}{[lower]} to \resultnum{v4x.x4.summary.normal_theory_in_auc_range.range.i001}{[upper]} (\texttt{understates}).
+These cellwise comparisons do not validate the normal-theory translation.
+
+% X4-PAIRED: each positive count is a separate branch.
+\paragraph{X4: negative paired difference.}
+The paired difference between the conditional oracle rejection procedures had a negative interval in \resultnum{v4x.x4b.count.removes-power}{[n]} \resultplural{v4x.x4b.count.removes-power}{cell}{cells} (\texttt{removes-power}; Table~\ref{tab:v4x-x4-paired}).
+It combines fitted-panel estimation, simulation precision and failure treatment and does not isolate the effect of fitting alone.
+
+\paragraph{X4: local equivalence of rejection references.}
+The paired interval lay within the declared margin of $\pm\resultnum{v4x.x4.summary.single_panel_effect.margin}{[value]}$ in \resultnum{v4x.x4b.count.no-material-change}{[n]} \resultplural{v4x.x4b.count.no-material-change}{cell}{cells} (\texttt{no-material-change}).
+This is local equivalence of the two conditional rejection procedures.
+
+\paragraph{X4: inconclusive paired difference.}
+The paired difference was inconclusive in \resultnum{v4x.x4b.count.inconclusive}{[n]} \resultplural{v4x.x4b.count.inconclusive}{cell}{cells} (\texttt{inconclusive}).
+The size flags and original quantity labels remain beside the references; unavailable readings are retained as such.
+
+% X4-SIZE: each positive count is a separate branch; counts are zero cells.
+\paragraph{X4: zero-strength compatibility.}
+Rejection was compatible with the nominal level of \resultnum{v4x.protocol.x4.level}{[value]} at \resultnum{v4x.x4a.count.calibrated}{[n]} X4a zero-strength \resultplural{v4x.x4a.count.calibrated}{cell}{cells} and \resultnum{v4x.x4b.count.calibrated}{[n]} X4b zero-strength \resultplural{v4x.x4b.count.calibrated}{cell}{cells} (\texttt{calibrated}; Table~\ref{tab:v4x-x4-calibration}).
+Each interval and denominator applies to its specified cell, and compatibility there does not establish calibration over the composite null.
+
+\paragraph{X4: above-nominal zero-strength reference.}
+The above-nominal zero-strength reference counts under the declared criterion were \resultnum{v4x.x4a.count.liberal}{[n]} X4a and \resultnum{v4x.x4b.count.liberal}{[n]} X4b cells (\texttt{liberal}).
+Positive-strength rejection references at those signal shares retain that local flag.
+
+\paragraph{X4: below-nominal zero-strength reference.}
+The below-nominal zero-strength reference counts under the declared criterion were \resultnum{v4x.x4a.count.conservative}{[n]} X4a and \resultnum{v4x.x4b.count.conservative}{[n]} X4b cells (\texttt{conservative}).
+The original machine quantity is retained beside the conditional reference, without a universal bound on valid power.
+
+% X6-STATUS: always for the inventory sentences. The joint coverage sentences
+% require x6a.band.vs_d1 != null. Omit them if procedural truth is unavailable.
+\paragraph{X6: coverage denominators.}
+At the operational cut, X6a had recorded \resultnum{v4x.x6.x6a.recorded_prose}{[n]} of \resultnum{v4x.x6.x6a.units_prose}{[n]} \resultplural{v4x.x6.x6a.units_prose}{job}{jobs}, with an incomplete count of \resultnum{v4x.x6.x6a.incomplete}{[n]} \resultplural{v4x.x6.x6a.incomplete}{job}{jobs}. X6b had recorded \resultnum{v4x.x6.x6b.recorded}{[n]} of \resultnum{v4x.x6.x6b.units}{[n]} \resultplural{v4x.x6.x6b.units}{job}{jobs}, with an incomplete count of \resultnum{v4x.x6.x6b.incomplete}{[n]} \resultplural{v4x.x6.x6b.incomplete}{job}{jobs} (Table~\ref{tab:v4x-x6-inventory}).
+Primary joint D1 coverage was \resultnum{v4x.x6.x6a.band.vs_d1.primary.covered}{[n]} of \resultnum{v4x.x6.x6a.band.vs_d1.primary.total}{[n]} complete gap-free \resultplural{v4x.x6.x6a.band.vs_d1.primary.total}{band}{bands} (Table~\ref{tab:v4x-x6}). Joint coverage requires coverage at \resultplural{v4x.protocol.grid_strengths}{the}{all} \resultnum{v4x.protocol.grid_strengths}{[n]} \resultplural{v4x.protocol.grid_strengths}{strength}{strengths}, including $a=\resultnum{v4x.protocol.zero}{[value]}$.
+The separate gaps-as-misses reference was \resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered}{[n]} of \resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{[n]} \resultplural{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{repetition}{repetitions} with a curve.
+There were \resultnum{v4x.x6.x6a.without_curve}{[n]} \resultplural{v4x.x6.x6a.without_curve}{repetition}{repetitions} without a curve and \resultnum{v4x.x6.x6a.repetitions.errors}{[n]} recorded repetition \resultplural{v4x.x6.x6a.repetitions.errors}{error}{errors}. These counts and incomplete jobs are reported outside the computed coverage denominators.
+Table~\ref{tab:v4x-x6-denominators} states the conditioning for each cellwise reference: successful complete cell pipelines for X6b and complete gap-free units for the X6a primary readings.
+
+% X6-READINGS: counts refer to tabulated D1 coverage references, never cells
+% pooled as repetitions. Retain the particular Wilson interval from the table.
+\paragraph{X6: no undercoverage detected.}
+We did not detect undercoverage under the declared criterion in \resultnum{v4x.x6.x6a.count.adequate}{[n]} X6a and \resultnum{v4x.x6.x6b.count.adequate}{[n]} X6b coverage references against D1 (\texttt{adequate}).
+Their Wilson upper endpoints were at least \resultnum{v4x.protocol.x6.nominal}{[value]}; Table~\ref{tab:v4x-x6} gives each covered count, denominator and interval.
+
+\paragraph{X6: below-nominal reference.}
+The counts were \resultnum{v4x.x6.x6a.count.subnominal}{[n]} X6a \resultplural{v4x.x6.x6a.count.subnominal}{reference}{references} and \resultnum{v4x.x6.x6b.count.subnominal}{[n]} X6b \resultplural{v4x.x6.x6b.count.subnominal}{reference}{references} with Wilson upper endpoints below \resultnum{v4x.protocol.x6.nominal}{[value]} but at least \resultnum{v4x.protocol.x6.failure}{[value]} against D1 (\texttt{subnominal}).
+These intervals give evidence of undercoverage under that criterion in the stated denominators.
+
+\paragraph{X6: failure criterion.}
+The Wilson upper endpoint was below \resultnum{v4x.protocol.x6.failure}{[value]} in \resultnum{v4x.x6.x6a.count.failure}{[n]} X6a and \resultnum{v4x.x6.x6b.count.failure}{[n]} X6b coverage references against D1 (\texttt{failure}).
+The count includes separately tabulated primary and gaps-as-misses rows against D1; it does not count distinct cells. Their covered counts and intervals retain their declared conditioning.
+
+\paragraph{X6: no reading.}
+No coverage reading was assigned to \resultnum{v4x.x6.x6a.count.no-reading}{[n]} X6a \resultplural{v4x.x6.x6a.count.no-reading}{reference}{references} and \resultnum{v4x.x6.x6b.count.no-reading}{[n]} X6b \resultplural{v4x.x6.x6b.count.no-reading}{reference}{references} because each fell below the minimum of \resultnum{v4x.x6.minimum_complete_repetitions}{[n]} complete \resultplural{v4x.x6.minimum_complete_repetitions}{repetition}{repetitions} against D1 (\texttt{no reading}).
+Counts and Wilson intervals, where available, are retained without a coverage verdict.
+
+\paragraph{X6: reference precision.}
+Reference precision left \resultnum{v4x.x6.x6a.count.inconclusive-truth-precision}{[n]} X6a \resultplural{v4x.x6.x6a.count.inconclusive-truth-precision}{reference}{references} and \resultnum{v4x.x6.x6b.count.inconclusive-truth-precision}{[n]} X6b \resultplural{v4x.x6.x6b.count.inconclusive-truth-precision}{reference}{references} inconclusive against D1 (\texttt{inconclusive-truth-precision}).
+Available sensitivity results and the original nominal reading are retained (Table~\ref{tab:v4x-x6-precision}).
+
+% X6-UNAVAILABLE: select when x6a.band.vs_d1 == null, or per cell with vs_d1 null.
+\paragraph{X6: unavailable procedural truth.}
+Where the procedural truth was unavailable, no D1 coverage reference was calculated.
+The truth estimates, errors, gaps and operational inventory remain recorded without a substituted truth or coverage denominator.
+
+\paragraph{X6: conservative flag.}
+A Wilson lower endpoint above \resultnum{v4x.protocol.x6.conservative}{[value]} produced the conservative flag in \resultnum{v4x.x6.x6a.count.conservative}{[n]} X6a coverage \resultplural{v4x.x6.x6a.count.conservative}{reference}{references} and \resultnum{v4x.x6.x6b.count.conservative}{[n]} D1 coverage \resultplural{v4x.x6.x6b.count.conservative}{reference}{references}.
+The flag applies only to each stated denominator.
+
+% X6-TRUTH: always; no coverage verdict if the D1 truth is unavailable against D1.
+\paragraph{X6: procedural and approximate population truth.}
+The primary truth conditions on successful D1 pipelines and includes matching with \resultnum{v4x.x3.sizes.matching_prose}{[n]} \resultplural{v4x.x3.sizes.matching_prose}{pair}{pairs} and the declared \resultnum{v4x.x3.sizes.retry_matching_prose}{[n]}-pair retries.
+The secondary truth uses approximate population matching with \resultnum{v4x.x6.sizes.population_pairs_prose}{[n]} \resultplural{v4x.x6.sizes.population_pairs_prose}{pair}{pairs}.
+Table~\ref{tab:v4x-x6-truth} reports retry fractions and truth Monte Carlo errors, against the declared precision target of \resultnum{v4x.x6.truth_se_target}{[value]}.
+The secondary truth's Monte Carlo error omits the population-fit approximation error.
+The calibration exposure at the declared X6a signal share remains relevant to adaptation even though this analysis does not read boundaries.
+
+\paragraph{X6: matching diagnostics.}
+Table~\ref{tab:v4x-x6-diagnostics} reports standardized errors and their recorded bias flags, the D5 mean shift, empirical matching bias and the procedural-minus-population truth difference. It also reports fit residuals, amplification and the ratio of mean squared error to mean squared standard error.
+These diagnostics retain their own success conditioning and reference-precision limits.
+
+% X7-SCOPE: always with X7; the comparison and its common limits, stated once.
+\paragraph{X7: scope.}
+X7 compares an LDA on expanded features with the frozen-feature LDA on paired exploratory seeds at every response signal share (Tables~\ref{tab:v4x-x7}, \ref{tab:v4x-x7-boundaries} and~\ref{tab:v4x-x7-deltas}); errors and gaps of the expanded-feature arm are recorded separately from those of the frozen-feature arm.
+Changing feature dimension changes estimation and regularization as well as information, so a richer fitted LDA establishes neither an information ceiling nor Bayes optimality.
+
+% X7: one branch per positive unit count, retaining invalid/censored states.
+\paragraph{X7: gain under the paired criterion.}
+In \resultnum{v4x.x7.count.far}{[n]} \resultplural{v4x.x7.count.far}{unit}{units}, the expanded-feature LDA gained relative to the frozen-feature LDA under the declared paired criterion (\texttt{far}).
+In these units, either the expanded boundary interval's upper endpoint was below the frozen-feature point boundary, or the paired AUC-difference intervals were positive at every grid strength from the expanded first boundary up to, but excluding, the frozen-feature first boundary (Tables~\ref{tab:v4x-x7-boundaries} and \ref{tab:v4x-x7-deltas}).
+The exact applicable predicate and any censoring are retained by unit.
+For this predicate, a frozen-feature first boundary not attained without point censoring is treated as beyond the grid.
+
+\paragraph{X7: local equivalence near the boundary.}
+In \resultnum{v4x.x7.count.close}{[n]} \resultplural{v4x.x7.count.close}{unit}{units}, the two LDAs showed local equivalence within $\pm\resultnum{v4x.x7.bootstrap.margin}{[value]}$ near their common grid boundary (\texttt{close}).
+The first point boundaries coincided and the paired intervals at that strength and its grid neighbours lay inside the declared margin.
+
+\paragraph{X7: inconclusive comparison.}
+The declared paired comparison was inconclusive in \resultnum{v4x.x7.count.inconclusive}{[n]} \resultplural{v4x.x7.count.inconclusive}{unit}{units} (\texttt{inconclusive}); the two boundaries and paired contrasts remain tabulated.
+
+\paragraph{X7: invalid comparison.}
+There \resultplural{v4x.x7.count.invalid}{was}{were} \resultnum{v4x.x7.count.invalid}{[n]} invalid \resultplural{v4x.x7.count.invalid}{unit}{units} (\texttt{invalid}) because a required zero-strength gate was invalid.
+\resultplural{v4x.x7.count.invalid}{Its}{Their} status remains beside any recorded curves, without a valid boundary interpretation.
+
+\paragraph{X7: censored comparison.}
+There \resultplural{v4x.x7.count.censored}{was}{were} \resultnum{v4x.x7.count.censored}{[n]} censored unit \resultplural{v4x.x7.count.censored}{reading}{readings} (\texttt{censored}).
+Point and interval censoring are retained separately for first and sustained boundaries; a missing crossing required by the paired rule is not converted into an AUC below target.
+
+\paragraph{X7: unavailable comparison.}
+There \resultplural{v4x.x7.count.unavailable}{was}{were} \resultnum{v4x.x7.count.unavailable}{[n]} unavailable \resultplural{v4x.x7.count.unavailable}{reading}{readings} (\texttt{unavailable}). \resultplural{v4x.x7.count.unavailable}{Its frozen-arm}{Their frozen-arm} and expanded-arm errors remain recorded.
+
+\paragraph{X7: incomplete comparison.}
+There \resultplural{v4x.x7.count.incomplete}{was}{were} \resultnum{v4x.x7.count.incomplete}{[n]} incomplete \resultplural{v4x.x7.count.incomplete}{unit}{units} at the operational cut (\texttt{incomplete}).
+The cell inventory recorded \resultnum{v4x.x7.inventory.recorded}{[n]} \resultplural{v4x.x7.inventory.recorded}{cell}{cells}, with \resultnum{v4x.x7.inventory.incomplete}{[n]} incomplete \resultplural{v4x.x7.inventory.incomplete}{cell}{cells}, \resultnum{v4x.x7.inventory.errors}{[n]} frozen-arm \resultplural{v4x.x7.inventory.errors}{error}{errors} and \resultnum{v4x.x7.inventory.gaps}{[n]} frozen-arm fit \resultplural{v4x.x7.inventory.gaps}{gap}{gaps}.
+
+% POST-HEADING: only with at least one post-release reading below.
+\subsection*{Exploratory readings beside the released boundary}
+
+% POST-AVAILABLE: each component has its own availability count.
+\paragraph{Available local readings.}
+After release, the first confirmatory point boundary selected an X3 cell with an available contrast at \resultnum{v4x.comparisons.count.x3.available}{[n]} response signal \resultplural{v4x.comparisons.count.x3.available}{share}{shares}. Both conditional X4 references were available at \resultnum{v4x.comparisons.count.x4.available}{[n]} \resultplural{v4x.comparisons.count.x4.available}{share}{shares} (Tables~\ref{tab:v4x-comparisons} and \ref{tab:v4x-selected-comparisons}).
+Selection used the first point boundary and did not interpolate strengths or select by the sustained boundary. A missing or gap-censored first point selects no cell, and a finite first point with a censored interval endpoint selects its exact cell with that limitation retained.
+The original X3 label, paired interval, X4 denominators, size flags and quantity labels remain subject to the same local reading limits.
+
+% POST-PARTIAL/UNAVAILABLE: retain original reasons, never treat absence as zero.
+\paragraph{Partial and unavailable readings.}
+For X4, \resultnum{v4x.comparisons.count.x4.partial}{[n]} response signal \resultplural{v4x.comparisons.count.x4.partial}{share had}{shares had} a partial reading, and \resultnum{v4x.comparisons.count.x4.unavailable}{[n]} \resultplural{v4x.comparisons.count.x4.unavailable}{had an unavailable reading}{had unavailable readings}. For X3, \resultnum{v4x.comparisons.count.x3.unavailable}{[n]} \resultplural{v4x.comparisons.count.x3.unavailable}{share had an unavailable reading}{shares had unavailable readings} (Table~\ref{tab:v4x-comparison-states}).
+Reasons distinguish a missing or censored confirmatory first boundary, a zero-strength boundary outside the X3 declaration, for which no neighbouring positive-strength cell is substituted, a missing aggregate or cell, a fit gap and a recorded error. Outside-domain states are recorded separately and are excluded from the unavailable X3 counts.
+Local availability retains the global main-curve validity mark.
+
+% POST-X1B/X7: side by side only; X7 is joined by r from its own aggregate.
+\paragraph{Twin and expanded-feature boundaries.}\phantomsection\label{supp:x1b-release}
+In the supplied post-release aggregate, the twin first boundary was available at \resultnum{v4x.comparisons.count.x1b.available}{[n]} response signal \resultplural{v4x.comparisons.count.x1b.available}{share}{shares}; at the other \resultnum{v4x.comparisons.count.x1b.unavailable}{[n]} it was censored at a gap, not reached on the complete eligible grid, or undefined for an invalid or unavailable unit (Tables~\ref{tab:v4x-comparison-states} and~\ref{tab:v4x-boundary-comparisons}). The full supplied X1b display retains every declared signal share, first and sustained records, intervals, statuses and separate censoring; an invalid or unavailable record is not replaced by the archived numerical account in the fixed supplement.
+In the supplied post-release aggregate, the twin first boundary was available at \resultnum{v4x.comparisons.count.x1b.available}{[n]} response signal \resultplural{v4x.comparisons.count.x1b.available}{share}{shares} (Tables~\ref{tab:v4x-comparison-states} and~\ref{tab:v4x-boundary-comparisons}). The full supplied X1b display retains every declared signal share, first and sustained records, intervals, statuses and separate censoring; an invalid or unavailable record is not replaced by the archived numerical account in the fixed supplement.
+In the supplied post-release aggregate, no twin first boundary was available. At all \resultnum{v4x.comparisons.count.x1b.unavailable}{[n]} response signal \resultplural{v4x.comparisons.count.x1b.unavailable}{share}{shares}, it was censored at a gap, not reached on the complete eligible grid, or undefined for an invalid or unavailable unit (Tables~\ref{tab:v4x-comparison-states} and~\ref{tab:v4x-boundary-comparisons}). The full supplied X1b display retains every declared signal share, first and sustained records, intervals, statuses and separate censoring; an invalid or unavailable record is not replaced by the archived numerical account in the fixed supplement.
+Table~\ref{tab:v4x-boundary-comparisons} places the twin and both exploratory LDA first boundaries beside the released $a^*(r)$, retaining their own intervals, statuses and censoring in the accompanying tables and catalog.
+Table~\ref{tab:v4x-stress-comparisons} records the misspecification comparisons; Table~\ref{tab:v4x-x1b-boundaries} retains the full twin boundary records. These displays add no between-curve test across the different seed sets and do not isolate network dependence.
+
+% POST-X5: select the applicable branch per condition and r from the table.
+\paragraph{Misspecification equivalent strength: available.}
+For \resultnum{v4x.comparisons.count.x5.equivalent.available}{[n]} available X5 condition--signal-share \resultplural{v4x.comparisons.count.x5.equivalent.available}{reading}{readings}, Table~\ref{tab:v4x-stress-comparisons} reports the first declared grid strength whose confirmatory point AUC equals or exceeds the misspecification AUC.
+
+\paragraph{Misspecification equivalent strength: censored.}
+A gap before the equivalent-strength attainment left \resultnum{v4x.comparisons.count.x5.equivalent.censored}{[n]} condition--signal-share \resultplural{v4x.comparisons.count.x5.equivalent.censored}{reading}{readings} censored at the recorded strength.
+
+\paragraph{Misspecification equivalent strength: above the grid.}
+There was no attainment on a complete eligible grid for \resultnum{v4x.comparisons.count.x5.equivalent.above-grid}{[n]} \resultplural{v4x.comparisons.count.x5.equivalent.above-grid}{reading}{readings}, retained as above the grid without interpolation or extrapolation.
+
+\paragraph{Misspecification interval: overlap.}
+At the released first boundary, \resultnum{v4x.comparisons.count.x5.interval.overlap}{[n]} misspecification \resultplural{v4x.comparisons.count.x5.interval.overlap}{interval}{intervals} overlapped the confirmatory band; touching an endpoint counts as overlap.
+
+\paragraph{Misspecification interval: above.}
+At the released first boundary, \resultnum{v4x.comparisons.count.x5.interval.above}{[n]} misspecification \resultplural{v4x.comparisons.count.x5.interval.above}{interval}{intervals} lay above the confirmatory band.
+
+\paragraph{Misspecification interval: below.}
+At the released first boundary, \resultnum{v4x.comparisons.count.x5.interval.below}{[n]} misspecification \resultplural{v4x.comparisons.count.x5.interval.below}{interval}{intervals} lay below the confirmatory band.
+
+\paragraph{Misspecification comparison: unavailable.}
+An invalid or incomplete main unit, a missing or censored first boundary, or an unavailable X5 estimate retains an unavailable reading and its original reason.
+The counts were \resultnum{v4x.comparisons.count.x5.equivalent.unavailable}{[n]} unavailable equivalent \resultplural{v4x.comparisons.count.x5.equivalent.unavailable}{strength}{strengths} and \resultnum{v4x.comparisons.count.x5.interval.unavailable}{[n]} unavailable interval \resultplural{v4x.comparisons.count.x5.interval.unavailable}{comparison}{comparisons}.
+An available equivalent strength can coexist with an unavailable interval comparison when the confirmatory first boundary is not attained.
+
+% TABLE INPUTS: fixed filenames, emitted by the export. No hand-written values.
+\input{generated/exploratory-status}
+\input{generated/exploratory-x3}
+\input{generated/exploratory-x3-attempts}
+\input{generated/exploratory-x4a}
+\input{generated/exploratory-x4b}
+\input{generated/exploratory-x4-normal}
+\input{generated/exploratory-x4-calibration}
+\input{generated/exploratory-x4-failures}
+\input{generated/exploratory-x4-paired}
+\input{generated/exploratory-x6-inventory}
+\input{generated/exploratory-x6}
+\input{generated/exploratory-x6-denominators}
+\input{generated/exploratory-x6-truth}
+\input{generated/exploratory-x6-precision}
+\input{generated/exploratory-x6-diagnostics}
+\input{generated/exploratory-x7}
+% X7 boundaries are included once by main.tex; retain that full display.
+\input{generated/exploratory-x7-deltas}
+\input{generated/exploratory-comparisons}
+\input{generated/exploratory-selected-comparisons}
+\input{generated/exploratory-comparison-states}
+\input{generated/exploratory-boundary-comparisons}
+\input{generated/exploratory-stress-comparisons}

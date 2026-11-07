@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "study": "inference-docking-v4",
+  "declared_before_running": true,
+  "phase1_commit": "de3457ce",
+  "project_commit": "37513841",
+  "seed_namespace": "ic-detection-boundary-v4-inference-docking-*",
+  "seed_derivation": "int.from_bytes(sha256('ic-detection-boundary-v4-inference-docking-<case>').digest()[:8], 'big'), except where the project hard-codes a seed that defines its stream (stop rule: 250925006), which is shared",
+  "default_continuous_tolerance": "abs(x_docking - x_project) <= 1e-12 + 1e-9*abs(x_project)",
+  "components": {
+    "1_profile_solver": {
+      "project": "src/ic_study/analysis/detection_boundary_v4.py:profile_match",
+      "docking": "docking_v4.solve_profile",
+      "adapter": "target = zeros(M=1024, 2); evaluate(phi, eta) = docking diffs(phi, eta), so project differences == docking diffs bytewise; eta box [0, 0.8]; identity=True iff an anchor is given",
+      "noise": "exact zero-mean alternating +/-0.02 rows, unless stated",
+      "cases": {
+        "S01_linear_interior": "phi0=0.6, eta0=0.2",
+        "S02_smooth_nonlinear_interior": "tanh L1, bilinear L2, root phi=0.55 eta=0.3",
+        "S03_lower_face": "phi0=0.6, eta0=-0.05",
+        "S04_eta_beyond_upper": "phi0=0.5, eta0=1.2",
+        "S05_phi_beyond_upper_on_face": "phi0=1.2, eta0=0, c12=0",
+        "S06_phi_beyond_lower_on_face": "phi0=-0.2, eta0=0, c12=0",
+        "S07_corner": "phi0=0.999, eta0=0",
+        "S08_decreasing_profile": "phi0=0.5, eta0=0.3, s2=-1",
+        "S09_hump_profile": "L2 = -0.1 + sin(12 eta)",
+        "S10_discrete_stairs_L1": "L1 = floor(50 phi)/50 - 0.3137 (never within tolerance)",
+        "S11_flat_L2": "L2 = -0.01 constant",
+        "S12_nan_region": "NaN rows when phi > 0.7, else S01",
+        "S13_exhausted_budget": "S01 with budget=5",
+        "S14_anchor_exact": "all-zero differences at (0.85, 0), identity family",
+        "S15_anchor_mean_zero_not_bytewise": "S01-like linear with root at the anchor, identity family",
+        "S16_one_param_interior": "fixed eta=0, phi0=0.4",
+        "S17_one_param_beyond_upper": "fixed eta=0, phi0=1.3",
+        "S18_one_param_endpoint": "fixed eta=0, phi0=0.0",
+        "S19_zero_noise_floor_tolerance": "S01 with noise 0 (SE=0, tolerance 1e-6)",
+        "S20_high_noise_cap_tolerance": "S01 with noise +/-1 (tolerance capped at 5e-5)",
+        "S21_near_threshold_endpoint": "one-param L1 = phi - 0.999 + 0.999*tol-sized offset at the upper endpoint",
+        "S22_steep_interior": "phi0=0.3, eta0=0.5, L1 slope 20"
+      },
+      "criteria": {
+        "status": "exact equality",
+        "accepted_residuals": "for accepted statuses both implementations satisfy |gbar_k| <= tol_k on every fitted moment (checked on each side independently)",
+        "parameters": "for accepted statuses with an equal status: |dphi|, |deta| <= 1e-3. Roots are defined only up to the acceptance tolerance, and the search paths legitimately differ (warm start, inexact inner solves), so the 1e-12 criterion does not apply",
+        "evaluations": "reported, not compared; both <= budget"
+      }
+    },
+    "2_acceptance_tolerance": {
+      "project": "profile_match inner `at` (tolerance field of ProfileFit) and ProfileFit.se",
+      "docking": "docking_v4.acceptance_tolerance, docking_v4.paired_se",
+      "cases": "every ProfileFit returned in component 1, plus a one-parameter probe per SE value in {0, 1e-7, 4e-6 (floor kink), 1e-5, 2e-4 (cap kink), 1e-3}",
+      "criteria": {
+        "se": "default continuous tolerance",
+        "tolerance": "default continuous tolerance",
+        "accept_decision": "exact equality"
+      }
+    },
+    "3_validation": {
+      "project": "validate_fit; fit_cell (retry orchestration, via a stub PanelSource on a non-observed channel)",
+      "docking": "docking_v4.validate, docking_v4.fit_with_retry",
+      "cases": {
+        "V01_zero_residual": "2048x2 zero-mean differences, fit_se=1e-4",
+        "V02_at_threshold_minus": "residual = 4*sqrt(se_fit^2+se_val^2) * (1 - 1e-9)",
+        "V03_at_threshold_plus": "residual = 4*sqrt(...) * (1 + 1e-9)",
+        "V04_nan_row": "one NaN in L1",
+        "V05_zero_se_zero_residual": "all-zero differences, fit_se=0",
+        "V06_one_moment_large_L2": "moments=1, L2 residual huge",
+        "V07_equivalence_edge": "|res| + 2.2414 SE_val within 1e-9 of 0.0003",
+        "V08_random": "20 random Gaussian draws with residual 0..6 combined SE",
+        "R01_retry_then_pass": "first validation fails, retry passes",
+        "R02_retry_then_fail": "both validations fail",
+        "R03_solver_gap_no_retry": "solver returns a gap in attempt 0"
+      },
+      "criteria": {
+        "passed": "exact equality",
+        "z_abs": "default continuous tolerance on |z|",
+        "equivalence": "default continuous tolerance",
+        "equivalence_passed": "exact equality (project: all fitted moments; docking reports per moment, reduced with all())",
+        "retry": "exact equality of the attempt count, the M sequence and the final success"
+      }
+    },
+    "4_nuisance_propagation": {
+      "project": "project_shift, finite_differences, mean_feature_jacobian, nuisance_draws",
+      "docking": "docking_v4.linearised_shifts, fd_jacobian, propagate_nuisance, nuisance_variance",
+      "cases": {
+        "N01_project_shift_random": "500 random residuals, 20 random well-conditioned J (J00>0, Schur>0), points interior / eta=0 / eta=0.8 / phi near 0 and 0.999",
+        "N02_schur_nonpositive": "J with J11 - J10*J01/J00 <= 0",
+        "N03_fd_jacobian": "smooth nonlinear mean map at points interior, phi=0.995 (inward), eta=0.795 (inward), steps 0.01 and 0.005",
+        "N04_nuisance_draws_interior": "M=64, 20 networks/class, 3 features, draws=200, theta=(0.6,0.3); indices reproduced from the project's documented stream (SeedSequence(seed).spawn(3)); AUC by the project's discriminator (A12)",
+        "N05_nuisance_draws_face": "as N04 with theta=(0.6,0.0) and residual pushing eta below 0 (projection active)",
+        "N06_anchor": "anchor_nuisance vs docking anchor_exact=True"
+      },
+      "criteria": {
+        "dtheta": "default continuous tolerance",
+        "projected": "exact equality",
+        "fd_jacobian": "default continuous tolerance",
+        "auc_draws": "default continuous tolerance (identical indices and discriminator)",
+        "v_nuis_mean_shift": "default continuous tolerance",
+        "projected_fraction": "exact equality",
+        "mcse": "reported; formula differences are classified, not tolerated",
+        "anchor": "V_nuis = 0 and all shifts = 0 exactly"
+      }
+    },
+    "5_cluster_bootstrap": {
+      "project": "score_uncertainty",
+      "docking": "docking_v4.cluster_bootstrap_auc, se_total",
+      "cases": {
+        "B01_gaussian_icc05": "200 networks x 2 events x 9 slots, B=300",
+        "B02_integer_ties": "scores rounded to integers",
+        "B03_constant_scores": "all scores equal (AUC 0.5, SE 0)",
+        "B04_perfect_separation": "AUC = 1 in some slots",
+        "B05_single_network": "1 network per class (cluster count 1)",
+        "B06_production_size_distribution": "2000 networks, B=2000, one slot: SE_scores of both vs Monte Carlo SD over independent datasets (distributional, margin 15%)"
+      },
+      "shared_stream": "rng = default_rng(seed); per draw: null indices integers(n0, n0), then social indices integers(n1, n1), as the project documents its stream; the docking side receives these indices",
+      "criteria": {
+        "point": "default continuous tolerance",
+        "se_scores": "default continuous tolerance",
+        "se_total": "default continuous tolerance with the same V_nuis"
+      }
+    },
+    "6_band_gap_gate": {
+      "project": "band, curve_report (-> detection_boundary.boundary_report / boundary / sustained_boundary)",
+      "docking": "docking_v4.band, docking_v4.boundaries",
+      "cases": {
+        "G01_band_random": "10 random Uncertainty-equivalent inputs; compare critical and bands",
+        "G02_band_floor_degenerate": "zero SE, constant replicates: critical >= 2.7729 on both",
+        "C01_all_available": "monotone crossing at 0.10",
+        "C02_gap_before_crossing": "gap at a=0.03",
+        "C03_gap_after_crossing": "gap at a=0.60",
+        "C04_gap_top": "gap at a=0.90",
+        "C05_gap_a0": "a=0 unavailable",
+        "C06_null_gate_fail": "band at a=0 excludes 0.5",
+        "C07_no_crossing": "all AUC < 0.70",
+        "C08_exact_target_tie": "AUC exactly 0.70 at a=0.03 (inclusive)",
+        "C09_nonmonotone": "dip after crossing",
+        "C10_sustained_across_gap": "all AUC >= 0.70 from a=0.01 with a gap at a=0.03 (A18)",
+        "C11_crossing_at_a0_valid_gate": "AUC at a=0 is 0.72 with band containing 0.5"
+      },
+      "band_inputs_for_C_cases": "for the gap and censoring rules, both sides receive identical lower/upper arrays (the project's band output on the available slots), so only the rules are compared",
+      "criteria": {
+        "critical_lower_upper": "default continuous tolerance",
+        "first_sustained_and_interval_ends": "exact equality (None included)",
+        "censoring_reason_presence": "exact equality of whether an end is censored by a gap",
+        "null_gate_unit_validity": "exact equality"
+      }
+    },
+    "7_stop_rule_allowances": {
+      "project": "v4_gate.g0_gap_binding, v4_criteria.dispersion (failure_allowance_met), refit_ratio (allowance), fd_stability, failure_allowance_probability",
+      "docking": "docking_v4.stop_rule_mc, stop_rule_exact, g2_allowance_pass, g2c_allowance_pass, fd_stability_pass",
+      "cases": {
+        "J01_gaps_0_to_6_seven_cells": "shared seed 250925006, 200000 simulations",
+        "J02_six_cells": "gaps in {0,2}, 6 cells (pooled allowance 12)",
+        "A01_g2_patterns": "per-cell failure patterns at and around 5/100 and ceil(0.02*pipelines)",
+        "A02_g2c_patterns": "failures 3/4 of 100 and 2/3 of 40",
+        "A03_fd_medians": "ratios at 0.8/1.25 edges, 0/0, x/0"
+      },
+      "criteria": {
+        "pass_probability_shared_seed": "exact equality (same documented draw order)",
+        "pass_probability_vs_exact": "|mc - exact| <= 4*sqrt(p(1-p)/200000) on both sides",
+        "stop_decision": "exact equality",
+        "allowance_decisions": "exact equality"
+      }
+    }
+  },
+  "classification": {
+    "a": "spec ambiguity (reading differs; both defensible under the spec text)",
+    "b": "docking bug (fixed in the docking code, recorded)",
+    "c": "probable project mismatch (file:line, spec quote, minimal reproducer)"
+  }
+}

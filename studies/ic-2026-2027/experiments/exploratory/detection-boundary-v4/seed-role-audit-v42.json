@@ -1,0 +1,75 @@
+{
+  "kind": "calibration-seed-role-audit",
+  "supersedes": "seed-role-audit.json",
+  "materials": 13129728,
+  "unique_seeds": 13129728,
+  "collisions": 0,
+  "gate_plans": {
+    "G0": 1,
+    "G1b": 5000,
+    "G1c": 150,
+    "G2": 700,
+    "G2c": 142
+  },
+  "unique_plans": 5993,
+  "phases": [
+    "match",
+    "validate",
+    "train",
+    "check",
+    "reference",
+    "stencil",
+    "nuisance",
+    "bootstrap"
+  ],
+  "roles": [
+    "error",
+    "heap",
+    "mask",
+    "network",
+    "null-state",
+    "state"
+  ],
+  "attempts": [
+    0,
+    1
+  ],
+  "indices_per_plan_role_phase_attempt": 16,
+  "full_index_range_representatives": [
+    {
+      "repetition": 0,
+      "block": 0,
+      "gate": false
+    },
+    {
+      "repetition": 0,
+      "block": 100,
+      "gate": true
+    },
+    {
+      "repetition": 0,
+      "block": 200,
+      "gate": true
+    },
+    {
+      "repetition": 0,
+      "block": 300,
+      "gate": true
+    },
+    {
+      "repetition": 0,
+      "block": 400,
+      "gate": true
+    }
+  ],
+  "indices_per_representative": 8192,
+  "intentional_aliases": [
+    "G0 cells share one seed plan",
+    "matching and validation target/null share selected innovations",
+    "stencils reuse base-phase innovations",
+    "G2c null and social reference use baseline repetition zero"
+  ],
+  "confirmatory_seeds_derived": 0,
+  "implementation_sha256": "c1f519a5dd0c195f3824efa7b5e81002df6afe04f2adafc94815b260ceb7e843",
+  "script_sha256": "7610e028e89e36d49fbb3b0f2734b0d495406830be224c442ae10a6de8c7ea7b"
+}

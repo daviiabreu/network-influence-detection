@@ -1,0 +1,19 @@
+% Exploratory analyses in full (Section S7). Reorganized during the journal
+% revision (agent S, 2026-10-13) from the supplement of the rule-assembled
+% attempt. Declarations: experiments/exploratory/detection-boundary-v4-exploratory/
+% (README.md and declaration.json for X1-X2; README-x3-x7.md and
+% declaration-x3-x7.json for X3-X7); reading restrictions of 29 September 2026.
+
+This section reports the exploratory analyses in full. They answer objections raised by an internal review on 28 September 2026 and were declared that day, before their implementation and before any confirmatory result; Table~\ref{tab:glossary-analyses} maps their codes to plain names. They leave the frozen protocol unchanged, use seeds disjoint from every confirmatory and gate namespace, and are not part of the confirmatory estimand; none can be promoted to confirmatory evidence. Their sizes, cells, statistics and readings were fixed in the declarations before any output was read. X1a, X1b, X2 and X5 (which runs only at zero strength) do not estimate the confirmatory curve, and their declarations let them be read when they finished; X3, X4, X6 and X7 use the confirmatory cells against B and stayed sealed until the results became available. Their machine labels were computed by the declared rules and are not changed here; they were read under writing restrictions recorded on 29 September 2026, before any of them was opened, and the comparisons with the confirmatory curve are readings made after the results became available. The cellwise contrasts have no multiplicity correction and no whole-curve reading.
+
+\paragraph{Frozen labels.}
+Several declared readings use three-way labels whose last value is ``inconclusive''. For the free-share contrast (X3) and the paired single-panel difference (X4), a contrast is a reduction when its interval lies entirely below zero and is equivalent when its interval lies inside the declared margin ($\pm$\resultnum{v4x.x3.summary.margin}{0.02} for X3, $\pm$\resultnum{v4x.x4.summary.single_panel_effect.margin}{0.05} for X4); for the expanded-feature classifier (X7) the expanded-feature LDA shows a gain over the frozen-feature LDA under a declared paired criterion (machine label far) or local equivalence (close). ``Inconclusive'' is the frozen label for every other case: neither the declared reduction (or gain) criterion nor the equivalence criterion was met. It includes intervals that lie entirely above zero, which are clear about direction; the label does not mean ordinary statistical uncertainty about the sign of a contrast. The tables print it as ``neither''. The tables also translate the catalog's ``unavailable'' by meaning (Table~\ref{tab:glossary-states}).
+
+\subsection{Execution status}\label{sec:x-status}
+
+Every declared unit of X3--X7 finished before the declared cut (9 October 2026 at 23:59 America/Sao\_Paulo), with no execution errors. X3 recorded \resultnum{v4x.x3.recorded}{72} cells, with \resultnum{v4x.x3.incomplete}{0} incomplete, \resultnum{v4x.x3.errors}{0} execution errors and \resultnum{v4x.x3.gaps}{18} fit gaps. X4a recorded \resultnum{v4x.x4a.recorded}{81} cells and X4b \resultnum{v4x.x4b.recorded}{27}, with \resultnum{v4x.x4a.incomplete}{0} and \resultnum{v4x.x4b.incomplete}{0} incomplete; X4a had \resultnum{v4x.x4a.errors}{0} execution errors and \resultnum{v4x.x4a.gaps}{4} fit gaps, and X4b had \resultnum{v4x.x4b.errors}{0} execution errors and \resultnum{v4x.x4b.gaps}{1} fit gap (Table~\ref{tab:v4x-status}). The inventories of X1, X2 and X5 are given with each analysis, and that of X6 in Section~\ref{sec:x6}.
+
+\input{generated/exploratory-status}
+
+\input{esm/exploratory-x1-x2}
+\input{esm/exploratory-x3-x7}

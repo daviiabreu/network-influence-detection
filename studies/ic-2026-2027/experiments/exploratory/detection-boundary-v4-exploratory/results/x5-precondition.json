@@ -1,0 +1,259 @@
+{
+ "schema": "ic-study.v4-exploratory-x3-x7-precondition.v1",
+ "name": "x5",
+ "label": "exploratory; never promoted to confirmatory evidence",
+ "declaration": {
+  "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219",
+  "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65"
+ },
+ "rule": "frozen executor and successor executor at its neutral setting, same successor unit and seeds, declared sizes, separate processes on one host and commit; every file of each cell store equal byte for byte except access.jsonl, whose (action, key) sequence must be equal",
+ "size": 10626,
+ "cells": [
+  {
+   "a": 0.0,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "index": 0,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "anchor-exact"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_successor_and_host_class": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "71f80a374bec2ce12a5356c111f0fe73d7d5ced2a0d84029c9dde2ec59a7d6a3",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 577,
+   "checkpoints": 568,
+   "checkpoints_sha256": "5f10102e85289c6c1ccd9b0cc2d4a09b0932bdafd8ae837e735a7512271eaaf5",
+   "sha256": {
+    "eta-shifts.npy": "f2af4ae0b45266513ec96fe63bd3883e1453f3ba0db8dcabd53ef38c945e3ab1",
+    "nuisance.npy": "f2af4ae0b45266513ec96fe63bd3883e1453f3ba0db8dcabd53ef38c945e3ab1",
+    "phases.jsonl": "e19eaca452f3c4026308aba8dc753c9c41a2302105336fb69dd38001d794b966",
+    "provenance.json": "9858ed22a5a1401bdb527e9c3549e8f4aba46921fd11ef2c76af1e4f5d2a9117",
+    "result.json": "c21917a9047714d1cfab07e7c47949fd2f39fdb582bb0e684e61e9ea486ab4a3",
+    "scores0.npy": "a3fa87d8a7c1bc261cfd9cb028554e8f5f1078444f6d98cb85dbebbd9bad3952",
+    "scores1.npy": "e0d6bc3d5906a8d0a580569925ae1f1725ffa23446d9362e441d8f018a57ae9d",
+    "seal.json": "98e1951889afa188cd66d3c0f5b80ece1e45a4025452bfe80d8f98c178e11aab",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T02:18:35+00:00",
+     "wall_seconds": 940.3557802659925,
+     "cpu_seconds": 894.332573092
+    },
+    "successor": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T02:19:11+00:00",
+     "wall_seconds": 976.1080698430305,
+     "cpu_seconds": 931.1027009000001
+    }
+   }
+  },
+  {
+   "a": 0.0,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "index": 0,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "anchor-exact"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_successor_and_host_class": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "71f80a374bec2ce12a5356c111f0fe73d7d5ced2a0d84029c9dde2ec59a7d6a3",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 577,
+   "checkpoints": 568,
+   "checkpoints_sha256": "e774959cbdc1b16f0f7b491cee6c88a022625b7eafa014c555e77dee9fdd7c4c",
+   "sha256": {
+    "eta-shifts.npy": "f2af4ae0b45266513ec96fe63bd3883e1453f3ba0db8dcabd53ef38c945e3ab1",
+    "nuisance.npy": "f2af4ae0b45266513ec96fe63bd3883e1453f3ba0db8dcabd53ef38c945e3ab1",
+    "phases.jsonl": "60d532b8036f63dbc74b4a32e77cbd184110598170b2b697084042e569504adb",
+    "provenance.json": "9858ed22a5a1401bdb527e9c3549e8f4aba46921fd11ef2c76af1e4f5d2a9117",
+    "result.json": "c21917a9047714d1cfab07e7c47949fd2f39fdb582bb0e684e61e9ea486ab4a3",
+    "scores0.npy": "9601afff64f4d98c53ab8a8f253571a608d51230ad6006fd215fcc8d88f510ff",
+    "scores1.npy": "42f1eaf35390ad5b94475f5bb697f7b28a7a69e401f46d0d847735043b7532e3",
+    "seal.json": "24133a8a7eef3eef15e029c303f172effa041972966bd95ed1389c2a6eb4e2d9",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T02:18:28+00:00",
+     "wall_seconds": 933.6516104579205,
+     "cpu_seconds": 890.2024273689999
+    },
+    "successor": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T02:19:25+00:00",
+     "wall_seconds": 989.7701580879511,
+     "cpu_seconds": 944.070728592
+    }
+   }
+  },
+  {
+   "a": 0.03,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "index": 4,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_successor_and_host_class": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "71f80a374bec2ce12a5356c111f0fe73d7d5ced2a0d84029c9dde2ec59a7d6a3",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 1371,
+   "checkpoints": 1362,
+   "checkpoints_sha256": "542ac304ef9b588cbfbc145bbe9860e229a2f8eb129a103460643b8286b28311",
+   "sha256": {
+    "eta-shifts.npy": "49781634e1365a2d3ce9861602199eaedb1783c31214c83a4d198b27656e4bce",
+    "nuisance.npy": "2651f3252e03799b6102d82b2b7949e8d33b64127d90f50bfdcb4329418177b1",
+    "phases.jsonl": "b704ccc5b2273c2e6b758c0fdff0e05a691a49af8b72904016e9aea891776b02",
+    "provenance.json": "9858ed22a5a1401bdb527e9c3549e8f4aba46921fd11ef2c76af1e4f5d2a9117",
+    "result.json": "3c2316647d058e6f6d40c23ce9b6b8052c20e16f7e75ab8178682342b2adbf75",
+    "scores0.npy": "4cf09d33db2a4193d9eb6932bac8256d1ba5f0f7e123af22f3b43462ec889a59",
+    "scores1.npy": "85801d65e2ebb51c91fdf90a4491ce0c4dcb209593d88b8cf201566f6336cdab",
+    "seal.json": "389915f5abeb3afa512970257f60de38feb7dd6d46a7f2e055c206710772c4ec",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T02:56:58+00:00",
+     "wall_seconds": 3243.5362740800483,
+     "cpu_seconds": 2951.826925445
+    },
+    "successor": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T02:59:59+00:00",
+     "wall_seconds": 3424.426057577948,
+     "cpu_seconds": 3131.591587461
+    }
+   }
+  },
+  {
+   "a": 0.3,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "index": 6,
+   "equal": true,
+   "result": true,
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "errors": {
+    "frozen": null,
+    "successor": null
+   },
+   "same_commit_size_successor_and_host_class": true,
+   "unit_provenance_equal": true,
+   "unit_provenance_sha256": "71f80a374bec2ce12a5356c111f0fe73d7d5ced2a0d84029c9dde2ec59a7d6a3",
+   "differing_files": [],
+   "access_sequence_equal": true,
+   "files": 1659,
+   "checkpoints": 1650,
+   "checkpoints_sha256": "f3b87777c0438fc39e962a57467237e4fab0cf56c97a07004440bbe7360e5934",
+   "sha256": {
+    "eta-shifts.npy": "424800764738b7503b2266a9aed38caee312eeacffbbe9b4e23aa3fe82019d34",
+    "nuisance.npy": "ba2237bc9640af07bda4e0b27b78022dedd274a13874f9e198da4fcf75b1ccb6",
+    "phases.jsonl": "62fd78de7d198056bacc3c06f4e1dbfbe5fa4a16ea497668eebbe36751974a7a",
+    "provenance.json": "9858ed22a5a1401bdb527e9c3549e8f4aba46921fd11ef2c76af1e4f5d2a9117",
+    "result.json": "7c6c959c37b987d60d2f0deb556d1bdc83827eea1bbbc9b3c1b539d4d7a91dca",
+    "scores0.npy": "dee2d5155f70a7c58f7544d9c280c3ac8111aef5661ad0b9ba4bc60047afd071",
+    "scores1.npy": "7c0b3e387ece86b778568d1e9258427a91aa5f20dab4bc57a2362f844e108f9e",
+    "seal.json": "1fee696665813951971e1c7f2a37066ade35b278b05a15cc6c9be6e4f8174231",
+    "worker-output.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "timing": {
+    "frozen": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T03:04:13+00:00",
+     "wall_seconds": 3677.738632827066,
+     "cpu_seconds": 3385.48251649
+    },
+    "successor": {
+     "started_utc": "2026-09-29T02:02:55+00:00",
+     "finished_utc": "2026-09-29T03:04:50+00:00",
+     "wall_seconds": 3715.270436058985,
+     "cpu_seconds": 3407.895398404
+    }
+   }
+  }
+ ],
+ "cells_reproduced_with_result": 4,
+ "passed": true,
+ "seeds": {
+  "namespace": "v4-exploratory-x3-x7",
+  "root": 20260928,
+  "material": "{namespace}|{root}|{analysis}|{block}|{phase}|{role}|{index}",
+  "block": "2 * block + attempt, the frozen layout",
+  "digest": "sha256(material)[:8] as big-endian unsigned"
+ },
+ "code": {
+  "commit": "c8e4861fdba24700d3ca802e337f81f103d65c57",
+  "tracked_tree_clean": true,
+  "lock_sha256": "2af4db0a2fdef85386a6998b5a27017443139a606103c04844050daaa03852d7"
+ },
+ "successor": {
+  "successor_sha256": {
+   "src/ic_study/simulation/v4_exploratory_x3x7.py": "1ab380c93d18c6b5b4797990df4da7b6f2cb7a880ec525b8ad7ef987ab097959",
+   "src/ic_study/simulation/v4_exploratory.py": "5487e7ebbdbc9d511d9b74115dfb5daa895341240be43a47e645e71ae83a6c0d",
+   "src/ic_study/simulation/v4_exploratory_x1b.py": "6053dba0070af8386e60ea4d3911e20b5cd1f14478fe0984d3e4e5939c92afd8",
+   "src/ic_study/simulation/v4_exploratory_x5.py": "017a213a2746b36520098f9d78271b17ae16fb7110b168fe5af2d71077c1e71f"
+  },
+  "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+  "frozen_python_files": 80,
+  "frozen_python_mismatched": [],
+  "declaration": {
+   "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219",
+   "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65"
+  }
+ },
+ "host": {
+  "hostname": "homelab",
+  "system": "Linux",
+  "release": "7.2.5-3-omarchy",
+  "machine": "x86_64",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+  "logical_cpus": 12,
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "threads": {
+   "OPENBLAS_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1"
+  }
+ },
+ "host_class": {
+  "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+  "system": "Linux",
+  "environment_sha256": "c9766467f7e2245590b2da6f5865c7a4b49eb71f3d69a9e971fd667cb9fe946a"
+ },
+ "verified_utc": "2026-09-29T03:09:37+00:00"
+}

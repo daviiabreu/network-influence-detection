@@ -1,0 +1,415 @@
+tier,family,channel,sensitivity,r,exposure,main_curve_flag,status,null_gate,gaps,gaps_screened,gaps_family_limit,gaps_solver,gaps_validation,gaps_dependency,gaps_propagation,a_star,a_star_lower,a_star_upper,a_s_star,a_s_star_lower,a_s_star_upper,region,derived_a_star_060,derived_a_star_060_lower,derived_a_star_060_upper,derived_a_star_080,derived_a_star_080_lower,derived_a_star_080_upper,nonmonotone_band,critical,max_t_above_floor
+1,B,observed,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.1,0.1,0.1,0.3,0.3,0.3,no,2.7989,yes
+1,B,observed,main,0.55,,,complete and valid,pass,2,0,0,2,0,0,0,0.1,0.1,0.3,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+1,B,observed,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.7729,no
+1,B,observed,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+1,B,observed,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,1,0,0,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+1,B,observed,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+1,B,observed,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,yes,2.7729,no
+1,B,observed,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,no,2.7729,no
+1,B,observed,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+2,A,observed,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,A,observed,main,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,A,observed,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,A,observed,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.3,0.3,yes,2.7729,no
+2,A,observed,main,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.3,0.3,yes,2.7729,no
+2,A,observed,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.3,0.3,yes,2.7729,no
+2,A,observed,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.1,0.3,yes,2.7729,no
+2,A,observed,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.3,yes,2.8397,yes
+2,A,observed,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+2,C,observed,main,0.50,,,complete but invalid,fail,1,0,0,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.55,,,complete but invalid,fail,2,0,0,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.60,,,complete but invalid,fail,2,0,0,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.65,,,complete but invalid,fail,2,0,0,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.70,calibration-exposed,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.75,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.80,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.85,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,C,observed,main,0.90,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+2,D,observed,main,0.50,,,complete and valid,pass,5,0,4,1,0,0,0,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,yes,2.7729,no
+2,D,observed,main,0.55,,,complete and valid,pass,4,0,3,1,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+2,D,observed,main,0.60,,,complete and valid,pass,5,0,4,0,0,0,1,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,no,2.7729,no
+2,D,observed,main,0.65,,,complete and valid,pass,4,0,4,0,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.7729,no
+2,D,observed,main,0.70,calibration-exposed,,complete and valid,pass,4,0,3,1,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+2,D,observed,main,0.75,,,complete and valid,pass,4,0,4,0,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+2,D,observed,main,0.80,,,complete and valid,pass,4,0,3,1,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+2,D,observed,main,0.85,,,complete and valid,pass,4,0,4,0,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+2,D,observed,main,0.90,,,complete and valid,pass,4,0,4,0,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+2,E,observed,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.8029,yes
+2,E,observed,main,0.55,,,complete and valid,pass,2,0,0,2,0,0,0,0.3,0.1,0.3,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,E,observed,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+2,E,observed,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.03,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+2,E,observed,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,1,0,0,0,0.1,0.1,0.3,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+2,E,observed,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8242,yes
+2,E,observed,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,E,observed,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+2,E,observed,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.3,0.1,0.3,yes,2.7729,no
+3,A,latent,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8157,yes
+3,A,latent,main,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.7729,no
+3,A,latent,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.8283,yes
+3,A,latent,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,3.0492,yes
+3,A,latent,main,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.7729,no
+3,A,latent,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+3,A,latent,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.7729,no
+3,A,latent,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+3,A,latent,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+3,A,ordinal_one,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,ordinal_one,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.8608,yes
+3,A,latent_rank,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.01,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.01,0.1,0.1,0.1,yes,2.7729,no
+3,A,latent_rank,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.003,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.03,0.03,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.01,0.001,0.03,0.1,0.1,0.1,no,2.8187,yes
+3,B,latent,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.003,0.03,0.1,0.1,0.1,no,2.7729,no
+3,B,latent,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.003,0.01,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.03,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.003,0.03,0.1,0.1,0.1,no,2.7729,no
+3,B,latent,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,B,latent,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.003,0.01,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,B,latent,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.03,0.03,0.03,0.03,small,0.01,0.003,0.01,0.1,0.1,0.1,yes,2.7729,no
+3,B,ordinal_one,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7729,no
+3,B,ordinal_one,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.8569,yes
+3,B,ordinal_one,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7729,no
+3,B,ordinal_one,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.1,0.1,0.1,0.1,no,2.7729,no
+3,B,ordinal_one,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.1,0.1,0.1,0.1,yes,2.8087,yes
+3,B,ordinal_one,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,yes,2.7729,no
+3,B,ordinal_one,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,B,ordinal_one,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+3,B,ordinal_one,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent_rank,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7729,no
+3,B,latent_rank,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.9340,yes
+3,B,latent_rank,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7961,yes
+3,B,latent_rank,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.1,0.1,0.1,0.1,no,2.7729,no
+3,B,latent_rank,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.1,0.1,0.1,0.1,yes,2.8011,yes
+3,B,latent_rank,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent_rank,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,B,latent_rank,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+3,B,latent_rank,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,C,latent,main,0.50,,,complete but invalid,fail,2,0,0,0,1,1,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7741,yes
+3,C,latent,main,0.55,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,main,0.60,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,main,0.65,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,3.0248,yes
+3,C,latent,main,0.70,calibration-exposed,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,main,0.75,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.1,0.03,0.1,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,yes,2.7729,no
+3,C,latent,main,0.80,,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,main,0.85,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.1,0.03,0.1,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,yes,2.7729,no
+3,C,latent,main,0.90,,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,ordinal_one,main,0.50,,,complete and valid,pass,1,0,0,0,0,1,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.3,0.1,0.3,yes,2.7729,no
+3,C,ordinal_one,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.3,0.3,0.3,no,2.7729,no
+3,C,ordinal_one,main,0.60,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.3,0.1,0.3,yes,2.9013,yes
+3,C,ordinal_one,main,0.65,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,0.3,0.1,0.3,yes,2.9936,yes
+3,C,ordinal_one,main,0.70,calibration-exposed,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,censored at gap a=0.3,0.1,censored at gap a=0.3,yes,2.7729,no
+3,C,ordinal_one,main,0.75,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,censored at gap a=0.3,0.1,censored at gap a=0.3,no,2.7729,no
+3,C,ordinal_one,main,0.80,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,yes,2.7729,no
+3,C,ordinal_one,main,0.85,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,censored at gap a=0.3,0.1,censored at gap a=0.3,no,2.7896,yes
+3,C,ordinal_one,main,0.90,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.03,censored at gap a=0.3,0.1,censored at gap a=0.3,no,2.7729,no
+3,C,latent_rank,main,0.50,,,complete but invalid,fail,2,0,0,0,1,1,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent_rank,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,C,latent_rank,main,0.60,,,complete and valid,pass,2,0,0,0,0,2,0,0.03,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,yes,2.8608,yes
+3,C,latent_rank,main,0.65,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent_rank,main,0.70,calibration-exposed,,complete and valid,pass,3,0,0,0,0,3,0,0.03,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,C,latent_rank,main,0.75,,,complete and valid,pass,3,0,0,0,0,3,0,0.03,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.01,0.01,0.1,0.1,0.1,no,2.7729,no
+3,C,latent_rank,main,0.80,,,complete and valid,pass,3,0,0,0,0,3,0,0.1,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,C,latent_rank,main,0.85,,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent_rank,main,0.90,,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,D,latent,main,0.50,,,complete and valid,pass,5,0,0,0,0,5,0,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,yes,2.7729,no
+3,D,latent,main,0.55,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent,main,0.60,,,complete and valid,pass,5,0,0,0,0,5,0,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,yes,2.7729,no
+3,D,latent,main,0.65,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent,main,0.70,calibration-exposed,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent,main,0.75,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent,main,0.80,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent,main,0.85,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent,main,0.90,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,ordinal_one,main,0.50,,,complete and valid,pass,5,0,0,0,0,5,0,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,yes,2.7729,no
+3,D,ordinal_one,main,0.55,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,ordinal_one,main,0.60,,,complete and valid,pass,5,0,0,0,0,5,0,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,yes,2.7729,no
+3,D,ordinal_one,main,0.65,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,ordinal_one,main,0.70,calibration-exposed,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,ordinal_one,main,0.75,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,ordinal_one,main,0.80,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.7729,no
+3,D,ordinal_one,main,0.85,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,ordinal_one,main,0.90,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent_rank,main,0.50,,,complete and valid,pass,5,0,0,0,0,5,0,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,yes,2.7729,no
+3,D,latent_rank,main,0.55,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,0.03,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent_rank,main,0.60,,,complete and valid,pass,5,0,0,0,0,5,0,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,yes,2.7729,no
+3,D,latent_rank,main,0.65,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent_rank,main,0.70,calibration-exposed,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent_rank,main,0.75,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,0.01,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent_rank,main,0.80,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,0.03,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.7729,no
+3,D,latent_rank,main,0.85,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,latent_rank,main,0.90,,,complete and valid,pass,4,0,0,0,0,4,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,E,latent,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.03,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.003,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.003,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.03,0.03,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.01,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.01,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,ordinal_one,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.1,0.1,0.1,0.3,yes,2.8350,yes
+3,E,ordinal_one,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.8087,yes
+3,E,ordinal_one,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,no,2.7729,no
+3,E,ordinal_one,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,ordinal_one,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.1,0.1,0.1,0.1,yes,2.7729,no
+3,E,ordinal_one,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+3,E,ordinal_one,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,E,ordinal_one,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,ordinal_one,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,E,latent_rank,main,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.1,0.1,0.1,0.3,yes,2.8130,yes
+3,E,latent_rank,main,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.01,0.03,0.1,0.1,0.3,no,2.7848,yes
+3,E,latent_rank,main,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,no,2.7729,no
+3,E,latent_rank,main,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.3,no,2.7729,no
+3,E,latent_rank,main,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.1,0.1,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7729,no
+3,E,latent_rank,main,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+3,E,latent_rank,main,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent_rank,main,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+3,E,latent_rank,main,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,A,observed,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,0.1,0.1,0.3,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.6,0.6,>0.9,not reached (>0.9),0.6,>0.9,indeterminate,0.1,0.1,0.1,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.6,0.3,0.3,>0.9,large,0.1,0.03,0.1,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.03,0.1,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.03,0.03,0.1,not reached (>0.9),0.6,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.03,0.03,0.1,0.6,0.6,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.03,0.03,0.1,0.6,0.6,>0.9,yes,2.7729,no
+3,A,observed,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.03,0.01,0.03,0.3,0.3,0.6,yes,2.7729,no
+3,A,observed,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.3,0.3,0.3,no,2.7729,no
+3,A,latent,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,latent,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,A,ordinal_one,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.03,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.001,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,A,ordinal_one,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.003,0.001,0.003,0.03,0.01,0.03,yes,2.7729,no
+3,B,observed,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,0.1,0.1,0.3,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,B,observed,mobility,0.55,,,complete and valid,pass,2,0,0,2,0,0,0,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),0.1,0.1,0.3,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,yes,2.7729,no
+3,B,observed,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.6,0.3,0.3,>0.9,large,0.1,0.03,0.1,not reached (>0.9),>0.9,>0.9,yes,2.8224,yes
+3,B,observed,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.03,0.1,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,B,observed,mobility,0.70,calibration-exposed,,complete and valid,pass,1,0,0,1,0,0,0,0.3,0.3,0.3,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.03,0.03,0.1,censored at gap a=0.9,0.6,censored at gap a=0.9,no,2.7729,no
+3,B,observed,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.03,0.03,0.1,not reached (>0.9),0.6,>0.9,yes,2.7729,no
+3,B,observed,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.03,0.03,0.1,0.6,0.6,>0.9,yes,2.7729,no
+3,B,observed,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.03,0.03,0.03,0.6,0.3,0.6,yes,2.7729,no
+3,B,observed,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.3,0.3,0.3,no,2.7729,no
+3,B,latent,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.001,0.001,0.001,0.001,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,latent,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,B,ordinal_one,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,B,ordinal_one,mobility,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.01,0.01,0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.003,0.001,0.003,0.03,0.01,0.03,yes,2.7729,no
+3,B,ordinal_one,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.001,0.01,0.01,0.01,yes,2.7729,no
+3,B,ordinal_one,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,no,2.7729,no
+3,B,ordinal_one,mobility,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.01,0.01,0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,B,ordinal_one,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.003,0.01,0.01,0.003,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,B,ordinal_one,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,B,ordinal_one,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.001,0.001,0.003,0.01,0.01,0.03,yes,2.7729,no
+3,B,ordinal_one,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01,small,0.003,0.001,0.003,0.03,0.01,0.03,yes,2.7729,no
+3,C,observed,mobility,0.50,,,complete but invalid,fail,1,0,0,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+3,C,observed,mobility,0.55,,,complete but invalid,fail,2,0,0,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.60,,,complete but invalid,fail,2,0,0,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.65,,,complete but invalid,fail,2,0,0,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.70,calibration-exposed,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.75,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.80,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.85,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,observed,mobility,0.90,,,complete but invalid,fail,3,0,0,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.50,,,complete but invalid,fail,2,0,0,0,1,1,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.55,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.60,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.65,,,complete but invalid,fail,3,0,0,0,1,2,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.70,calibration-exposed,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.75,,,complete and valid,pass,3,0,0,0,0,3,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,C,latent,mobility,0.80,,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,latent,mobility,0.85,,,complete and valid,pass,3,0,0,0,0,3,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.003,yes,2.7729,no
+3,C,latent,mobility,0.90,,,complete but invalid,fail,4,0,0,0,1,3,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,no,2.7729,no
+3,C,ordinal_one,mobility,0.50,,,complete and valid,pass,1,0,0,0,0,1,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.60,,,complete and valid,pass,2,0,0,0,0,2,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.65,,,complete and valid,pass,2,0,0,0,0,2,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.70,calibration-exposed,,complete and valid,pass,3,0,0,0,0,3,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.75,,,complete and valid,pass,3,0,0,0,0,3,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.80,,,complete and valid,pass,3,0,0,0,0,3,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.85,,,complete and valid,pass,3,0,0,0,0,3,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,C,ordinal_one,mobility,0.90,,,complete and valid,pass,3,0,0,0,0,3,0,0.003,0.003,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.01,0.01,no,2.7729,no
+3,D,observed,mobility,0.50,,,complete and valid,pass,5,0,4,1,0,0,0,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,censored at gap a=0.01,yes,2.7729,no
+3,D,observed,mobility,0.55,,,complete and valid,pass,4,0,3,1,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,observed,mobility,0.60,,,complete and valid,pass,5,0,4,0,0,0,1,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,censored at gap a=0.003,yes,2.7729,no
+3,D,observed,mobility,0.65,,,complete and valid,pass,4,0,4,0,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.7729,no
+3,D,observed,mobility,0.70,calibration-exposed,,complete and valid,pass,4,0,3,1,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,yes,2.7729,no
+3,D,observed,mobility,0.75,,,complete and valid,pass,4,0,4,0,0,0,0,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),0.03,0.01,0.03,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.7729,no
+3,D,observed,mobility,0.80,,,complete and valid,pass,4,0,3,1,0,0,0,censored at gap a=0.1,0.03,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),0.01,0.01,0.03,censored at gap a=0.1,censored at gap a=0.1,censored at gap a=0.1,no,2.7729,no
+3,D,observed,mobility,0.85,,,complete and valid,pass,4,0,4,0,0,0,0,0.03,0.03,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.01,0.003,0.03,censored at gap a=0.1,0.03,censored at gap a=0.1,no,2.7729,no
+3,D,observed,mobility,0.90,,,complete and valid,pass,4,0,4,0,0,0,0,0.01,0.01,0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.003,0.001,0.003,0.03,0.03,0.03,no,2.7729,no
+3,D,latent,mobility,0.50,,,complete and valid,pass,5,0,0,0,0,5,0,0.001,0.001,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.001,0.001,censored at gap a=0.01,0.003,0.001,censored at gap a=0.01,yes,2.8109,yes
+3,D,latent,mobility,0.55,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.03,0.003,0.001,0.03,yes,4.3847,yes
+3,D,latent,mobility,0.60,,,complete and valid,pass,5,0,0,0,0,5,0,0.001,0.001,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.001,0.001,censored at gap a=0.003,0.001,0.001,censored at gap a=0.003,yes,3.3475,yes
+3,D,latent,mobility,0.65,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.03,0.003,0.001,0.03,yes,4.1368,yes
+3,D,latent,mobility,0.70,calibration-exposed,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.03,0.003,0.001,0.03,yes,3.7747,yes
+3,D,latent,mobility,0.75,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,censored at gap a=0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.001,0.001,censored at gap a=0.1,0.003,0.001,censored at gap a=0.1,yes,10.9917,yes
+3,D,latent,mobility,0.80,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.003,0.003,0.001,0.01,no,3.9313,yes
+3,D,latent,mobility,0.85,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.03,0.003,0.001,0.03,yes,4.4535,yes
+3,D,latent,mobility,0.90,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.001,0.003,yes,2.9950,yes
+3,D,ordinal_one,mobility,0.50,,,complete and valid,pass,5,0,0,0,0,5,0,0.003,0.001,censored at gap a=0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.001,0.001,censored at gap a=0.01,censored at gap a=0.01,0.001,censored at gap a=0.01,yes,4.3089,yes
+3,D,ordinal_one,mobility,0.55,,,complete and valid,pass,4,0,0,0,0,4,0,0.003,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.03,0.01,0.001,0.03,yes,4.1177,yes
+3,D,ordinal_one,mobility,0.60,,,complete and valid,pass,5,0,0,0,0,5,0,0.001,0.001,censored at gap a=0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.001,0.001,censored at gap a=0.003,censored at gap a=0.003,0.001,censored at gap a=0.003,yes,3.8530,yes
+3,D,ordinal_one,mobility,0.65,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.003,0.003,0.001,0.01,no,2.9170,yes
+3,D,ordinal_one,mobility,0.70,calibration-exposed,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.003,0.003,0.001,0.03,yes,3.2334,yes
+3,D,ordinal_one,mobility,0.75,,,complete and valid,pass,4,0,0,0,0,4,0,0.003,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.003,0.003,0.001,0.03,yes,5.3358,yes
+3,D,ordinal_one,mobility,0.80,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.01,no,2.8445,yes
+3,D,ordinal_one,mobility,0.85,,,complete and valid,pass,4,0,0,0,0,4,0,0.003,0.001,0.03,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.01,0.003,0.03,yes,3.0805,yes
+3,D,ordinal_one,mobility,0.90,,,complete and valid,pass,4,0,0,0,0,4,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.01,no,2.7729,no
+3,E,observed,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,0.3,0.1,>0.9,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,E,observed,mobility,0.55,,,complete and valid,pass,2,0,0,2,0,0,0,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),0.3,0.1,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,yes,2.7729,no
+3,E,observed,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,0.3,0.1,0.3,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,E,observed,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,0.1,0.1,>0.9,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,E,observed,mobility,0.70,calibration-exposed,,complete and valid,pass,1,0,0,1,0,0,0,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.9,0.1,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,yes,2.7729,no
+3,E,observed,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,not attained,not reached (>0.9),>0.9,>0.9,not reached (>0.9),>0.9,>0.9,yes,2.7729,no
+3,E,observed,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.6,0.6,0.6,0.6,0.6,0.6,large,0.3,0.3,0.3,not reached (>0.9),>0.9,>0.9,yes,2.7910,yes
+3,E,observed,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.3,0.3,0.3,0.3,0.3,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.8024,yes
+3,E,observed,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+3,E,latent,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.03,small,0.001,0.001,0.003,0.003,0.001,0.03,yes,3.9444,yes
+3,E,latent,mobility,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.001,0.001,0.01,no,3.5710,yes
+3,E,latent,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.001,0.001,0.003,no,3.3734,yes
+3,E,latent,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.001,0.001,0.001,0.001,small,0.001,0.001,0.001,0.001,0.001,0.003,yes,3.4272,yes
+3,E,latent,mobility,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.001,0.001,0.001,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.001,0.001,0.003,no,3.3525,yes
+3,E,latent,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.001,0.001,0.001,0.001,small,0.001,0.001,0.001,0.001,0.001,0.003,yes,3.1293,yes
+3,E,latent,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.001,0.001,0.001,0.001,small,0.001,0.001,0.001,0.001,0.001,0.003,yes,3.0887,yes
+3,E,latent,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.001,0.001,0.001,0.001,small,0.001,0.001,0.001,0.001,0.001,0.003,no,2.7729,no
+3,E,latent,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.001,0.001,0.001,0.001,small,0.001,0.001,0.001,0.001,0.001,0.003,yes,2.7729,no
+3,E,ordinal_one,mobility,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.003,0.001,0.03,0.003,0.001,0.03,small,0.001,0.001,0.003,0.003,0.001,0.03,yes,3.9960,yes
+3,E,ordinal_one,mobility,0.55,,,complete and valid,pass,2,0,0,0,0,2,0,0.003,0.001,0.01,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.003,0.003,0.001,0.01,yes,3.4838,yes
+3,E,ordinal_one,mobility,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.003,0.003,0.001,0.01,yes,3.2464,yes
+3,E,ordinal_one,mobility,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.001,0.001,0.003,0.001,0.001,0.003,small,0.001,0.001,0.001,0.003,0.001,0.01,yes,3.0427,yes
+3,E,ordinal_one,mobility,0.70,calibration-exposed,,complete and valid,pass,1,0,0,0,0,1,0,0.001,0.001,0.003,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,small,0.001,0.001,0.001,0.003,0.003,0.01,yes,2.9061,yes
+3,E,ordinal_one,mobility,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.003,0.001,0.003,0.003,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.01,yes,2.9916,yes
+3,E,ordinal_one,mobility,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.003,0.001,0.003,0.003,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.01,yes,2.7729,no
+3,E,ordinal_one,mobility,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.003,0.001,0.003,0.003,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.01,yes,2.7729,no
+3,E,ordinal_one,mobility,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.003,0.001,0.003,0.003,0.001,0.003,small,0.001,0.001,0.001,0.003,0.003,0.01,yes,2.7729,no
+4,B,observed,c025,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8227,yes
+4,B,observed,c025,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8082,yes
+4,B,observed,c025,0.60,,,complete and valid,pass,1,0,0,1,0,0,0,0.1,0.1,0.3,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c025,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7746,yes
+4,B,observed,c025,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c025,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c025,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,yes,2.7729,no
+4,B,observed,c025,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+4,B,observed,c025,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+4,B,observed,c050,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7867,yes
+4,B,observed,c050,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8539,yes
+4,B,observed,c050,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c050,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c050,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c050,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c050,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,yes,2.7729,no
+4,B,observed,c050,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+4,B,observed,c050,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+4,B,observed,d010,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.3,0.1,0.3,0.3,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+4,B,observed,d010,0.55,,,complete and valid,pass,1,0,0,1,0,0,0,censored at gap a=0.001,censored at gap a=0.001,censored at gap a=0.001,0.1,0.1,0.3,censored (gap),censored at gap a=0.001,censored at gap a=0.001,censored at gap a=0.001,censored at gap a=0.001,censored at gap a=0.001,censored at gap a=0.001,no,2.7978,yes
+4,B,observed,d010,0.60,,,complete and valid,pass,1,0,0,1,0,0,0,0.1,0.1,0.3,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,large,0.1,0.1,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,d010,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,d010,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,d010,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,d010,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,yes,2.7729,no
+4,B,observed,d010,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+4,B,observed,d010,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+4,B,observed,d020,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+4,B,observed,d020,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.3,0.1,0.1,0.3,large,0.1,0.03,0.1,0.3,0.3,0.3,no,2.7729,no
+4,B,observed,d020,0.60,,,complete and valid,pass,1,0,0,1,0,0,0,0.1,0.1,0.1,censored at gap a=0.6,censored at gap a=0.6,censored at gap a=0.6,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,d020,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,yes,2.7729,no
+4,B,observed,d020,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,yes,2.7729,no
+4,B,observed,d020,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,no,2.7729,no
+4,B,observed,d020,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+4,B,observed,d020,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+4,B,observed,d020,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+4,B,observed,c050-d020-exploratory,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c050-d020-exploratory,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.1,0.03,0.1,0.3,0.3,0.3,yes,2.8253,yes
+4,B,observed,c050-d020-exploratory,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.3,0.3,yes,2.7729,no
+4,B,observed,c050-d020-exploratory,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,yes,2.7729,no
+4,B,observed,c050-d020-exploratory,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,yes,2.7729,no
+4,B,observed,c050-d020-exploratory,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.3,no,2.7729,no
+4,B,observed,c050-d020-exploratory,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+4,B,observed,c050-d020-exploratory,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+4,B,observed,c050-d020-exploratory,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,no,2.7729,no
+5,B,observed,b000,0.50,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.3,0.1,0.3,no,2.7729,no
+5,B,observed,b000,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7729,no
+5,B,observed,b000,0.60,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.1,0.1,0.1,0.3,yes,2.7729,no
+5,B,observed,b000,0.65,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+5,B,observed,b000,0.70,calibration-exposed,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.01,0.03,0.1,0.1,0.1,no,2.7729,no
+5,B,observed,b000,0.75,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.1,0.1,0.1,0.1,0.1,large,0.03,0.03,0.03,0.1,0.1,0.1,yes,2.7729,no
+5,B,observed,b000,0.80,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+5,B,observed,b000,0.85,,,complete and valid,pass,0,0,0,0,0,0,0,0.1,0.03,0.1,0.1,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+5,B,observed,b000,0.90,,,complete and valid,pass,0,0,0,0,0,0,0,0.03,0.03,0.1,0.03,0.03,0.1,indeterminate,0.03,0.01,0.03,0.1,0.1,0.1,yes,2.7729,no
+5,B,observed,omega025,0.50,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.55,,,complete but invalid,fail,3,0,2,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.60,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.65,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.70,calibration-exposed,,complete but invalid,fail,3,0,2,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.75,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.80,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.85,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega025,0.90,,,complete but invalid,fail,3,0,3,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,yes,2.7729,no
+5,B,observed,omega050,0.50,,,complete but invalid,fail,9,0,8,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.55,,,complete but invalid,fail,9,0,6,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.60,,,complete but invalid,fail,9,0,8,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.65,,,complete but invalid,fail,9,0,8,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.70,calibration-exposed,,complete but invalid,fail,9,0,7,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.75,,,complete but invalid,fail,9,0,8,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.80,,,complete but invalid,fail,9,0,9,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.85,,,complete but invalid,fail,9,0,9,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega050,0.90,,,complete but invalid,fail,9,0,8,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.50,,,complete but invalid,fail,9,0,7,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.55,,,complete but invalid,fail,9,0,7,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.60,,,complete but invalid,fail,9,0,2,7,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.65,,,complete but invalid,fail,9,0,5,4,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.70,calibration-exposed,,complete but invalid,fail,9,0,5,4,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.75,,,complete but invalid,fail,9,0,7,2,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.80,,,complete but invalid,fail,9,0,6,3,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.85,,,complete but invalid,fail,9,0,2,7,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega075,0.90,,,complete but invalid,fail,9,0,8,1,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.50,,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.55,,,complete but invalid,fail,9,0,9,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.60,,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.65,,,complete but invalid,fail,9,0,9,0,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.70,calibration-exposed,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.75,,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.80,,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.85,,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+5,B,observed,omega100,0.90,,,complete but invalid,fail,9,0,0,9,0,0,0,suppressed,NA,NA,suppressed,NA,NA,NA,suppressed,NA,NA,suppressed,NA,NA,NA,NA,NA
+6,B,observed,steps24,0.50,,,complete and valid,pass,1,0,0,1,0,0,0,censored at gap a=0.9,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),0.6,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,yes,2.7729,no
+6,B,observed,steps24,0.55,,,complete and valid,pass,0,0,0,0,0,0,0,0.6,0.6,0.9,0.6,0.6,0.9,large,0.6,0.6,0.6,0.9,0.9,0.9,yes,2.7729,no
+6,B,observed,steps24,0.60,,,complete and valid,pass,2,0,0,2,0,0,0,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,yes,2.7729,no
+6,B,observed,steps24,0.65,,,complete and valid,pass,1,0,0,1,0,0,0,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,indeterminate,0.6,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,yes,2.7729,no
+6,B,observed,steps24,0.70,calibration-exposed,,complete and valid,pass,1,0,0,1,0,0,0,0.6,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.6,0.3,0.6,censored at gap a=0.9,0.6,censored at gap a=0.9,yes,2.7729,no
+6,B,observed,steps24,0.75,,,complete and valid,pass,1,0,0,1,0,0,0,0.6,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.6,0.3,0.6,censored at gap a=0.9,0.6,censored at gap a=0.9,yes,2.7729,no
+6,B,observed,steps24,0.80,,,complete and valid,pass,1,0,0,1,0,0,0,0.6,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.6,0.3,0.6,censored at gap a=0.9,0.6,censored at gap a=0.9,yes,2.7729,no
+6,B,observed,steps24,0.85,,,complete and valid,pass,2,0,0,2,0,0,0,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,censored (gap),censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,censored at gap a=0.3,yes,2.7729,no
+6,B,observed,steps24,0.90,,,complete and valid,pass,1,0,0,1,0,0,0,0.6,0.6,0.6,censored at gap a=0.9,censored at gap a=0.9,censored at gap a=0.9,large,0.6,0.3,0.6,0.6,0.6,0.6,yes,2.7729,no

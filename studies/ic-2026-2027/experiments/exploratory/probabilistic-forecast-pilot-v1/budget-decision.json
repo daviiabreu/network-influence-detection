@@ -1,0 +1,29 @@
+{
+  "format": "forecast-pilot-budget-decision-v1",
+  "recorded_at_utc": "2026-09-13T00:58:51.517769+00:00",
+  "spec_sha256": "7e8e0d4b8d61a2d64e3b9d32102ab905045d4d583fad40f5c71212ac4b3f054b",
+  "measurements": [
+    {
+      "members": 32,
+      "file": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/benchmark-r32.jsonl",
+      "sha256": "5da4db6753c93ae1fa1c906b813bb7300279835c5761e3af68b77cab8b3847cd",
+      "elapsed_seconds": 0.6136659159965347,
+      "generation": 0.571933061175514,
+      "scoring": 0.03041220406885259
+    },
+    {
+      "members": 64,
+      "file": "/Users/davi/.local/state/research-workbench/probabilistic-forecast-pilot-20260912/benchmark-r64.jsonl",
+      "sha256": "4c3f73fe0093b1949a1cdd3b8f24730feb4b98911ab3bda3db41b3cea79a3559",
+      "elapsed_seconds": 1.2303367079875898,
+      "generation": 1.136802075925516,
+      "scoring": 0.07804984421818517
+    }
+  ],
+  "projected_seconds": {
+    "128": 278.88545917725423,
+    "64": 143.09232777130092
+  },
+  "selected_precision_and_confirmation_members": 128,
+  "basis": "Timing only. Benchmark scores were not inspected. Integration quality was running concurrently; the benchmark may include contention. No subsequent budget choice may depend on score signs."
+}

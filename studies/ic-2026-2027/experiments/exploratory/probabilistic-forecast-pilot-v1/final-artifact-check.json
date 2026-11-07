@@ -1,0 +1,16 @@
+{
+  "format": "forecast-pilot-final-artifact-check-v1",
+  "recorded_at_utc": "2026-09-13T01:18:51.458528+00:00",
+  "validation_sha256": "a80010c436ddd2879b6f329a8c6ae1c1da766530b591ce543c825db1caafc824",
+  "structure": {
+    "command": "UV=/Users/davi/.local/bin/uv just structure",
+    "exit_code": 0,
+    "checks_passed": 7,
+    "all_report_files_existed_before_check": true
+  },
+  "staged_whitespace": {
+    "command": "git diff --cached --check",
+    "exit_code": 0
+  },
+  "scientific_state": "Exploratory pilot completed; continuation criterion not met; no final question, venue or ESS acceptance."
+}

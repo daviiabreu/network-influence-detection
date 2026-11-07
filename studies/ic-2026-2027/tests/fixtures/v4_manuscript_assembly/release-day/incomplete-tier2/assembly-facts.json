@@ -1,0 +1,54 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/assembly-notes.txt",
+        "sha256": "41d392c4d20a41161a765c7413a44c6f7f6f17d04dae5b4e7effba9abd617cb4"
+      },
+      "value": true
+    },
+    "main.boundary_nonmonotone": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/released-curves.json",
+        "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+      },
+      "value": false
+    },
+    "post.x5_supplied": {
+      "source": {
+        "locator": "artificial provenance.inputs.x5 and every by_r.x5_state",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/aggregates/comparisons.json",
+        "sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3"
+      },
+      "value": false
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/assembly-notes.txt",
+        "sha256": "41d392c4d20a41161a765c7413a44c6f7f6f17d04dae5b4e7effba9abd617cb4"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/assembly-notes.txt",
+        "sha256": "41d392c4d20a41161a765c7413a44c6f7f6f17d04dae5b4e7effba9abd617cb4"
+      },
+      "value": "not-run"
+    },
+    "tier2.boundaries_differ": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/released-curves.json",
+        "sha256": "a236d3a0fa513f74251b09a66f6029ff2674d2106fc5b3235101f2d17c4b5377"
+      },
+      "value": false
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

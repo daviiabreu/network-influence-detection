@@ -1,0 +1,106 @@
+% Exploratory analyses X1a, X1b, X2 and X5, integrated 2026-09-28/29.
+% Sources: detection-boundary-v4-exploratory/ declarations, REPORT.md and
+% results/x1a.json, x1b.json, x2.json and x5.json. EX01--EX15 are integrated
+% ledger rows. Review C corrections (2026-09-29) also map to RCxx rows.
+% No confirmatory result is reported here.
+
+\subsection*{Exploratory analyses X1a and X2}\label{supp:x1-x2}
+
+\paragraph{Status.}
+Both analyses were declared on 28 September 2026, before their implementation and before any confirmatory result, in answer to the internal pre-results review; they leave the frozen v4 protocol unchanged and cannot be promoted to confirmatory evidence. % EX01 DS10
+They used seeds disjoint from every confirmatory namespace, read no gate, tier or $a^*(r)$ output, and ran at commit \texttt{2f1777bb} on an exploration host with hash-verified frozen sources. % EX02
+A declared second stage, X1b, estimated the mean-field twin's own boundary against null B, $a^*_{MF}(r)$, with the frozen tier-1 fitting, validation, band, censoring and inversion rules, after a successor pipeline reproduced the frozen pipeline byte for byte in four cells with the original generator. % EX03
+All nine X1b units executed all nine strengths and passed the zero-strength gate; this operational status does not imply a gap-free band. % EX13 RC01
+Four cells were gaps: $a=0.60$ at $r=0.50$, and $a=0.90$ at $r=0.55$, 0.75 and 0.80. % EX13 RC02
+The first and sustained boundaries in these four units were censored at the gaps. % EX13 RC03
+The gap-free grids at $r=0.60$, 0.65, 0.70 and 0.85 did not attain AUC 0.70 in their point estimates. % EX13 RC04
+At $r=0.90$, the first and sustained point boundaries were $a=0.30$, with AUC 0.705939 and inverted intervals $[0.30,>0.90]$; the upper end was not reached on the grid. % EX13 RC05
+No lower band exceeded 0.70 at this $r$, so the point attainment does not support a strict one-sided crossing claim. % EX13 RC06
+Comparison of $a^*_{MF}(r)$ with the confirmatory $a^*(r)$ is restricted to authorized releases, shown side by side and labelled exploratory. % EX13 EX12
+The analyses below neither estimate nor imply the confirmatory $a^*(r)$. % EX12
+
+\paragraph{X1a: mean-field twin.}
+X1a asks whether the fixed discriminator separates the original generator from a Gaussian mean-field twin with matched conditional drift mean and variance. % EX04 RC07
+Its twin is the frozen interaction arm with the drift replaced by $m_t(z_{it})+\xi_{it}\sqrt{v_t(z_{it})/8}$, where $m_t(z)$ and $v_t(z)$ are the exact mean and variance of $f(z_{jt}-z)$ over the current population and $\xi_{it}$ is independent standard normal noise, before the same standardization and update. % EX04
+The contrast changes partner persistence, dependence between persons and the conditional distribution of the drift. % EX04 RC08
+In each of the 72 cells with $a\in G\setminus\{0\}$ and $r\in R$, both arms passed through the observed tier-1 channel, the frozen discriminant was trained on 2,000 panels per arm, and its AUC was computed on 2,000 reference networks with two events per arm, with a 95\% percentile bootstrap over the reference networks (1,000 resamples). % EX05
+The reading is per cell: an interval excluding 0.5 supports separability of these two generators under the trained discriminant; an interval containing 0.5 does not establish equivalence, and there is no multiplicity correction or whole-curve claim. % EX05 RC09
+
+Every interval contained 0.5 for $a\leq0.003$ (AUC 0.492--0.511), six of nine excluded it at $a=0.01$ (AUC 0.513--0.523 in those cells), and all excluded it from $a=0.03$ on, with AUCs of 0.534--0.565 at $a=0.03$, 0.623--0.716 at $a=0.10$, 0.840--0.974 at $a=0.30$ and at least 0.986 for $a\geq0.60$; none lay entirely below 0.5 (Table~\ref{tab:supp-x1a}). % EX06
+Intervals excluded 0.5 in 51 of the 72 cells, all with $a\geq0.01$, and were inconclusive in the other 21: the 18 cells with $a\leq0.003$ and the cells $r=0.50$, 0.60 and 0.75 at $a=0.01$. % EX06 RC10
+Over 4,000 reference panels per arm, mean lag correlations of arm and twin differed by less than 0.0007 for $a\leq0.01$. % EX07
+For $a\geq0.03$ the arm-minus-twin difference was positive at all five lags in 44 of 45 cells and rose with the lag in 43, for instance from 0.0002 at lag one to 0.0011 at lag five at $(a,r)=(0.03,0.70)$ and from 0.014 to 0.046 at $(0.90,0.70)$. % EX07
+These AUCs compare the arm with its twin, not with a null family, and bear on no confirmatory boundary. % EX12
+
+\paragraph{X2: drift contribution.}
+X2 simulated latent paths without channel or mask ($N=10{,}626$, 11 waves) through a reimplementation that exposes the standardized drift $\tilde\Delta_t$; all 360 paths, 10 replicates in each of 36 conditions, matched the frozen interaction path bit for bit. % EX08
+Per replicate, pooled least squares gave X2a, the partial $R^2$ of $\tilde\Delta_t$ added to $[1,z_t]$ in predicting $z_{t+1}$ (promised in the v1 protocol), and X2b, its incremental $R^2$ beyond a natural cubic spline of $z_t$. % EX08
+The conditions crossed $a\in G$, $b\in\{0.25,0\}$ and one or 24 steps per wave, and no reading rule was declared beyond summaries across replicates. % EX08
+X2a increased with $a$ for every $b$ and step count, from 0.0005 at $a=0.001$ to 0.6607 at $a=0.90$ with $b=0.25$ and one step and from 0.0007 to 0.8647 with $b=0$ (Table~\ref{tab:supp-x2}); 24 steps changed it little except with $b=0.25$ and $a\geq0.30$, where it was lower (0.5443 at $a=0.90$). % EX09
+X2b reached at most 0.0589 with $b=0.25$ and 0.3057 with $b=0$. % EX09
+The two measures have different denominators: X2a divides the gain in fit by the residual variance after $[1,z_t]$, X2b by the total variance of $z_{t+1}$, which persistence dominates ($R^2$ of $[1,z_t]$ 0.62--0.94). % EX10
+The spline added at most 0.025 to that $R^2$, and the drift's gain beyond the spline, divided by the residual variance as in X2a, was 0.95--1.23 times X2a (ratio of condition means, $a>0$), so a smooth function of the person's own state absorbs little of what the drift adds. % EX10
+
+\paragraph{Limitations.}
+The X1a intervals are conditional on the trained discriminant and omit training variability. % EX11
+The twin matches the drift's conditional mean and variance for a fresh draw of partners but replaces a mean of eight kernel values by Gaussian noise. % EX11 RC11
+X1a therefore does not identify a network-specific contribution, and the lag pattern does not decompose the distributional and dependence differences. % EX11 RC12
+Cells with the same $r$ share seeds, as in the frozen plan, and are not independent replicates. % EX11
+The per-step, latent $R^2$ values of X2 translate neither into AUCs nor to the observed scale. % EX11
+Both analyses ran on one host, and cross-host numerical equivalence was not tested. % EX11
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Exploratory analysis X1a: interaction arm against its mean-field twin under the fixed discriminant, by nominal strength $a$, over the nine values of $r\in R$. AUC: minimum--maximum over $r$, rounded to three decimals (1.000 means at least 0.9995). Excl.: cells whose 95\% bootstrap interval excludes 0.5. $\Delta L_k$: arm-minus-twin difference in mean lag-$k$ correlation over 4,000 reference panels per arm, $k=1,\ldots,5$; $\max|\Delta L_k|$ is taken over $k$ and $r$, and the last two columns count cells with $\Delta L_k>0$ at every $k$ and with $\Delta L_k$ rising in $k$. Source: \texttt{results/x1a.json}. Exploratory; these are not detection boundaries.}
+\label{tab:supp-x1a}
+\begin{tabular}{@{}lccccc@{}}
+\hline
+$a$ & AUC & Excl. & $\max|\Delta L_k|$ & $\Delta L_k>0$ & Rising \\
+\hline
+0.001 & 0.492--0.509 & 0/9 & 0.00024 & 2/9 & 1/9 \\
+0.003 & 0.496--0.511 & 0/9 & 0.00032 & 3/9 & 3/9 \\
+0.01 & 0.505--0.523 & 6/9 & 0.00069 & 6/9 & 3/9 \\
+0.03 & 0.534--0.565 & 9/9 & 0.00177 & 8/9 & 7/9 \\
+0.10 & 0.623--0.716 & 9/9 & 0.00563 & 9/9 & 9/9 \\
+0.30 & 0.840--0.974 & 9/9 & 0.01764 & 9/9 & 9/9 \\
+0.60 & 0.986--1.000 & 9/9 & 0.03916 & 9/9 & 9/9 \\
+0.90 & 1.000--1.000 & 9/9 & 0.06514 & 9/9 & 9/9 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table*}[htbp]
+\centering
+\footnotesize
+\caption{Exploratory analysis X2: realized contribution of the standardized drift to the next latent state, by nominal strength $a$, repulsion $b$ and steps per wave $s$. Entries are means over 10 replicates ($N=10{,}626$, 11 waves), rounded to four decimals; standard deviations across replicates are at most 0.0024 for X2a and 0.0012 for X2b, and both measures are below $2\times10^{-5}$ at $a=0$. X2a is the partial $R^2$ of the drift beyond $[1,z_t]$ (residual-variance denominator) and X2b its incremental $R^2$ beyond a natural cubic spline of $z_t$ (total-variance denominator), so the two blocks are not on one scale. Source: \texttt{results/x2.json}. Exploratory.}
+\label{tab:supp-x2}
+\begin{tabular}{@{}lcccccccc@{}}
+\hline
+ & \multicolumn{4}{c}{X2a, partial $R^2$} & \multicolumn{4}{c}{X2b, incremental $R^2$} \\
+ & \multicolumn{2}{c}{$b=0.25$} & \multicolumn{2}{c}{$b=0$} & \multicolumn{2}{c}{$b=0.25$} & \multicolumn{2}{c}{$b=0$} \\
+$a$ & $s=1$ & $s=24$ & $s=1$ & $s=24$ & $s=1$ & $s=24$ & $s=1$ & $s=24$ \\
+\hline
+0 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+0.001 & 0.0005 & 0.0006 & 0.0007 & 0.0007 & 0.0001 & 0.0001 & 0.0002 & 0.0002 \\
+0.003 & 0.0017 & 0.0017 & 0.0021 & 0.0021 & 0.0004 & 0.0004 & 0.0006 & 0.0006 \\
+0.01 & 0.0055 & 0.0055 & 0.0071 & 0.0072 & 0.0014 & 0.0014 & 0.0020 & 0.0020 \\
+0.03 & 0.0164 & 0.0163 & 0.0216 & 0.0219 & 0.0040 & 0.0039 & 0.0061 & 0.0062 \\
+0.10 & 0.0540 & 0.0530 & 0.0747 & 0.0753 & 0.0118 & 0.0116 & 0.0222 & 0.0224 \\
+0.30 & 0.1670 & 0.1563 & 0.2417 & 0.2421 & 0.0303 & 0.0279 & 0.0771 & 0.0775 \\
+0.60 & 0.3684 & 0.3261 & 0.5288 & 0.5287 & 0.0506 & 0.0427 & 0.1796 & 0.1800 \\
+0.90 & 0.6607 & 0.5443 & 0.8647 & 0.8649 & 0.0589 & 0.0415 & 0.3055 & 0.3057 \\
+\hline
+\end{tabular}
+\end{table*}
+
+\subsection*{Exploratory analysis X5: misspecification at zero strength}\label{supp:x5}
+X5, declared on 28 September 2026 before any confirmatory result, fits the frozen null B, correctly specified for the assumed channel, to a data arm with $a=0$ observed through a misspecified channel, and reads the frozen pipeline's AUC as the separation produced by misspecification alone. % EX14
+All 72 cells finished, with 36 estimates and 36 gaps across eight conditions and nine values of $r$. % EX14 RC13
+With no interaction at all, a linear trend in the signal share across the eleven waves gave AUCs from 0.680 to 0.710 for an amplitude of 0.03 and from 0.884 to 0.907 for 0.08, and trust-dependent attrition with a retention odds ratio of 2 gave AUCs from 0.578 at $r=0.9$ to 0.820 at $r=0.5$ (0.540 to 0.640 for an odds ratio of 1.5). % EX14
+The wave-five step and tenure conditions each produced nine fit-failure gaps at each of their two amplitudes, giving 36 gaps in total. % EX14 RC14
+All 36 intervals computed with critical value 2.7729 excluded 0.5. % EX15 RC15
+In this known-$a=0$ experiment the corresponding null-gate check would invalidate every estimated comparison; a real-data analyst has no known-null arm on which to apply that check. % EX15 RC16
+The boundary is therefore conditional on a correctly specified measurement channel; the release-bound comparison of each condition with $a^*(r)$ is reported in the Discussion or recorded there as unavailable. % EX15 EX12
+

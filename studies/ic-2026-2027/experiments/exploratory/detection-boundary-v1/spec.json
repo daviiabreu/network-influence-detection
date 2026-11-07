@@ -1,0 +1,11 @@
+{
+  "grid": [0.0, 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 0.6, 0.9],
+  "size": 10626,
+  "waves": 11,
+  "retention": 0.89,
+  "reliability": 0.70,
+  "matching": 256,
+  "training": 64,
+  "checking": 64,
+  "seconds": 600
+}

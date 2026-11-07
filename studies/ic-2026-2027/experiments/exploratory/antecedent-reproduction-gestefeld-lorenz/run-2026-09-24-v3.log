@@ -1,0 +1,2 @@
+$ /Users/davi/.local/share/uv/python/cpython-3.12-macos-aarch64-none/bin/python3.12 model_probe.py --seed 20230924
+{"agents": 800, "annual_steps": 24, "changed_after_annual_steps": 580, "environment": {"platform": "macOS-27.0-arm64-arm-64bit", "python": "3.12.13"}, "final_counts_0_to_10": [1, 2, 17, 33, 82, 88, 124, 151, 135, 110, 57], "final_mean": 6.68, "parameters": {"alpha": 0.25, "k": 2, "lambda": 4.0, "rho": 0.5, "sigma": 2.0, "theta": 0.1}, "runtime_seconds": 0.349, "seed": 20230924, "spinup_steps": 1000, "unchanged_or_plus_minus_one": 492}

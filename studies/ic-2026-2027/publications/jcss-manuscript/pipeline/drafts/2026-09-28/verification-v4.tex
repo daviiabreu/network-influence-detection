@@ -1,0 +1,83 @@
+% Draft replacement for sections/verification.tex (2026-09-28).
+% Model verification. Claim markers VER01--VER04 refer to rows in claim-evidence.md,
+% section "ODD appendix and model verification"; VER05 is retired and VER06--VER14
+% are new rows in pipeline/drafts/2026-09-28/methods-v4-ledger.md. Test paths are
+% relative to studies/ic-2026-2027/tests/unit/; docking reports are under
+% studies/ic-2026-2027/validation/. No gate outcome is asserted here.
+\subsection{Model verification}\label{sec:verification}
+
+% VER01
+Three layers check the implementation before any confirmatory seed is used: unit tests, the procedural gates and a freeze preflight. Here, verification means that the code does what the frozen protocol specifies. It is not validation of the social mechanism against data.
+
+% VER02
+\paragraph{Test suite.}
+The unit tests belong to the frozen code closure. They are grouped by the property they check.
+\begin{itemize}
+\item \emph{Identities (gate G1a).} At full $N$, the zero-strength interaction arm and nulls A, B, D and E must coincide byte for byte. This covers the mask, measured, observed and selected features, in the matching and validation phases, on both attempts, and across the main, mobility, persistent-style, conditioning and 24-step variants (\code{test_detection_v4.py::test_full_n_identity}, \code{test_identity_survives_channels_and_matching_validation_coupling}; \code{test_v42_identity.py::test_full_n_anchor_identity_at_every_channel_stage}, \code{test_full_n_control_channel_anchor_identity}). The optimized transport must reproduce the earlier generator's bytes (\code{test_detection_v4.py::test_optimized_alternative_preserves_frozen_bytes}; \code{test_v41_channels.py::test_selected_features_are_byte_identical}). An anchor-exact fit must give zero shifts and zero nuisance variance (\code{test_v4_propagation.py::test_analytic_anchor_has_zero_shifts_variance_and_mcse}).
+\item \emph{Null laws.} Tests check the declared transported laws of B and E, and the degeneracy at $\omega=1$ (\code{test_detection_v4.py::test_b_iid_trait_and_e_stayer_laws_follow_declared_transport}, \code{test_omega_one_is_strength_independent_degeneracy_without_identity_claim}).
+\item \emph{Profile solver.} Tests cover:
+  \begin{itemize}
+  \item roots on every face and corner;
+  \item impossible targets, non-finite values and exact budget counting;
+  \item non-monotone and flat profiles;
+  \item degenerate secants;
+  \item two historical stall regressions;
+  \item the quarter-SE acceptance rule;
+  \item the rule that an endpoint reached without a solver step is labelled \code{boundary}.
+  \end{itemize}
+  The tests are \code{test_v4_solver.py::test_profile_roots_on_every_face_and_corner}, \code{test_impossible_l1_nan_and_exact_budget_counts}, \code{test_nonmonotone_flat_profile_and_beyond_family_limit}, \code{test_degenerate_secant_uses_bisection_and_ends_without_fake_success}, \code{test_e6_recentred_boundary_surrogate_does_not_stall}, \code{test_a_block7_residual_regression_takes_real_profile_steps} and \code{test_acceptance_bounds_bias_at_quarter_of_fitting_se}; and \code{test_v42_solver.py::test_budget_96_counts_actual_calls_and_rejects_larger_budget} and \code{test_endpoint_prediction_without_solver_step_is_boundary}.
+\item \emph{Validation and retry.} Tests check the combined-variance validation rule and the single retry, which keeps both attempts, happens only after a validation failure and has its own budget (\code{test_v4_validation_pipeline.py::test_validation_combines_fit_and_validation_sampling_error}, \code{test_one_fresh_validation_retry_preserves_both_attempts}; \code{test_v42_verification.py::test_retry_requires_failed_validation_and_receives_own_budget}).
+\item \emph{Nuisance propagation.} The mean-feature shift predicted at a fixed test point must match regenerated panels within 5\% at the vector level. Further tests cover projection with lag-1 priority, a centered variance with cluster resampling, and uncentered boundary draws (\code{test_v4_propagation.py::test_matching_mean_shift_matches_regenerated_vector}, \code{test_projection_prioritizes_l1_and_preserves_observed_control_weight}, \code{test_variance_is_centered_not_mse_and_uses_independent_cluster_draws}; \code{test_v42_solver.py::test_boundary_draws_keep_uncentred_matching_residual}).
+\item \emph{Band, censoring and scheduling.} Tests cover the nine-strength band, the null gate and censoring only across gaps. They also cover the fixed tier order with its barriers and the refusal to release anything before the close (\code{test_v4_curve.py::test_nine_strength_stack_band_null_gate_and_censoring}, \code{test_gap_censors_only_boundaries_crossing_it}, \code{test_null_gap_alone_invalidates_unit_and_other_boundaries_survive}, \code{test_schedule_resumes_fixed_order_and_stops_at_tier_barrier}, \code{test_close_preserves_partial_and_never_releases_early}).
+\item \emph{Gate criteria and seeds.} Tests check that failures stay in the denominators, that the finite-difference check uses one median per cell, that the pooled allowance scales with the allocated cells, and that G2c reuses the baseline seeds. They also check that seed domains do not alias (\code{test_v4_criteria.py::test_gaps_drop_intact_pairs_but_allowance_uses_all_attempts}, \code{test_fd_check_is_one_median_per_cell_and_excludes_gaps}, \code{test_pooled_allowance_scales_with_allocated_cells}; \code{test_v42_gate.py::test_g2c_reference_uses_baseline_seeds_for_both_classes}, \code{test_gate_plans_and_auxiliary_namespaces_have_no_unintended_seed_aliases}; \code{test_detection_v4.py::test_seed_audit_phase_disjointness_and_confirmatory_reservation}). A separate seed-role audit record (\code{seed-role-audit-v42.json}) enumerates seed materials across gate plans and namespaces to check for collisions.
+\end{itemize}
+
+% VER03
+\paragraph{Gates.}
+Gates G0--G2c (Appendix~\ref{app:odd}, Submodel~14) verify the procedure end to end:
+\begin{itemize}
+\item G0 checks matching statuses and budgets;
+\item G1b checks the coverage mechanics of the band on synthetic scores;
+\item G1c checks that the whole pipeline returns anchor-exact fits and AUCs near 0.5 at zero strength;
+\item G2 and G2c compare the reported standard errors with the actual dispersion of independent pipelines and with full refits.
+\end{itemize}
+G2 checks dispersion, not absolute coverage at interior strengths. Gate outcomes: [to be filled from validated outputs].
+
+% VER04
+\paragraph{Freeze preflight.}
+Before any gate stage or tier runs, \code{simulation/v4_gate.py:preflight} compares the working tree with \code{freeze-v4.json}. It requires:
+\begin{itemize}
+\item schema 2 and status \code{frozen};
+\item SHA-256 equality for every file in the bound code closure, including the lock file, and for the criteria and inventory artifacts;
+\item agreement of the criteria record with the criteria code and calibration script;
+\item hashes of the amendment, specification, revision, review findings and both decision records;
+\item eight workers, eight shards and single-threaded BLAS;
+\item the recorded interpreter, NumPy, platform and lock environment;
+\item agreement of a numerical probe within absolute tolerance $10^{-12}$.
+\end{itemize}
+A second binding record, created after G0 and before G2, is checked in the same way. The runners refuse to start without these records (\code{test_v4_runners.py::test_gate_refuses_execution_without_freeze_record}; \code{test_v41_binding.py::test_two_stage_binding_rejects_missing_stale_or_changed_inputs}).
+
+\paragraph{Independent docking.}
+% VER06
+Two clean-room docking studies compared independent implementations with the project code at the frozen revision \code{37513841}. Each independent implementation was written from the protocol and specification documents alone, without opening the project's source, tests or experiment scripts; its readings of ambiguous points were recorded before any project source was read, and a comparison plan was declared before any comparison ran. Neither study ran a gate stage or tier or used a reserved confirmatory seed namespace. The phase commits in the repository were reconstructed from the session transcripts in their original order; the original commit objects were not pushed (\code{validation/docking-v4/RECONSTRUCTION.md}; \code{validation/inference-docking-v4/RECONSTRUCTION.md}).
+
+% VER07
+The first study docked the generative model (\code{validation/docking-v4/REPORT.md}). With shared seeds, latent trajectories were bitwise identical for the interaction arm at $a\in\{0,0.03,0.30\}$ and for nulls A, B, D and E, in 20 of 20 seeds per case; in a post hoc check not in the pre-declared plan, the ordinal discretizers were also byte-identical given the same continuous responses and mask. At the level of laws ($N=1{,}002$, 11 waves, 25 cells, 1,000 panels per implementation and cell), all 150 primary endpoints were equivalent by two one-sided tests with a margin of 0.20 standard deviations per panel, and none of 2,334 secondary difference tests rejected after Holm correction. For the discriminator, run at reduced training and test sizes in three cells with 50 replicates each, mean AUCs differed by at most 0.002 (equivalence margin 0.02); on identical features the two LDA implementations differed by at most $9\times10^{-5}$. These reduced-size AUCs are not estimates of $\mathcal A(a,r)$.
+
+% VER08
+Two specification ambiguities affected numerical output, both negligibly: the LDA standardization divisor (the project uses the population standard deviation) and the normalization of the heteroscedastic error in C (the project uses the empirical mean over the panel, which differed from the analytic expectation by a relative $1.6\times10^{-4}$). No discrepancy in the docked scope was classified as a code--specification divergence. The study did not dock matching, nuisance propagation, bootstrap bands, gates, seeds or sealing, the latent, error-free ordinal, latent-rank and mobility channels, the conditioning, anchoring, attraction-only and 24-step sensitivities, the lag-one feasibility rule, or production sizes. Its law-level resolution (0.20 standard deviations, about 0.002--0.005 in lag-correlation units) is far coarser than the matching tolerance, and heaping and masks agree only in law because the two implementations consume random draws in a different order.
+
+% VER09
+The second study docked the inference and calibration machinery (\code{validation/inference-docking-v4/REPORT.md}): the profile solver, acceptance tolerance, independent validation and retry, local nuisance propagation, cluster bootstrap, band, gap and gate rules, and the Jeffreys stop rule. Both implementations received identical synthetic inputs, including adversarial ones. Tolerances, validation decisions, the retry protocol, projected parameter shifts (2,500 cases), finite differences, nuisance draws, $V_{\mathrm{nuis}}$, bootstrap standard errors, failure allowances and the shared-seed stop-rule probability agreed to $10^{-12}$ or better, most bitwise; for the nuisance draws the docking implementation was given the project's discriminator.
+
+% VER10
+Solver status agreed in 16 of 22 synthetic cases. All six divergences were classified as specification ambiguities (\code{validation/inference-docking-v4/AMBIGUITIES.md}, A03b, A05b, A06b, A24). In three cases the project reports \code{no-L1-root} where the docking reports a family limit, because in the project family limits come only from the feasibility screen. In one case with discrete steps the two labels are \code{numerical-limit} and \code{ill-conditioned}. In one case a root lies within tolerance of the endpoint and is labelled \code{interior} by the project and \code{boundary} by the docking; both are accepted states. In the hump-shaped profile case, the project accepted a genuine interior root after sampling only $\eta\leq0.01$, whereas the docking evaluated $\eta=0.8$ early, detected the non-monotone profile and returned a gap; this is the only divergence that changes the accept/gap decision.
+
+% VER11
+The band critical values differed, by up to a factor of 2.1, in the ten random cases compared. A post hoc analysis reproduced the project's values exactly in all ten cases from three readings: the logit standard error evaluated at each replicate rather than at $\hat p$, replicates centred on the point estimate, and the \texttt{higher} quantile rule. The per-replicate standard error dominates; in one case the plug-in reading gave a critical value of 7.15 and the project's reading 3.37. The project's band code reproduces the frozen v1 band exactly, and Methods describes that reading. Inversion, gap, censoring and zero-strength gate rules agreed in 9 of 11 cases; in the other two, adjacent to a gap, the project censors the sustained boundary where the docking declares the first strength above the gap, which is the more conservative reading. No divergence was classified as a probable project error.
+
+% VER12
+The second study left unverified: matching on real panels, the feasibility screen and the mean-feature Jacobian on real realizations; the control path that inherits $\eta$ in the nuisance draws; the amplification and covariance diagnostics; the calibrated G2 dispersion thresholds and the G2c ratio beyond failure counts; G1b, G1c, the G0 status projection that feeds the stop rule, the curve runner, scheduler, sealing, seed derivation and collision audit; solver efficiency on real targets, since evaluation counts were reported but not compared; and the statistical coverage of either band reading. The project's reading is the one that gate G1b tests.
+
+% VER13
+Docking establishes agreement between two implementations of the same written specification in the scope docked. Where both made the same choice at an ambiguous point, it cannot detect an error in the specification itself or a misreading shared by both authors. It is not validation of the social mechanism, not an estimate of coverage and not a substitute for the gates.

@@ -1,0 +1,54 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/assembly-notes.txt",
+        "sha256": "5c53edbd4d3aa02a9313efada435e3b2675684ef073e37acde24f36020a289af"
+      },
+      "value": true
+    },
+    "main.boundary_nonmonotone": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/released-curves.json",
+        "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "value": false
+    },
+    "post.x5_supplied": {
+      "source": {
+        "locator": "artificial provenance.inputs.x5 and every by_r.x5_state",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/aggregates/comparisons.json",
+        "sha256": "f4eb4bd8d4dc928597433fa2d69cee6e38ce9d25b7d3258ef58eaf9a6aef72b0"
+      },
+      "value": false
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/assembly-notes.txt",
+        "sha256": "5c53edbd4d3aa02a9313efada435e3b2675684ef073e37acde24f36020a289af"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/assembly-notes.txt",
+        "sha256": "5c53edbd4d3aa02a9313efada435e3b2675684ef073e37acde24f36020a289af"
+      },
+      "value": "not-run"
+    },
+    "tier2.boundaries_differ": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/released-curves.json",
+        "sha256": "2796ae7a1b88f75a56602b13864618c7abb2b3231d6a601a0af28bf5e2d63f8b"
+      },
+      "value": false
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

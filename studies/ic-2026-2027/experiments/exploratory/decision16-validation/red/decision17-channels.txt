@@ -1,0 +1,20 @@
+.........FF                                                              [100%]
+=================================== FAILURES ===================================
+____________ test_correlated_response_error_and_tenure_reliability _____________
+
+    def test_correlated_response_error_and_tenure_reliability() -> None:
+>       from ic_study.models.detection_panel import tenure_reliability
+E       ImportError: cannot import name 'tenure_reliability' from 'ic_study.models.detection_panel' (/Users/davi/.local/state/research-workbench/ic-question-consolidation/studies/ic-2026-2027/src/ic_study/models/detection_panel.py)
+
+tests/unit/test_detection_panel.py:113: ImportError
+__________ test_mover_stayer_has_exact_stayers_and_mixture_covariance __________
+
+    def test_mover_stayer_has_exact_stayers_and_mixture_covariance() -> None:
+>       from ic_study.models.detection_panel import mover_stayer_panel
+E       ImportError: cannot import name 'mover_stayer_panel' from 'ic_study.models.detection_panel' (/Users/davi/.local/state/research-workbench/ic-question-consolidation/studies/ic-2026-2027/src/ic_study/models/detection_panel.py)
+
+tests/unit/test_detection_panel.py:125: ImportError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_panel.py::test_correlated_response_error_and_tenure_reliability
+FAILED tests/unit/test_detection_panel.py::test_mover_stayer_has_exact_stayers_and_mixture_covariance
+2 failed, 9 passed in 0.24s

@@ -1,0 +1,815 @@
+% =====================================================================
+% Pre-registered Results shells, drafted 2026-09-28 before any v4 gate
+% outcome or confirmatory result existed. Referee report
+% pipeline/review/referee-report-2026-09-28.md, ranked change 6 and
+% "Pre-results risk register" rows 1-17.
+%
+% Nothing in this file is a result. Every number that will come from the
+% gate records, the release or the SHP report is a resultnum placeholder whose
+% bracketed second argument the export fills (--fill). Every protocol constant
+% is bound under a v4.protocol ID whose value the export reads from the frozen
+% sources (results-shells-notes.md, Resolutions). main.tex defines the
+% identity resultnum macro and allunitsresource, the all-units CSV.
+% Generated files: gate-outcomes (T3, F4), unit-status (T4, F5),
+% primary-boundary-figure (F1), auc-profiles (F2 for B), boundary-table (T1),
+% shp-anchor (F6); the supplement inputs the F2 panels of A, C, D and E, F3,
+% tab:v4-sec, tab:v4-slow and tab:v4-sgaps.
+%
+% Markers:
+%   % RSxx  a sentence that applies a frozen (or explicitly pre-committed)
+%           rule; one row per marker in results-shells-ledger.md.
+%   Figure and table IDs F1-F6, T1, T1s, T3, T4 are the registered outputs
+%   of src/ic_study/analysis/detection_v4_report.py (REGISTERED) and
+%   experiments/exploratory/detection-boundary-v4/report/captions.md.
+%   F3 is exploratory. T2 is not emitted (no registered contrast).
+%   Labels fig:v4-Fx / tab:v4-Tx are proposed; see notes N14.
+%
+% ---------------------------------------------------------------------
+% FIELD NOTATION USED IN THE "SELECT WHEN" CONDITIONS
+% ---------------------------------------------------------------------
+% REL      JSON printed by run_curve.py --release-at-close
+%          (simulation/v4_curve.py:released_curves), read by
+%          analysis/v4_report_schema.py:load_release.
+% INV      REL.inventory = {closed_utc, units, main_curve_valid}.
+% U(k)     INV.units[unit==k].status, one of "não iniciado",
+%          "parcial por encerramento operacional", "completo inválido",
+%          "completo válido".
+% CV(k)    the record in REL.curves with unit==k (present iff U(k) is
+%          "completo válido" or "completo inválido"). Fields: gap_count,
+%          band_complete, valid_null_gate, valid_curve, status,
+%          available_strengths, auc, lower, upper, critical,
+%          empirical_exceeds_floor, nonmonotone_band, first,
+%          first_interval, first_censoring, first_interval_censoring,
+%          sustained, sustained_interval, sustained_censoring,
+%          sustained_interval_censoring, main_curve_valid (tier 1 only,
+%          present and false iff INV.main_curve_valid is false), cells[9].
+% cell     CV(k).cells[j], j = 0..8 in G order: success, attempts[]
+%          (matching_pairs, status, evaluations, residual_se_units,
+%          validation_pass, validation_combined_se_units,
+%          equivalence_statistic, equivalence_pass, amplification),
+%          tie_rate, parameters, dependency_gap, nuisance_variance,
+%          nuisance_mcse, mean_shift, projected_fraction.
+% Unit keys  t1-u00-r{i} = B observed (tier 1); t2-u01 A, t2-u02 C,
+%          t2-u03 D, t2-u04 E (tier 2); t3-u05..u34 controls and
+%          mobility; t4-u35..u39 c/delta; t5-u40 b=0, t5-u41..u44 omega
+%          0.25/0.50/0.75/1; t6-u45 24 steps. Suffix r{i}, i = 0..8,
+%          is r = 0.50 + 0.05 i; r4 is r = 0.70.
+% G        {0, 0.001, 0.003, 0.01, 0.03, 0.10, 0.30, 0.60, 0.90};
+%          idx(a) is the position of a in G (0..8).
+% GATE[S]  last line with "gate": S in criteria.jsonl of the sealed gate
+%          root (v4_report_schema.py:load_gate, summaries), S in
+%          {G0, G1b, G1c, G2, G2c}. Base fields planned, completed,
+%          failures, pass.
+% STOP     the criteria.jsonl line with stopped_before_G2 == true
+%          (load_gate .stop); its g0_gap_binding holds gaps, denominator
+%          (54), pass_probability and minimum (0.80).
+% SHP      aggregate report of analysis/shp_reliability.py (load_shp):
+%          anchor.{year, estimate, standard_error, wald_95_interval},
+%          sensitivity_envelope, multiwave.{converged, at_parameter_bound},
+%          sensitivity.polychoric_triplets[].admissible.
+%
+% GLOBAL PROSE GUARD (decision 91, base 44b722dd):
+% MECHANISMS := v4.mechanisms.allowed == 1
+%   Exporter: cross_mechanism_allowed(REL), requiring all tier-2 statuses
+%   complete valid and INV.main_curve_valid. Apply this same flag to B10,
+%   every comparison in P6, the family-offset sentence of P7, and every
+%   cross-mechanism abstract clause. No local exception. Tables and figures
+%   continue to show all valid units, including when this flag is false.
+%
+% Derived predicates (per unit key k, with released curve CV(k)):
+%   VALID(k) := U(k) == "completo válido"
+%   FULL(k)  := VALID(k) and CV(k).band_complete == true
+%   ATT(k)   := VALID(k) and CV(k).first != null
+%   XING(k)  := VALID(k) and some CV(k).lower[j] > 0.70   (strict; M74)
+%   BELOW(k) := FULL(k) and every CV(k).upper[j] < 0.70
+%   SPAN(k)  := FULL(k) and not XING(k) and not BELOW(k)
+%   RES(k)   := ATT(k), both ends of CV(k).first_interval non-null and
+%               idx(hi) - idx(lo) <= 1
+%   REGION(k): the region column of T1 (v4_report_tables.region), over
+%               VALID units. "not attained" if first == null without
+%               first_censoring; "censored (gap)" if first == null with
+%               first_censoring; "indeterminate" if first == 0, or an end of
+%               first_interval is null (beyond the grid or censored at a gap),
+%               or the interval crosses the cut (lower <= 0.03 < upper);
+%               otherwise "small" if first <= 0.03 and "large" if not.
+%               "Censored or indeterminate" counts the last two together.
+%
+% ---------------------------------------------------------------------
+% ASSEMBLY
+% ---------------------------------------------------------------------
+% 1. Select exactly one gate branch: B1a, B1b-G0, B1b-G1b, B1b-G1c,
+%    B1b-G2, B1b-G2c, B1c or B1d.
+% 2. If it is not B1a, append B1-END and then B1-SHP, selecting the
+%    applicable SHP sub-case by its SELECT WHEN conditions (decision 99
+%    and the corrections at 00c8dc3d).
+% 3. If it is B1a, start from the default composition B00 (paragraphs
+%    P1-P10, at the end of this file) and apply every branch B02-B17
+%    whose condition holds, in numerical order, as each branch's
+%    "ACTION" line states (replace or append to a named paragraph).
+%    Rows are not mutually exclusive; B17 always applies.
+% 4. Figures and tables enter in the order of first reference in the
+%    assembled text. The order stated under "INCLUDES" is the order for
+%    the paragraphs that branch contributes.
+% =====================================================================
+
+
+% =====================================================================
+% BEGIN BRANCH B1a -- gate: every stage passes
+% SELECT WHEN: GATE[S].pass == true for every S in (G0, G1b, G1c, G2, G2c)
+%   and GATE[S].completed == GATE[S].planned, and STOP is absent.
+% INCLUDES (order): T3, F4 (main-text diagnostics after F1/F2B/T1 in B00;
+%   gate and inventory qualifications remain prerequisites to interpretation).
+% ACTION: this is paragraph P2 of B00.
+% =====================================================================
+All five recorded stages of the validation gate passed in the frozen order G0, G1b, G1c, G2, G2c before any confirmatory seed was derived (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01
+G1a, the battery of identity unit tests, is not part of the sealed gate records, and no separate test-run record reports its status (Section~\ref{sec:verification}). % RS01
+In G0, the counts were: \resultnum{v4.gate.G0.anchor_failures}{[n]} zero-strength identity \resultplural{v4.gate.G0.anchor_failures}{fit}{fits} without status \texttt{anchor-exact}; \resultnum{v4.gate.G0.budget_statuses}{[n]} \resultplural{v4.gate.G0.budget_statuses}{attempt}{attempts} with status \texttt{budget}; and \resultnum{v4.gate.G0.implementation_statuses}{[n]} \resultplural{v4.gate.G0.implementation_statuses}{attempt}{attempts} with status \texttt{numerical-limit} or \texttt{ill-conditioned}, across \resultnum{v4.gate.G0.fits}{[n]} \resultplural{v4.gate.G0.fits}{fit}{fits}. The respective limits were zero, zero and \resultnum{v4.protocol.g0.implementation_limit}{1}\% of fits. % RS03
+G0 published only statuses, counts, residuals in standard-error units and validation outcomes. % RS54
+\par In G1b, joint coverage was lowest at \resultnum{v4.gate.G1b.coverage_min}{[n]} of \resultnum{v4.protocol.g1b.repetitions}{1,000} \resultplural{v4.protocol.g1b.repetitions}{repetition}{repetitions} across the five synthetic-score scenarios, compared with the pass mark of \resultnum{v4.protocol.g1b.pass_mark}{935}. The empirical max-$t$ critical value exceeded the \resultnum{v4.protocol.critical_floor}{2.7729} floor in \resultnum{v4.gate.G1b.exceeds_floor_count_prose}{[n]} of \resultnum{v4.gate.G1b.completed_prose}{[n]} \resultplural{v4.gate.G1b.completed_prose}{repetition}{repetitions}. % RS04 RS42
+In G1c, \resultplural{v4.gate.G1c.anchor_count}{the}{all} \resultnum{v4.gate.G1c.anchor_count}{[n]} zero-strength \resultplural{v4.gate.G1c.anchor_count}{fit}{fits} had status \texttt{anchor-exact}. At the \resultnum{v4.protocol.critical_floor}{2.7729} floor, \resultnum{v4.gate.G1c.pointwise_failures}{[n]} of \resultnum{v4.protocol.g1c.fits}{150} \resultplural{v4.protocol.g1c.fits}{interval}{intervals} missed \resultnum{v4.protocol.null_auc}{0.5} (limit three). The standardized mean deviation of the AUC from \resultnum{v4.protocol.null_auc}{0.5} was \resultnum{v4.gate.G1c.mean_z}{[z]} (limit \resultnum{v4.protocol.g1c.mean_z_limit}{3}), and the tie rate was \resultnum{v4.gate.G1c.tie_rate}{[t]}. % RS05
+\par In G2, across the \resultnum{v4.gate.G2.n_cells}{[n]} allocated \resultplural{v4.gate.G2.n_cells}{cell}{cells}, the pooled ratio of observed to model-implied dispersion of paired logit differences was \resultnum{v4.gate.G2.pooled_ratio}{[x]}, with a bootstrap interval from \resultnum{v4.gate.G2.pooled_lower}{[x]} to \resultnum{v4.gate.G2.pooled_upper}{[x]}. Every cell interval met its calibrated threshold. The cell medians of the finite-difference variance ratio ranged from \resultnum{v4.gate.G2.fd_median_min}{[x]} to \resultnum{v4.gate.G2.fd_median_max}{[x]}, within the required range of \resultnum{v4.protocol.g2.fd_range.lower}{0.8} to \resultnum{v4.protocol.g2.fd_range.upper}{1.25}. The technical-failure count was \resultnum{v4.gate.G2.failures}{[n]} among \resultnum{v4.gate.G2.planned}{[n]} \resultplural{v4.gate.G2.planned}{pipeline}{pipelines}, within the allowances. % RS06
+In G2c, the ratio of the local nuisance variance to the variance of full refits was \resultnum{v4.gate.G2c.a010.ratio}{[x]} at $a=\resultnum{v4.protocol.a.010}{0.10}$, with one-sided \resultnum{v4.protocol.g2c.bound_level}{95}\% bounds of \resultnum{v4.gate.G2c.a010.lower}{[x]} and \resultnum{v4.gate.G2c.a010.upper}{[x]}; \resultnum{v4.gate.G2c.a010.failures}{[n]} of \resultnum{v4.protocol.g2c.refits.a010}{100} refits failed. The ratio was \resultnum{v4.gate.G2c.a003.ratio}{[x]} at $a=\resultnum{v4.protocol.a.003}{0.03}$, with bounds of \resultnum{v4.gate.G2c.a003.lower}{[x]} and \resultnum{v4.gate.G2c.a003.upper}{[x]}; \resultnum{v4.gate.G2c.a003.failures}{[n]} of \resultnum{v4.protocol.g2c.refits.a003}{40} refits failed. The cut-offs were \resultnum{v4.protocol.g2c.upper_minimum}{0.8} for the upper bound and \resultnum{v4.protocol.g2c.lower_maximum}{2.0} for the lower bound. % RS07
+Only criterion values, counts, ratios and pass or fail are reported for G2 and G2c; their per-repetition estimates stayed sealed throughout the confirmatory run and are not analysed here. % RS09
+G2 compares dispersion and does not demonstrate absolute coverage of the bands at positive strength. % RS10
+These gate criteria are added to the cumulative exposure record. % RS53
+% END BRANCH B1a
+
+
+% =====================================================================
+% BEGIN BRANCH B1b-G0 -- gate: G0 fails
+% SELECT WHEN: GATE[G0] exists, GATE[G0].completed == GATE[G0].planned
+%   and GATE[G0].pass == false. No GATE[S] exists for later stages.
+%   Sub-case (i) criteria evaluated: GATE[G0] has field "fits".
+%   Sub-case (ii) task failure: GATE[G0].failures > 0 and no field "fits".
+% INCLUDES (order): T3 (main text), F4 (main text; panels (c)-(f) show
+%   "not available"). No T1, T1s, T4, F1, F2, F3, F5, F6: no release exists.
+% ACTION: the whole Results section is this branch plus the closing
+%   paragraph B1-END.
+% =====================================================================
+The validation gate failed at its first stage, G0, the blind matching mask, and no later stage was run (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01
+% Sub-case (i). Keep each clause whose criterion failed; drop the others.
+G0 required every zero-strength fit of A, B, D, E and the three B controls to end \texttt{anchor-exact}, no attempt to end in \texttt{budget}, and implementation-type statuses in at most \resultnum{v4.protocol.g0.implementation_limit}{1}\% of fits; \resultnum{v4.gate.G0.anchor_failures}{[n]} identity \resultplural{v4.gate.G0.anchor_failures}{fit}{fits} \resultplural{v4.gate.G0.anchor_failures}{was}{were} not \texttt{anchor-exact}, \resultnum{v4.gate.G0.budget_statuses}{[n]} \resultplural{v4.gate.G0.budget_statuses}{attempt}{attempts} ended in \texttt{budget}, and \resultnum{v4.gate.G0.implementation_statuses}{[n]} \resultplural{v4.gate.G0.implementation_statuses}{attempt}{attempts} ended in \texttt{numerical-limit} or \texttt{ill-conditioned} over \resultnum{v4.gate.G0.fits}{[n]} \resultplural{v4.gate.G0.fits}{fit}{fits} (\resultnum{v4.gate.G0.implementation_share}{[x]}). % RS03
+% Sub-case (ii) replaces the previous sentence.
+G0 could not be evaluated against its criteria because \resultnum{v4.gate.G0.failures}{[n]} of its \resultnum{v4.gate.G0.planned}{[n]} \resultplural{v4.gate.G0.planned}{task}{tasks} ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS03
+Family-limit statuses are gaps rather than failures and did not count against the stage. % RS50
+G0 published only statuses, counts, residuals in standard-error units and validation outcomes; no parameter or AUC was computed or released. % RS54
+% END BRANCH B1b-G0
+
+
+% =====================================================================
+% BEGIN BRANCH B1b-G1b -- gate: G1b fails
+% SELECT WHEN: GATE[G0].pass == true; GATE[G1b] exists with
+%   completed == planned and pass == false. No GATE[G1c], GATE[G2],
+%   GATE[G2c].
+%   Sub-case (i): coverage_counts present and min(coverage_counts) < 935.
+%   Sub-case (ii): failures > 0 and coverage_counts absent.
+% INCLUDES (order): T3, F4. As B1b-G0.
+% ACTION: whole Results section = this branch + B1-END.
+% =====================================================================
+The validation gate passed G0 and failed at G1b, the test of band mechanics on synthetic scores, so G1c, G2 and G2c were not run (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01
+% Sub-case (i).
+G1b required joint coverage in at least \resultnum{v4.protocol.g1b.pass_mark}{935} of \resultnum{v4.protocol.g1b.repetitions}{1,000} \resultplural{v4.protocol.g1b.repetitions}{repetition}{repetitions} in each of five scenarios. Coverage fell below this threshold in \resultnum{v4.gate.G1b.n_scenarios_below}{[n]} \resultplural{v4.gate.G1b.n_scenarios_below}{scenario}{scenarios}; the lowest count was \resultnum{v4.gate.G1b.coverage_min}{[n]}. % RS04
+% Sub-case (ii) replaces the previous sentence.
+G1b could not be evaluated against its criteria because \resultnum{v4.gate.G1b.failures}{[n]} of its \resultnum{v4.gate.G1b.planned}{[n]} \resultplural{v4.gate.G1b.planned}{task}{tasks} ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS04
+% Sub-case (i) only: the field is absent when tasks failed.
+The empirical max-$t$ critical value exceeded the \resultnum{v4.protocol.critical_floor}{2.7729} floor in \resultnum{v4.gate.G1b.exceeds_floor_count}{[n]} of \resultnum{v4.gate.G1b.completed}{[n]} completed \resultplural{v4.gate.G1b.completed}{repetition}{repetitions}. % RS42
+G1b tests the band construction on synthetic scores and contains no simulated panel. % RS04
+% END BRANCH B1b-G1b
+
+
+% =====================================================================
+% BEGIN BRANCH B1b-G1c -- gate: G1c fails
+% SELECT WHEN: GATE[G0].pass and GATE[G1b].pass are true; GATE[G1c]
+%   exists with completed == planned and pass == false. No GATE[G2],
+%   GATE[G2c], STOP.
+%   Sub-case (i): fields anchor_count, pointwise_failures, mean_z present,
+%   and anchor_count < 150 or pointwise_failures > 3 or mean_z > 3.
+%   Sub-case (ii): failures > 0 and those fields absent.
+% INCLUDES (order): T3, F4.
+% ACTION: whole Results section = this branch + B1-END.
+% =====================================================================
+The validation gate passed G0 and G1b and failed at G1c, the end-to-end test of the real pipeline at zero strength, so G2 and G2c were not run (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01
+% Sub-case (i). Keep each clause whose criterion failed.
+G1c required \resultplural{v4.protocol.g1c.fits}{the}{all} \resultnum{v4.protocol.g1c.fits}{150} \resultplural{v4.protocol.g1c.fits}{fit}{fits} at $r=\resultnum{v4.protocol.g1c.r.1}{0.50}$, \resultnum{v4.protocol.g1c.r.2}{0.70} and \resultnum{v4.protocol.g1c.r.3}{0.90} to be \texttt{anchor-exact}, at most three pointwise interval misses at the \resultnum{v4.protocol.critical_floor}{2.7729} floor, and a mean AUC within three standard errors of \resultnum{v4.protocol.null_auc}{0.5}; the stage recorded \resultnum{v4.gate.G1c.anchor_count}{[n]} \texttt{anchor-exact} \resultplural{v4.gate.G1c.anchor_count}{fit}{fits}, \resultnum{v4.gate.G1c.pointwise_failures}{[n]} pointwise \resultplural{v4.gate.G1c.pointwise_failures}{miss}{misses} and a standardized mean deviation of \resultnum{v4.gate.G1c.mean_z}{[z]}. % RS05
+% Sub-case (ii) replaces the previous sentence.
+G1c could not be evaluated against its criteria because \resultnum{v4.gate.G1c.failures}{[n]} of its \resultnum{v4.gate.G1c.planned}{[n]} \resultplural{v4.gate.G1c.planned}{task}{tasks} ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS05
+% Sub-case (i) only: the field is absent when tasks failed.
+The tie rate of the panel scores was \resultnum{v4.gate.G1c.tie_rate}{[t]}. % RS05
+% END BRANCH B1b-G1c
+
+
+% =====================================================================
+% BEGIN BRANCH B1c -- gate: waste guard stops execution before G2
+% SELECT WHEN: GATE[G0], GATE[G1b], GATE[G1c] all have pass == true;
+%   STOP present with STOP.g0_gap_binding.pass_probability < 0.80;
+%   no GATE[G2] or GATE[G2c].
+% INCLUDES (order): T3 (it prints "stopped before G2 (gap-rate binding)"),
+%   F4 (panels (e)-(f) show "not available").
+% ACTION: whole Results section = this branch + B1-END.
+% =====================================================================
+Stages G0, G1b and G1c of the validation gate passed, and execution then stopped before G2 under the frozen waste guard (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01 RS08
+Among the \resultnum{v4.gate.stop.denominator}{[n]} G0 \resultplural{v4.gate.stop.denominator}{fit}{fits} of B on the observed channel at the strengths that G2 uses ($\resultnum{v4.protocol.a.0}{0}<a\le \resultnum{v4.protocol.a.030}{0.30}$, all nine values of $r$), \resultnum{v4.gate.stop.gaps}{[n]} ended in a gap. % RS08
+Under a Jeffreys prior, the posterior-predictive probability that G2 and G2c would meet their failure allowances was \resultnum{v4.gate.stop.pass_probability}{[p]}, below the frozen minimum of \resultnum{v4.gate.stop.minimum}{[p]}. The stop is documented in the second binding record. % RS08
+The guard is an economy rule based on technical failures. G2 and G2c were not run, so neither dispersion nor refit criteria were evaluated. The stop provides no information about the validity of the bands. % RS08
+Under this freeze record the stop is final, because neither the first record nor the second binding record can be rewritten and the allocation cannot change on resumption. % RS02
+% END BRANCH B1c
+
+
+% =====================================================================
+% BEGIN BRANCH B1b-G2 -- gate: G2 fails
+% SELECT WHEN: GATE[G0], GATE[G1b], GATE[G1c] pass; STOP absent;
+%   GATE[G2] exists with completed == planned and pass == false.
+%   Keep each sentence whose condition holds:
+%   (a) failure_allowance_met == false;
+%   (b) cell_ratios non-empty and some cell or the pooled interval lies
+%       outside the calibrated thresholds of criteria-v43.json
+%       (cell_upper[c] < cell_lower threshold, or cell_lower[c] >
+%       cell_upper threshold; pooled likewise);
+%   (c) fd_stable == false;
+%   (d) cell_ratios empty (fewer than two successful pairs in a cell).
+% INCLUDES (order): T3, F4 (panel (e) with thresholds when --criteria is
+%   given).
+% ACTION: whole Results section = this branch + B1-END.
+% =====================================================================
+The validation gate passed G0, G1b and G1c but failed at G2, which compares procedure dispersion. G2c was therefore not run (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01
+% (a)
+Technical failures exceeded the frozen allowance of five per \resultnum{v4.protocol.g2.pipelines_per_cell}{100} \resultplural{v4.protocol.g2.pipelines_per_cell}{pipeline}{pipelines} in a cell or two per cent of all pipelines: \resultnum{v4.gate.G2.failures}{[n]} of \resultnum{v4.gate.G2.planned}{[n]} \resultplural{v4.gate.G2.planned}{pipeline}{pipelines} failed, with at most \resultnum{v4.gate.G2.max_cell_failures}{[n]} in one cell. % RS06
+% (b) If the failing interval lies above the upper threshold:
+\par The bootstrap interval for the dispersion ratio lay above the calibrated upper threshold in \resultnum{v4.gate.G2.n_cells_above}{[n]} of \resultnum{v4.gate.G2.n_cells}{[n]} \resultplural{v4.gate.G2.n_cells}{cell}{cells}. The pooled ratio was \resultnum{v4.gate.G2.pooled_ratio}{[x]}, with an interval from \resultnum{v4.gate.G2.pooled_lower}{[x]} to \resultnum{v4.gate.G2.pooled_upper}{[x]}. Thus, the observed dispersion of paired logit differences exceeded that implied by the reported standard errors. % RS06
+% (b) If the failing interval lies below the lower threshold:
+The bootstrap interval for the dispersion ratio lay below the calibrated lower threshold in \resultnum{v4.gate.G2.n_cells_below}{[n]} of \resultnum{v4.gate.G2.n_cells}{[n]} \resultplural{v4.gate.G2.n_cells}{cell}{cells}. The pooled ratio was \resultnum{v4.gate.G2.pooled_ratio}{[x]}, with an interval from \resultnum{v4.gate.G2.pooled_lower}{[x]} to \resultnum{v4.gate.G2.pooled_upper}{[x]}. Thus, the reported standard errors exceeded the observed dispersion by more than the criteria allow. % RS06
+% (c)
+The median ratio of nuisance variances at finite-difference steps \resultnum{v4.protocol.g2.fd_step.small}{0.005} and \resultnum{v4.protocol.g2.fd_step.large}{0.01} fell outside the range \resultnum{v4.protocol.g2.fd_range.lower}{0.8} to \resultnum{v4.protocol.g2.fd_range.upper}{1.25} in \resultnum{v4.gate.G2.n_cells_fd_outside}{[n]} \resultplural{v4.gate.G2.n_cells_fd_outside}{cell}{cells} (medians from \resultnum{v4.gate.G2.fd_median_min}{[x]} to \resultnum{v4.gate.G2.fd_median_max}{[x]}). % RS06
+% (d)
+At least one cell had fewer than two pairs without a technical failure, so its dispersion ratio could not be computed and the stage could not pass. % RS06
+Under the declared artificial failure model, the calibrated criteria pass G2 and G2c jointly with an estimated probability of \resultnum{v4.protocol.g2.joint_pass_probability}{0.9517} when standard errors are correct, with a Monte Carlo error of \resultnum{v4.protocol.g2.joint_pass_mcse_points}{0.39} percentage points. % RS11
+Only criterion values, counts, ratios and pass or fail are reported; per-repetition estimates and the mean shift stay sealed. % RS09
+% END BRANCH B1b-G2
+
+
+% =====================================================================
+% BEGIN BRANCH B1b-G2c -- gate: G2c fails
+% SELECT WHEN: GATE[G0], GATE[G1b], GATE[G1c], GATE[G2] pass; GATE[G2c]
+%   exists with completed == planned and pass == false.
+%   Sub-case (i): comparisons present; for some comparison, pass == false
+%   because failure_count exceeds 3 of 100 or 2 of 40, or upper < 0.8, or
+%   lower > 2.0. Sub-case (ii): a comparison lacks "ratio" (fewer than
+%   two finite refits, or non-finite local draws). Sub-case (iii):
+%   "comparisons" absent (a baseline pipeline failed or its local draws
+%   are missing).
+% INCLUDES (order): T3, F4.
+% ACTION: whole Results section = this branch + B1-END.
+% =====================================================================
+The validation gate passed G0, G1b, G1c and G2 and failed at G2c, the comparison of local nuisance propagation with full refits (Table~\ref{tab:v4-T3}, Fig.~\ref{fig:v4-F4}). % RS01
+% (i) Keep the clause for each comparison that failed.
+At $a=\resultnum{v4.protocol.a.010}{0.10}$ the variance ratio was \resultnum{v4.gate.G2c.a010.ratio}{[x]} (one-sided \resultnum{v4.protocol.g2c.bound_level}{95}\% bounds \resultnum{v4.gate.G2c.a010.lower}{[x]} and \resultnum{v4.gate.G2c.a010.upper}{[x]}; \resultnum{v4.gate.G2c.a010.failures}{[n]} of \resultnum{v4.protocol.g2c.refits.a010}{100} refits failed), and at $a=\resultnum{v4.protocol.a.003}{0.03}$ it was \resultnum{v4.gate.G2c.a003.ratio}{[x]} (bounds \resultnum{v4.gate.G2c.a003.lower}{[x]} and \resultnum{v4.gate.G2c.a003.upper}{[x]}; \resultnum{v4.gate.G2c.a003.failures}{[n]} of \resultnum{v4.protocol.g2c.refits.a003}{40} refits failed), against an upper-bound cut-off of \resultnum{v4.protocol.g2c.upper_minimum}{0.8}, a lower-bound cut-off of \resultnum{v4.protocol.g2c.lower_maximum}{2.0} and allowances of three and two failed refits. % RS07
+% (ii) or (iii) replaces the previous sentence.
+The comparison could not be evaluated because a baseline pipeline or too many refits failed, and a failed baseline blocks the stage. % RS07
+G2c is a complementary check on the nuisance variance; G2, which passed, is the stage calibrated to detect understated standard errors. % RS07
+Only criterion values, counts, ratios and pass or fail are reported; per-repetition estimates stay sealed. % RS09
+% END BRANCH B1b-G2c
+
+
+% =====================================================================
+% BEGIN BRANCH B1d -- gate: not completed at the close
+% SELECT WHEN: at 2026-10-19T02:59:00Z no branch B1a-B1c applies: some
+%   stage S has no GATE[S] line, or its last line has completed < planned,
+%   while no earlier stage failed and STOP is absent.
+% INCLUDES (order): T3, F4.
+% ACTION: whole Results section = this branch + B1-END.
+% NOTE: the frozen documents do not state how an unfinished gate is
+%   reported; see results-shells-notes.md, Q3.
+% =====================================================================
+The validation gate remained incomplete when the compute window closed on \resultnum{v4.protocol.close_local}{18 October 2026 at 23:59} America/Sao\_Paulo. Stage \resultnum{v4.gate.last_stage}{[stage]} had completed \resultnum{v4.gate.last_stage.completed}{[n]} of \resultnum{v4.gate.last_stage.planned}{[n]} \resultplural{v4.gate.last_stage.planned}{task}{tasks}; the earlier stages had passed (Table~\ref{tab:v4-T3}). % RS01 RS13
+Because every stage must pass before a confirmatory seed is derived, no confirmatory tier was run. % RS01
+% END BRANCH B1d
+
+
+% =====================================================================
+% BEGIN BLOCK B1-END -- closing paragraph for every gate branch except B1a
+% SELECT WHEN: the selected gate branch is B1b-*, B1c or B1d.
+% =====================================================================
+No confirmatory seed was derived, no confirmatory tier was run, and the paper therefore reports no curve $a^*(r)$, no boundary and no AUC of the study estimand. % RS01
+The frozen rules do not allow a stage to be rerun until it passes, and continuing would require a documented successor protocol with its own freeze record. % RS02
+Any successor would be a new protocol with cumulative exposure, and its results could not be reported as confirmation under this freeze. % RS02 RS53
+The gate criteria reported here are added to the cumulative exposure record. % RS53
+% END BLOCK B1-END
+
+
+% =====================================================================
+% BEGIN BLOCK B1-SHP -- SHP anchor in a gate-failure paper (decision 99, Q7)
+% SELECT WHEN: the selected gate branch is B1b-*, B1c or B1d. It follows
+%   B1-END as its own labelled exploratory subsection.
+%   (a) SHP present and no B14 condition: the three sentences of (a).
+%   (b) a B14 condition: the sentences of (b); the triplet sentence only
+%       under B14 (b), where a report and its envelope exist.
+%   (c) the SHP analysis was not run: the sentence of (c), with the reason
+%       in words.
+% INCLUDES (order): none; F6 is not rendered without a release.
+% NOTE: the gate-only report and export accept --shp and bind the five
+%   v4.shp.* IDs of block (a) and (b) without a release; --crosswalk still
+%   needs the curves.
+% =====================================================================
+% (a)
+For \resultnum{v4.protocol.shp.anchor_year}{2004}, the preregistered quasi-simplex model estimated the reliability of the SHP trust item at \resultnum{v4.shp.estimate}{[r]} with a Wald \resultnum{v4.protocol.shp.wald_level}{95}\% interval from \resultnum{v4.shp.wald_lo}{[r]} to \resultnum{v4.shp.wald_hi}{[r]}. The nine Heise triplet estimates ranged from \resultnum{v4.shp.env_lo}{[r]} to \resultnum{v4.shp.env_hi}{[r]}. This is a specification range rather than a confidence interval. % RS41
+Without a confirmatory curve, the anchor is placed only against the frozen grid of $r$, from \resultnum{v4.protocol.r.050}{0.50} to \resultnum{v4.protocol.r.090}{0.90}, and no boundary is given at it. % RS39
+The grid, the strengths, the targets and every rule were fixed before the anchor was computed. % RS39
+% (b)
+The preregistered SHP reliability analysis did not produce an admissible anchor. % RS40
+As preregistered, the failure is reported, and no single empirical anchor point is published pending a linked revision. No estimate was truncated or replaced to obtain a value. % RS40
+The nine Heise triplet estimates, which the report still contains, ranged from \resultnum{v4.shp.env_lo}{[r]} to \resultnum{v4.shp.env_hi}{[r]}; this is a specification range, not a confidence interval. % RS41
+% (c)
+The preregistered SHP reliability analysis was not run: [reason in words]. % Q7
+% END BLOCK B1-SHP
+
+
+% =====================================================================
+% BEGIN BRANCH B02 -- main curve invalid
+% SELECT WHEN: B1a selected and INV.main_curve_valid == false (equivalently,
+%   some U(t1-u00-r{i}) != "completo válido"). Mechanism per tier-1 unit:
+%   gate  := U == "completo inválido" and CV.cells[0].success == true
+%            (so the a=0 band excludes 0.5);
+%   a0gap := U == "completo inválido" and CV.cells[0].success == false;
+%   clock := U in {"não iniciado", "parcial por encerramento operacional"}.
+% INCLUDES (order): F1 (B main-invalidation mark, crosses/diamonds/dots),
+%   F2 for B, T1; then T4, F5 and T3, F4 as status and gate diagnostics.
+%   Local boundaries never stand for a validated whole curve. % ED02
+% ACTION: replaces P4 of B00. Every later sentence about a tier-1 unit
+%   carries the main-invalidation mark (tables: main_curve_valid = false).
+% =====================================================================
+The main curve against B is not validated: \resultnum{v4.t1.n_not_valid}{[n]} of the nine tier-\resultnum{v4.protocol.tier.main_B}{1} units \resultplural{v4.t1.n_not_valid}{was}{were} not both complete and valid at the effective release (Table~\ref{tab:v4-T4}, Fig.~\ref{fig:v4-F5}). % RS15 RS16
+% Keep each sentence whose count is positive.
+In \resultnum{v4.t1.n_invalid_gate}{[n]} of these units, the zero-strength band did not contain \resultnum{v4.protocol.null_auc}{0.5}. \resultplural{v4.t1.n_invalid_gate}{The null gate therefore failed}{The null gates therefore failed}, and \resultplural{v4.t1.n_invalid_gate}{the unit is}{the units are} complete but invalid. \resultplural{v4.t1.n_invalid_gate}{Its boundaries}{Their boundaries} are suppressed rather than interpreted as positive results. % RS17
+In \resultnum{v4.t1.n_invalid_a0gap}{[n]} of these units, the zero-strength \resultplural{v4.t1.n_invalid_a0gap}{cell was a gap}{cells were gaps}, which likewise \resultplural{v4.t1.n_invalid_a0gap}{makes the unit}{makes the units} complete but invalid. % RS14
+Of these units, \resultnum{v4.t1.n_clock}{[n]} had not started or \resultplural{v4.t1.n_clock}{was}{were} only partially complete when the compute window closed. Under the implemented rule, an unfinished tier-\resultnum{v4.protocol.tier.main_B}{1} unit invalidates the main curve even when its null gate has not failed. % RS16 RS13
+Even with a correct procedure, the probability that at least one of the nine zero-strength gates of B fails by chance alone is up to about \resultnum{v4.protocol.chance_invalidation}{4.9}\% (Methods). The release does not distinguish such a failure from a defect in the procedure. % RS52
+Boundaries against B at the other values of $r$ are reported below with the main-curve invalidation mark. The whole curve is not described as validated. % RS15
+% END BRANCH B02
+
+
+% =====================================================================
+% BEGIN BRANCH B03 -- a*(r) right-censored at every r
+% SELECT WHEN: B1a selected and, for every i in 0..8, FULL(t1-u00-r{i})
+%   and CV(t1-u00-r{i}).first == null with no first_censoring key.
+% INCLUDES (order): F1, F2 for B, T1.
+% ACTION: replaces P5 of B00. In P6, B has no crossing at any r, so of the
+%   class sentences only P6-e applies when MECHANISMS; otherwise P6-a
+%   replaces all cross-mechanism sentences, including in this branch.
+% =====================================================================
+On complete, valid grids, the point estimate of the AUC against B did not reach \resultnum{v4.protocol.target}{0.70} at any nominal partner-drift strength up to $a=\resultnum{v4.protocol.a.090}{0.90}$, for any of the nine values of $r$ (Fig.~\ref{fig:v4-F1}, Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18 RS21
+Every tier-\resultnum{v4.protocol.tier.main_B}{1} unit therefore falls in the region ``not attained on a complete eligible grid''. % RS25
+Non-attainment is a recorded result: the grid was not extended, and no secondary target was promoted in its place. % RS26
+At \resultnum{v4.t1.n_interval_lower_finite}{[n]} \resultplural{v4.t1.n_interval_lower_finite}{value}{values} of $r$, the upper band reached \resultnum{v4.protocol.target}{0.70} at some strength. The inverted interval of $a^*$ therefore has a finite lower end, and attainment within the grid is not excluded at \resultplural{v4.t1.n_interval_lower_finite}{that value}{those values}. At the remaining values, the upper band stayed below \resultnum{v4.protocol.target}{0.70} at every strength. % RS21
+At $a=\resultnum{v4.protocol.a.090}{0.90}$ the upper band limit ranged from \resultnum{v4.t1.upper_a090_min}{[x]} to \resultnum{v4.t1.upper_a090_max}{[x]} across the nine values of $r$, shown for each $r$ in Fig.~\ref{fig:v4-F2B}. % RS29
+Non-attainment by this discriminator does not establish that the two laws are indistinguishable. Under the same laws, the population AUC of the fixed discriminator is a lower bound on the Bayes-optimal AUC. Stronger inputs, other summaries and other classifiers remain untested. % RS27
+% END BRANCH B03
+
+
+% =====================================================================
+% BEGIN BRANCH B04 -- boundary at the first positive grid points
+% SELECT WHEN: B1a selected and some tier-1 unit has ATT and
+%   CV.first in {0.001, 0.003}. (Sub-branch B04z: some tier-1 unit has
+%   VALID and CV.first == 0.) Applies to any number of such r; the
+%   referee's "many r" has no frozen threshold (notes Q9).
+% INCLUDES (order): T1 (rows concerned), Supplementary Table S-low (not a
+%   registered output; notes M5), F2 for B.
+% ACTION: appended after P5 of B00.
+% =====================================================================
+At \resultnum{v4.t1.n_first_low}{[n]} \resultplural{v4.t1.n_first_low}{value}{values} of $r$, the first boundary against B was attained at $a=\resultnum{v4.protocol.a.0001}{0.001}$ or $a=\resultnum{v4.protocol.a.0003}{0.003}$, the first two positive strengths. These lie next to the zero-strength cell, where B coincides with the interaction arm (Table~\ref{tab:v4-T1}). % RS25
+Using the interval-based classification of Table~\ref{tab:v4-T1}, the first-positive boundary is small at \resultnum{v4.t1.low.n_small}{[n]} \resultplural{v4.t1.low.n_small}{value}{values} of $r$ and indeterminate at \resultnum{v4.t1.low.n_indeterminate}{[n]}; the cut at \resultnum{v4.protocol.small_cut}{0.03} is an internal convention, not a demonstrated effect size. % RS25
+At these strengths, the acceptance tolerance allows a matching bias of up to a quarter of the fitting standard error in each fitted moment. This bias is not included in the nuisance variance. The decision specification notes that a lag-correlation residual of \resultnum{v4.protocol.equivalence_margin}{0.0003} still allows an AUC above \resultnum{v4.protocol.null_auc}{0.5} at small strengths. % RS46
+For each such cell, Supplementary Table~\ref{tab:v4-slow} reports whether the \resultnum{v4.protocol.retry_pairs}{4,096}-panel retry was used, the fitted residuals in standard-error units, the amplification diagnostic, the nuisance variance with its Monte Carlo error, the mean shift of the local draws and the fraction of projected draws. % RS44 RS45 RS47
+The retry was used in \resultnum{v4.low.n_retry}{[n]} of these \resultnum{v4.low.n_cells}{[n]} \resultplural{v4.low.n_cells}{cell}{cells}. The largest fraction of projected draws was \resultnum{v4.low.projected_fraction_max}{[x]}, and the largest amplification diagnostic was \resultnum{v4.low.amplification_max}{[x]}. % RS44 RS47
+% The G2 mean shift at a = 0.003 is not reported: it is only in the sealed
+% G2-auc-diagnostics record, which the report does not read and which opens
+% only after the confirmatory results are committed (notes M3, Resolutions).
+The first boundary is a grid index; its inverted interval is reported without adjustment. % RS21
+% Sub-branch B04z, only if n_first_zero > 0.
+At \resultnum{v4.t1.n_first_zero}{[n]} \resultplural{v4.t1.n_first_zero}{value}{values} of $r$, the point estimate at $a=\resultnum{v4.protocol.a.0}{0}$ already reached \resultnum{v4.protocol.target}{0.70}, while the zero-strength band contained \resultnum{v4.protocol.null_auc}{0.5}. The null gate therefore passed. The table labels \resultplural{v4.t1.n_first_zero}{this unit}{these units} ``indeterminate'' and reports \resultplural{v4.t1.n_first_zero}{its inverted interval}{their inverted intervals}. % RS17 RS25
+% END BRANCH B04
+
+
+% =====================================================================
+% BEGIN BRANCH B05 -- AUC not monotone in a
+% SELECT WHEN: B1a selected and, for some tier-1 unit with ATT,
+%   CV.sustained != CV.first while neither carries a censoring key
+%   (a point crossing followed by an available strength with auc < 0.70);
+%   or some tier-1 CV.nonmonotone_band == true.
+% INCLUDES (order): F2 for B (dip visible), T1 (a*, a_s*, both intervals,
+%   nonmonotone_band column).
+% ACTION: appended after P5 of B00 (after B04 if both apply).
+% =====================================================================
+At \resultnum{v4.t1.n_dip}{[n]} \resultplural{v4.t1.n_dip}{value}{values} of $r$ the point estimate against B reached \resultnum{v4.protocol.target}{0.70} at $a^*$ and fell below \resultnum{v4.protocol.target}{0.70} at a higher available strength, so the sustained boundary $a_s^*$ lies above $a^*$ or is not attained (Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18
+Both boundaries are reported with their own inverted intervals, and the estimates are not interpolated, smoothed or made monotone. % RS19 RS20 RS21
+The band-monotonicity flag, which marks any decrease between consecutive lower or upper band limits, is raised for \resultnum{v4.t1.n_nonmonotone_band}{[n]} of the tier-\resultnum{v4.protocol.tier.main_B}{1} curves. This diagnostic concerns band endpoints, not a dip of the point estimate or a difference between first and sustained boundaries. % RS19
+Neither the solver nor the band enforces monotonicity in $a$. The release does not identify the source of a reversal. % RS20
+The word ``crossing'' is used in a claim only at strengths whose lower band exceeds \resultnum{v4.protocol.target}{0.70}. % RS22
+% END BRANCH B05
+
+
+% =====================================================================
+% BEGIN BRANCH B06 -- first and sustained boundaries disagree
+% SELECT WHEN: B1a selected and, for some tier-1 (or tier-2) unit with
+%   VALID, the tuple (first, first_interval, first_censoring,
+%   first_interval_censoring) differs from the tuple (sustained,
+%   sustained_interval, sustained_censoring, sustained_interval_censoring),
+%   including a sustained boundary censored by a gap above the first.
+% INCLUDES (order): T1 (columns a_star, a_star_lower, a_star_upper,
+%   a_s_star, a_s_star_lower, a_s_star_upper), F1 (open circles for a_s*).
+% ACTION: appended after P5 of B00 (after B05 if both apply).
+% =====================================================================
+Table~\ref{tab:v4-T1} gives, for every $r$, the first boundary, its interval, the sustained boundary, its interval and any censoring reason. % RS21 RS23
+The two boundaries differ at \resultnum{v4.t1.n_first_ne_sustained}{[n]} \resultplural{v4.t1.n_first_ne_sustained}{value}{values} of $r$ against B. % RS18
+Where a sustained boundary is censored at a gap, it is declared only above the last gap and only when every higher strength is available, so a sustained boundary that lies below the last gap is censored rather than moved above it. % RS23
+Table~\ref{tab:v4-T1} reports both, and the abstract states at how many shares they differ. % RS57
+% END BRANCH B06
+
+
+% =====================================================================
+% BEGIN BRANCH B07 -- boundary not monotone in r
+% SELECT WHEN: B1a selected and, with ord(i) := idx(CV(t1-u00-r{i}).first)
+%   if ATT, 9 if first == null without censoring (not attained), and
+%   undefined otherwise, the defined values of ord are neither
+%   non-increasing nor non-decreasing in i.
+% INCLUDES (order): F1 (unchanged; no line joins r values), T1.
+% ACTION: appended to P10 of B00.
+% =====================================================================
+The first boundary against B does not change monotonically across $r$ (Fig.~\ref{fig:v4-F1}, Table~\ref{tab:v4-T1}). % RS51
+This shape has not been tested. The bands are simultaneous only within each $r$, each $r$ has its own seed block, and no simultaneous band over all \resultnum{v4.protocol.grid_cells}{81} \resultplural{v4.protocol.grid_cells}{cell}{cells} was prespecified. The reversal may therefore reflect sampling variation. % RS28 RS51
+No smoothing across $r$ is applied, and no global claim is made that separation holds at some value of $r$. % RS28
+% END BRANCH B07
+
+
+% =====================================================================
+% BEGIN BRANCH B08 -- gaps that censor boundaries
+% SELECT WHEN: B1a selected and some released tier-1 or tier-2 curve has
+%   gap_count > 0. Gap type of cell j from its last attempt L:
+%   screened      := L.status in {family-limit-lower, family-limit-upper}
+%                    and L.evaluations == 0;
+%   profile_limit := same statuses and L.evaluations > 0;
+%   solver        := L.status in {no-L1-root, non-monotone-profile,
+%                    ill-conditioned, numerical-limit, budget};
+%   validation    := L.status in {anchor-exact, interior, boundary} and
+%                    L.validation_pass == false;
+%   dependency    := cell.dependency_gap == true (tier 3 controls only).
+% INCLUDES (order): F2 for B (gap crosses), T1 (gaps column),
+%   Supplementary Table S-gaps (not registered; notes M4, Q11 of the log).
+% ACTION: appended after P5 of B00 (after B06 if both apply).
+% =====================================================================
+The tier-\resultnum{v4.protocol.tier.main_B}{1} curves contain \resultnum{v4.t1.gap_cells}{[n]} gap \resultplural{v4.t1.gap_cells}{cell}{cells} in \resultnum{v4.t1.n_gap_units}{[n]} \resultplural{v4.t1.n_gap_units}{unit}{units} (Table~\ref{tab:v4-T1}; crosses in Fig.~\ref{fig:v4-F2B}). % RS24
+Gap-status counts were: screened without a null evaluation, \resultnum{v4.t1.gap.screened}{[n]}; family limit along the profile, \resultnum{v4.t1.gap.profile_limit}{[n]}; other solver status, \resultnum{v4.t1.gap.solver}{[n]}; and validation failure in both attempts, \resultnum{v4.t1.gap.validation}{[n]} cells (Supplementary Table~\ref{tab:v4-sgaps}). % RS45 RS50
+No gap is counted as an AUC below the target or as evidence that separation is impossible. % RS24
+Boundaries are computed on the available strengths and are not declared across a gap. The release records \resultnum{v4.t1.n_first_gap}{[n]} first \resultplural{v4.t1.n_first_gap}{boundary}{boundaries} and \resultnum{v4.t1.n_sustained_gap}{[n]} sustained \resultplural{v4.t1.n_sustained_gap}{boundary}{boundaries} as censored, with the strength of the gap stated for each. % RS23
+For every $r$, Supplementary Table~\ref{tab:v4-sgaps} lists the eligible domain: the strengths not excluded by the screen. This makes explicit the part of the grid on which a boundary can be obtained. % RS50
+% Tier-3 controls only, if any dependency gap occurs.
+In the control units, \resultnum{v4.t3.gap.dependency}{[n]} \resultplural{v4.t3.gap.dependency}{cell}{cells} \resultplural{v4.t3.gap.dependency}{is a dependency gap}{are dependency gaps} because the observed fit \resultplural{v4.t3.gap.dependency}{it reuses}{they reuse} failed or is missing. % RS49
+% END BRANCH B08
+
+
+% =====================================================================
+% BEGIN BRANCH B09 -- wide intervals
+% SELECT WHEN: B1a selected and n_wide := number of i with ATT(t1-u00-r{i})
+%   and not RES(t1-u00-r{i}) is > 0.
+% INCLUDES (order): T1 (interval columns), F1 (vertical bars), F2 for B
+%   (shaded interval).
+% ACTION: replaces the precision sentence P5-c of B00.
+% =====================================================================
+Among the \resultnum{v4.t1.n_attained}{[n]} \resultplural{v4.t1.n_attained}{value}{values} of $r$ with an attained first boundary against B, \resultnum{v4.t1.n_interval_wide_finite}{[n]} \resultplural{v4.t1.n_interval_wide_finite}{has}{have} a finite inverted interval spanning more than one grid step. An interval end lies beyond the grid at \resultnum{v4.t1.n_interval_beyond_grid}{[n]} \resultplural{v4.t1.n_interval_beyond_grid}{value}{values} and is censored by a gap at \resultnum{v4.t1.n_interval_gap}{[n]} \resultplural{v4.t1.n_interval_gap}{value}{values} (Table~\ref{tab:v4-T1}). An unbounded or censored end is not reported as a finite width. % RS21 RS48
+The frozen precision target of an interval spanning at most one grid step is therefore met at \resultnum{v4.t1.n_resolved}{[n]} \resultplural{v4.t1.n_resolved}{value}{values} of $r$. This is a planning goal, not a statement of power. Neither the number of panels nor the grid was changed after the results. % RS48
+Where the interval spans several steps, the interval rather than the point is the result, and $a^*$ is not described as resolved there. % RS48
+% END BRANCH B09
+
+
+% =====================================================================
+% BEGIN BRANCH B10 -- B crosses, D does not (and the analogous E and C rule)
+% SELECT WHEN: B1a selected, MECHANISMS, and a positive persistence count
+%   for bd, be or bc. Select each family clause independently. For bd,
+%   n_persistence := number of i with
+%   FULL(t1-u00-r{i}) and FULL(t2-u03-r{i}) and XING(t1-u00-r{i}) and
+%   BELOW(t2-u03-r{i}) is > 0. Analogous counts use t2-u04 (E) and
+%   t2-u02 (C) in place of t2-u03.
+% INCLUDES (order): F1 (panels B and D on shared axes), T1 (tier-1 and
+%   tier-2 rows), F2 for D (supplement).
+% ACTION: inserted as sentence P6-b of B00.
+% =====================================================================
+At \resultnum{v4.bd.n_persistence}{[n]} of these values of $r$ ($r=$ \resultnum{v4.bd.r_persistence}{[r list]}), the lower band against B exceeded \resultnum{v4.protocol.target}{0.70} at some strength while the upper band against D stayed below \resultnum{v4.protocol.target}{0.70} at every strength (Fig.~\ref{fig:v4-F1}, Table~\ref{tab:v4-T1}). % RS22 RS32
+Under the frozen reading, the result at these values of $r$ is compatible with non-Gaussian persistence and gives no specific evidence of interaction. % RS32
+An upper band below the target shows only that this discriminator did not reach the target against D on this grid; D could still be separable at a lower AUC or by another discriminator, and failing to reach the target does not establish equivalence. % RS32 RS27
+% Analogous rule for E and C: each clause requires MECHANISMS and its own
+% positive n_persistence, regardless of whether the D clause applies.
+Against E, the result is compatible with mover--stayer heterogeneity and gives no specific evidence of interaction at \resultnum{v4.be.n_persistence}{[n]} \resultplural{v4.be.n_persistence}{value}{values} ($r=$ \resultnum{v4.be.r_persistence}{[r list]}). \resultplural{v4.be.n_persistence}{This belongs}{These belong} to the common set of \resultnum{v4.be.n_eligible}{[n]} gap-free B/E \resultplural{v4.be.n_eligible}{pair}{pairs} ($r=$ \resultnum{v4.be.r_eligible}{[r list]}). % RS32
+Against C, the result is compatible with heteroscedastic error and heaping and gives no specific evidence of interaction at \resultnum{v4.bc.n_persistence}{[n]} \resultplural{v4.bc.n_persistence}{value}{values} ($r=$ \resultnum{v4.bc.r_persistence}{[r list]}). \resultplural{v4.bc.n_persistence}{This belongs}{These belong} to the common set of \resultnum{v4.bc.n_eligible}{[n]} gap-free B/C \resultplural{v4.bc.n_eligible}{pair}{pairs} ($r=$ \resultnum{v4.bc.r_eligible}{[r list]}). % RS32
+% END BRANCH B10
+
+
+% =====================================================================
+% BEGIN BRANCH B11 -- observed-channel separation exceeds the controls
+% SELECT WHEN: B1a selected and n_obs_exceeds > 0 or
+%   n_channel_dependent > 0 or n_channel_not_assessed > 0.
+%   Three controls: masked latent (latent), ordinal r = 1 (ordinal_one),
+%   and latent_rank. Exceeds is pointwise on shared available strengths
+%   of two valid units. Channel-dependent requires ATT(observed) and
+%   all three controls FULL, with none attaining a finite first boundary.
+%   Any invalid, missing or gapped control means not assessed.
+% INCLUDES (order): T1s (tier-3 rows), T4 (tier-3 counts), F5.
+% ACTION: replaces sentence P7-c of B00; retain inventory and non-assessment.
+%   Exceedance counts require n_pairs_compared > 0; the sensitivity reading
+%   requires n_obs_exceeds > 0; the channel label requires n_channel_dependent > 0.
+%   With zero comparisons retain only P7-c1, inventory and non-assessment.
+% =====================================================================
+Tier \resultnum{v4.protocol.tier.controls}{3} ended with \resultnum{v4.inv.t3.n_valid}{[n]} of its \resultnum{v4.protocol.units.t3}{270} \resultplural{v4.protocol.units.t3}{unit}{units} complete and valid, and \resultnum{v4.inv.t3.n_incomplete}{[n]} not started or partial (Table~\ref{tab:v4-T4}). % RS12
+Unfinished units are absent from the analysis, and no statement is made about them. % RS12
+At \resultnum{v4.t3.n_obs_exceeds}{[n]} of the \resultnum{v4.t3.n_pairs_compared}{[n]} family-and-$r$ \resultplural{v4.t3.n_pairs_compared}{pair}{pairs} with a valid observed unit and at least one valid control, the observed-channel point AUC exceeded the masked latent, ordinal with a response signal share of one or \texttt{latent\_rank} control at some strength available in both units (\allunitsresource). % RS34
+Under the frozen rule, this is read as sensitivity of the lag statistics to the response transformation and to the rematched null parameters, not as information created by response error. % RS34
+At \resultnum{v4.t3.n_channel_dependent}{[n]} \resultplural{v4.t3.n_channel_dependent}{pair}{pairs} the observed unit attained a finite first boundary while none of the three valid, gap-free controls attained one; this separation is labelled channel-dependent.
+For \resultnum{v4.t3.n_channel_not_assessed}{[n]} \resultplural{v4.t3.n_channel_not_assessed}{pair}{pairs} with a valid observed unit, channel dependence was not assessed because at least one control was invalid, absent or had a gap. % RS34
+Mobility summaries are reported separately and do not add support to the lag-decay comparison. % RS35
+% END BRANCH B11
+
+
+% =====================================================================
+% BEGIN BRANCH B12 -- sensitivities differ from the main result, or are absent
+% SELECT WHEN: B1a selected and v4.sens.use_b12 == 1
+%   Exporter: n_region_differs > 0 or n_not_valid > 0, counting every
+%   sensitivity status other than complete valid, including complete invalid.
+% INCLUDES (order): T4 (tiers 4-6), T1s (tiers 4-6 rows), F5.
+% ACTION: replaces sentence P7-d of B00.
+% =====================================================================
+In the sensitivity tiers, \resultnum{v4.inv.t4.n_valid}{[n]} of \resultnum{v4.protocol.units.t4}{45} response-channel \resultplural{v4.protocol.units.t4}{unit}{units} and \resultnum{v4.inv.t5.n_valid}{[n]} of \resultnum{v4.protocol.units.t5}{45} mechanism \resultplural{v4.protocol.units.t5}{unit}{units} were complete and valid. Of the \resultnum{v4.protocol.units.t6}{9} units in the \resultnum{v4.protocol.steps}{24}-step sensitivity, \resultnum{v4.inv.t6.n_valid}{[n]} \resultplural{v4.inv.t6.n_valid}{was}{were} complete and valid (Table~\ref{tab:v4-T4}).  % RS12 RS13
+Remaining units retain their inventory status and are not interpreted. % RS12 RS13
+% (a) only.
+For \resultnum{v4.sens.n_region_differs}{[n]} of the \resultnum{v4.sens.n_pairs_compared}{[n]} scenario-and-$r$ \resultplural{v4.sens.n_pairs_compared}{pair}{pairs} in which both units were complete and valid, the sensitivity analysis assigned $a^*$ to a different region from the main B unit at the same $r$ (\allunitsresource). % RS36
+These differences are reported without reweighting or replacing the main result, and no sensitivity is promoted to a primary analysis. % RS36
+The response-style and conditioning scenarios vary one factor at a time, and their combination is an identified exploratory analysis. % RS36
+Under full anchoring ($\omega=\resultnum{v4.protocol.omega_full}{1}$), the latent waves repeat the initial wave regardless of $a$. These units therefore check that degeneracy and provide no information about $a$. % RS37
+The \resultnum{v4.protocol.steps}{24}-step scenario retains the per-step coefficients, which lowers annual latent persistence overall. Its units therefore describe a changed process rather than the main process at a finer time resolution. % RS38
+% END BRANCH B12
+
+
+% =====================================================================
+% BEGIN BRANCH B13 -- SHP anchor outside the grid
+% SELECT WHEN: B1a selected, SHP present, and SHP.anchor.estimate < 0.50
+%   or > 0.90 (B13-out), or the estimate is inside [0.50, 0.90] while
+%   wald_95_interval[0] < 0.50 or wald_95_interval[1] > 0.90 (B13-part).
+% INCLUDES (order): F6 (x-axis extended to the anchor by _r_limits).
+% ACTION: replaces P8 of B00.
+% =====================================================================
+For \resultnum{v4.protocol.shp.anchor_year}{2004}, the preregistered quasi-simplex model estimated the reliability of the SHP trust item at \resultnum{v4.shp.estimate}{[r]} with a Wald \resultnum{v4.protocol.shp.wald_level}{95}\% interval from \resultnum{v4.shp.wald_lo}{[r]} to \resultnum{v4.shp.wald_hi}{[r]}. The nine Heise triplet estimates ranged from \resultnum{v4.shp.env_lo}{[r]} to \resultnum{v4.shp.env_hi}{[r]}. This is a specification range rather than a confidence interval (Fig.~\ref{fig:v4-F6}). % RS41
+% B13-out: point estimate below 0.50 (use "above the largest grid value 0.90" when above).
+The estimate lies below the smallest grid value, \resultnum{v4.protocol.r.050}{0.50}. It is plotted at its own position outside the grid; $a^*(r)$ is not extrapolated beyond the grid. % RS39
+The curve therefore gives no boundary at the estimated reliability of the SHP item. % RS39
+% B13-part: point estimate inside the grid, interval extending beyond it.
+The interval extends beyond the grid, and no boundary is extrapolated to the part of the interval outside it. % RS39
+The grid, the strengths, the targets and every rule were fixed before the anchor was computed and were not changed in response to it. % RS39
+The anchor and the simulation's signal share are different quantities (Discussion), and the anchor does not validate the simulated mechanism. % RS39
+% END BRANCH B13
+
+
+% =====================================================================
+% BEGIN BRANCH B14 -- SHP anchor fails its diagnostics
+% SELECT WHEN: the SHP analysis was run and (a) no aggregate report exists
+%   because shp_reliability stopped with a fit error (multi-wave optimizer
+%   not converged, information matrix not positive definite, a triplet
+%   not converged or inadmissible, too few complete respondents in a
+%   window); or (b) the report exists with multiwave.at_parameter_bound ==
+%   true (a fit that did not converge, and every triplet or polychoric
+%   failure, stop the analysis before a report is written, so they fall
+%   under (a)); or (c) the Research Owner recorded an item, scale or mode
+%   divergence before execution. Conditions (a) and (c) are not recorded in
+%   any field; see notes M6.
+% INCLUDES (order): none of F6; F1 only.
+% ACTION: replaces P8 of B00.
+% =====================================================================
+% The cause is not exported: a failed primary fit writes no aggregate report
+% (notes M6), and successor 1 records only the STARTS sensitivity. Name the
+% cause from the SHP run record, in words (notes, Resolutions).
+The preregistered SHP reliability analysis did not produce an admissible anchor. % RS40
+As preregistered, the failure is reported, and no single empirical anchor point is published pending a linked revision. No estimate was truncated or replaced to obtain a value. % RS40
+% Only under (b), where a report and its envelope exist.
+The report still contains the nine Heise triplet estimates, which ranged from \resultnum{v4.shp.env_lo}{[r]} to \resultnum{v4.shp.env_hi}{[r]}. This is a specification range, not a confidence interval, and it is not used to position the curve. % RS41
+The curve $a^*(r)$ is reported over the frozen grid without an empirical anchor. % RS39
+% END BRANCH B14
+
+
+% =====================================================================
+% BEGIN BRANCH B15 -- anchor interval covers r values with different statuses
+% SELECT WHEN: B1a selected, SHP present and not B14, and among the grid
+%   values r_i with wald_95_interval[0] <= r_i <= wald_95_interval[1],
+%   the pairs (U(t1-u00-r{i}), REGION(t1-u00-r{i})) take more than one
+%   value (n_status_classes > 1).
+% INCLUDES (order): F6, T1.
+% ACTION: appended to P8 of B00 (or to B13-part).
+% =====================================================================
+The Wald interval of the anchor contains \resultnum{v4.shp.n_r_in_interval}{[n]} grid \resultplural{v4.shp.n_r_in_interval}{value}{values} of $r$. At \resultplural{v4.shp.n_r_in_interval}{this value}{these values}, \resultplural{v4.shp.n_r_in_interval}{the B unit has}{the B units have} \resultnum{v4.shp.n_status_classes}{[n]} different \resultplural{v4.shp.n_status_classes}{combination}{combinations} of execution status and boundary region (Fig.~\ref{fig:v4-F6}, Table~\ref{tab:v4-T1}). % RS25 RS39
+No single boundary is attributed to the SHP item, and the anchor is not rounded to a grid value. % RS41
+% END BRANCH B15
+
+
+% =====================================================================
+% BEGIN BRANCH B16 -- diagnostic flags
+% SELECT WHEN: B1a selected and any of: some released CV.empirical_exceeds_floor
+%   == true; sum(GATE[G2].covariance_flag_counts) > 0;
+%   GATE[G1b].empirical_exceeds_floor_count > 0. (No frozen threshold
+%   defines an FD median "near the edge"; the medians are always
+%   reported in T3.)
+% INCLUDES (order): T1s (critical, max_t_above_floor), T3 (G2 rows).
+% ACTION: replaces P9 of B00.
+% =====================================================================
+The empirical max-$t$ critical value exceeded the \resultnum{v4.protocol.critical_floor}{2.7729} floor in \resultnum{v4.all.n_exceeds_floor}{[n]} of the \resultnum{v4.all.n_curves}{[n]} released \resultplural{v4.all.n_curves}{curve}{curves}, including \resultnum{v4.t1.n_exceeds_floor}{[n]} in tier \resultnum{v4.protocol.tier.main_B}{1}. \resultplural{v4.all.n_exceeds_floor}{This band uses}{These bands use} the empirical critical value (\allunitsresource). % RS42
+In G2, \resultnum{v4.gate.G2.covariance_flags}{[n]} \resultplural{v4.gate.G2.covariance_flags}{pipeline}{pipelines} raised the covariance-Jacobian flag, whose first-order AUC correction exceeded a tenth of the square root of the nuisance variance (Table~\ref{tab:v4-T3}). % RS43
+The flags are diagnostics and did not change the pass criteria. % RS43
+% END BRANCH B16
+
+
+% =====================================================================
+% BEGIN BRANCH B17 -- r = 0.70
+% SELECT WHEN: always when B1a is selected. The referee's condition "stands
+%   apart from its neighbours" has no frozen operational definition.
+%   Decision 91 removes the neighbour clause; exposure stays unconditional.
+% INCLUDES: the dagger in F1, F2, F3, F5, F6 and the exposure column of
+%   T1/T1s.
+% ACTION: appended to P10 of B00.
+% =====================================================================
+The unit at $r=\resultnum{v4.protocol.r.070}{0.70}$ was exposed during calibration and is marked in every figure and table. It remains part of the whole curve, alongside the other eight values, and is not interpreted on its own. % RS30
+% END BRANCH B17
+
+
+% =====================================================================
+% BEGIN BRANCH B00 -- default composition
+% SELECT WHEN: B1a selected. With no branch B02-B16 applying, this is the
+%   whole Results section: INV.main_curve_valid == true; every tier-1
+%   unit FULL with ATT, first == sustained and no censoring keys, RES,
+%   nonmonotone_band == false and first not in {0, 0.001, 0.003}; ord(i)
+%   monotone in i; no tier-1 or tier-2 gap; the B/D classes of P6 as they
+%   fall; tier-3 condition of B11 false; tier 4-6 condition of B12 false;
+%   SHP present, estimate and Wald interval inside [0.50, 0.90], no B14
+%   condition, n_status_classes == 1; no B16 flag.
+% INCLUDES (display order): F1, F2 for B, T1 (P5/P6, the answer);
+%   T4, F5 (P3, inventory); T3, F4 (P2, validation diagnostics); F6 (P8).
+%   Supplement: F2 for A, C, D, E and F3 (P7, only under its existing
+%   MECHANISMS guard); T1s (P9) and the secondary-target table below.
+%   This display priority supersedes first-reference order for B00 only;
+%   the P1-P10 text order, SELECT WHEN/ACTION rules, output destinations,
+%   full-r coverage and all validity qualifications remain unchanged. % ED02
+% INCLUDES caption F1: Boundaries of panel discrimination against B,
+%   trait-plus-autoregressive persistence (confirmatory); A, autoregressive persistence; C, autoregressive
+%   persistence with an altered response channel; D, state-dependent
+%   persistence; E, mover--stayer persistence. Axes are continuous response
+%   signal share r and nominal partner-drift strength a. Equal vertical
+%   spacing denotes grid positions, not equal increments of a; no interpolation.
+%   First and sustained boundaries, intervals, gaps, invalidity, incomplete
+%   units and calibration exposure remain visible. Gray B markers are a
+%   descriptive reference, without between-family inference. % ED01
+% INCLUDES caption F2: Panel-level AUC of the fixed discriminator at every r,
+%   with the primary target and the per-r band across available strengths.
+%   Strength positions are ordinal; the band supplies no joint coverage
+%   across r, families or channels. Gaps and main invalidation remain marked.
+%   Each family uses the semantic name given in F1. % ED01
+% INCLUDES caption F3 (supplement): Descriptive offsets from B in grid positions
+%   for eligible paired point boundaries, without an interval or contrast test;
+%   the existing MECHANISMS condition still controls inclusion. % ED01 ED02
+% INCLUDES caption F6: Exploratory positioning of distinct quantities, without
+%   an empirically calibrated equivalence to r or an item-specific boundary.
+%   The quasi-simplex anchor and its model-based Wald interval, the Heise
+%   specification envelope (not a confidence interval), STARTS sensitivity and
+%   synthetic crosswalk retain distinct labels. The crosswalk ranges are
+%   descriptive and do not propagate uncertainty in the empirical anchor;
+%   no rounding to r, interpolation or extrapolation of a*(r) is allowed.
+%   Source: Swiss Household Panel (SHP). % ED03
+% INCLUDES caption T1: Main-grid records at the primary target only: first and
+%   sustained boundaries with both intervals, status, null gate, gap count and
+%   region. B and D retain every r; any paired reading uses the authorized
+%   common gap-free denominator. Status labels valid, invalid, partial and
+%   not started retain their inventory definitions; dagger marks exposure and
+%   double dagger main invalidation. Gap-censored and beyond-grid endpoints
+%   remain distinct. Full gap types, controls, sensitivities and nuisance
+%   diagnostics are in T1s and the released cell records. % ED04
+% INCLUDES caption T1s (supplement/online resource): Full inventory records,
+%   including absent and invalid units, controls, sensitivities, both boundary
+%   records and diagnostics. The report CSV retains its complete schema.
+%   Derived secondary targets enter the supplementary secondary-target table
+%   and never Results or the headline. % ED04
+% INCLUDES caption secondary-target table (supplement): Derived B boundaries
+%   for AUC 0.60 and 0.80 at every r with a curve, using the same inclusive
+%   inversion and gap censoring; invalid units remain suppressed and whole-curve
+%   invalidation remains marked. These targets do not replace AUC 0.70. % ED04
+% INCLUDES caption T3/F4: Gate criteria, counts, ratios, progress and verdicts,
+%   with planned failure denominators; dispersion checks do not certify
+%   absolute interior coverage or empirical validity. % ED05
+% INCLUDES caption T4/F5: Full frozen inventory by execution status, including
+%   absent, partial and invalid units. NS/P/CI/CV denote not started, partial,
+%   complete invalid and complete valid; completion and curve validity have
+%   separate meanings. % ED05
+% =====================================================================
+
+% --- P1 (always with B1a). The subsection headings below enter only
+%   with B1a, each before the first paragraph of its group; the P8
+%   heading also needs a selected P8 block. Units of one slot form one
+%   paragraph.
+This section reports the hash-bound gate records, the released curves and the complete unit inventory, as fixed by the release receipt. The gate and inventory summaries come first because they decide which readings are available; Figures~\ref{fig:v4-F1} and~\ref{fig:v4-F2B} and Table~\ref{tab:v4-T1} then give the boundary records at every response signal share, with gaps and invalidation marked. % RS12
+The run evaluates, on new seeds, a protocol amended after partial calibration exposure; it is not a fully blind confirmation. % RS30
+The primary result is the whole curve over the nine values of $r$. No value of $r$ is selected or used to summarize it. % RS29
+
+% --- P2 = branch B1a (above), which follows this heading.
+\subsection{Validation gate}
+
+% --- P3 (always with B1a)
+\subsection{Release and unit inventory}
+The effective release occurred on \resultnum{v4.release.effective_local}{[time]} America/Sao\_Paulo, triggered by \resultnum{v4.release.condition}{[condition]}; the nominal close was \resultnum{v4.protocol.close_local}{18 October 2026 at 23:59} America/Sao\_Paulo. At release, \resultnum{v4.inv.n_valid}{[n]} of the \resultnum{v4.protocol.units.all}{414} \resultplural{v4.protocol.units.all}{unit}{units} in the frozen inventory \resultplural{v4.inv.n_valid}{was}{were} complete and valid, \resultnum{v4.inv.n_invalid}{[n]} \resultplural{v4.inv.n_invalid}{was}{were} complete but invalid, \resultnum{v4.inv.n_partial}{[n]} \resultplural{v4.inv.n_partial}{was}{were} partial at the operational close and \resultnum{v4.inv.n_not_started}{[n]} had not started (Table~\ref{tab:v4-T4}, Fig.~\ref{fig:v4-F5}; the inventory records these four statuses in Portuguese as \texttt{completo válido}, \texttt{completo inválido}, \texttt{parcial por encerramento operacional} and \texttt{não iniciado}). % RS12 RS13
+The tiers ran in the fixed order, without changes based on AUC, band width or invalidity. The declared-close rule requires all unfinished work to stop. % RS13
+Only complete units contribute boundaries and AUC profiles; every other unit appears in the inventory with its status. % RS12
+
+% --- P4 (default; B02 replaces it)
+\subsection{Boundaries against B}
+All nine tier-\resultnum{v4.protocol.tier.main_B}{1} units of B were complete and valid. The main curve is therefore valid under the frozen rule. % RS15 RS16
+
+% --- P5 (default; B03 replaces it; B04-B06 and B08 append after it; B09 replaces P5-c)
+% P5-a
+Against B, the first boundary was classified as small ($\resultnum{v4.protocol.a.0}{0}<a^*\le \resultnum{v4.protocol.small_cut}{0.03}$) at \resultnum{v4.t1.n_small}{[n]} \resultplural{v4.t1.n_small}{value}{values} of $r$ and large ($\resultnum{v4.protocol.small_cut}{0.03}<a^*\le \resultnum{v4.protocol.a.090}{0.90}$) at \resultnum{v4.t1.n_large}{[n]}. It was not attained on a complete eligible grid at \resultnum{v4.t1.n_not_attained}{[n]} \resultplural{v4.t1.n_not_attained}{value}{values} and was censored or indeterminate at \resultnum{v4.t1.n_censored}{[n]} (Fig.~\ref{fig:v4-F1}, Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18 RS25
+Against B, the first boundary was small at all \resultnum{v4.t1.n_small}{[n]} \resultplural{v4.t1.n_small}{value of $r$}{values of $r$}; none was large, not attained, censored or indeterminate (Fig.~\ref{fig:v4-F1}, Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18 RS25
+Against B, the first boundary was large at all \resultnum{v4.t1.n_large}{[n]} \resultplural{v4.t1.n_large}{value of $r$}{values of $r$}; none was small, not attained, censored or indeterminate (Fig.~\ref{fig:v4-F1}, Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18 RS25
+Against B, the first boundary was not attained at all \resultnum{v4.t1.n_not_attained}{[n]} \resultplural{v4.t1.n_not_attained}{value of $r$}{values of $r$}; none was small, large, censored or indeterminate (Fig.~\ref{fig:v4-F1}, Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18 RS25
+Against B, the first boundary was censored or indeterminate at all \resultnum{v4.t1.n_censored}{[n]} \resultplural{v4.t1.n_censored}{value of $r$}{values of $r$}; none was small, large or not attained (Fig.~\ref{fig:v4-F1}, Fig.~\ref{fig:v4-F2B}, Table~\ref{tab:v4-T1}). % RS18 RS25
+The cut at \resultnum{v4.protocol.small_cut}{0.03} is an internal convention, not a demonstrated effect size, and boundaries are grid strengths, not continuous estimates. % RS25
+% P5-b: when B06 applies, end each sentence after its strength or range and
+%   drop the clause on the sustained boundary; B06 reports the difference.
+% P5-b.single, one attained first boundary:
+The attained first boundary was at $a=\resultnum{v4.t1.first_min}{[a]}$, and at every value of $r$ where $a^*$ was attained the sustained boundary equalled it. % RS18
+% P5-b.single, several attained first boundaries, all at one strength:
+Every attained first boundary was at $a=\resultnum{v4.t1.first_min}{[a]}$, and at every value of $r$ where $a^*$ was attained the sustained boundary equalled it. % RS18
+% P5-b.range, attained first boundaries at two or more strengths:
+The attained first boundaries ranged from $a=\resultnum{v4.t1.first_min}{[a]}$ to $a=\resultnum{v4.t1.first_max}{[a]}$, and at every value of $r$ where $a^*$ was attained the sustained boundary equalled it. % RS18
+At \resultnum{v4.t1.n_crossing}{[n]} \resultplural{v4.t1.n_crossing}{value}{values} of $r$, the lower band exceeded \resultnum{v4.protocol.target}{0.70} at some strength; ``crossing'' refers only to such strengths. % RS22
+% P5-c (B09 replaces it)
+The inverted interval of $a^*$ spanned at most one grid step at all \resultnum{v4.t1.n_attained}{[n]} \resultplural{v4.t1.n_attained}{value}{values} of $r$ where $a^*$ was attained. This meets the frozen precision target, which is a planning goal rather than a statement of power. % RS21 RS48
+
+% --- P6 (all cross-mechanism sentences require MECHANISMS)
+\subsection{Other null families}
+% Paragraphs: (1) P6 lead, paired counts, B10's bd clauses and P6-c to
+%   P6-e; (2) P6-a, or B10's E and C clauses and P6-f, then P7-a, P7-b and
+%   the F3 sentence.
+% P6-a: select when not MECHANISMS; replaces every other sentence of P6.
+The main curve was invalid; tier \resultnum{v4.protocol.tier.main_others}{2} was entirely complete and valid, but both are required for comparing mechanisms. Mechanisms are therefore not compared, either locally or in the headline. Valid units remain displayed. % RS31 RS33
+Tier \resultnum{v4.protocol.tier.main_others}{2} was not entirely complete and valid; the main curve was valid, but both are required for comparing mechanisms. Mechanisms are therefore not compared, either locally or in the headline. Valid units remain displayed. % RS31 RS33
+The main curve was invalid, and tier \resultnum{v4.protocol.tier.main_others}{2} was not entirely complete and valid. Mechanisms are therefore not compared, either locally or in the headline. Valid units remain displayed. % RS31 RS33
+% P6 lead and the paired counts: select only when MECHANISMS.
+Fig.~\ref{fig:v4-F1} and Table~\ref{tab:v4-T1} show trait-plus-autoregressive persistence (B) and state-dependent persistence (D) side by side at \resultplural{v4.bd.n_side_by_side}{the}{all} \resultnum{v4.bd.n_side_by_side}{[n]} response signal \resultplural{v4.bd.n_side_by_side}{share}{shares} ($r=$ \resultnum{v4.bd.r_side_by_side}{[r list]}). The prespecified interpretation and all paired counts below use the common set of \resultnum{v4.bd.n_eligible}{[n]} \resultplural{v4.bd.n_eligible}{value}{values} for which both units are gap-free ($r=$ \resultnum{v4.bd.r_eligible}{[r list]}). % RS31 RS33
+% If n_eligible == 0, omit the paired counts and class clauses; keep all rows.
+Within this common set, the first boundaries against B were small at \resultnum{v4.bd.B.n_small}{[n]} \resultplural{v4.bd.B.n_small}{value}{values}, large at \resultnum{v4.bd.B.n_large}{[n]}, not attained at \resultnum{v4.bd.B.n_not_attained}{[n]} and censored or indeterminate at \resultnum{v4.bd.B.n_censored}{[n]}. Against D, they were small at \resultnum{v4.bd.D.n_small}{[n]} \resultplural{v4.bd.D.n_small}{value}{values}, large at \resultnum{v4.bd.D.n_large}{[n]}, not attained at \resultnum{v4.bd.D.n_not_attained}{[n]} and censored or indeterminate at \resultnum{v4.bd.D.n_censored}{[n]}. % RS25
+% P6-b = branch B10, when n_persistence > 0 (its E and C clauses follow P6-e).
+% P6-c: when n_inconclusive := #i with both FULL, XING(B) and SPAN(D) > 0.
+At \resultnum{v4.bd.n_inconclusive}{[n]} of these values of $r$ ($r=$ \resultnum{v4.bd.r_inconclusive}{[r list]}), the lower band against B exceeded \resultnum{v4.protocol.target}{0.70} at some strength, while the band against D reached \resultnum{v4.protocol.target}{0.70} without its lower limit exceeding it. Under the frozen rule, the comparison at these values is inconclusive. % RS22 RS32
+% P6-d: when n_both := #i with both FULL, XING(B) and XING(D) > 0.
+%   The frozen rules give no reading for this class (notes Q12).
+At \resultnum{v4.bd.n_both}{[n]} of these values of $r$ ($r=$ \resultnum{v4.bd.r_both}{[r list]}), the lower bands against both B and D exceeded \resultnum{v4.protocol.target}{0.70} at some strength. The protocol registers no contrast between null families, so no interpretation about partner drift is drawn from the relative positions of the boundaries. % RS31
+% P6-e: when n_no_b_crossing := #i with both FULL and not XING(B) > 0.
+At \resultnum{v4.bd.n_no_b_crossing}{[n]} of these values of $r$ ($r=$ \resultnum{v4.bd.r_no_b_crossing}{[r list]}) the lower band against B did not exceed \resultnum{v4.protocol.target}{0.70} at any strength, so the frozen reading does not apply there. % RS32
+% P6-f: only with MECHANISMS and at least one eligible pair.
+The readings above concern the fixed lag-three to lag-five discriminator and the declared laws; none identifies causal social influence, and the misfit of a null does not identify the generator. % RS55
+
+% --- P7 (other families and tiers)
+% P7-a
+Against A, C, D and E the boundary records are shown in Fig.~\ref{fig:v4-F1} and Table~\ref{tab:v4-T1}, with the full profiles in the supplement (Supplementary Figs.~\ref{fig:v4-F2A}, \ref{fig:v4-F2C}, \ref{fig:v4-F2D} and~\ref{fig:v4-F2E}). % RS31
+% P7-b: when some tier-2 unit is "completo inválido".
+\resultplural{v4.inv.t2.n_invalid}{There is}{There are} \resultnum{v4.inv.t2.n_invalid}{[n]} complete but invalid \resultplural{v4.inv.t2.n_invalid}{unit}{units} in tier \resultnum{v4.protocol.tier.main_others}{2}: \resultplural{v4.inv.t2.n_invalid}{its zero-strength gate}{their zero-strength gate} did not pass at \resultnum{v4.protocol.null_auc}{0.5}. \resultplural{v4.inv.t2.n_invalid}{Its boundaries}{Their boundaries} are suppressed, and no null family is promoted or demoted. % RS14 RS17 RS56
+% The next cross-family description is included only with MECHANISMS.
+Supplementary Fig.~\ref{fig:v4-F3} shows, for the values of $r$ at which both units reached the target, the position of each secondary family's boundary relative to B's in grid steps; it is exploratory and descriptive, with no interval or test. % RS31
+% P7-c (B11 replaces it); P7-c1/P7-c2 join its paragraph, P7-d or B12
+%   forms the next.
+\subsection{Controls and sensitivities}
+Tier \resultnum{v4.protocol.tier.controls}{3} ended with \resultnum{v4.inv.t3.n_valid}{[n]} of its \resultnum{v4.protocol.units.t3}{270} \resultplural{v4.protocol.units.t3}{unit}{units} complete and valid, and \resultnum{v4.inv.t3.n_incomplete}{[n]} not started or partial (Table~\ref{tab:v4-T4}).  % RS12
+Unfinished units are absent from the analysis and are not interpreted. % RS12
+% P7-c1: when n_pairs_compared == 0.
+No value of $r$ has both a complete, valid observed unit and a complete, valid control from the masked latent, ordinal with a response signal share of one or latent-rank (\texttt{latent\_rank}) conditions. No comparison between channels is therefore reported. % RS12 RS34
+% P7-c2: when n_pairs_compared > 0 and n_obs_exceeds == 0.
+Across the \resultnum{v4.t3.n_pairs_compared}{[n]} family-and-$r$ \resultplural{v4.t3.n_pairs_compared}{pair}{pairs} with a valid observed unit and at least one valid control, the observed-channel point AUC never exceeded any of the three controls at a shared strength (\allunitsresource). % RS34
+% P7-d: only when v4.sens.use_b12 == 0 and INV.main_curve_valid.
+% B12 replaces it for any incomplete or invalid sensitivity, or a region difference.
+% If main invalid and B12 does not apply, retain status tables only.
+All units in sensitivity tiers \resultnum{v4.protocol.tier.first_sensitivity}{4} to \resultnum{v4.protocol.tier.last_sensitivity}{6} were complete and valid. At every value of $r$, their region of $a^*$ matched that of the main B unit (\allunitsresource). The sensitivities are not promoted to a primary analysis. % RS36
+
+% --- P8 (SHP anchor; B13 or B14 replaces it; B15 appends)
+\subsection{Empirical reliability anchor}
+For \resultnum{v4.protocol.shp.anchor_year}{2004}, the preregistered quasi-simplex model estimated the reliability of the SHP trust item at \resultnum{v4.shp.estimate}{[r]} with a Wald \resultnum{v4.protocol.shp.wald_level}{95}\% interval from \resultnum{v4.shp.wald_lo}{[r]} to \resultnum{v4.shp.wald_hi}{[r]}. The nine Heise triplet estimates ranged from \resultnum{v4.shp.env_lo}{[r]} to \resultnum{v4.shp.env_hi}{[r]}. This is a specification range rather than a confidence interval (Fig.~\ref{fig:v4-F6}). % RS41
+The anchor is plotted on the frozen grid without extrapolating $a^*(r)$. It was not used to choose $r$, strengths, targets or rules, and it is not rounded to a grid value. % RS39 RS41
+The number of grid values inside the Wald interval is \resultnum{v4.shp.n_r_in_interval}{[n]}. \resultplural{v4.shp.n_r_in_interval}{The execution status and boundary region of the B unit at this value are reported in}{The B units at these values share one execution status and boundary region, reported in} Table~\ref{tab:v4-T1}. % RS25
+The anchor and the simulation's signal share are different quantities (Discussion), and the anchor does not validate the simulated mechanism. % RS39
+
+% --- P9 (diagnostics; B16 replaces it)
+\subsection{Diagnostics and descriptive scope}
+The empirical max-$t$ critical value did not exceed the \resultnum{v4.protocol.critical_floor}{2.7729} floor in any released curve, and no G2 pipeline raised the covariance-Jacobian flag (\allunitsresource, Table~\ref{tab:v4-T3}). % RS42 RS43
+Per-cell nuisance diagnostics, namely the mean shift, the Monte Carlo error of the nuisance variance and the fraction of projected draws, are released with every cell. % RS44
+
+% --- P10 (shape across r and exposure; B07 and B17 append)
+Statements about how $a^*$ varies across $r$ are descriptive: the bands are simultaneous within each $r$ only, seeds differ across $r$, and no simultaneous band over all \resultnum{v4.protocol.grid_cells}{81} \resultplural{v4.protocol.grid_cells}{cell}{cells} was prespecified. % RS28 RS51
+% END BRANCH B00
+
+% SUPPLEMENT: every B1a branch with curves, including B02 and B03.
+% BEGIN BLOCK SECONDARY-SUPPLEMENT
+% Destination: sections/supplement.tex in every release branch.
+% This clause and the generated derived table never enter Results or the headline.
+\subsection*{Secondary-target boundaries}
+Boundaries for the secondary targets were derived from the released bands using the same inclusive inversion and gap censoring. They were attained at \resultnum{v4.t1.sec060.n_attained}{[n]} \resultplural{v4.t1.sec060.n_attained}{value}{values} of $r$ for AUC \resultnum{v4.protocol.secondary_target.lower}{0.60} and at \resultnum{v4.t1.sec080.n_attained}{[n]} for AUC \resultnum{v4.protocol.secondary_target.upper}{0.80} (Supplementary Table~\ref{tab:v4-sec}). These targets are secondary and do not replace the primary target. % RS18 RS26
+% At every r with a curve the table reports both derived boundaries,
+% with invalid units suppressed and gaps/censoring retained.
+% END BLOCK SECONDARY-SUPPLEMENT

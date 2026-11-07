@@ -1,0 +1,47 @@
+{
+ "schema": "ic-study.t58-caption-proof.v1",
+ "synthetic": true,
+ "test": "tests/unit/test_v4_gate_only_shp.py::test_exports_match_the_prechange_synthetic_bytes[True]",
+ "t57e_pinned": [
+  "dfa9e0f3adad3c1fd304a05f86b7ee5c1fd801bf93e0015c5614a96ab68cfa07",
+  "7fcc9bba1b8de355915d8c39d756c37d8b67dddb43b3152016e1e7d10453d377",
+  "59de678b193aabe480e03be054028ff828979b8ea867036b867f9af9cbb3f1a3"
+ ],
+ "new": [
+  "dfa9e0f3adad3c1fd304a05f86b7ee5c1fd801bf93e0015c5614a96ab68cfa07",
+  "4495ec63e8e6b1e04f30008299c0786859031bfac64785344f79cd6075aa95d1",
+  "59de678b193aabe480e03be054028ff828979b8ea867036b867f9af9cbb3f1a3"
+ ],
+ "values_and_cells_unchanged": true,
+ "changed_generated_files": [
+  "boundary-table",
+  "supplement-family-offsets"
+ ],
+ "changed_lines": {
+  "boundary-table": {
+   "before": [
+    "\\caption{SYNTHETIC REHEARSAL, NOT A RESULT. First and sustained boundaries on the main grid at the primary target AUC 0.70: tier 1 (B, confirmatory) and tier 2 (A, C, D, E), with the status at the close, the a = 0 null gate, the gap cells, $a^*$ and $a_s^*$ with their inverted intervals in brackets, and the region of $a^*$. $>0.9$: not reached on the complete eligible grid; gap x: censored at the gap at a = x by the frozen gap-censoring rule; suppressed: failed null gate. Regions: small $0<a^*\\le0.03$, large $0.03<a^*\\le0.9$; indeterminate when $a^*=0$ or the interval crosses 0.03 or has a censored end. \\dag calibration-exposed $r$. The secondary targets 0.60 and 0.80 appear only in the supplementary secondary-target table; gap types, controls, sensitivities and diagnostics are in the complete inventory records. \\ddag Main curve invalid: a tier-1 B unit is not complete valid, and every B row carries this mark (amendment v4).}\\label{tab:v4-T1}"
+   ],
+   "after": [
+    "\\caption{SYNTHETIC REHEARSAL, NOT A RESULT. First and sustained boundaries on the main grid at the primary target AUC 0.70: tier 1 (B, confirmatory) and tier 2 (A, C, D, E), with the status at the close, the a = 0 null gate, the gap cells, $a^*$ and $a_s^*$ with their inverted intervals in brackets, and the region of $a^*$. $>0.9$: not reached on the complete eligible grid; censored (gap): a boundary censored by a gap; NA: no boundary for an invalid or unfinished unit; gap x: censored at the gap at a = x by the frozen gap-censoring rule; suppressed: failed null gate. Regions: small $0<a^*\\le0.03$, large $0.03<a^*\\le0.9$; indeterminate when $a^*=0$ or the interval crosses 0.03 or has a censored end. \\dag calibration-exposed $r$. The secondary targets 0.60 and 0.80 appear only in the supplementary secondary-target table; gap types, controls, sensitivities and diagnostics are in the complete inventory records. \\ddag Main curve invalid: a tier-1 B unit is not complete valid, and every B row carries this mark (amendment v4).}\\label{tab:v4-T1}"
+   ]
+  },
+  "supplement-family-offsets": {
+   "before": [
+    "\\begin{figure}[tp]",
+    "\\centering",
+    "\\includegraphics[width=\\columnwidth]{generated/F3_exploratory_family_offsets_vs_B_synthetic.pdf}",
+    "\\caption{SYNTHETIC REHEARSAL, NOT A RESULT. Exploratory and descriptive: offset of each secondary family's $a^*$ from B's in grid steps, at every $r$ where both units are complete valid and reach the target. No between-family contrast is registered, so the offsets carry no interval, test or registered interpretation.}\\label{fig:v4-F3}",
+    "\\end{figure}"
+   ],
+   "after": [
+    "% MECHANISMS permission is absent, so P7 and F3 do not apply."
+   ]
+  }
+ },
+ "reverting_only_these_files_reproduces_the_t57e_pin": true,
+ "reasons": {
+  "boundary-table": "T58 item 16: the T1 caption defines 'censored (gap)' and 'NA'",
+  "supplement-family-offsets": "T58 B1: without the MECHANISMS permission F3 is replaced by a comment-only file"
+ }
+}

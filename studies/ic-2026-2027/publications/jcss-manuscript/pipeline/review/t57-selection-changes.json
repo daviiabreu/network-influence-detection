@@ -1,0 +1,412 @@
+[
+  {
+    "id": "B06",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 421,
+        "end_line": 421,
+        "condition": true
+      },
+      {
+        "line": 422,
+        "end_line": 422,
+        "condition": {
+          "gt": [
+            "v4.t1.n_first_ne_sustained",
+            "0"
+          ]
+        }
+      },
+      {
+        "line": 423,
+        "end_line": 423,
+        "condition": {
+          "gt": [
+            "v4.t1.n_sustained_gap",
+            "0"
+          ]
+        }
+      },
+      {
+        "line": 424,
+        "end_line": 424,
+        "condition": true
+      }
+    ],
+    "source": "results",
+    "line": 411,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R050",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 734,
+        "end_line": 734,
+        "condition": true
+      },
+      {
+        "line": 735,
+        "end_line": 735,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-5.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 736,
+        "end_line": 736,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-5.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 737,
+        "end_line": 737,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 727,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R055",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 747,
+        "end_line": 747,
+        "condition": true
+      },
+      {
+        "line": 748,
+        "end_line": 748,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-55.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 749,
+        "end_line": 749,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-55.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 750,
+        "end_line": 750,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 740,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R060",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 760,
+        "end_line": 760,
+        "condition": true
+      },
+      {
+        "line": 761,
+        "end_line": 761,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-6.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 762,
+        "end_line": 762,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-6.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 763,
+        "end_line": 763,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 753,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R065",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 773,
+        "end_line": 773,
+        "condition": true
+      },
+      {
+        "line": 774,
+        "end_line": 774,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-65.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 775,
+        "end_line": 775,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-65.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 776,
+        "end_line": 776,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 766,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R070",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 786,
+        "end_line": 786,
+        "condition": true
+      },
+      {
+        "line": 787,
+        "end_line": 787,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-7.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 788,
+        "end_line": 788,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-7.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 789,
+        "end_line": 789,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 779,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R075",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 799,
+        "end_line": 799,
+        "condition": true
+      },
+      {
+        "line": 800,
+        "end_line": 800,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-75.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 801,
+        "end_line": 801,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-75.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 802,
+        "end_line": 802,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 792,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R080",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 812,
+        "end_line": 812,
+        "condition": true
+      },
+      {
+        "line": 813,
+        "end_line": 813,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-8.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 814,
+        "end_line": 814,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-8.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 815,
+        "end_line": 815,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 805,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R085",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 825,
+        "end_line": 825,
+        "condition": true
+      },
+      {
+        "line": 826,
+        "end_line": 826,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-85.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 827,
+        "end_line": 827,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-85.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 828,
+        "end_line": 828,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 818,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  },
+  {
+    "id": "D-X3-LOCAL-R090",
+    "field": "fragments",
+    "before": null,
+    "after": [
+      {
+        "line": 838,
+        "end_line": 838,
+        "condition": true
+      },
+      {
+        "line": 839,
+        "end_line": 839,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-9.main_curve.main_curve_valid",
+            "true"
+          ]
+        }
+      },
+      {
+        "line": 840,
+        "end_line": 840,
+        "condition": {
+          "eq": [
+            "v4x.comparisons.by_r.0-9.main_curve.main_curve_valid",
+            "false"
+          ]
+        }
+      },
+      {
+        "line": 841,
+        "end_line": 841,
+        "condition": true
+      }
+    ],
+    "source": "discussion",
+    "line": 831,
+    "scope": "sentence selection inside the block; block condition, slot, operation and order unchanged",
+    "authority": "T57 coordinator decision under the Owner's delegation (decision 161, 01/10/2026), before the release of any tier result"
+  }
+]

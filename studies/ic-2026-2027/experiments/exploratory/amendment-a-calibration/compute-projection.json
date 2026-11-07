@@ -1,0 +1,32 @@
+{
+  "status": "analytical_capacity_projection_not_a_full_matrix_benchmark",
+  "workers": 8,
+  "reserve_fraction": 0.25,
+  "seconds_per_panel_cpu_proxy": 0.021943262285974926,
+  "zero_seconds_per_panel_single_worker_proxy": 0.012978036875021644,
+  "panels_per_nonzero_cell": 66528,
+  "panels_per_gate_nonzero_rep": 61408,
+  "additional_panels_per_control_channel_cell": 51408,
+  "assumptions": [
+    "four null evaluations per M=1024 fit; successful first attempt",
+    "two steps and two parameters for feature stencils",
+    "same panel rate as measured B; other scenarios not benchmarked",
+    "dedicated machine, no concurrent heavy task; 25 percent reserve",
+    "controls budgeted on five main null grids only; no new scope authorization"
+  ],
+  "gate_hours": 37.19441927761419,
+  "primary_B_observed_hours": 5.13225475791096,
+  "gate_plus_primary_hours": 42.326674035525144,
+  "fifteen_observed_grids_hours": 76.98382136866441,
+  "three_controls_on_five_main_grids_hours": 59.48749833033159,
+  "full_limited_inventory_hours": 136.471319698996,
+  "gate_plus_full_limited_inventory_hours": 173.66573897661019,
+  "omitted_positive_costs": [
+    "24-step kernel premium",
+    "additional controls on sensitivities if required by execution inventory",
+    "mobility feature overhead",
+    "M=4096 fallback",
+    "new local-bootstrap implementation validation",
+    "runtime of 2000 local bootstrap draws per cell, not benchmarked"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "namespace": "ic-detection-boundary-v3-precision-calibration",
+  "seed": 13044694507826494945,
+  "draws_per_scenario": 100000,
+  "critical_9_cells": 2.7729212946086625,
+  "effective_networks_per_class": 2000,
+  "assumptions": "Independent normal AUC errors, specified monotone curve; logit delta bands with Bonferroni reference. Not measured scientific power or actual bootstrap critical.",
+  "scenarios": [
+    {
+      "nuisance_sd": 0.01,
+      "adjacent_auc_gap_from_target": 0.04,
+      "se": 0.01870828693386971,
+      "probability_valid_covering_width_at_most_one_step": 0.43926,
+      "null_gate_pass_rate": 0.99508
+    },
+    {
+      "nuisance_sd": 0.01,
+      "adjacent_auc_gap_from_target": 0.08,
+      "se": 0.01870828693386971,
+      "probability_valid_covering_width_at_most_one_step": 0.98958,
+      "null_gate_pass_rate": 0.99455
+    },
+    {
+      "nuisance_sd": 0.01,
+      "adjacent_auc_gap_from_target": 0.12,
+      "se": 0.01870828693386971,
+      "probability_valid_covering_width_at_most_one_step": 0.99508,
+      "null_gate_pass_rate": 0.99508
+    },
+    {
+      "nuisance_sd": 0.02,
+      "adjacent_auc_gap_from_target": 0.04,
+      "se": 0.025495097567963924,
+      "probability_valid_covering_width_at_most_one_step": 0.1919,
+      "null_gate_pass_rate": 0.99479
+    },
+    {
+      "nuisance_sd": 0.02,
+      "adjacent_auc_gap_from_target": 0.08,
+      "se": 0.025495097567963924,
+      "probability_valid_covering_width_at_most_one_step": 0.84304,
+      "null_gate_pass_rate": 0.99463
+    },
+    {
+      "nuisance_sd": 0.02,
+      "adjacent_auc_gap_from_target": 0.12,
+      "se": 0.025495097567963924,
+      "probability_valid_covering_width_at_most_one_step": 0.99411,
+      "null_gate_pass_rate": 0.99529
+    }
+  ]
+}

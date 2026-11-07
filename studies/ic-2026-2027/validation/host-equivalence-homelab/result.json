@@ -1,0 +1,413 @@
+{
+  "checkout": {
+    "clone_transport": "HTTPS read-only after GitHub SSH publickey rejection",
+    "commit": "375138418f7f9e4528f0c2466f4600a76fee1bad",
+    "detached": true,
+    "git_clean": true,
+    "homelab_path": "~/Documents/github/research-workbench-v4-host"
+  },
+  "comparison": {
+    "kind": "equivalence-replay-not-gate-evidence",
+    "tasks": {
+      "G0-00000": {
+        "checkpoint_counts": {
+          "homelab": 1664,
+          "mac": 1664,
+          "shared_names": 1504
+        },
+        "comparison": {
+          "continuous_failures": 0,
+          "continuous_fields": 266358,
+          "discrete_failures": 160,
+          "discrete_fields": 8561,
+          "first_difference": {
+            "homelab": "711adbe11da89f611c1fd4eb11849ac69081e637e3afd01cff230302494ebe93",
+            "kind": "discrete",
+            "mac": "29f202cba340b7e9a7e8ee329abfcff4aad5ba40cacc9f5c38f6c10eda14df50",
+            "path": "phases.jsonl[1056].seed_material_sha256"
+          },
+          "max_abs_difference": 4.547473508864641e-12
+        },
+        "phase_count": {
+          "homelab": 1664,
+          "mac": 1664
+        },
+        "seals": {
+          "homelab": {
+            "files": 1671,
+            "seal_sha256": "9e91fec5d9a8ba473ff87b1fa8be53e666baab685a1e98a2c4a5504747be0ecf"
+          },
+          "mac": {
+            "files": 1671,
+            "seal_sha256": "5ac3ae1926f6a04970c10e3475fec261d44bd51dc856ab5a8a1eebe01ec16c78"
+          }
+        }
+      },
+      "G0-00001": {
+        "checkpoint_counts": {
+          "homelab": 3680,
+          "mac": 3680,
+          "shared_names": 1248
+        },
+        "comparison": {
+          "continuous_failures": 0,
+          "continuous_fields": 588918,
+          "discrete_failures": 2432,
+          "discrete_fields": 18641,
+          "first_difference": {
+            "homelab": "92be514b8586e2f6018f4b1638c666680151bf7e889b1a9566edef7886e19f13",
+            "kind": "discrete",
+            "mac": "9537a0bb3b34401dd0cad3eadb8082d43c9c646879a9536d0accb31d03d79a99",
+            "path": "phases.jsonl[96].seed_material_sha256"
+          },
+          "max_abs_difference": 5.002220859751105e-12
+        },
+        "phase_count": {
+          "homelab": 3680,
+          "mac": 3680
+        },
+        "seals": {
+          "homelab": {
+            "files": 3687,
+            "seal_sha256": "d3186bd31a7ddbae94d74d439b54449387a238ce3ded4a1ffc65a781c1fa014d"
+          },
+          "mac": {
+            "files": 3687,
+            "seal_sha256": "adb7e1882e5bcbb26e17bcc4c2f2c86f4892114e9f5286a488ff87ef0c3e074f"
+          }
+        }
+      },
+      "G0-00002": {
+        "checkpoint_counts": {
+          "homelab": 2976,
+          "mac": 2976,
+          "shared_names": 1120
+        },
+        "comparison": {
+          "continuous_failures": 0,
+          "continuous_fields": 476268,
+          "discrete_failures": 1856,
+          "discrete_fields": 15127,
+          "first_difference": {
+            "homelab": "babea949fa2631c5702ebf64ce37789f7dc1b1838c1f67f726889ebdf4290c12",
+            "kind": "discrete",
+            "mac": "5b4a0b186424d725f0d7e7e35f7956334b67ba1f0e4c1f6ca67330ab23b65cd2",
+            "path": "phases.jsonl[96].seed_material_sha256"
+          },
+          "max_abs_difference": 7.882423880278822e-12
+        },
+        "phase_count": {
+          "homelab": 2976,
+          "mac": 2976
+        },
+        "seals": {
+          "homelab": {
+            "files": 2983,
+            "seal_sha256": "28c1aa56c50f88f8f1914e4d0fa8385a450fddcdef6987b8f271aef62af98acb"
+          },
+          "mac": {
+            "files": 2983,
+            "seal_sha256": "d661280feb2ea2ac87798e65fd81e3a9bc3262e727fc3df025a0e85cc356cdb0"
+          }
+        }
+      }
+    }
+  },
+  "created_utc": "2026-09-27T23:33:44.449167+00:00",
+  "criterion": {
+    "a_probe_pass": true,
+    "b_discrete_pass": false,
+    "c_continuous_pass": true,
+    "continuous_fields": "abs(homelab-mac) <= 1e-12 + 1e-9*abs(mac)",
+    "declared_before_measurement": true,
+    "discrete_fields": "identical across all records after checking and separating host environment provenance",
+    "overall_equivalent": false,
+    "probe_atol": 1e-12,
+    "probe_rtol": 0
+  },
+  "execution_boundary": {
+    "auc_outputs_inspected": false,
+    "confirmatory_tiers_started": false,
+    "frozen_files_modified": false,
+    "gate_stages_started": false,
+    "mac_sealed_root_written": false
+  },
+  "hashes": {
+    "code_sha256": "db9d6eadb5019d691a8c73703d511d0337dc49834bb219d168a27693df0e0acd",
+    "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+    "source_hashes_equal_to_freeze_on_both_hosts": true
+  },
+  "manifest_differences": {
+    "environment.platform": {
+      "homelab": "Linux-7.2.5-3-omarchy-x86_64-with-glibc2.44",
+      "mac": "macOS-27.0-arm64-arm-64bit"
+    },
+    "environment.python": {
+      "homelab": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+      "mac": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]"
+    },
+    "environment_sha256": {
+      "homelab": "c46c15e869c45daf0889165f9e88da3ea216d471175c489487496c5a4db5a8e9",
+      "mac": "218a26db2a28d94727b0cc5693b242152c5ea9916ddcf2fe39a9767fbc514439"
+    },
+    "host_sha256": {
+      "homelab": "be77970ba8319f8bf8e496b16c1ff8455fa11489d6cff0e134f83c805744f876",
+      "mac": "296962aa074261b68a7467808bb62a2fd8b84ba5dcc2f618ea02d134a809e638"
+    }
+  },
+  "manifests": {
+    "homelab": {
+      "code": {
+        "experiments/exploratory/detection-boundary-v4/audit_seeds.py": "7610e028e89e36d49fbb3b0f2734b0d495406830be224c442ae10a6de8c7ea7b",
+        "experiments/exploratory/detection-boundary-v4/calibrate_criteria.py": "4c03b5e38759b4a4f13e8004076a3a3719ba1b7b64c81284d0521621402da173",
+        "experiments/exploratory/detection-boundary-v4/measure_cost.py": "aececca65babfac9501206cae85ab5c2af8d2770dc3a49cdae6efee563817e93",
+        "experiments/exploratory/detection-boundary-v4/measure_panels.py": "22551017c5f07dc48ec1d72b08f206eb24c3218eacc7de0c7773f4dcf1f4a710",
+        "experiments/exploratory/detection-boundary-v4/measure_v41.py": "9a24a8117e839b455884233cf231b2efee23b7d6b7cb534b28405b5cab1e7939",
+        "experiments/exploratory/detection-boundary-v4/measure_v42.py": "a89ee0b087ac8e666746c4955a8ed604a7fbad9a76944816bcc0ec9056842554",
+        "experiments/exploratory/detection-boundary-v4/project_compute.py": "7cafdf1dd83eb08dd56dc9e3266bc56452f651d088895ea2e06e21658ed314fc",
+        "experiments/exploratory/detection-boundary-v4/project_v41.py": "1f8a152b1e3d211ecec417d0a5ba265833ebfe4804c937750ae12bd85b3cae54",
+        "experiments/exploratory/detection-boundary-v4/project_v42.py": "092c30a264182e68fb1e285b9856b3139e16811681da9d1b347fe1275cba4265",
+        "experiments/exploratory/detection-boundary-v4/run_curve.py": "cc4d78203e98038dde13ad45e16bb48a5756e2dcd83d61fcd8e9da4df0102a16",
+        "experiments/exploratory/detection-boundary-v4/run_gate.py": "ff746bc7f3b895fe01bc22a55d015b8ba04e8ec84637310e116b90638aecadae",
+        "experiments/exploratory/detection-boundary-v4/verify_v41.py": "3677dbd70399a31670e29963a5b7dad3ab10edec898cb9b070a16b0a77efd16d",
+        "experiments/exploratory/detection-boundary-v4/verify_v42.py": "57599030a9ae88e30efe86a203493aeb5c3a798323329d7bf61fea0d9613a88c",
+        "pyproject.toml": "fdbdd7ccdbb042cfb274029df03dfcd06c23603510411ed22f38853e735c6825",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/detection_boundary.py": "07b9284a50fca97e39ee4131e483d9b780f95ca412f875aa9f416fc7a95062f3",
+        "src/ic_study/analysis/detection_boundary_v4.py": "c91dcc40339cffea78f2ab1a45ce79c3bd0094cfcdce0517720eb8d88afee04b",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/analysis/redesign.py": "60595a33858a9765f80b8d268d1308853fa068086f8ca4b1791f75697af158ff",
+        "src/ic_study/literature/__init__.py": "0aa70713ef70ec41870bda0a0a5b7d7dfe4de3ce0f53c75c5d0cf51892135195",
+        "src/ic_study/literature/identity_proposals.py": "54fd532eb4485151ddfcb70fbeafcd820eb03abaa062d81df954167500e85334",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/anchored_panel.py": "859795afa0ff18dbf55c818f770207d1d125df5f8b38cc96411760037db7d969",
+        "src/ic_study/models/critical_dose.py": "18cfbb9d780759c8b51369b255dcc5bb8dec721d46888c166f95475e13374899",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/detection_panel.py": "aee847707ca82acb4004e4c6288634ac294c2582da097a9183e80b698ca40be1",
+        "src/ic_study/models/detection_panel_v4.py": "14757fb89344ce24bf585ce685d898d7b71e71c5bfaffc2dd7931af7280e77f4",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/models/mechanism_controls.py": "1eb6bb5e409e9fd1047d5203b7a244f725e7a731202a23d7541c7468007b5d46",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/amendment_a.py": "17d214cd904b4cc9875a1b2b4a12b237798b72b93a5c747d601c9d72609dddfc",
+        "src/ic_study/simulation/detection_calibration.py": "1c1be8725632b13c5441fb315e04cd3664ef51a3f8f38707b267bc15d154ef75",
+        "src/ic_study/simulation/detection_coverage_check.py": "4ffcfa67a3095c29781cae492d8e387125404d1b1d79a9e0494ff65111f6a26e",
+        "src/ic_study/simulation/detection_v4.py": "63b5c466967d52d8b0f54932493fce8384df2d43f6733d0feddf4c112549679e",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/simulation/redesign_calibration.py": "3a39bbf93ea04f42730f2c720727098e48b91377b94343597630a34ccf95e507",
+        "src/ic_study/simulation/v4_criteria.py": "7b8e9f363b42dbacd35433a4ea8cfdcf05d6dae34fa36c58f42a8b7591ae4acc",
+        "src/ic_study/simulation/v4_curve.py": "a634008fda5d11b43d7163270b68edc5df0560523ab0412259eaeba042a930b3",
+        "src/ic_study/simulation/v4_gate.py": "a011f3d395a8dbab4f66aed6191ac33b0ef9b9d905416a8882af6ef1d6b0a802",
+        "src/ic_study/simulation/v4_plan.py": "1731afbb2eef6e5741811c8f67b6133516859086468958728cbdb2c331c2a4a3",
+        "src/ic_study/simulation/v4_store.py": "7196e371bfba3bf06d0e44440311b7d16c1e5116c5a291438ccfeeb432641c04",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "src/ic_study/validation/experiments.py": "4dd06cdc336d6e0af602b97112c587cef180e7bb9c93036368df2c50d7094c53",
+        "tests/integration/test_experiment_validation.py": "fa71a4c08e8282f326c1fb1703ae1cedbf3baf0e8673ed57134b803d37a1cf85",
+        "tests/integration/test_forecast_pilot.py": "3c7c9b0ec4e25f36c57eaf43940e781238d8ec8fa0ccebadf07bb8ed97f15f80",
+        "tests/integration/test_fragmentation_pilot.py": "4ff53bf93815c0befd8eb86de9a7baf05d7dcd3074ee068d936855491c4a8220",
+        "tests/scientific/test_fragmentation.py": "4f952d360dfe1b722675af0dccebac3c1d3d8cd2a01a49c9e6c52dbd3443fc8c",
+        "tests/scientific/test_histogram_forecast.py": "b157eaffe999dcd89903dba7ae34a276b29fe346aeb5f6f2627e582c013f6adb",
+        "tests/scientific/test_mechanism_controls.py": "ca7cb9a84442848244ff4da04a8aaa88bf3a02352e0cf4478b93c8c4fd4a9f85",
+        "tests/test_package.py": "a98c3c18759f0e6b660a7cf3456154db25f6c503cee5b1d86ae77d97a272ce26",
+        "tests/unit/test_amendment_a.py": "a35c741948893247ec8cd16fa3798896aec3fcc3146d069d9366e317182b7e8f",
+        "tests/unit/test_anchored_panel.py": "65d568c61e5ecf4ac9f72ac14eb5a3da945b5f6dcc7357b631ef37d664374603",
+        "tests/unit/test_critical_dose.py": "1bb1648f686d49a1f8833edef4286442eefe0addf1dbb2cc0ea69535ab3ff3a0",
+        "tests/unit/test_detection_boundary.py": "0bc21e4571f283861e39f1ef6673d1c65ab0d151cb78813e18e42c0b5ecdecbb",
+        "tests/unit/test_detection_calibration.py": "aabedb5fa6da9665e9d2c6cbe5b38750698d91816817524fcd17554fd315a0bb",
+        "tests/unit/test_detection_coverage_check.py": "9bdc4319f59416157c09015f6badde6f003a799e9db685f4d62bc9ff63fbd60c",
+        "tests/unit/test_detection_panel.py": "b820a34d7ffaec38b87316635a6fe7e36b34d821101f9d52a4f3c49286feb527",
+        "tests/unit/test_detection_v4.py": "c62f838499a0573990ee39c573e4a731f255b758623293d9ba80bc4d410fa4d2",
+        "tests/unit/test_identity_proposals.py": "ea1feae7885700f20b30d24b05343eb76b53eed00f8cc80ac0ef5405dfe332f9",
+        "tests/unit/test_redesign_analysis.py": "4402bec12bf99c7fb50017195dc84a6921c09fddbd270adc56cf18c1ebd840bb",
+        "tests/unit/test_v41_binding.py": "994f5366f312d93fbf5c73d15bec818c9574162faf21792ffe85c401f531ef20",
+        "tests/unit/test_v41_channels.py": "1f6254b0561f4c825f9fa7e88bfb2c5e51b39ce3df5c9b0fc5191e943e48a8b9",
+        "tests/unit/test_v41_cost.py": "1a9d895e5109a93472ec5059cd73c3fd61966d60abedd08aa35206011952fd89",
+        "tests/unit/test_v41_covariance.py": "9b3a5fff07bd8b1f6051c0f98e9d122eec3b17e00f1854346812c2594ff7ecb1",
+        "tests/unit/test_v42_cost.py": "e0e1c4e0e677af8a0f6f8ed6c4235b6d8808045dd0d26b3b1b2adbc558a216d4",
+        "tests/unit/test_v42_gate.py": "a623951089d0228b5eaeb484800d809bd895711306f590675a3816bd3743a8cc",
+        "tests/unit/test_v42_identity.py": "14431ba1c886e3cd151509be8de8df5f9c89dfe5d575cb264cc13d3615844b66",
+        "tests/unit/test_v42_solver.py": "ec181bef7ecdc4f6ccd16ff10a34b377e20065276589683401962684264aff30",
+        "tests/unit/test_v42_verification.py": "18bfa9e3c3a6390a5caa5d22bc009e378d4e8496a11cbc2811ccb30ea75c73f1",
+        "tests/unit/test_v4_criteria.py": "5625f40ef398bb1fdb5264c1083a4fcea9ccaf0ef3f58f0eb8e3722f71bad1ac",
+        "tests/unit/test_v4_curve.py": "33b3489520ec31e4e9c6fa71a1052d2604d74e7553fbeb3be97383322092eb9a",
+        "tests/unit/test_v4_inventory.py": "1022fb45bf359e8bd541b64a31e5465e59410d1506d1807518f868233f3eb692",
+        "tests/unit/test_v4_propagation.py": "e9efae812db3d0252e0836cb636f398b825d51f8a873dff70ab5219cb8cee1da",
+        "tests/unit/test_v4_runners.py": "ebabfdab24e329a9bff86ed827b77d6110f32e8ea368b79ca88443109d5869b3",
+        "tests/unit/test_v4_sealing.py": "d7d232de2bdeb967fb58581a8d5146e66adb1982d19dafeb326d2823d5cc81fa",
+        "tests/unit/test_v4_solver.py": "15914d2751e547b633604618f6bc958887705df7610469ab5c57108028d39a64",
+        "tests/unit/test_v4_validation_pipeline.py": "65aad092458ca3e2eed643ad626acaba5cdc47f08fa1f458b2221564a71844a5",
+        "uv.lock": "fb6904f6399e41367ac4d23ac91dbc6cacb547ee89c2de144d3c7bf5f2cd39fa"
+      },
+      "environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "lock": "fb6904f6399e41367ac4d23ac91dbc6cacb547ee89c2de144d3c7bf5f2cd39fa",
+        "numpy": "2.5.3",
+        "platform": "Linux-7.2.5-3-omarchy-x86_64-with-glibc2.44",
+        "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]"
+      },
+      "environment_sha256": "c46c15e869c45daf0889165f9e88da3ea216d471175c489487496c5a4db5a8e9",
+      "host_sha256": "be77970ba8319f8bf8e496b16c1ff8455fa11489d6cff0e134f83c805744f876"
+    },
+    "mac": {
+      "code": {
+        "experiments/exploratory/detection-boundary-v4/audit_seeds.py": "7610e028e89e36d49fbb3b0f2734b0d495406830be224c442ae10a6de8c7ea7b",
+        "experiments/exploratory/detection-boundary-v4/calibrate_criteria.py": "4c03b5e38759b4a4f13e8004076a3a3719ba1b7b64c81284d0521621402da173",
+        "experiments/exploratory/detection-boundary-v4/measure_cost.py": "aececca65babfac9501206cae85ab5c2af8d2770dc3a49cdae6efee563817e93",
+        "experiments/exploratory/detection-boundary-v4/measure_panels.py": "22551017c5f07dc48ec1d72b08f206eb24c3218eacc7de0c7773f4dcf1f4a710",
+        "experiments/exploratory/detection-boundary-v4/measure_v41.py": "9a24a8117e839b455884233cf231b2efee23b7d6b7cb534b28405b5cab1e7939",
+        "experiments/exploratory/detection-boundary-v4/measure_v42.py": "a89ee0b087ac8e666746c4955a8ed604a7fbad9a76944816bcc0ec9056842554",
+        "experiments/exploratory/detection-boundary-v4/project_compute.py": "7cafdf1dd83eb08dd56dc9e3266bc56452f651d088895ea2e06e21658ed314fc",
+        "experiments/exploratory/detection-boundary-v4/project_v41.py": "1f8a152b1e3d211ecec417d0a5ba265833ebfe4804c937750ae12bd85b3cae54",
+        "experiments/exploratory/detection-boundary-v4/project_v42.py": "092c30a264182e68fb1e285b9856b3139e16811681da9d1b347fe1275cba4265",
+        "experiments/exploratory/detection-boundary-v4/run_curve.py": "cc4d78203e98038dde13ad45e16bb48a5756e2dcd83d61fcd8e9da4df0102a16",
+        "experiments/exploratory/detection-boundary-v4/run_gate.py": "ff746bc7f3b895fe01bc22a55d015b8ba04e8ec84637310e116b90638aecadae",
+        "experiments/exploratory/detection-boundary-v4/verify_v41.py": "3677dbd70399a31670e29963a5b7dad3ab10edec898cb9b070a16b0a77efd16d",
+        "experiments/exploratory/detection-boundary-v4/verify_v42.py": "57599030a9ae88e30efe86a203493aeb5c3a798323329d7bf61fea0d9613a88c",
+        "pyproject.toml": "fdbdd7ccdbb042cfb274029df03dfcd06c23603510411ed22f38853e735c6825",
+        "src/ic_study/__init__.py": "3879b68770a7605b52e54c3a28ce4e113057d5a54def62c2a96d1c5aba03ced8",
+        "src/ic_study/analysis/__init__.py": "97a40cfcc9682427daf8b1323db8d793db3a4a97845c4e39b5e47a2aed1e048e",
+        "src/ic_study/analysis/detection_boundary.py": "07b9284a50fca97e39ee4131e483d9b780f95ca412f875aa9f416fc7a95062f3",
+        "src/ic_study/analysis/detection_boundary_v4.py": "c91dcc40339cffea78f2ab1a45ce79c3bd0094cfcdce0517720eb8d88afee04b",
+        "src/ic_study/analysis/forecast_pilot.py": "26ea4f5e6c3754a4cd1344154c72e533dc4004a3b6183c9704b87c3886698436",
+        "src/ic_study/analysis/fragmentation_pilot.py": "bd14158e491180f9dc0e8de8a93c0431835e9eb808d33caf5e576468b33beeeb",
+        "src/ic_study/analysis/redesign.py": "60595a33858a9765f80b8d268d1308853fa068086f8ca4b1791f75697af158ff",
+        "src/ic_study/literature/__init__.py": "0aa70713ef70ec41870bda0a0a5b7d7dfe4de3ce0f53c75c5d0cf51892135195",
+        "src/ic_study/literature/identity_proposals.py": "54fd532eb4485151ddfcb70fbeafcd820eb03abaa062d81df954167500e85334",
+        "src/ic_study/metrics/__init__.py": "2300f6e8d2927c22fc200b49130eb2048364205e0e12b4c0044196525d720c4d",
+        "src/ic_study/metrics/histogram_scores.py": "32c8ca36267deb7332ba8af56a37a39f01c15c0b90cab83d30265c10b01cf662",
+        "src/ic_study/models/__init__.py": "58a8ea908aaede77aa1b342f9bb6ad24134fa3573e05fb2d198b2177cdc92e27",
+        "src/ic_study/models/anchored_panel.py": "859795afa0ff18dbf55c818f770207d1d125df5f8b38cc96411760037db7d969",
+        "src/ic_study/models/critical_dose.py": "18cfbb9d780759c8b51369b255dcc5bb8dec721d46888c166f95475e13374899",
+        "src/ic_study/models/deffuant.py": "ca2f276645c61cfecbf0ce52ca8a894a98154fe65b24429c0692d3dd2a8e7f4d",
+        "src/ic_study/models/detection_panel.py": "aee847707ca82acb4004e4c6288634ac294c2582da097a9183e80b698ca40be1",
+        "src/ic_study/models/detection_panel_v4.py": "14757fb89344ce24bf585ce685d898d7b71e71c5bfaffc2dd7931af7280e77f4",
+        "src/ic_study/models/histogram_forecast.py": "8d1b49197e30d0d8ed1fe892f2095bf41b6107109462168a36c8f0ef50e174ed",
+        "src/ic_study/models/mechanism_controls.py": "1eb6bb5e409e9fd1047d5203b7a244f725e7a731202a23d7541c7468007b5d46",
+        "src/ic_study/simulation/__init__.py": "87f904b9ac14527a325b2821319c3de859ea01887626b017e46644d7218dd178",
+        "src/ic_study/simulation/amendment_a.py": "17d214cd904b4cc9875a1b2b4a12b237798b72b93a5c747d601c9d72609dddfc",
+        "src/ic_study/simulation/detection_calibration.py": "1c1be8725632b13c5441fb315e04cd3664ef51a3f8f38707b267bc15d154ef75",
+        "src/ic_study/simulation/detection_coverage_check.py": "4ffcfa67a3095c29781cae492d8e387125404d1b1d79a9e0494ff65111f6a26e",
+        "src/ic_study/simulation/detection_v4.py": "63b5c466967d52d8b0f54932493fce8384df2d43f6733d0feddf4c112549679e",
+        "src/ic_study/simulation/fragmentation.py": "b299a53dad35f8c00f5ba4d8dd080ca45d591546c180425912bf2dee6e8d5acb",
+        "src/ic_study/simulation/redesign_calibration.py": "3a39bbf93ea04f42730f2c720727098e48b91377b94343597630a34ccf95e507",
+        "src/ic_study/simulation/v4_criteria.py": "7b8e9f363b42dbacd35433a4ea8cfdcf05d6dae34fa36c58f42a8b7591ae4acc",
+        "src/ic_study/simulation/v4_curve.py": "a634008fda5d11b43d7163270b68edc5df0560523ab0412259eaeba042a930b3",
+        "src/ic_study/simulation/v4_gate.py": "a011f3d395a8dbab4f66aed6191ac33b0ef9b9d905416a8882af6ef1d6b0a802",
+        "src/ic_study/simulation/v4_plan.py": "1731afbb2eef6e5741811c8f67b6133516859086468958728cbdb2c331c2a4a3",
+        "src/ic_study/simulation/v4_store.py": "7196e371bfba3bf06d0e44440311b7d16c1e5116c5a291438ccfeeb432641c04",
+        "src/ic_study/validation/__init__.py": "02e9b5c598335b5d95562a56c63397df70b8552359912fe2edea88754a749424",
+        "src/ic_study/validation/experiments.py": "4dd06cdc336d6e0af602b97112c587cef180e7bb9c93036368df2c50d7094c53",
+        "tests/integration/test_experiment_validation.py": "fa71a4c08e8282f326c1fb1703ae1cedbf3baf0e8673ed57134b803d37a1cf85",
+        "tests/integration/test_forecast_pilot.py": "3c7c9b0ec4e25f36c57eaf43940e781238d8ec8fa0ccebadf07bb8ed97f15f80",
+        "tests/integration/test_fragmentation_pilot.py": "4ff53bf93815c0befd8eb86de9a7baf05d7dcd3074ee068d936855491c4a8220",
+        "tests/scientific/test_fragmentation.py": "4f952d360dfe1b722675af0dccebac3c1d3d8cd2a01a49c9e6c52dbd3443fc8c",
+        "tests/scientific/test_histogram_forecast.py": "b157eaffe999dcd89903dba7ae34a276b29fe346aeb5f6f2627e582c013f6adb",
+        "tests/scientific/test_mechanism_controls.py": "ca7cb9a84442848244ff4da04a8aaa88bf3a02352e0cf4478b93c8c4fd4a9f85",
+        "tests/test_package.py": "a98c3c18759f0e6b660a7cf3456154db25f6c503cee5b1d86ae77d97a272ce26",
+        "tests/unit/test_amendment_a.py": "a35c741948893247ec8cd16fa3798896aec3fcc3146d069d9366e317182b7e8f",
+        "tests/unit/test_anchored_panel.py": "65d568c61e5ecf4ac9f72ac14eb5a3da945b5f6dcc7357b631ef37d664374603",
+        "tests/unit/test_critical_dose.py": "1bb1648f686d49a1f8833edef4286442eefe0addf1dbb2cc0ea69535ab3ff3a0",
+        "tests/unit/test_detection_boundary.py": "0bc21e4571f283861e39f1ef6673d1c65ab0d151cb78813e18e42c0b5ecdecbb",
+        "tests/unit/test_detection_calibration.py": "aabedb5fa6da9665e9d2c6cbe5b38750698d91816817524fcd17554fd315a0bb",
+        "tests/unit/test_detection_coverage_check.py": "9bdc4319f59416157c09015f6badde6f003a799e9db685f4d62bc9ff63fbd60c",
+        "tests/unit/test_detection_panel.py": "b820a34d7ffaec38b87316635a6fe7e36b34d821101f9d52a4f3c49286feb527",
+        "tests/unit/test_detection_v4.py": "c62f838499a0573990ee39c573e4a731f255b758623293d9ba80bc4d410fa4d2",
+        "tests/unit/test_identity_proposals.py": "ea1feae7885700f20b30d24b05343eb76b53eed00f8cc80ac0ef5405dfe332f9",
+        "tests/unit/test_redesign_analysis.py": "4402bec12bf99c7fb50017195dc84a6921c09fddbd270adc56cf18c1ebd840bb",
+        "tests/unit/test_v41_binding.py": "994f5366f312d93fbf5c73d15bec818c9574162faf21792ffe85c401f531ef20",
+        "tests/unit/test_v41_channels.py": "1f6254b0561f4c825f9fa7e88bfb2c5e51b39ce3df5c9b0fc5191e943e48a8b9",
+        "tests/unit/test_v41_cost.py": "1a9d895e5109a93472ec5059cd73c3fd61966d60abedd08aa35206011952fd89",
+        "tests/unit/test_v41_covariance.py": "9b3a5fff07bd8b1f6051c0f98e9d122eec3b17e00f1854346812c2594ff7ecb1",
+        "tests/unit/test_v42_cost.py": "e0e1c4e0e677af8a0f6f8ed6c4235b6d8808045dd0d26b3b1b2adbc558a216d4",
+        "tests/unit/test_v42_gate.py": "a623951089d0228b5eaeb484800d809bd895711306f590675a3816bd3743a8cc",
+        "tests/unit/test_v42_identity.py": "14431ba1c886e3cd151509be8de8df5f9c89dfe5d575cb264cc13d3615844b66",
+        "tests/unit/test_v42_solver.py": "ec181bef7ecdc4f6ccd16ff10a34b377e20065276589683401962684264aff30",
+        "tests/unit/test_v42_verification.py": "18bfa9e3c3a6390a5caa5d22bc009e378d4e8496a11cbc2811ccb30ea75c73f1",
+        "tests/unit/test_v4_criteria.py": "5625f40ef398bb1fdb5264c1083a4fcea9ccaf0ef3f58f0eb8e3722f71bad1ac",
+        "tests/unit/test_v4_curve.py": "33b3489520ec31e4e9c6fa71a1052d2604d74e7553fbeb3be97383322092eb9a",
+        "tests/unit/test_v4_inventory.py": "1022fb45bf359e8bd541b64a31e5465e59410d1506d1807518f868233f3eb692",
+        "tests/unit/test_v4_propagation.py": "e9efae812db3d0252e0836cb636f398b825d51f8a873dff70ab5219cb8cee1da",
+        "tests/unit/test_v4_runners.py": "ebabfdab24e329a9bff86ed827b77d6110f32e8ea368b79ca88443109d5869b3",
+        "tests/unit/test_v4_sealing.py": "d7d232de2bdeb967fb58581a8d5146e66adb1982d19dafeb326d2823d5cc81fa",
+        "tests/unit/test_v4_solver.py": "15914d2751e547b633604618f6bc958887705df7610469ab5c57108028d39a64",
+        "tests/unit/test_v4_validation_pipeline.py": "65aad092458ca3e2eed643ad626acaba5cdc47f08fa1f458b2221564a71844a5",
+        "uv.lock": "fb6904f6399e41367ac4d23ac91dbc6cacb547ee89c2de144d3c7bf5f2cd39fa"
+      },
+      "environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "lock": "fb6904f6399e41367ac4d23ac91dbc6cacb547ee89c2de144d3c7bf5f2cd39fa",
+        "numpy": "2.5.3",
+        "platform": "macOS-27.0-arm64-arm-64bit",
+        "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]"
+      },
+      "environment_sha256": "218a26db2a28d94727b0cc5693b242152c5ea9916ddcf2fe39a9767fbc514439",
+      "host_sha256": "296962aa074261b68a7467808bb62a2fd8b84ba5dcc2f618ea02d134a809e638"
+    }
+  },
+  "probe": {
+    "allclose_rtol_0_atol_1e_12": true,
+    "length": 10,
+    "mac_matches_freeze_exactly": true,
+    "max_abs_difference": 6.661338147750939e-16
+  },
+  "recommendation": {
+    "homelab_shards": [],
+    "mac_shards": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason": "Pre-declared discrete equivalence criterion failed; no multihost successor or import is authorized by this measurement."
+  },
+  "schema": "v4-host-equivalence-measurement-v1",
+  "status": "equivalence-replay-not-gate-evidence",
+  "timings": {
+    "eight_worker_sample_run": false,
+    "homelab_observed_throughput_tasks_per_hour": 4.071634989949053,
+    "homelab_sum_task_wall_seconds": 6068.157827012008,
+    "homelab_three_task_makespan_seconds": 2652.49709923903,
+    "mac_sum_over_homelab_sum_ratio": 1.2186273957942273,
+    "mac_sum_task_wall_seconds": 7394.82337,
+    "mac_three_worker_throughput_measured": false,
+    "tasks": {
+      "G0-00000": {
+        "homelab_wall_seconds": 1120.15620282304,
+        "mac_over_homelab_ratio": 2.254562758868164,
+        "mac_wall_seconds": 2525.462459
+      },
+      "G0-00001": {
+        "homelab_wall_seconds": 2652.385599435016,
+        "mac_over_homelab_ratio": 0.9085354371224561,
+        "mac_wall_seconds": 2409.78631
+      },
+      "G0-00002": {
+        "homelab_wall_seconds": 2295.616024753952,
+        "mac_over_homelab_ratio": 1.0714224741760205,
+        "mac_wall_seconds": 2459.574601
+      }
+    },
+    "workers": 3
+  },
+  "totals": {
+    "continuous_failures": 0,
+    "continuous_fields_compared": 1331544,
+    "discrete_failures": 4448,
+    "first_difference": {
+      "homelab": "711adbe11da89f611c1fd4eb11849ac69081e637e3afd01cff230302494ebe93",
+      "kind": "discrete",
+      "mac": "29f202cba340b7e9a7e8ee329abfcff4aad5ba40cacc9f5c38f6c10eda14df50",
+      "path": "phases.jsonl[1056].seed_material_sha256"
+    },
+    "max_abs_difference": 7.882423880278822e-12
+  }
+}

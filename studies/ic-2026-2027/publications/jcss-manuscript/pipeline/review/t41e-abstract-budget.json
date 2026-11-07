@@ -1,0 +1,765 @@
+{
+  "schema": "ic-study.v4-abstract-budget-review.v1",
+  "synthetic": true,
+  "agreement_count_cases": [
+    {
+      "count": "0",
+      "compositions": 46,
+      "maximum_mandatory_words": 246,
+      "positive_guard_counts": "1"
+    },
+    {
+      "count": "1",
+      "compositions": 46,
+      "maximum_mandatory_words": 246,
+      "positive_guard_counts": "1"
+    },
+    {
+      "count": "2",
+      "compositions": 46,
+      "maximum_mandatory_words": 246,
+      "positive_guard_counts": "2"
+    },
+    {
+      "count": "9",
+      "compositions": 46,
+      "maximum_mandatory_words": 246,
+      "positive_guard_counts": "9"
+    }
+  ],
+  "method": "Finite predicate enumeration; maximal nine-share list; one-token counts. No study execution.",
+  "constraints": [
+    "Global permission excludes an invalid main curve.",
+    "Complete valid B non-attainment excludes main invalidity and positive B/D persistence reading.",
+    "Positive persistence reading requires permission and a nonempty common gap-free set.",
+    "First/sustained records may differ only in intervals even without point attainment; this class is included.",
+    "X6 consequence is checked both with and without gate passage, as its existing condition permits.",
+    "All optional eligibility subsets are bounded by first-fit; no subset can exceed 250."
+  ],
+  "fallbacks_in_order": [
+    {
+      "fallback": null,
+      "maximum": 258
+    },
+    {
+      "fallback": "A.H-BD",
+      "maximum": 257
+    },
+    {
+      "fallback": "A.B10",
+      "maximum": 257
+    },
+    {
+      "fallback": "A.X6",
+      "maximum": 253
+    },
+    {
+      "fallback": "A.design",
+      "maximum": 246
+    }
+  ],
+  "opening_words": 103,
+  "compositions": [
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-a",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 180,
+      "first_fit_words_with_all_optional_candidates": 247
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-a",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 191,
+      "first_fit_words_with_all_optional_candidates": 244
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-a",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 188,
+      "first_fit_words_with_all_optional_candidates": 241
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-a",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 199,
+      "first_fit_words_with_all_optional_candidates": 244
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-a",
+        "A.B03",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 181,
+      "first_fit_words_with_all_optional_candidates": 248
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-a",
+        "A.B03",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 192,
+      "first_fit_words_with_all_optional_candidates": 245
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-a",
+        "A.B03",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 189,
+      "first_fit_words_with_all_optional_candidates": 242
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-a",
+        "A.B03",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 200,
+      "first_fit_words_with_all_optional_candidates": 245
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-empty",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 187,
+      "first_fit_words_with_all_optional_candidates": 240
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-empty",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 198,
+      "first_fit_words_with_all_optional_candidates": 243
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-empty",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 195,
+      "first_fit_words_with_all_optional_candidates": 248
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-B",
+        "A.P6-empty",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 206,
+      "first_fit_words_with_all_optional_candidates": 250
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 202,
+      "first_fit_words_with_all_optional_candidates": 247
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 213,
+      "first_fit_words_with_all_optional_candidates": 244
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 210,
+      "first_fit_words_with_all_optional_candidates": 241
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 221,
+      "first_fit_words_with_all_optional_candidates": 243
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.B10",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 223,
+      "first_fit_words_with_all_optional_candidates": 245
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.B10",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 234,
+      "first_fit_words_with_all_optional_candidates": 246
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.B10",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 231,
+      "first_fit_words_with_all_optional_candidates": 243
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.H-BD",
+        "A.B10",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 242,
+      "first_fit_words_with_all_optional_candidates": 242
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-empty",
+        "A.B03",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 188,
+      "first_fit_words_with_all_optional_candidates": 241
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-empty",
+        "A.B03",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 199,
+      "first_fit_words_with_all_optional_candidates": 244
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-empty",
+        "A.B03",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 196,
+      "first_fit_words_with_all_optional_candidates": 249
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.P6-empty",
+        "A.B03",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 207,
+      "first_fit_words_with_all_optional_candidates": 250
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B03",
+        "A.D-after-B03",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 227,
+      "first_fit_words_with_all_optional_candidates": 249
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B03",
+        "A.D-after-B03",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 238,
+      "first_fit_words_with_all_optional_candidates": 250
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B03",
+        "A.D-after-B03",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 235,
+      "first_fit_words_with_all_optional_candidates": 247
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B03",
+        "A.D-after-B03",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 246,
+      "first_fit_words_with_all_optional_candidates": 246
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B02",
+        "A.H-B",
+        "A.P6-a",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 196,
+      "first_fit_words_with_all_optional_candidates": 249
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B02",
+        "A.H-B",
+        "A.P6-a",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 207,
+      "first_fit_words_with_all_optional_candidates": 250
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B02",
+        "A.H-B",
+        "A.P6-a",
+        "A.B06",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 204,
+      "first_fit_words_with_all_optional_candidates": 249
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.G",
+        "A.B02",
+        "A.H-B",
+        "A.P6-a",
+        "A.B06",
+        "A.X6",
+        "A.new-seeds",
+        "A.limitation"
+      ],
+      "mandatory_words": 215,
+      "first_fit_words_with_all_optional_candidates": 246
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G0",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 175,
+      "first_fit_words_with_all_optional_candidates": 242
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G0",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 186,
+      "first_fit_words_with_all_optional_candidates": 239
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G1b",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 177,
+      "first_fit_words_with_all_optional_candidates": 244
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G1b",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 188,
+      "first_fit_words_with_all_optional_candidates": 241
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G1c",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 172,
+      "first_fit_words_with_all_optional_candidates": 239
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G1c",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 183,
+      "first_fit_words_with_all_optional_candidates": 250
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1c",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 193,
+      "first_fit_words_with_all_optional_candidates": 246
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1c",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 204,
+      "first_fit_words_with_all_optional_candidates": 249
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G2",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 180,
+      "first_fit_words_with_all_optional_candidates": 247
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G2",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 191,
+      "first_fit_words_with_all_optional_candidates": 244
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G2c",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 179,
+      "first_fit_words_with_all_optional_candidates": 246
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1b-G2c",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 190,
+      "first_fit_words_with_all_optional_candidates": 243
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1d",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 175,
+      "first_fit_words_with_all_optional_candidates": 242
+    },
+    {
+      "ids": [
+        "A.design",
+        "A.every-stage",
+        "A.B1d",
+        "A.X6",
+        "A.X",
+        "A.limitation"
+      ],
+      "mandatory_words": 186,
+      "first_fit_words_with_all_optional_candidates": 239
+    }
+  ],
+  "maximum_mandatory_words": 246,
+  "audited_case_budgets": [
+    {
+      "dataset": "release-day",
+      "case": "passed-shp",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "release-day",
+      "case": "failed-G0",
+      "abstract_words": 175
+    },
+    {
+      "dataset": "release-day",
+      "case": "invalid-main",
+      "abstract_words": 196
+    },
+    {
+      "dataset": "release-day",
+      "case": "incomplete-tier2",
+      "abstract_words": 180
+    },
+    {
+      "dataset": "release-day",
+      "case": "unavailable",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "release-day",
+      "case": "x6-no-reading",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "release-day",
+      "case": "x6-subnominal",
+      "abstract_words": 234
+    },
+    {
+      "dataset": "release-day",
+      "case": "x6-failure",
+      "abstract_words": 234
+    },
+    {
+      "dataset": "release-day",
+      "case": "x6-inconclusive",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "g2c-failure",
+      "case": "i-comparison-failed",
+      "abstract_words": 179
+    },
+    {
+      "dataset": "g2c-failure",
+      "case": "ii-comparison-no-ratio",
+      "abstract_words": 179
+    },
+    {
+      "dataset": "g2c-failure",
+      "case": "iii-comparisons-absent",
+      "abstract_words": 179
+    },
+    {
+      "dataset": "dress",
+      "case": "passed-shp",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "dress",
+      "case": "failed-G0",
+      "abstract_words": 175
+    },
+    {
+      "dataset": "dress",
+      "case": "invalid-main",
+      "abstract_words": 196
+    },
+    {
+      "dataset": "dress",
+      "case": "incomplete-tier2",
+      "abstract_words": 180
+    },
+    {
+      "dataset": "dress",
+      "case": "unavailable",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "dress",
+      "case": "x6-no-reading",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "dress",
+      "case": "x6-subnominal",
+      "abstract_words": 234
+    },
+    {
+      "dataset": "dress",
+      "case": "x6-failure",
+      "abstract_words": 234
+    },
+    {
+      "dataset": "dress",
+      "case": "x6-inconclusive",
+      "abstract_words": 223
+    },
+    {
+      "dataset": "dress",
+      "case": "i-comparison-failed",
+      "abstract_words": 179
+    },
+    {
+      "dataset": "dress",
+      "case": "ii-comparison-no-ratio",
+      "abstract_words": 179
+    },
+    {
+      "dataset": "dress",
+      "case": "iii-comparisons-absent",
+      "abstract_words": 179
+    }
+  ],
+  "maximum_audited_words": 234
+}

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ic-study"
+version = "0.0.0"
+description = "Scientific implementation and research compendium for the 2026-2027 IC."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.10,<4",
+    "numpy>=2.2,<3",
+    "pyreadstat>=1.2,<2",
+    "scipy>=1.15,<2",
+]
+
+[dependency-groups]
+dev = [
+  "hatchling>=1.27,<2",
+  "mypy>=1.19,<2",
+  "pytest>=8.4,<10",
+  "ruff>=0.15,<0.16",
+  "scipy-stubs>=1.15,<2",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.12"
+packages = ["ic_study"]
+strict = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "N", "RUF", "SIM", "UP"]

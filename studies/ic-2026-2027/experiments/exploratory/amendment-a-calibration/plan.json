@@ -1,0 +1,12 @@
+{
+  "status": "exploratory_design_measurement_only",
+  "namespace": "ic-detection-boundary-amendment-a-20260925-calibration",
+  "size": 10626,
+  "waves": 11,
+  "workers": 8,
+  "wall_budget_seconds": 3600,
+  "matching": {"shares": [0, 0.03, 0.1], "reliability": 0.7, "blocks": [1,2,3,4,5,6,7,8], "counts": [256,1024], "mc_multiplier": 0, "posthoc_tolerances": [0.00005,0.0003,"max(0.00005,SE)","max(0.00005,2SE)"], "validation_count": 1024},
+  "refits": {"shares": [0.03,0.1], "reliability": 0.7, "count": 40, "matching": 256, "mc_multiplier": 1, "training_events_per_class": 2000, "fixed_reference_events_per_class": 4000, "variance_prefixes": [10,20,40]},
+  "zero_law": {"share": 0, "reliability": 0.7, "rho": 0.85, "trait": 0, "training_events_per_class": 2000, "reference_events_per_class": 40000},
+  "disclosure": "Cells 0.03 and 0.1 are preselected grid probes, not an AUC search. They may not bracket the crossing. No confirmatory seed or other proposal is read."
+}

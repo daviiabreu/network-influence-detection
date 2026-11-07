@@ -1,0 +1,62 @@
+{
+  "kind": "v4.1-revision-verification-not-gate",
+  "classifiers_trained": 0,
+  "synthetic": {
+    "seed": 4101,
+    "replications": 3000,
+    "old_failures": 411,
+    "new_failures": 0
+  },
+  "mean_shift": {
+    "seed_repetition": 9100,
+    "phase": "match",
+    "panels": 64,
+    "size": 10626,
+    "point": [
+      0.85,
+      0.15
+    ],
+    "delta": [
+      0.001,
+      -0.001
+    ],
+    "step": 0.01,
+    "actual": [
+      0.0009674203997921092,
+      0.0010828657845082437,
+      0.0011205929985908308
+    ],
+    "predicted": [
+      0.0009946280120857348,
+      0.0011023493608303791,
+      0.0011372128369758646
+    ],
+    "relative_shift_error": 0.020371022189446312
+  },
+  "measured_source_ast_equal": {
+    "profile_match": true,
+    "validate_fit": true,
+    "amplification": true,
+    "finite_differences": true,
+    "SeedPlan": true,
+    "fit_cell": true,
+    "PanelSource.profiles": true
+  },
+  "byte_equal_panel_batches": 70,
+  "panels_per_batch": 2,
+  "criteria_unchanged": {
+    "implementation_sha256": "189cc6f3f4592ec17a84f5d43e6dd56a301959e11b98b5e73fa5f0ead10d861c",
+    "script_sha256": "2656e7165b6a03c220defdcf9c0da90f1412e8fccbc100ec0a7a8312e319a6d0"
+  },
+  "recalibration_required": false,
+  "inputs": {
+    "cost-fit-source-v41.json": "607efd1477146ab6eb538410a67f2f93d32888e05e67f1933affb615a0915569",
+    "cost-fits-v41.json": "be841226f0d8db3776f5743a7ad06acdd4513b83035ec45549bd18d3da254d5b",
+    "criteria-v4.json": "352dafc081b01e3351f45d1da2fc5e0f41cdd2f293c0a7772adb6d13820816e8"
+  },
+  "final_source_hashes": {
+    "src/ic_study/analysis/detection_boundary_v4.py": "4eef26cb61b25f96e5a27ee31d979e28059b48d87c63025bd9e494bb52805caf",
+    "src/ic_study/simulation/detection_v4.py": "5f5fa2f0cfe207847c2c8ab8ac510ac68b4b7be42bfcda2aea43cc26d782e9ed"
+  },
+  "script_sha256": "3677dbd70399a31670e29963a5b7dad3ab10edec898cb9b070a16b0a77efd16d"
+}

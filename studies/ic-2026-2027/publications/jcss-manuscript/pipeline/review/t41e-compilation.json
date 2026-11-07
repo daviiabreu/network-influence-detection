@@ -1,0 +1,41 @@
+{
+  "synthetic": true,
+  "assembly": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/release-day/invalid-main",
+  "compilations": 1,
+  "compile_exit": 0,
+  "compile_command": [
+    "tectonic",
+    "--only-cached",
+    "--keep-logs",
+    "--keep-intermediates",
+    "t41e-plural-default-probe.tex"
+  ],
+  "cached_only": true,
+  "cache": "/private/tmp/t41e-tectonic-cache",
+  "cache_source": "/private/tmp/t41d-tectonic-cache",
+  "wrapper_sha256": "5418fc45c3e67befb5dff0e5471c32af01f077a3d60f16ec7f26305bfac041b2",
+  "wrapper_changes_visible_manuscript": false,
+  "unassembled_default_verified": "units were",
+  "main_tex_sha256": "d29ff335b70cd41f62e4b2614db5bc7a63ffd243db885a32a30289e700c2b665",
+  "pdf_sha256": "ae3f172fd740090606f18a1a49bc6318386de7d8f96750073c6a80d2200f3ae8",
+  "values": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/release-day/invalid-main/assembled-values.json",
+  "values_sha256": "ff6e16f150d1e0fe8a018fdb978dbc2e1c2fd0ca4d0c701318c9fd51ad0f80ae",
+  "paper_check_exit": 0,
+  "paper_check_mode": "draft",
+  "pages": 88,
+  "extracted_words": 50110,
+  "cited_ids": 5101,
+  "abstract_words": 196,
+  "placeholders": 2,
+  "template_sources": {
+    "sn-jnl.cls": {
+      "file": "/private/tmp/t51-work/manuscript-assembled/sn-jnl.cls",
+      "sha256": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc"
+    },
+    "sn-mathphys-num.bst": {
+      "file": "/private/tmp/t51-work/manuscript-assembled/sn-mathphys-num.bst",
+      "sha256": "b3a7c7fbcc1e7f9619de634fcea2f5bb7a245818a5942bc576e40ea001633332"
+    }
+  },
+  "nice_15": "attempted; macOS refused setpriority"
+}

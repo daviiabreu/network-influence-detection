@@ -1,0 +1,31 @@
+% Pre-release placeholder. On release day, replace this section with the Results
+% shell branch that the gate outcome selects, from
+% pipeline/drafts/2026-09-28/results-shells.tex, with one input line for each
+% generated file named in that branch's INCLUDES line
+% (experiments/exploratory/detection-boundary-v4/report/RELEASE-RUNBOOK.md):
+%   every stage passed (B1a)        B00, with P2 = B1a, then each branch B02-B17
+%                                   whose SELECT WHEN holds, in numerical order
+%   G0 failed                       B1b-G0, then B1-END
+%   G1b failed                      B1b-G1b, then B1-END
+%   G1c failed                      B1b-G1c, then B1-END
+%   waste guard stopped before G2   B1c, then B1-END
+%   G2 failed                       B1b-G2, then B1-END
+%   G2c failed                      B1b-G2c, then B1-END
+%   gate unfinished at the close    B1d, then B1-END
+% Each gate-failure row then appends B1-SHP in its labelled exploratory
+% subsection, selecting (a), (b) or (c) by that block's SELECT WHEN.
+% The gate-failure branches input only generated/gate-outcomes; every other
+% generated file then holds only a comment. Paste the branch with its bracketed
+% resultnum placeholders and let the export fill them (--fill). Do not paste a
+% branch before the release.
+This section is reserved for hash-bound, validated v4 outputs. Generated inputs below are placeholders and contain no estimates. Report the complete inventory, unavailable cells and gate status before interpreting a boundary.
+
+\subsection{Validation and unit coverage}
+\input{generated/gate-outcomes}
+\input{generated/unit-status}
+
+\subsection{Separation across response signal shares}
+\input{generated/primary-boundary-figure}
+\input{generated/auc-profiles}
+\input{generated/boundary-table}
+\input{generated/shp-anchor}

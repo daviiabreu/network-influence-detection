@@ -1,0 +1,263 @@
+{
+  "schema": "ic-study.v4-manuscript-selection-review.v1",
+  "baseline": "83aecd3c",
+  "changes": [
+    {
+      "id": "A.B11",
+      "field": "condition",
+      "before": {
+        "ref": "B11"
+      },
+      "after": {
+        "all": [
+          {
+            "ref": "B11"
+          },
+          {
+            "gt": [
+              "v4.t3.n_channel_dependent",
+              "0"
+            ]
+          }
+        ]
+      },
+      "reason": "X6R-05/F01: non-assessment is not channel evidence",
+      "source": "pipeline/drafts/2026-09-28/results-shells-abstract.md",
+      "line": 109,
+      "end_line": 109
+    },
+    {
+      "id": "A.B05",
+      "field": "condition",
+      "before": {
+        "ref": "B05"
+      },
+      "after": {
+        "all": [
+          {
+            "ref": "B05"
+          },
+          {
+            "gt": [
+              "v4.t1.n_dip",
+              "0"
+            ]
+          }
+        ]
+      },
+      "reason": "F02: the band flag does not establish a point dip",
+      "source": "pipeline/drafts/2026-09-28/results-shells-abstract.md",
+      "line": 100,
+      "end_line": 100
+    },
+    {
+      "id": "B11",
+      "field": "fragments",
+      "before": null,
+      "after": [
+        {
+          "line": 520,
+          "end_line": 520,
+          "condition": true
+        },
+        {
+          "line": 521,
+          "end_line": 521,
+          "condition": {
+            "gt": [
+              "v4.t3.n_pairs_compared",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 522,
+          "end_line": 522,
+          "condition": {
+            "gt": [
+              "v4.t3.n_obs_exceeds",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 523,
+          "end_line": 523,
+          "condition": {
+            "gt": [
+              "v4.t3.n_channel_dependent",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 524,
+          "end_line": 524,
+          "condition": {
+            "gt": [
+              "v4.t3.n_channel_not_assessed",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 525,
+          "end_line": 525,
+          "condition": {
+            "gt": [
+              "v4.t3.n_pairs_compared",
+              "0"
+            ]
+          }
+        }
+      ],
+      "reason": "X6R-05/F01: split existing block, preserving inventory and zero-comparison absence",
+      "source": "pipeline/drafts/2026-09-28/results-shells.tex",
+      "line": 506,
+      "end_line": 526
+    },
+    {
+      "id": "B05",
+      "field": "fragments",
+      "before": null,
+      "after": [
+        {
+          "line": 402,
+          "end_line": 402,
+          "condition": {
+            "gt": [
+              "v4.t1.n_dip",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 403,
+          "end_line": 403,
+          "condition": {
+            "gt": [
+              "v4.t1.n_dip",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 404,
+          "end_line": 404,
+          "condition": {
+            "gt": [
+              "v4.t1.n_nonmonotone_band",
+              "0"
+            ]
+          }
+        },
+        {
+          "line": 405,
+          "end_line": 405,
+          "condition": true
+        },
+        {
+          "line": 406,
+          "end_line": 406,
+          "condition": true
+        }
+      ],
+      "reason": "F02: separate point dips from band-endpoint diagnostic",
+      "source": "pipeline/drafts/2026-09-28/results-shells.tex",
+      "line": 393,
+      "end_line": 407
+    },
+    {
+      "id": "C-H-B",
+      "field": "fragments",
+      "before": null,
+      "after": [
+        {
+          "line": 80,
+          "end_line": 80,
+          "condition": true
+        },
+        {
+          "line": 82,
+          "end_line": 82,
+          "condition": {
+            "gt": [
+              "v4.t1.n_attained",
+              "0"
+            ]
+          }
+        }
+      ],
+      "reason": "P9: implication of attainment requires a recorded attained boundary; existing class guard unchanged",
+      "source": "pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+      "line": 76,
+      "end_line": 83
+    },
+    {
+      "id": "C-H-BD",
+      "field": "fragments",
+      "before": null,
+      "after": [
+        {
+          "line": 63,
+          "end_line": 63,
+          "condition": true
+        },
+        {
+          "line": 65,
+          "end_line": 65,
+          "condition": {
+            "gt": [
+              "v4.t1.n_attained",
+              "0"
+            ]
+          }
+        }
+      ],
+      "reason": "P9: implication of attainment requires a recorded attained boundary; existing class guard unchanged",
+      "source": "pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+      "line": 59,
+      "end_line": 66
+    },
+    {
+      "id": "D-X1B",
+      "field": "requires",
+      "before": null,
+      "after": [
+        "v4x.comparisons.by_r.0-5.x1b.state",
+        "v4x.comparisons.by_r.0-55.x1b.state",
+        "v4x.comparisons.by_r.0-6.x1b.state",
+        "v4x.comparisons.by_r.0-65.x1b.state",
+        "v4x.comparisons.by_r.0-7.x1b.state",
+        "v4x.comparisons.by_r.0-75.x1b.state",
+        "v4x.comparisons.by_r.0-8.x1b.state",
+        "v4x.comparisons.by_r.0-85.x1b.state",
+        "v4x.comparisons.by_r.0-9.x1b.state"
+      ],
+      "reason": "F04: supplied synopsis requires every public share state; no historical fallback",
+      "source": "pipeline/drafts/2026-09-30/discussion-conclusion-shells.tex",
+      "line": 437,
+      "end_line": 445
+    },
+    {
+      "id": "E.twin-and-expanded-feature-boundaries",
+      "field": "requires",
+      "before": null,
+      "after": [
+        "v4x.comparisons.by_r.0-5.x1b.state",
+        "v4x.comparisons.by_r.0-55.x1b.state",
+        "v4x.comparisons.by_r.0-6.x1b.state",
+        "v4x.comparisons.by_r.0-65.x1b.state",
+        "v4x.comparisons.by_r.0-7.x1b.state",
+        "v4x.comparisons.by_r.0-75.x1b.state",
+        "v4x.comparisons.by_r.0-8.x1b.state",
+        "v4x.comparisons.by_r.0-85.x1b.state",
+        "v4x.comparisons.by_r.0-9.x1b.state"
+      ],
+      "reason": "F04: supplied synopsis requires every public share state; no historical fallback",
+      "source": "pipeline/drafts/2026-09-30/exploratory-results-shells.tex",
+      "line": 201,
+      "end_line": 206
+    }
+  ]
+}

@@ -1,0 +1,2158 @@
+[
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/passed-shp/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/passed-shp/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/passed-shp/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/passed-shp/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/passed-shp/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/passed-shp/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/passed-shp/aggregates/x6.json",
+        "source_sha256": "e7a8acc5fbf154714d695cca6e19771173218266ec8fc2c0d1074dc320b8834f",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/passed-shp/x6.json",
+        "successor_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/passed-shp/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/passed-shp/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/passed-shp",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      },
+      {
+        "name": "exploratory-x7-boundaries.tex",
+        "template_sha256": "6afb689050e4a83ebb7250034c7fe61e3d1998577f3026f8715239612b976180"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/failed-G0",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/aggregates/comparisons.json",
+        "source_sha256": "01482b9cb06532ba94077d85de78bc28e3834a38df54d14e0c71c7c0612952cd",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/invalid-main/comparisons.json",
+        "successor_sha256": "63774bb3ee82eeac6411694ac921d7ef84c9973c4db46109944121b73a99f370"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/invalid-main/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/invalid-main/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/aggregates/x6.json",
+        "source_sha256": "e7a8acc5fbf154714d695cca6e19771173218266ec8fc2c0d1074dc320b8834f",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/invalid-main/x6.json",
+        "successor_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/invalid-main/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/invalid-main",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/incomplete-tier2/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/incomplete-tier2/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/incomplete-tier2/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/aggregates/x6.json",
+        "source_sha256": "e7a8acc5fbf154714d695cca6e19771173218266ec8fc2c0d1074dc320b8834f",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/incomplete-tier2/x6.json",
+        "successor_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/incomplete-tier2/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/unavailable/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/unavailable/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/unavailable/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/unavailable/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/unavailable/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/unavailable/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/unavailable/aggregates/x6.json",
+        "source_sha256": "d107687c068f95d370826f95778ebc390b8d9d96ef0a99f3495fec1aae4b94b5",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/unavailable/x6.json",
+        "successor_sha256": "612bc706f2e0db1f660abde707c406fdc572f24478d015379a19f9477aba15e7"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/unavailable/aggregates/x7.json",
+        "source_sha256": "4884afd4253c29315f37d6d7a508c397a464769bb631bc27b5647e9b641b04ea",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/unavailable/x7.json",
+        "successor_sha256": "5ca6eaec84c01c40c231f85b953bb4ea698c78eb619df9c4fb37fcbed410d5a1"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/unavailable",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-no-reading/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-no-reading/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-no-reading/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/aggregates/x6.json",
+        "source_sha256": "8d36df1a35f19aa3827cb67c4af12fed559e9aeb2c168d110dbaa5e431d32330",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-no-reading/x6.json",
+        "successor_sha256": "a7ceef40b58005ad5220c7c7c9235c866160ccd8bf95452ff4c219427d2b28ab"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-no-reading/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered"
+      },
+      {
+        "after": "0.874372",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.reading"
+      },
+      {
+        "after": "0.821124",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.91344",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "24",
+        "before": "28",
+        "id": "v4x.x6.x6a.count.adequate"
+      },
+      {
+        "after": "5",
+        "before": "1",
+        "id": "v4x.x6.x6a.count.subnominal"
+      },
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.covered"
+      },
+      {
+        "after": "0.878788",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.reading"
+      },
+      {
+        "after": "0.82598",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i000"
+      },
+      {
+        "after": "0.917178",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i001"
+      },
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.covered"
+      },
+      {
+        "after": "0.878788",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.reading"
+      },
+      {
+        "after": "0.82598",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i000"
+      },
+      {
+        "after": "0.917178",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i001"
+      },
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.covered"
+      },
+      {
+        "after": "0.874372",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.reading"
+      },
+      {
+        "after": "0.821124",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.91344",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8743718592964824,
+          "reading": "subnominal",
+          "total": 199,
+          "wilson95": [
+            0.8211240258258065,
+            0.9134398095052915
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/band/vs_d1/gaps_as_misses"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8787878787878788,
+          "reading": "subnominal",
+          "total": 198,
+          "wilson95": [
+            0.8259798446798439,
+            0.9171776851525963
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/band_interval"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8787878787878788,
+          "reading": "subnominal",
+          "total": 198,
+          "wilson95": [
+            0.8259798446798439,
+            0.9171776851525963
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8743718592964824,
+          "reading": "subnominal",
+          "total": 199,
+          "wilson95": [
+            0.8211240258258065,
+            0.9134398095052915
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise_gaps_as_misses"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-subnominal/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-subnominal/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-subnominal/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/aggregates/x6.json",
+        "source_sha256": "ba84678ce34fed7b23dd2706b1a97bb4121856f8775a209debb755eaebe3252e",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-subnominal/x6.json",
+        "successor_sha256": "eca8d47d2a219dcbe5181367038fe2feb25c534af0b7ddf9f4347bb4a6890d57"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-subnominal/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered"
+      },
+      {
+        "after": "0.703518",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.reading"
+      },
+      {
+        "after": "0.636695",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.762632",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "24",
+        "before": "28",
+        "id": "v4x.x6.x6a.count.adequate"
+      },
+      {
+        "after": "5",
+        "before": "1",
+        "id": "v4x.x6.x6a.count.failure"
+      },
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.covered"
+      },
+      {
+        "after": "0.707071",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.reading"
+      },
+      {
+        "after": "0.640221",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i000"
+      },
+      {
+        "after": "0.766038",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i001"
+      },
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.covered"
+      },
+      {
+        "after": "0.707071",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.reading"
+      },
+      {
+        "after": "0.640221",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i000"
+      },
+      {
+        "after": "0.766038",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i001"
+      },
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.covered"
+      },
+      {
+        "after": "0.703518",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.reading"
+      },
+      {
+        "after": "0.636695",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.762632",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7035175879396985,
+          "reading": "failure",
+          "total": 199,
+          "wilson95": [
+            0.6366950525181555,
+            0.7626315962188844
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/band/vs_d1/gaps_as_misses"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7070707070707071,
+          "reading": "failure",
+          "total": 198,
+          "wilson95": [
+            0.6402211839431707,
+            0.7660382656985633
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/band_interval"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7070707070707071,
+          "reading": "failure",
+          "total": 198,
+          "wilson95": [
+            0.6402211839431707,
+            0.7660382656985633
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7035175879396985,
+          "reading": "failure",
+          "total": 199,
+          "wilson95": [
+            0.6366950525181555,
+            0.7626315962188844
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise_gaps_as_misses"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-failure/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-failure/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-failure/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-failure/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-failure/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-failure/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-failure/aggregates/x6.json",
+        "source_sha256": "bf50e1da27321b8099ea2e3ccc21c8f6d40150fd3cbbe35cef1381a90c7cd9d8",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-failure/x6.json",
+        "successor_sha256": "1f1154c77d05bdc10eb07cf8b41ac0e006a28e0bf95d883ec1b57d633430a34d"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-failure/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-failure/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/x6-failure",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/aggregates/comparisons.json",
+        "source_sha256": "130a94f7bfac8dd1107e8e27b1cabe882b2c4210088fb13fd8f03660b508e5e3",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-inconclusive/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-inconclusive/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-inconclusive/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/aggregates/x6.json",
+        "source_sha256": "800118e21bd74f8fd4a68e78989cb331f1c41ddc345d4b180f1f8d8b0b06074a",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-inconclusive/x6.json",
+        "successor_sha256": "a56780096d2c41e3d5bb93cf6a421062ff362e867a8fbe6db3833a3dc5cc11c4"
+      },
+      "x7": {
+        "source": "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/release-day/x6-inconclusive/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      }
+    ],
+    "original": "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      },
+      {
+        "name": "exploratory-x7-boundaries.tex",
+        "template_sha256": "6afb689050e4a83ebb7250034c7fe61e3d1998577f3026f8715239612b976180"
+      }
+    ],
+    "original": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      },
+      {
+        "name": "exploratory-x7-boundaries.tex",
+        "template_sha256": "6afb689050e4a83ebb7250034c7fe61e3d1998577f3026f8715239612b976180"
+      }
+    ],
+    "original": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/ii-comparison-no-ratio",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [
+      {
+        "name": "exploratory-x1b-boundaries.tex",
+        "template_sha256": "e421b631a6a5fcbf91efcc922810869d101df27afeff7d8cd17b1dce812093a8"
+      },
+      {
+        "name": "exploratory-x7-boundaries.tex",
+        "template_sha256": "6afb689050e4a83ebb7250034c7fe61e3d1998577f3026f8715239612b976180"
+      }
+    ],
+    "original": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/iii-comparisons-absent",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/passed-shp/aggregates/comparisons.json",
+        "source_sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/passed-shp/comparisons.json",
+        "successor_sha256": "80e294ee8b72c478abc09fd219525984e763c4ede3dc6c99c11db88ee1093155"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/passed-shp/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/passed-shp/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/passed-shp/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/passed-shp/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/passed-shp/aggregates/x6.json",
+        "source_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/passed-shp/x6.json",
+        "successor_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/passed-shp/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/passed-shp/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/passed-shp",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/failed-G0",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/invalid-main/aggregates/comparisons.json",
+        "source_sha256": "acbb6b9d1976e54e3ae108f0da5e2e8c6dbf88b8d949e43d6d0f682f97264e33",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/invalid-main/comparisons.json",
+        "successor_sha256": "187186001c210822d612da99864cb7cc80ced6d9557f5421d9a17175261b605b"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/invalid-main/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/invalid-main/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/invalid-main/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/invalid-main/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/invalid-main/aggregates/x6.json",
+        "source_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/invalid-main/x6.json",
+        "successor_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/invalid-main/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/invalid-main/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/invalid-main",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/aggregates/comparisons.json",
+        "source_sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/incomplete-tier2/comparisons.json",
+        "successor_sha256": "80e294ee8b72c478abc09fd219525984e763c4ede3dc6c99c11db88ee1093155"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/incomplete-tier2/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/incomplete-tier2/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/aggregates/x6.json",
+        "source_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/incomplete-tier2/x6.json",
+        "successor_sha256": "4ded27ff588b83334c5309505daae7488848492e8d990c06a5c8af2cd7b6f2a9"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/incomplete-tier2/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/incomplete-tier2",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/aggregates/comparisons.json",
+        "source_sha256": "f4eb4bd8d4dc928597433fa2d69cee6e38ce9d25b7d3258ef58eaf9a6aef72b0",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/unavailable/comparisons.json",
+        "successor_sha256": "502258841a969bedd642930c44bb9eb9a870c3e841331e008d3b5a1d2407d04b"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/unavailable/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/unavailable/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/aggregates/x6.json",
+        "source_sha256": "612bc706f2e0db1f660abde707c406fdc572f24478d015379a19f9477aba15e7",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/unavailable/x6.json",
+        "successor_sha256": "612bc706f2e0db1f660abde707c406fdc572f24478d015379a19f9477aba15e7"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable/aggregates/x7.json",
+        "source_sha256": "8e52214df1befd479928ec2d680915a4e9fdc34f8b0aaddda22fd13f00eb538c",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/unavailable/x7.json",
+        "successor_sha256": "5ca6eaec84c01c40c231f85b953bb4ea698c78eb619df9c4fb37fcbed410d5a1"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/unavailable",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-no-reading/aggregates/comparisons.json",
+        "source_sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-no-reading/comparisons.json",
+        "successor_sha256": "80e294ee8b72c478abc09fd219525984e763c4ede3dc6c99c11db88ee1093155"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-no-reading/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-no-reading/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-no-reading/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-no-reading/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-no-reading/aggregates/x6.json",
+        "source_sha256": "5eeeb2977e0e3a5039c35f62c69868e17be228913a7ace417ab4caf5b87bf62f",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-no-reading/x6.json",
+        "successor_sha256": "a7ceef40b58005ad5220c7c7c9235c866160ccd8bf95452ff4c219427d2b28ab"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-no-reading/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-no-reading/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/x6-no-reading",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered"
+      },
+      {
+        "after": "0.874372",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.reading"
+      },
+      {
+        "after": "0.821124",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.91344",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "24",
+        "before": "28",
+        "id": "v4x.x6.x6a.count.adequate"
+      },
+      {
+        "after": "5",
+        "before": "1",
+        "id": "v4x.x6.x6a.count.subnominal"
+      },
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.covered"
+      },
+      {
+        "after": "0.878788",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.reading"
+      },
+      {
+        "after": "0.82598",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i000"
+      },
+      {
+        "after": "0.917178",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i001"
+      },
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.covered"
+      },
+      {
+        "after": "0.878788",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.reading"
+      },
+      {
+        "after": "0.82598",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i000"
+      },
+      {
+        "after": "0.917178",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i001"
+      },
+      {
+        "after": "174",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.covered"
+      },
+      {
+        "after": "0.874372",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.fraction"
+      },
+      {
+        "after": "subnominal",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.reading"
+      },
+      {
+        "after": "0.821124",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.91344",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8743718592964824,
+          "reading": "subnominal",
+          "total": 199,
+          "wilson95": [
+            0.8211240258258065,
+            0.9134398095052915
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/band/vs_d1/gaps_as_misses"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8787878787878788,
+          "reading": "subnominal",
+          "total": 198,
+          "wilson95": [
+            0.8259798446798439,
+            0.9171776851525963
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/band_interval"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8787878787878788,
+          "reading": "subnominal",
+          "total": 198,
+          "wilson95": [
+            0.8259798446798439,
+            0.9171776851525963
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 174,
+          "fraction": 0.8743718592964824,
+          "reading": "subnominal",
+          "total": 199,
+          "wilson95": [
+            0.8211240258258065,
+            0.9134398095052915
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise_gaps_as_misses"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-subnominal/aggregates/comparisons.json",
+        "source_sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-subnominal/comparisons.json",
+        "successor_sha256": "80e294ee8b72c478abc09fd219525984e763c4ede3dc6c99c11db88ee1093155"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-subnominal/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-subnominal/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-subnominal/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-subnominal/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-subnominal/aggregates/x6.json",
+        "source_sha256": "3c0aeb0efed913175daa87587cb17ab2f3130947f68a6cc716c951a791487e59",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-subnominal/x6.json",
+        "successor_sha256": "eca8d47d2a219dcbe5181367038fe2feb25c534af0b7ddf9f4347bb4a6890d57"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-subnominal/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-subnominal/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/x6-subnominal",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered"
+      },
+      {
+        "after": "0.703518",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.reading"
+      },
+      {
+        "after": "0.636695",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.762632",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.band.vs_d1.gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "24",
+        "before": "28",
+        "id": "v4x.x6.x6a.count.adequate"
+      },
+      {
+        "after": "5",
+        "before": "1",
+        "id": "v4x.x6.x6a.count.failure"
+      },
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.covered"
+      },
+      {
+        "after": "0.707071",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.reading"
+      },
+      {
+        "after": "0.640221",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i000"
+      },
+      {
+        "after": "0.766038",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.band_interval.wilson95.i001"
+      },
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.covered"
+      },
+      {
+        "after": "0.707071",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.reading"
+      },
+      {
+        "after": "0.640221",
+        "before": "0.980968",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i000"
+      },
+      {
+        "after": "0.766038",
+        "before": "1",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise.wilson95.i001"
+      },
+      {
+        "after": "140",
+        "before": "198",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.covered"
+      },
+      {
+        "after": "0.703518",
+        "before": "0.994975",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.fraction"
+      },
+      {
+        "after": "failure",
+        "before": "adequate",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.reading"
+      },
+      {
+        "after": "0.636695",
+        "before": "0.972089",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i000"
+      },
+      {
+        "after": "0.762632",
+        "before": "0.999112",
+        "id": "v4x.x6.x6a.strengths.r070.a0000.vs_d1.pointwise_gaps_as_misses.wilson95.i001"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7035175879396985,
+          "reading": "failure",
+          "total": 199,
+          "wilson95": [
+            0.6366950525181555,
+            0.7626315962188844
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/band/vs_d1/gaps_as_misses"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7070707070707071,
+          "reading": "failure",
+          "total": 198,
+          "wilson95": [
+            0.6402211839431707,
+            0.7660382656985633
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/band_interval"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7070707070707071,
+          "reading": "failure",
+          "total": 198,
+          "wilson95": [
+            0.6402211839431707,
+            0.7660382656985633
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 1.0,
+          "reading": "adequate",
+          "total": 198,
+          "wilson95": [
+            0.9809679393788213,
+            1.0000000000000002
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise"
+      },
+      {
+        "after": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 140,
+          "fraction": 0.7035175879396985,
+          "reading": "failure",
+          "total": 199,
+          "wilson95": [
+            0.6366950525181555,
+            0.7626315962188844
+          ]
+        },
+        "before": {
+          "complete": 198,
+          "conservative": false,
+          "covered": 198,
+          "fraction": 0.9949748743718593,
+          "reading": "adequate",
+          "total": 199,
+          "wilson95": [
+            0.9720894588977282,
+            0.9991123904997636
+          ]
+        },
+        "input": "x6",
+        "locator": "/x6a/strengths/0/vs_d1/pointwise_gaps_as_misses"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/aggregates/comparisons.json",
+        "source_sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-failure/comparisons.json",
+        "successor_sha256": "80e294ee8b72c478abc09fd219525984e763c4ede3dc6c99c11db88ee1093155"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-failure/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-failure/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/aggregates/x6.json",
+        "source_sha256": "d620f4e66b64c7559853bf3f525b3367fc2bd0e3736fe6daeb3b94b0631d049a",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-failure/x6.json",
+        "successor_sha256": "1f1154c77d05bdc10eb07cf8b41ac0e006a28e0bf95d883ec1b57d633430a34d"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-failure/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/x6-failure",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "catalog_changes": [
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r050.rich.first"
+      },
+      {
+        "after": "0.003",
+        "before": "0.03",
+        "id": "v4x.x7.units.r080.rich.first"
+      }
+    ],
+    "changes": [
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/0/rich/first"
+      },
+      {
+        "after": 0.003,
+        "before": 0.03,
+        "input": "x7",
+        "locator": "/units/6/rich/first"
+      }
+    ],
+    "inputs": {
+      "comparisons": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-inconclusive/aggregates/comparisons.json",
+        "source_sha256": "2c5d9df5d2c646038d9a1a5bb530537ddc283ed0337bf0daae6517dabe4b7484",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-inconclusive/comparisons.json",
+        "successor_sha256": "80e294ee8b72c478abc09fd219525984e763c4ede3dc6c99c11db88ee1093155"
+      },
+      "x3": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-inconclusive/aggregates/x3.json",
+        "source_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-inconclusive/x3.json",
+        "successor_sha256": "af9b06e2ed3c5963309ab7fadb95df478cf47c796fd157f0e617bc53ae090427"
+      },
+      "x4": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-inconclusive/aggregates/x4.json",
+        "source_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-inconclusive/x4.json",
+        "successor_sha256": "bff404a12730f3fe2858c7e85148d05c17424f8e20b7f0e8ceca116be3fd1086"
+      },
+      "x6": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-inconclusive/aggregates/x6.json",
+        "source_sha256": "ff49ea5f566fb1f5dd7616be7143fbf15942620d9395aa2b5d67cc561f1fcb0e",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-inconclusive/x6.json",
+        "successor_sha256": "a56780096d2c41e3d5bb93cf6a421062ff362e867a8fbe6db3833a3dc5cc11c4"
+      },
+      "x7": {
+        "source": "/private/tmp/dress-rehearsal.PFgUyQ/x6-inconclusive/aggregates/x7.json",
+        "source_sha256": "22b1288f35b02703554887d9eb875732c70b540d0c2871d99f5f6ba926bae3af",
+        "successor": "/private/tmp/v4-shell-assembly-audit-7re6ekcq/inputs/dress/x6-inconclusive/x7.json",
+        "successor_sha256": "aa50275e516c11879fbfb1202acfb50bea1aef9398c858f05434bdd5d9c1d5a7"
+      }
+    },
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/x6-inconclusive",
+    "original_document_errors": [
+      [
+        "generated/exploratory-x7-boundaries.tex",
+        5,
+        "Duplicate label tab:v4x-x7-boundaries: generated/exploratory-x7-boundaries.tex:5 (via main.tex -> sections/supplement.tex -> generated/exploratory-x7-boundaries.tex); generated/exploratory-x7-boundaries.tex:5 (via main.tex -> generated/exploratory-x7-boundaries.tex)"
+      ]
+    ],
+    "scientific_acceptance": false,
+    "synthetic": true,
+    "x6_primary_records_unchanged": true,
+    "x7_readings_unchanged": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/i-comparison-failed",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/ii-comparison-no-ratio",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  },
+  {
+    "changes": [],
+    "inputs": {},
+    "missing_from_original_export": [],
+    "original": "/private/tmp/dress-rehearsal.PFgUyQ/iii-comparisons-absent",
+    "original_document_errors": [],
+    "scientific_acceptance": false,
+    "synthetic": true
+  }
+]

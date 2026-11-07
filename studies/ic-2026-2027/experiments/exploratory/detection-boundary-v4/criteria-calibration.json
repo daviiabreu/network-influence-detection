@@ -1,0 +1,96 @@
+{
+  "kind": "artificial-criteria-calibration-not-a-gate",
+  "schema": 1,
+  "seed_base": 250925000,
+  "development_trials": 3000,
+  "validation_trials": 3000,
+  "bootstrap_replicates": 399,
+  "workers": 8,
+  "ordinary_kurtosis": 8,
+  "G2_cells": 7,
+  "pipelines_per_cell": 100,
+  "disjoint_pairs_per_cell": 50,
+  "G2c_refits": [
+    100,
+    40
+  ],
+  "local_draws": 2000,
+  "dependence": "Independent pipelines; LOO dependence retained, paired differences resampled in intact pairs; independent gate cells.",
+  "failure_rule": "Any failed pipeline prevents passing; 700 retained in denominator. OC assumes zero technical failures.",
+  "thresholds": {
+    "cell_lower": 0.4963290436932708,
+    "cell_upper": 1.2745883036932912,
+    "pooled_lower": 0.8162318066461615,
+    "pooled_upper": 1.057809523648671
+  },
+  "G2c_fixed_thresholds": {
+    "one_sided_95_upper_minimum": 0.8,
+    "one_sided_95_lower_maximum": 2.0
+  },
+  "operating_characteristics": {
+    "correct": {
+      "G2": {
+        "pass_count": 2991,
+        "denominator": 3000,
+        "probability": 0.997,
+        "mcse": 0.0009984988733093298
+      },
+      "G2c": {
+        "pass_count": 2990,
+        "denominator": 3000,
+        "probability": 0.9966666666666667,
+        "mcse": 0.001052334266004579
+      },
+      "joint": {
+        "pass_count": 2981,
+        "denominator": 3000,
+        "probability": 0.9936666666666667,
+        "mcse": 0.0014483579463450086
+      }
+    },
+    "understated_20_percent": {
+      "G2": {
+        "pass_count": 140,
+        "denominator": 3000,
+        "probability": 0.04666666666666667,
+        "mcse": 0.0038509258146099917
+      },
+      "G2c": {
+        "pass_count": 2244,
+        "denominator": 3000,
+        "probability": 0.748,
+        "mcse": 0.00792666386318986
+      },
+      "joint": {
+        "pass_count": 101,
+        "denominator": 3000,
+        "probability": 0.033666666666666664,
+        "mcse": 0.0032930847859427193
+      }
+    },
+    "inflated_40_percent": {
+      "G2": {
+        "pass_count": 40,
+        "denominator": 3000,
+        "probability": 0.013333333333333334,
+        "mcse": 0.0020940833758915107
+      },
+      "G2c": {
+        "pass_count": 2089,
+        "denominator": 3000,
+        "probability": 0.6963333333333334,
+        "mcse": 0.008395499235150188
+      },
+      "joint": {
+        "pass_count": 30,
+        "denominator": 3000,
+        "probability": 0.01,
+        "mcse": 0.0018165902124584951
+      }
+    }
+  },
+  "script_sha256": "20c08a75e1eb739558589e61b27ed77f512c949e0266803da06aaec761c105ec",
+  "implementation_sha256": "3e7e6cb0f076f226306fb9024e64137a953239bfa0a5ad5e73913ac4b67236a3",
+  "failure_injection_pass_probability": 0,
+  "joint_targets_met": true
+}

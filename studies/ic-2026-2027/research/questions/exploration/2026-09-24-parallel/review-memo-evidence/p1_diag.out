@@ -1,0 +1,6 @@
+mech=DW: wave4 frac x<=0.05 0.003, x>=0.95 0.004, sd 0.177
+mech=DW+rep: wave4 frac x<=0.05 0.379, x>=0.95 0.380, sd 0.455
+true channel a=1.2 sigma=0.1: L1ign=1.000 L1known=1.000 L2ign=1.000 L2known=1.000
+true channel a=1.2 sigma=0.2: L1ign=0.995 L1known=1.000 L2ign=0.927 L2known=1.000
+true channel a=1.2 sigma=0.3: L1ign=0.875 L1known=1.000 L2ign=0.898 L2known=1.000
+true channel a=1.2 sigma=0.5: L1ign=0.523 L1known=0.992 L2ign=0.620 L2known=0.993

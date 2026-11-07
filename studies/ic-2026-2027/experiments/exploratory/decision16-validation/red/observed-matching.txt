@@ -1,0 +1,25 @@
+......FF                                                                 [100%]
+=================================== FAILURES ===================================
+______ test_matching_jointly_recovers_observed_lags_without_latent_input _______
+
+    def test_matching_jointly_recovers_observed_lags_without_latent_input() -> None:
+>       from ic_study.analysis.detection_boundary import match_observed_lags
+E       ImportError: cannot import name 'match_observed_lags' from 'ic_study.analysis.detection_boundary' (/Users/davi/.local/state/research-workbench/ic-question-consolidation/studies/ic-2026-2027/src/ic_study/analysis/detection_boundary.py)
+
+tests/unit/test_detection_boundary.py:84: ImportError
+_______ test_feature_channels_drops_observed_rank_but_keeps_latent_rank ________
+
+    def test_feature_channels_drops_observed_rank_but_keeps_latent_rank() -> None:
+        from ic_study.models.detection_panel import null_panel, ordinal_channel
+    
+        z = null_panel(600, 11, 73, rho=.7, trait=.1)
+        y = ordinal_channel(z, np.ones(z.shape, dtype=bool))
+        channels = feature_channels(z, y)
+>       assert 'rank' not in channels
+E       AssertionError: assert 'rank' not in {'latent': array([0.72610445, 0.52791998, 0.398317  , 0.30712516, 0.23494423]), 'ordinal_one': array([0.69956739, 0.49...0.37148502, 0.2806513 , 0.21428175]), 'rank': array([0.69956739, 0.49938991, 0.37148502, 0.2806513 , 0.21428175]), ...}
+
+tests/unit/test_detection_boundary.py:107: AssertionError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_boundary.py::test_matching_jointly_recovers_observed_lags_without_latent_input
+FAILED tests/unit/test_detection_boundary.py::test_feature_channels_drops_observed_rank_but_keeps_latent_rank
+2 failed, 6 passed in 0.11s

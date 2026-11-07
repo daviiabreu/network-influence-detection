@@ -1,0 +1,198 @@
+% Integrated 2026-09-28 from pipeline/drafts/2026-09-28/methods-v4.tex, with the
+% text fixes of pipeline/review/referee-report-2026-09-28.md. Markers % Mxx refer
+% to rows in claim-evidence.md, section "Methods v4 (integrated 2026-09-28)".
+% Describes the rules the frozen v4 code (commit 37513841) implements.
+% No gate outcome, AUC estimate, boundary or a*(r) value is asserted.
+\subsection{Design, panel and observation}
+
+We evaluate when a synthetic generator with partner drift can be separated from matched persistence processes in complete eleven-wave panels. % M01
+Each panel contains 10,626 people in two-person households: 7,084 enter at wave zero and 3,542 at wave five. % M02
+Households remain for the next wave with probability 0.89, independently of opinion; latent states evolve during non-observation. % M02
+This geometry approximates, but does not reproduce, the Swiss Household Panel trust series discussed by Gestefeld and Lorenz \cite{gestefeld2023}. % M03
+Apart from household co-residence, no exposure network is observed in that panel. % M03
+Because household members aged 14 and older answer individual questionnaires \cite{voorpostel2025shp}, co-resident partners form a partially observed dyadic exposure of the kind that actor--partner models use \cite{kim2024}. Our synthetic households carry no opinion coupling. % M56
+
+The interaction arm is a rank-transported autoregression with a bounded-confidence-shaped, standardized partner drift. % M04
+Each person has eight directed partner slots filled by eight uniform random permutations, so self-loops and repeated partners are possible though rare. The drift averages $f(g)=g$ for $|g|\le1$ and $f(g)=-bg$ beyond ($b=0.25$) over the latent differences $g$ to those partners and is then standardized across the population. % M04
+At each step, $h_{i,t+1}=0.85z_{it}+\sqrt{1-0.85^2}(\sqrt a\,d_{it}+\sqrt{1-a}\,\xi_{it})$; $R_N$ then maps population ranks to fixed normal quantiles. % M04
+Strength $a$ is a nominal pre-transport innovation share, not a measured fraction of realized change. % M04
+Because $R_N$ restores the same normal marginal at every step, the generator cannot produce clustering, fragmentation or bipolarization in that marginal; it shares only the local shape of the bounded-confidence and repulsion kernel. % M57
+One step occurs per wave in the main design. % M05
+A 24-step scenario, attraction only ($b=0$), and anchoring to initial state are sensitivities (Supplementary Material). % M05
+The 24-step scenario keeps the per-step coefficient 0.85, so without drift the per-wave latent autoregression falls to roughly $0.85^{24}\approx0.02$ before transport; it changes the annual dynamics as a whole, not only their temporal resolution. % M58
+Under full anchoring ($\omega=1$) latent states never change regardless of $a$. A unit at $\omega=1$, whether complete valid or complete invalid, therefore carries no information about $a$ and is read only as a check of that degeneracy. % M58
+
+The continuous observed channel is $w_{it}=\sqrt r\,z_{it}+\sqrt{1-r}\,e_{it}$, with independent standard-normal response error. % M06
+Wave-specific observed ranks are allocated to eleven approximately equiprobable categories; a person's category therefore depends on the other respondents in that wave (ODD Submodel~5). % M06
+Thus $r$, the response signal share (signal share, for short), is the latent state's share of variance in the continuous response channel before discretization. It is a sensitivity parameter, not an estimated reliability of the trust item. % M06
+We use $R=\{0.50,0.55,\ldots,0.90\}$; $r=0.70$ is illustrative and calibration-exposed. % M07
+Persistent response style, panel conditioning, heteroscedastic error and heaping, latent and error-free controls, and mean annual mobility form declared secondary channels. % M07
+The conditioning channel lets the signal share rise linearly with the number of earlier interviews, up to 0.95. This is a sensitivity of the response channel, not a model of panel conditioning, whose documented effect also includes true stabilization \cite{kraemer2025}. % M59
+In the heteroscedastic channel, used only in the null arm of comparisons against C, the error multiplier $1+2e^{-z^2/2}$ is divided by its empirical root mean square over all $11\times N$ person-waves of the panel, non-respondents included, rather than by its expectation under a standard normal. % M08
+Item, mode and reliability estimand differ across published surveys, so external reliability estimates cannot be transported to this trust item without validation \cite{antoun2026,lucasdonnellan2012}. % M09
+
+Before classifier training, a declared feasibility mask compares the mean observed target lag-one correlation of the matching panels with the channel's continuous-scale upper bound. % M10
+The ordinal rank map can change that bound, so the mask is a conservative operational screen, not an ordinal impossibility theorem. % M10
+A cell that fails the screen receives status \texttt{family-limit-upper} (\texttt{family-limit-lower} for a negative target) and zero null evaluations; neither the solver nor validation runs. % M11
+These cells mark targets beyond the continuous-scale bound at that signal share; they are gaps, not solver failures, and are reported separately from solver and validation gaps. % M12
+The profile solver can also end in a family-limit status along $\eta$, but only after null evaluations. The evaluation count therefore distinguishes the two cases. % M11
+An excluded, unmatchable or numerically failed cell is a gap, never counted as non-attainment. % M13
+The full grid remains fixed. % M13
+
+\subsection{What the design can identify}
+
+The partners are uniform random permutations of a large population whose marginal is exactly normal at every step, so to first order partner drift acts through a person's own state. % M60
+Conditional on $z_i$, the pre-standardization drift has mean $m(z_i)=\mathbb E\,f(Z-z_i)$ with $Z\sim N(0,1)$, plus partner-sampling noise of variance about $\mathrm{Var}\,f(Z-z_i)/8$, as long as partners' states are nearly independent of the person's own; the correlation between partners that builds up at positive strength is ignored by this approximation. % M60
+With $D=Z-z$, the mean splits into attraction to partners within distance one and repulsion from the others, $m(z)=\mathbb E[D\,\mathbf 1\{|D|\le1\}]-b\,\mathbb E[D\,\mathbf 1\{|D|>1\}]$, which at $b=0.25$ equals $1.25\,\mathbb E[D\,\mathbf 1\{|D|\le1\}]+0.25\,z$; for $z>0$ the attraction term pulls the person toward the population centre and the repulsion term pushes the person away from it. % M61
+Under this independent-normal-partner approximation, $m$ is odd and increases with $z$ at $b=0.25$, so its pre-standardization mean points away from the center for $z\neq0$ (\hyperref[supp:drift-mean]{Supplementary Material: conditional drift derivation}). This is an analytic property of the approximation, not a sign or monotonicity guarantee for the finite network, the standardized drift or the transported update. The attraction-only case has a mean directed toward the center under the same approximation. % M61
+The interaction arm is therefore, to first order, an individual autoregression whose conditional mean is an odd, nonlinear function of the person's own state, close to zero near the centre and growing in the tails, and whose innovation variance also depends on that state. After rank transport it is, to the same approximation, a nonlinear, state-dependent persistence process, the class that null D, state-dependent persistence, targets with a different functional form. % M62
+Linear global assimilation, by contrast, is exactly an autoregression conditional on the path of the population mean: with the same innovations, marginals, channel and lag one, the two arms have the same law and population AUC 0.5, and the frozen v1 protocol pre-declared non-attainment for that class. % M63
+Within the first-order approximation above, separation must therefore come from the nonlinearity of the kernel or from network dependence that the approximation ignores, and it need not survive against more flexible nulls. % M63
+The fixed discriminator sees only pooled lag-three to lag-five correlations of the observed categories. % M64
+It cannot use anything specifically social, such as correlation between partners' changes, because partners are never observed. % M64
+The design thus measures when this discriminator separates a nonlinear, state-dependent persistence process generated by partner drift from matched no-network persistence. The comparison against D is closer to that description than the confirmatory comparison against B. % M64
+
+Three further assumptions make the estimand an oracle quantity. % M65
+First, both arms use the same, known signal share $r$: null B can move only $(\phi,\lambda)$ and cannot adjust the response-channel noise variance. % M65
+The estimand is therefore detectability at a known signal share. % M65
+Second, matching estimates the interaction arm's population moments from 1,024 (or 4,096) simulated panels, rather than targeting one realization. The solver's standard error pertains to coupled null-minus-target differences, not to the target mean alone. Their coupling covariance prevents reading the panel count as a fixed precision gain over fitting one observed panel (\hyperref[supp:matching-scope]{Supplementary Material: matching precision and residual limits}). % M66
+The curve is thus a property of two laws, not the power of a test that an analyst holding one observed panel could run. % M66
+Third, the expectation defining the target is conditional on successful fits (see below). % M65
+The features are Pearson correlations of the integer category codes pooled over persons, waves and the two entry cohorts; they treat the eleven categories as equally spaced scores rather than modelling them as ordinal. % M67
+Finally, strength $a$ has no direct observable meaning. The frozen v1 protocol committed to report the realized partial $R^2$ of drift by strength, steps and $b$, but the frozen v4 code computes no such diagnostic. The v1 value measured at $b=0$ under the v1 law should not be transferred automatically to this design. The exploratory drift $R^2$ map (X2), declared before any confirmatory result, reports that diagnostic in \hyperref[supp:x1-x2]{Supplementary Material: exploratory analyses X1a and X2}. % M68 EX08
+
+\subsection{Matched null families and discriminator}
+
+The finite-population nulls use the same normal-rank transport as the interaction arm. % M14
+Let $X_\phi$ start at $R_N(\epsilon_0)$ and apply $x_t=R_N(\phi x_{t-1}+\sqrt{1-\phi^2}\epsilon_t)$ at every step, including all 24 steps in that sensitivity. % M14
+Null A (autoregressive persistence) is $X_\phi$. % M14
+Null B (trait-plus-autoregressive persistence) adds an independent, untransported iid standard-normal trait $T_i$ and sets $z_t=R_N(\sqrt\lambda T+\sqrt{1-\lambda}x_t)$. % M14
+Null E (mover--stayer persistence) sets $z_t=R_N(s_i x_0+(1-s_i)x_t)$ for independent $s_i\sim\mathrm{Bernoulli}(\pi)$. % M14
+Null D (state-dependent persistence) lets persistence vary with the state; at $\gamma=0$ it reduces to $X_\phi$. % M14
+Null C (altered response channel) applies the declared heteroscedastic-error and heaping channel to A. % M14
+Parameters $\lambda$ and $\pi$ are pre-transport weights; the Gaussian covariance formulas of v1 do not hold for these transported laws. % M14
+At $a=0$, $\phi=0.85$ and $\lambda=\pi=\gamma=0$, A, B, D and E coincide pathwise with the interaction arm on shared seeds. % M15
+This is simulator-specific equality, not evidence that social mechanisms are identifiable. % M15
+
+Each null is matched to observed within-person lag correlations pooled over valid pairs and averaged across panels. % M16
+B, D and E profile the second parameter $\eta\in\{\lambda,\gamma,\pi\}$: solve lag one in persistence $\phi$ at fixed $\eta$, then lag two along that profile. % M16
+A, C and control refits solve lag one; lag two remains diagnostic. % M16
+Matching and its independent validation pair target and null state, mask and error streams with common random numbers; training, testing and reference use independent classes and disjoint phases. % M17
+Each fit attempt's profile search executes at most 96 null evaluations, including its Jacobian probes. Cached points are not recounted; validation and finite-difference stencils are counted separately. % M18
+An accepted interior solution needs a real solver step and $|\bar g_k|\leq\tau_k=\min(5\times10^{-5},\max(10^{-6},0.25\,\mathrm{SE}_{\mathrm{fit},k}))$ for every fitted moment. % M18
+Before searching upward from the lower end of the lag-one-solvable profile ($\eta=0$, or the smallest $\eta$ at which lag one is solvable at $\phi=0.999$), the solver compares the lag-two residual there with its value 0.01 higher in $\eta$: a residual that does not rise, even after both inner roots are refined, gives \texttt{ill-conditioned}, and a rising residual with $\bar g_2\geq-\tau_2$ at the lower end gives \texttt{boundary}. % M20
+Otherwise the solver accepts the first profile point it reaches at which every fitted moment meets tolerance. % M19
+Monotonicity of the lag-two residual in $\eta$ is checked only at evaluated profile points, so on a hump-shaped profile the solver can accept a genuine interior root before it samples the region where the residual falls (search steps in ODD Submodel~8). % M19
+Every accepted fit is checked on 2,048 fresh coupled pairs against $4\sqrt{\mathrm{SE}_{\mathrm{fit},k}^2+\mathrm{SE}_{\mathrm{val},k}^2}$ for every fitted moment. % M21
+For a profiled B, D or E \texttt{boundary} fit (not a control refit) this includes lag two, so a constrained optimum whose lag-two mismatch exceeds four combined standard errors fails validation. % M20
+One failed validation permits a prespecified 4,096-pair fit retry with its own 96-evaluation budget and fresh validation; a solver gap is not retried. % M21
+A second failure is a gap. % M21
+Solver statuses and numerical rules are in the supplement. % M21
+
+The fixed discriminator is linear discriminant analysis on panel-level lag-three through lag-five correlations, with training-only standardization, covariance $0.8S+0.2I$, equal priors and training-set score orientation. % M22
+AUC uses complete panels, 2,000 networks with two panels each per class, and half credit for tied scores; people and within-panel pairs are not independent classification replicates. % M22
+The classifier has no post hoc threshold or hyperparameter search. % M22
+Latent, error-free ordinal, latent-rank and mobility channels retain separate interpretations. % M22
+
+\subsection{Boundary, uncertainty and validation}
+
+The primary estimand is the whole curve over $R$, against B, on $G=\{0,0.001,0.003,0.01,0.03,0.10,0.30,0.60,0.90\}$. % M23
+Conditional on a validated fit $\hat\theta$ and trained score $s$, draw a new panel $X_1$ from the interaction law and a new panel $X_0$ from the fitted null law at the same $(a,r)$. Draw the panels independently of each other and of fitting, validation, and training data. % M23
+Their population AUC is $P\{s(X_1)>s(X_0)\mid\hat\theta,s\}+\tfrac12P\{s(X_1)=s(X_0)\mid\hat\theta,s\}$. Let $\mathcal A(a,r)$ be its expectation over the declared matching, validation and training procedure, including the permitted retry, conditional on a successful validated fit. % M23
+A failed fit is recorded as a gap rather than omitted from a favorable average. % M23
+We define
+\begin{align}
+a^*(r)&=\min\{a\in G:\mathcal A(a,r)\geq0.70\},\\
+M(a,r)&=\min_{u\in G,\,u\geq a}\mathcal A(u,r),\\
+a_s^*(r)&=\min\{a\in G:M(a,r)\geq0.70\}.
+\end{align}
+% M23
+We call $a^*(r)$ the first boundary and $a_s^*(r)$ the sustained boundary: the first grid strength at and above which $\mathcal A$ stays at or above 0.70. % M23
+AUC targets 0.60 and 0.80 are secondary. % M23
+The primary AUC target 0.70, discriminator regularization, and null parameter box are inherited conventions, summarized in Supplementary Table~\ref{tab:design-conventions}. % M87
+The target depends on the procedure: a cell that needs the retry is evaluated under a 4,096-panel matching distribution rather than 1,024, and the expectation is conditional on successful validated fits. % M69
+For equations that satisfy the root tolerance, the fitting sample's mean residual is at most $0.25\,\mathrm{SE}_{\mathrm{fit}}$ unless the $10^{-6}$ floor binds. This limits an empirical residual, not population mismatch or estimator bias. Constrained profiled B, D and E solutions can retain an $L_2$ residual above that tolerance and are accepted by the face rule plus independent validation at four combined standard errors. The centered nuisance variance below does not automatically account for this systematic mismatch; equivalence and amplification remain diagnostics. % M69
+
+AUC is a between-panel quantity, and the targets correspond to modest single-panel power. % M70
+Under an equal-variance normal model for panel-level scores, $\mathrm{AUC}=\Phi(\delta/\sqrt2)$, where $\delta$ is the difference in mean scores in standard-deviation units. Under this model, a one-sided test at level 0.05 that compares a single panel with a known null score distribution has power $\Phi(\delta-1.645)$. % M70
+Table~\ref{tab:auc-translation} gives this translation for the three targets; it holds only under these assumptions, and the panel scores are not guaranteed to be normal. % M70
+
+\begin{table}[h]
+\caption{Normal-theory translation of the AUC targets (a translation under stated assumptions, not a property of the scores)}\label{tab:auc-translation}
+\begin{tabular}{@{}lll@{}}
+\toprule
+AUC target & $\delta$ (score SDs) & Power, one panel \\
+\midrule
+0.60 (secondary) & 0.36 & 0.10 \\
+0.70 (primary) & 0.74 & 0.18 \\
+0.80 (secondary) & 1.19 & 0.32 \\
+\botrule
+\end{tabular}
+\end{table}
+% M70
+
+Attained boundaries are labelled with the regions of the frozen v1 protocol: small, $0<a^*\le0.03$; large, $0.03<a^*\le0.90$; not attained on a complete eligible grid; censored at a gap; and indeterminate when $a^*=0$ or when its interval crosses 0.03 or has a censored end. % M71
+The cut at 0.03 is an internal convention, not a demonstrated effect size. % M71
+Boundaries are grid strengths, not continuous estimates. % M72
+The grid is coarse above 0.10, and intervals spanning several grid points are expected: in the v1 precision planning, which is not a power statement, the probability of an interval that covers the true boundary and spans at most one grid step was 43.9\% or 19.2\%, for nuisance standard deviations of 0.01 or 0.02, when the AUCs bracketing the boundary are 0.66 and 0.74. % M72
+Neither interpolation nor monotone smoothing is allowed; gaps, right censoring and boundaries at the first grid point remain visible. % M24
+Neither the solver nor the band enforces monotonicity in $a$. The sustained boundary accounts for any reversal of the estimated AUC across strengths, whatever its source, by requiring the estimate at every higher available strength to reach the target. % M24
+Boundaries are computed on the available strengths of a curve. % M25
+The first boundary and each end of its interval are retained only when strictly below the first gap; the sustained boundary and each end of its interval only when strictly above the last gap; otherwise the entry is censored and labelled with that gap's strength. % M25
+If the sustained boundary on the available strengths lies below the last gap, it is censored rather than moved to the first strength above that gap; a sustained boundary at the first available strength above the last gap is retained, although the unobserved gap strength could also have met the target. % M25
+
+The score component uses 2,000 network-cluster bootstrap draws on fixed test scores, keeping two nested events together. % M26
+Matching and training uncertainty uses 2,000 local draws: resample paired matching differences \emph{without centering}, solve and project a linearized parameter shift according to the profile's boundary rule, shift null training and reference features by a common-random-number finite-difference Jacobian of their mean, resample training networks by class, refit the LDA and evaluate a fixed reference. % M26
+The nuisance variance is the centered variance of these AUCs, without division by draw count; exact-anchor fits have zero nuisance variance analytically. % M26
+The two variance components add, $\mathrm{SE}^2=\mathrm{SE}_{\mathrm{scores}}^2+V_{\mathrm{nuis}}$. % M26
+The prespecified finite-difference step is 0.01; gate G2 also checks 0.005. % M27
+The supplement gives projection and diagnostics. % M27
+
+For each $r$, the band stacks the available strengths. % M28
+Let $\epsilon=1/(2n)$ with $n=2{,}000$ networks per class. % M28
+Each of the 2,000 replicates is centred on the point estimate, $p^*_b=\mathrm{clip}_{[0,1]}(\hat p+A_b-\bar A+\delta_b)$, where $A_b$ is the score-bootstrap AUC, $\bar A$ its mean over draws and $\delta_b$ the centred nuisance deviation of local draw $b$, with the same draw index at every strength. % M28
+Estimates and replicates are then clipped to $[\epsilon,1-\epsilon]$ for the logit transform. % M28
+The studentized deviation uses the logit standard error evaluated at each replicate, $t_b(a)=|\mathrm{logit}\,p^*_b-\mathrm{logit}\,\hat p|\,p^*_b(1-p^*_b)/\max(\mathrm{SE},\epsilon)$, not the plug-in value at $\hat p$. % M29
+The critical value $c$ is the larger of 2.7729 and the empirical 0.95 quantile of $\max_a t_b(a)$ under the \texttt{higher} rule, which takes the order statistic at or above the 0.95 position without interpolation. % M29
+The band is $\mathrm{logit}^{-1}\bigl(\mathrm{logit}\,\hat p\pm c\,\max(\mathrm{SE},\epsilon)/(\hat p(1-\hat p))\bigr)$, keeping the endpoint 0 or 1 when $\hat p$ equals it. % M29
+These three readings (point-centred replicates, standard error evaluated at each replicate and the \texttt{higher} quantile) follow the frozen v1 code: the first is in its score-uncertainty function and the other two in its band function. The v4 band re-implements them with the total standard error and fixes the floor at 2.7729 rather than recomputing it from the number of available strengths. % M30
+The inference docking found that a plug-in reading of the same specification gives critical values up to 2.1 times larger (Section~\ref{sec:verification}), so the band width depends on this implementation choice. % M30
+Each band is simultaneous over available strengths within one comparison/$r$ unit. No joint coverage is declared across values of $r$, null families or channels. % M31
+Because seeds also differ across values of $r$ in the tiers (below), statements about the shape of the curve across $r$, such as monotonicity or the range of $r$ over which a boundary is attained, are descriptive; no 81-cell band is prespecified. % M73
+A strict one-sided crossing claim needs a lower band above 0.70; inclusive band inversion bounds the discrete first and sustained boundaries. % M31
+The reported boundaries and intervals follow this inclusive inversion, and the word ``crossing'' in a claim is reserved for strengths whose lower band exceeds 0.70. % M74
+A comparison at $r$ is invalid if its $a=0$ band misses 0.5 or its zero-strength cell is a gap; invalidity suppresses its boundaries. % M31
+For C, this is the protocol's operational eligibility rule, without guaranteed identity of the arms at zero strength. A failure can reflect the asymmetric response channel and, by itself, diagnoses neither an implementation defect nor influence. Any admissible C boundary concerns the contrast of latent law and channel together. % M88
+
+Seed material is the string \texttt{namespace|block|phase|role|index}; the first eight bytes of its SHA-256 digest, read big-endian, seed a NumPy generator. % M32
+Gate G0 uses one calibration seed plan for all 81 cells, so random numbers are common across $a$ and $r$, as in v1. % M33
+In the tiers, each value of $r$ receives its own confirmatory seed block. % M34
+All strengths and all comparison units at one $r$ therefore share state, mask, error, training, test, reference, nuisance and bootstrap streams, while different values of $r$ use separate streams. % M34
+A stencil namespace is declared and included in the seed-collision audit, but no panel is drawn from it. In the tiers, finite-difference stencils re-evaluate the matching-phase streams at shifted parameters, and the G2 covariance diagnostic re-evaluates the training and reference streams in the same way, preserving common random numbers. % M35
+
+Before any v4 confirmatory seed is derived, a hash-bound gate must pass. G0 checks matching statuses and budgets; G1a checks exact identities; G1b checks synthetic-score band mechanics; G1c checks the end-to-end zero-strength identity; G2 checks procedure dispersion; and G2c checks local propagation against full refits. The criteria, denominators, second binding and stop rule are in \hyperref[supp:gate-accounting]{Supplementary Material: gate accounting} and ODD Submodel~14. A failed stage requires a documented successor. % M36 M37 M38 M39 M40 M41
+The end-to-end G2/G2c tasks use B on the observed channel at declared cells; they do not establish uniform adequacy across families, channels or sensitivities. % M39
+The artificial criterion calibration does not call the panel simulator or discriminator, and does not demonstrate that its true joint pass probability reaches 0.95 (\hyperref[supp:gate-calibration]{Supplementary Material: artificial criterion calibration}). % M40 M77
+At zero strength the identity families have no matching discrepancy by construction; G1b uses zero nuisance variance. These checks cannot detect positive-strength matching bias, and no gate establishes joint band coverage with nonzero nuisance variance. G2 tests dispersion, not absolute interior coverage. % M76 M41
+
+\subsection{Inventory and execution status}
+
+The machine-readable inventory retains all declared comparisons. % M42
+Fixed tiers are: B on the main grid; A/C/D/E; three controls and mobility against applicable nulls; response-style and conditioning scenarios; attraction-only and anchoring scenarios; and the 24-step scenario. % M42
+Tier 1 supports a claim only about B. % M43
+Cross-mechanism interpretations require complete valid grids for the relevant secondary nulls. % M43
+When tier 2 is complete and valid and the main B curve is valid, the boundaries against B and D are reported side by side. Under these conditions, if B crosses while D's valid upper band stays below the target, the result is compatible with non-Gaussian persistence but gives no specific evidence of interaction. If D's band spans the target, the reading is inconclusive. If tier 2 is incomplete, no comparison across mechanisms is interpreted. % M79
+This compares states obtained by separate band rules; it is neither a test of the difference between B and D AUCs nor a comparison with declared joint 95\% confidence. % M79
+The tiers run in fixed order on eight shards in the bound single-host environment; AUC, band width and invalidity never reorder them. Release occurs at the original operational deadline or, under the linked amendment, when all 414 units have final records and no curve worker is running. No partial early release is permitted (\hyperref[supp:execution-records]{Supplementary Material: execution and reporting records}). % M44 M85
+During tier 2, the frozen nuisance propagation raised an unhandled ill-conditioned-profile error in one cell, which ended its shard and, through the tier barrier, held the later tiers. A linked operational amendment (v4.4), approved by the first author before any tier-2 or later curve was read, records such a cell as a propagation gap under the existing gap rules, without retry; the frozen code and every other rule are unchanged, and completed cells were not rerun (\hyperref[supp:execution-records]{Supplementary Material: execution and reporting records}). % M89
+The inventory records every comparison/$r$ unit as not started, partial at operational close, complete invalid or complete valid, preserving attempts. A complete valid unit has all nine strengths executed and an available zero-strength band containing 0.5; positive-strength gaps censor boundaries. The main curve is valid only if all nine tier-1 B units are complete valid. Any absent, partial or invalid unit invalidates that curve, while other units' boundaries remain reported with the main-invalidation mark. % M45 M46
+Later tiers may be incomplete at the close; their controls and sensitivities are not promised. The cost projection, original deadline and actual-release receipt have distinct roles, documented in the supplement. % M80 M85
+Only planned complete units enter result panels, alongside the full inventory and absent units. % M47
+Gate outcomes and curve estimates enter Results only through the authorized release and its full inventory. % M47
+
+\subsection{Protocol history}
+
+The frozen v1 protocol's zero-strength coverage check failed to complete a full repetition and did not estimate coverage; it also left finite-population equality of the two laws unestablished. The linked v4 successor changes those laws, the profile fit, nuisance calculation and validation gates, preserving the earlier protocol and outputs. It was frozen at \code{37513841} before gate execution. The authors ratified these delegated decisions before the confirmatory release; the technical genealogy is in \hyperref[supp:protocol-lineage]{Supplementary Material: protocol genealogy and exposure inventory}. % M48 M49 M50 M51 M81 M82 M83
+The later release wrapper and reporting loader lie outside the frozen scientific code closure. A G1c summary successor repairs serialization without changing the gate predicate; the original deadline and actual release time are distinct records (\hyperref[supp:execution-records]{Supplementary Material: execution and reporting records}). % M85 M86
+
+Exposure is cumulative: it includes pre-v1 calibration, v1 and amendment probes, and post-freeze docking AUCs and timing summaries at reduced sizes. Those observations concern different laws, algorithms or sizes and do not estimate the v4 boundary. In particular, $r=0.70$ is calibration-exposed and the global method was selected after partial exposure. Evaluation on new seeds of this amended protocol is not fully blind confirmation. The whole curve remains primary, with provenance for each $r$; the other eight values are not promoted to a new primary set. The exposure inventory is preserved in \hyperref[supp:protocol-lineage]{Supplementary Material: protocol genealogy and exposure inventory}. % M52 M53 M84

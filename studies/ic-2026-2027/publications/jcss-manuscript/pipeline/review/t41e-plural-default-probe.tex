@@ -1,0 +1,12 @@
+\AtBeginDocument{%
+  \begingroup
+  \edef\agreementprobe{\resultplural{unassembled-probe}{unit was}{units were}}%
+  \def\agreementexpected{units were}%
+  \ifx\agreementprobe\agreementexpected
+    \typeout{RESULTPLURAL-DEFAULT: units were}%
+  \else
+    \errmessage{resultplural default differs from paper_check}%
+  \fi
+  \endgroup
+}
+\input{main.tex}

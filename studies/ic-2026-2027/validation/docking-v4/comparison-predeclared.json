@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "title": "Docking v4: clean-room (dockv4) vs project implementation - pre-declared comparison",
+  "declared_before_running": true,
+  "phase1_commit": "fe32097d",
+  "project_revision": "37513841",
+  "disclosure": "Before this file was written, one timing probe generated 50 project panels per cell for (social a=0.30, r=0.70) and (B phi=0.80 lambda=0.30, r=0.70) and printed their L1-L5 means; mine were printed for 50 panels with a different seed layout. No test, margin or grid below was changed after that probe; margins are generic (standardized) and fixed here.",
+  "namespaces": {
+    "docking_impl": "ic-detection-boundary-v4-docking-clean",
+    "project_impl": "ic-detection-boundary-v4-docking-project",
+    "auc_matching": "ic-detection-boundary-v4-docking-match",
+    "note": "The project code is driven through a SeedPlan subclass whose seed() uses the docking namespace; no calibration, gate or confirmatory namespace is used."
+  },
+  "geometry": {
+    "N": 1002,
+    "N_reason": "1000 is not divisible by 6 (2-person households, 2/3 entering at t=0); nearest valid size.",
+    "waves": 11
+  },
+  "part_A_seed_level": {
+    "purpose": "Deterministic docking with identical 64-bit seeds where the draw order is specified the same way (latent state, network, null-state).",
+    "cases": "20 seeds x {social a in {0,0.03,0.30}, A phi=0.85, B (0.80,0.30), D (0.80,0.50), E (0.80,0.30)}",
+    "checks": {
+      "latent_equal": "max |z_dock - z_project| <= 1e-12 for every case",
+      "lag_feature_function": "dockv4 pooled_lag_corr on the project's observed panel equals project lag_profile L1..L5 within 1e-12 (20 panels per family, r=0.7)",
+      "lda_auc_function": "On identical feature matrices (50 replications from part C inputs), |AUC_dock - AUC_project| <= 1e-3; exact differences reported. Tolerance reflects Q12 (standardisation ddof not specified)."
+    }
+  },
+  "part_B_panel_level": {
+    "replications_per_cell_per_impl": 1000,
+    "project_path": "PanelSource._profiles via PanelSource.profiles(phase='check') for L1..L5 (production path, class indices 2j and 2j+1, network floor(index/4)); a mirror calling the same public functions in the same order (influence/null, panel_mask, measurement, ordinal_channel) supplies full panels for per-wave and cross-wave summaries, and must reproduce PanelSource L1..L5 bitwise on the same seeds.",
+    "docking_path": "dockv4.model.panel with Streams(namespace, block=0, phase='check', index=2j+class, network=index//4).",
+    "cells": {
+      "social": {"a": [0.0, 0.03, 0.30], "r": [0.5, 0.7, 0.9]},
+      "A": {"phi": 0.85, "r": [0.5, 0.7, 0.9]},
+      "B": {"phi": 0.80, "lambda": 0.30, "r": [0.5, 0.7, 0.9]},
+      "C": {"phi": 0.85, "r": [0.5, 0.7, 0.9]},
+      "D": {"rho0": 0.80, "gamma": 0.50, "r": [0.5, 0.7, 0.9]},
+      "E": {"phi": 0.80, "pi": 0.30, "r": [0.5, 0.7, 0.9]},
+      "social_C_marginal": {"a": 0.30, "r": [0.7]}
+    },
+    "n_cells": 25,
+    "summaries_per_panel": {
+      "n_obs_t": "respondents per wave (11)",
+      "mean_t": "mean observed category per wave (11)",
+      "var_t": "variance of observed category per wave (11)",
+      "L1..L10": "pooled within-panel lag-k Pearson (the spec's Lk; L1 and L5 are the requested lag-1/lag-5 autocorrelations of individual trajectories)",
+      "wave_corr": "55 upper-triangular entries of the pairwise-complete 11x11 cross-wave correlation matrix"
+    },
+    "primary_equivalence": {
+      "endpoints": "per cell: means of L1, L2, L3, L4, L5 and of total respondents sum_t n_obs_t (6 x 25 = 150 TOSTs)",
+      "test": "TOST (two one-sided Welch t tests), alpha=0.05 each; overall claim by intersection-union (no multiplicity adjustment needed for an all-equivalent claim)",
+      "margin": "standardized: |mean_dock - mean_project| <= 0.20 x pooled per-panel SD of the endpoint",
+      "margin_justification": "A location shift of 0.20 SD in one class of a single feature corresponds to a single-feature population AUC of Phi(0.20/sqrt 2) = 0.556 at the panel level, the smallest shift that could plausibly masquerade as a detectable signal against the 0.70 target once combined across L3-L5; with 1000 panels per arm SE(d) = 0.045, so the TOST has power >= 0.99 per endpoint when the true difference is 0, keeping the expected number of spurious non-equivalences over 150 endpoints below 1. Smaller real differences (< 0.2 SD, i.e. about 0.003 in L-units at N=1002) are below this docking's resolution and are covered only by part A (seed level).",
+      "pass": "all 150 endpoints equivalent"
+    },
+    "secondary_difference_tests": {
+      "tests": [
+        "Welch two-sample t test on every scalar summary (98 per cell; zero-variance-in-both summaries compared for exact equality instead)",
+        "two-sample Kolmogorov-Smirnov on L1, L3 and L5",
+        "Brown-Forsythe (median-centred Levene) on L1..L5"
+      ],
+      "correction": "Holm over all secondary tests jointly, family-wise alpha = 0.05",
+      "effect_sizes": "standardized mean difference d (pooled SD), variance ratio, KS D; for wave_corr also max |delta| and Frobenius norm of the difference of mean matrices per cell"
+    }
+  },
+  "part_C_discriminator": {
+    "cells": [
+      {"id": "C1", "a": 0.0, "r": 0.7, "null": "A", "theta": "phi=0.85 (a=0 anchor, exact identity)"},
+      {"id": "C2", "a": 0.30, "r": 0.7, "null": "B", "theta": "fitted once by dockv4 profile matcher (M=256, namespace ...-match), then used by both implementations"},
+      {"id": "C3", "a": 0.03, "r": 0.5, "null": "B", "theta": "fitted once by dockv4 profile matcher (M=256)"}
+    ],
+    "replications": 50,
+    "per_replication": "block = replication; train 100 networks x 2 events per class (phase 'train'), test 250 networks x 2 events per class (phase 'check'); each implementation generates its own panels with its own seeds, computes L3-L5, fits its own LDA and computes its own AUC",
+    "project_path": "PanelSource.profiles(...)[:, 2:5] + ic_study.analysis.redesign.fit_discriminant + ic_study.analysis.detection_boundary.auc",
+    "reduction_note": "Production is 1000 train / 2000 test networks per class at N=10626; reduced for compute. Absolute AUC values are therefore not the study's estimand.",
+    "tests": "Welch t on mean AUC, KS on the AUC distributions, Brown-Forsythe on spread (included in the Holm family above); TOST on mean AUC with margin 0.02",
+    "margin_justification": "0.02 AUC is about one planned confirmatory SE (0.0187-0.0255, v1 power table) and below one grid-step change in the curve that matters for a*; a docking difference below it could not move a detection decision by itself at production precision.",
+    "also_reported": "fraction of replications with AUC >= 0.70 in each implementation"
+  },
+  "classification_of_discrepancies": {
+    "a": "spec ambiguity (both readings stated)",
+    "b": "docking bug (fixed in dockv4, recorded)",
+    "c": "probable project-code mismatch with the spec (file:line, spec quote, minimal reproducer)"
+  }
+}

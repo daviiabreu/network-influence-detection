@@ -1,0 +1,24 @@
+.DS_Store
+.env
+.env.*
+!**/.env.example
+**/.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Mutable runtime state stays in explicitly owned locations.
+/.runtime/
+/workbench/.runtime/
+/studies/*/.runtime/
+
+# Scientific bytes live in an external artifact store. Only manifests are kept.
+studies/*/data/raw/
+studies/*/data/interim/
+studies/*/data/processed/
+studies/*/experiments/**/outputs/

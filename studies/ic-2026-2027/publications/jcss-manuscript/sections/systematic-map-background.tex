@@ -1,0 +1,50 @@
+% Map-based background, drafted 2026-09-28 from the closed prioritized map v5.1
+% (brief pipeline/briefs/systematic-map-background.md). Sources, all under
+% studies/ic-2026-2027/research/literature/: synthesis/map-v5-1-2026-09-28/
+% (report.md, series.json, figures M1, M2 and T_M1_transitions) and
+% run-records/2026-09-28-broad-map-v5-1-production.md. Markers % MAPxx refer
+% to rows MAP01 and MAP10-MAP21 of claim-evidence.md, section "Broad-map
+% supplement evidence"; MAP10-MAP21 are proposed and not yet in the ledger.
+% No individual work is named: per-work decisions stay in the private state.
+
+\subsection*{Map-based background}
+
+\paragraph{What the counts describe.}
+The broad systematic map of English-language computational and mathematical studies of opinion dynamics, published from 1970 to 11 September 2026, was closed on 28 September 2026. % MAP01 MAP10
+Of 43,906 deduplicated proposals, 8,817 were screened on title and abstract, 7,000 in 14 relevance-ranked batches of 500; the 4,056 distinct primary works these batches included, after identity resolution, are the denominator of every count below. % MAP10
+Screening, adjudication and coding were done by language-model agents under the Research Owner's delegation, without human verification. % MAP06 MAP09
+Coding used only titles and available abstracts, and a work could receive several codes per field, so shares within a field can sum to more than 100\%. % MAP08 MAP15
+``Not reported'' means that the title and abstract gave no basis for any code of that field, not that the work lacks the property. % MAP15
+Because a ranker prioritized screening, the shares describe the screened, included works, not the prevalence of any feature in the literature; the synthesis record's Wilson intervals have no population reading for this set and are omitted. % MAP03 MAP18
+Coverage is also incomplete: the stopping rule's random audit of 400 unscreened proposals ended with 17 included, 282 excluded and 101 uncertain for lack of an abstract. % MAP16
+Relevant proposals among the 35,089 left unscreened were estimated at 1,491 (interval 937 to 11,982, the upper end counting every uncertain record as relevant), and the map was closed with coverage declared incomplete. % MAP16
+
+\paragraph{Models and mechanisms.}
+Of the 4,056 works, 765 (18.9\%) were coded as bounded-confidence, 638 (15.7\%) as voter-type and 501 (12.4\%) as linear-averaging models; 1,509 (37.2\%) named another family, such as social-impact models, and in 950 (23.4\%) no family could be identified. % MAP19
+The influence mechanism was assimilation in 1,462 of the 4,056 (36.0\%), bounded assimilation in 835 (20.6\%), repulsion in 310 (7.6\%), social learning in 251 (6.2\%) and another named mechanism in 983 (24.2\%); it was not reported in 1,001 (24.7\%). % MAP19
+Because the codebook gives a named canonical model its standard representation and mechanism, these fields are not coded independently of model family. % MAP15
+
+\paragraph{State and interaction structure.}
+Opinions were continuous in 1,356 of the 4,056 works (33.4\%), discrete in 1,002 (24.7\%) and another structure, such as vectors or argument sets, in 484 (11.9\%); the representation was not reported in 1,367 (33.7\%). % MAP19
+The interaction structure was not reported in 1,965 of the 4,056 (48.4\%); of the same 4,056, 913 (22.5\%) specified another structure, such as empirical networks, 490 (12.1\%) generated random graphs, 449 (11.1\%) all-to-all interaction, 379 (9.3\%) networks coevolving with opinions and 302 (7.4\%) spatial structures. % MAP19
+
+\paragraph{Design and outcomes.}
+Of the 4,056 works, 2,325 (57.3\%) were coded as simulation studies, 2,022 (49.9\%) as analytical, 457 (11.3\%) as empirical, 70 (1.7\%) as secondary (review, survey or tutorial) and 503 (12.4\%) as not reported. % MAP19
+Reported outcomes were consensus in 1,499 of the 4,056 (37.0\%), polarization in 808 (19.9\%), persistent diversity in 766 (18.9\%) and another outcome, such as convergence time, in 2,638 (65.0\%); none was reported in 358 (8.8\%). % MAP19
+
+\paragraph{Grounding, validation and reproducibility.}
+In 3,139 of the 4,056 works (77.4\%) the title and abstract stated or made evident a purely theoretical or computational study, whereas in 302 (7.4\%) they did not show whether data were used; observational data were reported in 465 (11.5\%), human-subject experiments in 76 (1.9\%) and other data in 117 (2.9\%). % MAP15 MAP19
+Validation was numerical in 2,243 of the 4,056 (55.3\%), analytical in 1,940 (47.8\%), a robustness or sensitivity analysis in 484 (11.9\%), a comparison with aggregate empirical data in 185 (4.6\%) and a comparison with individual-level data in 147 (3.6\%); none was stated in 667 (16.4\%). % MAP19
+Of the 4,056, 7 (0.2\%) stated that data were available and 38 (0.9\%) that code or an implementation was, while 4,016 (99.0\%) carried no availability statement. % MAP19
+Author-stated gaps were not reported in 3,269 of the 4,056 (80.6\%); a need for empirical or aggregate-level validation was stated in 32 (0.8\%), a need to compare or discriminate models in 14 (0.3\%) and another gap in 776 (19.1\%). % MAP19
+Because coding saw only titles and abstracts, these low counts do not show that data, code, validation or stated gaps are absent from the works. % MAP15
+
+\paragraph{Screening order.}
+Cumulative shares depend on where screening stopped. % MAP20
+Between the snapshots after batch~1 and batch~14 (4,056 works), the bounded-confidence share fell from 52.1\% (160 of 307) to 18.9\% and the continuous-representation share from 68.1\% (209 of 307) to 33.4\%. % MAP20
+The share with representation not reported was 13.0\% after batch~1 (40 of 307) and 8.8\% after batch~2 (55 of 624), then rose to 33.7\%. % MAP20
+The execution record attributes the first two trajectories to the ranker's ordering, whose seeds brought bounded-confidence works forward, and the third to less detailed abstracts in deeper batches. % MAP20
+The continuous share still fell by 1.2 to 1.4 percentage points per batch in the last three transitions, so the stopping rule's stability condition, no shift above two points in two consecutive transitions, was met mainly because the denominator grew, as the record notes. % MAP20
+The last batch added 198 works to the denominator but only 20 to the continuous and 4 to the bounded-confidence count, against 107 to the not-reported representation count. % MAP20
+
+The map is therefore descriptive context: its counts describe coded abstracts of a prioritized, incompletely covered set, cannot show that any combination of model, data or validation is rare in the literature, and are not used to claim a gap or to motivate the research question. % MAP21

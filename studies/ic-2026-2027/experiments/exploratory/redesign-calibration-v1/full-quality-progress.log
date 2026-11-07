@@ -1,0 +1,117 @@
+cd workbench && uv run --locked python ../scripts/check_repository.py
+repository structure: 7 checks passed
+bash -n scripts/setup_local_codex_auth.sh
+bash -n scripts/run_external_holdout.sh
+bash -n scripts/setup_vps_exchange.sh
+shellcheck scripts/run_external_holdout.sh
+shellcheck scripts/setup_local_codex_auth.sh
+shellcheck scripts/setup_vps_exchange.sh
+cd workbench && uv run --locked ruff format --check . ../scripts && uv run --locked ruff check . ../scripts
+566 files already formatted
+All checks passed!
+cd studies/ic-2026-2027 && uv run --locked ruff format --check . && uv run --locked ruff check .
+38 files already formatted
+All checks passed!
+cd workbench && uv run --locked mypy src tests ../scripts
+Success: no issues found in 566 source files
+cd studies/ic-2026-2027 && uv run --locked mypy src tests
+Success: no issues found in 31 source files
+cd workbench && uv run --locked pytest
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/davi/.local/state/research-workbench/ic-question-consolidation/workbench
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, hypothesis-6.167.1
+collected 5786 items
+
+tests/contract/test_agent_specs.py ..................................... [  0%]
+.................                                                        [  0%]
+tests/contract/test_bibliographic_v1_compatibility.py .........          [  1%]
+tests/contract/test_blind_review_contracts.py ..............             [  1%]
+tests/contract/test_claude_review_transcripts.py ....................... [  1%]
+........                                                                 [  1%]
+tests/contract/test_claude_subscription_runtime.py .............         [  2%]
+tests/contract/test_codex_review.py ....................                 [  2%]
+tests/contract/test_crossref_doi_filter_only_url.py .................... [  2%]
+...                                                                      [  2%]
+tests/contract/test_crossref_exact_doi_url.py .......................... [  3%]
+...................                                                      [  3%]
+tests/contract/test_extraction_generation_codec.py ..................... [  3%]
+..................                                                       [  4%]
+tests/contract/test_extraction_not_reported.py ......................... [  4%]
+.................                                                        [  5%]
+tests/contract/test_full_text_selection_policy.py .                      [  5%]
+tests/contract/test_global_acceptance.py ..................              [  5%]
+tests/contract/test_global_review.py ..........                          [  5%]
+tests/contract/test_global_review_agent_spec.py .                        [  5%]
+tests/contract/test_global_review_calibration.py .                       [  5%]
+tests/contract/test_global_review_plan.py .........                      [  5%]
+tests/contract/test_global_review_stage.py .                             [  5%]
+tests/contract/test_indexed_extraction_transport.py ................     [  5%]
+tests/contract/test_mcp_source_limits.py ........                        [  6%]
+tests/contract/test_mcp_source_presentation.py ......                    [  6%]
+tests/contract/test_model_registry.py .                                  [  6%]
+tests/contract/test_public_source_url.py ............................... [  6%]
+...............................................................          [  7%]
+tests/contract/test_repository_agent_specs.py .......................... [  8%]
+....................                                                     [  8%]
+tests/contract/test_repository_live_venue_runtime.py ................... [  9%]
+.............................                                            [  9%]
+tests/contract/test_repository_systematic_review_agent_specs.py ........ [  9%]
+..                                                                       [  9%]
+tests/contract/test_repository_venue_requests.py ........                [  9%]
+tests/contract/test_repository_venue_search_plan.py ....                 [  9%]
+tests/contract/test_review_observations.py .......................       [ 10%]
+tests/contract/test_screening_protocol_context.py ..................     [ 10%]
+tests/contract/test_source_fetch_contracts.py .......................... [ 11%]
+                                                                         [ 11%]
+tests/contract/test_subscription_receipts.py .......                     [ 11%]
+tests/contract/test_systematic_review_agent_contracts.py ............... [ 11%]
+....................                                                     [ 11%]
+tests/contract/test_systematic_review_generated_output.py .............. [ 12%]
+.................                                                        [ 12%]
+tests/contract/test_systematic_review_manual_import.py ...............   [ 12%]
+tests/contract/test_systematic_review_manual_import_empty_v2.py ........ [ 12%]
+...........                                                              [ 12%]
+tests/contract/test_systematic_review_positive_extraction.py .           [ 12%]
+tests/contract/test_systematic_review_protocol.py ...................... [ 13%]
+...                                                                      [ 13%]
+tests/contract/test_systematic_review_protocol_approval.py ............. [ 13%]
+..............                                                           [ 13%]
+tests/contract/test_tool_execution_traces.py ..........                  [ 13%]
+tests/contract/test_untitled_task_transport.py ................          [ 14%]
+tests/contract/test_venue_fit_calibration_fixture.py .                   [ 14%]
+tests/contract/test_venue_outputs.py ................................... [ 14%]
+...................................................................      [ 16%]
+tests/contract/test_venue_run_provenance.py ............................ [ 16%]
+............................                                             [ 17%]
+tests/contract/test_venue_search_plan_approval.py ...................    [ 17%]
+tests/contract/test_venue_snapshots.py ..............                    [ 17%]
+tests/contract/test_venue_source_policy.py ........                      [ 17%]
+tests/contract/test_whole_text_contracts.py ....                         [ 17%]
+tests/e2e/test_calibration_development_cli.py .                          [ 17%]
+tests/e2e/test_comparative_cli.py .........                              [ 17%]
+tests/e2e/test_full_text_reference_preparation_cli.py .................. [ 18%]
+.                                                                        [ 18%]
+tests/e2e/test_global_decisions_cli.py ..................                [ 18%]
+tests/e2e/test_missing_title_acquisition_cli.py ...                      [ 18%]
+tests/e2e/test_native_review_report_cli.py ............                  [ 18%]
+tests/e2e/test_review_backup_cli_limits.py ................              [ 19%]
+tests/e2e/test_review_global_cli.py ...                                  [ 19%]
+tests/e2e/test_review_methods_cli.py ....                                [ 19%]
+tests/e2e/test_run_bundle_round_trip.py ....                             [ 19%]
+tests/e2e/test_runtime_backup_cli.py ..                                  [ 19%]
+tests/e2e/test_runtime_backup_round_trip.py ..                           [ 19%]
+tests/e2e/test_scientific_adjudication_cli.py .........................  [ 19%]
+tests/e2e/test_screening_workers_cli.py ........                         [ 19%]
+tests/e2e/test_seed_recall_cli.py ...                                    [ 20%]
+tests/e2e/test_systematic_review_bundle_round_trip.py ....               [ 20%]
+tests/e2e/test_systematic_review_cli.py ...........                      [ 20%]
+tests/e2e/test_systematic_review_live_cli.py .......                     [ 20%]
+tests/e2e/test_systematic_review_readonly_cli.py ......                  [ 20%]
+tests/e2e/test_venue_cli.py .....................                        [ 20%]
+tests/property/test_local_search_properties.py .                         [ 20%]
+tests/property/test_venue_landscape_idempotency.py .                     [ 20%]
+tests/recovery/test_focused_attempts_backup.py .                         [ 20%]
+tests/recovery/test_focused_native_backup_campaign.py 

@@ -1,0 +1,42 @@
+...FF                                                                    [100%]
+=================================== FAILURES ===================================
+______ test_runner_matches_observed_not_latent_and_rematches_each_control ______
+
+tmp_path = PosixPath('/private/var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/pytest-of-davi/pytest-2447/test_runner_matches_observed_n0')
+
+    def test_runner_matches_observed_not_latent_and_rematches_each_control(tmp_path) -> None:
+        from ic_study.simulation.detection_calibration import DetectionPilot, PilotSpec
+    
+        class KnownChannels(DetectionPilot):
+            def panel(self, phase, i, share, *, rho=None, trait=0, family='B'):
+                rho, trait = (.8, .2) if rho is None else (rho, trait)
+                offset = (i-127.5)*.00004
+                # Latent and observed targets deliberately cannot be interchanged.
+                observed = np.array([.7*(trait+(1-trait)*rho),
+                                     .65*(trait+(1-trait)*rho**2), .2, .1, .05])+offset
+                latent = observed + np.array([.18, .22, .1, .1, .1])
+                return {'observed': observed, 'latent': latent}
+    
+        pilot = KnownChannels(PilotSpec(grid=(0.,), size=66), tmp_path/'run')
+>       fitted = pilot.match_cell(0., family='B', channel='observed')
+                 ^^^^^^^^^^^^^^^^
+E       AttributeError: 'KnownChannels' object has no attribute 'match_cell'
+
+tests/unit/test_detection_calibration.py:55: AttributeError
+___________ test_runner_wires_heaping_null_and_all_distinct_channels ___________
+
+tmp_path = PosixPath('/private/var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/pytest-of-davi/pytest-2447/test_runner_wires_heaping_null0')
+
+    def test_runner_wires_heaping_null_and_all_distinct_channels(tmp_path) -> None:
+        from ic_study.simulation.detection_calibration import DetectionPilot, PilotSpec
+    
+        pilot = DetectionPilot(PilotSpec(grid=(0.,), size=660), tmp_path/'run')
+>       ordinary = pilot.panel('match', 0, 0., rho=.8, family='A')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: DetectionPilot.panel() got an unexpected keyword argument 'family'
+
+tests/unit/test_detection_calibration.py:67: TypeError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_calibration.py::test_runner_matches_observed_not_latent_and_rematches_each_control
+FAILED tests/unit/test_detection_calibration.py::test_runner_wires_heaping_null_and_all_distinct_channels
+2 failed, 3 passed in 0.30s

@@ -1,0 +1,30 @@
+{
+  "format": "exploratory-pilot-operational-authorization-v1",
+  "recorded_at_utc": "2026-09-12T23:50:47.133300+00:00",
+  "owner": "Davi Abreu da Silveira",
+  "authorization_basis": {
+    "user_message": "pode ir",
+    "pending_action": "Piloto pequeno da proposta A, com criterios para continuar ou abandonar, antes da escolha final da venue."
+  },
+  "scope": "Local synthetic exploratory pilot defined in spec.json and protocol.md; benchmark, reduced controls, 112 primary trajectories and 16 paired tolerance sensitivity trajectories.",
+  "code_revision": "a394f28e66868b0c5d2c9f6d032b5394bb354073",
+  "inputs": {
+    "spec.json": "4fc30997b27ee759e69e39e4a922a8c79f2342367cb29a664639bafcb37efe8c",
+    "protocol.md": "5811b352c68c9ebb57d6072c1a1100f4d14f11831a861b603ae5aaf47b541278",
+    "source-check.md": "85e4761160680d76b03a4570a4922cf2ab077252cd6c3c5a41295ee2d3c98c40"
+  },
+  "pre_execution_checks": {
+    "study_tests": "23 passed",
+    "ruff": "passed",
+    "mypy": "passed, 12 files",
+    "independent_review": "Two reproducible findings corrected and rechecked by isolated reviewer before this record; final report being written.",
+    "repository_quality": "In progress; final integration result will be recorded before delivery."
+  },
+  "limitations": [
+    "Not final research-question selection",
+    "Not acceptance of systematic-review synthesis",
+    "Not registered confirmatory evidence",
+    "No external-data acquisition or external publication",
+    "Owner authorization is scope authorization, not a claim that the owner inspected the exact code"
+  ]
+}

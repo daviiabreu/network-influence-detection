@@ -1,0 +1,12 @@
+.........F                                                               [100%]
+=================================== FAILURES ===================================
+_ test_feasibility_mask_precedes_classification_and_accounts_for_error_correlation _
+
+    def test_feasibility_mask_precedes_classification_and_accounts_for_error_correlation() -> None:
+>       from ic_study.analysis.detection_boundary import feasible_lag1
+E       ImportError: cannot import name 'feasible_lag1' from 'ic_study.analysis.detection_boundary' (/Users/davi/.local/state/research-workbench/ic-question-consolidation/studies/ic-2026-2027/src/ic_study/analysis/detection_boundary.py)
+
+tests/unit/test_detection_boundary.py:128: ImportError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_boundary.py::test_feasibility_mask_precedes_classification_and_accounts_for_error_correlation
+1 failed, 9 passed in 0.12s

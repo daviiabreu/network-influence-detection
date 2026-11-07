@@ -1,0 +1,9 @@
+{
+  "supersedes_only": "plan.json: refit counts and order",
+  "reason": "Strict M=1024 matching measurements took up to 501 seconds per worker; preserve the 60-minute wall-compute ceiling including a large zero-law reference.",
+  "exposure": "Matching performance only; no new nonzero AUC inspected before this allocation.",
+  "refits": [{"share": 0.1, "count": 40}, {"share": 0.03, "count": 20}],
+  "fixed_prefixes": {"0.1": [10,20,40], "0.03": [10,20]},
+  "wall_deadline": "3550 seconds from the beginning of the first matching batch; terminate remaining child jobs at the deadline; preserve partial results and failures.",
+  "remaining_diagnostics": "Local-bootstrap stencil and independent matching checks only if the remaining budget permits."
+}

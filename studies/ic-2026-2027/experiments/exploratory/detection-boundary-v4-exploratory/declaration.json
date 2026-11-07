@@ -1,0 +1,72 @@
+{
+	"schema": "ic-study.v4-exploratory-declaration.v1",
+	"date": "2026-09-28",
+	"status": "declared-before-implementation-and-before-any-confirmatory-result",
+	"frozen_protocol": {
+		"freeze_record": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/freeze-v4.json",
+		"freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+		"commit": "37513841"
+	},
+	"reason": "internal adversarial review 2026-09-28, items R1-M1 and R1-M3, ranked changes 4 and 5",
+	"label": "exploratory; never promoted to confirmatory evidence",
+	"unchanged": "grid, targets, nulls, discriminator, bands, censoring, gates and tier order of the frozen v4",
+	"x1_mean_field_twin": {
+		"twin": "frozen interaction arm with the network drift replaced by m(z_i) + xi_i * sqrt(v(z_i)/8), then the same standardization and update",
+		"m": "(1/N) sum_j f(z_j - z) over the current population state, computed exactly",
+		"v": "(1/N) sum_j f(z_j - z)^2 - m(z)^2",
+		"xi": "standard normal, independent across persons, fresh every step",
+		"kernel": "f(g) = g if |g| <= 1 else -b*g, b = 0.25",
+		"unchanged_components": [
+			"geometry",
+			"AR rho 0.85",
+			"nominal share mixing",
+			"drift standardization",
+			"rank transport",
+			"steps per wave",
+			"anchoring"
+		],
+		"x1a": {
+			"cells": "all (a, r) with a in G minus {0} and r in R (72 cells)",
+			"channel": "observed, as in tier 1",
+			"features": "frozen lag features 3 to 5 (profile columns 2:5)",
+			"discriminator": "frozen fit_discriminant, 2000 training panels per arm",
+			"auc": "frozen auc with half ties, reference of 2000 networks and two events per arm",
+			"interval": "95 percent percentile bootstrap over reference networks, 1000 resamples",
+			"also_report": "per-cell mean L1 to L5 by arm and their differences",
+			"reading": "interval excluding 0.5 indicates separable network information for the fixed LDA at that cell; containing 0.5 does not prove absence; no multiplicity correction; no whole-curve claim"
+		},
+		"x1b": {
+			"status": "optional second stage",
+			"estimand": "a*_MF(r) against B under the frozen fitting, validation, discrimination, band and inversion rules",
+			"precondition": "successor pipeline reusing frozen components with only the social generator swapped reproduces the frozen pipeline outputs bitwise with the original generator on at least two cells",
+			"on_precondition_failure": "do not run; record the failure",
+			"comparison": "side by side with the confirmatory a*(r) only after its release, labelled exploratory"
+		}
+	},
+	"x2_drift_r2_map": {
+		"paths": "latent only, N = 10626, 11 waves, no channel or mask",
+		"implementation_check": "state path bitwise equal to frozen influence for the same seeds",
+		"x2a": "partial R2 of standardized drift in pooled OLS of z_{t+1} on [1, z_t, D_t] versus [1, z_t]",
+		"x2b": "incremental R2 of standardized drift beyond a natural cubic spline of z_t with knots at the replicate quantiles 0.05, 0.275, 0.5, 0.725, 0.95",
+		"conditions": {
+			"a": "all of G, a = 0 as baseline with a drift computed from a network drawn by the same scheme",
+			"repulsion_b": [0.25, 0],
+			"steps_per_wave": [1, 24],
+			"anchoring_omega": 0
+		},
+		"replicates": 10,
+		"report": "mean, SD, min and max across replicates"
+	},
+	"seeds": {
+		"root": 20260928,
+		"namespace": "v4-exploratory-x1-x2",
+		"disjoint_from": [
+			"every frozen confirmatory namespace",
+			"shp-crosswalk-v1"
+		],
+		"forbidden_inputs": "any confirmatory seed, gate result, tier output or a*(r) value"
+	},
+	"host": "exploration host allowed and recorded; cross-host numerical equivalence not required",
+	"outputs": "aggregate JSON in this folder with code commit, derived seeds and host, plus a short PT-BR report",
+	"paper_use": "reported as pre-declared exploratory analyses with whatever result they give, including null or failure"
+}

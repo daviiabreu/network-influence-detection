@@ -1,0 +1,40 @@
+{
+  "kind": "score-free-linearisation-test-point",
+  "N": 10626,
+  "panels": 8,
+  "phase": "reference",
+  "calibration_seed_repetition": 9100,
+  "parameters": [
+    0.85,
+    0.15
+  ],
+  "delta": [
+    0.001,
+    -0.001
+  ],
+  "fd_step": 0.01,
+  "per_realisation_relative_feature_error": [
+    0.0003216768252381026,
+    0.00045693056671134184,
+    0.0003397255757495224,
+    0.0007330152220439282,
+    0.00029461759076629174,
+    0.00047434122001294957,
+    0.0004342042489444092,
+    0.0008697801188297118
+  ],
+  "per_realisation_relative_shift_error": [
+    0.1376436590166375,
+    0.18206586570679298,
+    0.13320290209141641,
+    0.2304588256064446,
+    0.11327052687809286,
+    0.21045889020093014,
+    0.14831682436011998,
+    0.46246995815225306
+  ],
+  "feature_5_percent_pass": true,
+  "shift_5_percent_pass": false,
+  "classifiers_trained": 0,
+  "code_sha256": "d1520698cabd7abd1d300000354a666f84850597834df6bbcefe2d4ef37732f2"
+}

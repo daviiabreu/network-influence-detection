@@ -1,0 +1,30 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/ii-comparison-no-ratio/assembly-notes.txt",
+        "sha256": "bc5933a619e0218ba1693d1da4430726b1c5daa4b1fe39af2d797b3bee9a13fc"
+      },
+      "value": true
+    },
+    "shp.grid_position": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/ii-comparison-no-ratio/assembly-notes.txt",
+        "sha256": "bc5933a619e0218ba1693d1da4430726b1c5daa4b1fe39af2d797b3bee9a13fc"
+      },
+      "value": "inside"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/dress-rehearsal.PFgUyQ/ii-comparison-no-ratio/assembly-notes.txt",
+        "sha256": "bc5933a619e0218ba1693d1da4430726b1c5daa4b1fe39af2d797b3bee9a13fc"
+      },
+      "value": "admissible"
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

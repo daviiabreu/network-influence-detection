@@ -1,0 +1,7 @@
+{
+  "supersedes": "refit-plan-successor.json: derivative estimation and starts for the measured full refits",
+  "exposure": "Strict matching at M=1024 required up to 890.9 wall seconds per worker; no new nonzero AUC inspected before this change.",
+  "response_map": {"matching_only_block": 9001, "count": 1024, "initial_parameters": "strict M=1024 fit in block 1 of the same cell", "finite_difference": 0.01},
+  "refits": {"matching": 256, "max_evaluations": 12, "mc_multiplier": 2, "algorithm": "box-constrained fixed-Jacobian moment iterations; evaluate actual observed moments at every iteration; keep all failures"},
+  "rationale": "Derivative noise and redundant derivative simulations are avoidable operational costs. The response map is trained on an independent calibration block and is shared, but target moments and all training data are fresh per refit. Variance is conditional on this map; its approximation must pass an independent validation gate."
+}

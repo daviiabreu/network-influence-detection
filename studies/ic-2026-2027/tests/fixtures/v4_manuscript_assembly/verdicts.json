@@ -1,0 +1,288 @@
+{
+  "cases": {
+    "failed-G0": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/failed-G0/gate/criteria.jsonl": "1e0c53201869f4e39b9b00ea2acc09f99c7d42ed9aa610cb7216b36fc9726590"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "0",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "0",
+        "v4.gate.G1b.verdict.complete": "0",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "0",
+        "v4.gate.G1c.verdict.complete": "0",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "0",
+        "v4.gate.G2.verdict.complete": "0",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "0",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "i-comparison-failed": {
+      "sources": {
+        "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed/G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed/gate/criteria.jsonl": "1985ff52dfd147d8ca27f63b4f6bee147f9f0c440caff6346c030d8fafecdba5"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "ii-comparison-no-ratio": {
+      "sources": {
+        "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/ii-comparison-no-ratio/G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/ii-comparison-no-ratio/gate/criteria.jsonl": "d831de6587070208b098c5fc111443272165ebade7c274505e84c062bd88231d"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "iii-comparisons-absent": {
+      "sources": {
+        "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/iii-comparisons-absent/G1c-successor.json": "175315293b02f0f239022e5a33a6285d1ae0ac086bd9db99839b95c86f4145fc",
+        "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/iii-comparisons-absent/gate/criteria.jsonl": "76732882666ecb1bea0a713ecdecdcfa2e3924832bd1890366ff31acd7352751"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "incomplete-tier2": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/incomplete-tier2/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "invalid-main": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/invalid-main/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/invalid-main/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "passed-shp": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c",
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "unavailable": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "/private/tmp/release-day-combined.ya7qxzen/unavailable/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/unavailable/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "x6-failure": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-failure/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-failure/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "x6-inconclusive": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-inconclusive/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "x6-no-reading": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-no-reading/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    },
+    "x6-subnominal": {
+      "sources": {
+        "/private/tmp/release-day-combined.ya7qxzen/passed-shp/gate/criteria.jsonl": "72ca65e28e823de1d4cccc85a553a6cc895a4675e092403fac357232cadd2bcd",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/G1c-successor.json": "45d2fb9ea6a6ac7f59c9b70cf433615fed51a37c1ce6969146d8eb0c73b14f2a",
+        "/private/tmp/release-day-combined.ya7qxzen/x6-subnominal/allocation.json": "4ae2aeb80d17b0ef5ec56e6ea2dc74fb4a530b49fde81b7aed4a9f4c8a099f1c"
+      },
+      "values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "1",
+        "v4.gate.G1b.verdict.complete": "1",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "1",
+        "v4.gate.G1c.verdict.complete": "1",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "1",
+        "v4.gate.G2.verdict.complete": "1",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "1",
+        "v4.gate.G2c.verdict.complete": "1",
+        "v4.gate.G2c.verdict.stop": "0"
+      }
+    }
+  },
+  "synthetic": true
+}

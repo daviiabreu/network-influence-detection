@@ -1,0 +1,3380 @@
+{
+ "declared_in_commit": "987acded",
+ "executed_by": "Claude (sessão remota)",
+ "notes": [
+  "Queries declared in commit 987acded before any execution; text not altered afterwards.",
+  "OpenAlex: first attempt on 2026-09-27T22:59Z returned HTTP 429 (daily budget exhausted for the shared egress IP, retry-after 3616 s); all 10 queries ran after the reset on 2026-09-28. No mailto parameter was sent. 'count' is meta.count of the relevance search.",
+  "Semantic Scholar: unauthenticated pool returned frequent HTTP 429. Three passes with up to 8 spaced retries each; Q04 and Q08 never succeeded and are recorded with http_status 429 and no hits. 'count' is the API field 'total'.",
+  "arXiv: the export API (export.arxiv.org/api/query) returned HTTP 406 for every uncached query from this environment (runs recorded under api='arxiv'). The same boolean translation was run through arxiv.org/search (searchtype=all, which searches all metadata fields and ANDs the terms), recorded under api='arxivweb'. 'count' is the total reported by the results page.",
+  "Only metadata is stored: identifiers, year, title and screening decision. Abstract snippets used during screening are not stored here.",
+  "Screening rule (declared with the queries): relevant = treats social influence/opinion dynamics AND at least one of measurement error/reliability, a longitudinal panel compared with a no-influence null, or mechanism distinguishability/identifiability.",
+  "Reconstruction: this file was rebuilt on 2026-09-28 from outputs printed in the transcript of cloud session session_01EaXAsmH2mBrCesTwUsiFMv, whose sandbox never pushed the raw API responses or this file. The raw files were rebuilt from those printouts and the session's screen_src.py and gen.py, with all their later edits, were rerun with only the output path and these notes changed. Commit 987acded is the local reconstruction of sandbox commit 9ae16947, which the session made before running any query. Titles are cut where the session printed them cut: at 115 characters for OpenAlex, 110 for Semantic Scholar Q01-Q03, Q06 and Q07, 105 for Q05 and Q09, and 100 for Q10; arXiv web titles were printed with a 110-character limit that none reached. Fields set to null because they were never printed: url and retrieved_utc in all 40 runs, and doi for every OpenAlex hit and for the 16 Semantic Scholar hits whose arXiv id was printed instead (gen.py omits null hit fields, so those entries carry no doi). Semantic Scholar ids hold the first 12 characters of the paperId as printed for Q01-Q03, Q06 and Q07; for Q05, Q09 and Q10 the paperId was never printed, and id holds the placeholder not-printed:<query>:<rank> so that screening decisions stay keyed per hit."
+ ],
+ "runs": [
+  {
+   "api": "openalex",
+   "query_id": "Q01",
+   "query": "opinion dynamics panel data measurement error",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 108695,
+   "returned": [
+    {
+     "id": "W2099815494",
+     "year": 2009,
+     "title": "Introduction to stochastic actor-based models for network dynamics",
+     "screening": "não relevante",
+     "reason": "introdução ao SAOM com rede observada; sem canal de erro nem nulo de persistência"
+    },
+    {
+     "id": "W2141697271",
+     "year": 2007,
+     "title": "The German Socio-Economic Panel Study (SOEP) - Scope, Evolution and Enhancements",
+     "screening": "não relevante",
+     "reason": "fora do tema (descrição do painel SOEP); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2114986694",
+     "year": 2013,
+     "title": "How Elite Partisan Polarization Affects Public Opinion Formation",
+     "screening": "não relevante",
+     "reason": "efeito de elites na opinião pública; sem regra de influência entre pares nem erro de resposta"
+    },
+    {
+     "id": "W2766284800",
+     "year": 2017,
+     "title": "A theory of multineuronal dimensionality, dynamics and measurement",
+     "screening": "não relevante",
+     "reason": "fora do tema (neurociência); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2095655043",
+     "year": 2013,
+     "title": "Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts",
+     "screening": "não relevante",
+     "reason": "fora do tema (análise de texto política); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2892084985",
+     "year": 1980,
+     "title": "The Sensitivity of Consumption to Transitory Income: Estimates from Panel Data on Households",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do consumo); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2770414254",
+     "year": 2019,
+     "title": "Firm-Level Political Risk: Measurement and Effects*",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4211232623",
+     "year": 2008,
+     "title": "Perfluorooctane sulfonate (PFOS), perfluorooctanoic acid (PFOA) and their salts Scientific Opinion of the Panel on ",
+     "screening": "não relevante",
+     "reason": "fora do tema (toxicologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4394029306",
+     "year": 2025,
+     "title": "DESI 2024 VI: cosmological constraints from the measurements of baryon acoustic oscillations",
+     "screening": "não relevante",
+     "reason": "fora do tema (cosmologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2052947135",
+     "year": 2014,
+     "title": "The FIELDS Instrument Suite on MMS: Scientific Objectives, Measurements, and Data Products",
+     "screening": "não relevante",
+     "reason": "fora do tema (física espacial); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2007598609",
+     "year": 2002,
+     "title": "Error Reduction and Performance Improvement in the Emergency Department through Formal Teamwork Training: Evaluatio",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2082154841",
+     "year": 2015,
+     "title": "Computational Fluid Dynamics for urban physics: Importance, scales, possibilities, limitations and ten tips and tri",
+     "screening": "não relevante",
+     "reason": "fora do tema (dinâmica de fluidos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2141591360",
+     "year": 2008,
+     "title": "Opinion of the Scientific Panel on Contaminants in the Food chain on perfluorooctane sulfonate (PFOS), perfluorooct",
+     "screening": "não relevante",
+     "reason": "fora do tema (toxicologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2064187565",
+     "year": 2002,
+     "title": "A Method for Modeling the Intrinsic Dynamics of Intraindividual Variability: Recovering the Parameters of Simulated",
+     "screening": "não relevante",
+     "reason": "variabilidade intraindividual em psicometria; sem influência social"
+    },
+    {
+     "id": "W2553421097",
+     "year": 2016,
+     "title": "End of Life Management: Solar Photovoltaic Panels",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2147217762",
+     "year": 2012,
+     "title": "The Panel Study of Income Dynamics: overview, recent innovations, and potential for life course research",
+     "screening": "não relevante",
+     "reason": "fora do tema (descrição do painel PSID); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2089719636",
+     "year": 2006,
+     "title": "A framework for dealing with uncertainty due to model structure error",
+     "screening": "não relevante",
+     "reason": "fora do tema (hidrologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2034146766",
+     "year": 1979,
+     "title": "Labor Market Dynamics and Unemployment: A Reconsideration",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do trabalho); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3109607089",
+     "year": 2020,
+     "title": "Affective polarization, local contexts and public opinion in America",
+     "screening": "não relevante",
+     "reason": "polarização afetiva e contexto local; sem modelo de influência nem erro"
+    },
+    {
+     "id": "W2150725398",
+     "year": 2009,
+     "title": "Does the Media Matter? A Field Experiment Measuring the Effect of Newspapers on Voting Behavior and Political Opini",
+     "screening": "não relevante",
+     "reason": "experimento de mídia; sem painel com canal de erro"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q02",
+   "query": "social influence longitudinal survey reliability distinguishability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 9536,
+   "returned": [
+    {
+     "id": "W2061973537",
+     "year": 2004,
+     "title": "“Fundamental Causes” of Social Inequalities in Mortality: A Test of the Theory",
+     "screening": "não relevante",
+     "reason": "fora do tema (epidemiologia social); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4289222991",
+     "year": 2022,
+     "title": "Social capital I: measurement and associations with economic mobility",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia/capital social); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2961148372",
+     "year": 2019,
+     "title": "Are loneliness and social isolation associated with cognitive decline?",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1987835826",
+     "year": 2014,
+     "title": "Measuring Large-Scale Social Networks with High Resolution",
+     "screening": "não relevante",
+     "reason": "medição de redes sociais; sem dinâmica de opinião nem nulo"
+    },
+    {
+     "id": "W2983790886",
+     "year": 2019,
+     "title": "The Netherlands Twin Register: Longitudinal Research Based on Twin and Twin-Family Designs",
+     "screening": "não relevante",
+     "reason": "fora do tema (genética comportamental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W116282327",
+     "year": 2004,
+     "title": "Validation Guidelines for IS Positivist Research",
+     "screening": "não relevante",
+     "reason": "fora do tema (sistemas de informação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2008557696",
+     "year": 2014,
+     "title": "Leadership as social identity management: Introducing the Identity Leadership Inventory (ILI) to assess and validat",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia organizacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2730695225",
+     "year": 2017,
+     "title": "Social influence in the global diffusion of alternative fuel vehicles – A meta-analysis",
+     "screening": "não relevante",
+     "reason": "meta-análise de difusão de veículos; influência social sem painel com erro"
+    },
+    {
+     "id": "W2803071139",
+     "year": 2018,
+     "title": "Social and emotional skills for student success and well-being",
+     "screening": "não relevante",
+     "reason": "fora do tema (educação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2787273183",
+     "year": 2018,
+     "title": "A brief measure of social media self-control failure",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria de mídia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1714083232",
+     "year": 2007,
+     "title": "Workforce Perceptions of Hospital Safety Culture: Development and Validation of the Patient Safety Climate in Healt",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1997668501",
+     "year": 1997,
+     "title": "Social competence: An untapped dimension in evaluating head start's success",
+     "screening": "não relevante",
+     "reason": "fora do tema (educação infantil); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2016465515",
+     "year": 2011,
+     "title": "CALLING: THE DEVELOPMENT OF A SCALE MEASURE",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria organizacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2159680808",
+     "year": 2010,
+     "title": "Proactivity, job characteristics, and engagement: a longitudinal study",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia organizacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2737985520",
+     "year": 2017,
+     "title": "Is subjective social status a unique correlate of physical health? A meta-analysis.",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4200480463",
+     "year": 2021,
+     "title": "Social isolation, social support and loneliness as predictors of cardiovascular disease incidence and mortality",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2117455049",
+     "year": 1981,
+     "title": "Social Support Scales: A Methodological Note",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2159084167",
+     "year": 1998,
+     "title": "Learning styles: a cross‐sectional and longitudinal study in higher education",
+     "screening": "não relevante",
+     "reason": "fora do tema (educação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1945806682",
+     "year": 2011,
+     "title": "LEARNING TO BE BAD: ADVERSE SOCIAL CONDITIONS, SOCIAL SCHEMAS, AND CRIME*",
+     "screening": "não relevante",
+     "reason": "fora do tema (criminologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2903495686",
+     "year": 2018,
+     "title": "Factors associated with residents’ contract behavior with family doctors in community health service centers: A lon",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde pública); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q03",
+   "query": "bounded confidence model panel survey identifiability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 15878,
+   "returned": [
+    {
+     "id": "W2161184021",
+     "year": 2012,
+     "title": "Double Digest RADseq: An Inexpensive Method for De Novo SNP Discovery and Genotyping in Model and Non-Model Species",
+     "screening": "não relevante",
+     "reason": "fora do tema (genômica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2145150141",
+     "year": 2015,
+     "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated ",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2129332419",
+     "year": 2010,
+     "title": "Selection Bias in Web Surveys",
+     "screening": "não relevante",
+     "reason": "viés de seleção em surveys web; sem dinâmica de opinião"
+    },
+    {
+     "id": "W2009499611",
+     "year": 2004,
+     "title": "Stable and Efficient Multiple Smoothing Parameter Estimation for Generalized Additive Models",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística/GAM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2097259059",
+     "year": 2009,
+     "title": "On Modeling and Interpreting the Economics of Catastrophic Climate Change",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do clima); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3128782210",
+     "year": 2021,
+     "title": "Bayesian statistics and modelling",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística bayesiana geral); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2744012041",
+     "year": 2018,
+     "title": "Dark Energy Survey year 1 results: Cosmological constraints from galaxy clustering and weak lensing",
+     "screening": "não relevante",
+     "reason": "fora do tema (cosmologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1487139063",
+     "year": 2017,
+     "title": "Penalising Model Component Complexity: A Principled, Practical Approach to Constructing Priors",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística/priors); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1494778797",
+     "year": 2009,
+     "title": "Back to square one: Identification issues in DSGE models",
+     "screening": "não relevante",
+     "reason": "identificação em DSGE (macroeconomia); sem influência social"
+    },
+    {
+     "id": "W1544882719",
+     "year": 2010,
+     "title": "Understanding Bias in Nonlinear Panel Models: Some Recent Developments",
+     "screening": "não relevante",
+     "reason": "viés em painéis não lineares (econometria); sem influência social"
+    },
+    {
+     "id": "W2337011385",
+     "year": 2016,
+     "title": "A survey of the sorghum transcriptome using single-molecule long reads",
+     "screening": "não relevante",
+     "reason": "fora do tema (genômica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4292026935",
+     "year": 2008,
+     "title": "The XMM-Newton serendipitous survey",
+     "screening": "não relevante",
+     "reason": "fora do tema (astronomia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1969401205",
+     "year": 2009,
+     "title": "Superallowed 0+→0+ nuclear β decays: A new survey with precision tests of the conserved vector current hypothesis a",
+     "screening": "não relevante",
+     "reason": "fora do tema (física nuclear); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2006160097",
+     "year": 2013,
+     "title": "THE COS-HALOS SURVEY: RATIONALE, DESIGN, AND A CENSUS OF CIRCUMGALACTIC NEUTRAL HYDROGEN",
+     "screening": "não relevante",
+     "reason": "fora do tema (astronomia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1541353174",
+     "year": 2002,
+     "title": "Setting confidence intervals for bounded parameters",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3008473238",
+     "year": 2020,
+     "title": "The landscape of QCD axion models",
+     "screening": "não relevante",
+     "reason": "fora do tema (física); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3217086243",
+     "year": 2021,
+     "title": "Identifiability and predictability of integer- and fractional-order epidemiological models using physics-informed n",
+     "screening": "não relevante",
+     "reason": "fora do tema (epidemiologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2078938818",
+     "year": 1999,
+     "title": "Theoretical and empirical review of multinomial process tree modeling",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia cognitiva); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2585698078",
+     "year": 2018,
+     "title": "How Are SNAP Benefits Spent? Evidence from a Retail Panel",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2794687249",
+     "year": 2018,
+     "title": "Benchmarks for models of short-term and working memory.",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia cognitiva); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q04",
+   "query": "opinion dynamics null model persistence panel",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 9454,
+   "returned": [
+    {
+     "id": "W2130089609",
+     "year": 2012,
+     "title": "Characterising performance of environmental models",
+     "screening": "não relevante",
+     "reason": "fora do tema (modelagem ambiental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3122095672",
+     "year": 2010,
+     "title": "Persistence of Innovation in Dutch Manufacturing: Is It Spurious?",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia da inovação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2286320298",
+     "year": 2021,
+     "title": "A Search and Learning Model of Export Dynamics",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3121388661",
+     "year": 2004,
+     "title": "News Arrival, Jump Dynamics, and Volatility Components for Individual Stock Returns",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3109607089",
+     "year": 2020,
+     "title": "Affective polarization, local contexts and public opinion in America",
+     "screening": "não relevante",
+     "reason": "polarização afetiva; sem modelo de influência nem erro"
+    },
+    {
+     "id": "W2120727421",
+     "year": 2012,
+     "title": "Public Opinion and Executive Compensation",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia política); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2150725398",
+     "year": 2009,
+     "title": "Does the Media Matter? A Field Experiment Measuring the Effect of Newspapers on Voting Behavior and Political Opini",
+     "screening": "não relevante",
+     "reason": "experimento de mídia; sem painel com canal de erro"
+    },
+    {
+     "id": "W2585698078",
+     "year": 2018,
+     "title": "How Are SNAP Benefits Spent? Evidence from a Retail Panel",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3125206904",
+     "title": "Editor's Choice Digesting Anomalies: An Investment Approach",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3091745167",
+     "year": 2020,
+     "title": "Per- and Polyfluoroalkyl Substance Toxicity and Human Health Review: Current State of Knowledge and Strategies for ",
+     "screening": "não relevante",
+     "reason": "fora do tema (toxicologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2140867761",
+     "year": 2016,
+     "title": "International Investment Positions and Exchange Rate Dynamics: A Dynamic Panel Analysis",
+     "screening": "não relevante",
+     "reason": "fora do tema (macroeconomia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2890348142",
+     "year": 2009,
+     "title": "The Econometrics of DSGE Models",
+     "screening": "não relevante",
+     "reason": "fora do tema (macroeconomia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2204468525",
+     "year": 2015,
+     "title": "The Complexities of Agent-Based Modeling Output Analysis",
+     "screening": "não relevante",
+     "reason": "análise de saída de ABM em geral; sem influência social nem erro de resposta"
+    },
+    {
+     "id": "W2891641280",
+     "year": 2002,
+     "title": "PPP Strikes Back: Aggregation And the Real Exchange Rate",
+     "screening": "não relevante",
+     "reason": "fora do tema (macroeconomia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3044137491",
+     "year": 2020,
+     "title": "Mental health before and during the COVID-19 pandemic: a longitudinal probability sample survey of the UK populatio",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde mental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4293104207",
+     "year": 2022,
+     "title": "Developmental plasticity in thermal tolerance: Ontogenetic variation, persistence, and future directions",
+     "screening": "não relevante",
+     "reason": "fora do tema (biologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3026414438",
+     "year": 2020,
+     "title": "Financial access, governance and the persistence of inequality in Africa: Mechanisms and policy instruments",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do desenvolvimento); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2890132440",
+     "year": 2007,
+     "title": "Tipping and the Dynamics of Segregation",
+     "screening": "não relevante",
+     "reason": "dinâmica de segregação (Schelling); sem painel nem erro de resposta"
+    },
+    {
+     "id": "W3121754738",
+     "year": 2007,
+     "title": "Behavioral heterogeneity in stock prices",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3122823987",
+     "year": 2010,
+     "title": "DSGE Models for Monetary Policy Analysis",
+     "screening": "não relevante",
+     "reason": "fora do tema (macroeconomia); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q05",
+   "query": "social influence detectability measurement error simulation",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 141303,
+   "returned": [
+    {
+     "id": "W2105846236",
+     "year": 2014,
+     "title": "A new criterion for assessing discriminant validity in variance-based structural equation modeling",
+     "screening": "não relevante",
+     "reason": "fora do tema (PLS-SEM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2167344400",
+     "year": 2016,
+     "title": "Testing measurement invariance of composites using partial least squares",
+     "screening": "não relevante",
+     "reason": "fora do tema (PLS-SEM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2099019320",
+     "year": 2003,
+     "title": "A survey of socially interactive robots",
+     "screening": "não relevante",
+     "reason": "fora do tema (robótica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2025929695",
+     "year": 2012,
+     "title": "The Rediscovery of Bifactor Measurement Models",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2032568497",
+     "year": 2008,
+     "title": "Measurement Instruments for the Anthropomorphism, Animacy, Likeability, Perceived Intelligence, and Perceived Safet",
+     "screening": "não relevante",
+     "reason": "fora do tema (robótica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2107295826",
+     "year": 2000,
+     "title": "Economic Analysis of Social Interactions",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1598829572",
+     "year": 2019,
+     "title": "Social Science Research: Principles, Methods and Practices",
+     "screening": "não relevante",
+     "reason": "fora do tema (manual de métodos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2113168655",
+     "year": 2004,
+     "title": "Confidence Limits for the Indirect Effect: Distribution of the Product and Resampling Methods",
+     "screening": "não relevante",
+     "reason": "fora do tema (mediação estatística); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2160234840",
+     "year": 2010,
+     "title": "The Simulation of Smiles (SIMS) model: Embodied simulation and the meaning of facial expression",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2072500831",
+     "year": 2009,
+     "title": "Statistical power analyses using G*Power 3.1: Tests for correlation and regression analyses",
+     "screening": "não relevante",
+     "reason": "fora do tema (software de poder estatístico); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2160453617",
+     "year": 2009,
+     "title": "Puzzlingly High Correlations in fMRI Studies of Emotion, Personality, and Social Cognition",
+     "screening": "não relevante",
+     "reason": "fora do tema (neuroimagem); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2169370430",
+     "year": 2004,
+     "title": "Constructing an understanding of mind: The development of children's social understanding within social interaction",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia do desenvolvimento); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2932936731",
+     "year": 2019,
+     "title": "Detecting Selection Bias in Meta-Analyses with Multiple Outcomes: A Simulation Study",
+     "screening": "não relevante",
+     "reason": "fora do tema (meta-análise); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2908002252",
+     "year": 2019,
+     "title": "Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimer’s disease risk",
+     "screening": "não relevante",
+     "reason": "fora do tema (genética); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2089584121",
+     "year": 2010,
+     "title": "The Walking Behaviour of Pedestrian Social Groups and Its Impact on Crowd Dynamics",
+     "screening": "não relevante",
+     "reason": "fora do tema (dinâmica de pedestres); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2969523923",
+     "year": 2019,
+     "title": "The global soil community and its influence on biogeochemistry",
+     "screening": "não relevante",
+     "reason": "fora do tema (ecologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1836311887",
+     "year": 2015,
+     "title": "A Beginner's Guide to Structural Equation Modeling",
+     "screening": "não relevante",
+     "reason": "fora do tema (manual de SEM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2970450884",
+     "year": 2020,
+     "title": "Detecting crosstalk errors in quantum information processors",
+     "screening": "não relevante",
+     "reason": "fora do tema (computação quântica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1828958803",
+     "year": 2015,
+     "title": "Constructing, conducting and interpreting animal social network analysis",
+     "screening": "não relevante",
+     "reason": "fora do tema (redes animais); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1971772643",
+     "year": 2015,
+     "title": "A critique of the cross-lagged panel model.",
+     "screening": "não relevante",
+     "reason": "crítica ao CLPM (traço estável vs. dinâmica intra-pessoa); fundamento de nulo traço+AR, sem influência entre pessoas"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q06",
+   "query": "opinion dynamics test-retest reliability agent-based model",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 4149,
+   "returned": [
+    {
+     "id": "W2112042732",
+     "year": 2008,
+     "title": "Technology Acceptance Model 3 and a Research Agenda on Interventions",
+     "screening": "não relevante",
+     "reason": "fora do tema (sistemas de informação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2074602210",
+     "year": 2010,
+     "title": "Clinician’s Guide to Cardiopulmonary Exercise Testing in Adults",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1993824068",
+     "year": 2000,
+     "title": "The Wheel of Wellness Counseling for Wellness: A Holistic Model for Treatment Planning",
+     "screening": "não relevante",
+     "reason": "fora do tema (aconselhamento); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2098937677",
+     "year": 2009,
+     "title": "A developmental, mentalization-based approach to the understanding and treatment of borderline personality disorder",
+     "screening": "não relevante",
+     "reason": "fora do tema (psiquiatria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2125976408",
+     "year": 2005,
+     "title": "“Economic man” in cross-cultural perspective: Behavioral experiments in 15 small-scale societies",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia experimental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1755861215",
+     "year": 2015,
+     "title": "Early chronic kidney disease: diagnosis, management and models of care",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4408734208",
+     "year": 2025,
+     "title": "Sample size matters when estimating test–retest reliability of behaviour",
+     "screening": "não relevante",
+     "reason": "tamanho amostral e confiabilidade teste–reteste de comportamento; sem influência social"
+    },
+    {
+     "id": "W2009100694",
+     "year": 1974,
+     "title": "Children at Risk: The Search for the Antecedents of Schizophrenia. Part I. Conceptual Models and Research Methods",
+     "screening": "não relevante",
+     "reason": "fora do tema (psiquiatria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2144913975",
+     "year": 2012,
+     "title": "Management of Hyperglycemia in Hospitalized Patients in Non-Critical Care Setting: An Endocrine Society Clinical Pr",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2995313551",
+     "year": 2019,
+     "title": "Questions and controversies in the study of time-varying functional connectivity in resting fMRI",
+     "screening": "não relevante",
+     "reason": "fora do tema (neuroimagem); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2071608556",
+     "year": 2013,
+     "title": "Function in the human connectome: Task-fMRI and individual differences in behavior",
+     "screening": "não relevante",
+     "reason": "fora do tema (neuroimagem); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1779879527",
+     "year": 2015,
+     "title": "Facebook as a research tool for the social sciences: Opportunities, challenges, ethical considerations, and practic",
+     "screening": "não relevante",
+     "reason": "fora do tema (métodos de pesquisa em redes sociais online); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2601774270",
+     "year": 2017,
+     "title": "Moving Forward: Challenges and Directions for Psychopathological Network Theory and Methodology",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicopatologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2255477244",
+     "year": 2016,
+     "title": "The impact model of business intelligence on decision support and organizational benefits",
+     "screening": "não relevante",
+     "reason": "fora do tema (sistemas de informação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2132029553",
+     "year": 2015,
+     "title": "Traumatic Brain Injury Detection Using Electrophysiological Methods",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4242282425",
+     "year": 2019,
+     "title": "Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences",
+     "screening": "não relevante",
+     "reason": "fora do tema (periódico (registro)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4221135099",
+     "year": 2022,
+     "title": "Safety, tolerability and viral kinetics during SARS-CoV-2 human challenge in young adults",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2007748712",
+     "year": 2011,
+     "title": "Therapeutic Alliance and Outcome of Psychotherapy: Historical Excursus, Measurements, and Prospects for Research",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicoterapia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2137567737",
+     "year": 2013,
+     "title": "A Posteriori Comparison of Natural and Surgical Destabilization Models of Canine Osteoarthritis",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina veterinária); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3083287224",
+     "year": 2020,
+     "title": "Trust in Robots: Challenges and Opportunities",
+     "screening": "não relevante",
+     "reason": "fora do tema (robótica); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q07",
+   "query": "bounded confidence autoregressive null model distinguishable",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 560,
+   "returned": [
+    {
+     "id": "W4200172698",
+     "year": 2021,
+     "title": "Parameter estimation and uncertainty analysis in hydrological modeling",
+     "screening": "não relevante",
+     "reason": "fora do tema (hidrologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2111804884",
+     "year": 1999,
+     "title": "A Conceptual Framework for Predictability Studies",
+     "screening": "não relevante",
+     "reason": "fora do tema (climatologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2963352985",
+     "year": 2019,
+     "title": "Statistical modeling methods: challenges and strategies",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística geral); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2632689099",
+     "year": 2017,
+     "title": "Resting-State fMRI Dynamics and Null Models: Perspectives, Sampling Variability, and Simulations",
+     "screening": "não relevante",
+     "reason": "modelos nulos em fMRI; sem influência social"
+    },
+    {
+     "id": "W1999909108",
+     "year": 2005,
+     "title": "Provenance of correlations in psychological data",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2897114607",
+     "year": 2018,
+     "title": "Dynamics-based regression models for the South Atlantic Convergence Zone",
+     "screening": "não relevante",
+     "reason": "fora do tema (climatologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2988205563",
+     "year": 2019,
+     "title": "An open challenge to advance probabilistic forecasting for dengue epidemics",
+     "screening": "não relevante",
+     "reason": "fora do tema (epidemiologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2130774119",
+     "year": 2015,
+     "title": "Do Jumps Matter for Volatility Forecasting? Evidence from Energy Markets",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4307562539",
+     "year": 2022,
+     "title": "A Theory‐Based Analysis of Null Causality between HRM Practices and Outcomes: Evidence from Four‐Wave Longitudinal ",
+     "screening": "não relevante",
+     "reason": "nulo de causalidade em painel de RH (4 ondas); sem influência entre pessoas"
+    },
+    {
+     "id": "W2803375681",
+     "year": 2018,
+     "title": "Stochastic Modeling of Wind Derivatives in Energy Markets",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4367303348",
+     "year": 2023,
+     "title": "Dynamic structural equation models with binary and ordinal outcomes in Mplus",
+     "screening": "não relevante",
+     "reason": "DSEM para desfechos ordinais; método, sem influência social"
+    },
+    {
+     "id": "W1545499910",
+     "year": 2007,
+     "title": "No-Arbitrage Semi-Martingale Restrictions for Continuous-Time Volatility Models subject to Leverage Effects, Jumps ",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4281786804",
+     "year": 2022,
+     "title": "Generative aptamer discovery using RaptGen",
+     "screening": "não relevante",
+     "reason": "fora do tema (bioinformática); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2597327681",
+     "year": 2017,
+     "title": "Differentiating Wheat Genotypes by Bayesian Hierarchical Nonlinear Mixed Modeling of Wheat Root Density",
+     "screening": "não relevante",
+     "reason": "fora do tema (agronomia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1526117138",
+     "year": 1985,
+     "title": "Rational Bubbles in Stock Prices?",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2291308706",
+     "year": 2006,
+     "title": "Location-based estimation of the autoregressive coefficient in ARX(1) models",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2219596751",
+     "year": 2015,
+     "title": "Nonparametric directionality measures for time series and point process data",
+     "screening": "não relevante",
+     "reason": "fora do tema (séries temporais); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4388858191",
+     "year": 2023,
+     "title": "Stealing the Decoding Algorithms of Language Models",
+     "screening": "não relevante",
+     "reason": "fora do tema (segurança de LLM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2775047032",
+     "year": 2018,
+     "title": "Uncertainty across volatility regimes",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4404387843",
+     "year": 2024,
+     "title": "Systematic Review of Generative Modelling Tools and Utility Metrics for Fully Synthetic Tabular Data",
+     "screening": "não relevante",
+     "reason": "fora do tema (dados sintéticos); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q08",
+   "query": "social influence panel data observational equivalence stable traits",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 3609,
+   "returned": [
+    {
+     "id": "W1971772643",
+     "year": 2015,
+     "title": "A critique of the cross-lagged panel model.",
+     "screening": "não relevante",
+     "reason": "crítica ao CLPM; fundamento de nulo traço+AR, sem influência entre pessoas"
+    },
+    {
+     "id": "W3122622199",
+     "year": 2011,
+     "title": "Personality Psychology and Economics",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia/personalidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2587446396",
+     "year": 2017,
+     "title": "The future of Earth observation in hydrology",
+     "screening": "não relevante",
+     "reason": "fora do tema (hidrologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2956992498",
+     "year": 2019,
+     "title": "Challenges to capture the big five personality traits in non-WEIRD populations",
+     "screening": "não relevante",
+     "reason": "fora do tema (personalidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1833090007",
+     "year": 2015,
+     "title": "Trusting the State, Trusting Each Other? The Effect of Institutional Trust on Social Trust",
+     "screening": "não relevante",
+     "reason": "confiança institucional e social; sem modelo de influência"
+    },
+    {
+     "id": "W1603903339",
+     "year": 1999,
+     "title": "Bayesian model averaging: a tutorial (with comments by M. Clyde, David Draper and E. I. George, and a rejoinder by ",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística bayesiana); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2132319517",
+     "year": 2011,
+     "title": "Personality Psychology and Economics",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia/personalidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2105414963",
+     "year": 2009,
+     "title": "Planetary Boundaries: Exploring the Safe Operating Space for Humanity",
+     "screening": "não relevante",
+     "reason": "fora do tema (ciência do clima); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2570564972",
+     "year": 2017,
+     "title": "An overview of structural equation modeling: its beginnings, historical development, usefulness and controversies i",
+     "screening": "não relevante",
+     "reason": "fora do tema (SEM (revisão)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3141544461",
+     "year": 1998,
+     "title": "Evaluating patient-based outcome measures for use in clinical trials.",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2687523731",
+     "year": 2018,
+     "title": "On Direct vs. Indirect Peer Influence in Large Social Networks",
+     "screening": "não relevante",
+     "reason": "influência direta vs. indireta em grandes redes observadas; sem canal de erro nem nulo de persistência"
+    },
+    {
+     "id": "W3110670080",
+     "year": 2020,
+     "title": "Descriptive, Predictive and Explanatory Personality Research: Different Goals, Different Approaches, but a Shared N",
+     "screening": "não relevante",
+     "reason": "fora do tema (personalidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3121874823",
+     "year": 2014,
+     "title": "Peer Influence in the Diffusion of iPhone 3G over a Large Social Network1",
+     "screening": "não relevante",
+     "reason": "influência de pares na difusão do iPhone com rede observada; sem erro de resposta"
+    },
+    {
+     "id": "W1517495738",
+     "year": 2015,
+     "title": "A Large Scale Test of the Effect of Social Class on Prosocial Behavior",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia social experimental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2407390883",
+     "year": 2016,
+     "title": "Do social media foster or curtail adolescents’ empathy? A longitudinal study",
+     "screening": "não relevante",
+     "reason": "fora do tema (mídia e empatia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2106887764",
+     "year": 2015,
+     "title": "ESM 2.0: State of the Art and Future Potential of Experience Sampling Methods in Organizational Research",
+     "screening": "não relevante",
+     "reason": "fora do tema (métodos ESM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2202905384",
+     "year": 2015,
+     "title": "Influence of reward motivation on human declarative memory",
+     "screening": "não relevante",
+     "reason": "fora do tema (neurociência); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2854454445",
+     "year": 2018,
+     "title": "The dark core of personality.",
+     "screening": "não relevante",
+     "reason": "fora do tema (personalidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3108819963",
+     "year": 2020,
+     "title": "MTurk Research: Review and Recommendations",
+     "screening": "não relevante",
+     "reason": "fora do tema (métodos online); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3033513666",
+     "year": 2020,
+     "title": "Networks beyond pairwise interactions: Structure and dynamics",
+     "screening": "não relevante",
+     "reason": "revisão de interações de ordem superior; sem painel nem erro"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q09",
+   "query": "opinion dynamics model validation longitudinal survey response error",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 52139,
+   "returned": [
+    {
+     "id": "W2112042732",
+     "year": 2008,
+     "title": "Technology Acceptance Model 3 and a Research Agenda on Interventions",
+     "screening": "não relevante",
+     "reason": "fora do tema (sistemas de informação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2061289966",
+     "year": 2014,
+     "title": "Consumer Brand Engagement in Social Media: Conceptualization, Scale Development and Validation",
+     "screening": "não relevante",
+     "reason": "fora do tema (marketing); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1525360602",
+     "year": 2006,
+     "title": "Entrepreneurship and Dynamic Capabilities: A Review, Model and Research Agenda*",
+     "screening": "não relevante",
+     "reason": "fora do tema (gestão); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2099641586",
+     "year": 2012,
+     "title": "Dynamics of calling: A longitudinal study of musicians",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia vocacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4296079469",
+     "year": 2022,
+     "title": "A Survey of Ensemble Learning: Concepts, Algorithms, Applications, and Prospects",
+     "screening": "não relevante",
+     "reason": "fora do tema (aprendizado de máquina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2007598609",
+     "year": 2002,
+     "title": "Error Reduction and Performance Improvement in the Emergency Department through Formal Teamwork Training: Evaluatio",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2054326469",
+     "year": 2014,
+     "title": "A survey on robotic devices for upper limb rehabilitation",
+     "screening": "não relevante",
+     "reason": "fora do tema (robótica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3003667836",
+     "year": 2020,
+     "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+     "screening": "não relevante",
+     "reason": "fora do tema (gêmeos digitais); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2003978304",
+     "year": 2013,
+     "title": "The validation of the turnover intention scale",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria organizacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2137689550",
+     "year": 2011,
+     "title": "Improving national cultural indices using a longitudinal meta-analysis of Hofstede's dimensions",
+     "screening": "não relevante",
+     "reason": "fora do tema (cultura nacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2034146766",
+     "year": 1979,
+     "title": "Labor Market Dynamics and Unemployment: A Reconsideration",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do trabalho); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2105828903",
+     "year": 2002,
+     "title": "Structural equation modeling for travel behavior research",
+     "screening": "não relevante",
+     "reason": "fora do tema (transportes); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2126948325",
+     "year": 2011,
+     "title": "Prevalence, Persistence, and Sociodemographic Correlates of DSM-IV Disorders in the National Comorbidity Survey Rep",
+     "screening": "não relevante",
+     "reason": "fora do tema (psiquiatria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1797402740",
+     "year": 2010,
+     "title": "Development and Distortion of Malaysian Public- Private Partnerships: Patronage, Privatised Profits and Pitfalls DO",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia política); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2087131289",
+     "year": 2014,
+     "title": "A Survey of Modelling and Identification of Quadrotor Robot",
+     "screening": "não relevante",
+     "reason": "fora do tema (robótica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2070989922",
+     "year": 2013,
+     "title": "The paths to social licence to operate: An integrative model explaining community acceptance of mining",
+     "screening": "não relevante",
+     "reason": "fora do tema (aceitação social de mineração); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2286593088",
+     "year": 2015,
+     "title": "Dynamics of Environmental and Financial Performance",
+     "screening": "não relevante",
+     "reason": "fora do tema (gestão ambiental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3122976614",
+     "year": 2007,
+     "title": "Consumption over the Life Cycle: Facts from Consumer Expenditure Survey Data",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do consumo); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W1994547427",
+     "year": 2013,
+     "title": "Robustness of the Theory of Planned Behavior in Predicting Entrepreneurial Intentions and Actions",
+     "screening": "não relevante",
+     "reason": "fora do tema (empreendedorismo); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4293870301",
+     "year": 2022,
+     "title": "Dealing with Careless Responding in Survey Data: Prevention, Identification, and Recommended Best Practices",
+     "screening": "não relevante",
+     "reason": "respostas descuidadas em surveys; erro de resposta sem dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "openalex",
+   "query_id": "Q10",
+   "query": "detection threshold social influence panel data simulation",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 36103,
+   "returned": [
+    {
+     "id": "W3121407008",
+     "year": 2021,
+     "title": "Large-scale association analyses identify host factors influencing human gut microbiome composition",
+     "screening": "não relevante",
+     "reason": "fora do tema (genômica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2040373108",
+     "year": 2013,
+     "title": "Large Covariance Estimation by Thresholding Principal Orthogonal Complements",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2150839178",
+     "year": 2007,
+     "title": "Gaze cueing of attention: Visual attention, social cognition, and individual differences.",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia cognitiva); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W4385118605",
+     "year": 2023,
+     "title": "IPCC, 2023: Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assess",
+     "screening": "não relevante",
+     "reason": "fora do tema (clima); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2908002252",
+     "year": 2019,
+     "title": "Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimer’s disease risk",
+     "screening": "não relevante",
+     "reason": "fora do tema (genética); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3046275966",
+     "year": 2020,
+     "title": "Dementia prevention, intervention, and care: 2020 report of the Lancet Commission",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3049046061",
+     "year": 2020,
+     "title": "Thresholds for ecological responses to global change do not emerge from empirical data",
+     "screening": "não relevante",
+     "reason": "fora do tema (ecologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2155419203",
+     "year": 2014,
+     "title": "Big Data: New Tricks for Econometrics",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3016123475",
+     "year": 2020,
+     "title": "A review of vibration-based damage detection in civil structures: From traditional methods to Machine Learning and ",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2794283760",
+     "year": 2018,
+     "title": "Social motivations of live-streaming viewer engagement on Twitch",
+     "screening": "não relevante",
+     "reason": "fora do tema (mídia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2513922847",
+     "year": 2015,
+     "title": "Climate Change 2014 - Synthesis Report",
+     "screening": "não relevante",
+     "reason": "fora do tema (clima); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2082154841",
+     "year": 2015,
+     "title": "Computational Fluid Dynamics for urban physics: Importance, scales, possibilities, limitations and ten tips and tri",
+     "screening": "não relevante",
+     "reason": "fora do tema (dinâmica de fluidos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3065795114",
+     "year": 2020,
+     "title": "Temporal signal and the phylodynamic threshold of SARS-CoV-2",
+     "screening": "não relevante",
+     "reason": "fora do tema (filodinâmica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2537682884",
+     "year": 2017,
+     "title": "Assessing the impacts of 1.5 °C global warming – simulation protocol of the Inter-Sectoral Impact Model Intercompar",
+     "screening": "não relevante",
+     "reason": "fora do tema (clima); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2098756964",
+     "year": 2010,
+     "title": "On making causal claims: A review and recommendations",
+     "screening": "não relevante",
+     "reason": "recomendações sobre alegações causais; sem modelo de influência"
+    },
+    {
+     "id": "W2108344016",
+     "year": 2012,
+     "title": "Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990–2010: a systematic analysis ",
+     "screening": "não relevante",
+     "reason": "fora do tema (epidemiologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3083024126",
+     "year": 2017,
+     "title": "A tutorial on modeling and analysis of dynamic social networks. Part I",
+     "screening": "não relevante",
+     "reason": "tutorial de modelos de redes sociais dinâmicas (dinâmica de opinião sem erro de resposta nem nulo de persistência)"
+    },
+    {
+     "id": "W3140854437",
+     "year": 2021,
+     "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+     "screening": "não relevante",
+     "reason": "fora do tema (aprendizado profundo); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W3018782651",
+     "year": 2020,
+     "title": "Modelling the COVID-19 epidemic and implementation of population-wide interventions in Italy",
+     "screening": "não relevante",
+     "reason": "fora do tema (epidemiologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "W2278233808",
+     "year": 2016,
+     "title": "Detection and attribution of climate extremes in the observed record",
+     "screening": "não relevante",
+     "reason": "fora do tema (clima); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q01",
+   "query": "opinion dynamics panel data measurement error",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 13623,
+   "returned": [
+    {
+     "id": "80d366cab91b",
+     "doi": "10.1016/j.physa.2022.127993",
+     "year": 2022,
+     "title": "Propagation of measurement error in opinion dynamics models: The case of the Deffuant model",
+     "screening": "relevante",
+     "reason": "dinâmica de opinião com erro de medida (ruído, binning, distorção) no Deffuant; lido e incluído como linha 17"
+    },
+    {
+     "id": "ae913e9d35f4",
+     "doi": "10.1177/0049124117701476",
+     "year": 2020,
+     "title": "The Impact of Measurement Error on Wage Decompositions: Evidence From the British Household Panel Survey and t",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia/salários); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "3ec7465c82f1",
+     "doi": "10.1186/s12651-022-00328-1",
+     "year": 2023,
+     "title": "Effects of mixing modes on nonresponse and measurement error in an economic panel survey",
+     "screening": "não relevante",
+     "reason": "modos de coleta e erro de medida em painel econômico; sem dinâmica de opinião"
+    },
+    {
+     "id": "47fc71b3c689",
+     "doi": "10.1016/J.JECONOM.2017.06.003",
+     "year": 2017,
+     "title": "Consistent Estimation of Linear Panel Data Models with Measurement Error",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "5e2266cc3177",
+     "doi": "10.18564/jasss.5204",
+     "year": 2023,
+     "title": "Calibrating an Opinion Dynamics Model to Empirical Opinion Distributions and Transitions",
+     "screening": "relevante (já na matriz)",
+     "reason": "Gestefeld–Lorenz, linha 6"
+    },
+    {
+     "id": "f62498834c24",
+     "doi": "10.1145/3616855.3635729",
+     "year": 2024,
+     "title": "Learning Opinion Dynamics from Data",
+     "screening": "não relevante",
+     "reason": "tese sobre estimação por verossimilhança de ABM de opinião; coberta por Lenti et al. (linha 15)"
+    },
+    {
+     "id": "6d333bb9cd22",
+     "doi": "10.1007/s13278-025-01426-x",
+     "year": 2025,
+     "title": "Modeling public opinion dynamics in social networks using a GAN-SEIR framework",
+     "screening": "não relevante",
+     "reason": "modelo GAN-SEIR de opinião pública; sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "c66b199a8ae5",
+     "doi": "10.1920/WP.CEM.2015.3415",
+     "year": 2015,
+     "title": "Identification and estimation of nonparametric panel data regressions with measurement error",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "46644e7695fb",
+     "doi": "10.14254/1795-6889.2025.21-2.11",
+     "year": 2025,
+     "title": "Does AI vibrancy reshape employment structures and unemployment? Short-run evidence from global panel data",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "15df0d1d68c7",
+     "doi": "10.1080/07350015.2018.1514308",
+     "year": 2016,
+     "title": "Earnings Dynamics and Measurement Error in Matched Survey and Administrative Data",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do trabalho); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "48b19cac32f9",
+     "doi": "10.56294/dm20251144",
+     "year": 2025,
+     "title": "The Concentration of AI Talent as an Industrial Strategy: A Cross-Country Panel Data Analysis Applied to Finan",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "6c4937620387",
+     "doi": "10.1186/S40176-018-0125-7",
+     "year": 2018,
+     "title": "Comparing retrospective and panel data collection methods to assess labor market dynamics",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia do trabalho); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "d602c642f5fe",
+     "arxiv": "2306.17311",
+     "year": 2023,
+     "title": "Opinion Instability and Measurement Errors: A G-Theory Analysis of College Students",
+     "screening": "não relevante",
+     "reason": "instabilidade de opinião vs. erro de medida (teoria G) sem influência social; tema coberto por Hill–Kriesi e Kiley–Vaisey"
+    },
+    {
+     "id": "6bf720dd0e77",
+     "doi": "10.1109/TBDATA.2025.3650059",
+     "year": 2026,
+     "title": "OpenNOD: Modeling Event-Driven Opinion Dynamics in Open Social Networks",
+     "screening": "não relevante",
+     "reason": "dinâmica de opinião em redes abertas orientada a eventos; sem erro de resposta nem nulo"
+    },
+    {
+     "id": "ad48ca662272",
+     "doi": "10.1016/J.JECONOM.2017.06.009",
+     "year": 2017,
+     "title": "Many IVs Estimation of Dynamic Panel Regression Models with Measurement Error",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "99a6c1e87f83",
+     "doi": "10.1016/B978-0-12-814367-4.00006-X",
+     "year": 2019,
+     "title": "Bayesian Estimation of Panel Count Data Models: Dynamics, Latent Heterogeneity, Serial Error Correlation, and ",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "66b2f506e193",
+     "doi": "10.1039/c7cp04464j",
+     "year": 2017,
+     "title": "An efficient algorithm for extracting the magnitude of the measurement error for fractional dynamics.",
+     "screening": "não relevante",
+     "reason": "fora do tema (física/química); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "72b8e89d3b8f",
+     "doi": "10.1109/JSYST.2022.3205724",
+     "year": 2023,
+     "title": "How Does Persuasion Happen? A Novel Bounded Confidence Opinion Dynamics Model Based on Social Judgment Theory",
+     "screening": "não relevante",
+     "reason": "modelo de confiança limitada (julgamento social); sem erro de resposta nem nulo"
+    },
+    {
+     "id": "1736e70f8452",
+     "doi": "10.1093/OXFORDHB/9780199940042.013.0011",
+     "year": 2014,
+     "title": "Measurement Error in Panel Data",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "65763849ea11",
+     "doi": "10.1007/978-1-4614-6871-4_4",
+     "year": 2013,
+     "title": "Measurement Error in the Linear Dynamic Panel Data Model",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q02",
+   "query": "social influence longitudinal survey reliability distinguishability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 10725,
+   "returned": [
+    {
+     "id": "2afacecb2d1b",
+     "doi": "10.3390/jtaer20030192",
+     "year": 2025,
+     "title": "Mobile Banking Adoption: A Multi-Factorial Study on Social Influence, Compatibility, Digital Self-Efficacy, an",
+     "screening": "não relevante",
+     "reason": "fora do tema (adoção de tecnologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "16173ecff5b5",
+     "doi": "10.1080/01634372.2026.2642772",
+     "year": 2026,
+     "title": "Influence of Social Relationship Disruption on the Depression of Chinese Older Adults: A Study Based on the Ch",
+     "screening": "não relevante",
+     "reason": "fora do tema (adoção de tecnologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "b698f190c465",
+     "doi": "10.1080/21645515.2022.2043102",
+     "year": 2022,
+     "title": "A longitudinal study of vaccine hesitancy attitudes and social influence as predictors of COVID-19 vaccine upt",
+     "screening": "não relevante",
+     "reason": "influência social percebida como preditor de vacinação; sem modelo dinâmico nem erro"
+    },
+    {
+     "id": "8db43e372b26",
+     "doi": "10.1080/08959420.2025.2461943",
+     "year": 2025,
+     "title": "Does Social Health Insurance Influence Cognitive Impairments Among Older People? Evidence from Longitudinal Su",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "952b2b49dd69",
+     "doi": "10.1007/s11218-022-09734-2",
+     "year": 2022,
+     "title": "Dynamics between perceived social support and study engagement among primary school students: A three-year lon",
+     "screening": "não relevante",
+     "reason": "fora do tema (educação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "a82982225de4",
+     "doi": "10.30989/ijess.v4i1.2059",
+     "year": 2026,
+     "title": "The Influence Of Perceived Ease Of Use, Perceived Security And Social Influence On Buying Behavior In Investme",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "328bea628c69",
+     "doi": "10.1080/13607863.2020.1822283",
+     "year": 2020,
+     "title": "Continuous participation in social activities as a protective factor against depressive symptoms among older a",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "77ab1a03683f",
+     "doi": "10.1177/1474704920939521",
+     "year": 2020,
+     "title": "Life-History Factors Influence Teenagers’ Suicidal Ideation: A Model Selection Analysis of the Canadian Nation",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "b0bc559accaf",
+     "doi": "10.1080/13645579.2016.1165495",
+     "year": 2017,
+     "title": "Are there differences in responses to social identity questions in face-to-face versus telephone interviews? R",
+     "screening": "não relevante",
+     "reason": "modo de entrevista e respostas; sem dinâmica de opinião"
+    },
+    {
+     "id": "16f810a52bc7",
+     "doi": "10.1016/j.socscimed.2026.119145",
+     "year": 2026,
+     "title": "Social influence on women’s contraceptive use: Population-based, sociocentric network study in rural Uganda",
+     "screening": "não relevante",
+     "reason": "rede sociocêntrica e contracepção; influência observada, sem painel com canal de erro"
+    },
+    {
+     "id": "cf61b3cb7810",
+     "doi": "10.1093/ntr/ntaa207",
+     "year": 2020,
+     "title": "The impact of COVID-19 on smoking patterns in Pakistan: findings from a longitudinal survey of smokers",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "288c57f1308d",
+     "doi": "10.59141/jrssem.v5i1.1001",
+     "year": 2025,
+     "title": "The Influence of Service Quality on Customer Retention (A Survey on Customers of Keziaspot East Jakarta)",
+     "screening": "não relevante",
+     "reason": "fora do tema (marketing); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "e4f84fa0a4b8",
+     "doi": "10.18178/ijssh.2025.15.2.1241",
+     "year": 2025,
+     "title": "Development and Evaluation of a Survey Instrument: Investigating the Influence of Social Media on Body Image P",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "75ccebeb80a3",
+     "doi": "10.3390/bs15060728",
+     "year": 2025,
+     "title": "Acceptance and Use of Technology on Digital Learning Resource Utilization and Digital Literacy Among Chinese E",
+     "screening": "não relevante",
+     "reason": "fora do tema (educação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "8ab3812aea43",
+     "doi": "10.24191/smrj.v18i2.14885",
+     "year": 2021,
+     "title": "MANAGER’S SOCIAL INFLUENCE ON AGGRESSION MANAGEMENT AND ORGANISATIONAL COMMITMENT",
+     "screening": "não relevante",
+     "reason": "fora do tema (gestão); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "25ea40e82362",
+     "doi": "10.61796/icossh.v2i3.94",
+     "year": 2025,
+     "title": "THE INFLUENCE OF SOCIAL SUPPORT AND SPIRITUALITY WITH QUARTER LIFE CRISIS IN PRISONERS",
+     "screening": "não relevante",
+     "reason": "fora do tema (psicologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "f531ceeec99a",
+     "doi": "10.60046/jocrss.v3i1.217",
+     "year": 2025,
+     "title": "The Influence of Right Speech (Samma Vaca) on the Communication Ethics of Buddhist Students on Social Media",
+     "screening": "não relevante",
+     "reason": "fora do tema (comunicação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "919f2fbb0fa8",
+     "doi": "10.47772/ijriss.2025.908000279",
+     "year": 2025,
+     "title": "The Influence of Government Accounting Standards and Human Resource Competence on the Quality of Financial Sta",
+     "screening": "não relevante",
+     "reason": "fora do tema (contabilidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1bc52bb63337",
+     "doi": "10.34190/ecsm.12.1.3464",
+     "year": 2025,
+     "title": "Influence of Social Media Platforms on the Purchase Decisions of Luxury Apparel",
+     "screening": "não relevante",
+     "reason": "fora do tema (marketing); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "286144962284",
+     "doi": "10.1016/j.im.2017.04.003",
+     "year": 2017,
+     "title": "Likes - The key to my happiness: The moderating effect of social influence on travel experience",
+     "screening": "não relevante",
+     "reason": "fora do tema (turismo); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q03",
+   "query": "bounded confidence model panel survey identifiability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 1437,
+   "returned": [
+    {
+     "id": "be304e57f19b",
+     "arxiv": "2506.11751",
+     "year": 2025,
+     "title": "Bias and Identifiability in the Bounded Confidence Model",
+     "screening": "relevante (já na matriz)",
+     "reason": "Borile et al., linha 14"
+    },
+    {
+     "id": "106b4e70f377",
+     "arxiv": "2210.08012",
+     "year": 2022,
+     "title": "A geospatial bounded confidence model including mega-influencers with an application to Covid-19 vaccine hesit",
+     "screening": "não relevante",
+     "reason": "BCM geoespacial com megainfluenciadores; sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "ef26a50ba45f",
+     "doi": "10.1016/j.jpsychires.2025.03.015",
+     "year": 2025,
+     "title": "Increased risk of herpes zoster associated with stress and sleep deprivation: Evidence from korea health panel",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "5a1a88b87fc8",
+     "doi": "10.1044/2025_AJSLP-24-00498",
+     "year": 2025,
+     "title": "Speech-Language Therapists' Training, Confidence, and Barriers When Serving Bilingual Children: Development an",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "caae6be17b63",
+     "doi": "10.1016/j.sleep.2023.06.012",
+     "year": 2023,
+     "title": "Sleep duration, sleep quality and the risk of being obese: Evidence from the Australian panel survey.",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "b9614dc32c16",
+     "doi": "10.1080/21645515.2025.2533639",
+     "year": 2025,
+     "title": "From institutional trust to digital literacy: Socioeconomic and political determinants of COVID-19 vaccine hes",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "f43e52058bdf",
+     "doi": "10.1093/inthealth/ihaf078",
+     "year": 2025,
+     "title": "Social ties, employment and mental health in people with disabilities in Korea: evidence from a 2016–2018 pane",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "7d6e75804df2",
+     "doi": "10.1016/j.urology.2025.09.014",
+     "year": 2025,
+     "title": "Economic Burden of Urinary Incontinence in Men with Prostate Cancer: Results from the Medical Expenditure Pane",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "e004d9b2eb4f",
+     "doi": "10.1097/MD.0000000000045378",
+     "year": 2025,
+     "title": "Prognostic factors for early identification of asthma: Analysis of the Korean Health Panel Survey (2014–2018)",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "b9d455da370a",
+     "doi": "10.1371/journal.pmen.0000644",
+     "year": 2026,
+     "title": "Patterns and determinants of formal healthcare utilisation among individuals with and without proxy-identified",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "efd5a3fa43d0",
+     "doi": "10.3390/healthcare10071192",
+     "year": 2022,
+     "title": "Factors Affecting Korean Medicine Health Care Use for Functional Dyspepsia: Analysis of the Korea Health Panel",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "9470b770021b",
+     "doi": "10.59139/ws.2023.02.1",
+     "year": 2023,
+     "title": "Backward assessments or expectations: what determines the consumer confidence index more strongly? Panel model",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "91bcc06a803e",
+     "doi": "10.2188/jea.JE20240197",
+     "year": 2025,
+     "title": "Association Between Informal Caregiving and Changes in Cardiovascular-related Health Behaviors Among Middle-ag",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "6abf9348c41b",
+     "doi": "10.1097/MD.0000000000034863",
+     "year": 2023,
+     "title": "Association between pain burden and presence of any limitation among older adults (≥50 years of age) with pain",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "bf5353cad376",
+     "doi": "10.1097/RHU.0000000000002177",
+     "year": 2024,
+     "title": "Allopurinol Adherence in US Patients with Gout: Analysis of the Medical Expenditure Panel Survey, 2018–2021",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "fedec046935d",
+     "year": 2024,
+     "title": "Food Security and Mental Health in the United States: Evidence from the Medical Expenditure Panel Survey.",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "486c0a85bdb9",
+     "doi": "10.1186/s12889-021-11309-3",
+     "year": 2021,
+     "title": "Changes in child abuse experience associated to sleep quality: results of the Korean Children & Youth Panel Su",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "8a20a5a47679",
+     "doi": "10.1097/JOM.0000000000003029",
+     "year": 2023,
+     "title": "Productivity Loss Among Opioid and Benzodiazepine Users in the United States: A Medical Expenditure Panel Surv",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "05edd55a484d",
+     "doi": "10.1016/j.whi.2026.05.001",
+     "year": 2026,
+     "title": "Primary Care Utilization After Pregnancies Complicated by Hypertension and Diabetes: An Analysis of the Medica",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde (painel)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "13ab2c1d3620",
+     "doi": "10.1186/s12874-023-02137-7",
+     "year": 2024,
+     "title": "Inconsistencies in self-reported diabetes in a large panel study: the Survey of Health, Ageing and Retirement ",
+     "screening": "não relevante",
+     "reason": "inconsistência de autorrelato em painel de saúde; erro de resposta sem dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q04",
+   "query": "opinion dynamics null model persistence panel",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 429,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "s2",
+   "query_id": "Q05",
+   "query": "social influence detectability measurement error simulation",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 21048,
+   "returned": [
+    {
+     "id": "not-printed:Q05:01",
+     "doi": "10.1080/00949655.2022.2075362",
+     "year": 2022,
+     "title": "The joint influence of estimation of sensitive variable under measurement error and non-response using OR",
+     "screening": "não relevante",
+     "reason": "fora do tema (amostragem de variáveis sensíveis); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:02",
+     "doi": "10.1080/03610918.2023.2205063",
+     "year": 2023,
+     "title": "Local influence in linear mixed measurement error models with ridge estimation",
+     "screening": "não relevante",
+     "reason": "fora do tema (modelos de erro de medida mistos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:03",
+     "doi": "10.1080/03610918.2024.2407880",
+     "year": 2024,
+     "title": "Functional partially linear single index models with measurement error in both functional and real covari",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística funcional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:04",
+     "doi": "10.1088/1361-6501/ad89eb",
+     "year": 2024,
+     "title": "LC dynamic signal modeling and analysis of resonant frequency measurement error under rapid eye movements",
+     "screening": "não relevante",
+     "reason": "fora do tema (sensores médicos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:05",
+     "doi": "10.71317/jgst.2.9.2026.547",
+     "year": 2026,
+     "title": "Robust and Machine Learning Augmented Estimation of Finite-Population Variance using Auxiliary Informatio",
+     "screening": "não relevante",
+     "reason": "fora do tema (amostragem); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:06",
+     "doi": "10.1007/s42519-022-00251-1",
+     "year": 2022,
+     "title": "Using Randomized Response to Estimate the Population Mean of a Sensitive Variable under the Influence of ",
+     "screening": "não relevante",
+     "reason": "fora do tema (resposta aleatorizada); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:07",
+     "doi": "10.1186/s13089-025-00424-6",
+     "year": 2025,
+     "title": "Examiner experience moderates reliability of human lower extremity muscle ultrasound measurement – a doub",
+     "screening": "não relevante",
+     "reason": "fora do tema (ultrassom); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:08",
+     "doi": "10.1109/tcss.2021.3092694",
+     "year": 2022,
+     "title": "Social Influence Network Simulation Design Affects Behavior of Aggregated Entropy",
+     "screening": "não relevante",
+     "reason": "desenho de simulação de rede de influência e entropia agregada; sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "not-printed:Q05:09",
+     "doi": "10.1088/1361-6501/addf67",
+     "year": 2025,
+     "title": "Analysis of random error influencing factors in the three-point method for center of mass measurement",
+     "screening": "não relevante",
+     "reason": "fora do tema (metrologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:10",
+     "doi": "10.1080/03610918.2024.2333355",
+     "year": 2025,
+     "title": "Simultaneous variable selection and parameters estimation for longitudinal data subject to missingness an",
+     "screening": "não relevante",
+     "reason": "fora do tema (dados longitudinais com faltantes (bioestatística)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:11",
+     "doi": "10.1080/03610918.2021.1926502",
+     "year": 2021,
+     "title": "Influence measures and outliers detection in linear mixed measurement error models with Ridge estimation",
+     "screening": "não relevante",
+     "reason": "fora do tema (diagnóstico de influência em regressão); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:12",
+     "doi": "10.1109/TIM.2025.3593559",
+     "year": 2025,
+     "title": "Performance Study of the Six-Component Piezoelectric Helicopter Rotor Balance Vector Test System Consider",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:13",
+     "doi": "10.1088/1361-6501/adc760",
+     "year": 2025,
+     "title": "Measurement error compensation method for TDOA-based localization under non-line-of-sight conditions",
+     "screening": "não relevante",
+     "reason": "fora do tema (localização por sensores); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:14",
+     "doi": "10.1080/03610918.2024.2408624",
+     "year": 2024,
+     "title": "Performance evaluation of extended EWMA control chart in the presence of measurement error",
+     "screening": "não relevante",
+     "reason": "fora do tema (controle de qualidade); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:15",
+     "doi": "10.1007/s10742-022-00293-9",
+     "year": 2022,
+     "title": "Sample size recommendations for studies on reliability and measurement error: an online application based",
+     "screening": "não relevante",
+     "reason": "tamanho amostral para estudos de confiabilidade (clínico); sem influência social"
+    },
+    {
+     "id": "not-printed:Q05:16",
+     "doi": "10.1080/03610918.2015.1122047",
+     "year": 2017,
+     "title": "Mean shift and influence measures in linear measurement error models with stochastic linear restrictions",
+     "screening": "não relevante",
+     "reason": "fora do tema (regressão com erro de medida); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:17",
+     "doi": "10.1088/1361-6501/ac9db0",
+     "year": 2022,
+     "title": "A 3D radius compensation method to reduce the influence of probe fluctuation error in blade space curve m",
+     "screening": "não relevante",
+     "reason": "fora do tema (metrologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q05:18",
+     "doi": "10.1017/nws.2020.36",
+     "year": 2020,
+     "title": "Sensitivity analysis for network observations with applications to inferences of social influence effects",
+     "screening": "relevante",
+     "reason": "erro/viés na rede observada em inferências de influência social; incluído como linha 18 (resumo)"
+    },
+    {
+     "id": "not-printed:Q05:19",
+     "doi": "10.1111/JOES.12256",
+     "year": 2018,
+     "title": "Credibly Identifying Social Effects: Accounting for Network Formation and Measurement Error",
+     "screening": "relevante",
+     "reason": "identificação de efeitos sociais com rede endógena e erro de medida da rede; incluído como linha 19 (resumo)"
+    },
+    {
+     "id": "not-printed:Q05:20",
+     "doi": "10.1109/TSG.2021.3077693",
+     "year": 2021,
+     "title": "Online Smart Meter Measurement Error Estimation Based on EKF and LMRLS Method",
+     "screening": "não relevante",
+     "reason": "fora do tema (redes elétricas); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q06",
+   "query": "opinion dynamics test-retest reliability agent-based model",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 391,
+   "returned": [
+    {
+     "id": "347a5f1305cf",
+     "doi": "10.18254/s207751800028247-0",
+     "year": 2023,
+     "title": "Opinion Dynamics and Social Group Information Efficiency: an agent-based model",
+     "screening": "não relevante",
+     "reason": "ABM de opinião e eficiência informacional; sem erro de resposta nem nulo"
+    },
+    {
+     "id": "88b40aa0dfd5",
+     "doi": "10.55056/ceur-ws.org/vol-4164/paper14.pdf",
+     "year": 2026,
+     "title": "Selecting a Simulation Runtime for Opinion Dynamics: Evaluating Elixir for Agent-Based Models",
+     "screening": "não relevante",
+     "reason": "fora do tema (software de simulação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "33169f9e7abc",
+     "arxiv": "2003.05929",
+     "year": 2020,
+     "title": "An agent-based model of multi-dimensional opinion dynamics and opinion alignment",
+     "screening": "não relevante",
+     "reason": "ABM de opinião multidimensional; sem erro nem nulo"
+    },
+    {
+     "id": "e6d59b5b7e27",
+     "doi": "10.2139/ssrn.4316574",
+     "year": 2023,
+     "title": "Studying Narrative Economics by Adding Continuous-Time Opinion Dynamics to an Agent-Based Model of Co-Evolutio",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia narrativa); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "4e668633c597",
+     "doi": "10.1161/str.55.suppl_1.tp25",
+     "year": 2024,
+     "title": "Abstract TP25: Model-Free Dynamic Contrast-Enhanced MRI in Cerebral Small Vessel Disease: Test-Retest Reliabil",
+     "screening": "não relevante",
+     "reason": "fora do tema (medicina); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "7fc56a791702",
+     "doi": "10.1007/s11571-025-10391-2",
+     "year": 2025,
+     "title": "Short-term and long-term test-retest reliability of memory, complexity, and randomness of EEG microstates sequ",
+     "screening": "não relevante",
+     "reason": "fora do tema (neurociência); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "7f75242d63da",
+     "doi": "10.18564/jasss.5212",
+     "year": 2024,
+     "title": "An Exploration of Drivers of Opinion Dynamics",
+     "screening": "não relevante",
+     "reason": "exploração de determinantes de dinâmica de opinião; sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "1ab288c7ecb2",
+     "doi": "10.2139/ssrn.6576098",
+     "year": 2026,
+     "title": "Opinion Dynamics in Repeated Interaction Experiments",
+     "screening": "não relevante",
+     "reason": "experimento de interação repetida com exposição observada; sem painel observacional nem erro de resposta"
+    },
+    {
+     "id": "a6bf2408a52d",
+     "doi": "10.1093/jas/skae234.291",
+     "year": 2024,
+     "title": "446 A stochastic, dynamic agent-based model of swine nutrient requirements for the growing finishing productio",
+     "screening": "não relevante",
+     "reason": "fora do tema (zootecnia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2866db0d2d70",
+     "doi": "10.1371/journal.pone.0155098",
+     "year": 2016,
+     "title": "Quantitative Agent Based Model of Opinion Dynamics: Polish Elections of 2015",
+     "screening": "não relevante",
+     "reason": "ABM quantitativo de eleições; sem erro de resposta nem nulo"
+    },
+    {
+     "id": "0421f8a03f15",
+     "doi": "10.1007/978-3-319-96661-8_12",
+     "year": 2018,
+     "title": "Selecting Information in Financial Markets Herding and Opinion Swings in a Heterogeneous Mimetic Rational Agen",
+     "screening": "não relevante",
+     "reason": "fora do tema (finanças); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1cef785f4c29",
+     "doi": "10.1109/TCSS.2024.3508452",
+     "year": 2025,
+     "title": "Unveiling Agents’ Confidence in Opinion Dynamics Models via Graph Neural Networks",
+     "screening": "não relevante",
+     "reason": "inferência de confiança de agentes por GNN; sem erro de resposta nem nulo"
+    },
+    {
+     "id": "a6cd012155ce",
+     "doi": "10.1109/ICOSEC49089.2020.9215409",
+     "year": 2020,
+     "title": "A Mathematical Model to determine the Reliability Percentage of a Statement using the Bounded Confidence of Op",
+     "screening": "não relevante",
+     "reason": "confiabilidade de afirmação via BCM; sem painel"
+    },
+    {
+     "id": "686891be7b4b",
+     "arxiv": "2104.06737",
+     "year": 2021,
+     "title": "Natural-Language Multi-Agent Simulations of Argumentative Opinion Dynamics",
+     "screening": "não relevante",
+     "reason": "simulação multiagente com linguagem natural; sem erro nem nulo"
+    },
+    {
+     "id": "f50300641257",
+     "arxiv": "2607.17948",
+     "year": 2026,
+     "title": "Towards Agentic Agent-based Models: Feasibility, Performance, and Statistical Model Checking",
+     "screening": "não relevante",
+     "reason": "fora do tema (ABM com LLM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "daffcca2bdc9",
+     "doi": "10.1016/j.jneumeth.2026.110912",
+     "year": 2026,
+     "title": "A tube-restriction test: A candidate impulsivity-related assay based on nose-poke behavior dynamics.",
+     "screening": "não relevante",
+     "reason": "fora do tema (neurociência); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1b8de1c6f18a",
+     "arxiv": "2604.03898",
+     "year": 2026,
+     "title": "LLM-Agent-based Social Simulation for Attitude Diffusion",
+     "screening": "não relevante",
+     "reason": "simulação social com agentes LLM; sem erro de resposta nem nulo"
+    },
+    {
+     "id": "0cad43672cb1",
+     "doi": "10.5220/0015183700004094",
+     "year": 2026,
+     "title": "Toward Verifiable Audience Digital Twins: An Agent-Based Architecture Integrating COM-B and ELM",
+     "screening": "não relevante",
+     "reason": "fora do tema (ABM com LLM/marketing); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "6ad952cf7e5d",
+     "doi": "10.3390/IJGI9100581",
+     "year": 2020,
+     "title": "Supporting Policy Design for the Diffusion of Cleaner Technologies: A Spatial Empirical Agent-Based Model",
+     "screening": "não relevante",
+     "reason": "fora do tema (difusão tecnológica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "bce123b9d82a",
+     "doi": "10.1371/journal.pone.0265251",
+     "year": 2022,
+     "title": "Using agent-based modeling to compare corrective actions for Listeria contamination in produce packinghouses",
+     "screening": "não relevante",
+     "reason": "fora do tema (segurança alimentar); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q07",
+   "query": "bounded confidence autoregressive null model distinguishable",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 248,
+   "returned": [
+    {
+     "id": "6f4475bd625e",
+     "doi": "10.1371/journal.pone.0324721",
+     "year": 2025,
+     "title": "Modified Kumaraswamy seasonal autoregressive moving average models with exogenous regressors for double-bounde",
+     "screening": "não relevante",
+     "reason": "fora do tema (séries temporais); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "be392f306275",
+     "arxiv": "2604.12247",
+     "year": 2026,
+     "title": "SpecBound: Adaptive Bounded Self-Speculation with Layer-wise Confidence Calibration",
+     "screening": "não relevante",
+     "reason": "fora do tema (LLM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "556280e5eab2",
+     "doi": "10.1007/s10144-017-0574-5",
+     "year": 2017,
+     "title": "Bounded random walks as a null model for evaluating population trends",
+     "screening": "não relevante",
+     "reason": "passeio aleatório limitado como nulo de tendências populacionais (ecologia); sem influência social"
+    },
+    {
+     "id": "2d206633668a",
+     "arxiv": "2602.18952",
+     "year": 2026,
+     "title": "MDM-ASR: Bridging Accuracy and Efficiency in ASR with Diffusion-Based Non-Autoregressive Decoding",
+     "screening": "não relevante",
+     "reason": "fora do tema (reconhecimento de fala); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "5e4d864bef68",
+     "doi": "10.47191/ijmei/v9i2.04",
+     "year": 2023,
+     "title": "The Impact of Economic Growth on Poverty Reduction in Kenya: Empirical Analysis Using Autoregressive Distribut",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "01ea91034037",
+     "doi": "10.3390/jcp6050163",
+     "year": 2026,
+     "title": "Raw CVE/CWE Retrieval Does Not Improve LLM-Based Vulnerability Detection in Python: A Pre-Specified Null Resul",
+     "screening": "não relevante",
+     "reason": "fora do tema (segurança de LLM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "64fea2daceb4",
+     "arxiv": "2604.26992",
+     "year": 2026,
+     "title": "Adaptive Confidence Intervals in Efron's Gaussian Two-Groups Model",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "9cb3b97224fe",
+     "year": 2019,
+     "title": "Adaptive consistent unit root tests based on autoregressive threshold model",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "5fdb0f195069",
+     "title": "Robust conﬁdence interval for random coeﬃcient autoregressive model with bootstrap method",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1b155c355e47",
+     "doi": "10.55606/sscj-amik.v4i2.6141",
+     "year": 2026,
+     "title": "Consumer Confidence, Islamic Msme Financing, Inflation, Ramadan, And Real Sales: ARDL",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "4109b9cf6797",
+     "doi": "10.1007/s11749-022-00825-y",
+     "year": 2022,
+     "title": "Analysis of zero-and-one inflated bounded count time series with applications to climate and crime data",
+     "screening": "não relevante",
+     "reason": "fora do tema (séries temporais); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "a0ecbf808175",
+     "doi": "10.1016/j.ijar.2022.12.005",
+     "year": 2022,
+     "title": "Fisher's disjunction as the principle vindicating p-values, confidence intervals, and their generalizations: A",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "fb90c152956d",
+     "arxiv": "2605.09569",
+     "year": 2026,
+     "title": "Minimax optimal submatrix detection: Sharp non-asymptotic rates",
+     "screening": "não relevante",
+     "reason": "fora do tema (estatística); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "05cfe249e88a",
+     "year": 2015,
+     "title": "Differentially Private Least Squares: Estimation, Confidence and Rejecting the Null Hypothesis",
+     "screening": "não relevante",
+     "reason": "fora do tema (privacidade diferencial); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "45f6db8d8a1a",
+     "year": 2015,
+     "title": "Differentially Private Ordinary Least Squares: $t$-Values, Confidence Intervals and Rejecting Null-Hypotheses",
+     "screening": "não relevante",
+     "reason": "fora do tema (privacidade diferencial); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "e745e69fffd0",
+     "arxiv": "2210.07424",
+     "year": 2022,
+     "title": "Autoregressive Uncertainty Modeling for 3D Bounding Box Prediction",
+     "screening": "não relevante",
+     "reason": "fora do tema (visão computacional); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "90ed5f293b8b",
+     "doi": "10.1016/j.energy.2020.117159",
+     "year": 2020,
+     "title": "Forecasting based on an ensemble Autoregressive Moving Average - Adaptive neuro - Fuzzy inference system – Neu",
+     "screening": "não relevante",
+     "reason": "fora do tema (previsão energética); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "599c7c1060dc",
+     "doi": "10.2139/SSRN.2150172",
+     "year": 2012,
+     "title": "On Confidence Intervals for Autoregressive Roots and Predictive Regression",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "a2ddb19fb987",
+     "arxiv": "2609.29548",
+     "year": 2026,
+     "title": "Certified Predictive Value-of-Advice Gating for Cost-Aware Language-Model Guidance in Reinforcement Learning",
+     "screening": "não relevante",
+     "reason": "fora do tema (aprendizado por reforço); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1b45443074aa",
+     "doi": "10.1007/s10519-012-9560-z",
+     "year": 2012,
+     "title": "Adjusted Confidence Intervals for a Bounded Parameter",
+     "screening": "não relevante",
+     "reason": "fora do tema (genética); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q08",
+   "query": "social influence panel data observational equivalence stable traits",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 429,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "s2",
+   "query_id": "Q09",
+   "query": "opinion dynamics model validation longitudinal survey response error",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 252,
+   "returned": [
+    {
+     "id": "not-printed:Q09:01",
+     "doi": "10.1088/1742-6596/3126/1/012051",
+     "year": 2025,
+     "title": "Credibility study of vehicle dynamics model based on virtual-reality fusion test",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia automotiva); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:02",
+     "doi": "10.54554/jmet.2025.17.01.004",
+     "year": 2026,
+     "title": "VALIDATION OF A 12-DOF TRACTOR-SEMITRAILER LONGITUDINAL MODEL USING EXPERIMENTAL DATA FOR LOAD TRANSFER A",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia automotiva); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:03",
+     "doi": "10.1002/psp4.12594",
+     "year": 2021,
+     "title": "Early predictions of response and survival from a tumor dynamics model in patients with recurrent, metast",
+     "screening": "não relevante",
+     "reason": "fora do tema (oncologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:04",
+     "doi": "10.1289/EHP15660",
+     "year": 2025,
+     "title": "Effects of Long-Term Air Pollution Exposure on Disease Outcomes and Hybrid Immune Responses in SARS-CoV-2",
+     "screening": "não relevante",
+     "reason": "fora do tema (epidemiologia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:05",
+     "arxiv": "2609.19913",
+     "year": 2026,
+     "title": "Digital Twins for Opinion Dynamics: A Generative LLM Framework for Social Networks",
+     "screening": "não relevante",
+     "reason": "gêmeos digitais de opinião com LLM; sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "not-printed:Q09:06",
+     "doi": "10.1016/J.YMSSP.2018.09.032",
+     "year": 2019,
+     "title": "Establishment and validation of a locomotive–track coupled spatial dynamics model considering dynamic eff",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia ferroviária); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:07",
+     "arxiv": "2506.20622",
+     "year": 2025,
+     "title": "An entropy-initiated coupled-trait ODE framework for modeling longitudinal cohort dynamics",
+     "screening": "não relevante",
+     "reason": "ODE para dados de coorte longitudinais; sem influência social"
+    },
+    {
+     "id": "not-printed:Q09:08",
+     "doi": "10.1038/s41598-025-32727-y",
+     "year": 2026,
+     "title": "Longitudinal monitoring of twenty homes reveals spatiotemporal dynamics which require new models of disco",
+     "screening": "não relevante",
+     "reason": "fora do tema (energia); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:09",
+     "doi": "10.38124/ijisrt/26may130",
+     "year": 2026,
+     "title": "PSO-Based Optimal Tuning of P, PI, PD, and PID Controllers for Aircraft Longitudinal Dynamics: A Comparat",
+     "screening": "não relevante",
+     "reason": "fora do tema (controle aeronáutico); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:10",
+     "doi": "10.3311/pptr.41190",
+     "year": 2025,
+     "title": "Validation of a Small UAV Dynamic Model Using CFD and Flight Test Data",
+     "screening": "não relevante",
+     "reason": "fora do tema (aeronáutica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:11",
+     "doi": "10.1136/bmjopen-2024-090686",
+     "year": 2024,
+     "title": "DYnamics of Contraception in Eswatini (DYCE): protocol for a high-frequency, longitudinal cell phone surv",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde reprodutiva (protocolo)); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:12",
+     "doi": "10.1109/RAST69551.2026.11672457",
+     "year": 2026,
+     "title": "Trim-Point Stability Assessment and Fault-Tolerant Control Validation of a FW-eVTOL Aircraft",
+     "screening": "não relevante",
+     "reason": "fora do tema (aeronáutica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:13",
+     "doi": "10.3390/wevj15100433",
+     "year": 2024,
+     "title": "Model Predictive Control with Powertrain Delay Consideration for Longitudinal Speed Tracking of Autonomou",
+     "screening": "não relevante",
+     "reason": "fora do tema (veículos autônomos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:14",
+     "doi": "10.1016/J.MEASUREMENT.2021.109541",
+     "year": 2021,
+     "title": "Data-driven vehicle modeling of longitudinal dynamics based on a multibody model and deep neural networks",
+     "screening": "não relevante",
+     "reason": "fora do tema (engenharia automotiva); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:15",
+     "year": 1998,
+     "title": "LOGISTIC MODELLING OF LONGITUDINAL SURVEY DATA WITH MEASUREMENT ERROR",
+     "screening": "não relevante",
+     "reason": "regressão logística com erro de medida em survey longitudinal (1998); sem influência social"
+    },
+    {
+     "id": "not-printed:Q09:16",
+     "year": 2013,
+     "title": "Modelling Optimum Response in a Longitudinal Survey",
+     "screening": "não relevante",
+     "reason": "fora do tema (desenho de survey longitudinal); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:17",
+     "year": 2016,
+     "title": "A General Social Agent-Based Model of Opinion Dynamics with Applications to STEM Education and Radicaliza",
+     "screening": "não relevante",
+     "reason": "ABM geral de opinião com aplicações; sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "not-printed:Q09:18",
+     "doi": "10.1109/TNSE.2026.3703066",
+     "year": 2026,
+     "title": "Adaptive Control of Negative Emotion Propagation in Public Opinion: A Hybrid Approach Integrating Stochas",
+     "screening": "não relevante",
+     "reason": "controle de propagação de emoções em opinião online; sem painel com erro"
+    },
+    {
+     "id": "not-printed:Q09:19",
+     "doi": "10.56338/mppki.v9i9.10864",
+     "year": 2026,
+     "title": "Preliminary Validation of a Safety Culture Maturity Measurement Model and Conceptual Roadmap for Garment ",
+     "screening": "não relevante",
+     "reason": "fora do tema (cultura de segurança); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q09:20",
+     "arxiv": "2111.13370",
+     "year": 2021,
+     "title": "Hidden Markov models for longitudinal rating data with dynamic response styles",
+     "screening": "não relevante",
+     "reason": "HMM para avaliações longitudinais com estilos de resposta dinâmicos; erro de resposta sem influência social"
+    }
+   ]
+  },
+  {
+   "api": "s2",
+   "query_id": "Q10",
+   "query": "detection threshold social influence panel data simulation",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 1099,
+   "returned": [
+    {
+     "id": "not-printed:Q10:01",
+     "doi": "10.1007/s10260-026-00842-3",
+     "year": 2026,
+     "title": "A three-way dynamic panel threshold regression model for change point detection in bioimpedance data",
+     "screening": "não relevante",
+     "reason": "fora do tema (bioimpedância); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:02",
+     "doi": "10.7716/aem.v15i3.4039",
+     "year": 2026,
+     "title": "Simulation Study on Peak Path of Tourism Carbon Emissions Introduced by System Dynamics and Panel Th",
+     "screening": "não relevante",
+     "reason": "fora do tema (emissões de turismo); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:03",
+     "doi": "10.1109/iThings-GreenCom-CPSCom-SmartData-Cybermatics62450.2024.00046",
+     "year": 2024,
+     "title": "Prediction of Social Influence in Social Networks",
+     "screening": "não relevante",
+     "reason": "predição de influência em redes sociais online; sem painel com erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "not-printed:Q10:04",
+     "doi": "10.1186/s12967-026-08652-7",
+     "year": 2026,
+     "title": "Variance-aware penalized panel models for temporal risk detection from wearable sensor data.",
+     "screening": "não relevante",
+     "reason": "fora do tema (sensores vestíveis); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:05",
+     "doi": "10.1109/TIM.2023.3335520",
+     "year": 2024,
+     "title": "Semantic Segmentation-Based Intelligent Threshold-Free Feeder Detection Method for Single-Phase Grou",
+     "screening": "não relevante",
+     "reason": "fora do tema (sistemas elétricos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:06",
+     "doi": "10.3390/s24020330",
+     "year": 2024,
+     "title": "Assessing the Influence of Sensor-Induced Noise on Machine-Learning-Based Changeover Detection in CN",
+     "screening": "não relevante",
+     "reason": "fora do tema (manufatura); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:07",
+     "doi": "10.1109/ICIPS64173.2024.10900317",
+     "year": 2024,
+     "title": "The Improvement of wavelet threshold method and its application in geological radar detection",
+     "screening": "não relevante",
+     "reason": "fora do tema (geofísica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:08",
+     "doi": "10.1038/s41598-025-96322-x",
+     "year": 2025,
+     "title": "Estimation of common breaks in linear panel data models via screening and ranking algorithm",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria de quebras); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:09",
+     "doi": "10.1007/s11042-017-4890-8",
+     "year": 2017,
+     "title": "Social influence determination on big data streams in an online social network",
+     "screening": "não relevante",
+     "reason": "determinação de influência em fluxos de dados de rede online; sem painel com erro"
+    },
+    {
+     "id": "not-printed:Q10:10",
+     "doi": "10.1177/20552076261460659",
+     "year": 2026,
+     "title": "Dynamic identity management in online health communities: How illness stage moderates the effects of",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde online); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:11",
+     "doi": "10.1007/s11042-017-4890-8",
+     "year": 2017,
+     "title": "Social influence determination on big data streams in an online social network",
+     "screening": "não relevante",
+     "reason": "duplicata do item 9 no retorno da API"
+    },
+    {
+     "id": "not-printed:Q10:12",
+     "doi": "10.1007/s13042-025-02816-5",
+     "year": 2026,
+     "title": "Towards efficient optimization of multi-agent social simulation via large language models",
+     "screening": "não relevante",
+     "reason": "otimização de simulação social com LLM; sem erro de resposta nem nulo"
+    },
+    {
+     "id": "not-printed:Q10:13",
+     "doi": "10.3390/ijerph18158050",
+     "year": 2021,
+     "title": "How Does Income Inequality Influence Environmental Regulation in the Context of Corruption? A Panel ",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia ambiental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:14",
+     "doi": "10.1371/journal.pgph.0005689",
+     "year": 2026,
+     "title": "Factors that influence acute malnutrition detection and treatment by community health promoters in S",
+     "screening": "não relevante",
+     "reason": "fora do tema (saúde pública); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:15",
+     "doi": "10.1109/RO-MAN63969.2025.11217811",
+     "year": 2025,
+     "title": "Social Robots for Bed-Fall Detection in Hospitals",
+     "screening": "não relevante",
+     "reason": "fora do tema (robótica); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:16",
+     "doi": "10.1111/1477-8947.12463",
+     "year": 2024,
+     "title": "Exploring the nexus of globalization and natural resource scarcity in driving green technology innov",
+     "screening": "não relevante",
+     "reason": "fora do tema (economia ambiental); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:17",
+     "doi": "10.1080/10618600.2024.2433672",
+     "year": 2024,
+     "title": "Quantile Regression and Homogeneity Identification of a Semiparametric Panel Data Model",
+     "screening": "não relevante",
+     "reason": "fora do tema (econometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:18",
+     "doi": "10.1109/TSP.2022.3188205",
+     "year": 2022,
+     "title": "Joint Detection Threshold Optimization and Illumination Time Allocation Strategy for Cognitive Track",
+     "screening": "não relevante",
+     "reason": "fora do tema (radar); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:19",
+     "doi": "10.1007/s42001-024-00279-2",
+     "year": 2024,
+     "title": "Detection and context reconstruction of sub-events that influence the course of a news event from mi",
+     "screening": "não relevante",
+     "reason": "fora do tema (detecção de eventos em notícias); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "not-printed:Q10:20",
+     "doi": "10.1016/J.JECONOM.2020.05.001",
+     "year": 2020,
+     "title": "Detection of units with pervasive effects in large panel data models",
+     "screening": "não relevante",
+     "reason": "detecção de unidades com efeitos difusos em painéis (econometria); sem dinâmica de opinião nem erro de resposta"
+    }
+   ]
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q01",
+   "query": "\"opinion dynamics\" panel \"measurement error\"",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 0,
+   "returned": []
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q02",
+   "query": "\"social influence\" longitudinal reliability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 0,
+   "returned": []
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q03",
+   "query": "\"bounded confidence\" identifiability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 16,
+   "returned": [
+    {
+     "id": "2606.28318",
+     "year": 2026,
+     "title": "Drift Behavior in a Bounded-Confidence Opinion Model with Media Influence",
+     "screening": "não relevante",
+     "reason": "deriva em BCM com mídia; sem painel nem erro de resposta"
+    },
+    {
+     "id": "2603.15927",
+     "year": 2026,
+     "title": "Discovery of interaction and diffusion kernels in particle-to-mean-field multi-agent systems",
+     "screening": "não relevante",
+     "reason": "descoberta de núcleos de interação em campo médio; sem painel nem erro de resposta"
+    },
+    {
+     "id": "2506.11751",
+     "year": 2025,
+     "title": "Bias and Identifiability in the Bounded Confidence Model",
+     "screening": "relevante (já na matriz)",
+     "reason": "Borile et al., linha 14"
+    },
+    {
+     "id": "2406.07993",
+     "year": 2024,
+     "title": "How social reinforcement learning can lead to metastable polarisation and the voter model",
+     "screening": "não relevante",
+     "reason": "aprendizado por reforço social e polarização; sem painel nem erro"
+    },
+    {
+     "id": "2310.01272",
+     "year": 2023,
+     "title": "A Unified View on Neural Message Passing with Opinion Dynamics for Social Networks",
+     "screening": "não relevante",
+     "reason": "fora do tema (redes neurais de grafos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2310.02766",
+     "year": 2023,
+     "title": "Likelihood-Based Methods Improve Parameter Estimation in Opinion Dynamics Models",
+     "screening": "relevante (já na matriz)",
+     "reason": "Lenti et al., linha 15"
+    },
+    {
+     "id": "2109.08021",
+     "year": 2021,
+     "title": "Predicting Users' Value Changes by the Friends' Influence from Social Media Usage",
+     "screening": "não relevante",
+     "reason": "previsão de valores por influência de amigos em mídia social; sem canal de erro nem nulo"
+    },
+    {
+     "id": "2102.02385",
+     "year": 2021,
+     "title": "The critical behavior of Hegselmann-Krause opinion model with smart agents",
+     "screening": "não relevante",
+     "reason": "transição crítica no HK; sem dados"
+    },
+    {
+     "id": "2001.06877",
+     "year": 2020,
+     "title": "When open mindedness hinders consensus",
+     "screening": "não relevante",
+     "reason": "mente aberta e consenso (teoria); sem dados"
+    },
+    {
+     "id": "1610.02660",
+     "year": 2016,
+     "title": "Bounded Confidence under Preferential Flip: A Coupled Dynamics of Structural Balance and Opinions",
+     "screening": "não relevante",
+     "reason": "BCM com equilíbrio estrutural; sem dados"
+    },
+    {
+     "id": "1406.6921",
+     "year": 2014,
+     "title": "Tricritical points in a Vicsek model of self-propelled particles with bounded confidence",
+     "screening": "não relevante",
+     "reason": "fora do tema (física de partículas autopropelidas); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1205.0211",
+     "year": 2012,
+     "title": "Non-conservative kinetic exchange model of opinion dynamics with randomness and bounded confidence",
+     "screening": "não relevante",
+     "reason": "modelo cinético de opinião; sem dados"
+    },
+    {
+     "id": "1107.5620",
+     "year": 2011,
+     "title": "A bounded confidence approach to understanding user participation in peer production systems",
+     "screening": "não relevante",
+     "reason": "confiança limitada em produção entre pares; sem erro de resposta"
+    },
+    {
+     "id": "1006.3798",
+     "year": 2010,
+     "title": "The Bounded Confidence Model Of Opinion Dynamics",
+     "screening": "não relevante",
+     "reason": "revisão do BCM; sem painel"
+    },
+    {
+     "id": "1003.3586",
+     "year": 2010,
+     "title": "How opinion dynamics generates group hierarchies",
+     "screening": "não relevante",
+     "reason": "hierarquias de grupo; sem dados"
+    },
+    {
+     "id": "cond-mat/0410199",
+     "year": 2004,
+     "title": "Modelling Group Opinion Shift to Extreme : the Smooth Bounded Confidence Model",
+     "screening": "não relevante",
+     "reason": "BCM suave (2004); sem dados"
+    }
+   ]
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q04",
+   "query": "\"opinion dynamics\" \"null model\" persistence",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 0,
+   "returned": []
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q05",
+   "query": "\"social influence\" detectability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 32,
+   "returned": [
+    {
+     "id": "2608.10968",
+     "year": 2026,
+     "title": "Radicalization Kinetics under Algorithmic Exposure in a Stochastic Multiplex Model of Opinion Dynamics",
+     "screening": "não relevante",
+     "reason": "radicalização sob exposição algorítmica; sem painel com erro de resposta"
+    },
+    {
+     "id": "2607.12845",
+     "year": 2026,
+     "title": "GraphPolaris: A System for Query, Analysis, and Visualization of Graph Databases",
+     "screening": "não relevante",
+     "reason": "fora do tema (visualização de grafos); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2606.16910",
+     "year": 2026,
+     "title": "IMPACTeen: Intentions, Manipulation, Persuasion, Annotations, and Consequences in Teen Communication Dataset",
+     "screening": "não relevante",
+     "reason": "fora do tema (dados de comunicação adolescente); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2603.23796",
+     "year": 2026,
+     "title": "Human, AI, and Hybrid Ensembles for Detection of Adaptive, RL-based Social Bots",
+     "screening": "não relevante",
+     "reason": "fora do tema (detecção de bots); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2601.05606",
+     "year": 2026,
+     "title": "Conformity Dynamics in LLM Multi-Agent Systems: The Roles of Topology and Self-Social Weighting",
+     "screening": "não relevante",
+     "reason": "conformidade em sistemas multiagente de LLM"
+    },
+    {
+     "id": "2509.15896",
+     "year": 2025,
+     "title": "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection",
+     "screening": "não relevante",
+     "reason": "fora do tema (desinformação); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2506.00061",
+     "year": 2025,
+     "title": "Unraveling SITT: Social Influence Technique Taxonomy and Detection with LLMs",
+     "screening": "não relevante",
+     "reason": "fora do tema (LLM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2505.17937",
+     "year": 2025,
+     "title": "Survival Games: Human-LLM Strategic Showdowns under Severe Resource Scarcity",
+     "screening": "não relevante",
+     "reason": "fora do tema (jogos com LLM); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2410.21554",
+     "year": 2024,
+     "title": "How the cascade inference problem distorts information diffusion",
+     "screening": "não relevante",
+     "reason": "problema de inferência de cascatas; difusão, sem erro de resposta nem nulo de persistência"
+    },
+    {
+     "id": "2406.11901",
+     "year": 2024,
+     "title": "A Deep Learning Framework for Evaluating Dynamic Network Generative Models and Anomaly Detection",
+     "screening": "não relevante",
+     "reason": "fora do tema (modelos generativos de redes); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2401.00893",
+     "year": 2024,
+     "title": "Social-LLM: Modeling User Behavior at Scale using Language Models and Social Network Data",
+     "screening": "não relevante",
+     "reason": "fora do tema (modelagem de usuários); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2310.15772",
+     "year": 2023,
+     "title": "Analyzing User Characteristics of Hate Speech Spreaders on Social Media",
+     "screening": "não relevante",
+     "reason": "fora do tema (discurso de ódio); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2308.11382",
+     "year": 2023,
+     "title": "Does society show differential attention to researchers based on gender and field?",
+     "screening": "não relevante",
+     "reason": "fora do tema (cientometria); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2206.08788",
+     "year": 2022,
+     "title": "Is Multi-Modal Necessarily Better? Robustness Evaluation of Multi-modal Fake News Detection",
+     "screening": "não relevante",
+     "reason": "fora do tema (fake news multimodal); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2204.10203",
+     "year": 2022,
+     "title": "Maximizing the Influence of Bichromatic Reverse k Nearest Neighbors in Geo-Social Networks",
+     "screening": "não relevante",
+     "reason": "fora do tema (consultas geossociais); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2202.09283",
+     "year": 2022,
+     "title": "Surf or sleep? Understanding the influence of bedtime patterns on campus",
+     "screening": "não relevante",
+     "reason": "fora do tema (padrões de sono); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2108.04187",
+     "year": 2021,
+     "title": "Scaling New Peaks: A Viewership-centric Approach to Automated Content Curation",
+     "screening": "não relevante",
+     "reason": "fora do tema (curadoria de conteúdo); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2008.00257",
+     "year": 2020,
+     "title": "Delay-induced periodic behavior in competitive populations",
+     "screening": "não relevante",
+     "reason": "fora do tema (populações competitivas); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "1910.00757",
+     "year": 2019,
+     "title": "Quantifying Voter Biases in Online Platforms: An Instrumental Variable Approach",
+     "screening": "não relevante",
+     "reason": "vieses de voto em plataformas (variável instrumental); sem painel com erro"
+    },
+    {
+     "id": "1907.07759",
+     "year": 2019,
+     "title": "The Mass, Fake News, and Cognition Security",
+     "screening": "não relevante",
+     "reason": "fora do tema (segurança cognitiva); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q06",
+   "query": "\"opinion dynamics\" \"test-retest\"",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 0,
+   "returned": []
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q07",
+   "query": "\"bounded confidence\" autoregressive",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 2,
+   "returned": [
+    {
+     "id": "2602.11534",
+     "year": 2026,
+     "title": "Krause Synchronization Transformers",
+     "screening": "não relevante",
+     "reason": "fora do tema (transformers); não trata influência social/dinâmica de opinião"
+    },
+    {
+     "id": "2602.18952",
+     "year": 2026,
+     "title": "MDM-ASR: Bridging Accuracy and Efficiency in ASR with Diffusion-Based Non-Autoregressive Decoding",
+     "screening": "não relevante",
+     "reason": "fora do tema (reconhecimento de fala); não trata influência social/dinâmica de opinião"
+    }
+   ]
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q08",
+   "query": "\"social influence\" \"observational equivalence\"",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 0,
+   "returned": []
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q09",
+   "query": "\"opinion dynamics\" longitudinal survey",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 1,
+   "returned": [
+    {
+     "id": "2406.19204",
+     "year": 2024,
+     "title": "CoDiNG -- Naming Game with Continuous Latent Opinions of Individual Agents",
+     "screening": "relevante (já na matriz)",
+     "reason": "CoDiNG, linha 1"
+    }
+   ]
+  },
+  {
+   "api": "arxivweb",
+   "query_id": "Q10",
+   "query": "\"social influence\" panel threshold simulation",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 200,
+   "count": 0,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q01",
+   "query": "all:\"opinion dynamics\" AND all:panel AND all:\"measurement error\"",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q02",
+   "query": "all:\"social influence\" AND all:longitudinal AND all:reliability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q03",
+   "query": "all:\"bounded confidence\" AND all:identifiability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q04",
+   "query": "all:\"opinion dynamics\" AND all:\"null model\" AND all:persistence",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q05",
+   "query": "all:\"social influence\" AND all:detectability",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q06",
+   "query": "all:\"opinion dynamics\" AND all:\"test-retest\"",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q07",
+   "query": "all:\"bounded confidence\" AND all:autoregressive",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q08",
+   "query": "all:\"social influence\" AND all:\"observational equivalence\"",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q09",
+   "query": "all:\"opinion dynamics\" AND all:longitudinal AND all:survey",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  },
+  {
+   "api": "arxiv",
+   "query_id": "Q10",
+   "query": "all:\"social influence\" AND all:panel AND all:threshold AND all:simulation",
+   "url": null,
+   "retrieved_utc": null,
+   "http_status": 406,
+   "count": null,
+   "returned": []
+  }
+ ]
+}

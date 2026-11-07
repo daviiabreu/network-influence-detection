@@ -1,0 +1,167 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 88.32563750003465,
+  "simulations": 3520,
+  "records": [
+    {
+      "kind": "panel_operating",
+      "strength": 0.025,
+      "rho": 0.8493680926569962,
+      "latent_lag1_gap": -0.00011763170787404409,
+      "baseline_accuracy": 0.3958333333333333,
+      "observed_lag1_gap": -0.0005977167550388351,
+      "observed_marginal_total_variation": 0.0011752994647624346,
+      "mean_adjacent_pairs": 52061.0
+    },
+    {
+      "kind": "panel_operating",
+      "strength": 0.05,
+      "rho": 0.848782142715989,
+      "latent_lag1_gap": -0.00011791235295610658,
+      "baseline_accuracy": 0.3958333333333333,
+      "observed_lag1_gap": -0.0008083441729546115,
+      "observed_marginal_total_variation": 0.001271695958868696,
+      "mean_adjacent_pairs": 52061.0
+    },
+    {
+      "kind": "panel_operating",
+      "strength": 0.1,
+      "rho": 0.8475657164146141,
+      "latent_lag1_gap": -0.00011876811576561064,
+      "baseline_accuracy": 0.4583333333333333,
+      "observed_lag1_gap": -0.0012157991387190537,
+      "observed_marginal_total_variation": 0.001142130380972918,
+      "mean_adjacent_pairs": 52061.0
+    },
+    {
+      "kind": "panel_operating",
+      "strength": 0.2,
+      "rho": 0.844949835155764,
+      "latent_lag1_gap": -0.0001223921069664069,
+      "baseline_accuracy": 0.59375,
+      "observed_lag1_gap": -0.002001076918681677,
+      "observed_marginal_total_variation": 0.0010784742683965787,
+      "mean_adjacent_pairs": 52061.0
+    },
+    {
+      "kind": "panel_operating",
+      "strength": 0.4,
+      "rho": 0.838961863215152,
+      "latent_lag1_gap": -0.00012559405525680578,
+      "baseline_accuracy": 0.75,
+      "observed_lag1_gap": -0.0036459748020575278,
+      "observed_marginal_total_variation": 0.0009848363878195432,
+      "mean_adjacent_pairs": 52061.0
+    },
+    {
+      "kind": "panel_selection",
+      "status": "selected",
+      "strength": 0.4,
+      "rho": 0.838961863215152
+    },
+    {
+      "kind": "panel_primary_gate",
+      "non_floor_non_ceiling": true,
+      "observed_lag1_gap": -0.0018358525130862668,
+      "observed_marginal_total_variation": 0.0008138506350607172,
+      "mean_adjacent_pairs": 52097.208333333336
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0,
+      "control_lock_probability": 1.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.01,
+      "control_lock_probability": 1.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.02,
+      "control_lock_probability": 1.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.04,
+      "control_lock_probability": 0.2708333333333333
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.08,
+      "control_lock_probability": 0.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.16,
+      "control_lock_probability": 0.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.32,
+      "control_lock_probability": 0.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.64,
+      "control_lock_probability": 0.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 1.0,
+      "control_lock_probability": 0.0
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.03,
+      "control_lock_probability": 0.9791666666666666
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.035,
+      "control_lock_probability": 0.7083333333333334
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.037500000000000006,
+      "control_lock_probability": 0.3958333333333333
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.036250000000000004,
+      "control_lock_probability": 0.5625
+    },
+    {
+      "kind": "dose_operating",
+      "dose": 0.036875000000000005,
+      "control_lock_probability": 0.4791666666666667
+    },
+    {
+      "kind": "dose_selection",
+      "status": "selected",
+      "doses": [
+        0,
+        0.01,
+        0.02,
+        0.03,
+        0.035,
+        0.036250000000000004,
+        0.036875000000000005,
+        0.037500000000000006,
+        0.04,
+        0.08,
+        0.16,
+        0.32,
+        0.64,
+        1.0
+      ],
+      "control_critical_dose": 0.03671875000000001
+    },
+    {
+      "kind": "dose_primary_gate",
+      "each_arm_has_interior_cell": true,
+      "both_cross_half": true
+    }
+  ],
+  "primary_values_exported": false
+}

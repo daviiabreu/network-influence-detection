@@ -1,0 +1,54 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/assembly-notes.txt",
+        "sha256": "c9e2f6337f96e00cfba2280e202f0cee185a8322fd6d8d090e43a58395c823ea"
+      },
+      "value": true
+    },
+    "main.boundary_nonmonotone": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/released-curves.json",
+        "sha256": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+      },
+      "value": false
+    },
+    "post.x5_supplied": {
+      "source": {
+        "locator": "artificial provenance.inputs.x5 and every by_r.x5_state",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/aggregates/comparisons.json",
+        "sha256": "01482b9cb06532ba94077d85de78bc28e3834a38df54d14e0c71c7c0612952cd"
+      },
+      "value": false
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/assembly-notes.txt",
+        "sha256": "c9e2f6337f96e00cfba2280e202f0cee185a8322fd6d8d090e43a58395c823ea"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/assembly-notes.txt",
+        "sha256": "c9e2f6337f96e00cfba2280e202f0cee185a8322fd6d8d090e43a58395c823ea"
+      },
+      "value": "not-run"
+    },
+    "tier2.boundaries_differ": {
+      "source": {
+        "locator": "VALID tier-2 boundary tuples and ordered VALID tier-1 first/censoring tuples (Results lines 412-417, 430-434)",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/invalid-main/released-curves.json",
+        "sha256": "b1889b67269ea5b8d82e584ef05d044f5b5a662d0f659b6f11e748f6fb09f972"
+      },
+      "value": false
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

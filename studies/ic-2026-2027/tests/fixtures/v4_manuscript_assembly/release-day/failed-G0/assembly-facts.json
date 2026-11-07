@@ -1,0 +1,40 @@
+{
+  "facts": {
+    "gate.G0.failed_criteria": {
+      "source": {
+        "locator": "G0 complete summary; exact failed clauses",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/failed-G0/gate/criteria.jsonl",
+        "sha256": "1e0c53201869f4e39b9b00ea2acc09f99c7d42ed9aa610cb7216b36fc9726590"
+      },
+      "value": [
+        "budget"
+      ]
+    },
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/failed-G0/assembly-notes.txt",
+        "sha256": "446d5d409f8e4da0b4ed2e2c88e7f13eda64188e908bf2c6df45435b87a5850c"
+      },
+      "value": true
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/failed-G0/assembly-notes.txt",
+        "sha256": "446d5d409f8e4da0b4ed2e2c88e7f13eda64188e908bf2c6df45435b87a5850c"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/release-day-combined.ya7qxzen/failed-G0/assembly-notes.txt",
+        "sha256": "446d5d409f8e4da0b4ed2e2c88e7f13eda64188e908bf2c6df45435b87a5850c"
+      },
+      "value": "not-run"
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

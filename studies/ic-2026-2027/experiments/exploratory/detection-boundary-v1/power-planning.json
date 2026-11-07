@@ -1,0 +1,26 @@
+{
+  "effective_independent_networks_per_class": 2000,
+  "events_per_network": 2,
+  "within_network_icc_worst_case": 1,
+  "joint_cells": 81,
+  "bonferroni_two_sided_critical_reference": 3.423904122943538,
+  "assumptions": "Normal AUC approximation, independent classes, nuisance variance additive; not measured power or actual bootstrap critical value",
+  "scenarios": [
+    {
+      "nuisance_sd_assumption": 0.01,
+      "auc_se_bound_plus_assumed_nuisance": 0.01870828693386971,
+      "band_halfwidth_reference": 0.06405538076608722,
+      "power_if_true_auc_080": 0.9726543564418322,
+      "power_if_true_auc_075": 0.22623856047066815,
+      "true_auc_for_80pct_power": 0.7798006722934067
+    },
+    {
+      "nuisance_sd_assumption": 0.02,
+      "auc_se_bound_plus_assumed_nuisance": 0.025495097567963924,
+      "band_halfwidth_reference": 0.08729276967779945,
+      "power_if_true_auc_080": 0.6909054781166718,
+      "power_if_true_auc_075": 0.07176888889698113,
+      "true_auc_for_80pct_power": 0.808749985143011
+    }
+  ]
+}

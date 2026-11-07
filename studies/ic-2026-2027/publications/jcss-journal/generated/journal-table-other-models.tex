@@ -1,0 +1,18 @@
+\begin{table*}[tp]
+\caption{Boundaries against the other persistence models.}\label{tab:other-models}
+\centering\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{ll>{\raggedright\arraybackslash}p{62mm}>{\raggedright\arraybackslash}p{54mm}}
+\toprule
+Model & $r$ & First boundary & Sustained boundary \\
+\midrule
+A & \resultnum{j.models.r050.r}{0.50} & \resultnum{j.models.A.r050.first.point}{0.30} & \resultnum{j.models.A.r050.sustained.point}{0.30} \\
+A & \resultnum{j.models.r055.r}{0.55}--\resultnum{j.models.r090.r}{0.90} & \resultnum{j.models.A.r055.first.point}{0.10} & \resultnum{j.models.A.r055.sustained.point}{0.10} \\
+C & All shares & Invalid: zero-strength AUC \resultnum{j.models.C.zero_auc.min}{1.000} & Suppressed \\
+D & All shares & Censored at first gap: \resultnum{j.models.D.r055.first.censoring_gap.a}{0.10} at \resultnum{j.models.D.first_gap.a1000.family_limit.n}{7} shares (family limit on profile); \resultnum{j.models.D.r050.first.censoring_gap.a}{0.01} at $r=$ \resultnum{j.models.D.r050.r}{0.50} (other solver status); \resultnum{j.models.D.r060.first.censoring_gap.a}{0.003} at $r=$ \resultnum{j.models.D.r060.r}{0.60} (propagation gap) & Censored (fit gaps) \\
+E & \resultnum{j.models.r050.r}{0.50}--\resultnum{j.models.r060.r}{0.60} & \resultnum{j.models.E.r050.first.point}{0.30} & \resultnum{j.models.E.r050.sustained.point}{0.30}; censored at $r=$ \resultnum{j.models.r055.r}{0.55} (fit gaps at \resultnum{j.models.E.r055.sustained.gap.0.a}{0.60}, \resultnum{j.models.E.r055.sustained.gap.1.a}{0.90}) \\
+E & \resultnum{j.models.r065.r}{0.65}--\resultnum{j.models.r090.r}{0.90} & \resultnum{j.models.E.r065.first.point}{0.10} & \resultnum{j.models.E.r065.sustained.point}{0.10}; censored at $r=$ \resultnum{j.models.r070.r}{0.70} (fit gap at \resultnum{j.models.E.r070.sustained.gap.0.a}{0.90}) \\
+\botrule
+\end{tabular}
+\par\smallskip\parbox{\linewidth}{$r$ is signal share in the continuous response before discretization. A: autoregressive; C: autoregressive with an altered response channel; D: state-dependent; E: mover--stayer. A and E group consecutive shares with the same first boundary; sustained-boundary exceptions are explicit. Unmarked entries are complete and valid; C is complete but invalid, so its boundaries are suppressed. Boundary and censoring definitions: \esmresource, Table~\ref{esm-tab:glossary-terms}; fit statuses: Table~\ref{esm-tab:glossary-states}.}
+\end{table*}

@@ -1,0 +1,29 @@
+{
+  "amendment": "v4.4",
+  "amendment_sha256": "4757e6a1e2c2e2541c8e345a4252e403696784425697523b717028ea7bae1dbe",
+  "approval": {
+    "by": "Research Owner",
+    "scope": "amendment v4.4 text, successor runner and relaunch of the eight tier shards",
+    "statement": "tudo aprovado",
+    "utc": "2026-10-01T14:33:35Z"
+  },
+  "base_freeze": {
+    "commit": "37513841",
+    "path": "experiments/exploratory/detection-boundary-v4/freeze-v4.json",
+    "sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837"
+  },
+  "created_utc": "2026-10-01T13:00:36Z",
+  "exposure": "No tier-2-or-later curve output was read before this record. Known to the coordinator: file counts, curve.json existence and modification times of shard 5 unit directories, and the error message and call stack of cell a2 of t2-u03-r2 obtained from a copy.",
+  "frozen_runner_sha256": "cc4d78203e98038dde13ad45e16bb48a5756e2dcd83d61fcd8e9da4df0102a16",
+  "frozen_utc": "2026-10-01T14:33:35Z",
+  "schema": "ic-study.v4-successor-freeze.v1",
+  "status": "frozen",
+  "successor_runner": {
+    "path": "experiments/exploratory/detection-boundary-v4-successor-v44/v44_run_curve.py",
+    "sha256": "0ea2e41e6a8a9939ad59b7fbac8fc95d23ffc2b026966c388e09bd01d9c7b7b5"
+  },
+  "tests": {
+    "path": "tests/unit/test_v44_successor_runner.py",
+    "sha256": "18de18bdc5da29b605bd88eb56795844feb9d29df754b8e044e11e2c4221fcf8"
+  }
+}

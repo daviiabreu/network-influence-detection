@@ -1,0 +1,94 @@
+% Design schematic (Fig. 1). Needs \usepackage{tikz} and
+% \usetikzlibrary{arrows.meta,positioning,calc} in the preamble.
+% The inset curve is a drawing, not data. Text sizes 7pt and 8pt bold use
+% fonts already in the offline Tectonic cache.
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  font=\fontsize{7pt}{8.3pt}\selectfont,
+  >={Stealth[length=1.5mm,width=1.3mm]},
+  box/.style={draw=darkgray, rounded corners=1.5pt, align=flush left,
+    inner sep=3pt, text width=#1},
+  box/.default=2.2cm,
+  flow/.style={->, semithick, darkgray},
+]
+\node[box=3.45cm, fill=blue!7] (influence)
+  {{\fontsize{8pt}{9.4pt}\selectfont\bfseries Influence arm}\\[1.5pt]
+   Latent attitudes persist between waves. Each person is pulled toward
+   contacts within distance~1 and pushed away from farther ones. Eight
+   fixed random contacts per person, never observed. Nominal
+   input~$a$: the variance fraction assigned to contacts in the innovation.};
+\node[box=3.45cm, fill=orange!12, below=7.5mm of influence] (persistence)
+  {{\fontsize{8pt}{9.4pt}\selectfont\bfseries Persistence model, no network}\\[1.5pt]
+   A~autoregressive; B~trait-plus-autoregressive (main comparison);
+   C~autoregressive with an altered response channel; D~state-dependent;
+   E~mover--stayer.};
+\draw[->, densely dashed, darkgray]
+  ($(influence.south west)+(3.5mm,0)$) --
+  node[right, align=flush left, inner sep=2pt] {matched to its short-lag\\
+    correlations}
+  ($(persistence.north west)+(3.5mm,0)$);
+
+\coordinate (between) at ($(influence.east)!0.5!(persistence.east)$);
+\node[box=2.35cm, fill=black!5, right=7mm of between] (channel)
+  {{\fontsize{8pt}{9.4pt}\selectfont\bfseries Response channel}\\[1.5pt]
+   Same for both arms, except in comparisons with model~C. Signal
+   share~$r$, known. Answers in eleven ordinal categories, assigned within
+   each wave. Same attrition.};
+\coordinate (join) at ($(channel.west)+(-3mm,0)$);
+\draw[semithick, darkgray] (influence.east) -| (join);
+\draw[semithick, darkgray] (persistence.east) -| (join);
+\draw[flow] (join) -- (channel.west);
+
+\node[box, right=4mm of channel] (features)
+  {{\fontsize{8pt}{9.4pt}\selectfont\bfseries Panel features}\\[1.5pt]
+   Correlations of each person's answers 3, 4 and 5 waves apart, pooled
+   over people and waves.};
+\node[box, right=4mm of features] (classifier)
+  {{\fontsize{8pt}{9.4pt}\selectfont\bfseries Fixed classifier}\\[1.5pt]
+   Linear discriminant trained on 2,000 panels per arm. It scores whole
+   panels.};
+\draw[flow] (channel) -- (features);
+\draw[flow] (features) -- (classifier);
+
+\node[box=2.75cm, right=4mm of classifier, minimum height=3.55cm]
+  (boundary) {};
+\node[anchor=north west, inner sep=3pt, text width=2.75cm,
+  align=flush left] at (boundary.north west)
+  {{\fontsize{8pt}{9.4pt}\selectfont\bfseries Boundary $a^*(r)$}\\[1.5pt]
+   First of the nine grid strengths at which the expected AUC
+   reaches 0.70.};
+\draw[flow] (classifier) -- (boundary);
+% Inset drawn in centimeters; the AUC axis runs from 0.45 at the origin.
+\begin{scope}[shift={($(boundary.south west)+(0.62cm,0.42cm)$)}]
+  \fill[blue!12] (0.000cm,0.045cm) -- (0.240cm,0.068cm) -- (0.480cm,0.090cm) -- (0.720cm,0.113cm) -- (0.960cm,0.202cm) -- (1.200cm,0.585cm) -- (1.440cm,0.922cm) -- (1.680cm,1.103cm) -- (1.920cm,1.147cm) -- (1.920cm,1.238cm) -- (1.680cm,1.238cm) -- (1.440cm,1.147cm) -- (1.200cm,0.833cm) -- (0.960cm,0.360cm) -- (0.720cm,0.225cm) -- (0.480cm,0.202cm) -- (0.240cm,0.180cm) -- (0.000cm,0.180cm) -- cycle;
+  \draw[->, darkgray] (0cm,0cm) -- (2.088cm,0.000cm) node[right, inner sep=1pt] {$a$};
+  \draw[->, darkgray] (0cm,0cm) -- (0.000cm,1.350cm);
+  \node[rotate=90, anchor=south, inner sep=1pt] at (-0.08cm,1.0cm) {AUC};
+  \draw[dashed, gray] (0.000cm,0.562cm) -- (2.040cm,0.562cm);
+  \node[left, inner sep=1.5pt] at (0.000cm,0.562cm) {0.70};
+  \draw[darkgray] (0.000cm,0.113cm) -- (0.240cm,0.124cm) -- (0.480cm,0.146cm) -- (0.720cm,0.169cm) -- (0.960cm,0.281cm) -- (1.200cm,0.709cm) -- (1.440cm,1.035cm) -- (1.680cm,1.170cm) -- (1.920cm,1.193cm);
+  \fill[darkgray] (0.000cm,0.113cm) circle (0.75pt);
+  \fill[darkgray] (0.240cm,0.124cm) circle (0.75pt);
+  \fill[darkgray] (0.480cm,0.146cm) circle (0.75pt);
+  \fill[darkgray] (0.720cm,0.169cm) circle (0.75pt);
+  \fill[darkgray] (0.960cm,0.281cm) circle (0.75pt);
+  \fill[darkgray] (1.200cm,0.709cm) circle (0.75pt);
+  \fill[darkgray] (1.440cm,1.035cm) circle (0.75pt);
+  \fill[darkgray] (1.680cm,1.170cm) circle (0.75pt);
+  \fill[darkgray] (1.920cm,1.193cm) circle (0.75pt);
+  \draw[densely dotted, darkgray] (1.200cm,0.709cm) -- (1.200cm,0.000cm)
+    node[below, inner sep=1.5pt] {$a^*(r)$};
+\end{scope}
+\end{tikzpicture}
+\caption{Design of the simulation. At each signal share $r$ and influence
+strength $a$, panels from the influence arm and from a persistence model
+matched to its short-lag correlations pass through the same response channel
+(model C alters it in the persistence arm). A fixed classifier scores whole
+panels from their long-lag correlations. The boundary $a^*(r)$ is the first
+of the nine grid strengths at which the expected AUC reaches 0.70; the shaded area stands for the simultaneous uncertainty
+band. Matching, training and testing use separate simulated panels. The inset
+is a drawing, not data. \esmresource, Table~\ref{esm-tab:glossary-terms}, defines
+the terms used in the article.}
+\label{fig:design}
+\end{figure*}

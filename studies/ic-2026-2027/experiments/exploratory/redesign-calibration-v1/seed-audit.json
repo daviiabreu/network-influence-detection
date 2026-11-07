@@ -1,0 +1,8 @@
+{
+  "pilot_unique_seed_count": 3328,
+  "confirmatory_reserved_seed_count": 31002,
+  "intersection_count": 0,
+  "confirmatory_simulations": 0,
+  "rule": "SHA256 ic-redesign-v1|phase|role|index, first 8 bytes big endian",
+  "scope": "Primary train/validation/test and fallback test; future robustness needs its own disjoint audit before execution."
+}

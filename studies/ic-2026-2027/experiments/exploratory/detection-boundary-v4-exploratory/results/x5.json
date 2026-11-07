@@ -1,0 +1,3677 @@
+{
+ "schema": "ic-study.v4-exploratory-x5.v1",
+ "label": "exploratory; never promoted to confirmatory evidence",
+ "question": "AUC of misspecification: frozen pipeline at a = 0 against a correctly specified B fitted to a misspecified data arm",
+ "declaration": {
+  "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219",
+  "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65"
+ },
+ "sizes": {
+  "size": 10626
+ },
+ "conditions": [
+  {
+   "name": "trend-003",
+   "trend": 0.03,
+   "step": 0.0,
+   "tenure": 0.0,
+   "attrition": 0.0
+  },
+  {
+   "name": "trend-008",
+   "trend": 0.08,
+   "step": 0.0,
+   "tenure": 0.0,
+   "attrition": 0.0
+  },
+  {
+   "name": "step-003",
+   "trend": 0.0,
+   "step": 0.03,
+   "tenure": 0.0,
+   "attrition": 0.0
+  },
+  {
+   "name": "step-008",
+   "trend": 0.0,
+   "step": 0.08,
+   "tenure": 0.0,
+   "attrition": 0.0
+  },
+  {
+   "name": "tenure-010",
+   "trend": 0.0,
+   "step": 0.0,
+   "tenure": 0.1,
+   "attrition": 0.0
+  },
+  {
+   "name": "tenure-020",
+   "trend": 0.0,
+   "step": 0.0,
+   "tenure": 0.2,
+   "attrition": 0.0
+  },
+  {
+   "name": "mnar-ln15",
+   "trend": 0.0,
+   "step": 0.0,
+   "tenure": 0.0,
+   "attrition": 0.4054651081081644
+  },
+  {
+   "name": "mnar-ln2",
+   "trend": 0.0,
+   "step": 0.0,
+   "tenure": 0.0,
+   "attrition": 0.6931471805599453
+  }
+ ],
+ "rule": {
+  "crosses-primary": "95% lower bound above 0.70",
+  "crosses-secondary": "95% lower bound above 0.60",
+  "below-targets": "95% upper bound below 0.60",
+  "intermediate": "every other case",
+  "null_gate_would_invalidate": "interval at critical 2.7729 excludes 0.5",
+  "intervals": "frozen band formula (logit, floor 1/4000) at critical 1.96 and 2.7729 on the frozen total SE"
+ },
+ "summary": {
+  "cells": 72,
+  "complete": 72,
+  "incomplete": [],
+  "readings": {
+   "below-targets": 5,
+   "crosses-primary": 14,
+   "crosses-secondary": 12,
+   "fit-failure": 36,
+   "intermediate": 5
+  },
+  "by_condition": {
+   "trend-003": {
+    "crosses-secondary": 9
+   },
+   "trend-008": {
+    "crosses-primary": 9
+   },
+   "step-003": {
+    "fit-failure": 9
+   },
+   "step-008": {
+    "fit-failure": 9
+   },
+   "tenure-010": {
+    "fit-failure": 9
+   },
+   "tenure-020": {
+    "fit-failure": 9
+   },
+   "mnar-ln15": {
+    "crosses-secondary": 1,
+    "intermediate": 4,
+    "below-targets": 4
+   },
+   "mnar-ln2": {
+    "crosses-primary": 5,
+    "crosses-secondary": 2,
+    "intermediate": 1,
+    "below-targets": 1
+   }
+  },
+  "null_gate_would_invalidate": [
+   [
+    "trend-003",
+    0.5
+   ],
+   [
+    "trend-008",
+    0.5
+   ],
+   [
+    "mnar-ln15",
+    0.5
+   ],
+   [
+    "mnar-ln2",
+    0.5
+   ],
+   [
+    "trend-003",
+    0.55
+   ],
+   [
+    "trend-008",
+    0.55
+   ],
+   [
+    "mnar-ln15",
+    0.55
+   ],
+   [
+    "mnar-ln2",
+    0.55
+   ],
+   [
+    "trend-003",
+    0.6
+   ],
+   [
+    "trend-008",
+    0.6
+   ],
+   [
+    "mnar-ln15",
+    0.6
+   ],
+   [
+    "mnar-ln2",
+    0.6
+   ],
+   [
+    "trend-003",
+    0.65
+   ],
+   [
+    "trend-008",
+    0.65
+   ],
+   [
+    "mnar-ln15",
+    0.65
+   ],
+   [
+    "mnar-ln2",
+    0.65
+   ],
+   [
+    "trend-003",
+    0.7
+   ],
+   [
+    "trend-008",
+    0.7
+   ],
+   [
+    "mnar-ln15",
+    0.7
+   ],
+   [
+    "mnar-ln2",
+    0.7
+   ],
+   [
+    "trend-003",
+    0.75
+   ],
+   [
+    "trend-008",
+    0.75
+   ],
+   [
+    "mnar-ln15",
+    0.75
+   ],
+   [
+    "mnar-ln2",
+    0.75
+   ],
+   [
+    "trend-003",
+    0.8
+   ],
+   [
+    "trend-008",
+    0.8
+   ],
+   [
+    "mnar-ln15",
+    0.8
+   ],
+   [
+    "mnar-ln2",
+    0.8
+   ],
+   [
+    "trend-003",
+    0.85
+   ],
+   [
+    "trend-008",
+    0.85
+   ],
+   [
+    "mnar-ln15",
+    0.85
+   ],
+   [
+    "mnar-ln2",
+    0.85
+   ],
+   [
+    "trend-003",
+    0.9
+   ],
+   [
+    "trend-008",
+    0.9
+   ],
+   [
+    "mnar-ln15",
+    0.9
+   ],
+   [
+    "mnar-ln2",
+    0.9
+   ]
+  ]
+ },
+ "seeds": {
+  "namespace": "v4-exploratory-x3-x7",
+  "root": 20260928,
+  "material": "{namespace}|{root}|{analysis}|{block}|{phase}|{role}|{index}",
+  "block": "2 * block + attempt, the frozen layout",
+  "digest": "sha256(material)[:8] as big-endian unsigned",
+  "analysis": "x5",
+  "common_across_conditions": true
+ },
+ "verification_sha256": [
+  "{\"x5\": \"6911209e350287bcc745be834351f056bbf01fa2b3e5a9f908b59648a6f05a5c\"}"
+ ],
+ "code": [
+  {
+   "commit": "c8e4861fdba24700d3ca802e337f81f103d65c57",
+   "lock_sha256": "2af4db0a2fdef85386a6998b5a27017443139a606103c04844050daaa03852d7",
+   "tracked_tree_clean": true
+  }
+ ],
+ "successor": [
+  {
+   "declaration": {
+    "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65",
+    "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219"
+   },
+   "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+   "frozen_python_files": 80,
+   "frozen_python_mismatched": [],
+   "successor_sha256": {
+    "src/ic_study/simulation/v4_exploratory.py": "5487e7ebbdbc9d511d9b74115dfb5daa895341240be43a47e645e71ae83a6c0d",
+    "src/ic_study/simulation/v4_exploratory_x1b.py": "6053dba0070af8386e60ea4d3911e20b5cd1f14478fe0984d3e4e5939c92afd8",
+    "src/ic_study/simulation/v4_exploratory_x3x7.py": "1ab380c93d18c6b5b4797990df4da7b6f2cb7a880ec525b8ad7ef987ab097959",
+    "src/ic_study/simulation/v4_exploratory_x5.py": "017a213a2746b36520098f9d78271b17ae16fb7110b168fe5af2d71077c1e71f"
+   }
+  }
+ ],
+ "host": [
+  {
+   "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+   "hostname": "homelab",
+   "logical_cpus": 12,
+   "machine": "x86_64",
+   "numpy": "2.5.3",
+   "python": "3.12.13",
+   "release": "7.2.5-3-omarchy",
+   "system": "Linux",
+   "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+   }
+  }
+ ],
+ "timing": {
+  "first_started_utc": "2026-09-29T03:09:37+00:00",
+  "last_finished_utc": "2026-09-29T08:36:10+00:00",
+  "elapsed_seconds": 19593.0,
+  "cpu_seconds_total": 210622.872539073,
+  "wall_seconds_per_unit_mean": 3065.9499053828995
+ },
+ "cells": [
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 0,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8355493909142093,
+    0.07853939242433491
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6843290624999999,
+    "interval_27729": [
+     0.6524659321390677,
+     0.7145489365245997
+    ],
+    "interval_95": [
+     0.6619653639683268,
+     0.7058706224950696
+    ],
+    "lags": {
+     "data_mean": [
+      0.4018988007056464,
+      0.3409856923545329,
+      0.2894586251311966,
+      0.24566268282124304,
+      0.2084408978011008
+     ],
+     "data_minus_null": [
+      2.777984509488851e-05,
+      -2.161948961054705e-05,
+      -0.001047805363098897,
+      -0.0028205109422595465,
+      -0.005138990807881133
+     ],
+     "null_mean": [
+      0.4018710208605515,
+      0.34100731184414346,
+      0.2905064304942955,
+      0.24848319376350259,
+      0.21357988860898194
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0002935159062499304,
+    "nuisance_mcse": 2.988776005178728e-06,
+    "nuisance_variance": 9.276134585289022e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.005728344321376642,
+    "se": 0.011206037413695273
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 1,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8117385016975737,
+    0.180965838630465
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.8914536875,
+    "interval_27729": [
+     0.8713593227195892,
+     0.9087379526048486
+    ],
+    "interval_95": [
+     0.8775581497221877,
+     0.9039448745168148
+    ],
+    "lags": {
+     "data_mean": [
+      0.4006217135530342,
+      0.3404117657229693,
+      0.2891321652515582,
+      0.2452536402878684,
+      0.20764284494992316
+     ],
+     "data_minus_null": [
+      8.507966173948445e-05,
+      3.619743777083517e-05,
+      -0.0027202181323421337,
+      -0.007380432087040589,
+      -0.013355230641173083
+     ],
+     "null_mean": [
+      0.40053663389129474,
+      0.34037556828519844,
+      0.29185238338390035,
+      0.252634072374909,
+      0.22099807559109624
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0016478253749999672,
+    "nuisance_mcse": 1.0524768564971164e-06,
+    "nuisance_variance": 3.342484412029282e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.0034305431035204286,
+    "se": 0.006722608876426204
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 2,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8552843751743332,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 3,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8638976559757139,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 4,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9116670536592155,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 5,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9733981016992763,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 6,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8357599740436281,
+    0.060970918810219744
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6400531875000001,
+    "interval_27729": [
+     0.5986268269513791,
+     0.6794930821096345
+    ],
+    "interval_95": [
+     0.6109478606775864,
+     0.6681637712107918
+    ],
+    "lags": {
+     "data_mean": [
+      0.4006782681291521,
+      0.33861274991480456,
+      0.28640156040276094,
+      0.2422839609966834,
+      0.20502750658251953
+     ],
+     "data_minus_null": [
+      9.624199690733137e-05,
+      -2.3937503029480833e-05,
+      -0.0008266620670133173,
+      -0.0021500053129145102,
+      -0.0038458634992735996
+     ],
+     "null_mean": [
+      0.40058202613224475,
+      0.33863668741783404,
+      0.28722822246977425,
+      0.2444339663095979,
+      0.20887337008179313
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.002492163874999953,
+    "nuisance_mcse": 5.646091664298587e-06,
+    "nuisance_variance": 0.00017838692392342696,
+    "projected_fraction": 0.0,
+    "score_se": 0.005922239455171256,
+    "se": 0.014610265024557702
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 0,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 7,
+   "r": 0.5,
+   "unit": "x5-t1-u00-r0",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8121001021298048,
+    0.14175115885694684
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.820416875,
+    "interval_27729": [
+     0.7831781290135417,
+     0.8524647570211068
+    ],
+    "interval_95": [
+     0.7946431910149837,
+     0.8435924773306182
+    ],
+    "lags": {
+     "data_mean": [
+      0.3972749727750065,
+      0.3342196361548994,
+      0.28132591528091466,
+      0.23681715134485865,
+      0.1994541176592831
+     ],
+     "data_minus_null": [
+      0.00010680493793113754,
+      -2.7890549757880745e-05,
+      -0.002168457026804238,
+      -0.0056382870422595766,
+      -0.00987425845354975
+     ],
+     "null_mean": [
+      0.39716816783707537,
+      0.3342475267046573,
+      0.2834943723077189,
+      0.24245543838711822,
+      0.20932837611283284
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0009324809687499824,
+    "nuisance_mcse": 4.289647831441698e-06,
+    "nuisance_variance": 0.0001352664909535071,
+    "projected_fraction": 0.0,
+    "score_se": 0.004527226614648925,
+    "se": 0.012480475622903667
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 8,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8351652904900452,
+    0.08144710161271206
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.710094,
+    "interval_27729": [
+     0.6764139437941069,
+     0.7416076396271569
+    ],
+    "interval_95": [
+     0.6864998024301335,
+     0.7326041360469208
+    ],
+    "lags": {
+     "data_mean": [
+      0.44302860111979014,
+      0.3756881256645981,
+      0.318705862836633,
+      0.2705644399127564,
+      0.22943530617406055
+     ],
+     "data_minus_null": [
+      -7.156803965474579e-05,
+      -0.0001871853240048571,
+      -0.0013339554266927345,
+      -0.00317216135759818,
+      -0.005902808689886269
+     ],
+     "null_mean": [
+      0.4431001691594449,
+      0.37587531098860294,
+      0.3200398182633257,
+      0.2737366012703546,
+      0.23533811486394682
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.00208673846874996,
+    "nuisance_mcse": 3.4775775533037542e-06,
+    "nuisance_variance": 0.00010396507329650161,
+    "projected_fraction": 0.0,
+    "score_se": 0.005873633044222739,
+    "se": 0.011767099831083566
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 9,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8136890192865596,
+    0.17479412142159076
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.9069431875,
+    "interval_27729": [
+     0.8902901071516672,
+     0.9212919401080258
+    ],
+    "interval_95": [
+     0.8954258771664885,
+     0.9173091746307463
+    ],
+    "lags": {
+     "data_mean": [
+      0.441753841012419,
+      0.3751364124955798,
+      0.31839646982489545,
+      0.2701651229026869,
+      0.22867099160652166
+     ],
+     "data_minus_null": [
+      -6.984634024548297e-05,
+      -0.0001780941027609284,
+      -0.003116597863456194,
+      -0.007843905085045011,
+      -0.014190613573781596
+     ],
+     "null_mean": [
+      0.4418236873526645,
+      0.3753145065983407,
+      0.32151306768835164,
+      0.2780090279877319,
+      0.24286160518030325
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0012650704375000155,
+    "nuisance_mcse": 6.609781663774829e-07,
+    "nuisance_variance": 2.0063521988614883e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.003318858268750827,
+    "se": 0.005574795260515907
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 10,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8548193020379715,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 11,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8628128552748409,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 12,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9060638069376425,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 13,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "ill-conditioned"
+   ],
+   "parameters": [
+    0.9617893914746783,
+    0.01
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 14,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8380608688122282,
+    0.05106719125179751
+   ],
+   "reading": "intermediate",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6275819375000001,
+    "interval_27729": [
+     0.5789203069968704,
+     0.6737887962418059
+    ],
+    "interval_95": [
+     0.5933917889644369,
+     0.6605418046394057
+    ],
+    "lags": {
+     "data_mean": [
+      0.44172348963285973,
+      0.37321370588333186,
+      0.3155417281634897,
+      0.267086436491124,
+      0.22591710140404989
+     ],
+     "data_minus_null": [
+      -0.00017929928522686378,
+      -0.0002345123411611194,
+      -0.0008950415219287633,
+      -0.0018876032768521123,
+      -0.0035527635797433232
+     ],
+     "null_mean": [
+      0.4419027889180866,
+      0.373448218224493,
+      0.31643676968541845,
+      0.2689740397679761,
+      0.2294698649837932
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 8.901796875016021e-05,
+    "nuisance_mcse": 8.101564879217396e-06,
+    "nuisance_variance": 0.00025341457808478396,
+    "projected_fraction": 0.0,
+    "score_se": 0.006390687283493464,
+    "se": 0.01715387600631965
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 1,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 15,
+   "r": 0.55,
+   "unit": "x5-t1-u00-r1",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8182405011799878,
+    0.11943115534814935
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.7990594375000001,
+    "interval_27729": [
+     0.7593480431673306,
+     0.8336533570001009
+    ],
+    "interval_95": [
+     0.7715213033678644,
+     0.8240354570645453
+    ],
+    "lags": {
+     "data_mean": [
+      0.4382055292427417,
+      0.3685965248163156,
+      0.3101728091638065,
+      0.26123890566865804,
+      0.21990044934513545
+     ],
+     "data_minus_null": [
+      -0.0002471315446141431,
+      -0.00029507281370316774,
+      -0.002133844270765739,
+      -0.005068247465778719,
+      -0.009030794601400549
+     ],
+     "null_mean": [
+      0.43845266078735584,
+      0.3688915976300188,
+      0.31230665343457226,
+      0.26630715313443676,
+      0.228931243946536
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0014580476562500166,
+    "nuisance_mcse": 4.914048175433493e-06,
+    "nuisance_variance": 0.00015330176849090983,
+    "projected_fraction": 0.0,
+    "score_se": 0.005109459050068182,
+    "se": 0.013394339859628523
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 16,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8371392904807861,
+    0.07102515394976545
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6898900624999998,
+    "interval_27729": [
+     0.6626057338280961,
+     0.7159139513150969
+    ],
+    "interval_95": [
+     0.6707277161613043,
+     0.7084220226305256
+    ],
+    "lags": {
+     "data_mean": [
+      0.4844259251093102,
+      0.41062419309962267,
+      0.3481802165565482,
+      0.2954255887607569,
+      0.2506560970293408
+     ],
+     "data_minus_null": [
+      -2.7518536201531774e-05,
+      3.485353975979377e-05,
+      -0.0012943480662701012,
+      -0.003138730536414891,
+      -0.005411878089767563
+     ],
+     "null_mean": [
+      0.48445344364551174,
+      0.4105893395598629,
+      0.3494745646228183,
+      0.2985643192971718,
+      0.25606797511910834
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.001689973968749925,
+    "nuisance_mcse": 1.7942750664529328e-06,
+    "nuisance_variance": 5.658443581170284e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.005995741862968065,
+    "se": 0.009619425985943788
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 17,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8187975555634757,
+    0.15366977482663374
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.8837423125,
+    "interval_27729": [
+     0.8658170571784845,
+     0.8995507793647544
+    ],
+    "interval_95": [
+     0.8713013624790958,
+     0.8951253849699566
+    ],
+    "lags": {
+     "data_mean": [
+      0.4831626463035318,
+      0.4100677487266184,
+      0.3478914373723904,
+      0.29505158661654785,
+      0.2499116988703065
+     ],
+     "data_minus_null": [
+      -5.604268501618881e-05,
+      8.430688006838549e-05,
+      -0.002843295019314962,
+      -0.007346559404916075,
+      -0.013045378967062427
+     ],
+     "null_mean": [
+      0.483218688988548,
+      0.40998344184655,
+      0.3507347323917054,
+      0.3023981460214639,
+      0.26295707783736894
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0009671486875000301,
+    "nuisance_mcse": 7.225878118760362e-07,
+    "nuisance_variance": 2.3008997575543087e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.003723506324820938,
+    "se": 0.00607235513837297
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 18,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.854444538344538,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 19,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8618628148967112,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 20,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9013958418962101,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 21,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9529278128844765,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 22,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8395792852493328,
+    0.043136790766657954
+   ],
+   "reading": "intermediate",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6103959375,
+    "interval_27729": [
+     0.5758352099268145,
+     0.6438821874686248
+    ],
+    "interval_95": [
+     0.5860603305169508,
+     0.6341938579396392
+    ],
+    "lags": {
+     "data_mean": [
+      0.4831151382214285,
+      0.40809443524002204,
+      0.34490375679037405,
+      0.291804487173467,
+      0.24691176704913956
+     ],
+     "data_minus_null": [
+      -5.6304815625296545e-05,
+      7.459956795324851e-05,
+      -0.0007694890499718721,
+      -0.0017914345375948382,
+      -0.0030856891045954737
+     ],
+     "null_mean": [
+      0.4831714430370538,
+      0.4080198356720688,
+      0.3456732458403459,
+      0.29359592171106186,
+      0.24999745615373503
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.005013256062500138,
+    "nuisance_mcse": 3.5585559782912276e-06,
+    "nuisance_variance": 0.00011162996442759891,
+    "projected_fraction": 0.0,
+    "score_se": 0.006273996313919279,
+    "se": 0.012287920661148151
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 2,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 23,
+   "r": 0.6,
+   "unit": "x5-t1-u00-r2",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8202611774778271,
+    0.11198574636662892
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.7968878125,
+    "interval_27729": [
+     0.7642621459845076,
+     0.8260260034399842
+    ],
+    "interval_95": [
+     0.7741885139756293,
+     0.817842187694119
+    ],
+    "lags": {
+     "data_mean": [
+      0.4795861284133332,
+      0.40335950498574336,
+      0.33929017329553557,
+      0.285639980035795,
+      0.24060481338818326
+     ],
+     "data_minus_null": [
+      1.2217887199739152e-06,
+      6.936975681626212e-05,
+      -0.0021471679869989324,
+      -0.005304720854477141,
+      -0.009023183596920087
+     ],
+     "null_mean": [
+      0.4795849066246132,
+      0.4032901352289271,
+      0.3414373412825345,
+      0.29094470089027213,
+      0.24962799698510335
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0007201805937500083,
+    "nuisance_mcse": 3.0694602024971146e-06,
+    "nuisance_variance": 0.00010008021040952619,
+    "projected_fraction": 0.0,
+    "score_se": 0.004890013589920842,
+    "se": 0.011135189415503299
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 24,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.838211767790355,
+    0.06506681109948585
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6931413750000001,
+    "interval_27729": [
+     0.6633154289743662,
+     0.7214347381863391
+    ],
+    "interval_95": [
+     0.6722086406648751,
+     0.7133074668907884
+    ],
+    "lags": {
+     "data_mean": [
+      0.5260987465604111,
+      0.44554307047956027,
+      0.377696037229514,
+      0.3202506934296015,
+      0.27145749925539275
+     ],
+     "data_minus_null": [
+      -2.4010618210557055e-05,
+      0.00011543972284489001,
+      -0.0008956851763726736,
+      -0.002862580852314167,
+      -0.005292966385950781
+     ],
+     "null_mean": [
+      0.5261227571786217,
+      0.4454276307567154,
+      0.3785917224058867,
+      0.32311327428191566,
+      0.27675046564134353
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.001977583781250014,
+    "nuisance_mcse": 2.3599692024150124e-06,
+    "nuisance_variance": 7.7207181092654e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.005727995922176402,
+    "se": 0.0104889045365626
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 25,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8187926875543132,
+    0.1534279160535726
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.9029355625000001,
+    "interval_27729": [
+     0.8860789692055175,
+     0.9175300750744675
+    ],
+    "interval_95": [
+     0.8912689503420481,
+     0.9134719020253523
+    ],
+    "lags": {
+     "data_mean": [
+      0.5248235812696672,
+      0.44499552741164644,
+      0.37743222154957085,
+      0.3199228108765079,
+      0.2707688142074075
+     ],
+     "data_minus_null": [
+      9.114327528614297e-05,
+      0.00018476309714793304,
+      -0.0026895451404146398,
+      -0.007675895954950995,
+      -0.013957234011120812
+     ],
+     "null_mean": [
+      0.5247324379943811,
+      0.4448107643144985,
+      0.3801217666899855,
+      0.3275987068314589,
+      0.2847260482185283
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0009610574062498545,
+    "nuisance_mcse": 6.69721643742018e-07,
+    "nuisance_variance": 2.1730128886505188e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.0032046962947263253,
+    "se": 0.005656872565997738
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 26,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8540941731479631,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 27,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8609995350194787,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 28,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8974517273160465,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 29,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9450320144383172,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 30,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8404330856354099,
+    0.03942945126474571
+   ],
+   "reading": "intermediate",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6205705,
+    "interval_27729": [
+     0.5790773633164631,
+     0.660372308410301
+    ],
+    "interval_95": [
+     0.5913861537748148,
+     0.6489078943759958
+    ],
+    "lags": {
+     "data_mean": [
+      0.5248349323306689,
+      0.4429830628560255,
+      0.3743154996164851,
+      0.3164433348677382,
+      0.2675373603040402
+     ],
+     "data_minus_null": [
+      2.574489813333969e-06,
+      0.00010435749744247547,
+      -0.0005200639799062268,
+      -0.001741703827926877,
+      -0.003198400382032174
+     ],
+     "null_mean": [
+      0.5248323578408556,
+      0.44287870535858304,
+      0.3748355635963913,
+      0.31818503869566506,
+      0.27073576068607236
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0004721449375000297,
+    "nuisance_mcse": 5.673766123487419e-06,
+    "nuisance_variance": 0.00017751051452760853,
+    "projected_fraction": 0.0,
+    "score_se": 0.006185172927114609,
+    "se": 0.01468900536680139
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 3,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 31,
+   "r": 0.65,
+   "unit": "x5-t1-u00-r3",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8248082840273642,
+    0.09360766732246749
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.7783408125,
+    "interval_27729": [
+     0.7442522129631274,
+     0.8090514880305558
+    ],
+    "interval_95": [
+     0.7545917599260785,
+     0.8003995115966196
+    ],
+    "lags": {
+     "data_mean": [
+      0.52133134099648,
+      0.4381672518096105,
+      0.3686060811696219,
+      0.3101390199819661,
+      0.26092776826954894
+     ],
+     "data_minus_null": [
+      3.417623617818499e-05,
+      0.0001399289941522719,
+      -0.0015478153056633914,
+      -0.004566186283671392,
+      -0.008177817035892487
+     ],
+     "null_mean": [
+      0.5212971647603019,
+      0.43802732281545825,
+      0.3701538964752853,
+      0.31470520626563747,
+      0.26910558530544143
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0028235370937500504,
+    "nuisance_mcse": 3.6261393531313534e-06,
+    "nuisance_variance": 0.00011152049115535604,
+    "projected_fraction": 0.0,
+    "score_se": 0.0050062548666386965,
+    "se": 0.011686876355344043
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 32,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8390883232524653,
+    0.0610370475387993
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6884143125000001,
+    "interval_27729": [
+     0.6596545998670507,
+     0.7157908427751254
+    ],
+    "interval_95": [
+     0.668220535068222,
+     0.707916240469647
+    ],
+    "lags": {
+     "data_mean": [
+      0.5680726625445196,
+      0.48060466749693176,
+      0.40716123338818766,
+      0.345186933495899,
+      0.29280111820418325
+     ],
+     "data_minus_null": [
+      -7.055653403409412e-05,
+      -0.00022255428900946894,
+      -0.0011891276787023286,
+      -0.003057341391470847,
+      -0.005347826522428989
+     ],
+     "null_mean": [
+      0.5681432190785537,
+      0.48082722178594123,
+      0.40835036106689,
+      0.34824427488736986,
+      0.29814894472661224
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0029607926249999306,
+    "nuisance_mcse": 2.139130576418509e-06,
+    "nuisance_variance": 6.776576284256926e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.005904527166241132,
+    "se": 0.010130607281868586
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 33,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8228014169037883,
+    0.13772133562896882
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.8869691875000001,
+    "interval_27729": [
+     0.8708729624465968,
+     0.9012863836306995
+    ],
+    "interval_95": [
+     0.8757840996943375,
+     0.8972652548172247
+    ],
+    "lags": {
+     "data_mean": [
+      0.5668019529685248,
+      0.4800880926071108,
+      0.4069234062038317,
+      0.3448887697708831,
+      0.29214882574976564
+     ],
+     "data_minus_null": [
+      -0.00012457462128045993,
+      -0.00025247399669259263,
+      -0.002909859853259422,
+      -0.007587316413710132,
+      -0.01344672324979046
+     ],
+     "null_mean": [
+      0.5669265275898052,
+      0.48034056660380337,
+      0.40983326605709114,
+      0.35247608618459325,
+      0.3055955489995561
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0005105311874998852,
+    "nuisance_mcse": 5.200589022533877e-07,
+    "nuisance_variance": 1.6968664179417815e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.0036076152169606935,
+    "se": 0.005475723854712193
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 34,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8538127528016638,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 35,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.86027750229786,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 36,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8940816556787595,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 37,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9382797244201969,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 38,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8429047852918575,
+    0.026980643568862348
+   ],
+   "reading": "intermediate",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.5883994375,
+    "interval_27729": [
+     0.5456169639874582,
+     0.6298862041254545
+    ],
+    "interval_95": [
+     0.5582583207094283,
+     0.6178916246526664
+    ],
+    "lags": {
+     "data_mean": [
+      0.5668353503387807,
+      0.4780284736949665,
+      0.40368621631567103,
+      0.3412245381216515,
+      0.28869527330689854
+     ],
+     "data_minus_null": [
+      -9.135659010195418e-05,
+      -0.00020792790767554248,
+      -0.0005949739729274595,
+      -0.0014560351892813905,
+      -0.002404104881726876
+     ],
+     "null_mean": [
+      0.5669267069288827,
+      0.478236401602642,
+      0.4042811902885985,
+      0.3426805733109329,
+      0.2910993781886254
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0015411424374999205,
+    "nuisance_mcse": 6.016841346259408e-06,
+    "nuisance_variance": 0.00019160093685687048,
+    "projected_fraction": 0.0,
+    "score_se": 0.0063523870234277165,
+    "se": 0.01523002815993074
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 4,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 39,
+   "r": 0.7,
+   "unit": "x5-t1-u00-r4",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8295001196067404,
+    0.07407002272861296
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.7409430625,
+    "interval_27729": [
+     0.7022364718531722,
+     0.7762215114764393
+    ],
+    "interval_95": [
+     0.7139247054572517,
+     0.7662451716388403
+    ],
+    "lags": {
+     "data_mean": [
+      0.5633862919811329,
+      0.4732034742160094,
+      0.39779125716924224,
+      0.3347037038422752,
+      0.28182411648359107
+     ],
+     "data_minus_null": [
+      -4.459186010508098e-05,
+      -0.00013612470623686201,
+      -0.0016131474678859892,
+      -0.00409975950131658,
+      -0.0070414140030188865
+     ],
+     "null_mean": [
+      0.563430883841238,
+      0.47333959892224625,
+      0.39940440463712823,
+      0.3388034633435918,
+      0.28886553048660996
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -9.565974999992122e-05,
+    "nuisance_mcse": 4.696661547795465e-06,
+    "nuisance_variance": 0.0001483313677294814,
+    "projected_fraction": 0.0,
+    "score_se": 0.005475445464138307,
+    "se": 0.013353346799968692
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 40,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8393904240819562,
+    0.05922439458451132
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.679659375,
+    "interval_27729": [
+     0.6528754105622354,
+     0.7053095266607026
+    ],
+    "interval_95": [
+     0.6608376851287039,
+     0.697914031235007
+    ],
+    "lags": {
+     "data_mean": [
+      0.6105675812372203,
+      0.5162122600724616,
+      0.4371476337525954,
+      0.3705592646643049,
+      0.31409243451666385
+     ],
+     "data_minus_null": [
+      0.0002182250396972618,
+      0.00028315184944405214,
+      -0.0007753453042638747,
+      -0.002509992122758986,
+      -0.004959552936230516
+     ],
+     "null_mean": [
+      0.6103493561975231,
+      0.5159291082230175,
+      0.4379229790568593,
+      0.3730692567870639,
+      0.31905198745289437
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0005775191249999256,
+    "nuisance_mcse": 1.62625007826939e-06,
+    "nuisance_variance": 5.073552022558295e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.006228105752536979,
+    "se": 0.0094617557297981
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 41,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8237274966793777,
+    0.13312329872273554
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.8864064375,
+    "interval_27729": [
+     0.8700249665449863,
+     0.9009582960805882
+    ],
+    "interval_95": [
+     0.8750252536771745,
+     0.8968733138702878
+    ],
+    "lags": {
+     "data_mean": [
+      0.6092949733079095,
+      0.5156787712643932,
+      0.4369239741168653,
+      0.3702710100099157,
+      0.31347495901817957
+     ],
+     "data_minus_null": [
+      0.00023562033873203436,
+      0.0002920219452177131,
+      -0.0024925172714563293,
+      -0.007090990349609583,
+      -0.013225981510927798
+     ],
+     "null_mean": [
+      0.6090593529691775,
+      0.5153867493191755,
+      0.4394164913883216,
+      0.3773620003595253,
+      0.32670094052910736
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.00023138753124996025,
+    "nuisance_mcse": 5.429944626176328e-07,
+    "nuisance_variance": 1.689661842785181e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.0037575331258740156,
+    "se": 0.0055691717175799455
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 42,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8535612704286268,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 43,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8596551309031718,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 44,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8911547692345833,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 45,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9324084337726087,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 46,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8443125787924423,
+    0.020325486781522205
+   ],
+   "reading": "below-targets",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.558857875,
+    "interval_27729": [
+     0.5093179080459302,
+     0.607253086367583
+    ],
+    "interval_95": [
+     0.5239038795641175,
+     0.5932380713579595
+    ],
+    "lags": {
+     "data_mean": [
+      0.60943930822822,
+      0.5137053367595961,
+      0.4336905858261437,
+      0.3665691893498735,
+      0.3099152673177447
+     ],
+     "data_minus_null": [
+      0.00012949877141521515,
+      0.00023133059608093642,
+      -0.0001431270747084823,
+      -0.000681653789230463,
+      -0.0015727036431972818
+     ],
+     "null_mean": [
+      0.6093098094568048,
+      0.5134740061635151,
+      0.4338337129008522,
+      0.36725084313910394,
+      0.311487970960942
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0014373115312499296,
+    "nuisance_mcse": 8.58381713345837e-06,
+    "nuisance_variance": 0.0002686233285400523,
+    "projected_fraction": 0.0,
+    "score_se": 0.006723748485591674,
+    "se": 0.01771530756824585
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 5,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 47,
+   "r": 0.75,
+   "unit": "x5-t1-u00-r5",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8334777131937773,
+    0.056796665747775504
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6930270000000001,
+    "interval_27729": [
+     0.6550751685348607,
+     0.7285334968900351
+    ],
+    "interval_95": [
+     0.6664353497584716,
+     0.7183945377533321
+    ],
+    "lags": {
+     "data_mean": [
+      0.6060772743964884,
+      0.5088382897914989,
+      0.4276935812730219,
+      0.35979592897536694,
+      0.30277222666232706
+     ],
+     "data_minus_null": [
+      0.00019577603404108412,
+      0.0003046789948247808,
+      -0.0010059554707768648,
+      -0.002994487972646176,
+      -0.005507928429891895
+     ],
+     "null_mean": [
+      0.6058814983624473,
+      0.5085336107966741,
+      0.4286995367437988,
+      0.3627904169480131,
+      0.30828015509221895
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -7.582468749878224e-06,
+    "nuisance_mcse": 4.249057813453413e-06,
+    "nuisance_variance": 0.0001399283299768807,
+    "projected_fraction": 0.0,
+    "score_se": 0.006000491189492169,
+    "se": 0.013264019922031701
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 48,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8402512435788455,
+    0.054823263554693885
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.690847375,
+    "interval_27729": [
+     0.6646051278269012,
+     0.7159140252013577
+    ],
+    "interval_95": [
+     0.6724136460828134,
+     0.7086931939599111
+    ],
+    "lags": {
+     "data_mean": [
+      0.6532667047131947,
+      0.5517355675403842,
+      0.4667409240787023,
+      0.39533922594958726,
+      0.33495247305734743
+     ],
+     "data_minus_null": [
+      0.00010380493626604981,
+      8.000524729290248e-05,
+      -0.0010927257284750747,
+      -0.0029836139873138934,
+      -0.005311017633148063
+     ],
+     "null_mean": [
+      0.6531628997769287,
+      0.5516555622930913,
+      0.4678336498071774,
+      0.39832283993690115,
+      0.3402634906904955
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0012540142500000462,
+    "nuisance_mcse": 1.543804913215924e-06,
+    "nuisance_variance": 4.9885700682579646e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.005985575359522463,
+    "se": 0.009258121465346094
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 49,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8254707777266679,
+    0.12588017781110225
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.8968374375,
+    "interval_27729": [
+     0.8806814523440943,
+     0.9110268712952201
+    ],
+    "interval_95": [
+     0.8856320126613154,
+     0.9070602019232812
+    ],
+    "lags": {
+     "data_mean": [
+      0.6520166908229755,
+      0.5512334159847959,
+      0.4665303377145989,
+      0.39507304836720836,
+      0.3343247877354885
+     ],
+     "data_minus_null": [
+      0.00010938218263667476,
+      6.434592672999173e-05,
+      -0.0028974843206409084,
+      -0.007712009166381872,
+      -0.013797868359438248
+     ],
+     "null_mean": [
+      0.6519073086403389,
+      0.5511690700580659,
+      0.4694278220352398,
+      0.40278505753359023,
+      0.34812265609492676
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -5.0888750000144256e-05,
+    "nuisance_mcse": 5.805291885265331e-07,
+    "nuisance_variance": 1.8066097109744734e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.0034287031335988884,
+    "se": 0.0054609616633057925
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 50,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8533806658843045,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 51,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8591646210683999,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 52,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.888567554932686,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 53,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9241205143647385,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 54,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.845564523548746,
+    0.013612601850023456
+   ],
+   "reading": "below-targets",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.5577233125000001,
+    "interval_27729": [
+     0.5241782445143104,
+     0.5907498666670301
+    ],
+    "interval_95": [
+     0.5340486239650498,
+     0.5811385524646645
+    ],
+    "lags": {
+     "data_mean": [
+      0.6522409438098755,
+      0.5492538994442083,
+      0.46325777541865243,
+      0.3912249655265895,
+      0.3306365237974962
+     ],
+     "data_minus_null": [
+      0.0001451343261344995,
+      0.00017617724101171017,
+      -0.00020980976160950293,
+      -0.000804583076139731,
+      -0.001425819498814318
+     ],
+     "null_mean": [
+      0.652095809483741,
+      0.5490777222031966,
+      0.46346758518026193,
+      0.3920295486027292,
+      0.3320623432963105
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0016316135624999673,
+    "nuisance_mcse": 3.879988071615095e-06,
+    "nuisance_variance": 0.0001018390292946884,
+    "projected_fraction": 0.0,
+    "score_se": 0.0065328052122401135,
+    "se": 0.012021504616135202
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 6,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 55,
+   "r": 0.8,
+   "unit": "x5-t1-u00-r6",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8380959357367357,
+    0.03462805720088484
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6488868749999999,
+    "interval_27729": [
+     0.6157916034647024,
+     0.6806099643419091
+    ],
+    "interval_95": [
+     0.6256212232329287,
+     0.6714659459764335
+    ],
+    "lags": {
+     "data_mean": [
+      0.6490606391594673,
+      0.5445080112865951,
+      0.4572704094960828,
+      0.3843892538052275,
+      0.32334033778969595
+     ],
+     "data_minus_null": [
+      0.00017232450257587129,
+      0.0003012135807320959,
+      -0.0007286907309128066,
+      -0.002304087781741071,
+      -0.003993293436345358
+     ],
+     "null_mean": [
+      0.6488883146568915,
+      0.544206797705863,
+      0.4579991002269956,
+      0.38669334158696855,
+      0.3273336312260413
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.005242134656249897,
+    "nuisance_mcse": 3.084738580422806e-06,
+    "nuisance_variance": 9.743594371203815e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.0062855907721210405,
+    "se": 0.011702332889924612
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 56,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8407780510201952,
+    0.051983831247602356
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.6959093749999999,
+    "interval_27729": [
+     0.6709297248272997,
+     0.7197847773600314
+    ],
+    "interval_95": [
+     0.6783617181696611,
+     0.7129048502167419
+    ],
+    "lags": {
+     "data_mean": [
+      0.6964034437022774,
+      0.5875749821476579,
+      0.4967792156817686,
+      0.4205710367670075,
+      0.3562410233784685
+     ],
+     "data_minus_null": [
+      -2.9651530789043257e-05,
+      -3.367671315968046e-05,
+      -0.0012064092758812262,
+      -0.0031168862701597133,
+      -0.00552412117984441
+     ],
+     "null_mean": [
+      0.6964330952330664,
+      0.5876086588608176,
+      0.4979856249576498,
+      0.42368792303716724,
+      0.36176514455831293
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0002875853125000605,
+    "nuisance_mcse": 1.3848821603522466e-06,
+    "nuisance_variance": 4.286260855833297e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.005902177617189555,
+    "se": 0.008814664439624819
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 57,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8269860416300914,
+    0.1191077133923625
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.8962952499999999,
+    "interval_27729": [
+     0.8801961492220973,
+     0.9104510691553117
+    ],
+    "interval_95": [
+     0.8851273708554802,
+     0.9064920926711068
+    ],
+    "lags": {
+     "data_mean": [
+      0.6951443182733601,
+      0.5870782374693148,
+      0.49659490886635144,
+      0.4203263888639639,
+      0.3556611767470094
+     ],
+     "data_minus_null": [
+      3.401152105586558e-05,
+      2.8442815834472945e-05,
+      -0.0028812921575291917,
+      -0.00775321028242254,
+      -0.013805830950332054
+     ],
+     "null_mean": [
+      0.6951103067523042,
+      0.5870497946534803,
+      0.49947620102388063,
+      0.42807959914638644,
+      0.3694670076973415
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0001504228750000003,
+    "nuisance_mcse": 5.720514669150382e-07,
+    "nuisance_variance": 1.7622509222280054e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.003467623873129652,
+    "se": 0.005444898947434998
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 58,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.853180513473856,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 59,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.858659024425619,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 60,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.886322229536339,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 61,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.9102790064706838,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 62,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8470782916568259,
+    0.006231745970839557
+   ],
+   "reading": "below-targets",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.544737625,
+    "interval_27729": [
+     0.5098263381558819,
+     0.5792146522152216
+    ],
+    "interval_95": [
+     0.5200861359828728,
+     0.5691717965852718
+    ],
+    "lags": {
+     "data_mean": [
+      0.6954990044714853,
+      0.5851352654614417,
+      0.49327934722846123,
+      0.4164100369058806,
+      0.35183909863419655
+     ],
+     "data_minus_null": [
+      -8.15046355264748e-05,
+      -0.00014377041786495237,
+      -0.000469750193737406,
+      -0.0009227246921270638,
+      -0.0013228639048439295
+     ],
+     "null_mean": [
+      0.6955805091070117,
+      0.5852790358793066,
+      0.49374909742219864,
+      0.41733276159800764,
+      0.3531619625390405
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0004567797812500274,
+    "nuisance_mcse": 3.419965009109402e-06,
+    "nuisance_variance": 0.00011537220240054965,
+    "projected_fraction": 0.0125,
+    "score_se": 0.006455604837207324,
+    "se": 0.012531840894885486
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 7,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 63,
+   "r": 0.85,
+   "unit": "x5-t1-u00-r7",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8426540879139138,
+    0.013271502753806
+   ],
+   "reading": "intermediate",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.60205525,
+    "interval_27729": [
+     0.5657799480343061,
+     0.6372431002310944
+    ],
+    "interval_95": [
+     0.5765060249147839,
+     0.6270602104407053
+    ],
+    "lags": {
+     "data_mean": [
+      0.6925328469178856,
+      0.5804717298790663,
+      0.48726614979276694,
+      0.40944063382725987,
+      0.34431823618053314
+     ],
+     "data_minus_null": [
+      -0.00017365856621487374,
+      -0.0002253085092088769,
+      -0.0009833331630245135,
+      -0.0020367755680311683,
+      -0.0029980735058656727
+     ],
+     "null_mean": [
+      0.6927065054841005,
+      0.5806970383882751,
+      0.48824948295579146,
+      0.41147740939529104,
+      0.3473163096863988
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.00047372106249987667,
+    "nuisance_mcse": 3.9296371184145614e-06,
+    "nuisance_variance": 0.0001267429053625431,
+    "projected_fraction": 0.0,
+    "score_se": 0.006312424252428464,
+    "se": 0.01290695956858896
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-003",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.03
+   },
+   "family": "B",
+   "index": 64,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8414216223760114,
+    0.048597241125398316
+   ],
+   "reading": "crosses-secondary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.7007985625,
+    "interval_27729": [
+     0.6747921011533234,
+     0.7255711078036245
+    ],
+    "interval_95": [
+     0.6825380074224752,
+     0.718442050826352
+    ],
+    "lags": {
+     "data_mean": [
+      0.740049365488412,
+      0.6237821825785091,
+      0.5270006712151992,
+      0.44588901226532945,
+      0.377516649843671
+     ],
+     "data_minus_null": [
+      -3.879789889593699e-05,
+      -7.28870613115884e-05,
+      -0.0013835313640223612,
+      -0.003401550843990797,
+      -0.005868838954522171
+     ],
+     "null_mean": [
+      0.740088163387308,
+      0.6238550696398207,
+      0.5283842025792216,
+      0.44929056310932025,
+      0.3833854887981932
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.00251101168750012,
+    "nuisance_mcse": 1.5162029283999514e-06,
+    "nuisance_variance": 4.72907997581917e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.006054172832735293,
+    "se": 0.009162085376529832
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.0,
+    "name": "trend-008",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.08
+   },
+   "family": "B",
+   "index": 65,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": true,
+   "attempts": [
+    "interior"
+   ],
+   "parameters": [
+    0.8283402762607134,
+    0.11303926017215694
+   ],
+   "reading": "crosses-primary",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.90193975,
+    "interval_27729": [
+     0.8870429358685141,
+     0.9150600898886305
+    ],
+    "interval_95": [
+     0.8916037346503939,
+     0.9113881368419028
+    ],
+    "lags": {
+     "data_mean": [
+      0.7387856540038883,
+      0.6232815275370768,
+      0.5268033897518183,
+      0.4456591895056257,
+      0.37693207683613383
+     ],
+     "data_minus_null": [
+      -8.192831169151482e-06,
+      -6.534333547758564e-05,
+      -0.003149438606331989,
+      -0.008112925170993879,
+      -0.014299692197460634
+     ],
+     "null_mean": [
+      0.7387938468350574,
+      0.6233468708725544,
+      0.5299528283581503,
+      0.4537721146766196,
+      0.39123176903359447
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": 0.0005274842812500458,
+    "nuisance_mcse": 4.210653123770762e-07,
+    "nuisance_variance": 1.348888436068523e-05,
+    "projected_fraction": 0.0,
+    "score_se": 0.003454577806507391,
+    "se": 0.00504212179363992
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-003",
+    "step": 0.03,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 66,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8529924804195511,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.0,
+    "name": "step-008",
+    "step": 0.08,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 67,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8582196003469511,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-010",
+    "step": 0.0,
+    "tenure": 0.1,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 68,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8784303638451838,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.0,
+    "name": "tenure-020",
+    "step": 0.0,
+    "tenure": 0.2,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 69,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": false,
+   "attempts": [
+    "boundary",
+    "boundary"
+   ],
+   "parameters": [
+    0.8866275381659949,
+    0.0
+   ],
+   "reading": "fit-failure",
+   "statement": "the correctly specified B does not reproduce the misspecified L1 and L2 at this r; information, not an AUC",
+   "estimate": null
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.4054651081081644,
+    "name": "mnar-ln15",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 70,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": true,
+   "attempts": [
+    "boundary"
+   ],
+   "parameters": [
+    0.848390220980274,
+    0.0
+   ],
+   "reading": "below-targets",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.5402275,
+    "interval_27729": [
+     0.5135527639392643,
+     0.5666737302411804
+    ],
+    "interval_95": [
+     0.5213875304611125,
+     0.5589531944707187
+    ],
+    "lags": {
+     "data_mean": [
+      0.7393278072363223,
+      0.6214636198815856,
+      0.5235786359428453,
+      0.4417981970524737,
+      0.3731693902563074
+     ],
+     "data_minus_null": [
+      -0.00012425282393124792,
+      -0.0002649717229799009,
+      -0.0006595624935666899,
+      -0.001053795412808034,
+      -0.001318433850292955
+     ],
+     "null_mean": [
+      0.7394520600602535,
+      0.6217285916045655,
+      0.524238198436412,
+      0.44285199246528173,
+      0.37448782410660036
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.0020123566875001053,
+    "nuisance_mcse": 3.6993938029531017e-06,
+    "nuisance_variance": 5.025477587732596e-05,
+    "projected_fraction": 1.0,
+    "score_se": 0.006454960849742125,
+    "se": 0.00958755941045632
+   }
+  },
+  {
+   "a": 0.0,
+   "block": 8,
+   "channel": {
+    "attrition": 0.6931471805599453,
+    "name": "mnar-ln2",
+    "step": 0.0,
+    "tenure": 0.0,
+    "trend": 0.0
+   },
+   "family": "B",
+   "index": 71,
+   "r": 0.9,
+   "unit": "x5-t1-u00-r8",
+   "success": true,
+   "attempts": [
+    "boundary"
+   ],
+   "parameters": [
+    0.845495198111335,
+    0.0
+   ],
+   "reading": "below-targets",
+   "null_gate_would_invalidate": true,
+   "estimate": {
+    "auc": 0.5784953125,
+    "interval_27729": [
+     0.5573920707910548,
+     0.5993156699254806
+    ],
+    "interval_95": [
+     0.5636037074142667,
+     0.59324549771056
+    ],
+    "lags": {
+     "data_mean": [
+      0.7366478186240204,
+      0.6169850435285974,
+      0.5176274553966034,
+      0.43480593513334725,
+      0.36558366042569035
+     ],
+     "data_minus_null": [
+      -0.00011262993430616319,
+      -0.00031150671280200104,
+      -0.0010907169005607287,
+      -0.001904730736870086,
+      -0.002464883340433488
+     ],
+     "null_mean": [
+      0.7367604485583266,
+      0.6172965502413994,
+      0.5187181722971641,
+      0.43671066587021734,
+      0.36804854376612384
+     ],
+     "set": "check panels, L1..L5 (profile columns 0:5)"
+    },
+    "mean_shift": -0.00020721318749994388,
+    "nuisance_mcse": 5.203032179015766e-07,
+    "nuisance_variance": 1.6206334980861843e-05,
+    "projected_fraction": 1.0,
+    "score_se": 0.006403539128355254,
+    "se": 0.007563838202211798
+   }
+  }
+ ]
+}

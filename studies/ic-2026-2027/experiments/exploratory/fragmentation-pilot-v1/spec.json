@@ -1,0 +1,61 @@
+{
+  "format": "fragmentation-exploratory-spec-v1",
+  "status": "exploratory",
+  "purpose": "Measure post-stop interactions and partition changes in fixed-graph DW; no novelty or confirmatory claim.",
+  "seed_base": 2026091200,
+  "certificate_margin": 1e-12,
+  "initialization": "Independent uniform [0,1) opinions; graph, opinion and event RNG streams explicitly recorded. No graph rejection or resampling.",
+  "schedule": "After receptive events, t>0, adaptive check interval 10**(floor(log10(t))-3), initialized to zero; mirrors reference scheduling with Tmin=0 and sigfigs=3.",
+  "models": {
+    "uniform": {"mu": 0.5, "initial_weight": 0.5, "gamma": 0.0, "delta": 1.0},
+    "adaptive": {"mu": 0.5, "initial_weight": 0.5, "gamma": 0.5, "delta": 0.5}
+  },
+  "profiles": {
+    "complete100": {"kind": "complete", "n": 100, "seed_index": 0},
+    "complete200": {"kind": "complete", "n": 200, "seed_index": 1},
+    "er100": {"kind": "er", "n": 100, "mean_degree": 9.9, "seed_index": 2},
+    "er200": {"kind": "er", "n": 200, "mean_degree": 9.9, "seed_index": 3},
+    "er100_dense": {"kind": "er", "n": 100, "mean_degree": 19.8, "seed_index": 4},
+    "modular100": {"kind": "modular", "n": 100, "within_mean_degree": 9.9, "bridges": 2, "seed_index": 5},
+    "modular200": {"kind": "modular", "n": 200, "within_mean_degree": 9.9, "bridges": 2, "seed_index": 6}
+  },
+  "phases": {
+    "benchmark": {
+      "profiles": ["complete100", "complete200", "er100", "er200", "modular200"],
+      "confidences": [0.3], "graph_replicates": 1, "opinion_replicates": 1,
+      "tolerance": 0.01, "seed_offset": 0, "allowed_max_attempts": [50000]
+    },
+    "pilot": {
+      "profiles": ["complete100", "complete200", "er100", "er200", "er100_dense", "modular100", "modular200"],
+      "confidences": [0.1, 0.3], "graph_replicates": 2, "opinion_replicates": 2,
+      "tolerance": 0.01, "seed_offset": 1000000,
+      "allowed_max_attempts": [500000, 100000, 50000]
+    },
+    "sensitivity": {
+      "profiles": ["er100", "modular100"],
+      "confidences": [0.1, 0.3], "graph_replicates": 1, "opinion_replicates": 2,
+      "tolerance": 0.001, "seed_offset": 1000000,
+      "allowed_max_attempts": [500000, 100000, 50000]
+    },
+    "control": {
+      "profiles": ["complete100"],
+      "confidences": [0.9], "graph_replicates": 1, "opinion_replicates": 5,
+      "tolerance": 0.01, "seed_offset": 2000000, "allowed_max_attempts": [100000]
+    }
+  },
+  "budget_rule": "After the 10 benchmark trajectories, choose the largest allowed pilot cap whose worst-case duration for 128 pilot+sensitivity trajectories is <=1200 seconds using the slowest measured attempts/second. If none fits, do not launch the batch; record a linked budget revision. Use the same cap for sensitivity. Timing only, not observed effects, determines this choice.",
+  "primary_outcomes": [
+    "First receptive interaction crossing each declared partition after its stopping time",
+    "Partition difference and component size/count change at certified or censored endpoint",
+    "Attempt counts to each stopping rule, with right censoring and numerical failures explicit"
+  ],
+  "decision_rule": "Proceed beyond this pilot only if controls and numerical invariants pass and effects occur beyond the constructed case, changing an interpretable contrast or delimiting a useful reliability region. Zero observed failures with this small nested sample does not establish a population bound. Do not add configurations to obtain a positive finding.",
+  "limitations": [
+    "Reduced independent implementation; no claim to reproduce published aggregate figures or campaign inputs",
+    "Interval separation has prior literature; graph-local variant has no established novelty",
+    "Same trajectory per stopping-rule comparison; common random uniforms across model arms do not imply identical edge sequences",
+    "Graphs are nested units; four trials in each cell are not four independent graph realizations",
+    "Sensitivity reuses a fixed subset of pilot inputs and has a different stopping tolerance",
+    "Finite arithmetic certificate uses a conservative 1e-12 gap margin, not interval arithmetic over an entire exact trajectory"
+  ]
+}

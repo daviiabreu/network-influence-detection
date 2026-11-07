@@ -1,0 +1,30 @@
+{
+  "facts": {
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/ii-comparison-no-ratio/assembly-notes.txt",
+        "sha256": "d97f898dce7243a31b7c3ee1d61b637fed120e01cb255e3ae2987d5a24738f6f"
+      },
+      "value": true
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/ii-comparison-no-ratio/assembly-notes.txt",
+        "sha256": "d97f898dce7243a31b7c3ee1d61b637fed120e01cb255e3ae2987d5a24738f6f"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/ii-comparison-no-ratio/assembly-notes.txt",
+        "sha256": "d97f898dce7243a31b7c3ee1d61b637fed120e01cb255e3ae2987d5a24738f6f"
+      },
+      "value": "not-run"
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

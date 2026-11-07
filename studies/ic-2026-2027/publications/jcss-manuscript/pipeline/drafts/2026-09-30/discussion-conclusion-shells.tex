@@ -1,0 +1,603 @@
+% Conditional Discussion and Conclusion shells, drafted without opening results.
+% Base ff3199b6; decisions 82, 89, 91, 99 and correction 101 in
+% ../2026-09-28/results-interpretation-decisions-2026-09-29.md.
+% Nothing here selects an observed outcome. Do not input this whole file.
+% Every displayed numerical value is an exporter ID with a placeholder.
+% DS/CN refer to claim-evidence.md; RS refer to results-shells.tex/its ledger.
+% Exploratory restrictions: ../../review/x3-x7-reading-restrictions-2026-09-29.md.
+%
+% NOTATION: inherit GATE, INV, CV, U, SHP, FULL, ATT, REGION and B branches
+% from results-shells.tex. PASS := B1a selected under its complete-stage rule.
+% M := v4.mechanisms.allowed == 1; there is no local exception to M.
+% B03 := every B unit FULL, first null, no first censoring, as in Results.
+% X6R := v4x.x6.x6a.band.vs_d1.primary.reading, AFTER truth precision.
+% X6R absent/null includes absent aggregate or unavailable procedural truth.
+% "No reading" is the literal label "no reading"; the implemented precision
+% label is "inconclusive-truth-precision", not a new "inconclusive" verdict.
+% EX := validated exploratory aggregate/catalog available for the named block.
+% POST := release-bound comparisons aggregate available; never manufacture it
+% in a gate-failure branch. EX alone does not imply POST or a passed gate.
+% X5 supplied := POST provenance records the supplied X5 aggregate and every
+% by_r.x5_state.state is "disponível"; empty x5 lists/counts do not establish this.
+%
+% ASSEMBLY / INSERTION SLOTS
+% Before selecting blocks, use the corrected fixed text in sections/: DS01
+% separates interval width from region; DS02 requires M and the strict B/D
+% whole-grid reading; omit DS10/RC28's draft-status sentence in every assembly.
+% CN01 retains conditionality and partial exposure; its new-seeds clause is
+% supplied ONLY by C-EVALUATION-PASS. Non-PASS uses the every-stage requirement.
+% D1: append the selected whole-curve discussion to corrected DS01/DS02.
+% D2: append the boundary/precision and permitted reading expansions to D1.
+% D3: append X6 to DS06. X1b/X3/X4/X7 detail lives only in the exploratory
+%     supplement; DS10 receives just D-EXPLORATORY-SUPPLEMENT.
+% D4: append the applicable SHP expansion to DS05. Retain DS11/X5 always.
+% C1: replace ONLY CN01's first [Insert ...] marker with the selected headline.
+% C2: replace ONLY its [State whether ...] marker with boundary + permission
+%     blocks. C-EVALUATION-PASS (PASS) or C-EVALUATION-REQUIRED joins the
+%     fixed CN01 paragraph that precedes C3. C3: replace ONLY its final
+%     [Insert ...] marker with implication
+%     blocks and the chosen gate/SHP limitation; see notes for the next test.
+% Keep the corrected fixed Discussion/Conclusion sentences, including X5;
+% do not restore the superseded DS01/DS02/DS10/CN01 clauses from an older copy.
+% Separate inserted blocks with newlines so trailing comments cannot hide text.
+% Blocks of one slot form one paragraph after their marker; a dotted
+% sub-slot (DS02.records, DS06.reading) adds a paragraph after it. The
+% DS10 pointer joins the fixed DS10 paragraph, and C1 joins the opening
+% question of CN01.
+% For non-PASS select D-G2C/C-G2C or D-CLOSE/C-CLOSE, never a released headline.
+% Gate-only SHP is independent; no F6, curve or boundary is assigned to it.
+% Mandatory X6 expansion has priority over optional descriptive expansions.
+% Select exactly one of D-X6-FAILURE, -SUBNOMINAL, -INCONCLUSIVE, -NO-READING,
+% -ABSENT, -ADEQUATE. Add D-X6-DENOMINATORS iff vs_d1 exists and -CONSERVATIVE
+% iff its flag is true. Never select from X6b, population truth or gap reference.
+% In C3 append the applicable C-X6 consequence without claiming certification.
+% D-X5/C-X5 are retention actions, not duplicate copies of the fixed paragraphs.
+
+% BEGIN BRANCH D-H-BD
+% SELECT WHEN: PASS and not B03 and M and v4.bd.n_eligible > 0.
+% INCLUDES: T1/F1 in Results; common B/D rows, no separate family totals.
+% ACTION: D1; select C-H-BD for C1.
+The first-boundary regions against B and D, classified in Results on their common gap-free response signal shares, describe separation of the declared laws by the fixed discriminator; the protocol assigns no partner-drift interpretation to where one boundary lies relative to the other. % DS02 DS08 RS25 RS31 RS33 RS55
+% END BRANCH D-H-BD
+
+% BEGIN BRANCH C-H-BD
+% SELECT WHEN: D-H-BD selected.
+% INCLUDES: same paired set as D-H-BD.
+% ACTION: C1.
+On the \resultnum{v4.bd.n_eligible}{[n]} response signal \resultplural{v4.bd.n_eligible}{share}{shares} where the comparisons against B and D were both gap-free, the first boundary against B was small at \resultnum{v4.bd.B.n_small}{[n]}, large at \resultnum{v4.bd.B.n_large}{[n]}, not attained at \resultnum{v4.bd.B.n_not_attained}{[n]} and censored or indeterminate at \resultnum{v4.bd.B.n_censored}{[n]}; against D it was small at \resultnum{v4.bd.D.n_small}{[n]}, large at \resultnum{v4.bd.D.n_large}{[n]}, not attained at \resultnum{v4.bd.D.n_not_attained}{[n]} and censored or indeterminate at \resultnum{v4.bd.D.n_censored}{[n]}. % CN01 RS25 RS31 RS33
+% Include the next implication only when v4.t1.n_attained > 0.
+An attained boundary describes the nominal strength at which this longer-lag summary separates the declared laws after short-term stability has been matched. This extends the comparison of rival accounts to residual temporal information under the declared observation channel.
+% END BRANCH C-H-BD
+
+% BEGIN BRANCH D-H-B
+% SELECT WHEN: PASS and not B03 and (not M or v4.bd.n_eligible == 0).
+% INCLUDES: B rows of T1/F1, including their invalidation marks if B02.
+% ACTION: D1; if B02 precede this with D-B02 and retain its mark.
+Results classify the first boundaries of the complete valid B units by the frozen interval-based regions. % DS01 RS18 RS25
+An early point estimate alone does not establish a small region, and an unavailable boundary is not evidence of non-attainment. % DS01 RS23 RS24 RS25 RS48
+% END BRANCH D-H-B
+
+% BEGIN BRANCH C-H-B
+% SELECT WHEN: D-H-B selected.
+% INCLUDES: B rows only for the headline, with C-B02 if applicable.
+% ACTION: C1 after C-B02 when main invalid.
+For the complete valid B units, against trait-plus-autoregressive persistence, the first boundary was small at \resultnum{v4.t1.n_small}{[n]} \resultplural{v4.t1.n_small}{share}{shares}, large at \resultnum{v4.t1.n_large}{[n]}, not attained at \resultnum{v4.t1.n_not_attained}{[n]} and censored or indeterminate at \resultnum{v4.t1.n_censored}{[n]}. % CN01 RS18 RS25
+For the complete valid B units, against trait-plus-autoregressive persistence, the first boundary was small at all \resultnum{v4.t1.n_small}{[n]} \resultplural{v4.t1.n_small}{share}{shares}; none was large, not attained, censored or indeterminate. % CN01 RS18 RS25
+For the complete valid B units, against trait-plus-autoregressive persistence, the first boundary was large at all \resultnum{v4.t1.n_large}{[n]} \resultplural{v4.t1.n_large}{share}{shares}; none was small, not attained, censored or indeterminate. % CN01 RS18 RS25
+For the complete valid B units, against trait-plus-autoregressive persistence, the first boundary was not attained at all \resultnum{v4.t1.n_not_attained}{[n]} \resultplural{v4.t1.n_not_attained}{share}{shares}; none was small, large, censored or indeterminate. % CN01 RS18 RS25
+For the complete valid B units, against trait-plus-autoregressive persistence, the first boundary was censored or indeterminate at all \resultnum{v4.t1.n_censored}{[n]} \resultplural{v4.t1.n_censored}{share}{shares}; none was small, large or not attained. % CN01 RS18 RS25
+% Include the next implication only when v4.t1.n_attained > 0.
+An attained boundary describes the nominal strength at which this longer-lag summary separates the declared laws after short-term stability has been matched. This extends the comparison of rival accounts to residual temporal information under the declared observation channel.
+% END BRANCH C-H-B
+
+% BEGIN BRANCH D-B03
+% SELECT WHEN: PASS and B03.
+% INCLUDES: all complete valid B grids in T1/F1/F2B.
+% ACTION: D1 instead of D-H-B/D-H-BD; append D-D-AFTER-B03 only if permitted.
+The point AUC against B did not reach \resultnum{v4.protocol.target}{[target]} anywhere on the complete valid grids, up to $a=\resultnum{v4.protocol.a.090}{[strength]}$. % DS01 RS18 RS21 RS26
+Where the upper band nevertheless reached the target, at the shares reported in Results, point non-attainment does not exclude attainment within the grid. % DS01 RS21
+The upper-band range that Results report at $a=\resultnum{v4.protocol.a.090}{[strength]}$ concerns upper band limits, not attained boundaries or a selected best signal share. % DS01 RS29
+This is a limitation of the tested discriminator on the declared grid; stronger inputs, other summaries and other classifiers remain unresolved. % DS01 RS27
+% END BRANCH D-B03
+
+% BEGIN BRANCH C-B03
+% SELECT WHEN: D-B03 selected.
+% INCLUDES: whole B grid; no derived-target headline.
+% ACTION: C1 instead of C-H-B/C-H-BD.
+On all complete valid B grids, the point AUC did not attain \resultnum{v4.protocol.target}{[target]} up to $a=\resultnum{v4.protocol.a.090}{[strength]}$; this does not establish indistinguishability of the laws under stronger discriminators. % CN01 RS18 RS26 RS27
+Non-attainment limits this summary and grid; it leaves other discriminators and stronger inputs unresolved. The design nevertheless extends the comparison of rival accounts to residual temporal information under the declared observation channel.
+% END BRANCH C-B03
+
+% BEGIN BRANCH D-D-AFTER-B03
+% SELECT WHEN: PASS and B03 and M and v4.bd.n_eligible > 0.
+% INCLUDES: paired B/D rows; use no unmasked D totals.
+% ACTION: append to D-B03; never call this B10.
+Results classify D's first boundaries on the common gap-free set of response signal shares. % DS02 RS25 RS31 RS33
+Without a band-supported crossing against B on these grids, the frozen persistence reading does not apply. % DS02 RS22 RS32
+% END BRANCH D-D-AFTER-B03
+
+% BEGIN BRANCH C-D-AFTER-B03
+% SELECT WHEN: D-D-AFTER-B03 selected.
+% INCLUDES: same common set.
+% ACTION: append to C-B03 in C1.
+Results classify D's first boundaries on the common gap-free set of response signal shares; B's non-attainment does not support the frozen persistence interpretation. % CN01 DS02 RS25 RS32 RS33
+% END BRANCH C-D-AFTER-B03
+
+% BEGIN BRANCH D-B02
+% SELECT WHEN: PASS and INV.main_curve_valid == false.
+% INCLUDES: T4/F5 status reasons and marked valid B rows in T1/F1.
+% ACTION: precede D-H-B; suppress every cross-mechanism reading.
+The main B curve was not validated: \resultnum{v4.t1.n_not_valid}{[n]} \resultplural{v4.t1.n_not_valid}{unit}{units} \resultplural{v4.t1.n_not_valid}{was}{were} not both complete and valid. \resultplural{v4.t1.n_not_valid}{This included}{These included} \resultnum{v4.t1.n_invalid_gate}{[n]} zero-strength gate \resultplural{v4.t1.n_invalid_gate}{failure}{failures}, \resultnum{v4.t1.n_invalid_a0gap}{[n]} zero-strength \resultplural{v4.t1.n_invalid_a0gap}{gap}{gaps} and \resultnum{v4.t1.n_clock}{[n]} \resultplural{v4.t1.n_clock}{unit}{units} not started or only partially completed at the close. % DS01 DS06 DS09 RS13 RS14 RS15 RS16 RS17
+The remaining complete valid B units describe local boundaries that retain the main-invalidation mark, rather than a validated whole curve. Invalid units provide no positive boundary finding. % DS01 RS15 RS17
+% END BRANCH D-B02
+
+% BEGIN BRANCH C-B02
+% SELECT WHEN: D-B02 selected.
+% INCLUDES: invalid and unfinished units via their inventory.
+% ACTION: precede C-H-B in C1; no C-H-BD or C-D-AFTER-B03.
+The main B curve was not validated because \resultnum{v4.t1.n_not_valid}{[n]} \resultplural{v4.t1.n_not_valid}{unit}{units} \resultplural{v4.t1.n_not_valid}{was}{were} not both complete and valid. Any remaining local boundaries retain the main-invalidation mark. % CN01 RS15 RS16
+No validated whole-curve answer was obtained; remaining local boundaries do not replace it.
+% END BRANCH C-B02
+
+% BEGIN BLOCK D-NO-PERMISSION
+% SELECT WHEN: PASS and v4.mechanisms.allowed == 0.
+% INCLUDES: valid units remain in tables/figures; no family comparison prose.
+% ACTION: D2; replaces every cross-mechanism clause, even locally.
+A comparison across mechanisms requires both a valid main B curve and an entirely complete valid tier \resultnum{v4.protocol.tier.main_others}{[tier]}. The main curve was invalid; tier \resultnum{v4.protocol.tier.main_others}{[tier]} was entirely complete and valid, but both are required. % DS02 DS09 RS31 RS33
+A comparison across mechanisms requires both a valid main B curve and an entirely complete valid tier \resultnum{v4.protocol.tier.main_others}{[tier]}. Tier \resultnum{v4.protocol.tier.main_others}{[tier]} was not entirely complete and valid; the main curve was valid, but both are required. % DS02 DS09 RS31 RS33
+A comparison across mechanisms requires both a valid main B curve and an entirely complete valid tier \resultnum{v4.protocol.tier.main_others}{[tier]}. The main curve was invalid, and tier \resultnum{v4.protocol.tier.main_others}{[tier]} was not entirely complete and valid. % DS02 DS09 RS31 RS33
+Valid units remain displayed, but neither local comparisons nor the headline can be interpreted across mechanisms in this release. % DS02 RS31 RS33
+% END BLOCK D-NO-PERMISSION
+
+% BEGIN BLOCK C-NO-PERMISSION
+% SELECT WHEN: D-NO-PERMISSION selected.
+% INCLUDES: inventory, without promoting an available local pair.
+% ACTION: C2.
+No comparison is interpreted across mechanisms. The main curve was invalid; tier \resultnum{v4.protocol.tier.main_others}{[tier]} was entirely complete and valid, but both are required. An available local pair does not restore the cross-mechanism permission. % CN01 DS02 RS31 RS33
+No comparison is interpreted across mechanisms. Tier \resultnum{v4.protocol.tier.main_others}{[tier]} was not entirely complete and valid; the main curve was valid, but both are required. An available local pair does not restore the cross-mechanism permission. % CN01 DS02 RS31 RS33
+No comparison is interpreted across mechanisms. The main curve was invalid, and tier \resultnum{v4.protocol.tier.main_others}{[tier]} was not entirely complete and valid. An available local pair does not restore the cross-mechanism permission. % CN01 DS02 RS31 RS33
+% END BLOCK C-NO-PERMISSION
+
+% BEGIN BLOCK D-T2-INCOMPLETE
+% SELECT WHEN: PASS and v4.inv.t2.n_incomplete > 0; necessarily not M.
+% INCLUDES: T4/F5; no AUC or family contrast is inferred from absences.
+% ACTION: append to D-NO-PERMISSION, including when B03 or B02 applies.
+Tier \resultnum{v4.protocol.tier.main_others}{[tier]} contained \resultnum{v4.inv.t2.n_incomplete}{[n]} \resultplural{v4.inv.t2.n_incomplete}{unit}{units} that had not started or \resultplural{v4.inv.t2.n_incomplete}{was}{were} only partially completed, and \resultnum{v4.inv.t2.n_invalid}{[n]} complete invalid \resultplural{v4.inv.t2.n_invalid}{unit}{units}. % DS09 RS12 RS13 RS14
+Operational incompleteness and invalidity are recorded separately. Neither justifies replacing the null or interpreting a comparison across mechanisms from the remaining pairs. % DS02 DS09 RS31 RS33 RS56
+% END BLOCK D-T2-INCOMPLETE
+
+% BEGIN BLOCK C-T2-INCOMPLETE
+% SELECT WHEN: D-T2-INCOMPLETE selected.
+% INCLUDES: tier-2 status inventory, no mechanism comparison.
+% ACTION: C2 after C-NO-PERMISSION.
+In tier \resultnum{v4.protocol.tier.main_others}{[tier]}, \resultnum{v4.inv.t2.n_incomplete}{[n]} \resultplural{v4.inv.t2.n_incomplete}{unit}{units} had not started or \resultplural{v4.inv.t2.n_incomplete}{was}{were} only partially completed. \resultplural{v4.inv.t2.n_incomplete}{This absence is an operational limit and provides}{These absences are operational limits and provide} no finding about a null family. % CN01 DS09 RS12 RS13
+% END BLOCK C-T2-INCOMPLETE
+
+% BEGIN BLOCK D-PERMISSION
+% SELECT WHEN: PASS and M.
+% INCLUDES: all B/D rows; paired readings use common gap-free mask only.
+% ACTION: D2, including with B03; do not repeat regional counts from D1.
+Both conditions for reading B and D side by side were met: Fig.~\ref{fig:v4-F1} and Table~\ref{tab:v4-T1} show them at every response signal share, but the frozen interpretations use only the common gap-free shares, never a separate denominator per family. % DS02 RS31 RS33
+% END BLOCK D-PERMISSION
+
+% BEGIN BLOCK C-PERMISSION
+% SELECT WHEN: PASS and M.
+% INCLUDES: all valid tier-2 units, with common-set restriction.
+% ACTION: C2.
+Tier \resultnum{v4.protocol.tier.main_others}{[tier]} was entirely complete and valid, and the main curve was valid, permitting reporting across mechanisms. The frozen B/D interpretations are restricted to the common gap-free set of response signal shares. % CN01 DS02 RS31 RS33
+% END BLOCK C-PERMISSION
+
+% BEGIN BLOCK D-EMPTY-PAIRS
+% SELECT WHEN: PASS and M and v4.bd.n_eligible == 0.
+% INCLUDES: all B/D rows, no paired regional or class counts.
+% ACTION: after D-PERMISSION and D-H-B or D-B03.
+No frozen B/D reading was assessed on a common gap-free pair, although all permitted rows remain displayed. % DS02 RS31 RS33
+% END BLOCK D-EMPTY-PAIRS
+
+% BEGIN BLOCK C-EMPTY-PAIRS
+% SELECT WHEN: D-EMPTY-PAIRS selected.
+% INCLUDES: no class reading.
+% ACTION: after C-PERMISSION in C2.
+No frozen B/D reading was assessed on a common gap-free pair. % CN01 DS02 RS33
+% END BLOCK C-EMPTY-PAIRS
+
+% BEGIN BLOCK D-BD-PERSISTENCE
+% SELECT WHEN: PASS and M and v4.bd.n_persistence > 0.
+% INCLUDES: shared set of D-PERMISSION, not independently masked totals.
+% ACTION: D2; includes the supported implication without identifying a cause.
+Where the bands met the frozen persistence criterion for B and D, separation from B is compatible with non-Gaussian persistence, without specific evidence of interaction. % DS02 RS22 RS32 RS33
+% END BLOCK D-BD-PERSISTENCE
+
+% BEGIN BLOCK C-BD-PERSISTENCE
+% SELECT WHEN: D-BD-PERSISTENCE selected.
+% INCLUDES: same size and explicit r list.
+% ACTION: C2 after C-PERMISSION, whose common set it counts.
+Where the frozen persistence criterion was met, at \resultnum{v4.bd.n_persistence}{[n]} of these shares, the result is compatible with non-Gaussian persistence: separation from B supplies no interaction-specific evidence against the more flexible persistence rival, D. % CN01 DS02 RS32 RS33
+% END BLOCK C-BD-PERSISTENCE
+
+% BEGIN BLOCK D-BD-INCONCLUSIVE
+% SELECT WHEN: PASS and M and v4.bd.n_inconclusive > 0.
+% INCLUDES: shared B/D mask and strict band criterion.
+% ACTION: D2.
+Where B's crossing was band-supported but D's band spanned the target without a lower-band crossing, the frozen comparison is inconclusive. % DS02 RS22 RS32 RS33
+% END BLOCK D-BD-INCONCLUSIVE
+
+% BEGIN BLOCK D-BD-BOTH
+% SELECT WHEN: PASS and M and v4.bd.n_both > 0.
+% INCLUDES: common B/D mask; no relative boundary test.
+% ACTION: D2.
+At some common gap-free shares, the lower bands against both B and D crossed the target; the frozen rules give this class no reading. % DS02 RS22 RS31 RS33 RS55
+% END BLOCK D-BD-BOTH
+
+% BEGIN BLOCK D-BD-NO-CROSSING
+% SELECT WHEN: PASS and M and v4.bd.n_no_b_crossing > 0 and not B03.
+% INCLUDES: common B/D mask.
+% ACTION: D2; B03 already states the absence of the frozen reading.
+Where B's lower band did not cross the target at a common gap-free share, the frozen persistence interpretation does not apply. % DS02 RS22 RS32 RS33
+% END BLOCK D-BD-NO-CROSSING
+
+% BEGIN BLOCK D-BE-PERSISTENCE
+% SELECT WHEN: PASS and M and v4.be.n_persistence > 0.
+% INCLUDES: separate common gap-free B/E mask.
+% ACTION: D2; not an implication from the B/D count.
+Against E, where the analogous frozen criterion was met, the result is compatible with mover--stayer heterogeneity, without specific evidence of interaction. % DS02 DS08 RS32 RS33
+% END BLOCK D-BE-PERSISTENCE
+
+% BEGIN BLOCK D-BC-PERSISTENCE
+% SELECT WHEN: PASS and M and v4.bc.n_persistence > 0.
+% INCLUDES: separate common gap-free B/C mask.
+% ACTION: D2.
+Against C, where the analogous frozen criterion was met, the result is compatible with heteroscedastic error and heaping, without specific evidence of interaction. % DS02 DS08 RS32 RS33
+% END BLOCK D-BC-PERSISTENCE
+
+% BEGIN BLOCK D-BOUNDARIES-DIFFER
+% SELECT WHEN: PASS and v4.t1.n_first_ne_sustained > 0.
+% INCLUDES: T1, both points/intervals and point/interval censoring.
+% ACTION: D2; retain B02 mark if applicable.
+First and sustained boundary records differed at \resultnum{v4.t1.n_first_ne_sustained}{[n]} complete valid B \resultplural{v4.t1.n_first_ne_sustained}{share}{shares}, including differences in intervals or censoring. There \resultplural{v4.t1.n_sustained_gap}{was}{were} \resultnum{v4.t1.n_sustained_gap}{[n]} gap-censored sustained \resultplural{v4.t1.n_sustained_gap}{boundary}{boundaries}. % DS01 RS18 RS21 RS23 RS57
+An early first point does not imply sustained separation at larger strengths. Reporting the intervals and gap states prevents choosing the more favourable boundary. % DS01 RS20 RS23 RS57
+% END BLOCK D-BOUNDARIES-DIFFER
+
+% BEGIN BLOCK C-BOUNDARIES-DIFFER
+% SELECT WHEN: D-BOUNDARIES-DIFFER selected.
+% INCLUDES: both boundary records, retaining main-invalidation mark.
+% ACTION: C2.
+First and sustained B boundary records differed at \resultnum{v4.t1.n_first_ne_sustained}{[n]} complete valid \resultplural{v4.t1.n_first_ne_sustained}{share}{shares}, with their separate intervals and censoring retained. % CN01 RS21 RS23 RS57
+% END BLOCK C-BOUNDARIES-DIFFER
+
+% BEGIN BLOCK D-BOUNDARIES-SAME
+% SELECT WHEN: PASS and v4.t1.n_first_ne_sustained == 0 and v4.t1.n_valid > 0.
+% INCLUDES: T1, including non-attainment and censoring.
+% ACTION: D2; equality of records is not universal attainment.
+First and sustained boundary records agreed among the \resultnum{v4.t1.n_valid}{[n]} complete valid B \resultplural{v4.t1.n_valid}{unit}{units}, including their intervals and censoring. This agreement does not imply attainment at every response signal share. % DS01 RS18 RS21 RS23
+% END BLOCK D-BOUNDARIES-SAME
+
+% BEGIN BLOCK C-BOUNDARIES-SAME
+% SELECT WHEN: D-BOUNDARIES-SAME selected.
+% INCLUDES: same boundary-record scope.
+% ACTION: C2.
+First and sustained boundary records agreed among \resultnum{v4.t1.n_valid}{[n]} complete valid B \resultplural{v4.t1.n_valid}{unit}{units}, including their intervals and censoring. % CN01 RS18 RS21 RS23
+% END BLOCK C-BOUNDARIES-SAME
+
+% BEGIN BLOCK D-BOUNDARIES-NO-VALID
+% SELECT WHEN: PASS and v4.t1.n_valid == 0; necessarily B02.
+% INCLUDES: status inventory only, no attained-boundary equality claim.
+% ACTION: D2 instead of D-BOUNDARIES-SAME.
+With \resultnum{v4.t1.n_valid}{[n]} complete valid B \resultplural{v4.t1.n_valid}{unit}{units}, no valid comparison of first and sustained boundary records is available. % DS01 RS15 RS17 RS21
+% END BLOCK D-BOUNDARIES-NO-VALID
+
+% BEGIN BLOCK C-BOUNDARIES-NO-VALID
+% SELECT WHEN: D-BOUNDARIES-NO-VALID selected.
+% INCLUDES: invalid/unfinished states only.
+% ACTION: C2 instead of C-BOUNDARIES-SAME.
+There \resultplural{v4.t1.n_valid}{was}{were} \resultnum{v4.t1.n_valid}{[n]} complete valid B \resultplural{v4.t1.n_valid}{unit}{units}, so no valid first-versus-sustained boundary comparison is reported. % CN01 RS15 RS17 RS21
+% END BLOCK C-BOUNDARIES-NO-VALID
+
+% BEGIN BLOCK C-EVALUATION-PASS
+% SELECT WHEN: PASS.
+% INCLUDES: CN01 partial calibration exposure, not a claim of full blindness.
+% ACTION: join the fixed CN01 paragraph before C3; never in a non-PASS assembly.
+Evaluation used new seeds. % CN01 DS07 RS02
+% END BLOCK C-EVALUATION-PASS
+
+% BEGIN BLOCK D-PRECISION
+% SELECT WHEN: PASS and B09 selected.
+% INCLUDES: T1/F1 interval ends, not only attained points.
+% ACTION: D2; no new region or width threshold.
+Of the \resultnum{v4.t1.n_attained}{[n]} attained B first \resultplural{v4.t1.n_attained}{boundary}{boundaries}, \resultnum{v4.t1.n_interval_wide_finite}{[n]} had finite intervals wider than the frozen grid-step precision goal. The counts were \resultnum{v4.t1.n_interval_beyond_grid}{[n]} \resultplural{v4.t1.n_interval_beyond_grid}{boundary}{boundaries} with interval ends beyond the grid and \resultnum{v4.t1.n_interval_gap}{[n]} \resultplural{v4.t1.n_interval_gap}{boundary}{boundaries} with gap-censored ends. % DS01 RS21 RS48
+Only finite intervals have a measured width. Beyond-grid and gap-censored endpoints provide neither a finite-width result nor a new threshold for classifying regions. % DS01 RS25 RS48
+% END BLOCK D-PRECISION
+
+% BEGIN BLOCK C-IMPLICATION
+% SELECT WHEN: PASS, independently of headline, M, B02, B03 and X6.
+% INCLUDES: retains existing fixed CN01 conditionality and all X5 paragraphs.
+% ACTION: C3; no new successor is selected here.
+The supported implication is confined to the tested synthetic comparison, with its recorded validity, grid and censoring. Empirical interpretation would require item-specific evidence for the response channel and a discrimination procedure assessed under the relevant null. % CN01 DS03 DS05 DS09 RS24 RS27 RS55
+% END BLOCK C-IMPLICATION
+
+% BEGIN BLOCK D-X5
+% SELECT WHEN: always, including B1b-G2c, B1d, B02 and B03.
+% INCLUDES: existing DS11/EX14/EX15/RC18-RC23, unchanged.
+% ACTION: retain the entire existing X5 discussion; do not replace its gaps
+% with non-attainment or condition it on a confirmatory curve. No duplicate text.
+% END BLOCK D-X5
+
+% BEGIN BLOCK C-X5
+% SELECT WHEN: always, including B1b-G2c, B1d, B02 and B03.
+% INCLUDES: existing EX14/EX15/RC30-RC31 conclusion paragraphs, unchanged; CN01 DS11.
+% ACTION: retain those paragraphs in every branch. The hypothetical known-null
+% check supplies no known-null arm in a real panel. No duplicate text.
+% END BLOCK C-X5
+
+% BEGIN BLOCK D-X5-POST
+% SELECT WHEN: PASS and POST and X5 supplied; include actual zero counts too.
+% INCLUDES: tab:v4x-stress-comparisons and original per-condition reasons.
+% ACTION: append after fixed DS11; does not condition D-X5/C-X5 retention.
+Relative to the released B curve, X5 equivalent strengths were available in \resultnum{v4x.comparisons.count.x5.equivalent.available}{[n]} \resultplural{v4x.comparisons.count.x5.equivalent.available}{reading}{readings} for a condition and response signal share, gap-censored in \resultnum{v4x.comparisons.count.x5.equivalent.censored}{[n]}, above the complete grid in \resultnum{v4x.comparisons.count.x5.equivalent.above-grid}{[n]}, and unavailable in \resultnum{v4x.comparisons.count.x5.equivalent.unavailable}{[n]} (Supplementary Table~\ref{tab:v4x-stress-comparisons}). % DS11 CN01 RS23 RS24
+These equivalent strengths are first point-AUC attainments without interpolation. An attainment before the first gap remains reportable; an earlier gap censors a missing attainment. When there is no attainment on a complete grid, the equivalent strength is classified as above the grid. % DS11 RS18 RS23 RS24
+At B's first point boundary, the X5 interval overlapped the band in \resultnum{v4x.comparisons.count.x5.interval.overlap}{[n]} \resultplural{v4x.comparisons.count.x5.interval.overlap}{reading}{readings}, lay strictly above it in \resultnum{v4x.comparisons.count.x5.interval.above}{[n]}, and lay strictly below it in \resultnum{v4x.comparisons.count.x5.interval.below}{[n]}. There \resultplural{v4x.comparisons.count.x5.interval.unavailable}{was}{were} \resultnum{v4x.comparisons.count.x5.interval.unavailable}{[n]} unavailable \resultplural{v4x.comparisons.count.x5.interval.unavailable}{comparison}{comparisons}. % DS11 RS21
+Overlap includes shared endpoints; these local descriptive relations neither calibrate the SHP channel nor identify causal influence. % DS03 DS05 DS11
+% END BLOCK D-X5-POST
+
+% BEGIN BLOCK D-X5-POST-UNAVAILABLE
+% SELECT WHEN: PASS and POST and no X5 aggregate supplied, as recorded by
+% provenance and by_r.x5_state ("indisponível": "agregado X5 não fornecido").
+% INCLUDES: no X5 comparison counts or invented per-condition reasons.
+% ACTION: append after fixed DS11 instead of D-X5-POST; retain D-X5/C-X5.
+These X5 results come from the stress test itself. Its planned comparison with the released B curve is not reported, because no X5 aggregate was supplied for the release. % DS11 CN01 RS24
+% END BLOCK D-X5-POST-UNAVAILABLE
+
+% BEGIN BLOCK D-X6-DENOMINATORS
+% SELECT WHEN: EX for X6 and x6a.band.vs_d1 is non-null.
+% INCLUDES: tab:v4x-x6, -x6-inventory, -x6-denominators, -x6-truth, -x6-precision.
+% ACTION: D3 at DS06 before the selected primary reading; mandatory expansion.
+At $r=\resultnum{v4.protocol.r.070}{[share]}$, \resultnum{v4x.x6.x6a.band.vs_d1.primary.covered}{[n]} of \resultnum{v4x.x6.x6a.band.vs_d1.primary.total}{[n]} complete gap-free \resultplural{v4x.x6.x6a.band.vs_d1.primary.total}{band}{bands} jointly covered the primary procedural truth, D1 (Supplementary Table~\ref{tab:v4x-x6}). % DS06 DS07 DS10 RS10 RS30
+Joint coverage requires coverage at \resultplural{v4x.protocol.grid_strengths}{the}{all} \resultnum{v4x.protocol.grid_strengths}{[n]} \resultplural{v4x.protocol.grid_strengths}{strength}{strengths}, including $a=\resultnum{v4x.protocol.zero}{[strength]}$. This reference conditions on complete successful units, rather than on available cells from incomplete units. % DS06 DS10
+The separate gaps-as-misses reference covered \resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered}{[n]} of \resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{[n]} \resultplural{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{repetition}{repetitions} with a curve. Incomplete bands count as misses both jointly and at every strength. % DS06 DS10
+The separate inventory counts were \resultnum{v4x.x6.x6a.without_curve}{[n]} \resultplural{v4x.x6.x6a.without_curve}{repetition}{repetitions} without a curve, \resultnum{v4x.x6.x6a.repetitions.errors}{[n]} repetition \resultplural{v4x.x6.x6a.repetitions.errors}{error}{errors} and \resultnum{v4x.x6.x6a.incomplete}{[n]} incomplete \resultplural{v4x.x6.x6a.incomplete}{job}{jobs}, all outside the computed coverage denominators, which do not give unconditional coverage over all planned repetitions. % DS06 DS10
+D1 is procedural truth conditional on success, using \resultnum{v4x.x3.sizes.matching_prose}{[n]}-pair matching. Approximate population-match truth is a separate reference; its Monte Carlo error omits population-fit approximation error. % DS06 DS10
+The D1 truth also used the declared \resultnum{v4x.x3.sizes.retry_matching_prose}{[n]}-pair retries where its retry fraction was positive. % DS06 DS10
+Supplementary Table~\ref{tab:v4x-x6-truth} reports retry fractions and truth Monte Carlo errors; Supplementary Table~\ref{tab:v4x-x6-precision}, the conservative flags and precision sensitivity. Only the effective primary reading determines the consequence discussed here. % DS06 DS10
+The original nominal readings and their precision sensitivity are retained where both are recorded. % DS06 DS10
+% END BLOCK D-X6-DENOMINATORS
+
+% BEGIN BLOCK D-X6-INTERVAL
+% SELECT WHEN: D-X6-DENOMINATORS selected and primary.wilson95 is a finite pair.
+% INCLUDES: same covered/total denominator, not a secondary interval.
+% ACTION: after the first sentence of D-X6-DENOMINATORS; omit if undefined.
+The primary Wilson interval was \resultnum{v4x.x6.x6a.band.vs_d1.primary.wilson95.prose_lower}{[lower]} to \resultnum{v4x.x6.x6a.band.vs_d1.primary.wilson95.prose_upper}{[upper]}. % DS06 DS10
+% END BLOCK D-X6-INTERVAL
+
+% BEGIN BRANCH D-X6-FAILURE
+% SELECT WHEN: X6R == "failure" after reference-precision sensitivity.
+% INCLUDES: D-X6-DENOMINATORS; no X6b/population/secondary trigger.
+% ACTION: D3 mandatory expansion; mandatory abstract clause remains in its shell.
+The exploratory interior check found below-nominal coverage under the declared primary criterion (reported classification \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). The Wilson upper endpoint, \resultnum{v4x.x6.x6a.band.vs_d1.primary.wilson95.prose_upper}{[upper]}, was below \resultnum{v4x.protocol.x6.failure}{[cut]}. % DS06 DS10 RS10
+This is evidence of undercoverage for the stated procedural truth and success-conditioned denominator. The dispersion gate does not remove this limitation or certify nominal interior validity. % DS06 RS10
+% END BRANCH D-X6-FAILURE
+
+% BEGIN BRANCH D-X6-SUBNOMINAL
+% SELECT WHEN: X6R == "subnominal" after reference-precision sensitivity.
+% INCLUDES: D-X6-DENOMINATORS.
+% ACTION: same mandatory expansion and abstract consequence as -FAILURE.
+The exploratory interior check found below-nominal coverage under the declared primary criterion (reported classification \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). The Wilson upper endpoint, \resultnum{v4x.x6.x6a.band.vs_d1.primary.wilson95.prose_upper}{[upper]}, was below \resultnum{v4x.protocol.x6.nominal}{[nominal]} but at least \resultnum{v4x.protocol.x6.failure}{[cut]}. % DS06 DS10 RS10
+This is evidence of undercoverage under that criterion and conditioning. The threshold does not certify nominal validity. % DS06 RS10
+% END BRANCH D-X6-SUBNOMINAL
+
+% BEGIN BRANCH D-X6-INCONCLUSIVE
+% SELECT WHEN: X6R == "inconclusive-truth-precision" (decision's inconclusive).
+% INCLUDES: D-X6-DENOMINATORS if present; precision tables/catalog.
+% ACTION: D3; no below-nominal abstract clause selected from nominal_reading.
+Interior coverage was not established because reference precision left the effective primary reading inconclusive (reported classification \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). % DS06 DS10 RS10
+The original nominal reading and its sensitivity remain reported. Neither replaces the effective label with a favourable or adverse coverage verdict. % DS06 DS10
+% END BRANCH D-X6-INCONCLUSIVE
+
+% BEGIN BRANCH D-X6-NO-READING
+% SELECT WHEN: X6R == "no reading".
+% INCLUDES: D-X6-DENOMINATORS with interval clause only if defined.
+% ACTION: D3; no abstract undercoverage clause.
+Interior coverage was not established because the primary reference did not meet the minimum of \resultnum{v4x.x6.minimum_complete_repetitions}{[n]} complete \resultplural{v4x.x6.minimum_complete_repetitions}{repetition}{repetitions} (reported classification \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). % DS06 DS10 RS10
+Available counts and intervals give no coverage verdict under the declared rule. % DS06 DS10
+% END BRANCH D-X6-NO-READING
+
+% BEGIN BRANCH D-X6-ABSENT
+% SELECT WHEN: X6R absent/null; no aggregate or unavailable joint D1 reference.
+% INCLUDES: operational inventory/truth states if available; no invented denominator.
+% ACTION: D3 even without PASS; distinguish absent aggregate from unavailable truth
+% in the integration record, without selecting neighbouring truth or a secondary label.
+Interior coverage was not established because no primary joint-band reading against the procedural truth was available. % DS06 DS10 RS10
+% END BRANCH D-X6-ABSENT
+
+% BEGIN BRANCH D-X6-ADEQUATE
+% SELECT WHEN: X6R == "adequate" after reference-precision sensitivity.
+% INCLUDES: D-X6-DENOMINATORS and interval; flag separately if present.
+% ACTION: D3 restricted wording; never claim nominal coverage demonstrated.
+We did not detect undercoverage under this criterion (reported classification \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). The Wilson upper endpoint, \resultnum{v4x.x6.x6a.band.vs_d1.primary.wilson95.prose_upper}{[upper]}, was at least \resultnum{v4x.protocol.x6.nominal}{[nominal]}. % DS06 DS10 RS10
+The criterion does not demonstrate nominal coverage, and the critical-value floor alone does not eliminate bias, variance error or conditioning on success. % DS06 RS10
+% END BRANCH D-X6-ADEQUATE
+
+% BEGIN BLOCK D-X6-CONSERVATIVE
+% SELECT WHEN: primary conservative flag true, with its Wilson interval present.
+% INCLUDES: same primary denominator, no pooling with X6b.
+% ACTION: append to applicable X6 reading; does not replace it.
+The primary conservative flag was \resultnum{v4x.x6.x6a.band.vs_d1.primary.conservative}{[flag]}: the Wilson lower endpoint, \resultnum{v4x.x6.x6a.band.vs_d1.primary.wilson95.prose_lower}{[lower]}, was above \resultnum{v4x.protocol.x6.conservative}{[cut]}. This flag applies only to its stated denominator and provides no general guarantee of conservatism. % DS06 DS10
+% END BLOCK D-X6-CONSERVATIVE
+
+% BEGIN BLOCK C-X6-UNDERCOVERAGE
+% SELECT WHEN: X6R == "failure" or "subnominal", after precision sensitivity.
+% INCLUDES: mandatory discussion expansion and abstract clause.
+% ACTION: C3; does not turn the criterion into nominal-validity certification.
+The primary exploratory interior-coverage check provides evidence of undercoverage under its declared success-conditioned criterion (reported classification \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). This limits the interpretation of the reported bands. % CN01 DS06 DS10 RS10
+% END BLOCK C-X6-UNDERCOVERAGE
+
+% BEGIN BLOCK C-X6-NOT-ESTABLISHED
+% SELECT WHEN: X6R absent/null, "no reading" or "inconclusive-truth-precision".
+% INCLUDES: original effective state in Discussion/supplement where available.
+% ACTION: C3; no reading is not a coverage success or an undercoverage result.
+Interior coverage was not established. % CN01 DS06 DS10 RS10
+% END BLOCK C-X6-NOT-ESTABLISHED
+
+% BEGIN BLOCK C-X6-RESTRICTED
+% SELECT WHEN: X6R == "adequate" after precision sensitivity.
+% INCLUDES: primary counts, interval and denominator in Discussion/supplement.
+% ACTION: C3; never promotes the adequate label to demonstrated nominal coverage.
+The primary exploratory interior-coverage reading (X6, $r=\resultnum{v4.protocol.r.070}{[share]}$) was \texttt{\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}. Undercoverage was not detected under that criterion, but nominal interior coverage was not demonstrated. % CN01 DS06 DS10 RS10
+% END BLOCK C-X6-RESTRICTED
+
+% BEGIN BLOCK D-EXPLORATORY-SUPPLEMENT
+% SELECT WHEN: the exploratory supplement is assembled (E.status-and-scope).
+% INCLUDES: none; X1b/X3/X4/X7 counts, states and caveats live in the supplement.
+% ACTION: D3, joining the fixed DS10 paragraph in place of the former X1b,
+%   X3, X4, X7 and availability blocks. The first line names the twin
+%   paragraph and applies only when it is assembled; the second otherwise.
+The exploratory denominators and states are reported in the Supplementary Material: X1a, X2 and the archived X1b account in \hyperref[supp:x1-x2]{the mean-field and drift analyses}, X5 in \hyperref[supp:x5]{the misspecification analysis}, X3, X4, X6 and X7 in \hyperref[supp:x3-x7]{the fitting, rejection, coverage and feature analyses}, and the release-bound X1b display in \hyperref[supp:x1b-release]{the twin and expanded-feature boundaries}. % DS10
+The exploratory denominators and states are reported in the Supplementary Material: X1a, X2 and the archived X1b account in \hyperref[supp:x1-x2]{the mean-field and drift analyses}, X5 in \hyperref[supp:x5]{the misspecification analysis}, and X3, X4, X6 and X7 in \hyperref[supp:x3-x7]{the fitting, rejection, coverage and feature analyses}. % DS10
+None of these analyses enters the confirmatory reading; X5 and X6 appear in this Discussion only as limits on its interpretation. % DS10
+% END BLOCK D-EXPLORATORY-SUPPLEMENT
+
+% BEGIN BLOCK D-SHP-ADMISSIBLE
+% SELECT WHEN: PASS and SHP present and not B14; B13/B15 can append.
+% INCLUDES: aggregate-only F6/T1; fixed DS05 text remains unchanged.
+% ACTION: D4; no empirical calibration, no rounding or selecting one r.
+The aggregate SHP anchor was \resultnum{v4.shp.estimate}{[estimate]}, with a model-based Wald \resultnum{v4.protocol.shp.wald_level}{[level]}\% interval from \resultnum{v4.shp.wald_lo}{[lower]} to \resultnum{v4.shp.wald_hi}{[upper]}. The triplet envelope ranged from \resultnum{v4.shp.env_lo}{[lower]} to \resultnum{v4.shp.env_hi}{[upper]}. % DS05 RS39 RS41
+The envelope is a specification range, not a confidence interval. % DS05 RS39 RS41
+% END BLOCK D-SHP-ADMISSIBLE
+
+% BEGIN BLOCK D-B13-OUT
+% SELECT WHEN: PASS and not B14 and B13-out (anchor outside frozen r grid).
+% INCLUDES: F6 outside-grid anchor; no extrapolated boundary.
+% ACTION: append to D-SHP-ADMISSIBLE.
+The anchor lies outside the frozen grid from \resultnum{v4.protocol.r.050}{[lower]} to \resultnum{v4.protocol.r.090}{[upper]}, so the curve gives no boundary at its estimated reliability. % DS05 RS39
+The grid is not extended and the anchor is not rounded to obtain a boundary. % DS05 RS39 RS41
+% END BLOCK D-B13-OUT
+
+% BEGIN BLOCK D-B13-PART
+% SELECT WHEN: PASS and not B14 and B13-part (point inside, interval extends outside).
+% INCLUDES: F6, model-based interval and original grid.
+% ACTION: append to D-SHP-ADMISSIBLE.
+Part of the anchor's Wald interval lies outside the grid from \resultnum{v4.protocol.r.050}{[lower]} to \resultnum{v4.protocol.r.090}{[upper]}; no boundary is extrapolated to that part. % DS05 RS39 RS41
+% END BLOCK D-B13-PART
+
+% BEGIN BLOCK D-B14
+% SELECT WHEN: B14(a), (b) or (c), with or without PASS.
+% INCLUDES: no F6 or single admissible anchor; cause from aggregate/run metadata
+% in words only, never restricted source content (v4.shp.failure is not exported).
+% ACTION: replaces D-SHP-ADMISSIBLE or D-GATE-SHP; preserve fixed DS05.
+The preregistered SHP analysis did not produce an admissible anchor; no estimate was truncated or replaced, and no single empirical anchor is published until a linked revision. % DS05 RS40
+The absence of an admissible anchor supplies no empirical positioning or validation of the simulated mechanism. % DS05 RS39 RS40
+% END BLOCK D-B14
+
+% BEGIN BLOCK D-B14-ENVELOPE
+% SELECT WHEN: B14(b), report/envelope exist; never B14(a) or (c) without them.
+% INCLUDES: aggregate envelope only, not F6.
+% ACTION: append to D-B14, including a gate-failure paper.
+The retained triplet specification envelope spans \resultnum{v4.shp.env_lo}{[lower]} to \resultnum{v4.shp.env_hi}{[upper]}; it is not a confidence interval or a substitute admissible anchor. % DS05 RS40 RS41
+% END BLOCK D-B14-ENVELOPE
+
+% BEGIN BLOCK D-B15
+% SELECT WHEN: PASS and not B14 and v4.shp.n_status_classes > 1.
+% INCLUDES: F6/T1 with statuses, main-invalidation mark if B02.
+% ACTION: append to D-SHP-ADMISSIBLE and D-B13-PART if applicable.
+The anchor's Wald interval contains \resultnum{v4.shp.n_r_in_interval}{[n]} grid \resultplural{v4.shp.n_r_in_interval}{share}{shares} spanning \resultnum{v4.shp.n_status_classes}{[n]} \resultplural{v4.shp.n_status_classes}{combination}{combinations} of B status and boundary region. No single boundary is attributed to the item. % DS05 RS25 RS39 RS41
+These combinations describe placement on the grid; they do not propagate empirical-anchor uncertainty into the boundary. % DS05 RS39 RS41
+% END BLOCK D-B15
+
+% BEGIN BLOCK D-GATE-SHP
+% SELECT WHEN: (B1b-G2c or B1d) and SHP present and not B14 (B1-SHP(a)).
+% INCLUDES: B1-SHP aggregate text only, no F6/curve/boundary/crosswalk comparison.
+% ACTION: D4; independent of gate failure; B13/B15 curve clauses cannot apply.
+The independently preregistered SHP anchor was \resultnum{v4.shp.estimate}{[estimate]}, with Wald \resultnum{v4.protocol.shp.wald_level}{[level]}\% interval \resultnum{v4.shp.wald_lo}{[lower]} to \resultnum{v4.shp.wald_hi}{[upper]} and triplet specification envelope \resultnum{v4.shp.env_lo}{[lower]} to \resultnum{v4.shp.env_hi}{[upper]}. % DS05 RS41
+Without a confirmatory curve, it is placed only against the frozen signal-share grid from \resultnum{v4.protocol.r.050}{[lower]} to \resultnum{v4.protocol.r.090}{[upper]}; it supplies no boundary and cannot rescue a gate-failure result. % DS05 RS01 RS39
+% END BLOCK D-GATE-SHP
+
+% BEGIN BLOCK D-SHP-NOT-RUN
+% SELECT WHEN: SHP analysis not run and not B14 (B1-SHP(c) for gate branches).
+% INCLUDES: public operational reason in words, no fabricated fit cause/value.
+% ACTION: D4; reason remains an integration input, recorded in notes.
+The preregistered SHP analysis was not run, leaving no empirical anchor for positioning on the frozen signal-share grid. % DS05 RS39
+% END BLOCK D-SHP-NOT-RUN
+
+% BEGIN BLOCK C-SHP-ADMISSIBLE
+% SELECT WHEN: PASS and SHP present and not B14 and not B13 and not B15.
+% INCLUDES: aggregate interval, no point-selected strength.
+% ACTION: C3; not a replacement for fixed CN01 or X5.
+The SHP aggregate anchor interval, \resultnum{v4.shp.wald_lo}{[lower]} to \resultnum{v4.shp.wald_hi}{[upper]}, is a descriptive placement on the grid and does not empirically calibrate the simulation's signal share or boundary. % CN01 DS05 RS39 RS41
+% END BLOCK C-SHP-ADMISSIBLE
+
+% BEGIN BLOCK C-B13
+% SELECT WHEN: PASS and not B14 and (B13-out or B13-part); may coexist with C-B15.
+% INCLUDES: original grid endpoints, no extrapolation.
+% ACTION: C3 instead of C-SHP-ADMISSIBLE.
+The anchor or part of its interval lies outside the frozen grid from \resultnum{v4.protocol.r.050}{[lower]} to \resultnum{v4.protocol.r.090}{[upper]}, where no boundary is extrapolated or assigned to the item. % CN01 DS05 RS39
+% END BLOCK C-B13
+
+% BEGIN BLOCK C-B14
+% SELECT WHEN: B14(a), (b) or (c), with or without PASS.
+% INCLUDES: no empirical anchor point.
+% ACTION: C3; replaces every admissible-anchor conclusion block.
+No admissible SHP anchor was produced; the analysis supplies no empirical placement on the frozen grid. % CN01 DS05 RS39 RS40
+% END BLOCK C-B14
+
+% BEGIN BLOCK C-B15
+% SELECT WHEN: PASS and not B14 and v4.shp.n_status_classes > 1.
+% INCLUDES: all status-region combinations, not a chosen anchor-neighbour.
+% ACTION: C3, with C-B13 only if applicable.
+The anchor interval spans \resultnum{v4.shp.n_status_classes}{[n]} \resultplural{v4.shp.n_status_classes}{combination}{combinations} of B status and boundary region among \resultnum{v4.shp.n_r_in_interval}{[n]} grid \resultplural{v4.shp.n_r_in_interval}{share}{shares}. No single boundary is therefore attributed to the SHP item. % CN01 DS05 RS25 RS39 RS41
+% END BLOCK C-B15
+
+% BEGIN BLOCK C-GATE-SHP
+% SELECT WHEN: (B1b-G2c or B1d) and SHP present and not B14.
+% INCLUDES: gate-only aggregate anchor; no released boundary.
+% ACTION: C3 instead of all release-dependent SHP blocks.
+The independently registered SHP anchor, \resultnum{v4.shp.estimate}{[estimate]} with interval \resultnum{v4.shp.wald_lo}{[lower]} to \resultnum{v4.shp.wald_hi}{[upper]}, supplies no confirmatory boundary when the gate prevents curve estimation. % CN01 DS05 RS01 RS39 RS41
+% END BLOCK C-GATE-SHP
+
+% BEGIN BLOCK C-SHP-NOT-RUN
+% SELECT WHEN: SHP analysis not run and not B14.
+% INCLUDES: no estimate or assigned boundary.
+% ACTION: C3; specific operational reason comes from the permitted record.
+No empirical SHP anchor is available because the preregistered analysis was not run. % CN01 DS05 RS39
+% END BLOCK C-SHP-NOT-RUN
+
+% BEGIN BRANCH D-G2C
+% SELECT WHEN: B1b-G2c, complete G2c failed under the existing criterion.
+% INCLUDES: T3/F4 criterion summaries, B1-END and independent B1-SHP in Results.
+% ACTION: D1 instead of every released headline/permission block; keep fixed
+% Discussion, X5 and applicable independent exploratory/SHP expansions.
+The gate failed at G2c, which compares local nuisance propagation with full refits. No confirmatory seed, tier, curve or boundary was therefore produced under this freeze. % DS06 DS07 DS10 RS01 RS07
+Failure to meet this criterion is not evidence that the simulated laws are inseparable. The earlier dispersion check also cannot certify absolute interior coverage. % DS01 DS06 RS07 RS10 RS27
+Only criteria are reported; per-repetition G2/G2c records remain sealed under this freeze. Any opening or continuation requires a separately frozen successor that accounts for cumulative exposure. % DS07 RS02 RS09 RS53
+% END BRANCH D-G2C
+
+% BEGIN BRANCH C-G2C
+% SELECT WHEN: D-G2C selected.
+% INCLUDES: no released-curve headline; full-paper form, Methods unchanged.
+% ACTION: C1 and C2 in place of every PASS block; C3 uses C-GATE-IMPLICATION
+% and applicable gate-only SHP block. Retain corrected CN01 and fixed X5.
+The gate failed at G2c before any confirmatory seed was derived; no confirmatory tier was run and no curve or boundary was estimated under this freeze. % CN01 DS06 RS01 RS07
+This is a limit of the procedure's validation, without a result on separability of the study laws. % CN01 RS01 RS27
+Every stage must pass before any evaluation on reserved seeds. % CN01 DS07 RS02
+% END BRANCH C-G2C
+
+% BEGIN BRANCH D-CLOSE
+% SELECT WHEN: B1d, gate unfinished at frozen close, no earlier failure or stop.
+% INCLUDES: T3/F4 state at close; B1-END; independent B1-SHP only.
+% ACTION: D1 instead of released headlines and gate-pass interpretations.
+At the frozen close, \resultnum{v4.protocol.close_local}{[time]} America/Sao\_Paulo, stage \resultnum{v4.gate.last_stage}{[stage]} had completed \resultnum{v4.gate.last_stage.completed}{[n]} of \resultnum{v4.gate.last_stage.planned}{[n]} \resultplural{v4.gate.last_stage.planned}{task}{tasks}. The gate remained unfinished, and no confirmatory tier was run. % DS09 DS10 RS01 RS13
+An unfinished gate gives neither a pass nor a failure finding for its unevaluated criteria, and no curve. Work completed later belongs only to a possible successor record; it cannot derive a confirmatory seed or enter this paper's Results. % DS07 DS09 RS01 RS02 RS13 RS53
+% END BRANCH D-CLOSE
+
+% BEGIN BRANCH C-CLOSE
+% SELECT WHEN: D-CLOSE selected.
+% INCLUDES: state at close only; full-paper form, Methods unchanged.
+% ACTION: C1/C2 instead of PASS blocks; C3 uses C-GATE-IMPLICATION and SHP case.
+The gate remained unfinished at \resultnum{v4.protocol.close_local}{[time]} America/Sao\_Paulo. Stage \resultnum{v4.gate.last_stage}{[stage]} had completed \resultnum{v4.gate.last_stage.completed}{[n]} of \resultnum{v4.gate.last_stage.planned}{[n]} \resultplural{v4.gate.last_stage.planned}{task}{tasks}, and no confirmatory tier or curve was produced for this paper. % CN01 DS09 RS01 RS13
+Every stage must pass before any evaluation on reserved seeds. % CN01 DS07 RS02
+% END BRANCH C-CLOSE
+
+% BEGIN BLOCK C-GATE-IMPLICATION
+% SELECT WHEN: B1b-G2c or B1d.
+% INCLUDES: B1-END rule, unchanged X5 and applicable independent SHP state.
+% ACTION: C3; no methodological redesign or venue choice is made here.
+Under the frozen rules, continuation requires a new, separately frozen protocol with cumulative exposure; later work cannot become confirmation under this freeze. % CN01 DS07 RS02 RS53
+% END BLOCK C-GATE-IMPLICATION

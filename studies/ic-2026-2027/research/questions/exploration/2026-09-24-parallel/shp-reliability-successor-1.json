@@ -1,0 +1,94 @@
+{
+	"schema": "ic-study.shp-reliability-successor.v1",
+	"date": "2026-09-28",
+	"status": "declared-before-microdata-access",
+	"predecessor": {
+		"markdown": {
+			"path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.md",
+			"sha256": "73e157217db02297ac011e61284252f9728f584a0a2e6c00a8903d8c0abb7800"
+		},
+		"machine_json": {
+			"path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.json",
+			"sha256": "ba4f281f4d987f028ea95f80428e0fe1b4946c1d638f34b6231e38c8432a09a4"
+		},
+		"freeze": {
+			"path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-freeze.json",
+			"sha256": "0bb175914e9ce7e15398d28d5de9f5d02fff77d11e98b8d560b05d8e3359f10d"
+		}
+	},
+	"reason": "internal adversarial review 2026-09-28, items R2-M1 and R2-M4: the primary quasi-simplex has no stable trait, the simulation r and the anchor r are on different scales, and 2004 is the refreshment wave",
+	"exposure": "none: no SHP microdata accessed; v4 gate running; no confirmatory tier started",
+	"unchanged": "primary anchor, interval, triplets, all original sensitivities, diagnostics, failure rules, curve-use rules and privacy",
+	"additions": {
+		"starts_sensitivity": {
+			"model": "Y_it = mu_t + T_i + S_it + e_it; S_it = phi S_i,t-1 + eta_it",
+			"means": "free by wave",
+			"trait_variance": "free",
+			"initial_state_variance": "free",
+			"persistence": "constant across consecutive waves",
+			"innovation_variance": "constant across consecutive waves",
+			"measurement_error_variance": "equal across waves",
+			"reliability_t": "(var_T + var_S_t) / (var_T + var_S_t + var_e)",
+			"missing_data": "FIML under MAR, same sample and scale as the primary fit",
+			"parameterization": "log variances, tanh persistence, starting values fixed in code before data access",
+			"report": [
+				"r_2004 with Wald 95 percent interval by delta method",
+				"every r_t",
+				"var_T",
+				"phi",
+				"var_eta",
+				"initial state variance",
+				"var_e",
+				"trait share of 2004 latent variance",
+				"log-likelihood",
+				"AIC",
+				"BIC",
+				"maximum complete-case correlation residual"
+			],
+			"failure": [
+				"non-convergence",
+				"observed information not positive definite",
+				"any variance below 1e-4 times mean observed variance",
+				"abs(phi) above 0.99",
+				"r_t outside (0, 1)"
+			],
+			"failure_rule": "report failure; no priors, extra constraints or data-chosen starting values",
+			"interpretation": "diagnostic of trait dependence; never model selection by AIC, BIC or grid proximity"
+		},
+		"synthetic_crosswalk": {
+			"status": "exploratory",
+			"generator": "frozen v4 code at 37513841, imported unmodified",
+			"geometry": "study SHP geometry: N=10626, entry at waves 0 and 5, retention 0.89, two-person households",
+			"channel": "continuous w = sqrt(r) z + sqrt(1-r) e, then 11 equiprobable categories per wave coded 0-10 and treated as continuous",
+			"cells": {
+				"interaction_arm": "all (a, r) in the frozen G x R",
+				"trait_reference": "null family B with phi=0.85 and trait weight eta in {0.25, 0.50} at every r in R"
+			},
+			"estimators": [
+				"11-wave quasi-simplex r at wave index 5",
+				"Heise and Wiley-Wiley per triplet",
+				"polychoric Heise",
+				"STARTS"
+			],
+			"replicates_per_cell": 10,
+			"seed_root": 20260928,
+			"seed_namespace": "shp-crosswalk-v1",
+			"forbidden_inputs": "any confirmatory seed, gate result, tier output, AUC or a*(r) value",
+			"outputs": "mean, SD, min and max per cell, estimator and family, with failure counts",
+			"figure_use": "optional labelled overlay: grid r values whose replicate range contains the SHP estimate, for a=0 and both B references; never replaces the raw placement",
+			"host": "exploration host allowed; host recorded; cross-host numerical equivalence not required"
+		},
+		"wave_2004_description": {
+			"status": "descriptive",
+			"outputs": [
+				"r_2003, r_2004 and r_2005 from the primary fit",
+				"quasi-simplex r_2004 among respondents whose first valid answer is in 2004, waves 2004-2009, labelled edge estimate"
+			]
+		}
+	},
+	"freeze_rule": "a separate freeze record binds this document, this JSON and the code commit before any SHP analysis runs",
+	"method_sources": [
+		"https://doi.org/10.1037/0022-006X.63.1.52",
+		"https://doi.org/10.1037/met0000155"
+	]
+}

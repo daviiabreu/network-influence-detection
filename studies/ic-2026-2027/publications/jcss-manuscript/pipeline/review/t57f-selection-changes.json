@@ -1,0 +1,108 @@
+{
+ "schema": "ic-study.t57f-selection-changes.v1",
+ "rules_sha256_after_repin": "26e72219cc6d69eab15520d75ac0078413ef7306f722bad423cb797d0ccf829f",
+ "rules_sha256_after": "b15524bcbd3e4ef047fa4969557f537b8082438c2c823000a5025dec798c0752",
+ "changes": [
+  {
+   "id": "P5-b.range",
+   "field": "condition",
+   "before": {
+    "all": [
+     {
+      "ref": "PASS"
+     },
+     {
+      "not": {
+       "ref": "NONATTAINMENT"
+      }
+     },
+     {
+      "gt": [
+       "v4.t1.n_attained",
+       "0"
+      ]
+     }
+    ]
+   },
+   "after": {
+    "all": [
+     {
+      "all": [
+       {
+        "ref": "PASS"
+       },
+       {
+        "not": {
+         "ref": "NONATTAINMENT"
+        }
+       },
+       {
+        "gt": [
+         "v4.t1.n_attained",
+         "0"
+        ]
+       }
+      ]
+     },
+     {
+      "not": {
+       "same": [
+        "v4.t1.first_min",
+        "v4.t1.first_max"
+       ]
+      }
+     }
+    ]
+   },
+   "scope": "the range sentence now requires two distinct attained first-boundary strengths (first_min differs from first_max); the rest of its condition and its text are unchanged",
+   "authority": "T57f coordinator decision (decision log item 188) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  }
+ ],
+ "new_rules": [
+  {
+   "rule": {
+    "id": "P5-b.single",
+    "source": "results",
+    "line": 732,
+    "end_line": 732,
+    "condition": {
+     "all": [
+      {
+       "all": [
+        {
+         "ref": "PASS"
+        },
+        {
+         "not": {
+          "ref": "NONATTAINMENT"
+         }
+        },
+        {
+         "gt": [
+          "v4.t1.n_attained",
+          "0"
+         ]
+        }
+       ]
+      },
+      {
+       "same": [
+        "v4.t1.first_min",
+        "v4.t1.first_max"
+       ]
+      }
+     ]
+    },
+    "slot": "P5",
+    "operation": "append",
+    "order": 51.0
+   },
+   "scope": "single-strength alternative to P5-b.range, selected exactly when first_min equals first_max under the same base condition",
+   "authority": "T57f coordinator decision (decision log item 188) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  }
+ ],
+ "composition_code": [
+  "new condition operator same: true when two catalog values are equal; a missing value refuses, as with eq",
+  "the B06 drop of the sustained-boundary clause applies to P5-b.single as to P5-b.range"
+ ]
+}

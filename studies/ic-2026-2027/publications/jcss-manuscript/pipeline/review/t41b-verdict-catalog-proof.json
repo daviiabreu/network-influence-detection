@@ -1,0 +1,94 @@
+{
+  "baseline": "6fce4b508b193177ef726ff7a3dd02efae089b13",
+  "baseline_clean": true,
+  "captures": "/private/tmp/t41b-verdict-proof-gytm8mqx",
+  "cases": [
+    {
+      "added_values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "0",
+        "v4.gate.G1b.verdict.complete": "0",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "0",
+        "v4.gate.G1c.verdict.complete": "0",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "0",
+        "v4.gate.G2.verdict.complete": "0",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "0",
+        "v4.gate.G2c.verdict.stop": "0"
+      },
+      "case": "gate",
+      "new_sha256": "265e6f0ca927c985d3e3ff6c7be081cca12f0f2ef7ad4348509fc3274f300842",
+      "old_expected_digest_matches": true,
+      "old_ids": 99,
+      "old_ids_bytes_equal": true,
+      "old_sha256": "31f322512701c66129b544bdbc1e84384eadcad275f4a9db089360b67bb44aeb",
+      "projected_sha256": "31f322512701c66129b544bdbc1e84384eadcad275f4a9db089360b67bb44aeb"
+    },
+    {
+      "added_values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "0",
+        "v4.gate.G1b.verdict.complete": "0",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "0",
+        "v4.gate.G1c.verdict.complete": "0",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "0",
+        "v4.gate.G2.verdict.complete": "0",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "0",
+        "v4.gate.G2c.verdict.stop": "0"
+      },
+      "case": "gate+exploratory",
+      "new_sha256": "953086e7bca477898bde9cbc064df84749ef2ae63f35efd61c2b1b3594c67531",
+      "old_expected_digest_matches": true,
+      "old_ids": 10956,
+      "old_ids_bytes_equal": true,
+      "old_sha256": "82b9b7cd8ee6f9dd79fd3cd0467b803b5d7e9bbc73d539d66132bf8006905ae8",
+      "projected_sha256": "82b9b7cd8ee6f9dd79fd3cd0467b803b5d7e9bbc73d539d66132bf8006905ae8"
+    },
+    {
+      "added_values": {
+        "v4.gate.G0.verdict.approved": "1",
+        "v4.gate.G0.verdict.complete": "1",
+        "v4.gate.G0.verdict.stop": "0",
+        "v4.gate.G1b.verdict.approved": "0",
+        "v4.gate.G1b.verdict.complete": "0",
+        "v4.gate.G1b.verdict.stop": "0",
+        "v4.gate.G1c.verdict.approved": "0",
+        "v4.gate.G1c.verdict.complete": "0",
+        "v4.gate.G1c.verdict.stop": "0",
+        "v4.gate.G2.verdict.approved": "0",
+        "v4.gate.G2.verdict.complete": "0",
+        "v4.gate.G2.verdict.stop": "0",
+        "v4.gate.G2c.verdict.approved": "0",
+        "v4.gate.G2c.verdict.complete": "0",
+        "v4.gate.G2c.verdict.stop": "0"
+      },
+      "case": "gate+exploratory-x1b",
+      "new_sha256": "ec617a5fb3afe85921253d6ab92371eee92e06e434a196fc47ac40451b90cb25",
+      "old_expected_digest_matches": true,
+      "old_ids": 11116,
+      "old_ids_bytes_equal": true,
+      "old_sha256": "62c80d588c27d0dc7213f98d32d1e96ee5d76548044ce72144bb33b075131b48",
+      "projected_sha256": "62c80d588c27d0dc7213f98d32d1e96ee5d76548044ce72144bb33b075131b48"
+    }
+  ],
+  "python": "/Users/davi/Documents/github/worktrees/research-workbench/research/shell-assembler/studies/ic-2026-2027/.venv/bin/python",
+  "schema": "ic-study.v4-verdict-catalog-proof.v1",
+  "serialization": "json.dumps(sort_keys=True, ensure_ascii=False, indent=2) + LF",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

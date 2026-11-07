@@ -1,0 +1,1647 @@
+{
+  "schema": "ic-study.v4-number-agreement-review.v1",
+  "baseline": "f5743882",
+  "synthetic_examples": true,
+  "shells": {
+    "results": {
+      "uses": 109,
+      "edited_lines": 58,
+      "accepted_rules": 49,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "e3b69fee6f5395b69988ab18847d4b137e572c63198dd0383dbea4d5fe991676",
+      "after_sha256": "1adddd1ef755226ec30136f751034bf2ddf5a7bc8a7de4bdc75e879b7f84a16e"
+    },
+    "abstract": {
+      "uses": 16,
+      "edited_lines": 13,
+      "accepted_rules": 13,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "f7726b5f025a8bf209d4d88c13b1e1dbc4f963764a305cf0d4a47368ab07f5fb",
+      "after_sha256": "e298e27f79a0f6b4f51515233c64dfb7886747fd745a321be4840147f8b54b52"
+    },
+    "discussion": {
+      "uses": 120,
+      "edited_lines": 53,
+      "accepted_rules": 48,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "9d5227ce85bff9e40a860c65e4e88f591c3524a9ef3ca7f467237df280c7eb3c",
+      "after_sha256": "ad9b8fecdfcee34f336d5de00e79f44acf0b55386136261d68c46121b77853e9"
+    },
+    "exploratory": {
+      "uses": 94,
+      "edited_lines": 50,
+      "accepted_rules": 45,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "966e29eca52b178d95b9edb3894e7bd29a4469b7225b4cdd4eaee7d75d23a062",
+      "after_sha256": "1f48cadaf1cedf280782ee1539d65efe17f79a9b209f3fd815f9907b9fa9cd6f"
+    }
+  },
+  "total_uses": 339,
+  "condition_changes": [],
+  "order_changes": [],
+  "lines": [
+    {
+      "source": "results",
+      "line": 126,
+      "rule_ids": [
+        "B1a"
+      ],
+      "before": "In G0, \\resultnum{v4.gate.G0.anchor_failures}{[n]} zero-strength identity fits did not end with status \\texttt{anchor-exact}, and \\resultnum{v4.gate.G0.budget_statuses}{[n]} attempts ended with status \\texttt{budget}. Also, \\resultnum{v4.gate.G0.implementation_statuses}{[n]} attempts ended with status \\texttt{numerical-limit} or \\texttt{ill-conditioned} across \\resultnum{v4.gate.G0.fits}{[n]} fits. The respective limits were zero, zero and \\resultnum{v4.protocol.g0.implementation_limit}{1}\\% of fits. % RS03",
+      "after": "In G0, \\resultnum{v4.gate.G0.anchor_failures}{[n]} zero-strength identity \\resultplural{v4.gate.G0.anchor_failures}{fit}{fits} did not end with status \\texttt{anchor-exact}, and \\resultnum{v4.gate.G0.budget_statuses}{[n]} \\resultplural{v4.gate.G0.budget_statuses}{attempt}{attempts} ended with status \\texttt{budget}. Also, \\resultnum{v4.gate.G0.implementation_statuses}{[n]} \\resultplural{v4.gate.G0.implementation_statuses}{attempt}{attempts} ended with status \\texttt{numerical-limit} or \\texttt{ill-conditioned} across \\resultnum{v4.gate.G0.fits}{[n]} \\resultplural{v4.gate.G0.fits}{fit}{fits}. The respective limits were zero, zero and \\resultnum{v4.protocol.g0.implementation_limit}{1}\\% of fits. % RS03"
+    },
+    {
+      "source": "results",
+      "line": 128,
+      "rule_ids": [
+        "B1a"
+      ],
+      "before": "In G1b, joint coverage was lowest at \\resultnum{v4.gate.G1b.coverage_min}{[n]} of \\resultnum{v4.protocol.g1b.repetitions}{1,000} repetitions across the five synthetic-score scenarios, compared with the pass mark of \\resultnum{v4.protocol.g1b.pass_mark}{935}. The empirical max-$t$ critical value exceeded the \\resultnum{v4.protocol.critical_floor}{2.7729} floor in \\resultnum{v4.gate.G1b.exceeds_floor_count}{[n]} of \\resultnum{v4.gate.G1b.completed}{[n]} repetitions. % RS04 RS42",
+      "after": "In G1b, joint coverage was lowest at \\resultnum{v4.gate.G1b.coverage_min}{[n]} of \\resultnum{v4.protocol.g1b.repetitions}{1,000} \\resultplural{v4.protocol.g1b.repetitions}{repetition}{repetitions} across the five synthetic-score scenarios, compared with the pass mark of \\resultnum{v4.protocol.g1b.pass_mark}{935}. The empirical max-$t$ critical value exceeded the \\resultnum{v4.protocol.critical_floor}{2.7729} floor in \\resultnum{v4.gate.G1b.exceeds_floor_count}{[n]} of \\resultnum{v4.gate.G1b.completed}{[n]} \\resultplural{v4.gate.G1b.completed}{repetition}{repetitions}. % RS04 RS42"
+    },
+    {
+      "source": "results",
+      "line": 129,
+      "rule_ids": [
+        "B1a"
+      ],
+      "before": "In G1c, all \\resultnum{v4.gate.G1c.anchor_count}{[n]} zero-strength fits had status \\texttt{anchor-exact}. At the \\resultnum{v4.protocol.critical_floor}{2.7729} floor, \\resultnum{v4.gate.G1c.pointwise_failures}{[n]} of \\resultnum{v4.protocol.g1c.fits}{150} intervals missed \\resultnum{v4.protocol.null_auc}{0.5} (limit three). The standardized mean deviation of the AUC from \\resultnum{v4.protocol.null_auc}{0.5} was \\resultnum{v4.gate.G1c.mean_z}{[z]} (limit \\resultnum{v4.protocol.g1c.mean_z_limit}{3}), and the tie rate was \\resultnum{v4.gate.G1c.tie_rate}{[t]}. % RS05",
+      "after": "In G1c, \\resultplural{v4.gate.G1c.anchor_count}{the}{all} \\resultnum{v4.gate.G1c.anchor_count}{[n]} zero-strength \\resultplural{v4.gate.G1c.anchor_count}{fit}{fits} had status \\texttt{anchor-exact}. At the \\resultnum{v4.protocol.critical_floor}{2.7729} floor, \\resultnum{v4.gate.G1c.pointwise_failures}{[n]} of \\resultnum{v4.protocol.g1c.fits}{150} \\resultplural{v4.protocol.g1c.fits}{interval}{intervals} missed \\resultnum{v4.protocol.null_auc}{0.5} (limit three). The standardized mean deviation of the AUC from \\resultnum{v4.protocol.null_auc}{0.5} was \\resultnum{v4.gate.G1c.mean_z}{[z]} (limit \\resultnum{v4.protocol.g1c.mean_z_limit}{3}), and the tie rate was \\resultnum{v4.gate.G1c.tie_rate}{[t]}. % RS05"
+    },
+    {
+      "source": "results",
+      "line": 130,
+      "rule_ids": [
+        "B1a"
+      ],
+      "before": "In G2, across the \\resultnum{v4.gate.G2.n_cells}{[n]} allocated cells, the pooled ratio of observed to model-implied dispersion of paired logit differences was \\resultnum{v4.gate.G2.pooled_ratio}{[x]}, with a bootstrap interval from \\resultnum{v4.gate.G2.pooled_lower}{[x]} to \\resultnum{v4.gate.G2.pooled_upper}{[x]}. Every cell interval met its calibrated threshold. The cell medians of the finite-difference variance ratio ranged from \\resultnum{v4.gate.G2.fd_median_min}{[x]} to \\resultnum{v4.gate.G2.fd_median_max}{[x]}, within the required range of \\resultnum{v4.protocol.g2.fd_range.lower}{0.8} to \\resultnum{v4.protocol.g2.fd_range.upper}{1.25}. Technical failures occurred in \\resultnum{v4.gate.G2.failures}{[n]} of \\resultnum{v4.gate.G2.planned}{[n]} pipelines, within the allowances. % RS06",
+      "after": "In G2, across the \\resultnum{v4.gate.G2.n_cells}{[n]} allocated \\resultplural{v4.gate.G2.n_cells}{cell}{cells}, the pooled ratio of observed to model-implied dispersion of paired logit differences was \\resultnum{v4.gate.G2.pooled_ratio}{[x]}, with a bootstrap interval from \\resultnum{v4.gate.G2.pooled_lower}{[x]} to \\resultnum{v4.gate.G2.pooled_upper}{[x]}. Every cell interval met its calibrated threshold. The cell medians of the finite-difference variance ratio ranged from \\resultnum{v4.gate.G2.fd_median_min}{[x]} to \\resultnum{v4.gate.G2.fd_median_max}{[x]}, within the required range of \\resultnum{v4.protocol.g2.fd_range.lower}{0.8} to \\resultnum{v4.protocol.g2.fd_range.upper}{1.25}. \\resultplural{v4.gate.G2.failures}{Technical failure}{Technical failures} occurred in \\resultnum{v4.gate.G2.failures}{[n]} of \\resultnum{v4.gate.G2.planned}{[n]} \\resultplural{v4.gate.G2.planned}{pipeline}{pipelines}, within the allowances. % RS06"
+    },
+    {
+      "source": "results",
+      "line": 151,
+      "rule_ids": [
+        "B1b-G0"
+      ],
+      "before": "G0 required every zero-strength fit of A, B, D, E and the three B controls to end \\texttt{anchor-exact}, no attempt to end in \\texttt{budget}, and implementation-type statuses in at most \\resultnum{v4.protocol.g0.implementation_limit}{1}\\% of fits; \\resultnum{v4.gate.G0.anchor_failures}{[n]} identity fits were not \\texttt{anchor-exact}, \\resultnum{v4.gate.G0.budget_statuses}{[n]} attempts ended in \\texttt{budget}, and \\resultnum{v4.gate.G0.implementation_statuses}{[n]} attempts ended in \\texttt{numerical-limit} or \\texttt{ill-conditioned} over \\resultnum{v4.gate.G0.fits}{[n]} fits (\\resultnum{v4.gate.G0.implementation_share}{[x]}). % RS03",
+      "after": "G0 required every zero-strength fit of A, B, D, E and the three B controls to end \\texttt{anchor-exact}, no attempt to end in \\texttt{budget}, and implementation-type statuses in at most \\resultnum{v4.protocol.g0.implementation_limit}{1}\\% of fits; \\resultnum{v4.gate.G0.anchor_failures}{[n]} identity \\resultplural{v4.gate.G0.anchor_failures}{fit}{fits} \\resultplural{v4.gate.G0.anchor_failures}{was}{were} not \\texttt{anchor-exact}, \\resultnum{v4.gate.G0.budget_statuses}{[n]} \\resultplural{v4.gate.G0.budget_statuses}{attempt}{attempts} ended in \\texttt{budget}, and \\resultnum{v4.gate.G0.implementation_statuses}{[n]} \\resultplural{v4.gate.G0.implementation_statuses}{attempt}{attempts} ended in \\texttt{numerical-limit} or \\texttt{ill-conditioned} over \\resultnum{v4.gate.G0.fits}{[n]} \\resultplural{v4.gate.G0.fits}{fit}{fits} (\\resultnum{v4.gate.G0.implementation_share}{[x]}). % RS03"
+    },
+    {
+      "source": "results",
+      "line": 153,
+      "rule_ids": [
+        "B1b-G0"
+      ],
+      "before": "G0 could not be evaluated against its criteria because \\resultnum{v4.gate.G0.failures}{[n]} of its \\resultnum{v4.gate.G0.planned}{[n]} tasks ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS03",
+      "after": "G0 could not be evaluated against its criteria because \\resultnum{v4.gate.G0.failures}{[n]} of its \\resultnum{v4.gate.G0.planned}{[n]} \\resultplural{v4.gate.G0.planned}{task}{tasks} ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS03"
+    },
+    {
+      "source": "results",
+      "line": 171,
+      "rule_ids": [
+        "B1b-G1b"
+      ],
+      "before": "G1b required joint coverage in at least \\resultnum{v4.protocol.g1b.pass_mark}{935} of \\resultnum{v4.protocol.g1b.repetitions}{1,000} repetitions in each of five scenarios. Coverage fell below this threshold in \\resultnum{v4.gate.G1b.n_scenarios_below}{[n]} scenarios; the lowest count was \\resultnum{v4.gate.G1b.coverage_min}{[n]}. % RS04",
+      "after": "G1b required joint coverage in at least \\resultnum{v4.protocol.g1b.pass_mark}{935} of \\resultnum{v4.protocol.g1b.repetitions}{1,000} \\resultplural{v4.protocol.g1b.repetitions}{repetition}{repetitions} in each of five scenarios. Coverage fell below this threshold in \\resultnum{v4.gate.G1b.n_scenarios_below}{[n]} \\resultplural{v4.gate.G1b.n_scenarios_below}{scenario}{scenarios}; the lowest count was \\resultnum{v4.gate.G1b.coverage_min}{[n]}. % RS04"
+    },
+    {
+      "source": "results",
+      "line": 173,
+      "rule_ids": [
+        "B1b-G1b"
+      ],
+      "before": "G1b could not be evaluated against its criteria because \\resultnum{v4.gate.G1b.failures}{[n]} of its \\resultnum{v4.gate.G1b.planned}{[n]} tasks ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS04",
+      "after": "G1b could not be evaluated against its criteria because \\resultnum{v4.gate.G1b.failures}{[n]} of its \\resultnum{v4.gate.G1b.planned}{[n]} \\resultplural{v4.gate.G1b.planned}{task}{tasks} ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS04"
+    },
+    {
+      "source": "results",
+      "line": 175,
+      "rule_ids": [
+        "B1b-G1b"
+      ],
+      "before": "The empirical max-$t$ critical value exceeded the \\resultnum{v4.protocol.critical_floor}{2.7729} floor in \\resultnum{v4.gate.G1b.exceeds_floor_count}{[n]} of \\resultnum{v4.gate.G1b.completed}{[n]} completed repetitions. % RS42",
+      "after": "The empirical max-$t$ critical value exceeded the \\resultnum{v4.protocol.critical_floor}{2.7729} floor in \\resultnum{v4.gate.G1b.exceeds_floor_count}{[n]} of \\resultnum{v4.gate.G1b.completed}{[n]} completed \\resultplural{v4.gate.G1b.completed}{repetition}{repetitions}. % RS42"
+    },
+    {
+      "source": "results",
+      "line": 193,
+      "rule_ids": [
+        "B1b-G1c"
+      ],
+      "before": "G1c required all \\resultnum{v4.protocol.g1c.fits}{150} fits at $r=\\resultnum{v4.protocol.g1c.r.1}{0.50}$, \\resultnum{v4.protocol.g1c.r.2}{0.70} and \\resultnum{v4.protocol.g1c.r.3}{0.90} to be \\texttt{anchor-exact}, at most three pointwise interval misses at the \\resultnum{v4.protocol.critical_floor}{2.7729} floor, and a mean AUC within three standard errors of \\resultnum{v4.protocol.null_auc}{0.5}; the stage recorded \\resultnum{v4.gate.G1c.anchor_count}{[n]} \\texttt{anchor-exact} fits, \\resultnum{v4.gate.G1c.pointwise_failures}{[n]} pointwise misses and a standardized mean deviation of \\resultnum{v4.gate.G1c.mean_z}{[z]}. % RS05",
+      "after": "G1c required \\resultplural{v4.protocol.g1c.fits}{the}{all} \\resultnum{v4.protocol.g1c.fits}{150} \\resultplural{v4.protocol.g1c.fits}{fit}{fits} at $r=\\resultnum{v4.protocol.g1c.r.1}{0.50}$, \\resultnum{v4.protocol.g1c.r.2}{0.70} and \\resultnum{v4.protocol.g1c.r.3}{0.90} to be \\texttt{anchor-exact}, at most three pointwise interval misses at the \\resultnum{v4.protocol.critical_floor}{2.7729} floor, and a mean AUC within three standard errors of \\resultnum{v4.protocol.null_auc}{0.5}; the stage recorded \\resultnum{v4.gate.G1c.anchor_count}{[n]} \\texttt{anchor-exact} \\resultplural{v4.gate.G1c.anchor_count}{fit}{fits}, \\resultnum{v4.gate.G1c.pointwise_failures}{[n]} pointwise \\resultplural{v4.gate.G1c.pointwise_failures}{miss}{misses} and a standardized mean deviation of \\resultnum{v4.gate.G1c.mean_z}{[z]}. % RS05"
+    },
+    {
+      "source": "results",
+      "line": 195,
+      "rule_ids": [
+        "B1b-G1c"
+      ],
+      "before": "G1c could not be evaluated against its criteria because \\resultnum{v4.gate.G1c.failures}{[n]} of its \\resultnum{v4.gate.G1c.planned}{[n]} tasks ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS05",
+      "after": "G1c could not be evaluated against its criteria because \\resultnum{v4.gate.G1c.failures}{[n]} of its \\resultnum{v4.gate.G1c.planned}{[n]} \\resultplural{v4.gate.G1c.planned}{task}{tasks} ended in a technical failure. Under the gate rule, a failed task causes the stage to fail. % RS05"
+    },
+    {
+      "source": "results",
+      "line": 211,
+      "rule_ids": [
+        "B1c"
+      ],
+      "before": "Among the \\resultnum{v4.gate.stop.denominator}{[n]} G0 fits of B on the observed channel at the strengths that G2 uses ($\\resultnum{v4.protocol.a.0}{0}<a\\le \\resultnum{v4.protocol.a.030}{0.30}$, all nine values of $r$), \\resultnum{v4.gate.stop.gaps}{[n]} ended in a gap. % RS08",
+      "after": "Among the \\resultnum{v4.gate.stop.denominator}{[n]} G0 \\resultplural{v4.gate.stop.denominator}{fit}{fits} of B on the observed channel at the strengths that G2 uses ($\\resultnum{v4.protocol.a.0}{0}<a\\le \\resultnum{v4.protocol.a.030}{0.30}$, all nine values of $r$), \\resultnum{v4.gate.stop.gaps}{[n]} ended in a gap. % RS08"
+    },
+    {
+      "source": "results",
+      "line": 236,
+      "rule_ids": [
+        "B1b-G2"
+      ],
+      "before": "Technical failures exceeded the frozen allowance of five per \\resultnum{v4.protocol.g2.pipelines_per_cell}{100} pipelines in a cell or two per cent of all pipelines: \\resultnum{v4.gate.G2.failures}{[n]} of \\resultnum{v4.gate.G2.planned}{[n]} pipelines failed, with at most \\resultnum{v4.gate.G2.max_cell_failures}{[n]} in one cell. % RS06",
+      "after": "Technical failures exceeded the frozen allowance of five per \\resultnum{v4.protocol.g2.pipelines_per_cell}{100} \\resultplural{v4.protocol.g2.pipelines_per_cell}{pipeline}{pipelines} in a cell or two per cent of all pipelines: \\resultnum{v4.gate.G2.failures}{[n]} of \\resultnum{v4.gate.G2.planned}{[n]} \\resultplural{v4.gate.G2.planned}{pipeline}{pipelines} failed, with at most \\resultnum{v4.gate.G2.max_cell_failures}{[n]} in one cell. % RS06"
+    },
+    {
+      "source": "results",
+      "line": 238,
+      "rule_ids": [
+        "B1b-G2"
+      ],
+      "before": "The bootstrap interval for the dispersion ratio lay above the calibrated upper threshold in \\resultnum{v4.gate.G2.n_cells_above}{[n]} of \\resultnum{v4.gate.G2.n_cells}{[n]} cells. The pooled ratio was \\resultnum{v4.gate.G2.pooled_ratio}{[x]}, with an interval from \\resultnum{v4.gate.G2.pooled_lower}{[x]} to \\resultnum{v4.gate.G2.pooled_upper}{[x]}. Thus, the observed dispersion of paired logit differences exceeded that implied by the reported standard errors. % RS06",
+      "after": "The bootstrap interval for the dispersion ratio lay above the calibrated upper threshold in \\resultnum{v4.gate.G2.n_cells_above}{[n]} of \\resultnum{v4.gate.G2.n_cells}{[n]} \\resultplural{v4.gate.G2.n_cells}{cell}{cells}. The pooled ratio was \\resultnum{v4.gate.G2.pooled_ratio}{[x]}, with an interval from \\resultnum{v4.gate.G2.pooled_lower}{[x]} to \\resultnum{v4.gate.G2.pooled_upper}{[x]}. Thus, the observed dispersion of paired logit differences exceeded that implied by the reported standard errors. % RS06"
+    },
+    {
+      "source": "results",
+      "line": 240,
+      "rule_ids": [
+        "B1b-G2"
+      ],
+      "before": "The bootstrap interval for the dispersion ratio lay below the calibrated lower threshold in \\resultnum{v4.gate.G2.n_cells_below}{[n]} of \\resultnum{v4.gate.G2.n_cells}{[n]} cells. The pooled ratio was \\resultnum{v4.gate.G2.pooled_ratio}{[x]}, with an interval from \\resultnum{v4.gate.G2.pooled_lower}{[x]} to \\resultnum{v4.gate.G2.pooled_upper}{[x]}. Thus, the reported standard errors exceeded the observed dispersion by more than the criteria allow. % RS06",
+      "after": "The bootstrap interval for the dispersion ratio lay below the calibrated lower threshold in \\resultnum{v4.gate.G2.n_cells_below}{[n]} of \\resultnum{v4.gate.G2.n_cells}{[n]} \\resultplural{v4.gate.G2.n_cells}{cell}{cells}. The pooled ratio was \\resultnum{v4.gate.G2.pooled_ratio}{[x]}, with an interval from \\resultnum{v4.gate.G2.pooled_lower}{[x]} to \\resultnum{v4.gate.G2.pooled_upper}{[x]}. Thus, the reported standard errors exceeded the observed dispersion by more than the criteria allow. % RS06"
+    },
+    {
+      "source": "results",
+      "line": 242,
+      "rule_ids": [
+        "B1b-G2"
+      ],
+      "before": "The median ratio of nuisance variances at finite-difference steps \\resultnum{v4.protocol.g2.fd_step.small}{0.005} and \\resultnum{v4.protocol.g2.fd_step.large}{0.01} fell outside the range \\resultnum{v4.protocol.g2.fd_range.lower}{0.8} to \\resultnum{v4.protocol.g2.fd_range.upper}{1.25} in \\resultnum{v4.gate.G2.n_cells_fd_outside}{[n]} cells (medians from \\resultnum{v4.gate.G2.fd_median_min}{[x]} to \\resultnum{v4.gate.G2.fd_median_max}{[x]}). % RS06",
+      "after": "The median ratio of nuisance variances at finite-difference steps \\resultnum{v4.protocol.g2.fd_step.small}{0.005} and \\resultnum{v4.protocol.g2.fd_step.large}{0.01} fell outside the range \\resultnum{v4.protocol.g2.fd_range.lower}{0.8} to \\resultnum{v4.protocol.g2.fd_range.upper}{1.25} in \\resultnum{v4.gate.G2.n_cells_fd_outside}{[n]} \\resultplural{v4.gate.G2.n_cells_fd_outside}{cell}{cells} (medians from \\resultnum{v4.gate.G2.fd_median_min}{[x]} to \\resultnum{v4.gate.G2.fd_median_max}{[x]}). % RS06"
+    },
+    {
+      "source": "results",
+      "line": 283,
+      "rule_ids": [
+        "B1d"
+      ],
+      "before": "The validation gate remained incomplete when the compute window closed on \\resultnum{v4.protocol.close_local}{18 October 2026 at 23:59} America/Sao\\_Paulo. Stage \\resultnum{v4.gate.last_stage}{[stage]} had completed \\resultnum{v4.gate.last_stage.completed}{[n]} of \\resultnum{v4.gate.last_stage.planned}{[n]} tasks; the earlier stages had passed (Table~\\ref{tab:v4-T3}). % RS01 RS13",
+      "after": "The validation gate remained incomplete when the compute window closed on \\resultnum{v4.protocol.close_local}{18 October 2026 at 23:59} America/Sao\\_Paulo. Stage \\resultnum{v4.gate.last_stage}{[stage]} had completed \\resultnum{v4.gate.last_stage.completed}{[n]} of \\resultnum{v4.gate.last_stage.planned}{[n]} \\resultplural{v4.gate.last_stage.planned}{task}{tasks}; the earlier stages had passed (Table~\\ref{tab:v4-T3}). % RS01 RS13"
+    },
+    {
+      "source": "results",
+      "line": 340,
+      "rule_ids": [
+        "B02",
+        "B02.lead"
+      ],
+      "before": "The main curve against B is not validated: \\resultnum{v4.t1.n_not_valid}{[n]} of the nine tier-\\resultnum{v4.protocol.tier.main_B}{1} units were not both complete and valid at the effective release (Table~\\ref{tab:v4-T4}, Fig.~\\ref{fig:v4-F5}). % RS15 RS16",
+      "after": "The main curve against B is not validated: \\resultnum{v4.t1.n_not_valid}{[n]} of the nine tier-\\resultnum{v4.protocol.tier.main_B}{1} units \\resultplural{v4.t1.n_not_valid}{was}{were} not both complete and valid at the effective release (Table~\\ref{tab:v4-T4}, Fig.~\\ref{fig:v4-F5}). % RS15 RS16"
+    },
+    {
+      "source": "results",
+      "line": 342,
+      "rule_ids": [
+        "B02",
+        "B02.gate"
+      ],
+      "before": "In \\resultnum{v4.t1.n_invalid_gate}{[n]} of these units, the zero-strength band did not contain \\resultnum{v4.protocol.null_auc}{0.5}. The null gate therefore failed, and the unit is complete but invalid. Its boundaries are suppressed rather than interpreted as positive results. % RS17",
+      "after": "In \\resultnum{v4.t1.n_invalid_gate}{[n]} of these units, the zero-strength band did not contain \\resultnum{v4.protocol.null_auc}{0.5}. \\resultplural{v4.t1.n_invalid_gate}{The null gate therefore failed}{The null gates therefore failed}, and \\resultplural{v4.t1.n_invalid_gate}{the unit is}{the units are} complete but invalid. \\resultplural{v4.t1.n_invalid_gate}{Its boundaries}{Their boundaries} are suppressed rather than interpreted as positive results. % RS17"
+    },
+    {
+      "source": "results",
+      "line": 343,
+      "rule_ids": [
+        "B02",
+        "B02.a0gap"
+      ],
+      "before": "In \\resultnum{v4.t1.n_invalid_a0gap}{[n]} of these units, the zero-strength cell was a gap, which likewise makes the unit complete but invalid. % RS14",
+      "after": "In \\resultnum{v4.t1.n_invalid_a0gap}{[n]} of these units, the zero-strength \\resultplural{v4.t1.n_invalid_a0gap}{cell was a gap}{cells were gaps}, which likewise \\resultplural{v4.t1.n_invalid_a0gap}{makes the unit}{makes the units} complete but invalid. % RS14"
+    },
+    {
+      "source": "results",
+      "line": 344,
+      "rule_ids": [
+        "B02",
+        "B02.clock"
+      ],
+      "before": "Of these units, \\resultnum{v4.t1.n_clock}{[n]} had not started or were only partially complete when the compute window closed. Under the implemented rule, an unfinished tier-\\resultnum{v4.protocol.tier.main_B}{1} unit invalidates the main curve even when its null gate has not failed. % RS16 RS13",
+      "after": "Of these units, \\resultnum{v4.t1.n_clock}{[n]} had not started or \\resultplural{v4.t1.n_clock}{was}{were} only partially complete when the compute window closed. Under the implemented rule, an unfinished tier-\\resultnum{v4.protocol.tier.main_B}{1} unit invalidates the main curve even when its null gate has not failed. % RS16 RS13"
+    },
+    {
+      "source": "results",
+      "line": 362,
+      "rule_ids": [
+        "B03"
+      ],
+      "before": "At \\resultnum{v4.t1.n_interval_lower_finite}{[n]} values of $r$, the upper band reached \\resultnum{v4.protocol.target}{0.70} at some strength. The inverted interval of $a^*$ therefore has a finite lower end, and attainment within the grid is not excluded at those values. At the remaining values, the upper band stayed below \\resultnum{v4.protocol.target}{0.70} at every strength. % RS21",
+      "after": "At \\resultnum{v4.t1.n_interval_lower_finite}{[n]} \\resultplural{v4.t1.n_interval_lower_finite}{value}{values} of $r$, the upper band reached \\resultnum{v4.protocol.target}{0.70} at some strength. The inverted interval of $a^*$ therefore has a finite lower end, and attainment within the grid is not excluded at \\resultplural{v4.t1.n_interval_lower_finite}{that value}{those values}. At the remaining values, the upper band stayed below \\resultnum{v4.protocol.target}{0.70} at every strength. % RS21"
+    },
+    {
+      "source": "results",
+      "line": 378,
+      "rule_ids": [
+        "B04",
+        "B04.low.1"
+      ],
+      "before": "At \\resultnum{v4.t1.n_first_low}{[n]} values of $r$, the first boundary against B was attained at $a=\\resultnum{v4.protocol.a.0001}{0.001}$ or $a=\\resultnum{v4.protocol.a.0003}{0.003}$, the first two positive strengths. These lie next to the zero-strength cell, where B coincides with the interaction arm (Table~\\ref{tab:v4-T1}). % RS25",
+      "after": "At \\resultnum{v4.t1.n_first_low}{[n]} \\resultplural{v4.t1.n_first_low}{value}{values} of $r$, the first boundary against B was attained at $a=\\resultnum{v4.protocol.a.0001}{0.001}$ or $a=\\resultnum{v4.protocol.a.0003}{0.003}$, the first two positive strengths. These lie next to the zero-strength cell, where B coincides with the interaction arm (Table~\\ref{tab:v4-T1}). % RS25"
+    },
+    {
+      "source": "results",
+      "line": 379,
+      "rule_ids": [
+        "B04",
+        "B04.low.2"
+      ],
+      "before": "Using the interval-based classification of Table~\\ref{tab:v4-T1}, these first-positive boundaries are small at \\resultnum{v4.t1.low.n_small}{[n]} values of $r$ and indeterminate at \\resultnum{v4.t1.low.n_indeterminate}{[n]}; the cut at \\resultnum{v4.protocol.small_cut}{0.03} is an internal convention, not a demonstrated effect size. % RS25",
+      "after": "Using the interval-based classification of Table~\\ref{tab:v4-T1}, the first-positive boundary is small at \\resultnum{v4.t1.low.n_small}{[n]} \\resultplural{v4.t1.low.n_small}{value}{values} of $r$ and indeterminate at \\resultnum{v4.t1.low.n_indeterminate}{[n]}; the cut at \\resultnum{v4.protocol.small_cut}{0.03} is an internal convention, not a demonstrated effect size. % RS25"
+    },
+    {
+      "source": "results",
+      "line": 382,
+      "rule_ids": [
+        "B04",
+        "B04.low.5"
+      ],
+      "before": "The retry was used in \\resultnum{v4.low.n_retry}{[n]} of these \\resultnum{v4.low.n_cells}{[n]} cells. The largest fraction of projected draws was \\resultnum{v4.low.projected_fraction_max}{[x]}, and the largest amplification diagnostic was \\resultnum{v4.low.amplification_max}{[x]}. % RS44 RS47",
+      "after": "The retry was used in \\resultnum{v4.low.n_retry}{[n]} of these \\resultnum{v4.low.n_cells}{[n]} \\resultplural{v4.low.n_cells}{cell}{cells}. The largest fraction of projected draws was \\resultnum{v4.low.projected_fraction_max}{[x]}, and the largest amplification diagnostic was \\resultnum{v4.low.amplification_max}{[x]}. % RS44 RS47"
+    },
+    {
+      "source": "results",
+      "line": 388,
+      "rule_ids": [
+        "B04",
+        "B04.zero"
+      ],
+      "before": "At \\resultnum{v4.t1.n_first_zero}{[n]} values of $r$, the point estimate at $a=\\resultnum{v4.protocol.a.0}{0}$ already reached \\resultnum{v4.protocol.target}{0.70}, while the zero-strength band contained \\resultnum{v4.protocol.null_auc}{0.5}. The null gate therefore passed. The table labels these units ``indeterminate'' and reports their inverted intervals. % RS17 RS25",
+      "after": "At \\resultnum{v4.t1.n_first_zero}{[n]} \\resultplural{v4.t1.n_first_zero}{value}{values} of $r$, the point estimate at $a=\\resultnum{v4.protocol.a.0}{0}$ already reached \\resultnum{v4.protocol.target}{0.70}, while the zero-strength band contained \\resultnum{v4.protocol.null_auc}{0.5}. The null gate therefore passed. The table labels \\resultplural{v4.t1.n_first_zero}{this unit}{these units} ``indeterminate'' and reports their inverted intervals. % RS17 RS25"
+    },
+    {
+      "source": "results",
+      "line": 402,
+      "rule_ids": [
+        "B05"
+      ],
+      "before": "At \\resultnum{v4.t1.n_dip}{[n]} values of $r$ the point estimate against B reached \\resultnum{v4.protocol.target}{0.70} at $a^*$ and fell below \\resultnum{v4.protocol.target}{0.70} at a higher available strength, so the sustained boundary $a_s^*$ lies above $a^*$ or is not attained (Fig.~\\ref{fig:v4-F2B}, Table~\\ref{tab:v4-T1}). % RS18",
+      "after": "At \\resultnum{v4.t1.n_dip}{[n]} \\resultplural{v4.t1.n_dip}{value}{values} of $r$ the point estimate against B reached \\resultnum{v4.protocol.target}{0.70} at $a^*$ and fell below \\resultnum{v4.protocol.target}{0.70} at a higher available strength, so the sustained boundary $a_s^*$ lies above $a^*$ or is not attained (Fig.~\\ref{fig:v4-F2B}, Table~\\ref{tab:v4-T1}). % RS18"
+    },
+    {
+      "source": "results",
+      "line": 422,
+      "rule_ids": [
+        "B06"
+      ],
+      "before": "The two boundaries differ at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} values of $r$ against B. % RS18",
+      "after": "The two boundaries differ at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} \\resultplural{v4.t1.n_first_ne_sustained}{value}{values} of $r$ against B. % RS18"
+    },
+    {
+      "source": "results",
+      "line": 438,
+      "rule_ids": [
+        "B07"
+      ],
+      "before": "This shape has not been tested. The bands are simultaneous only within each $r$, each $r$ has its own seed block, and no simultaneous band over all \\resultnum{v4.protocol.grid_cells}{81} cells was prespecified. The reversal may therefore reflect sampling variation. % RS28 RS51",
+      "after": "This shape has not been tested. The bands are simultaneous only within each $r$, each $r$ has its own seed block, and no simultaneous band over all \\resultnum{v4.protocol.grid_cells}{81} \\resultplural{v4.protocol.grid_cells}{cell}{cells} was prespecified. The reversal may therefore reflect sampling variation. % RS28 RS51"
+    },
+    {
+      "source": "results",
+      "line": 459,
+      "rule_ids": [
+        "B08",
+        "B08.main.1"
+      ],
+      "before": "The tier-\\resultnum{v4.protocol.tier.main_B}{1} curves contain \\resultnum{v4.t1.gap_cells}{[n]} gap cells in \\resultnum{v4.t1.n_gap_units}{[n]} units (Table~\\ref{tab:v4-T1}; crosses in Fig.~\\ref{fig:v4-F2B}). % RS24",
+      "after": "The tier-\\resultnum{v4.protocol.tier.main_B}{1} curves contain \\resultnum{v4.t1.gap_cells}{[n]} gap \\resultplural{v4.t1.gap_cells}{cell}{cells} in \\resultnum{v4.t1.n_gap_units}{[n]} \\resultplural{v4.t1.n_gap_units}{unit}{units} (Table~\\ref{tab:v4-T1}; crosses in Fig.~\\ref{fig:v4-F2B}). % RS24"
+    },
+    {
+      "source": "results",
+      "line": 460,
+      "rule_ids": [
+        "B08",
+        "B08.main.2"
+      ],
+      "before": "By final status, \\resultnum{v4.t1.gap.screened}{[n]} cells were excluded by the feasibility screen without a null evaluation, and \\resultnum{v4.t1.gap.profile_limit}{[n]} reached a family limit along the profile. A further \\resultnum{v4.t1.gap.solver}{[n]} ended with another solver status, and \\resultnum{v4.t1.gap.validation}{[n]} failed validation in both attempts (Supplementary Table~\\ref{tab:v4-sgaps}). % RS45 RS50",
+      "after": "By final status, \\resultnum{v4.t1.gap.screened}{[n]} \\resultplural{v4.t1.gap.screened}{cell}{cells} \\resultplural{v4.t1.gap.screened}{was}{were} excluded by the feasibility screen without a null evaluation, and \\resultnum{v4.t1.gap.profile_limit}{[n]} reached a family limit along the profile. A further \\resultnum{v4.t1.gap.solver}{[n]} ended with another solver status, and \\resultnum{v4.t1.gap.validation}{[n]} failed validation in both attempts (Supplementary Table~\\ref{tab:v4-sgaps}). % RS45 RS50"
+    },
+    {
+      "source": "results",
+      "line": 462,
+      "rule_ids": [
+        "B08",
+        "B08.main.4"
+      ],
+      "before": "Boundaries are computed on the available strengths and are not declared across a gap. The release records \\resultnum{v4.t1.n_first_gap}{[n]} first boundaries and \\resultnum{v4.t1.n_sustained_gap}{[n]} sustained boundaries as censored, with the strength of the gap stated for each. % RS23",
+      "after": "Boundaries are computed on the available strengths and are not declared across a gap. The release records \\resultnum{v4.t1.n_first_gap}{[n]} first \\resultplural{v4.t1.n_first_gap}{boundary}{boundaries} and \\resultnum{v4.t1.n_sustained_gap}{[n]} sustained \\resultplural{v4.t1.n_sustained_gap}{boundary}{boundaries} as censored, with the strength of the gap stated for each. % RS23"
+    },
+    {
+      "source": "results",
+      "line": 465,
+      "rule_ids": [
+        "B08",
+        "B08.dependency"
+      ],
+      "before": "In the control units, \\resultnum{v4.t3.gap.dependency}{[n]} cells are dependency gaps because the observed fit they reuse failed or is missing. % RS49",
+      "after": "In the control units, \\resultnum{v4.t3.gap.dependency}{[n]} \\resultplural{v4.t3.gap.dependency}{cell}{cells} \\resultplural{v4.t3.gap.dependency}{is a dependency gap}{are dependency gaps} because the observed fit \\resultplural{v4.t3.gap.dependency}{it reuses}{they reuse} failed or is missing. % RS49"
+    },
+    {
+      "source": "results",
+      "line": 477,
+      "rule_ids": [
+        "B09"
+      ],
+      "before": "Among the \\resultnum{v4.t1.n_attained}{[n]} values of $r$ with an attained first boundary against B, \\resultnum{v4.t1.n_interval_wide_finite}{[n]} have a finite inverted interval spanning more than one grid step. An interval end lies beyond the grid at \\resultnum{v4.t1.n_interval_beyond_grid}{[n]} values and is censored by a gap at \\resultnum{v4.t1.n_interval_gap}{[n]} values (Table~\\ref{tab:v4-T1}). An unbounded or censored end is not reported as a finite width. % RS21 RS48",
+      "after": "Among the \\resultnum{v4.t1.n_attained}{[n]} \\resultplural{v4.t1.n_attained}{value}{values} of $r$ with an attained first boundary against B, \\resultnum{v4.t1.n_interval_wide_finite}{[n]} \\resultplural{v4.t1.n_interval_wide_finite}{has}{have} a finite inverted interval spanning more than one grid step. An interval end lies beyond the grid at \\resultnum{v4.t1.n_interval_beyond_grid}{[n]} \\resultplural{v4.t1.n_interval_beyond_grid}{value}{values} and is censored by a gap at \\resultnum{v4.t1.n_interval_gap}{[n]} \\resultplural{v4.t1.n_interval_gap}{value}{values} (Table~\\ref{tab:v4-T1}). An unbounded or censored end is not reported as a finite width. % RS21 RS48"
+    },
+    {
+      "source": "results",
+      "line": 478,
+      "rule_ids": [
+        "B09"
+      ],
+      "before": "The frozen precision target of an interval spanning at most one grid step is therefore met at \\resultnum{v4.t1.n_resolved}{[n]} values of $r$. This is a planning goal, not a statement of power. Neither the number of panels nor the grid was changed after the results. % RS48",
+      "after": "The frozen precision target of an interval spanning at most one grid step is therefore met at \\resultnum{v4.t1.n_resolved}{[n]} \\resultplural{v4.t1.n_resolved}{value}{values} of $r$. This is a planning goal, not a statement of power. Neither the number of panels nor the grid was changed after the results. % RS48"
+    },
+    {
+      "source": "results",
+      "line": 500,
+      "rule_ids": [
+        "B10",
+        "B10.be"
+      ],
+      "before": "Against E, the result is compatible with mover--stayer heterogeneity and gives no specific evidence of interaction at \\resultnum{v4.be.n_persistence}{[n]} values ($r=$ \\resultnum{v4.be.r_persistence}{[r list]}). These belong to the common set of \\resultnum{v4.be.n_eligible}{[n]} gap-free B/E pairs ($r=$ \\resultnum{v4.be.r_eligible}{[r list]}). % RS32",
+      "after": "Against E, the result is compatible with mover--stayer heterogeneity and gives no specific evidence of interaction at \\resultnum{v4.be.n_persistence}{[n]} \\resultplural{v4.be.n_persistence}{value}{values} ($r=$ \\resultnum{v4.be.r_persistence}{[r list]}). \\resultplural{v4.be.n_persistence}{This belongs}{These belong} to the common set of \\resultnum{v4.be.n_eligible}{[n]} gap-free B/E \\resultplural{v4.be.n_eligible}{pair}{pairs} ($r=$ \\resultnum{v4.be.r_eligible}{[r list]}). % RS32"
+    },
+    {
+      "source": "results",
+      "line": 501,
+      "rule_ids": [
+        "B10",
+        "B10.bc"
+      ],
+      "before": "Against C, the result is compatible with heteroscedastic error and heaping and gives no specific evidence of interaction at \\resultnum{v4.bc.n_persistence}{[n]} values ($r=$ \\resultnum{v4.bc.r_persistence}{[r list]}). These belong to the common set of \\resultnum{v4.bc.n_eligible}{[n]} gap-free B/C pairs ($r=$ \\resultnum{v4.bc.r_eligible}{[r list]}). % RS32",
+      "after": "Against C, the result is compatible with heteroscedastic error and heaping and gives no specific evidence of interaction at \\resultnum{v4.bc.n_persistence}{[n]} \\resultplural{v4.bc.n_persistence}{value}{values} ($r=$ \\resultnum{v4.bc.r_persistence}{[r list]}). \\resultplural{v4.bc.n_persistence}{This belongs}{These belong} to the common set of \\resultnum{v4.bc.n_eligible}{[n]} gap-free B/C \\resultplural{v4.bc.n_eligible}{pair}{pairs} ($r=$ \\resultnum{v4.bc.r_eligible}{[r list]}). % RS32"
+    },
+    {
+      "source": "results",
+      "line": 520,
+      "rule_ids": [
+        "B11"
+      ],
+      "before": "Tier \\resultnum{v4.protocol.tier.controls}{3} ended with \\resultnum{v4.inv.t3.n_valid}{[n]} of its \\resultnum{v4.protocol.units.t3}{270} units complete and valid, and \\resultnum{v4.inv.t3.n_incomplete}{[n]} not started or partial (Table~\\ref{tab:v4-T4}). Unfinished units are absent from the analysis, and no statement is made about them. % RS12",
+      "after": "Tier \\resultnum{v4.protocol.tier.controls}{3} ended with \\resultnum{v4.inv.t3.n_valid}{[n]} of its \\resultnum{v4.protocol.units.t3}{270} \\resultplural{v4.protocol.units.t3}{unit}{units} complete and valid, and \\resultnum{v4.inv.t3.n_incomplete}{[n]} not started or partial (Table~\\ref{tab:v4-T4}). Unfinished units are absent from the analysis, and no statement is made about them. % RS12"
+    },
+    {
+      "source": "results",
+      "line": 521,
+      "rule_ids": [
+        "B11"
+      ],
+      "before": "At \\resultnum{v4.t3.n_obs_exceeds}{[n]} of the \\resultnum{v4.t3.n_pairs_compared}{[n]} family-and-$r$ pairs with a valid observed unit and at least one valid control, the observed-channel point AUC exceeded the masked latent, ordinal at unit signal share or \\texttt{latent\\_rank} control at some strength available in both units (\\allunitsresource). % RS34",
+      "after": "At \\resultnum{v4.t3.n_obs_exceeds}{[n]} of the \\resultnum{v4.t3.n_pairs_compared}{[n]} family-and-$r$ \\resultplural{v4.t3.n_pairs_compared}{pair}{pairs} with a valid observed unit and at least one valid control, the observed-channel point AUC exceeded the masked latent, ordinal at unit signal share or \\texttt{latent\\_rank} control at some strength available in both units (\\allunitsresource). % RS34"
+    },
+    {
+      "source": "results",
+      "line": 523,
+      "rule_ids": [
+        "B11"
+      ],
+      "before": "At \\resultnum{v4.t3.n_channel_dependent}{[n]} pairs the observed unit attained a finite first boundary while none of the three valid, gap-free controls attained one; this separation is labelled channel-dependent.",
+      "after": "At \\resultnum{v4.t3.n_channel_dependent}{[n]} \\resultplural{v4.t3.n_channel_dependent}{pair}{pairs} the observed unit attained a finite first boundary while none of the three valid, gap-free controls attained one; this separation is labelled channel-dependent."
+    },
+    {
+      "source": "results",
+      "line": 524,
+      "rule_ids": [
+        "B11"
+      ],
+      "before": "For \\resultnum{v4.t3.n_channel_not_assessed}{[n]} pairs with a valid observed unit, channel dependence was not assessed because at least one control was invalid, absent or had a gap. % RS34",
+      "after": "For \\resultnum{v4.t3.n_channel_not_assessed}{[n]} \\resultplural{v4.t3.n_channel_not_assessed}{pair}{pairs} with a valid observed unit, channel dependence was not assessed because at least one control was invalid, absent or had a gap. % RS34"
+    },
+    {
+      "source": "results",
+      "line": 537,
+      "rule_ids": [
+        "B12",
+        "B12.inventory"
+      ],
+      "before": "In the sensitivity tiers, \\resultnum{v4.inv.t4.n_valid}{[n]} of \\resultnum{v4.protocol.units.t4}{45} response-channel units and \\resultnum{v4.inv.t5.n_valid}{[n]} of \\resultnum{v4.protocol.units.t5}{45} mechanism units were complete and valid. Of the nine \\resultnum{v4.protocol.steps}{24}-step units, \\resultnum{v4.inv.t6.n_valid}{[n]} were complete and valid (Table~\\ref{tab:v4-T4}). The remaining units are listed with their status and are not interpreted. % RS12 RS13",
+      "after": "In the sensitivity tiers, \\resultnum{v4.inv.t4.n_valid}{[n]} of \\resultnum{v4.protocol.units.t4}{45} response-channel \\resultplural{v4.protocol.units.t4}{unit}{units} and \\resultnum{v4.inv.t5.n_valid}{[n]} of \\resultnum{v4.protocol.units.t5}{45} mechanism \\resultplural{v4.protocol.units.t5}{unit}{units} were complete and valid. Of the nine \\resultnum{v4.protocol.steps}{24}-step units, \\resultnum{v4.inv.t6.n_valid}{[n]} \\resultplural{v4.inv.t6.n_valid}{was}{were} complete and valid (Table~\\ref{tab:v4-T4}). The remaining units are listed with their status and are not interpreted. % RS12 RS13"
+    },
+    {
+      "source": "results",
+      "line": 539,
+      "rule_ids": [
+        "B12",
+        "B12.region.1"
+      ],
+      "before": "For \\resultnum{v4.sens.n_region_differs}{[n]} of the \\resultnum{v4.sens.n_pairs_compared}{[n]} scenario-and-$r$ pairs in which both units were complete and valid, the sensitivity analysis assigned $a^*$ to a different region from the main B unit at the same $r$ (\\allunitsresource). % RS36",
+      "after": "For \\resultnum{v4.sens.n_region_differs}{[n]} of the \\resultnum{v4.sens.n_pairs_compared}{[n]} scenario-and-$r$ \\resultplural{v4.sens.n_pairs_compared}{pair}{pairs} in which both units were complete and valid, the sensitivity analysis assigned $a^*$ to a different region from the main B unit at the same $r$ (\\allunitsresource). % RS36"
+    },
+    {
+      "source": "results",
+      "line": 601,
+      "rule_ids": [
+        "B15"
+      ],
+      "before": "The Wald interval of the anchor contains \\resultnum{v4.shp.n_r_in_interval}{[n]} grid values of $r$. At these values, the B units have \\resultnum{v4.shp.n_status_classes}{[n]} different combinations of execution status and boundary region (Fig.~\\ref{fig:v4-F6}, Table~\\ref{tab:v4-T1}). % RS25 RS39",
+      "after": "The Wald interval of the anchor contains \\resultnum{v4.shp.n_r_in_interval}{[n]} grid \\resultplural{v4.shp.n_r_in_interval}{value}{values} of $r$. At \\resultplural{v4.shp.n_r_in_interval}{this value}{these values}, \\resultplural{v4.shp.n_r_in_interval}{the B unit has}{the B units have} \\resultnum{v4.shp.n_status_classes}{[n]} different \\resultplural{v4.shp.n_status_classes}{combination}{combinations} of execution status and boundary region (Fig.~\\ref{fig:v4-F6}, Table~\\ref{tab:v4-T1}). % RS25 RS39"
+    },
+    {
+      "source": "results",
+      "line": 616,
+      "rule_ids": [
+        "B16"
+      ],
+      "before": "The empirical max-$t$ critical value exceeded the \\resultnum{v4.protocol.critical_floor}{2.7729} floor in \\resultnum{v4.all.n_exceeds_floor}{[n]} of the \\resultnum{v4.all.n_curves}{[n]} released curves, including \\resultnum{v4.t1.n_exceeds_floor}{[n]} in tier \\resultnum{v4.protocol.tier.main_B}{1}. These bands use the empirical critical value (\\allunitsresource). % RS42",
+      "after": "The empirical max-$t$ critical value exceeded the \\resultnum{v4.protocol.critical_floor}{2.7729} floor in \\resultnum{v4.all.n_exceeds_floor}{[n]} of the \\resultnum{v4.all.n_curves}{[n]} released \\resultplural{v4.all.n_curves}{curve}{curves}, including \\resultnum{v4.t1.n_exceeds_floor}{[n]} in tier \\resultnum{v4.protocol.tier.main_B}{1}. \\resultplural{v4.all.n_exceeds_floor}{This band uses}{These bands use} the empirical critical value (\\allunitsresource). % RS42"
+    },
+    {
+      "source": "results",
+      "line": 617,
+      "rule_ids": [
+        "B16"
+      ],
+      "before": "In G2, \\resultnum{v4.gate.G2.covariance_flags}{[n]} pipelines raised the covariance-Jacobian flag, whose first-order AUC correction exceeded a tenth of the square root of the nuisance variance (Table~\\ref{tab:v4-T3}). % RS43",
+      "after": "In G2, \\resultnum{v4.gate.G2.covariance_flags}{[n]} \\resultplural{v4.gate.G2.covariance_flags}{pipeline}{pipelines} raised the covariance-Jacobian flag, whose first-order AUC correction exceeded a tenth of the square root of the nuisance variance (Table~\\ref{tab:v4-T3}). % RS43"
+    },
+    {
+      "source": "results",
+      "line": 710,
+      "rule_ids": [
+        "B00",
+        "P3.1"
+      ],
+      "before": "The effective release occurred on \\resultnum{v4.release.effective_local}{[time]} America/Sao\\_Paulo, triggered by \\resultnum{v4.release.condition}{[condition]}; the nominal close was \\resultnum{v4.protocol.close_local}{18 October 2026 at 23:59} America/Sao\\_Paulo. At release, \\resultnum{v4.inv.n_valid}{[n]} of the \\resultnum{v4.protocol.units.all}{414} units in the frozen inventory were complete and valid (\\texttt{completo válido}), and \\resultnum{v4.inv.n_invalid}{[n]} were complete but invalid (\\texttt{completo inválido}). A further \\resultnum{v4.inv.n_partial}{[n]} were partially complete at operational close (\\texttt{parcial por encerramento operacional}), and \\resultnum{v4.inv.n_not_started}{[n]} had not started (\\texttt{não iniciado}) (Table~\\ref{tab:v4-T4}, Fig.~\\ref{fig:v4-F5}). % RS12 RS13",
+      "after": "The effective release occurred on \\resultnum{v4.release.effective_local}{[time]} America/Sao\\_Paulo, triggered by \\resultnum{v4.release.condition}{[condition]}; the nominal close was \\resultnum{v4.protocol.close_local}{18 October 2026 at 23:59} America/Sao\\_Paulo. At release, \\resultnum{v4.inv.n_valid}{[n]} of the \\resultnum{v4.protocol.units.all}{414} \\resultplural{v4.protocol.units.all}{unit}{units} in the frozen inventory \\resultplural{v4.inv.n_valid}{was}{were} complete and valid (\\texttt{completo válido}), and \\resultnum{v4.inv.n_invalid}{[n]} \\resultplural{v4.inv.n_invalid}{was}{were} complete but invalid (\\texttt{completo inválido}). A further \\resultnum{v4.inv.n_partial}{[n]} \\resultplural{v4.inv.n_partial}{was}{were} partially complete at operational close (\\texttt{parcial por encerramento operacional}), and \\resultnum{v4.inv.n_not_started}{[n]} had not started (\\texttt{não iniciado}) (Table~\\ref{tab:v4-T4}, Fig.~\\ref{fig:v4-F5}). % RS12 RS13"
+    },
+    {
+      "source": "results",
+      "line": 719,
+      "rule_ids": [
+        "B00",
+        "P5-a.1"
+      ],
+      "before": "Against B, the first boundary was classified as small ($\\resultnum{v4.protocol.a.0}{0}<a^*\\le \\resultnum{v4.protocol.small_cut}{0.03}$) at \\resultnum{v4.t1.n_small}{[n]} values of $r$ and large ($\\resultnum{v4.protocol.small_cut}{0.03}<a^*\\le \\resultnum{v4.protocol.a.090}{0.90}$) at \\resultnum{v4.t1.n_large}{[n]}. It was not attained on a complete eligible grid at \\resultnum{v4.t1.n_not_attained}{[n]} values and was censored or indeterminate at \\resultnum{v4.t1.n_censored}{[n]} (Fig.~\\ref{fig:v4-F1}, Fig.~\\ref{fig:v4-F2B}, Table~\\ref{tab:v4-T1}). % RS18 RS25",
+      "after": "Against B, the first boundary was classified as small ($\\resultnum{v4.protocol.a.0}{0}<a^*\\le \\resultnum{v4.protocol.small_cut}{0.03}$) at \\resultnum{v4.t1.n_small}{[n]} \\resultplural{v4.t1.n_small}{value}{values} of $r$ and large ($\\resultnum{v4.protocol.small_cut}{0.03}<a^*\\le \\resultnum{v4.protocol.a.090}{0.90}$) at \\resultnum{v4.t1.n_large}{[n]}. It was not attained on a complete eligible grid at \\resultnum{v4.t1.n_not_attained}{[n]} \\resultplural{v4.t1.n_not_attained}{value}{values} and was censored or indeterminate at \\resultnum{v4.t1.n_censored}{[n]} (Fig.~\\ref{fig:v4-F1}, Fig.~\\ref{fig:v4-F2B}, Table~\\ref{tab:v4-T1}). % RS18 RS25"
+    },
+    {
+      "source": "results",
+      "line": 724,
+      "rule_ids": [
+        "B00",
+        "P5-b.crossing"
+      ],
+      "before": "At \\resultnum{v4.t1.n_crossing}{[n]} values of $r$, the lower band exceeded \\resultnum{v4.protocol.target}{0.70} at some strength; ``crossing'' refers only to such strengths. % RS22",
+      "after": "At \\resultnum{v4.t1.n_crossing}{[n]} \\resultplural{v4.t1.n_crossing}{value}{values} of $r$, the lower band exceeded \\resultnum{v4.protocol.target}{0.70} at some strength; ``crossing'' refers only to such strengths. % RS22"
+    },
+    {
+      "source": "results",
+      "line": 726,
+      "rule_ids": [
+        "B00",
+        "P5-c"
+      ],
+      "before": "The inverted interval of $a^*$ spanned at most one grid step at all \\resultnum{v4.t1.n_attained}{[n]} values of $r$ where $a^*$ was attained. This meets the frozen precision target, which is a planning goal rather than a statement of power. % RS21 RS48",
+      "after": "The inverted interval of $a^*$ spanned at most one grid step at all \\resultnum{v4.t1.n_attained}{[n]} \\resultplural{v4.t1.n_attained}{value}{values} of $r$ where $a^*$ was attained. This meets the frozen precision target, which is a planning goal rather than a statement of power. % RS21 RS48"
+    },
+    {
+      "source": "results",
+      "line": 732,
+      "rule_ids": [
+        "B00",
+        "P6.lead"
+      ],
+      "before": "Fig.~\\ref{fig:v4-F1} and Table~\\ref{tab:v4-T1} show trait-plus-autoregressive persistence (B) and state-dependent persistence (D) side by side at all \\resultnum{v4.bd.n_side_by_side}{[n]} response signal shares ($r=$ \\resultnum{v4.bd.r_side_by_side}{[r list]}). The prespecified interpretation and all paired counts below use the common set of \\resultnum{v4.bd.n_eligible}{[n]} values for which both units are gap-free ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). % RS31 RS33",
+      "after": "Fig.~\\ref{fig:v4-F1} and Table~\\ref{tab:v4-T1} show trait-plus-autoregressive persistence (B) and state-dependent persistence (D) side by side at \\resultplural{v4.bd.n_side_by_side}{the}{all} \\resultnum{v4.bd.n_side_by_side}{[n]} response signal \\resultplural{v4.bd.n_side_by_side}{share}{shares} ($r=$ \\resultnum{v4.bd.r_side_by_side}{[r list]}). The prespecified interpretation and all paired counts below use the common set of \\resultnum{v4.bd.n_eligible}{[n]} \\resultplural{v4.bd.n_eligible}{value}{values} for which both units are gap-free ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). % RS31 RS33"
+    },
+    {
+      "source": "results",
+      "line": 734,
+      "rule_ids": [
+        "B00",
+        "P6.counts"
+      ],
+      "before": "Within this common set, the first boundaries against B were small at \\resultnum{v4.bd.B.n_small}{[n]} values, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]} and censored/indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}. Against D, they were small at \\resultnum{v4.bd.D.n_small}{[n]} values, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]} and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. % RS25",
+      "after": "Within this common set, the first boundaries against B were small at \\resultnum{v4.bd.B.n_small}{[n]} \\resultplural{v4.bd.B.n_small}{value}{values}, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]} and censored/indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}. Against D, they were small at \\resultnum{v4.bd.D.n_small}{[n]} \\resultplural{v4.bd.D.n_small}{value}{values}, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]} and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. % RS25"
+    },
+    {
+      "source": "results",
+      "line": 750,
+      "rule_ids": [
+        "B00",
+        "P7-b"
+      ],
+      "before": "There are \\resultnum{v4.inv.t2.n_invalid}{[n]} complete but invalid units in tier \\resultnum{v4.protocol.tier.main_others}{2}: their zero-strength band excluded \\resultnum{v4.protocol.null_auc}{0.5}, or their zero-strength cell was a gap. Their boundaries are suppressed, and no null family is promoted or demoted. % RS14 RS17 RS56",
+      "after": "\\resultplural{v4.inv.t2.n_invalid}{There is}{There are} \\resultnum{v4.inv.t2.n_invalid}{[n]} complete but invalid \\resultplural{v4.inv.t2.n_invalid}{unit}{units} in tier \\resultnum{v4.protocol.tier.main_others}{2}: \\resultplural{v4.inv.t2.n_invalid}{its zero-strength band}{their zero-strength band} excluded \\resultnum{v4.protocol.null_auc}{0.5}, or \\resultplural{v4.inv.t2.n_invalid}{its zero-strength cell was a gap}{their zero-strength cells were gaps}. \\resultplural{v4.inv.t2.n_invalid}{Its boundaries}{Their boundaries} are suppressed, and no null family is promoted or demoted. % RS14 RS17 RS56"
+    },
+    {
+      "source": "results",
+      "line": 754,
+      "rule_ids": [
+        "B00",
+        "P7-c"
+      ],
+      "before": "Tier \\resultnum{v4.protocol.tier.controls}{3} ended with \\resultnum{v4.inv.t3.n_valid}{[n]} of its \\resultnum{v4.protocol.units.t3}{270} units complete and valid, and \\resultnum{v4.inv.t3.n_incomplete}{[n]} not started or partial (Table~\\ref{tab:v4-T4}). Unfinished units are absent from the analysis and are not interpreted. % RS12",
+      "after": "Tier \\resultnum{v4.protocol.tier.controls}{3} ended with \\resultnum{v4.inv.t3.n_valid}{[n]} of its \\resultnum{v4.protocol.units.t3}{270} \\resultplural{v4.protocol.units.t3}{unit}{units} complete and valid, and \\resultnum{v4.inv.t3.n_incomplete}{[n]} not started or partial (Table~\\ref{tab:v4-T4}). Unfinished units are absent from the analysis and are not interpreted. % RS12"
+    },
+    {
+      "source": "results",
+      "line": 758,
+      "rule_ids": [
+        "B00",
+        "P7-c2"
+      ],
+      "before": "Across the \\resultnum{v4.t3.n_pairs_compared}{[n]} family-and-$r$ pairs with a valid observed unit and at least one valid control, the observed-channel point AUC never exceeded any of the three controls at a shared strength (\\allunitsresource). % RS34",
+      "after": "Across the \\resultnum{v4.t3.n_pairs_compared}{[n]} family-and-$r$ \\resultplural{v4.t3.n_pairs_compared}{pair}{pairs} with a valid observed unit and at least one valid control, the observed-channel point AUC never exceeded any of the three controls at a shared strength (\\allunitsresource). % RS34"
+    },
+    {
+      "source": "results",
+      "line": 767,
+      "rule_ids": [
+        "B00",
+        "P8.3"
+      ],
+      "before": "The number of grid values inside the Wald interval is \\resultnum{v4.shp.n_r_in_interval}{[n]}. The B units at these values have the same execution status and boundary region (Table~\\ref{tab:v4-T1}). % RS25",
+      "after": "The number of grid values inside the Wald interval is \\resultnum{v4.shp.n_r_in_interval}{[n]}. \\resultplural{v4.shp.n_r_in_interval}{The B unit at this value has}{The B units at these values have} the same execution status and boundary region (Table~\\ref{tab:v4-T1}). % RS25"
+    },
+    {
+      "source": "results",
+      "line": 775,
+      "rule_ids": [
+        "B00",
+        "P10"
+      ],
+      "before": "Statements about how $a^*$ varies across $r$ are descriptive: the bands are simultaneous within each $r$ only, seeds differ across $r$, and no simultaneous band over all \\resultnum{v4.protocol.grid_cells}{81} cells was prespecified. % RS28 RS51",
+      "after": "Statements about how $a^*$ varies across $r$ are descriptive: the bands are simultaneous within each $r$ only, seeds differ across $r$, and no simultaneous band over all \\resultnum{v4.protocol.grid_cells}{81} \\resultplural{v4.protocol.grid_cells}{cell}{cells} was prespecified. % RS28 RS51"
+    },
+    {
+      "source": "results",
+      "line": 782,
+      "rule_ids": [
+        "SECONDARY-SUPPLEMENT"
+      ],
+      "before": "Boundaries for the secondary targets were derived from the released bands using the same inclusive inversion and gap censoring. They were attained at \\resultnum{v4.t1.sec060.n_attained}{[n]} values of $r$ for AUC \\resultnum{v4.protocol.secondary_target.lower}{0.60} and at \\resultnum{v4.t1.sec080.n_attained}{[n]} for AUC \\resultnum{v4.protocol.secondary_target.upper}{0.80} (Supplementary Table~\\ref{tab:v4-sec}). These targets are secondary and do not replace the primary target. % RS18 RS26",
+      "after": "Boundaries for the secondary targets were derived from the released bands using the same inclusive inversion and gap censoring. They were attained at \\resultnum{v4.t1.sec060.n_attained}{[n]} \\resultplural{v4.t1.sec060.n_attained}{value}{values} of $r$ for AUC \\resultnum{v4.protocol.secondary_target.lower}{0.60} and at \\resultnum{v4.t1.sec080.n_attained}{[n]} for AUC \\resultnum{v4.protocol.secondary_target.upper}{0.80} (Supplementary Table~\\ref{tab:v4-sec}). These targets are secondary and do not replace the primary target. % RS18 RS26"
+    },
+    {
+      "source": "abstract",
+      "line": 33,
+      "rule_ids": [
+        "A.G"
+      ],
+      "before": "> The validation gate passed; \\resultnum{v4.inv.n_valid}{[n]} of 414 units were complete and valid.",
+      "after": "> The validation gate passed; \\resultnum{v4.inv.n_valid}{[n]} of 414 units \\resultplural{v4.inv.n_valid}{was}{were} complete and valid."
+    },
+    {
+      "source": "abstract",
+      "line": 41,
+      "rule_ids": [
+        "A.H-BD"
+      ],
+      "before": "> At the \\resultnum{v4.bd.n_eligible}{[n]} shares with both comparisons gap-free ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), the first boundary against trait-plus-autoregressive persistence was small at \\resultnum{v4.bd.B.n_small}{[n]}, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]} and censored or indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}; against state-dependent persistence, \\resultnum{v4.bd.D.n_small}{[n]}, \\resultnum{v4.bd.D.n_large}{[n]}, \\resultnum{v4.bd.D.n_not_attained}{[n]} and \\resultnum{v4.bd.D.n_censored}{[n]}.",
+      "after": "> At the \\resultnum{v4.bd.n_eligible}{[n]} \\resultplural{v4.bd.n_eligible}{share}{shares} with both comparisons gap-free ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), the first boundary against trait-plus-autoregressive persistence was small at \\resultnum{v4.bd.B.n_small}{[n]}, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]} and censored or indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}; against state-dependent persistence, \\resultnum{v4.bd.D.n_small}{[n]}, \\resultnum{v4.bd.D.n_large}{[n]}, \\resultnum{v4.bd.D.n_not_attained}{[n]} and \\resultnum{v4.bd.D.n_censored}{[n]}."
+    },
+    {
+      "source": "abstract",
+      "line": 45,
+      "rule_ids": [
+        "A.H-B"
+      ],
+      "before": "> Against trait-plus-autoregressive persistence, the first boundary was small at \\resultnum{v4.t1.n_small}{[n]} shares, large at \\resultnum{v4.t1.n_large}{[n]}, not attained at \\resultnum{v4.t1.n_not_attained}{[n]} and censored or indeterminate at \\resultnum{v4.t1.n_censored}{[n]}.",
+      "after": "> Against trait-plus-autoregressive persistence, the first boundary was small at \\resultnum{v4.t1.n_small}{[n]} \\resultplural{v4.t1.n_small}{share}{shares}, large at \\resultnum{v4.t1.n_large}{[n]}, not attained at \\resultnum{v4.t1.n_not_attained}{[n]} and censored or indeterminate at \\resultnum{v4.t1.n_censored}{[n]}."
+    },
+    {
+      "source": "abstract",
+      "line": 61,
+      "rule_ids": [
+        "A.D-after-B03"
+      ],
+      "before": "> At the \\resultnum{v4.bd.n_eligible}{[n]} shares where the comparisons against trait-plus-autoregressive and state-dependent persistence were both gap-free ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), the first boundary against state-dependent persistence was small at \\resultnum{v4.bd.D.n_small}{[n]} shares, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]} and censored or indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}.",
+      "after": "> At the \\resultnum{v4.bd.n_eligible}{[n]} \\resultplural{v4.bd.n_eligible}{share}{shares} where the comparisons against trait-plus-autoregressive and state-dependent persistence were both gap-free ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), the first boundary against state-dependent persistence was small at \\resultnum{v4.bd.D.n_small}{[n]} \\resultplural{v4.bd.D.n_small}{share}{shares}, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]} and censored or indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}."
+    },
+    {
+      "source": "abstract",
+      "line": 69,
+      "rule_ids": [
+        "A.B06"
+      ],
+      "before": "> First and sustained boundaries differed at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} shares.",
+      "after": "> First and sustained boundaries differed at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} \\resultplural{v4.t1.n_first_ne_sustained}{share}{shares}."
+    },
+    {
+      "source": "abstract",
+      "line": 87,
+      "rule_ids": [
+        "A.B09.1"
+      ],
+      "before": "> Finite boundary intervals spanned more than one grid step at \\resultnum{v4.t1.n_interval_wide_finite}{[n]} shares.",
+      "after": "> Finite boundary intervals spanned more than one grid step at \\resultnum{v4.t1.n_interval_wide_finite}{[n]} \\resultplural{v4.t1.n_interval_wide_finite}{share}{shares}."
+    },
+    {
+      "source": "abstract",
+      "line": 89,
+      "rule_ids": [
+        "A.B09.2"
+      ],
+      "before": "> At \\resultnum{v4.t1.n_interval_beyond_grid}{[n]} shares an interval end lay beyond the grid.",
+      "after": "> At \\resultnum{v4.t1.n_interval_beyond_grid}{[n]} \\resultplural{v4.t1.n_interval_beyond_grid}{share}{shares} an interval end lay beyond the grid."
+    },
+    {
+      "source": "abstract",
+      "line": 91,
+      "rule_ids": [
+        "A.B09.3"
+      ],
+      "before": "> At \\resultnum{v4.t1.n_interval_gap}{[n]} shares a gap censored an interval end.",
+      "after": "> At \\resultnum{v4.t1.n_interval_gap}{[n]} \\resultplural{v4.t1.n_interval_gap}{share}{shares} a gap censored an interval end."
+    },
+    {
+      "source": "abstract",
+      "line": 95,
+      "rule_ids": [
+        "A.B04"
+      ],
+      "before": "> At \\resultnum{v4.t1.n_first_low}{[n]} shares the first boundary lay at one of the two smallest positive strengths; their regions still follow the tabulated intervals.",
+      "after": "> At \\resultnum{v4.t1.n_first_low}{[n]} \\resultplural{v4.t1.n_first_low}{share}{shares} the first boundary lay at one of the two smallest positive strengths; \\resultplural{v4.t1.n_first_low}{its region}{their regions} still follow the tabulated intervals."
+    },
+    {
+      "source": "abstract",
+      "line": 100,
+      "rule_ids": [
+        "A.B05"
+      ],
+      "before": "> At \\resultnum{v4.t1.n_dip}{[n]} shares the AUC dropped below 0.70 again above the first boundary.",
+      "after": "> At \\resultnum{v4.t1.n_dip}{[n]} \\resultplural{v4.t1.n_dip}{share}{shares} the AUC dropped below 0.70 again above the first boundary."
+    },
+    {
+      "source": "abstract",
+      "line": 104,
+      "rule_ids": [
+        "A.B08"
+      ],
+      "before": "> Gaps (failed or excluded fits) censored \\resultnum{v4.t1.n_first_gap}{[n]} first and \\resultnum{v4.t1.n_sustained_gap}{[n]} sustained boundaries.",
+      "after": "> Gaps (failed or excluded fits) censored \\resultnum{v4.t1.n_first_gap}{[n]} first \\resultplural{v4.t1.n_first_gap}{boundary}{boundaries} and \\resultnum{v4.t1.n_sustained_gap}{[n]} sustained \\resultplural{v4.t1.n_sustained_gap}{boundary}{boundaries}."
+    },
+    {
+      "source": "abstract",
+      "line": 109,
+      "rule_ids": [
+        "A.B11"
+      ],
+      "before": "> Separation was channel-dependent at \\resultnum{v4.t3.n_channel_dependent}{[n]} pairs of null family and signal share.",
+      "after": "> Separation was channel-dependent at \\resultnum{v4.t3.n_channel_dependent}{[n]} \\resultplural{v4.t3.n_channel_dependent}{pair}{pairs} of null family and signal share."
+    },
+    {
+      "source": "abstract",
+      "line": 127,
+      "rule_ids": [
+        "A.B1b-G1b"
+      ],
+      "before": "> The six-stage validation gate failed at its band-mechanics stage, where coverage fell below 935 of 1,000 in \\resultnum{v4.gate.G1b.n_scenarios_below}{[n]} synthetic scenarios, so no curve was estimated.",
+      "after": "> The six-stage validation gate failed at its band-mechanics stage, where coverage fell below 935 of 1,000 in \\resultnum{v4.gate.G1b.n_scenarios_below}{[n]} synthetic \\resultplural{v4.gate.G1b.n_scenarios_below}{scenario}{scenarios}, so no curve was estimated."
+    },
+    {
+      "source": "discussion",
+      "line": 55,
+      "rule_ids": [
+        "D-H-BD"
+      ],
+      "before": "The common gap-free set contained \\resultnum{v4.bd.n_eligible}{[n]} response signal shares ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). Against B, first boundaries were small at \\resultnum{v4.bd.B.n_small}{[n]} shares, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}. Against D, the corresponding counts were \\resultnum{v4.bd.D.n_small}{[n]} small, \\resultnum{v4.bd.D.n_large}{[n]} large, \\resultnum{v4.bd.D.n_not_attained}{[n]} not attained and \\resultnum{v4.bd.D.n_censored}{[n]} censored/indeterminate boundaries. % DS01 DS02 RS25 RS31 RS33",
+      "after": "The common gap-free set contained \\resultnum{v4.bd.n_eligible}{[n]} response signal \\resultplural{v4.bd.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). Against B, \\resultplural{v4.bd.n_eligible}{the first boundary was}{first boundaries were} small at \\resultnum{v4.bd.B.n_small}{[n]} \\resultplural{v4.bd.B.n_small}{share}{shares}, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}. Against D, the corresponding counts were \\resultnum{v4.bd.D.n_small}{[n]} small \\resultplural{v4.bd.D.n_small}{boundary}{boundaries}, \\resultnum{v4.bd.D.n_large}{[n]} large \\resultplural{v4.bd.D.n_large}{boundary}{boundaries}, \\resultnum{v4.bd.D.n_not_attained}{[n]} not attained \\resultplural{v4.bd.D.n_not_attained}{boundary}{boundaries} and \\resultnum{v4.bd.D.n_censored}{[n]} censored/indeterminate \\resultplural{v4.bd.D.n_censored}{boundary}{boundaries}. % DS01 DS02 RS25 RS31 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 63,
+      "rule_ids": [
+        "C-H-BD"
+      ],
+      "before": "The common gap-free set contained \\resultnum{v4.bd.n_eligible}{[n]} response signal shares ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). First boundaries against B were small at \\resultnum{v4.bd.B.n_small}{[n]} shares, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}. Against D, they were small at \\resultnum{v4.bd.D.n_small}{[n]} shares, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. % CN01 RS25 RS31 RS33",
+      "after": "The common gap-free set contained \\resultnum{v4.bd.n_eligible}{[n]} response signal \\resultplural{v4.bd.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). \\resultplural{v4.bd.n_eligible}{The first boundary against B was}{First boundaries against B were} small at \\resultnum{v4.bd.B.n_small}{[n]} \\resultplural{v4.bd.B.n_small}{share}{shares}, large at \\resultnum{v4.bd.B.n_large}{[n]}, not attained at \\resultnum{v4.bd.B.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.B.n_censored}{[n]}. Against D, \\resultplural{v4.bd.n_eligible}{it was}{they were} small at \\resultnum{v4.bd.D.n_small}{[n]} \\resultplural{v4.bd.D.n_small}{share}{shares}, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. % CN01 RS25 RS31 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 72,
+      "rule_ids": [
+        "D-H-B"
+      ],
+      "before": "Among complete valid B units, first boundaries were small at \\resultnum{v4.t1.n_small}{[n]} signal shares, large at \\resultnum{v4.t1.n_large}{[n]}, not attained at \\resultnum{v4.t1.n_not_attained}{[n]}, and censored or indeterminate at \\resultnum{v4.t1.n_censored}{[n]}. % DS01 RS18 RS25",
+      "after": "Among complete valid B units, first boundaries were small at \\resultnum{v4.t1.n_small}{[n]} signal \\resultplural{v4.t1.n_small}{share}{shares}, large at \\resultnum{v4.t1.n_large}{[n]}, not attained at \\resultnum{v4.t1.n_not_attained}{[n]}, and censored or indeterminate at \\resultnum{v4.t1.n_censored}{[n]}. % DS01 RS18 RS25"
+    },
+    {
+      "source": "discussion",
+      "line": 80,
+      "rule_ids": [
+        "C-H-B"
+      ],
+      "before": "Among complete valid B units, first boundaries were small at \\resultnum{v4.t1.n_small}{[n]} response signal shares, large at \\resultnum{v4.t1.n_large}{[n]}, not attained at \\resultnum{v4.t1.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.t1.n_censored}{[n]}. % CN01 RS18 RS25",
+      "after": "Among complete valid B units, first boundaries were small at \\resultnum{v4.t1.n_small}{[n]} response signal \\resultplural{v4.t1.n_small}{share}{shares}, large at \\resultnum{v4.t1.n_large}{[n]}, not attained at \\resultnum{v4.t1.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.t1.n_censored}{[n]}. % CN01 RS18 RS25"
+    },
+    {
+      "source": "discussion",
+      "line": 90,
+      "rule_ids": [
+        "D-B03"
+      ],
+      "before": "At \\resultnum{v4.t1.n_interval_lower_finite}{[n]} signal shares, the upper band nevertheless reached the target, so point non-attainment does not exclude attainment within the grid at those shares. % DS01 RS21",
+      "after": "At \\resultnum{v4.t1.n_interval_lower_finite}{[n]} signal \\resultplural{v4.t1.n_interval_lower_finite}{share}{shares}, the upper band nevertheless reached the target, so point non-attainment does not exclude attainment within the grid at \\resultplural{v4.t1.n_interval_lower_finite}{that share}{those shares}. % DS01 RS21"
+    },
+    {
+      "source": "discussion",
+      "line": 107,
+      "rule_ids": [
+        "D-D-AFTER-B03"
+      ],
+      "before": "On the same \\resultnum{v4.bd.n_eligible}{[n]} gap-free B/D response signal shares ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), D's first boundaries were small at \\resultnum{v4.bd.D.n_small}{[n]} shares, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. % DS02 RS25 RS31 RS33",
+      "after": "On the same \\resultnum{v4.bd.n_eligible}{[n]} gap-free B/D response signal \\resultplural{v4.bd.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultplural{v4.bd.n_eligible}{D's first boundary was}{D's first boundaries were} small at \\resultnum{v4.bd.D.n_small}{[n]} \\resultplural{v4.bd.D.n_small}{share}{shares}, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. % DS02 RS25 RS31 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 115,
+      "rule_ids": [
+        "C-D-AFTER-B03"
+      ],
+      "before": "The common gap-free set contained \\resultnum{v4.bd.n_eligible}{[n]} response signal shares ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). Against D, boundaries were small at \\resultnum{v4.bd.D.n_small}{[n]} shares, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. B's non-attainment does not support the frozen persistence interpretation. % CN01 DS02 RS25 RS32 RS33",
+      "after": "The common gap-free set contained \\resultnum{v4.bd.n_eligible}{[n]} response signal \\resultplural{v4.bd.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). Against D, \\resultplural{v4.bd.n_eligible}{the boundary was}{boundaries were} small at \\resultnum{v4.bd.D.n_small}{[n]} \\resultplural{v4.bd.D.n_small}{share}{shares}, large at \\resultnum{v4.bd.D.n_large}{[n]}, not attained at \\resultnum{v4.bd.D.n_not_attained}{[n]}, and censored/indeterminate at \\resultnum{v4.bd.D.n_censored}{[n]}. B's non-attainment does not support the frozen persistence interpretation. % CN01 DS02 RS25 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 122,
+      "rule_ids": [
+        "D-B02"
+      ],
+      "before": "The main B curve was not validated: \\resultnum{v4.t1.n_not_valid}{[n]} units were not both complete and valid. These included \\resultnum{v4.t1.n_invalid_gate}{[n]} zero-strength gate failures, \\resultnum{v4.t1.n_invalid_a0gap}{[n]} zero-strength gaps and \\resultnum{v4.t1.n_clock}{[n]} units not started or only partially completed at the close. % DS01 DS06 DS09 RS13 RS14 RS15 RS16 RS17",
+      "after": "The main B curve was not validated: \\resultnum{v4.t1.n_not_valid}{[n]} \\resultplural{v4.t1.n_not_valid}{unit}{units} \\resultplural{v4.t1.n_not_valid}{was}{were} not both complete and valid. \\resultplural{v4.t1.n_not_valid}{This included}{These included} \\resultnum{v4.t1.n_invalid_gate}{[n]} zero-strength gate \\resultplural{v4.t1.n_invalid_gate}{failure}{failures}, \\resultnum{v4.t1.n_invalid_a0gap}{[n]} zero-strength \\resultplural{v4.t1.n_invalid_a0gap}{gap}{gaps} and \\resultnum{v4.t1.n_clock}{[n]} \\resultplural{v4.t1.n_clock}{unit}{units} not started or only partially completed at the close. % DS01 DS06 DS09 RS13 RS14 RS15 RS16 RS17"
+    },
+    {
+      "source": "discussion",
+      "line": 130,
+      "rule_ids": [
+        "C-B02"
+      ],
+      "before": "The main B curve was not validated because \\resultnum{v4.t1.n_not_valid}{[n]} units were not both complete and valid. Any remaining local boundaries retain the main-invalidation mark. % CN01 RS15 RS16",
+      "after": "The main B curve was not validated because \\resultnum{v4.t1.n_not_valid}{[n]} \\resultplural{v4.t1.n_not_valid}{unit}{units} \\resultplural{v4.t1.n_not_valid}{was}{were} not both complete and valid. Any remaining local boundaries retain the main-invalidation mark. % CN01 RS15 RS16"
+    },
+    {
+      "source": "discussion",
+      "line": 153,
+      "rule_ids": [
+        "D-T2-INCOMPLETE"
+      ],
+      "before": "Tier \\resultnum{v4.protocol.tier.main_others}{[tier]} contained \\resultnum{v4.inv.t2.n_incomplete}{[n]} units that had not started or were only partially completed, and \\resultnum{v4.inv.t2.n_invalid}{[n]} complete invalid units. % DS09 RS12 RS13 RS14",
+      "after": "Tier \\resultnum{v4.protocol.tier.main_others}{[tier]} contained \\resultnum{v4.inv.t2.n_incomplete}{[n]} \\resultplural{v4.inv.t2.n_incomplete}{unit}{units} that had not started or \\resultplural{v4.inv.t2.n_incomplete}{was}{were} only partially completed, and \\resultnum{v4.inv.t2.n_invalid}{[n]} complete invalid \\resultplural{v4.inv.t2.n_invalid}{unit}{units}. % DS09 RS12 RS13 RS14"
+    },
+    {
+      "source": "discussion",
+      "line": 161,
+      "rule_ids": [
+        "C-T2-INCOMPLETE"
+      ],
+      "before": "In tier \\resultnum{v4.protocol.tier.main_others}{[tier]}, \\resultnum{v4.inv.t2.n_incomplete}{[n]} units had not started or were only partially completed. These absences are operational limits and provide no finding about a null family. % CN01 DS09 RS12 RS13",
+      "after": "In tier \\resultnum{v4.protocol.tier.main_others}{[tier]}, \\resultnum{v4.inv.t2.n_incomplete}{[n]} \\resultplural{v4.inv.t2.n_incomplete}{unit}{units} had not started or \\resultplural{v4.inv.t2.n_incomplete}{was}{were} only partially completed. \\resultplural{v4.inv.t2.n_incomplete}{This absence is}{These absences are} operational limits and provide no finding about a null family. % CN01 DS09 RS12 RS13"
+    },
+    {
+      "source": "discussion",
+      "line": 168,
+      "rule_ids": [
+        "D-PERMISSION"
+      ],
+      "before": "B and D are shown side by side at all \\resultnum{v4.bd.n_side_by_side}{[n]} signal shares ($r=$ \\resultnum{v4.bd.r_side_by_side}{[r list]}). % DS02 RS31 RS33",
+      "after": "B and D are shown side by side at \\resultplural{v4.bd.n_side_by_side}{the}{all} \\resultnum{v4.bd.n_side_by_side}{[n]} signal \\resultplural{v4.bd.n_side_by_side}{share}{shares} ($r=$ \\resultnum{v4.bd.r_side_by_side}{[r list]}). % DS02 RS31 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 169,
+      "rule_ids": [
+        "D-PERMISSION"
+      ],
+      "before": "The frozen interpretations use only the \\resultnum{v4.bd.n_eligible}{[n]} pairs in the common gap-free set ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). They do not use different denominators for each family. % DS02 RS33",
+      "after": "The frozen interpretations use only the \\resultnum{v4.bd.n_eligible}{[n]} \\resultplural{v4.bd.n_eligible}{pair}{pairs} in the common gap-free set ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). They do not use different denominators for each family. % DS02 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 176,
+      "rule_ids": [
+        "C-PERMISSION"
+      ],
+      "before": "Tier \\resultnum{v4.protocol.tier.main_others}{[tier]} was entirely complete and valid, and the main curve was valid, permitting reporting across mechanisms. The frozen B/D interpretations are restricted to \\resultnum{v4.bd.n_eligible}{[n]} common gap-free pairs ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). % CN01 DS02 RS31 RS33",
+      "after": "Tier \\resultnum{v4.protocol.tier.main_others}{[tier]} was entirely complete and valid, and the main curve was valid, permitting reporting across mechanisms. The frozen B/D interpretations are restricted to \\resultnum{v4.bd.n_eligible}{[n]} common gap-free \\resultplural{v4.bd.n_eligible}{pair}{pairs} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}). % CN01 DS02 RS31 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 197,
+      "rule_ids": [
+        "D-BD-PERSISTENCE"
+      ],
+      "before": "Of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free pairs ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultnum{v4.bd.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.bd.r_persistence}{[r list]}): B's lower band exceeded \\resultnum{v4.protocol.target}{[target]} at some strength, whereas D's upper band stayed strictly below it over the entire grid. % DS02 RS22 RS32 RS33",
+      "after": "Of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free \\resultplural{v4.bd.n_eligible}{pair}{pairs} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultnum{v4.bd.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.bd.r_persistence}{[r list]}): B's lower band exceeded \\resultnum{v4.protocol.target}{[target]} at some strength, whereas D's upper band stayed strictly below it over the entire grid. % DS02 RS22 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 205,
+      "rule_ids": [
+        "C-BD-PERSISTENCE"
+      ],
+      "before": "Of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free B/D response signal shares ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultnum{v4.bd.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.bd.r_persistence}{[r list]}). This result is compatible with non-Gaussian persistence and gives no specific evidence of interaction. % CN01 DS02 RS32 RS33",
+      "after": "Of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free B/D response signal \\resultplural{v4.bd.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultnum{v4.bd.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.bd.r_persistence}{[r list]}). This result is compatible with non-Gaussian persistence and gives no specific evidence of interaction. % CN01 DS02 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 213,
+      "rule_ids": [
+        "D-BD-INCONCLUSIVE"
+      ],
+      "before": "Of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free response signal shares ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultnum{v4.bd.n_inconclusive}{[n]} had a band-supported crossing against B ($r=$ \\resultnum{v4.bd.r_inconclusive}{[r list]}), but D's band spanned the target without a lower-band crossing. The frozen comparison is inconclusive at those shares. % DS02 RS22 RS32 RS33",
+      "after": "Of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free response signal \\resultplural{v4.bd.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bd.r_eligible}{[r list]}), \\resultnum{v4.bd.n_inconclusive}{[n]} had a band-supported crossing against B ($r=$ \\resultnum{v4.bd.r_inconclusive}{[r list]}), but D's band spanned the target without a lower-band crossing. The frozen comparison is inconclusive at \\resultplural{v4.bd.n_inconclusive}{that share}{those shares}. % DS02 RS22 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 220,
+      "rule_ids": [
+        "D-BD-BOTH"
+      ],
+      "before": "Both lower bands crossed the target at \\resultnum{v4.bd.n_both}{[n]} of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free response signal shares. These crossings occurred at $r=$ \\resultnum{v4.bd.r_both}{[r list]} within the common set $r=$ \\resultnum{v4.bd.r_eligible}{[r list]}. % DS02 RS22 RS31 RS33",
+      "after": "Both lower bands crossed the target at \\resultnum{v4.bd.n_both}{[n]} of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free response signal \\resultplural{v4.bd.n_eligible}{share}{shares}. These crossings occurred at $r=$ \\resultnum{v4.bd.r_both}{[r list]} within the common set $r=$ \\resultnum{v4.bd.r_eligible}{[r list]}. % DS02 RS22 RS31 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 228,
+      "rule_ids": [
+        "D-BD-NO-CROSSING"
+      ],
+      "before": "B's lower band did not cross the target at \\resultnum{v4.bd.n_no_b_crossing}{[n]} of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free response signal shares. These shares were $r=$ \\resultnum{v4.bd.r_no_b_crossing}{[r list]} within the common set $r=$ \\resultnum{v4.bd.r_eligible}{[r list]}, and the frozen persistence interpretation does not apply to them. % DS02 RS22 RS32 RS33",
+      "after": "B's lower band did not cross the target at \\resultnum{v4.bd.n_no_b_crossing}{[n]} of the \\resultnum{v4.bd.n_eligible}{[n]} common gap-free response signal \\resultplural{v4.bd.n_eligible}{share}{shares}. \\resultplural{v4.bd.n_no_b_crossing}{This share was}{These shares were} $r=$ \\resultnum{v4.bd.r_no_b_crossing}{[r list]} within the common set $r=$ \\resultnum{v4.bd.r_eligible}{[r list]}, and the frozen persistence interpretation does not apply to \\resultplural{v4.bd.n_no_b_crossing}{it}{them}. % DS02 RS22 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 235,
+      "rule_ids": [
+        "D-BE-PERSISTENCE"
+      ],
+      "before": "Of the \\resultnum{v4.be.n_eligible}{[n]} common gap-free B/E response signal shares ($r=$ \\resultnum{v4.be.r_eligible}{[r list]}), \\resultnum{v4.be.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.be.r_persistence}{[r list]}). This result is compatible with mover--stayer heterogeneity and gives no specific evidence of interaction. % DS02 DS08 RS32 RS33",
+      "after": "Of the \\resultnum{v4.be.n_eligible}{[n]} common gap-free B/E response signal \\resultplural{v4.be.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.be.r_eligible}{[r list]}), \\resultnum{v4.be.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.be.r_persistence}{[r list]}). This result is compatible with mover--stayer heterogeneity and gives no specific evidence of interaction. % DS02 DS08 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 242,
+      "rule_ids": [
+        "D-BC-PERSISTENCE"
+      ],
+      "before": "Of the \\resultnum{v4.bc.n_eligible}{[n]} common gap-free B/C response signal shares ($r=$ \\resultnum{v4.bc.r_eligible}{[r list]}), \\resultnum{v4.bc.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.bc.r_persistence}{[r list]}). This result is compatible with heteroscedastic error and heaping and gives no specific evidence of interaction. % DS02 DS08 RS32 RS33",
+      "after": "Of the \\resultnum{v4.bc.n_eligible}{[n]} common gap-free B/C response signal \\resultplural{v4.bc.n_eligible}{share}{shares} ($r=$ \\resultnum{v4.bc.r_eligible}{[r list]}), \\resultnum{v4.bc.n_persistence}{[n]} met the frozen persistence criterion ($r=$ \\resultnum{v4.bc.r_persistence}{[r list]}). This result is compatible with heteroscedastic error and heaping and gives no specific evidence of interaction. % DS02 DS08 RS32 RS33"
+    },
+    {
+      "source": "discussion",
+      "line": 249,
+      "rule_ids": [
+        "D-BOUNDARIES-DIFFER"
+      ],
+      "before": "First and sustained boundary records differed at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} complete valid B shares, including differences in intervals or censoring. There were \\resultnum{v4.t1.n_sustained_gap}{[n]} gap-censored sustained boundaries. % DS01 RS18 RS21 RS23 RS57",
+      "after": "First and sustained boundary records differed at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} complete valid B \\resultplural{v4.t1.n_first_ne_sustained}{share}{shares}, including differences in intervals or censoring. There \\resultplural{v4.t1.n_sustained_gap}{was}{were} \\resultnum{v4.t1.n_sustained_gap}{[n]} gap-censored sustained \\resultplural{v4.t1.n_sustained_gap}{boundary}{boundaries}. % DS01 RS18 RS21 RS23 RS57"
+    },
+    {
+      "source": "discussion",
+      "line": 257,
+      "rule_ids": [
+        "C-BOUNDARIES-DIFFER"
+      ],
+      "before": "First and sustained B boundary records differed at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} complete valid shares, with their separate intervals and censoring retained. % CN01 RS21 RS23 RS57",
+      "after": "First and sustained B boundary records differed at \\resultnum{v4.t1.n_first_ne_sustained}{[n]} complete valid \\resultplural{v4.t1.n_first_ne_sustained}{share}{shares}, with their separate intervals and censoring retained. % CN01 RS21 RS23 RS57"
+    },
+    {
+      "source": "discussion",
+      "line": 264,
+      "rule_ids": [
+        "D-BOUNDARIES-SAME"
+      ],
+      "before": "First and sustained boundary records agreed among the \\resultnum{v4.t1.n_valid}{[n]} complete valid B units, including their intervals and censoring. This agreement does not imply attainment at every response signal share. % DS01 RS18 RS21 RS23",
+      "after": "First and sustained boundary records agreed among the \\resultnum{v4.t1.n_valid}{[n]} complete valid B \\resultplural{v4.t1.n_valid}{unit}{units}, including their intervals and censoring. This agreement does not imply attainment at every response signal share. % DS01 RS18 RS21 RS23"
+    },
+    {
+      "source": "discussion",
+      "line": 271,
+      "rule_ids": [
+        "C-BOUNDARIES-SAME"
+      ],
+      "before": "First and sustained boundary records agreed among \\resultnum{v4.t1.n_valid}{[n]} complete valid B units, including their intervals and censoring. % CN01 RS18 RS21 RS23",
+      "after": "First and sustained boundary records agreed among \\resultnum{v4.t1.n_valid}{[n]} complete valid B \\resultplural{v4.t1.n_valid}{unit}{units}, including their intervals and censoring. % CN01 RS18 RS21 RS23"
+    },
+    {
+      "source": "discussion",
+      "line": 278,
+      "rule_ids": [
+        "D-BOUNDARIES-NO-VALID"
+      ],
+      "before": "With \\resultnum{v4.t1.n_valid}{[n]} complete valid B units, no valid comparison of first and sustained boundary records is available. % DS01 RS15 RS17 RS21",
+      "after": "With \\resultnum{v4.t1.n_valid}{[n]} complete valid B \\resultplural{v4.t1.n_valid}{unit}{units}, no valid comparison of first and sustained boundary records is available. % DS01 RS15 RS17 RS21"
+    },
+    {
+      "source": "discussion",
+      "line": 285,
+      "rule_ids": [
+        "C-BOUNDARIES-NO-VALID"
+      ],
+      "before": "There were \\resultnum{v4.t1.n_valid}{[n]} complete valid B units, so no valid first-versus-sustained boundary comparison is reported. % CN01 RS15 RS17 RS21",
+      "after": "There \\resultplural{v4.t1.n_valid}{was}{were} \\resultnum{v4.t1.n_valid}{[n]} complete valid B \\resultplural{v4.t1.n_valid}{unit}{units}, so no valid first-versus-sustained boundary comparison is reported. % CN01 RS15 RS17 RS21"
+    },
+    {
+      "source": "discussion",
+      "line": 299,
+      "rule_ids": [
+        "D-PRECISION"
+      ],
+      "before": "Of the \\resultnum{v4.t1.n_attained}{[n]} attained B first boundaries, \\resultnum{v4.t1.n_interval_wide_finite}{[n]} had finite intervals wider than the frozen grid-step precision goal. There were \\resultnum{v4.t1.n_interval_beyond_grid}{[n]} boundaries with interval ends beyond the grid and \\resultnum{v4.t1.n_interval_gap}{[n]} with gap-censored ends. % DS01 RS21 RS48",
+      "after": "Of the \\resultnum{v4.t1.n_attained}{[n]} attained B first \\resultplural{v4.t1.n_attained}{boundary}{boundaries}, \\resultnum{v4.t1.n_interval_wide_finite}{[n]} had finite intervals wider than the frozen grid-step precision goal. The counts were \\resultnum{v4.t1.n_interval_beyond_grid}{[n]} \\resultplural{v4.t1.n_interval_beyond_grid}{boundary}{boundaries} with interval ends beyond the grid and \\resultnum{v4.t1.n_interval_gap}{[n]} \\resultplural{v4.t1.n_interval_gap}{boundary}{boundaries} with gap-censored ends. % DS01 RS21 RS48"
+    },
+    {
+      "source": "discussion",
+      "line": 328,
+      "rule_ids": [
+        "D-X5-POST"
+      ],
+      "before": "Relative to the released B curve, X5 equivalent strengths were available in \\resultnum{v4x.comparisons.count.x5.equivalent.available}{[n]} readings for a condition and response signal share, gap-censored in \\resultnum{v4x.comparisons.count.x5.equivalent.censored}{[n]}, above the complete grid in \\resultnum{v4x.comparisons.count.x5.equivalent.above-grid}{[n]}, and unavailable in \\resultnum{v4x.comparisons.count.x5.equivalent.unavailable}{[n]} (Table~\\ref{tab:v4x-stress-comparisons}). % DS11 CN01 RS23 RS24",
+      "after": "Relative to the released B curve, X5 equivalent strengths were available in \\resultnum{v4x.comparisons.count.x5.equivalent.available}{[n]} \\resultplural{v4x.comparisons.count.x5.equivalent.available}{reading}{readings} for a condition and response signal share, gap-censored in \\resultnum{v4x.comparisons.count.x5.equivalent.censored}{[n]}, above the complete grid in \\resultnum{v4x.comparisons.count.x5.equivalent.above-grid}{[n]}, and unavailable in \\resultnum{v4x.comparisons.count.x5.equivalent.unavailable}{[n]} (Table~\\ref{tab:v4x-stress-comparisons}). % DS11 CN01 RS23 RS24"
+    },
+    {
+      "source": "discussion",
+      "line": 330,
+      "rule_ids": [
+        "D-X5-POST"
+      ],
+      "before": "At B's first point boundary, the X5 interval overlapped the band in \\resultnum{v4x.comparisons.count.x5.interval.overlap}{[n]} readings, lay strictly above it in \\resultnum{v4x.comparisons.count.x5.interval.above}{[n]}, and lay strictly below it in \\resultnum{v4x.comparisons.count.x5.interval.below}{[n]}. There were \\resultnum{v4x.comparisons.count.x5.interval.unavailable}{[n]} unavailable comparisons. % DS11 RS21",
+      "after": "At B's first point boundary, the X5 interval overlapped the band in \\resultnum{v4x.comparisons.count.x5.interval.overlap}{[n]} \\resultplural{v4x.comparisons.count.x5.interval.overlap}{reading}{readings}, lay strictly above it in \\resultnum{v4x.comparisons.count.x5.interval.above}{[n]}, and lay strictly below it in \\resultnum{v4x.comparisons.count.x5.interval.below}{[n]}. There \\resultplural{v4x.comparisons.count.x5.interval.unavailable}{was}{were} \\resultnum{v4x.comparisons.count.x5.interval.unavailable}{[n]} unavailable \\resultplural{v4x.comparisons.count.x5.interval.unavailable}{comparison}{comparisons}. % DS11 RS21"
+    },
+    {
+      "source": "discussion",
+      "line": 346,
+      "rule_ids": [
+        "D-X6-DENOMINATORS"
+      ],
+      "before": "At $r=\\resultnum{v4.protocol.r.070}{[share]}$, \\resultnum{v4x.x6.x6a.band.vs_d1.primary.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.primary.total}{[n]} complete gap-free bands jointly covered the primary procedural truth, D1 (Table~\\ref{tab:v4x-x6}). % DS06 DS07 DS10 RS10 RS30",
+      "after": "At $r=\\resultnum{v4.protocol.r.070}{[share]}$, \\resultnum{v4x.x6.x6a.band.vs_d1.primary.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.primary.total}{[n]} complete gap-free \\resultplural{v4x.x6.x6a.band.vs_d1.primary.total}{band}{bands} jointly covered the primary procedural truth, D1 (Table~\\ref{tab:v4x-x6}). % DS06 DS07 DS10 RS10 RS30"
+    },
+    {
+      "source": "discussion",
+      "line": 347,
+      "rule_ids": [
+        "D-X6-DENOMINATORS"
+      ],
+      "before": "Joint coverage requires coverage at all \\resultnum{v4x.protocol.grid_strengths}{[n]} strengths, including $a=\\resultnum{v4x.protocol.zero}{[strength]}$. This reference conditions on complete successful units, rather than on available cells from incomplete units. % DS06 DS10",
+      "after": "Joint coverage requires coverage at \\resultplural{v4x.protocol.grid_strengths}{the}{all} \\resultnum{v4x.protocol.grid_strengths}{[n]} \\resultplural{v4x.protocol.grid_strengths}{strength}{strengths}, including $a=\\resultnum{v4x.protocol.zero}{[strength]}$. This reference conditions on complete successful units, rather than on available cells from incomplete units. % DS06 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 348,
+      "rule_ids": [
+        "D-X6-DENOMINATORS"
+      ],
+      "before": "The separate gaps-as-misses reference covered \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{[n]} repetitions with a curve. Incomplete bands count as misses both jointly and at every strength. % DS06 DS10",
+      "after": "The separate gaps-as-misses reference covered \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{[n]} \\resultplural{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{repetition}{repetitions} with a curve. Incomplete bands count as misses both jointly and at every strength. % DS06 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 349,
+      "rule_ids": [
+        "D-X6-DENOMINATORS"
+      ],
+      "before": "There were \\resultnum{v4x.x6.x6a.without_curve}{[n]} repetitions without a curve, \\resultnum{v4x.x6.x6a.repetitions.errors}{[n]} repetition errors and \\resultnum{v4x.x6.x6a.incomplete}{[n]} incomplete jobs. These are accounted for separately, outside the computed coverage denominators. Those denominators do not give unconditional coverage over all planned repetitions. % DS06 DS10",
+      "after": "The counts were \\resultnum{v4x.x6.x6a.without_curve}{[n]} \\resultplural{v4x.x6.x6a.without_curve}{repetition}{repetitions} without a curve, \\resultnum{v4x.x6.x6a.repetitions.errors}{[n]} repetition \\resultplural{v4x.x6.x6a.repetitions.errors}{error}{errors} and \\resultnum{v4x.x6.x6a.incomplete}{[n]} incomplete \\resultplural{v4x.x6.x6a.incomplete}{job}{jobs}. These are accounted for separately, outside the computed coverage denominators. Those denominators do not give unconditional coverage over all planned repetitions. % DS06 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 389,
+      "rule_ids": [
+        "D-X6-NO-READING"
+      ],
+      "before": "Interior coverage was not established because the primary reference did not meet the minimum of \\resultnum{v4x.x6.minimum_complete_repetitions}{[n]} complete repetitions (reported classification \\texttt{\\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). % DS06 DS10 RS10",
+      "after": "Interior coverage was not established because the primary reference did not meet the minimum of \\resultnum{v4x.x6.minimum_complete_repetitions}{[n]} complete \\resultplural{v4x.x6.minimum_complete_repetitions}{repetition}{repetitions} (reported classification \\texttt{\\resultnum{v4x.x6.x6a.band.vs_d1.primary.reading}{[reading]}}). % DS06 DS10 RS10"
+    },
+    {
+      "source": "discussion",
+      "line": 443,
+      "rule_ids": [
+        "D-X1B"
+      ],
+      "before": "In the supplied post-release aggregate, the mean-field twin's first boundary was available at \\resultnum{v4x.comparisons.count.x1b.available}{[n]} signal shares and unavailable at \\resultnum{v4x.comparisons.count.x1b.unavailable}{[n]}; the supplementary catalog retains every share, first and sustained records, their intervals, statuses and separate point/interval censoring where recorded, without an attained-only subset. The archived X1b numerical account in the fixed supplement is a separate source from this supplied projection; this projection's counts, statuses and boundary records come only from the supplied aggregate, without replacing invalid or unavailable records with historical values. % DS10 RS21 RS23 RS29",
+      "after": "In the supplied post-release aggregate, the mean-field twin's first boundary was available at \\resultnum{v4x.comparisons.count.x1b.available}{[n]} signal \\resultplural{v4x.comparisons.count.x1b.available}{share}{shares} and unavailable at \\resultnum{v4x.comparisons.count.x1b.unavailable}{[n]}; the supplementary catalog retains every share, first and sustained records, their intervals, statuses and separate point/interval censoring where recorded, without an attained-only subset. The archived X1b numerical account in the fixed supplement is a separate source from this supplied projection; this projection's counts, statuses and boundary records come only from the supplied aggregate, without replacing invalid or unavailable records with historical values. % DS10 RS21 RS23 RS29"
+    },
+    {
+      "source": "discussion",
+      "line": 459,
+      "rule_ids": [
+        "D-X3-SCOPE"
+      ],
+      "before": "X3 recorded \\resultnum{v4x.x3.recorded}{[n]} cells, with \\resultnum{v4x.x3.incomplete}{[n]} incomplete cells, \\resultnum{v4x.x3.errors}{[n]} execution errors and \\resultnum{v4x.x3.gaps}{[n]} fit gaps. % DS03 DS10",
+      "after": "X3 recorded \\resultnum{v4x.x3.recorded}{[n]} \\resultplural{v4x.x3.recorded}{cell}{cells}, with \\resultnum{v4x.x3.incomplete}{[n]} incomplete \\resultplural{v4x.x3.incomplete}{cell}{cells}, \\resultnum{v4x.x3.errors}{[n]} execution \\resultplural{v4x.x3.errors}{error}{errors} and \\resultnum{v4x.x3.gaps}{[n]} fit \\resultplural{v4x.x3.gaps}{gap}{gaps}. % DS03 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 468,
+      "rule_ids": [
+        "D-X3-READINGS"
+      ],
+      "before": "Allowing B its own response signal share reduced separability for the specified discriminator in \\resultnum{v4x.x3.count.supports-objection}{[n]} cells (\\texttt{supports-objection}). Local equivalence within $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$ was retained in \\resultnum{v4x.x3.count.against-objection}{[n]} cells (\\texttt{against-objection}), and \\resultnum{v4x.x3.count.inconclusive}{[n]} cells were inconclusive. % DS03 DS10",
+      "after": "Allowing B its own response signal share reduced separability for the specified discriminator in \\resultnum{v4x.x3.count.supports-objection}{[n]} \\resultplural{v4x.x3.count.supports-objection}{cell}{cells} (\\texttt{supports-objection}). Local equivalence within $\\pm\\resultnum{v4x.x3.summary.margin}{[margin]}$ was retained in \\resultnum{v4x.x3.count.against-objection}{[n]} \\resultplural{v4x.x3.count.against-objection}{cell}{cells} (\\texttt{against-objection}), and \\resultnum{v4x.x3.count.inconclusive}{[n]} \\resultplural{v4x.x3.count.inconclusive}{cell}{cells} \\resultplural{v4x.x3.count.inconclusive}{was}{were} inconclusive. % DS03 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 477,
+      "rule_ids": [
+        "D-X3-GAPS"
+      ],
+      "before": "X3 had \\resultnum{v4x.x3.count.error}{[n]} execution errors, \\resultnum{v4x.x3.count.gap}{[n]} gaps in known-share fitting and \\resultnum{v4x.x3.count.free-gap}{[n]} gaps in free-share fitting. The recorded attempts and their final fit statuses are retained. % DS03 DS10 RS24 RS45 RS50",
+      "after": "X3 had \\resultnum{v4x.x3.count.error}{[n]} execution \\resultplural{v4x.x3.count.error}{error}{errors}, \\resultnum{v4x.x3.count.gap}{[n]} \\resultplural{v4x.x3.count.gap}{gap}{gaps} in known-share fitting and \\resultnum{v4x.x3.count.free-gap}{[n]} \\resultplural{v4x.x3.count.free-gap}{gap}{gaps} in free-share fitting. The recorded attempts and their final fit statuses are retained. % DS03 DS10 RS24 RS45 RS50"
+    },
+    {
+      "source": "discussion",
+      "line": 485,
+      "rule_ids": [
+        "D-X3-LOST"
+      ],
+      "before": "The paired-cell \\texttt{lost\\_crossing} flag occurred in \\resultnum{v4x.x3.count.lost_crossing}{[n]} cells: known-share point AUC was at least \\resultnum{v4x.protocol.target}{[target]} while the free-share interval upper endpoint was below that target. % DS03 DS10 RS22",
+      "after": "The paired-cell \\texttt{lost\\_crossing} flag occurred in \\resultnum{v4x.x3.count.lost_crossing}{[n]} \\resultplural{v4x.x3.count.lost_crossing}{cell}{cells}: known-share point AUC was at least \\resultnum{v4x.protocol.target}{[target]} while the free-share interval upper endpoint was below that target. % DS03 DS10 RS22"
+    },
+    {
+      "source": "discussion",
+      "line": 500,
+      "rule_ids": [
+        "D-X4-SCOPE"
+      ],
+      "before": "X4's oracle direction knows the alternative. Its critical value uses \\resultnum{v4x.x4.sizes.check}{[n]} null scores. Fitted-panel evaluation uses \\resultnum{v4x.x4.sizes.analyst}{[n]} simulated panels per fit and \\resultnum{v4x.x4.sizes.nulls}{[n]} fresh bootstrap null panels. % DS03 DS10",
+      "after": "X4's oracle direction knows the alternative. Its critical value uses \\resultnum{v4x.x4.sizes.check}{[n]} null \\resultplural{v4x.x4.sizes.check}{score}{scores}. Fitted-panel evaluation uses \\resultnum{v4x.x4.sizes.analyst}{[n]} simulated \\resultplural{v4x.x4.sizes.analyst}{panel}{panels} per fit and \\resultnum{v4x.x4.sizes.nulls}{[n]} fresh bootstrap null \\resultplural{v4x.x4.sizes.nulls}{panel}{panels}. % DS03 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 508,
+      "rule_ids": [
+        "D-X4-NORMAL"
+      ],
+      "before": "The normal-theory reference lay inside the oracle rejection interval in \\resultnum{v4x.x4a.count.describes}{[n]} cells (\\texttt{describes}), above it in \\resultnum{v4x.x4a.count.overstates}{[n]} (\\texttt{overstates}), and below it in \\resultnum{v4x.x4a.count.understates}{[n]} (\\texttt{understates}). % DS03 DS10",
+      "after": "The normal-theory reference lay inside the oracle rejection interval in \\resultnum{v4x.x4a.count.describes}{[n]} \\resultplural{v4x.x4a.count.describes}{cell}{cells} (\\texttt{describes}), above it in \\resultnum{v4x.x4a.count.overstates}{[n]} (\\texttt{overstates}), and below it in \\resultnum{v4x.x4a.count.understates}{[n]} (\\texttt{understates}). % DS03 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 516,
+      "rule_ids": [
+        "D-X4-PAIRED"
+      ],
+      "before": "The paired conditional rejection difference had a negative interval in \\resultnum{v4x.x4b.count.removes-power}{[n]} cells (\\texttt{removes-power}). In \\resultnum{v4x.x4b.count.no-material-change}{[n]} cells, the interval lay within the local equivalence margin of $\\pm\\resultnum{v4x.x4.summary.single_panel_effect.margin}{[margin]}$ (\\texttt{no-material-change}); \\resultnum{v4x.x4b.count.inconclusive}{[n]} cells were inconclusive (\\texttt{inconclusive}). % DS03 DS10",
+      "after": "The paired conditional rejection difference had a negative interval in \\resultnum{v4x.x4b.count.removes-power}{[n]} \\resultplural{v4x.x4b.count.removes-power}{cell}{cells} (\\texttt{removes-power}). In \\resultnum{v4x.x4b.count.no-material-change}{[n]} \\resultplural{v4x.x4b.count.no-material-change}{cell}{cells}, the interval lay within the local equivalence margin of $\\pm\\resultnum{v4x.x4.summary.single_panel_effect.margin}{[margin]}$ (\\texttt{no-material-change}); \\resultnum{v4x.x4b.count.inconclusive}{[n]} \\resultplural{v4x.x4b.count.inconclusive}{cell}{cells} \\resultplural{v4x.x4b.count.inconclusive}{was}{were} inconclusive (\\texttt{inconclusive}). % DS03 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 524,
+      "rule_ids": [
+        "D-X4-SIZE"
+      ],
+      "before": "At zero strength, rejection was compatible with the nominal level \\resultnum{v4x.protocol.x4.level}{[level]} in \\resultnum{v4x.x4a.count.calibrated}{[n]} X4a cells and \\resultnum{v4x.x4b.count.calibrated}{[n]} X4b cells. Above-nominal labels occurred in \\resultnum{v4x.x4a.count.liberal}{[n]} X4a cells and \\resultnum{v4x.x4b.count.liberal}{[n]} X4b cells; below-nominal labels occurred in \\resultnum{v4x.x4a.count.conservative}{[n]} X4a cells and \\resultnum{v4x.x4b.count.conservative}{[n]} X4b cells. % DS03 DS10",
+      "after": "At zero strength, rejection was compatible with the nominal level \\resultnum{v4x.protocol.x4.level}{[level]} in \\resultnum{v4x.x4a.count.calibrated}{[n]} X4a \\resultplural{v4x.x4a.count.calibrated}{cell}{cells} and \\resultnum{v4x.x4b.count.calibrated}{[n]} X4b \\resultplural{v4x.x4b.count.calibrated}{cell}{cells}. Above-nominal labels occurred in \\resultnum{v4x.x4a.count.liberal}{[n]} X4a \\resultplural{v4x.x4a.count.liberal}{cell}{cells} and \\resultnum{v4x.x4b.count.liberal}{[n]} X4b \\resultplural{v4x.x4b.count.liberal}{cell}{cells}; below-nominal labels occurred in \\resultnum{v4x.x4a.count.conservative}{[n]} X4a \\resultplural{v4x.x4a.count.conservative}{cell}{cells} and \\resultnum{v4x.x4b.count.conservative}{[n]} X4b \\resultplural{v4x.x4b.count.conservative}{cell}{cells}. % DS03 DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 539,
+      "rule_ids": [
+        "D-POST-AVAILABILITY"
+      ],
+      "before": "At the released first point boundary, X3 was available at \\resultnum{v4x.comparisons.count.x3.available}{[n]} response signal shares and unavailable at \\resultnum{v4x.comparisons.count.x3.unavailable}{[n]}. X4 was fully available at \\resultnum{v4x.comparisons.count.x4.available}{[n]} shares, partially available at \\resultnum{v4x.comparisons.count.x4.partial}{[n]}, and unavailable at \\resultnum{v4x.comparisons.count.x4.unavailable}{[n]}. % DS03 DS10 RS21 RS23",
+      "after": "At the released first point boundary, X3 was available at \\resultnum{v4x.comparisons.count.x3.available}{[n]} response signal \\resultplural{v4x.comparisons.count.x3.available}{share}{shares} and unavailable at \\resultnum{v4x.comparisons.count.x3.unavailable}{[n]}. X4 was fully available at \\resultnum{v4x.comparisons.count.x4.available}{[n]} \\resultplural{v4x.comparisons.count.x4.available}{share}{shares}, partially available at \\resultnum{v4x.comparisons.count.x4.partial}{[n]}, and unavailable at \\resultnum{v4x.comparisons.count.x4.unavailable}{[n]}. % DS03 DS10 RS21 RS23"
+    },
+    {
+      "source": "discussion",
+      "line": 549,
+      "rule_ids": [
+        "D-X7-SCOPE"
+      ],
+      "before": "X7 recorded \\resultnum{v4x.x7.inventory.recorded}{[n]} cells, with \\resultnum{v4x.x7.inventory.incomplete}{[n]} incomplete cells, \\resultnum{v4x.x7.inventory.errors}{[n]} errors in the frozen-feature arm and \\resultnum{v4x.x7.inventory.gaps}{[n]} fit gaps in that arm. Errors and gaps in the expanded-feature arm are recorded separately. % DS10",
+      "after": "X7 recorded \\resultnum{v4x.x7.inventory.recorded}{[n]} \\resultplural{v4x.x7.inventory.recorded}{cell}{cells}, with \\resultnum{v4x.x7.inventory.incomplete}{[n]} incomplete \\resultplural{v4x.x7.inventory.incomplete}{cell}{cells}, \\resultnum{v4x.x7.inventory.errors}{[n]} \\resultplural{v4x.x7.inventory.errors}{error}{errors} in the frozen-feature arm and \\resultnum{v4x.x7.inventory.gaps}{[n]} fit \\resultplural{v4x.x7.inventory.gaps}{gap}{gaps} in that arm. Errors and gaps in the expanded-feature arm are recorded separately. % DS10"
+    },
+    {
+      "source": "discussion",
+      "line": 558,
+      "rule_ids": [
+        "D-X7-GAIN"
+      ],
+      "before": "In \\resultnum{v4x.x7.count.far}{[n]} units, X7 showed gain relative to the frozen-feature LDA under the declared paired criterion (\\texttt{far}). Either the expanded boundary interval's upper endpoint preceded the frozen point boundary, or paired AUC-difference intervals were positive from the expanded first boundary up to, but excluding, the frozen first boundary. % DS10 RS21 RS27",
+      "after": "In \\resultnum{v4x.x7.count.far}{[n]} \\resultplural{v4x.x7.count.far}{unit}{units}, X7 showed gain relative to the frozen-feature LDA under the declared paired criterion (\\texttt{far}). Either the expanded boundary interval's upper endpoint preceded the frozen point boundary, or paired AUC-difference intervals were positive from the expanded first boundary up to, but excluding, the frozen first boundary. % DS10 RS21 RS27"
+    },
+    {
+      "source": "discussion",
+      "line": 566,
+      "rule_ids": [
+        "D-X7-CLOSE"
+      ],
+      "before": "In \\resultnum{v4x.x7.count.close}{[n]} units, the first point boundaries coincided, and the paired intervals at that strength and its grid neighbours lay within $\\pm\\resultnum{v4x.x7.bootstrap.margin}{[margin]}$. This met the criterion for local equivalence near the common boundary (\\texttt{close}). % DS10 RS21 RS27",
+      "after": "In \\resultnum{v4x.x7.count.close}{[n]} \\resultplural{v4x.x7.count.close}{unit}{units}, the first point boundaries coincided, and the paired intervals at that strength and its grid neighbours lay within $\\pm\\resultnum{v4x.x7.bootstrap.margin}{[margin]}$. This met the criterion for local equivalence near the common boundary (\\texttt{close}). % DS10 RS21 RS27"
+    },
+    {
+      "source": "discussion",
+      "line": 574,
+      "rule_ids": [
+        "D-X7-OTHER-STATES"
+      ],
+      "before": "X7 had \\resultnum{v4x.x7.count.inconclusive}{[n]} inconclusive, \\resultnum{v4x.x7.count.invalid}{[n]} invalid, \\resultnum{v4x.x7.count.censored}{[n]} censored, \\resultnum{v4x.x7.count.unavailable}{[n]} unavailable and \\resultnum{v4x.x7.count.incomplete}{[n]} incomplete unit readings. Each retains its own denominator and reason. % DS10 RS12 RS14 RS23 RS24",
+      "after": "X7 had \\resultnum{v4x.x7.count.inconclusive}{[n]} inconclusive unit \\resultplural{v4x.x7.count.inconclusive}{reading}{readings}, \\resultnum{v4x.x7.count.invalid}{[n]} invalid unit \\resultplural{v4x.x7.count.invalid}{reading}{readings}, \\resultnum{v4x.x7.count.censored}{[n]} censored unit \\resultplural{v4x.x7.count.censored}{reading}{readings}, \\resultnum{v4x.x7.count.unavailable}{[n]} unavailable unit \\resultplural{v4x.x7.count.unavailable}{reading}{readings} and \\resultnum{v4x.x7.count.incomplete}{[n]} incomplete unit \\resultplural{v4x.x7.count.incomplete}{reading}{readings}. Each retains its own denominator and reason. % DS10 RS12 RS14 RS23 RS24"
+    },
+    {
+      "source": "discussion",
+      "line": 621,
+      "rule_ids": [
+        "D-B15"
+      ],
+      "before": "The anchor's Wald interval contains \\resultnum{v4.shp.n_r_in_interval}{[n]} grid shares spanning \\resultnum{v4.shp.n_status_classes}{[n]} combinations of B status and boundary region. No single boundary is attributed to the item. % DS05 RS25 RS39 RS41",
+      "after": "The anchor's Wald interval contains \\resultnum{v4.shp.n_r_in_interval}{[n]} grid \\resultplural{v4.shp.n_r_in_interval}{share}{shares} spanning \\resultnum{v4.shp.n_status_classes}{[n]} \\resultplural{v4.shp.n_status_classes}{combination}{combinations} of B status and boundary region. No single boundary is attributed to the item. % DS05 RS25 RS39 RS41"
+    },
+    {
+      "source": "discussion",
+      "line": 665,
+      "rule_ids": [
+        "C-B15"
+      ],
+      "before": "The anchor interval spans \\resultnum{v4.shp.n_status_classes}{[n]} combinations of B status and boundary region among \\resultnum{v4.shp.n_r_in_interval}{[n]} grid shares. No single boundary is therefore attributed to the SHP item. % CN01 DS05 RS25 RS39 RS41",
+      "after": "The anchor interval spans \\resultnum{v4.shp.n_status_classes}{[n]} \\resultplural{v4.shp.n_status_classes}{combination}{combinations} of B status and boundary region among \\resultnum{v4.shp.n_r_in_interval}{[n]} grid \\resultplural{v4.shp.n_r_in_interval}{share}{shares}. No single boundary is therefore attributed to the SHP item. % CN01 DS05 RS25 RS39 RS41"
+    },
+    {
+      "source": "discussion",
+      "line": 706,
+      "rule_ids": [
+        "D-CLOSE"
+      ],
+      "before": "At the frozen close, \\resultnum{v4.protocol.close_local}{[time]} America/Sao\\_Paulo, stage \\resultnum{v4.gate.last_stage}{[stage]} had completed \\resultnum{v4.gate.last_stage.completed}{[n]} of \\resultnum{v4.gate.last_stage.planned}{[n]} tasks. The gate remained unfinished, and no confirmatory tier was run. % DS09 DS10 RS01 RS13",
+      "after": "At the frozen close, \\resultnum{v4.protocol.close_local}{[time]} America/Sao\\_Paulo, stage \\resultnum{v4.gate.last_stage}{[stage]} had completed \\resultnum{v4.gate.last_stage.completed}{[n]} of \\resultnum{v4.gate.last_stage.planned}{[n]} \\resultplural{v4.gate.last_stage.planned}{task}{tasks}. The gate remained unfinished, and no confirmatory tier was run. % DS09 DS10 RS01 RS13"
+    },
+    {
+      "source": "discussion",
+      "line": 714,
+      "rule_ids": [
+        "C-CLOSE"
+      ],
+      "before": "The gate remained unfinished at \\resultnum{v4.protocol.close_local}{[time]} America/Sao\\_Paulo. Stage \\resultnum{v4.gate.last_stage}{[stage]} had completed \\resultnum{v4.gate.last_stage.completed}{[n]} of \\resultnum{v4.gate.last_stage.planned}{[n]} tasks, and no confirmatory tier or curve was produced for this paper. % CN01 DS09 RS01 RS13",
+      "after": "The gate remained unfinished at \\resultnum{v4.protocol.close_local}{[time]} America/Sao\\_Paulo. Stage \\resultnum{v4.gate.last_stage}{[stage]} had completed \\resultnum{v4.gate.last_stage.completed}{[n]} of \\resultnum{v4.gate.last_stage.planned}{[n]} \\resultplural{v4.gate.last_stage.planned}{task}{tasks}, and no confirmatory tier or curve was produced for this paper. % CN01 DS09 RS01 RS13"
+    },
+    {
+      "source": "exploratory",
+      "line": 15,
+      "rule_ids": [
+        "E.status-and-scope"
+      ],
+      "before": "X3 recorded \\resultnum{v4x.x3.recorded}{[n]} cells, with \\resultnum{v4x.x3.incomplete}{[n]} incomplete cells, \\resultnum{v4x.x3.errors}{[n]} execution errors and \\resultnum{v4x.x3.gaps}{[n]} fit gaps.",
+      "after": "X3 recorded \\resultnum{v4x.x3.recorded}{[n]} \\resultplural{v4x.x3.recorded}{cell}{cells}, with \\resultnum{v4x.x3.incomplete}{[n]} incomplete \\resultplural{v4x.x3.incomplete}{cell}{cells}, \\resultnum{v4x.x3.errors}{[n]} execution \\resultplural{v4x.x3.errors}{error}{errors} and \\resultnum{v4x.x3.gaps}{[n]} fit \\resultplural{v4x.x3.gaps}{gap}{gaps}."
+    },
+    {
+      "source": "exploratory",
+      "line": 16,
+      "rule_ids": [
+        "E.status-and-scope"
+      ],
+      "before": "X4a recorded \\resultnum{v4x.x4a.recorded}{[n]} cells, of which \\resultnum{v4x.x4a.incomplete}{[n]} were incomplete. X4b recorded \\resultnum{v4x.x4b.recorded}{[n]} cells, of which \\resultnum{v4x.x4b.incomplete}{[n]} were incomplete.",
+      "after": "X4a recorded \\resultnum{v4x.x4a.recorded}{[n]} \\resultplural{v4x.x4a.recorded}{cell}{cells}, of which \\resultnum{v4x.x4a.incomplete}{[n]} \\resultplural{v4x.x4a.incomplete}{was}{were} incomplete. X4b recorded \\resultnum{v4x.x4b.recorded}{[n]} \\resultplural{v4x.x4b.recorded}{cell}{cells}, of which \\resultnum{v4x.x4b.incomplete}{[n]} \\resultplural{v4x.x4b.incomplete}{was}{were} incomplete."
+    },
+    {
+      "source": "exploratory",
+      "line": 17,
+      "rule_ids": [
+        "E.status-and-scope"
+      ],
+      "before": "X4a had \\resultnum{v4x.x4a.errors}{[n]} execution errors and \\resultnum{v4x.x4a.gaps}{[n]} fit gaps; X4b had \\resultnum{v4x.x4b.errors}{[n]} execution errors and \\resultnum{v4x.x4b.gaps}{[n]} fit gaps.",
+      "after": "X4a had \\resultnum{v4x.x4a.errors}{[n]} execution \\resultplural{v4x.x4a.errors}{error}{errors} and \\resultnum{v4x.x4a.gaps}{[n]} fit \\resultplural{v4x.x4a.gaps}{gap}{gaps}; X4b had \\resultnum{v4x.x4b.errors}{[n]} execution \\resultplural{v4x.x4b.errors}{error}{errors} and \\resultnum{v4x.x4b.gaps}{[n]} fit \\resultplural{v4x.x4b.gaps}{gap}{gaps}."
+    },
+    {
+      "source": "exploratory",
+      "line": 22,
+      "rule_ids": [
+        "E.x3-reduced-separation"
+      ],
+      "before": "Allowing B its own response signal share reduced separability for the specified L4--L5 LDA in \\resultnum{v4x.x3.count.supports-objection}{[n]} cells. These cells had a negative paired AUC-difference interval (reported label \\texttt{supports-objection}; Table~\\ref{tab:v4x-x3}).",
+      "after": "Allowing B its own response signal share reduced separability for the specified L4--L5 LDA in \\resultnum{v4x.x3.count.supports-objection}{[n]} \\resultplural{v4x.x3.count.supports-objection}{cell}{cells}. \\resultplural{v4x.x3.count.supports-objection}{This cell had}{These cells had} a negative paired AUC-difference interval (reported label \\texttt{supports-objection}; Table~\\ref{tab:v4x-x3})."
+    },
+    {
+      "source": "exploratory",
+      "line": 28,
+      "rule_ids": [
+        "E.x3-local-equivalence"
+      ],
+      "before": "In \\resultnum{v4x.x3.count.against-objection}{[n]} cells, the paired interval lay within the declared margin of $\\pm\\resultnum{v4x.x3.summary.margin}{[value]}$ (\\texttt{against-objection}).",
+      "after": "In \\resultnum{v4x.x3.count.against-objection}{[n]} \\resultplural{v4x.x3.count.against-objection}{cell}{cells}, the paired interval lay within the declared margin of $\\pm\\resultnum{v4x.x3.summary.margin}{[value]}$ (\\texttt{against-objection})."
+    },
+    {
+      "source": "exploratory",
+      "line": 33,
+      "rule_ids": [
+        "E.x3-inconclusive-contrast"
+      ],
+      "before": "The cellwise contrast was inconclusive in \\resultnum{v4x.x3.count.inconclusive}{[n]} cells (\\texttt{inconclusive}); the intervals in Table~\\ref{tab:v4x-x3} retain the uncertainty under the declared conditional analysis.",
+      "after": "The cellwise contrast was inconclusive in \\resultnum{v4x.x3.count.inconclusive}{[n]} \\resultplural{v4x.x3.count.inconclusive}{cell}{cells} (\\texttt{inconclusive}); \\resultplural{v4x.x3.count.inconclusive}{the interval in}{the intervals in} Table~\\ref{tab:v4x-x3} \\resultplural{v4x.x3.count.inconclusive}{retains}{retain} the uncertainty under the declared conditional analysis."
+    },
+    {
+      "source": "exploratory",
+      "line": 37,
+      "rule_ids": [
+        "E.x3-execution-errors"
+      ],
+      "before": "There were \\resultnum{v4x.x3.count.error}{[n]} recorded execution errors (\\texttt{error}).",
+      "after": "There \\resultplural{v4x.x3.count.error}{was}{were} \\resultnum{v4x.x3.count.error}{[n]} recorded execution \\resultplural{v4x.x3.count.error}{error}{errors} (\\texttt{error})."
+    },
+    {
+      "source": "exploratory",
+      "line": 42,
+      "rule_ids": [
+        "E.x3-known-fit-gaps"
+      ],
+      "before": "There were \\resultnum{v4x.x3.count.gap}{[n]} known-fit gaps (\\texttt{gap}).",
+      "after": "There \\resultplural{v4x.x3.count.gap}{was}{were} \\resultnum{v4x.x3.count.gap}{[n]} known-fit \\resultplural{v4x.x3.count.gap}{gap}{gaps} (\\texttt{gap})."
+    },
+    {
+      "source": "exploratory",
+      "line": 47,
+      "rule_ids": [
+        "E.x3-free-fit-gaps"
+      ],
+      "before": "There were \\resultnum{v4x.x3.count.free-gap}{[n]} free-fit gaps (\\texttt{free-gap}).",
+      "after": "There \\resultplural{v4x.x3.count.free-gap}{was}{were} \\resultnum{v4x.x3.count.free-gap}{[n]} free-fit \\resultplural{v4x.x3.count.free-gap}{gap}{gaps} (\\texttt{free-gap})."
+    },
+    {
+      "source": "exploratory",
+      "line": 54,
+      "rule_ids": [
+        "E.x3-paired-cell-flag"
+      ],
+      "before": "In \\resultnum{v4x.x3.count.lost_crossing}{[n]} cells, the known-share point AUC was at least \\resultnum{v4x.protocol.target}{[value]} while the free-share interval upper endpoint was below that target (\\texttt{lost\\_crossing}).",
+      "after": "In \\resultnum{v4x.x3.count.lost_crossing}{[n]} \\resultplural{v4x.x3.count.lost_crossing}{cell}{cells}, the known-share point AUC was at least \\resultnum{v4x.protocol.target}{[value]} while the free-share interval upper endpoint was below that target (\\texttt{lost\\_crossing})."
+    },
+    {
+      "source": "exploratory",
+      "line": 60,
+      "rule_ids": [
+        "E.x4-conditional-rejection-references"
+      ],
+      "before": "Its critical value was estimated from \\resultnum{v4x.x4.sizes.check}{[n]} null scores. The fitted-panel procedure used \\resultnum{v4x.x4.sizes.analyst}{[n]} simulated panels per fitting evaluation and \\resultnum{v4x.x4.sizes.nulls}{[n]} fresh null panels for its bootstrap.",
+      "after": "Its critical value was estimated from \\resultnum{v4x.x4.sizes.check}{[n]} null \\resultplural{v4x.x4.sizes.check}{score}{scores}. The fitted-panel procedure used \\resultnum{v4x.x4.sizes.analyst}{[n]} simulated \\resultplural{v4x.x4.sizes.analyst}{panel}{panels} per fitting evaluation and \\resultnum{v4x.x4.sizes.nulls}{[n]} fresh null \\resultplural{v4x.x4.sizes.nulls}{panel}{panels} for its bootstrap."
+    },
+    {
+      "source": "exploratory",
+      "line": 66,
+      "rule_ids": [
+        "E.x4-compatible-normal-reference"
+      ],
+      "before": "The normal-theory reference lay inside the oracle rejection interval in \\resultnum{v4x.x4a.count.describes}{[n]} cells within the declared reference-AUC range (\\texttt{describes}; Table~\\ref{tab:v4x-x4-normal}).",
+      "after": "The normal-theory reference lay inside the oracle rejection interval in \\resultnum{v4x.x4a.count.describes}{[n]} \\resultplural{v4x.x4a.count.describes}{cell}{cells} within the declared reference-AUC range (\\texttt{describes}; Table~\\ref{tab:v4x-x4-normal})."
+    },
+    {
+      "source": "exploratory",
+      "line": 70,
+      "rule_ids": [
+        "E.x4-higher-normal-reference"
+      ],
+      "before": "The normal-theory reference lay above the oracle rejection interval in \\resultnum{v4x.x4a.count.overstates}{[n]} cells within the declared reference-AUC range (\\texttt{overstates}).",
+      "after": "The normal-theory reference lay above the oracle rejection interval in \\resultnum{v4x.x4a.count.overstates}{[n]} \\resultplural{v4x.x4a.count.overstates}{cell}{cells} within the declared reference-AUC range (\\texttt{overstates})."
+    },
+    {
+      "source": "exploratory",
+      "line": 74,
+      "rule_ids": [
+        "E.x4-lower-normal-reference"
+      ],
+      "before": "The normal-theory reference lay below the oracle rejection interval in \\resultnum{v4x.x4a.count.understates}{[n]} cells within the declared reference-AUC range (\\texttt{understates}).",
+      "after": "The normal-theory reference lay below the oracle rejection interval in \\resultnum{v4x.x4a.count.understates}{[n]} \\resultplural{v4x.x4a.count.understates}{cell}{cells} within the declared reference-AUC range (\\texttt{understates})."
+    },
+    {
+      "source": "exploratory",
+      "line": 79,
+      "rule_ids": [
+        "E.x4-negative-paired-difference"
+      ],
+      "before": "The paired difference between the conditional oracle rejection procedures had a negative interval in \\resultnum{v4x.x4b.count.removes-power}{[n]} cells (\\texttt{removes-power}; Table~\\ref{tab:v4x-x4-paired}).",
+      "after": "The paired difference between the conditional oracle rejection procedures had a negative interval in \\resultnum{v4x.x4b.count.removes-power}{[n]} \\resultplural{v4x.x4b.count.removes-power}{cell}{cells} (\\texttt{removes-power}; Table~\\ref{tab:v4x-x4-paired})."
+    },
+    {
+      "source": "exploratory",
+      "line": 83,
+      "rule_ids": [
+        "E.x4-local-equivalence-of-rejection-references"
+      ],
+      "before": "The paired interval lay within the declared margin of $\\pm\\resultnum{v4x.x4.summary.single_panel_effect.margin}{[value]}$ in \\resultnum{v4x.x4b.count.no-material-change}{[n]} cells (\\texttt{no-material-change}).",
+      "after": "The paired interval lay within the declared margin of $\\pm\\resultnum{v4x.x4.summary.single_panel_effect.margin}{[value]}$ in \\resultnum{v4x.x4b.count.no-material-change}{[n]} \\resultplural{v4x.x4b.count.no-material-change}{cell}{cells} (\\texttt{no-material-change})."
+    },
+    {
+      "source": "exploratory",
+      "line": 87,
+      "rule_ids": [
+        "E.x4-inconclusive-paired-difference"
+      ],
+      "before": "The paired difference was inconclusive in \\resultnum{v4x.x4b.count.inconclusive}{[n]} cells (\\texttt{inconclusive}).",
+      "after": "The paired difference was inconclusive in \\resultnum{v4x.x4b.count.inconclusive}{[n]} \\resultplural{v4x.x4b.count.inconclusive}{cell}{cells} (\\texttt{inconclusive})."
+    },
+    {
+      "source": "exploratory",
+      "line": 92,
+      "rule_ids": [
+        "E.x4-zero-strength-compatibility"
+      ],
+      "before": "Rejection was compatible with the nominal level of \\resultnum{v4x.protocol.x4.level}{[value]} at \\resultnum{v4x.x4a.count.calibrated}{[n]} X4a and \\resultnum{v4x.x4b.count.calibrated}{[n]} X4b zero-strength cells (\\texttt{calibrated}; Table~\\ref{tab:v4x-x4-calibration}).",
+      "after": "Rejection was compatible with the nominal level of \\resultnum{v4x.protocol.x4.level}{[value]} at \\resultnum{v4x.x4a.count.calibrated}{[n]} X4a zero-strength \\resultplural{v4x.x4a.count.calibrated}{cell}{cells} and \\resultnum{v4x.x4b.count.calibrated}{[n]} X4b zero-strength \\resultplural{v4x.x4b.count.calibrated}{cell}{cells} (\\texttt{calibrated}; Table~\\ref{tab:v4x-x4-calibration})."
+    },
+    {
+      "source": "exploratory",
+      "line": 96,
+      "rule_ids": [
+        "E.x4-above-nominal-zero-strength-reference"
+      ],
+      "before": "The estimated zero-strength rejection rate was above the nominal level under the declared criterion at \\resultnum{v4x.x4a.count.liberal}{[n]} X4a and \\resultnum{v4x.x4b.count.liberal}{[n]} X4b cells (\\texttt{liberal}).",
+      "after": "The estimated zero-strength rejection rate was above the nominal level under the declared criterion at \\resultnum{v4x.x4a.count.liberal}{[n]} X4a \\resultplural{v4x.x4a.count.liberal}{cell}{cells} and \\resultnum{v4x.x4b.count.liberal}{[n]} X4b \\resultplural{v4x.x4b.count.liberal}{cell}{cells} (\\texttt{liberal})."
+    },
+    {
+      "source": "exploratory",
+      "line": 100,
+      "rule_ids": [
+        "E.x4-below-nominal-zero-strength-reference"
+      ],
+      "before": "The estimated zero-strength rejection rate was below the nominal level under the declared criterion at \\resultnum{v4x.x4a.count.conservative}{[n]} X4a and \\resultnum{v4x.x4b.count.conservative}{[n]} X4b cells (\\texttt{conservative}).",
+      "after": "The estimated zero-strength rejection rate was below the nominal level under the declared criterion at \\resultnum{v4x.x4a.count.conservative}{[n]} X4a \\resultplural{v4x.x4a.count.conservative}{cell}{cells} and \\resultnum{v4x.x4b.count.conservative}{[n]} X4b \\resultplural{v4x.x4b.count.conservative}{cell}{cells} (\\texttt{conservative})."
+    },
+    {
+      "source": "exploratory",
+      "line": 106,
+      "rule_ids": [
+        "E.x6-coverage-denominators.inventory"
+      ],
+      "before": "At the operational cut, X6a had recorded \\resultnum{v4x.x6.x6a.recorded}{[n]} of \\resultnum{v4x.x6.x6a.units}{[n]} jobs, with \\resultnum{v4x.x6.x6a.incomplete}{[n]} incomplete jobs. X6b had recorded \\resultnum{v4x.x6.x6b.recorded}{[n]} of \\resultnum{v4x.x6.x6b.units}{[n]} jobs, with \\resultnum{v4x.x6.x6b.incomplete}{[n]} incomplete jobs (Table~\\ref{tab:v4x-x6-inventory}).",
+      "after": "At the operational cut, X6a had recorded \\resultnum{v4x.x6.x6a.recorded}{[n]} of \\resultnum{v4x.x6.x6a.units}{[n]} \\resultplural{v4x.x6.x6a.units}{job}{jobs}, with \\resultnum{v4x.x6.x6a.incomplete}{[n]} incomplete \\resultplural{v4x.x6.x6a.incomplete}{job}{jobs}. X6b had recorded \\resultnum{v4x.x6.x6b.recorded}{[n]} of \\resultnum{v4x.x6.x6b.units}{[n]} \\resultplural{v4x.x6.x6b.units}{job}{jobs}, with \\resultnum{v4x.x6.x6b.incomplete}{[n]} incomplete \\resultplural{v4x.x6.x6b.incomplete}{job}{jobs} (Table~\\ref{tab:v4x-x6-inventory})."
+    },
+    {
+      "source": "exploratory",
+      "line": 107,
+      "rule_ids": [
+        "E.x6-coverage-denominators.joint"
+      ],
+      "before": "Primary joint D1 coverage was \\resultnum{v4x.x6.x6a.band.vs_d1.primary.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.primary.total}{[n]} complete gap-free bands (Table~\\ref{tab:v4x-x6}). Joint coverage requires coverage at all \\resultnum{v4x.protocol.grid_strengths}{[n]} strengths, including $a=\\resultnum{v4x.protocol.zero}{[value]}$.",
+      "after": "Primary joint D1 coverage was \\resultnum{v4x.x6.x6a.band.vs_d1.primary.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.primary.total}{[n]} complete gap-free \\resultplural{v4x.x6.x6a.band.vs_d1.primary.total}{band}{bands} (Table~\\ref{tab:v4x-x6}). Joint coverage requires coverage at \\resultplural{v4x.protocol.grid_strengths}{the}{all} \\resultnum{v4x.protocol.grid_strengths}{[n]} \\resultplural{v4x.protocol.grid_strengths}{strength}{strengths}, including $a=\\resultnum{v4x.protocol.zero}{[value]}$."
+    },
+    {
+      "source": "exploratory",
+      "line": 108,
+      "rule_ids": [
+        "E.x6-coverage-denominators.joint"
+      ],
+      "before": "The separate gaps-as-misses reference was \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{[n]} repetitions with a curve.",
+      "after": "The separate gaps-as-misses reference was \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.covered}{[n]} of \\resultnum{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{[n]} \\resultplural{v4x.x6.x6a.band.vs_d1.gaps_as_misses.total}{repetition}{repetitions} with a curve."
+    },
+    {
+      "source": "exploratory",
+      "line": 109,
+      "rule_ids": [
+        "E.x6-coverage-denominators.accounting"
+      ],
+      "before": "There were \\resultnum{v4x.x6.x6a.without_curve}{[n]} repetitions without a curve and \\resultnum{v4x.x6.x6a.repetitions.errors}{[n]} recorded repetition errors. These counts and incomplete jobs are reported outside the computed coverage denominators.",
+      "after": "There were \\resultnum{v4x.x6.x6a.without_curve}{[n]} \\resultplural{v4x.x6.x6a.without_curve}{repetition}{repetitions} without a curve and \\resultnum{v4x.x6.x6a.repetitions.errors}{[n]} recorded repetition \\resultplural{v4x.x6.x6a.repetitions.errors}{error}{errors}. These counts and incomplete jobs are reported outside the computed coverage denominators."
+    },
+    {
+      "source": "exploratory",
+      "line": 115,
+      "rule_ids": [
+        "E.x6-no-undercoverage-detected"
+      ],
+      "before": "We did not detect undercoverage under the declared criterion in \\resultnum{v4x.x6.x6a.count.adequate}{[n]} X6a and \\resultnum{v4x.x6.x6b.count.adequate}{[n]} D1 coverage references (\\texttt{adequate}).",
+      "after": "We did not detect undercoverage under the declared criterion in \\resultnum{v4x.x6.x6a.count.adequate}{[n]} X6a coverage \\resultplural{v4x.x6.x6a.count.adequate}{reference}{references} and \\resultnum{v4x.x6.x6b.count.adequate}{[n]} D1 coverage \\resultplural{v4x.x6.x6b.count.adequate}{reference}{references} (\\texttt{adequate})."
+    },
+    {
+      "source": "exploratory",
+      "line": 119,
+      "rule_ids": [
+        "E.x6-below-nominal-reference"
+      ],
+      "before": "There were \\resultnum{v4x.x6.x6a.count.subnominal}{[n]} X6a and \\resultnum{v4x.x6.x6b.count.subnominal}{[n]} D1 coverage references with Wilson upper endpoints below \\resultnum{v4x.protocol.x6.nominal}{[value]} but at least \\resultnum{v4x.protocol.x6.failure}{[value]} (\\texttt{subnominal}).",
+      "after": "The counts were \\resultnum{v4x.x6.x6a.count.subnominal}{[n]} X6a coverage \\resultplural{v4x.x6.x6a.count.subnominal}{reference}{references} and \\resultnum{v4x.x6.x6b.count.subnominal}{[n]} D1 coverage \\resultplural{v4x.x6.x6b.count.subnominal}{reference}{references} with Wilson upper endpoints below \\resultnum{v4x.protocol.x6.nominal}{[value]} but at least \\resultnum{v4x.protocol.x6.failure}{[value]} (\\texttt{subnominal})."
+    },
+    {
+      "source": "exploratory",
+      "line": 123,
+      "rule_ids": [
+        "E.x6-failure-criterion"
+      ],
+      "before": "The Wilson upper endpoint was below \\resultnum{v4x.protocol.x6.failure}{[value]} in \\resultnum{v4x.x6.x6a.count.failure}{[n]} X6a and \\resultnum{v4x.x6.x6b.count.failure}{[n]} D1 coverage references (\\texttt{failure}).",
+      "after": "The Wilson upper endpoint was below \\resultnum{v4x.protocol.x6.failure}{[value]} in \\resultnum{v4x.x6.x6a.count.failure}{[n]} X6a coverage \\resultplural{v4x.x6.x6a.count.failure}{reference}{references} and \\resultnum{v4x.x6.x6b.count.failure}{[n]} D1 coverage \\resultplural{v4x.x6.x6b.count.failure}{reference}{references} (\\texttt{failure})."
+    },
+    {
+      "source": "exploratory",
+      "line": 127,
+      "rule_ids": [
+        "E.x6-no-reading"
+      ],
+      "before": "No coverage reading was assigned to \\resultnum{v4x.x6.x6a.count.no-reading}{[n]} X6a and \\resultnum{v4x.x6.x6b.count.no-reading}{[n]} X6b D1 references because they fell below the minimum of \\resultnum{v4x.x6.minimum_complete_repetitions}{[n]} complete repetitions (\\texttt{no reading}).",
+      "after": "No coverage reading was assigned to \\resultnum{v4x.x6.x6a.count.no-reading}{[n]} X6a coverage \\resultplural{v4x.x6.x6a.count.no-reading}{reference}{references} and \\resultnum{v4x.x6.x6b.count.no-reading}{[n]} X6b D1 \\resultplural{v4x.x6.x6b.count.no-reading}{reference}{references} because each fell below the minimum of \\resultnum{v4x.x6.minimum_complete_repetitions}{[n]} complete \\resultplural{v4x.x6.minimum_complete_repetitions}{repetition}{repetitions} (\\texttt{no reading})."
+    },
+    {
+      "source": "exploratory",
+      "line": 131,
+      "rule_ids": [
+        "E.x6-reference-precision"
+      ],
+      "before": "Reference precision left \\resultnum{v4x.x6.x6a.count.inconclusive-truth-precision}{[n]} X6a and \\resultnum{v4x.x6.x6b.count.inconclusive-truth-precision}{[n]} D1 coverage references inconclusive (\\texttt{inconclusive-truth-precision}).",
+      "after": "Reference precision left \\resultnum{v4x.x6.x6a.count.inconclusive-truth-precision}{[n]} X6a coverage \\resultplural{v4x.x6.x6a.count.inconclusive-truth-precision}{reference}{references} and \\resultnum{v4x.x6.x6b.count.inconclusive-truth-precision}{[n]} D1 coverage \\resultplural{v4x.x6.x6b.count.inconclusive-truth-precision}{reference}{references} inconclusive (\\texttt{inconclusive-truth-precision})."
+    },
+    {
+      "source": "exploratory",
+      "line": 140,
+      "rule_ids": [
+        "E.x6-conservative-flag"
+      ],
+      "before": "A Wilson lower endpoint above \\resultnum{v4x.protocol.x6.conservative}{[value]} produced the conservative flag in \\resultnum{v4x.x6.x6a.count.conservative}{[n]} X6a and \\resultnum{v4x.x6.x6b.count.conservative}{[n]} D1 coverage references.",
+      "after": "A Wilson lower endpoint above \\resultnum{v4x.protocol.x6.conservative}{[value]} produced the conservative flag in \\resultnum{v4x.x6.x6a.count.conservative}{[n]} X6a coverage \\resultplural{v4x.x6.x6a.count.conservative}{reference}{references} and \\resultnum{v4x.x6.x6b.count.conservative}{[n]} D1 coverage \\resultplural{v4x.x6.x6b.count.conservative}{reference}{references}."
+    },
+    {
+      "source": "exploratory",
+      "line": 145,
+      "rule_ids": [
+        "E.x6-procedural-and-approximate-population-truth"
+      ],
+      "before": "The primary truth conditions on successful D1 pipelines and includes matching with \\resultnum{v4x.x3.sizes.matching}{[n]} pairs and the declared \\resultnum{v4x.x3.sizes.retry_matching}{[n]}-pair retries.",
+      "after": "The primary truth conditions on successful D1 pipelines and includes matching with \\resultnum{v4x.x3.sizes.matching}{[n]} \\resultplural{v4x.x3.sizes.matching}{pair}{pairs} and the declared \\resultnum{v4x.x3.sizes.retry_matching}{[n]}-pair retries."
+    },
+    {
+      "source": "exploratory",
+      "line": 146,
+      "rule_ids": [
+        "E.x6-procedural-and-approximate-population-truth"
+      ],
+      "before": "The secondary truth uses approximate population matching with \\resultnum{v4x.x6.sizes.population_pairs}{[n]} pairs.",
+      "after": "The secondary truth uses approximate population matching with \\resultnum{v4x.x6.sizes.population_pairs}{[n]} \\resultplural{v4x.x6.sizes.population_pairs}{pair}{pairs}."
+    },
+    {
+      "source": "exploratory",
+      "line": 157,
+      "rule_ids": [
+        "E.x7-gain-under-the-paired-criterion"
+      ],
+      "before": "In \\resultnum{v4x.x7.count.far}{[n]} units, the expanded-feature LDA gained relative to the frozen-feature LDA under the declared paired criterion (\\texttt{far}).",
+      "after": "In \\resultnum{v4x.x7.count.far}{[n]} \\resultplural{v4x.x7.count.far}{unit}{units}, the expanded-feature LDA gained relative to the frozen-feature LDA under the declared paired criterion (\\texttt{far})."
+    },
+    {
+      "source": "exploratory",
+      "line": 163,
+      "rule_ids": [
+        "E.x7-local-equivalence-near-the-boundary"
+      ],
+      "before": "In \\resultnum{v4x.x7.count.close}{[n]} units, the two LDAs showed local equivalence within $\\pm\\resultnum{v4x.x7.bootstrap.margin}{[value]}$ near their common grid boundary (\\texttt{close}).",
+      "after": "In \\resultnum{v4x.x7.count.close}{[n]} \\resultplural{v4x.x7.count.close}{unit}{units}, the two LDAs showed local equivalence within $\\pm\\resultnum{v4x.x7.bootstrap.margin}{[value]}$ near their common grid boundary (\\texttt{close})."
+    },
+    {
+      "source": "exploratory",
+      "line": 167,
+      "rule_ids": [
+        "E.x7-inconclusive-comparison"
+      ],
+      "before": "The declared paired comparison was inconclusive in \\resultnum{v4x.x7.count.inconclusive}{[n]} units (\\texttt{inconclusive}); the two boundaries and paired contrasts remain tabulated.",
+      "after": "The declared paired comparison was inconclusive in \\resultnum{v4x.x7.count.inconclusive}{[n]} \\resultplural{v4x.x7.count.inconclusive}{unit}{units} (\\texttt{inconclusive}); the two boundaries and paired contrasts remain tabulated."
+    },
+    {
+      "source": "exploratory",
+      "line": 171,
+      "rule_ids": [
+        "E.x7-invalid-comparison"
+      ],
+      "before": "There were \\resultnum{v4x.x7.count.invalid}{[n]} invalid units (\\texttt{invalid}) because a required zero-strength gate was invalid.",
+      "after": "There \\resultplural{v4x.x7.count.invalid}{was}{were} \\resultnum{v4x.x7.count.invalid}{[n]} invalid \\resultplural{v4x.x7.count.invalid}{unit}{units} (\\texttt{invalid}) because a required zero-strength gate was invalid."
+    },
+    {
+      "source": "exploratory",
+      "line": 175,
+      "rule_ids": [
+        "E.x7-censored-comparison"
+      ],
+      "before": "There were \\resultnum{v4x.x7.count.censored}{[n]} censored unit readings (\\texttt{censored}).",
+      "after": "There \\resultplural{v4x.x7.count.censored}{was}{were} \\resultnum{v4x.x7.count.censored}{[n]} censored unit \\resultplural{v4x.x7.count.censored}{reading}{readings} (\\texttt{censored})."
+    },
+    {
+      "source": "exploratory",
+      "line": 179,
+      "rule_ids": [
+        "E.x7-unavailable-comparison"
+      ],
+      "before": "There were \\resultnum{v4x.x7.count.unavailable}{[n]} unavailable readings (\\texttt{unavailable}). Their frozen-arm and expanded-arm errors remain recorded.",
+      "after": "There \\resultplural{v4x.x7.count.unavailable}{was}{were} \\resultnum{v4x.x7.count.unavailable}{[n]} unavailable \\resultplural{v4x.x7.count.unavailable}{reading}{readings} (\\texttt{unavailable}). \\resultplural{v4x.x7.count.unavailable}{Its frozen-arm}{Their frozen-arm} and expanded-arm errors remain recorded."
+    },
+    {
+      "source": "exploratory",
+      "line": 182,
+      "rule_ids": [
+        "E.x7-incomplete-comparison"
+      ],
+      "before": "There were \\resultnum{v4x.x7.count.incomplete}{[n]} incomplete units at the operational cut (\\texttt{incomplete}).",
+      "after": "There \\resultplural{v4x.x7.count.incomplete}{was}{were} \\resultnum{v4x.x7.count.incomplete}{[n]} incomplete \\resultplural{v4x.x7.count.incomplete}{unit}{units} at the operational cut (\\texttt{incomplete})."
+    },
+    {
+      "source": "exploratory",
+      "line": 183,
+      "rule_ids": [
+        "E.x7-incomplete-comparison"
+      ],
+      "before": "The cell inventory recorded \\resultnum{v4x.x7.inventory.recorded}{[n]} cells, with \\resultnum{v4x.x7.inventory.incomplete}{[n]} incomplete cells, \\resultnum{v4x.x7.inventory.errors}{[n]} frozen-arm errors and \\resultnum{v4x.x7.inventory.gaps}{[n]} frozen-arm fit gaps.",
+      "after": "The cell inventory recorded \\resultnum{v4x.x7.inventory.recorded}{[n]} \\resultplural{v4x.x7.inventory.recorded}{cell}{cells}, with \\resultnum{v4x.x7.inventory.incomplete}{[n]} incomplete \\resultplural{v4x.x7.inventory.incomplete}{cell}{cells}, \\resultnum{v4x.x7.inventory.errors}{[n]} frozen-arm \\resultplural{v4x.x7.inventory.errors}{error}{errors} and \\resultnum{v4x.x7.inventory.gaps}{[n]} frozen-arm fit \\resultplural{v4x.x7.inventory.gaps}{gap}{gaps}."
+    },
+    {
+      "source": "exploratory",
+      "line": 190,
+      "rule_ids": [
+        "E.available-local-readings"
+      ],
+      "before": "After release, the first confirmatory point boundary selected an X3 cell with an available contrast at \\resultnum{v4x.comparisons.count.x3.available}{[n]} response signal shares. Both conditional X4 references were available at \\resultnum{v4x.comparisons.count.x4.available}{[n]} shares (Tables~\\ref{tab:v4x-comparisons} and \\ref{tab:v4x-selected-comparisons}).",
+      "after": "After release, the first confirmatory point boundary selected an X3 cell with an available contrast at \\resultnum{v4x.comparisons.count.x3.available}{[n]} response signal \\resultplural{v4x.comparisons.count.x3.available}{share}{shares}. Both conditional X4 references were available at \\resultnum{v4x.comparisons.count.x4.available}{[n]} \\resultplural{v4x.comparisons.count.x4.available}{share}{shares} (Tables~\\ref{tab:v4x-comparisons} and \\ref{tab:v4x-selected-comparisons})."
+    },
+    {
+      "source": "exploratory",
+      "line": 196,
+      "rule_ids": [
+        "E.partial-and-unavailable-readings"
+      ],
+      "before": "The X4 reading was partial at \\resultnum{v4x.comparisons.count.x4.partial}{[n]} response signal shares and unavailable at \\resultnum{v4x.comparisons.count.x4.unavailable}{[n]}. X3 was unavailable at \\resultnum{v4x.comparisons.count.x3.unavailable}{[n]} shares (Table~\\ref{tab:v4x-comparison-states}).",
+      "after": "The X4 reading was partial at \\resultnum{v4x.comparisons.count.x4.partial}{[n]} response signal \\resultplural{v4x.comparisons.count.x4.partial}{share}{shares} and unavailable at \\resultnum{v4x.comparisons.count.x4.unavailable}{[n]}. X3 was unavailable at \\resultnum{v4x.comparisons.count.x3.unavailable}{[n]} \\resultplural{v4x.comparisons.count.x3.unavailable}{share}{shares} (Table~\\ref{tab:v4x-comparison-states})."
+    },
+    {
+      "source": "exploratory",
+      "line": 202,
+      "rule_ids": [
+        "E.twin-and-expanded-feature-boundaries"
+      ],
+      "before": "In the supplied post-release aggregate, the twin first boundary was available at \\resultnum{v4x.comparisons.count.x1b.available}{[n]} signal shares and unavailable at \\resultnum{v4x.comparisons.count.x1b.unavailable}{[n]}. The full supplied X1b display retains every declared signal share, first and sustained records, intervals, statuses and separate censoring; an invalid or unavailable record is not replaced by the archived numerical account in the fixed supplement.",
+      "after": "In the supplied post-release aggregate, the twin first boundary was available at \\resultnum{v4x.comparisons.count.x1b.available}{[n]} signal \\resultplural{v4x.comparisons.count.x1b.available}{share}{shares} and unavailable at \\resultnum{v4x.comparisons.count.x1b.unavailable}{[n]}. The full supplied X1b display retains every declared signal share, first and sustained records, intervals, statuses and separate censoring; an invalid or unavailable record is not replaced by the archived numerical account in the fixed supplement."
+    },
+    {
+      "source": "exploratory",
+      "line": 208,
+      "rule_ids": [
+        "E.misspecification-equivalent-strength-available"
+      ],
+      "before": "For \\resultnum{v4x.comparisons.count.x5.equivalent.available}{[n]} available X5 condition--signal-share readings, Table~\\ref{tab:v4x-stress-comparisons} reports the first declared grid strength whose confirmatory point AUC equals or exceeds the misspecification AUC.",
+      "after": "For \\resultnum{v4x.comparisons.count.x5.equivalent.available}{[n]} available X5 condition--signal-share \\resultplural{v4x.comparisons.count.x5.equivalent.available}{reading}{readings}, Table~\\ref{tab:v4x-stress-comparisons} reports the first declared grid strength whose confirmatory point AUC equals or exceeds the misspecification AUC."
+    },
+    {
+      "source": "exploratory",
+      "line": 211,
+      "rule_ids": [
+        "E.misspecification-equivalent-strength-censored"
+      ],
+      "before": "A gap before the equivalent-strength crossing left \\resultnum{v4x.comparisons.count.x5.equivalent.censored}{[n]} condition--signal-share readings censored at the recorded strength.",
+      "after": "A gap before the equivalent-strength crossing left \\resultnum{v4x.comparisons.count.x5.equivalent.censored}{[n]} condition--signal-share \\resultplural{v4x.comparisons.count.x5.equivalent.censored}{reading}{readings} censored at the recorded strength."
+    },
+    {
+      "source": "exploratory",
+      "line": 214,
+      "rule_ids": [
+        "E.misspecification-equivalent-strength-above-the-grid"
+      ],
+      "before": "There was no crossing on a complete eligible grid for \\resultnum{v4x.comparisons.count.x5.equivalent.above-grid}{[n]} readings, retained as above the grid without interpolation or extrapolation.",
+      "after": "There was no crossing on a complete eligible grid for \\resultnum{v4x.comparisons.count.x5.equivalent.above-grid}{[n]} \\resultplural{v4x.comparisons.count.x5.equivalent.above-grid}{reading}{readings}, retained as above the grid without interpolation or extrapolation."
+    },
+    {
+      "source": "exploratory",
+      "line": 217,
+      "rule_ids": [
+        "E.misspecification-interval-overlap"
+      ],
+      "before": "At the released first boundary, \\resultnum{v4x.comparisons.count.x5.interval.overlap}{[n]} misspecification intervals overlapped the confirmatory band; touching an endpoint counts as overlap.",
+      "after": "At the released first boundary, \\resultnum{v4x.comparisons.count.x5.interval.overlap}{[n]} misspecification \\resultplural{v4x.comparisons.count.x5.interval.overlap}{interval}{intervals} overlapped the confirmatory band; touching an endpoint counts as overlap."
+    },
+    {
+      "source": "exploratory",
+      "line": 220,
+      "rule_ids": [
+        "E.misspecification-interval-above"
+      ],
+      "before": "At the released first boundary, \\resultnum{v4x.comparisons.count.x5.interval.above}{[n]} misspecification intervals lay above the confirmatory band.",
+      "after": "At the released first boundary, \\resultnum{v4x.comparisons.count.x5.interval.above}{[n]} misspecification \\resultplural{v4x.comparisons.count.x5.interval.above}{interval}{intervals} lay above the confirmatory band."
+    },
+    {
+      "source": "exploratory",
+      "line": 223,
+      "rule_ids": [
+        "E.misspecification-interval-below"
+      ],
+      "before": "At the released first boundary, \\resultnum{v4x.comparisons.count.x5.interval.below}{[n]} misspecification intervals lay below the confirmatory band.",
+      "after": "At the released first boundary, \\resultnum{v4x.comparisons.count.x5.interval.below}{[n]} misspecification \\resultplural{v4x.comparisons.count.x5.interval.below}{interval}{intervals} lay below the confirmatory band."
+    },
+    {
+      "source": "exploratory",
+      "line": 227,
+      "rule_ids": [
+        "E.misspecification-comparison-unavailable"
+      ],
+      "before": "There were \\resultnum{v4x.comparisons.count.x5.equivalent.unavailable}{[n]} unavailable equivalent strengths and \\resultnum{v4x.comparisons.count.x5.interval.unavailable}{[n]} unavailable interval comparisons.",
+      "after": "The counts were \\resultnum{v4x.comparisons.count.x5.equivalent.unavailable}{[n]} unavailable equivalent \\resultplural{v4x.comparisons.count.x5.equivalent.unavailable}{strength}{strengths} and \\resultnum{v4x.comparisons.count.x5.interval.unavailable}{[n]} unavailable interval \\resultplural{v4x.comparisons.count.x5.interval.unavailable}{comparison}{comparisons}."
+    }
+  ],
+  "notes": [
+    "Ordinal tier labels do not govern count nouns.",
+    "Partitive denominator nouns and numerator verbs use their respective IDs.",
+    "Independent category counts repeat elided nouns; coordinated counts keep a plural subject.",
+    "B04.low.2 uses the per-share first boundary in the singular rather than borrowing an ID bound only in B04.low.1."
+  ]
+}

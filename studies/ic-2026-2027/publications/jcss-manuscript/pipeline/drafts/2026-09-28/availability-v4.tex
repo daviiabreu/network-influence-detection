@@ -1,0 +1,16 @@
+% Draft "Data and code availability" paragraph for the Statements and
+% Declarations of main.tex (2026-09-28). Markers % AVxx refer to rows in
+% methods-v4-ledger.md (same folder). No public release location, archive DOI
+% or gate outcome is asserted.
+\noindent\textbf{Data and code availability.}
+The panels are synthetic; no licensed Swiss Household Panel microdata are used or included. % AV01
+The simulation and analysis code, the frozen protocol files and the freeze record \texttt{freeze-v4.json} are those of Git revision \texttt{37513841} of the project repository; the two docking reports and the host-equivalence record are in later revisions of the same repository. % AV02
+Public release location, archived revision and run and figure manifests: [to be filled from the validated final package]. % AV03
+The freeze record binds Python 3.12.13, NumPy 2.5.3, the locked dependency file, single-threaded BLAS and the platform string of one macOS 27.0 arm64 host, and the preflight refuses to run under any other recorded environment. % AV04
+Bitwise reproduction is claimed only for that platform with the frozen lock, and only on the frozen tree: later revisions change \texttt{pyproject.toml} and \texttt{uv.lock}, so the preflight fails there. % AV05
+On Linux x86-64 (Python 3.12.3, NumPy 2.5.3 from the lock), 538 study tests pass and 3 fail, also in a clean worktree of \texttt{37513841}: the two cases of the frozen-calibration byte-hash test ($N=600$ and $N=10{,}626$) and one profile-solver test. % AV06
+The cause is not established; the recorded hashes were generated on macOS, and floating-point differences between platforms are the working hypothesis. % AV06
+A second host (Linux) replayed three G0 tasks for equivalence only, not as gate evidence. % AV07
+All 82 code hashes matched the freeze record, the numerical probe agreed within $6.7\times10^{-16}$, states, decisions and counts were equal, and 1,331,544 continuous values agreed to within $7.9\times10^{-12}$ in absolute terms. % AV07
+The pre-declared equivalence criterion nevertheless failed, only on the \texttt{seed\_material\_sha256} field of the phase records (4,448 divergences), because that hash is computed over the numerical parameters at which panels are generated; the platform, interpreter and host fields of the run manifests also differ, as expected between hosts. % AV08
+Gate and tiers therefore run on the one bound host. % AV09

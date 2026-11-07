@@ -1,0 +1,624 @@
+{
+ "schema": "ic-study.t57e-selection-changes.v1",
+ "rules_sha256_committed": "af2465a809a7c497787d47bb4ab91249b7b08c573c6c22ce6a2e4f0d432f73b0",
+ "rules_sha256_after_repin": "ed546b35ba3c9dbcec575c6687f054b10a1879119b58d0129e0ab551800d345a",
+ "rules_sha256_after": "47a0e0decc36e2a42db1b861a66a3703662de862d006d6c16aab34df76e173a3",
+ "repin_locator_overrides": {},
+ "composition_code": [
+  "compose_documents joins the units of one slot with a newline, so each slot is one paragraph; the exploratory and secondary supplement slots keep a blank line between blocks",
+  "a dotted Discussion sub-slot (DS02.records, DS06.reading) is a further paragraph after the same marker; DS10-join appends to the fixed DS10 paragraph",
+  "the C1 headline joins the opening CN01 question when the marker follows a blank line",
+  "the X3-X7 supplement is input after sections/supplement-exploratory-x1-x2, so the order is X1a/X2, X5, then X3-X7",
+  "the display includes compare with the joined P1 paragraph"
+ ],
+ "changes": [
+  {
+   "id": "B04",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.low.1",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.low.2",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.low.3",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.low.4",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.low.5",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.low.6",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B04.zero",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-low",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B04 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B05",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-dip",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B05 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B06",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-differ",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B06 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08.main.1",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08.main.2",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08.main.3",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08.main.4",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08.main.5",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B08.dependency",
+   "field": "slot",
+   "before": "P5-extra",
+   "after": "P5-gaps",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; B08 keeps its own paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "P6-a",
+   "field": "slot",
+   "before": "P6",
+   "after": "P7",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; without permission the P6-a sentences open the paragraph on A, C and E",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B10.be",
+   "field": "slot",
+   "before": "P6",
+   "after": "P7",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; the E and C readings open the second family paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B10.be",
+   "field": "order",
+   "before": 63.5,
+   "after": 66.5,
+   "scope": "composition only: the E and C clauses follow P6-c to P6-e, so the first paragraph holds only B/D sentences; text and condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B10.bc",
+   "field": "slot",
+   "before": "P6",
+   "after": "P7",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; the E and C readings open the second family paragraph",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B10.bc",
+   "field": "order",
+   "before": 63.6,
+   "after": 66.6,
+   "scope": "composition only: the E and C clauses follow P6-c to P6-e, so the first paragraph holds only B/D sentences; text and condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "P6-f",
+   "field": "slot",
+   "before": "P6",
+   "after": "P7",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; the caveat follows every cross-family reading",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "P7-c",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-c",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; controls under their own heading",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B11",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-c",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; controls under their own heading",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "P7-c1",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-c",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; controls under their own heading",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "P7-c2",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-c",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; controls under their own heading",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "P7-d",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12.inventory",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12.region.1",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12.region.2",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12.scope.1",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12.scope.2",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "B12.scope.3",
+   "field": "slot",
+   "before": "P7",
+   "after": "P7-d",
+   "scope": "composition only: one slot is one paragraph; condition unchanged; sensitivities after the controls",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-BOUNDARIES-DIFFER",
+   "field": "slot",
+   "before": "DS02",
+   "after": "DS02.records",
+   "scope": "composition only: boundary-record and precision blocks form a second paragraph after DS02; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-BOUNDARIES-SAME",
+   "field": "slot",
+   "before": "DS02",
+   "after": "DS02.records",
+   "scope": "composition only: boundary-record and precision blocks form a second paragraph after DS02; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-BOUNDARIES-NO-VALID",
+   "field": "slot",
+   "before": "DS02",
+   "after": "DS02.records",
+   "scope": "composition only: boundary-record and precision blocks form a second paragraph after DS02; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-PRECISION",
+   "field": "slot",
+   "before": "DS02",
+   "after": "DS02.records",
+   "scope": "composition only: boundary-record and precision blocks form a second paragraph after DS02; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-FAILURE",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-SUBNOMINAL",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-INCONCLUSIVE",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-NO-READING",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-ABSENT",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-ADEQUATE",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-X6-CONSERVATIVE",
+   "field": "slot",
+   "before": "DS06",
+   "after": "DS06.reading",
+   "scope": "composition only: the X6 reading keeps its own paragraph after the denominators, as before T57e; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "C-BD-PERSISTENCE",
+   "field": "slot",
+   "before": "C3",
+   "after": "C2",
+   "scope": "Opus rewrite 1 as delegated in T57e item 5: the persistence reading follows C-PERMISSION and counts its common set; condition and order unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-PERMISSION",
+   "field": "order",
+   "before": 347,
+   "after": 239,
+   "scope": "composition only: the permission statement answers DS02 before the B/D regions; text per T57e item 6, condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-EXPLORATORY-SUPPLEMENT",
+   "field": "fragments",
+   "before": null,
+   "after": [
+    {
+     "line": 443,
+     "end_line": 443,
+     "condition": {
+      "ref": "E.twin-and-expanded-feature-boundaries"
+     }
+    },
+    {
+     "line": 444,
+     "end_line": 444,
+     "condition": {
+      "not": {
+       "ref": "E.twin-and-expanded-feature-boundaries"
+      }
+     }
+    },
+    {
+     "line": 445,
+     "end_line": 445,
+     "condition": true
+    }
+   ],
+   "scope": "T57e item 1: the release-bound X1b display is named, with its new label, only when the twin paragraph is assembled; condition unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "id": "D-EXPLORATORY-SUPPLEMENT",
+   "field": "slot",
+   "before": "DS10",
+   "after": "DS10-join",
+   "scope": "composition only: the pointer joins the fixed DS10 paragraph instead of standing as a two-sentence paragraph; condition and order unchanged",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  }
+ ],
+ "new_rules": [
+  {
+   "rule": {
+    "id": "P2.heading",
+    "source": "results",
+    "line": 712,
+    "end_line": 712,
+    "condition": {
+     "ref": "PASS"
+    },
+    "slot": "P2.heading",
+    "operation": "append",
+    "order": 19
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "P3.heading",
+    "source": "results",
+    "line": 715,
+    "end_line": 715,
+    "condition": {
+     "ref": "PASS"
+    },
+    "slot": "P3.heading",
+    "operation": "append",
+    "order": 29
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "P4.heading",
+    "source": "results",
+    "line": 721,
+    "end_line": 721,
+    "condition": {
+     "ref": "PASS"
+    },
+    "slot": "P4.heading",
+    "operation": "append",
+    "order": 39
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "P6.heading",
+    "source": "results",
+    "line": 736,
+    "end_line": 736,
+    "condition": {
+     "ref": "PASS"
+    },
+    "slot": "P6.heading",
+    "operation": "append",
+    "order": 59
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "P7-c.heading",
+    "source": "results",
+    "line": 766,
+    "end_line": 766,
+    "condition": {
+     "ref": "PASS"
+    },
+    "slot": "P7-c.heading",
+    "operation": "append",
+    "order": 73
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "P8.heading",
+    "source": "results",
+    "line": 778,
+    "end_line": 778,
+    "condition": {
+     "all": [
+      {
+       "ref": "PASS"
+      },
+      {
+       "any": [
+        {
+         "ref": "P8.1"
+        },
+        {
+         "ref": "B13"
+        },
+        {
+         "ref": "B14"
+        },
+        {
+         "ref": "B15"
+        }
+       ]
+      }
+     ]
+    },
+    "slot": "P8.heading",
+    "operation": "append",
+    "order": 79
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "P9.heading",
+    "source": "results",
+    "line": 785,
+    "end_line": 785,
+    "condition": {
+     "ref": "PASS"
+    },
+    "slot": "P9.heading",
+    "operation": "append",
+    "order": 89
+   },
+   "scope": "Results subsection heading before the first paragraph of its group",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  },
+  {
+   "rule": {
+    "id": "E.post-release-heading",
+    "source": "exploratory",
+    "line": 193,
+    "end_line": 193,
+    "condition": {
+     "any": [
+      {
+       "ref": "E.available-local-readings"
+      },
+      {
+       "ref": "E.partial-and-unavailable-readings"
+      },
+      {
+       "ref": "E.twin-and-expanded-feature-boundaries"
+      },
+      {
+       "ref": "E.misspecification-equivalent-strength-available"
+      },
+      {
+       "ref": "E.misspecification-equivalent-strength-censored"
+      },
+      {
+       "ref": "E.misspecification-equivalent-strength-above-the-grid"
+      },
+      {
+       "ref": "E.misspecification-interval-overlap"
+      },
+      {
+       "ref": "E.misspecification-interval-above"
+      },
+      {
+       "ref": "E.misspecification-interval-below"
+      },
+      {
+       "ref": "E.misspecification-comparison-unavailable"
+      }
+     ]
+    },
+    "slot": "exploratory",
+    "operation": "append",
+    "order": 1385,
+    "scope_locator": {
+     "source": "exploratory",
+     "line": 4,
+     "end_line": 7
+    }
+   },
+   "scope": "heading of the post-release readings, selected with any of them",
+   "authority": "T57e coordinator decision (decision log item 187) under the Owner's delegation, 02/10/2026, before the release of any tier result"
+  }
+ ]
+}

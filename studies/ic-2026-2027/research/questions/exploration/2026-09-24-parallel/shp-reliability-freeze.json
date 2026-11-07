@@ -1,0 +1,26 @@
+{
+  "schema": "ic-study.shp-reliability-freeze.v1",
+  "frozen_at_utc": "2026-09-27T22:13:12Z",
+  "branch": "research/shp-reliability-anchor",
+  "base_commit": "37513841",
+  "code_commit": "4c204d3806e2c33cd2872edddabd7ff4ea102ec2",
+  "preregistration": {
+    "markdown": {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.md",
+      "sha256": "73e157217db02297ac011e61284252f9728f584a0a2e6c00a8903d8c0abb7800"
+    },
+    "machine_json": {
+      "path": "studies/ic-2026-2027/research/questions/exploration/2026-09-24-parallel/shp-reliability-preregistration.json",
+      "sha256": "ba4f281f4d987f028ea95f80428e0fe1b4946c1d638f34b6231e38c8432a09a4"
+    }
+  },
+  "data_state_at_freeze": "Restricted SHP directory exists with mode 0700 and is empty; no contracted SHP microdata were accessed or present",
+  "scope": "Secondary empirical reliability anchor only; frozen a*(r) v4 inputs and gate unchanged",
+  "verification_before_code_commit": {
+    "study_pytest": "545 passed",
+    "ruff": "format check and lint passed",
+    "mypy": "69 source files passed",
+    "check_repository": "7 checks passed"
+  },
+  "successor_rule": "Preserve these bytes; changes require a dated linked successor with reason and exposure record"
+}

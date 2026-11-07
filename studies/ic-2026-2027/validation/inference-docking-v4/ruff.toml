@@ -1,0 +1,5 @@
+# Math notation (M, SE, V_nuis, ...) follows the specification's symbols.
+extend = "../../pyproject.toml"
+
+[lint]
+extend-ignore = ["N803", "N806", "N818"]

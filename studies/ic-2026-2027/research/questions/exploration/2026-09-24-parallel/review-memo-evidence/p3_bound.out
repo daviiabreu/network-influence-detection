@@ -1,0 +1,11 @@
+reps=30 secs=1.6
+adaptive=False k=0.0: block-A topic-2 MSE=0.2519
+adaptive=False k=0.4: block-A topic-2 MSE=0.2432
+adaptive=True  k=0.0: block-A topic-2 MSE=0.2519
+adaptive=True  k=0.4: block-A topic-2 MSE=0.2432
+total coupling effect (uniform)  = -0.0087
+total coupling effect (adaptive) = -0.0087
+DiD adaptive-vs-UNIFORM (upper-bound proxy for D) = +0.0000 (sd 0.0000); margin +0.01
+DiD adaptive-vs-UNIFORM (upper-bound proxy for D) = +0.0000 (sd 0.0000); margin +0.01
+per-seed DiD (1e-6): [44.32, 61.72, 12.9, -26.51, -3.2, 35.86, 57.13, -16.72]
+sample MSEs seed0: [0.252985, 0.244217, 0.252939, 0.244216]

@@ -1,0 +1,43 @@
+{
+  "code": {
+    "commit": "c8e4861fdba24700d3ca802e337f81f103d65c57",
+    "lock_sha256": "2af4db0a2fdef85386a6998b5a27017443139a606103c04844050daaa03852d7",
+    "tracked_tree_clean": true
+  },
+  "declaration": {
+    "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65",
+    "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219"
+  },
+  "successors": {
+    "x5": {
+      "declaration": {
+        "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65",
+        "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219"
+      },
+      "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+      "frozen_python_files": 80,
+      "frozen_python_mismatched": [],
+      "successor_sha256": {
+        "src/ic_study/simulation/v4_exploratory.py": "5487e7ebbdbc9d511d9b74115dfb5daa895341240be43a47e645e71ae83a6c0d",
+        "src/ic_study/simulation/v4_exploratory_x1b.py": "6053dba0070af8386e60ea4d3911e20b5cd1f14478fe0984d3e4e5939c92afd8",
+        "src/ic_study/simulation/v4_exploratory_x3x7.py": "1ab380c93d18c6b5b4797990df4da7b6f2cb7a880ec525b8ad7ef987ab097959",
+        "src/ic_study/simulation/v4_exploratory_x5.py": "017a213a2746b36520098f9d78271b17ae16fb7110b168fe5af2d71077c1e71f"
+      }
+    },
+    "x7": {
+      "declaration": {
+        "declaration_sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65",
+        "readme_sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219"
+      },
+      "freeze_sha256": "99c4277235d4f2303b6f009d6ead8287a5d71372744dd6781e1e2d1847710837",
+      "frozen_python_files": 80,
+      "frozen_python_mismatched": [],
+      "successor_sha256": {
+        "src/ic_study/simulation/v4_exploratory.py": "5487e7ebbdbc9d511d9b74115dfb5daa895341240be43a47e645e71ae83a6c0d",
+        "src/ic_study/simulation/v4_exploratory_x1b.py": "6053dba0070af8386e60ea4d3911e20b5cd1f14478fe0984d3e4e5939c92afd8",
+        "src/ic_study/simulation/v4_exploratory_x3x7.py": "1ab380c93d18c6b5b4797990df4da7b6f2cb7a880ec525b8ad7ef987ab097959",
+        "src/ic_study/simulation/v4_exploratory_x7.py": "a63627ba7537887e269865f0fef1ac69f60fe3fc2a01af604a582e046df26ce6"
+      }
+    }
+  }
+}

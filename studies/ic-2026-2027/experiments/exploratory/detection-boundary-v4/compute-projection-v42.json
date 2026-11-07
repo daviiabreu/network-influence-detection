@@ -1,0 +1,725 @@
+{
+  "kind": "v4.2-conditional-projection-not-allocation",
+  "schema_version": 2,
+  "supersedes": "compute-projection-v41.json",
+  "correction": "Use optimized matching evaluations only and budget 96 per attempt; charge both G2c references regenerated with baseline seeds.",
+  "workers": 8,
+  "reserve_fraction": 0.25,
+  "close_utc": "2026-10-19T02:59:00Z",
+  "rows": 3726,
+  "comparison_r_units": 414,
+  "solver_evaluations_assumed": [
+    23.181818181818183,
+    96
+  ],
+  "initial_evaluation_assumption": {
+    "all_planned_initial_mean": 22.416666666666668,
+    "final_validated_initial_mean": 23.181818181818183,
+    "projected_initial_evaluations": 23.181818181818183,
+    "policy": "max(all-planned mean, final-validated mean); budget 96 if no successes"
+  },
+  "all_planned_outcomes": {
+    "before": {
+      "planned": 24,
+      "validated_successes": 19,
+      "failures": 5,
+      "final_statuses": {
+        "budget": 4,
+        "interior": 19,
+        "non-monotone-profile": 1
+      },
+      "attempt_statuses": {
+        "budget": 4,
+        "interior": 19,
+        "non-monotone-profile": 1
+      }
+    },
+    "after": {
+      "planned": 24,
+      "validated_successes": 22,
+      "failures": 2,
+      "final_statuses": {
+        "ill-conditioned": 1,
+        "interior": 22,
+        "non-monotone-profile": 1
+      },
+      "attempt_statuses": {
+        "ill-conditioned": 1,
+        "interior": 22,
+        "non-monotone-profile": 1
+      }
+    }
+  },
+  "paired_success_comparison": {
+    "planned_pairs": 24,
+    "validated_pairs": 18,
+    "excluded_pairs": 6,
+    "before_initial_mean": 39.333333333333336,
+    "after_initial_mean": 23.166666666666668,
+    "before_total_mean": 39.333333333333336,
+    "after_total_mean": 23.166666666666668,
+    "cells": {
+      "a=0.03,r=0.5": {
+        "blocks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "planned_pairs": 4,
+        "validated_pairs": 4,
+        "excluded_pairs": 0,
+        "before_initial_mean": 26.75,
+        "after_initial_mean": 13.75,
+        "before_total_mean": 26.75,
+        "after_total_mean": 13.75
+      },
+      "a=0.03,r=0.9": {
+        "blocks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "planned_pairs": 4,
+        "validated_pairs": 4,
+        "excluded_pairs": 0,
+        "before_initial_mean": 31,
+        "after_initial_mean": 12,
+        "before_total_mean": 31,
+        "after_total_mean": 12
+      },
+      "a=0.3,r=0.5": {
+        "blocks": [
+          0,
+          2,
+          3
+        ],
+        "planned_pairs": 4,
+        "validated_pairs": 3,
+        "excluded_pairs": 1,
+        "before_initial_mean": 49.333333333333336,
+        "after_initial_mean": 24.666666666666668,
+        "before_total_mean": 49.333333333333336,
+        "after_total_mean": 24.666666666666668
+      },
+      "a=0.3,r=0.9": {
+        "blocks": [],
+        "planned_pairs": 4,
+        "validated_pairs": 0,
+        "excluded_pairs": 4,
+        "before_initial_mean": null,
+        "after_initial_mean": null,
+        "before_total_mean": null,
+        "after_total_mean": null
+      },
+      "a=0.6,r=0.7": {
+        "blocks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "planned_pairs": 4,
+        "validated_pairs": 4,
+        "excluded_pairs": 0,
+        "before_initial_mean": 46.25,
+        "after_initial_mean": 34.75,
+        "before_total_mean": 46.25,
+        "after_total_mean": 34.75
+      },
+      "a=0.9,r=0.7": {
+        "blocks": [
+          1,
+          2,
+          3
+        ],
+        "planned_pairs": 4,
+        "validated_pairs": 3,
+        "excluded_pairs": 1,
+        "before_initial_mean": 48,
+        "after_initial_mean": 33.666666666666664,
+        "before_total_mean": 48,
+        "after_total_mean": 33.666666666666664
+      }
+    },
+    "interpretation": "Conditional comparison on paired final validations; gaps remain counted"
+  },
+  "solver_evaluation_budget_per_attempt": 96,
+  "optimized_matching_summary": {
+    "a=0.03,r=0.5": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        15,
+        16,
+        14,
+        10
+      ],
+      "mean_evaluations": 13.75,
+      "min_evaluations": 10,
+      "max_evaluations": 16,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.03,r=0.9": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        8,
+        14,
+        13,
+        13
+      ],
+      "mean_evaluations": 12,
+      "min_evaluations": 8,
+      "max_evaluations": 14,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.3,r=0.5": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        24,
+        15,
+        27,
+        23
+      ],
+      "mean_evaluations": 22.25,
+      "min_evaluations": 15,
+      "max_evaluations": 27,
+      "validation_successes": 3,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 3,
+        "failures": 1,
+        "final_statuses": {
+          "interior": 3,
+          "non-monotone-profile": 1
+        },
+        "attempt_statuses": {
+          "interior": 3,
+          "non-monotone-profile": 1
+        }
+      },
+      "retries": 0
+    },
+    "a=0.3,r=0.9": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        19,
+        21,
+        26,
+        27
+      ],
+      "mean_evaluations": 23.25,
+      "min_evaluations": 19,
+      "max_evaluations": 27,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.6,r=0.7": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        42,
+        35,
+        34,
+        28
+      ],
+      "mean_evaluations": 34.75,
+      "min_evaluations": 28,
+      "max_evaluations": 42,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.9,r=0.7": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        13,
+        32,
+        36,
+        33
+      ],
+      "mean_evaluations": 28.5,
+      "min_evaluations": 13,
+      "max_evaluations": 36,
+      "validation_successes": 3,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 3,
+        "failures": 1,
+        "final_statuses": {
+          "ill-conditioned": 1,
+          "interior": 3
+        },
+        "attempt_statuses": {
+          "ill-conditioned": 1,
+          "interior": 3
+        }
+      },
+      "retries": 0
+    }
+  },
+  "before_matching_summary": {
+    "a=0.03,r=0.5": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        29,
+        26,
+        27,
+        25
+      ],
+      "mean_evaluations": 26.75,
+      "min_evaluations": 25,
+      "max_evaluations": 29,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.03,r=0.9": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        30,
+        30,
+        32,
+        32
+      ],
+      "mean_evaluations": 31,
+      "min_evaluations": 30,
+      "max_evaluations": 32,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.3,r=0.5": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        52,
+        8,
+        52,
+        44
+      ],
+      "mean_evaluations": 39,
+      "min_evaluations": 8,
+      "max_evaluations": 52,
+      "validation_successes": 3,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 3,
+        "failures": 1,
+        "final_statuses": {
+          "interior": 3,
+          "non-monotone-profile": 1
+        },
+        "attempt_statuses": {
+          "interior": 3,
+          "non-monotone-profile": 1
+        }
+      },
+      "retries": 0
+    },
+    "a=0.3,r=0.9": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "mean_evaluations": 64,
+      "min_evaluations": 64,
+      "max_evaluations": 64,
+      "validation_successes": 0,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 0,
+        "failures": 4,
+        "final_statuses": {
+          "budget": 4
+        },
+        "attempt_statuses": {
+          "budget": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.6,r=0.7": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        46,
+        48,
+        45,
+        46
+      ],
+      "mean_evaluations": 46.25,
+      "min_evaluations": 45,
+      "max_evaluations": 48,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    },
+    "a=0.9,r=0.7": {
+      "blocks": 4,
+      "first_attempt_evaluations": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "mean_evaluations": 48,
+      "min_evaluations": 48,
+      "max_evaluations": 48,
+      "validation_successes": 4,
+      "outcome_accounting": {
+        "planned": 4,
+        "validated_successes": 4,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 4
+        },
+        "attempt_statuses": {
+          "interior": 4
+        }
+      },
+      "retries": 0
+    }
+  },
+  "historical_matching_summary": {
+    "a=0.003,r=0.7": {
+      "blocks": 8,
+      "first_attempt_evaluations": [
+        25,
+        27,
+        20,
+        20,
+        30,
+        20,
+        20,
+        27
+      ],
+      "mean_evaluations": 23.625,
+      "min_evaluations": 20,
+      "max_evaluations": 30,
+      "validation_successes": 8,
+      "outcome_accounting": {
+        "planned": 8,
+        "validated_successes": 8,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 8
+        },
+        "attempt_statuses": {
+          "interior": 8
+        }
+      },
+      "retries": 0
+    },
+    "a=0.03,r=0.7": {
+      "blocks": 8,
+      "first_attempt_evaluations": [
+        30,
+        30,
+        30,
+        35,
+        30,
+        30,
+        30,
+        30
+      ],
+      "mean_evaluations": 30.625,
+      "min_evaluations": 30,
+      "max_evaluations": 35,
+      "validation_successes": 8,
+      "outcome_accounting": {
+        "planned": 8,
+        "validated_successes": 8,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 8
+        },
+        "attempt_statuses": {
+          "interior": 8
+        }
+      },
+      "retries": 0
+    },
+    "a=0.3,r=0.7": {
+      "blocks": 8,
+      "first_attempt_evaluations": [
+        49,
+        57,
+        57,
+        60,
+        60,
+        59,
+        63,
+        57
+      ],
+      "mean_evaluations": 57.75,
+      "min_evaluations": 49,
+      "max_evaluations": 63,
+      "validation_successes": 8,
+      "outcome_accounting": {
+        "planned": 8,
+        "validated_successes": 8,
+        "failures": 0,
+        "final_statuses": {
+          "interior": 8
+        },
+        "attempt_statuses": {
+          "interior": 8
+        }
+      },
+      "retries": 0
+    }
+  },
+  "panel_timing_source": "panel-cost-v41.json",
+  "evaluation_count_source": "cost-fits-v42-after.json",
+  "matching_panel_accounting": {
+    "measured_uncached_null_overhead_per_attempt": 3,
+    "projected_cached_null_overhead_per_attempt": "fit_dimensions",
+    "solver_finite_difference_evaluations": "included in measured evaluations",
+    "cached_final_fit_baseline": "already counted among solver evaluations"
+  },
+  "empirical_retry_fraction": 0.0,
+  "retry_evaluations_source": "unobserved: conservative budget 96",
+  "cpu_seconds_per_panel": {
+    "A:observed:lags:social": 0.02066790625,
+    "A:observed:lags:null": 0.0148514375,
+    "A:observed:mobility:social": 0.022445671875,
+    "A:observed:mobility:null": 0.017738453125,
+    "A:latent:lags:social": 0.01449321875,
+    "A:latent:lags:null": 0.010304703125000002,
+    "A:latent:mobility:social": 0.019356078124999995,
+    "A:latent:mobility:null": 0.014524421874999999,
+    "A:ordinal_one:lags:social": 0.018965171875,
+    "A:ordinal_one:lags:null": 0.014530953125000003,
+    "A:ordinal_one:mobility:social": 0.022705046874999992,
+    "A:ordinal_one:mobility:null": 0.017476859375,
+    "A:latent_rank:lags:social": 0.019474468749999998,
+    "A:latent_rank:lags:null": 0.014219000000000006,
+    "B:observed:lags:social": 0.019399890625,
+    "B:observed:lags:null": 0.021594656250000004,
+    "B:observed:mobility:social": 0.022621484375000007,
+    "B:observed:mobility:null": 0.024890796875000003,
+    "B:latent:lags:social": 0.014665250000000005,
+    "B:latent:lags:null": 0.01693690625,
+    "B:latent:mobility:social": 0.019410593749999996,
+    "B:latent:mobility:null": 0.02200773437499999,
+    "B:ordinal_one:lags:social": 0.018662640625000004,
+    "B:ordinal_one:lags:null": 0.020831515624999998,
+    "B:ordinal_one:mobility:social": 0.0219998125,
+    "B:ordinal_one:mobility:null": 0.02467540625000001,
+    "B:latent_rank:lags:social": 0.020337640625000007,
+    "B:latent_rank:lags:null": 0.02243400000000001,
+    "C:observed:lags:social": 0.020312812500000013,
+    "C:observed:lags:null": 0.017318953124999995,
+    "C:observed:mobility:social": 0.02437603125,
+    "C:observed:mobility:null": 0.0211159375,
+    "C:latent:lags:social": 0.015364265625000012,
+    "C:latent:lags:null": 0.010594593749999992,
+    "C:latent:mobility:social": 0.020245093750000012,
+    "C:latent:mobility:null": 0.015075109375000006,
+    "C:ordinal_one:lags:social": 0.020142046875000014,
+    "C:ordinal_one:lags:null": 0.015070671874999997,
+    "C:ordinal_one:mobility:social": 0.022446796875000008,
+    "C:ordinal_one:mobility:null": 0.017971234374999992,
+    "C:latent_rank:lags:social": 0.019432468750000015,
+    "C:latent_rank:lags:null": 0.014757156249999986,
+    "D:observed:lags:social": 0.021106046874999965,
+    "D:observed:lags:null": 0.01644359375,
+    "D:observed:mobility:social": 0.02364343749999999,
+    "D:observed:mobility:null": 0.01879470312500002,
+    "D:latent:lags:social": 0.015134515624999983,
+    "D:latent:lags:null": 0.011064843749999997,
+    "D:latent:mobility:social": 0.021106343750000006,
+    "D:latent:mobility:null": 0.016052453125000005,
+    "D:ordinal_one:lags:social": 0.0205915,
+    "D:ordinal_one:lags:null": 0.015217781249999979,
+    "D:ordinal_one:mobility:social": 0.02263195312500002,
+    "D:ordinal_one:mobility:null": 0.018094140625000005,
+    "D:latent_rank:lags:social": 0.019638874999999945,
+    "D:latent_rank:lags:null": 0.015714656249999986,
+    "E:observed:lags:social": 0.02105475000000001,
+    "E:observed:lags:null": 0.02268990625000003,
+    "E:observed:mobility:social": 0.02308639062500001,
+    "E:observed:mobility:null": 0.025233453124999944,
+    "E:latent:lags:social": 0.01543485937499997,
+    "E:latent:lags:null": 0.017311921875000025,
+    "E:latent:mobility:social": 0.019361906250000005,
+    "E:latent:mobility:null": 0.021865249999999975,
+    "E:ordinal_one:lags:social": 0.019157499999999994,
+    "E:ordinal_one:lags:null": 0.02147192187499994,
+    "E:ordinal_one:mobility:social": 0.022126124999999996,
+    "E:ordinal_one:mobility:null": 0.02426614062499996,
+    "E:latent_rank:lags:social": 0.019624578125000014,
+    "E:latent_rank:lags:null": 0.021696406249999994,
+    "anchor-social": 0.015127624999999978,
+    "c050": 0.02031345312499999,
+    "delta020": 0.021536046874999992,
+    "omega100": 0.01964748437499997,
+    "steps24-social": 0.27596140625,
+    "steps24-null": 0.182920234375
+  },
+  "scenarios": {
+    "measured": {
+      "retry_fraction_assumed": 0.0,
+      "gate_hours": {
+        "G0": 15.052757643750004,
+        "G1b": 3.4071180555555554,
+        "G1c": 1.7706383789062485,
+        "G2": 49.61703077168168,
+        "G2c": 5.601991742540642,
+        "score_bootstrap": 0.06450810185185187
+      },
+      "gate_total_hours": 75.51404469428599,
+      "tier_hours": {
+        "1": 3.4909354289683896,
+        "2": 12.490483766477308,
+        "3": 93.20134262806526,
+        "4": 17.92883707745908,
+        "5": 18.602915480761887,
+        "6": 34.52617715167793,
+        "score_bootstrap": 0.282109375
+      },
+      "tiers_1_5_hours": 145.71451438173193,
+      "total_hours": 256.03684560269585
+    },
+    "0.25": {
+      "retry_fraction_assumed": 0.25,
+      "gate_hours": {
+        "G0": 64.45201015312503,
+        "G1b": 3.4071180555555554,
+        "G1c": 1.7706383789062485,
+        "G2": 117.70573400084834,
+        "G2c": 19.209842127957316,
+        "score_bootstrap": 0.06450810185185187
+      },
+      "gate_total_hours": 206.60985081824435,
+      "tier_hours": {
+        "1": 10.390690553968405,
+        "2": 35.94923097585213,
+        "3": 269.8377087843125,
+        "4": 52.478880452458746,
+        "5": 56.55810514326196,
+        "6": 93.5072497766778,
+        "score_bootstrap": 0.282109375
+      },
+      "tiers_1_5_hours": 425.21461590985376,
+      "total_hours": 725.6138258797758
+    },
+    "1.0": {
+      "retry_fraction_assumed": 1.0,
+      "gate_hours": {
+        "G0": 212.64976768125007,
+        "G1b": 3.4071180555555554,
+        "G1c": 1.7706383789062485,
+        "G2": 321.97184368834843,
+        "G2c": 60.03339328420732,
+        "score_bootstrap": 0.06450810185185187
+      },
+      "gate_total_hours": 599.8972691901195,
+      "tier_hours": {
+        "1": 31.089955928968443,
+        "2": 106.32547260397756,
+        "3": 799.746807253065,
+        "4": 156.12901057745998,
+        "5": 170.42367413076252,
+        "6": 270.4504676516776,
+        "score_bootstrap": 0.282109375
+      },
+      "tiers_1_5_hours": 1263.7149204942334,
+      "total_hours": 2134.3447667110304
+    }
+  },
+  "inputs": {
+    "panel-cost-v41.json": "59f3ac85014770f2a757182899967992c1d12b497da5d5b2cb0771901eaee64a",
+    "cost-fits-v42-after.json": "1d06764d7c14e741c7be781a59c7eeef6fcdf1b01cd3f2a226ed6953e33e6cdb",
+    "inventory.json": "80bbe39367fcecd8b769830c5fa3424e1302f335619e4f31cafc7c0fc392de16",
+    "cost-fits-v42-before.json": "e8d151c52a67c16b0e7ca1a7bfb6dd6efe8d31bc9f33d97806875abe382c5a9a",
+    "cost-fits-v41.json": "be841226f0d8db3776f5743a7ad06acdd4513b83035ec45549bd18d3da254d5b"
+  },
+  "script_sha256": "092c30a264182e68fb1e285b9856b3139e16811681da9d1b347fe1275cba4265",
+  "limitations": [
+    "Projected successful work uses the larger initial-evaluation mean across all planned fits and final-validated fits; no successful fits implies budget 96. Early gaps cannot discount successful work.",
+    "24 optimized B fits, 4 blocks at each of six declared cells, proxy unmeasured strengths, families and channels; zero retries does not imply zero study retry probability. Old evaluations are not pooled.",
+    "Historical panel CPU rates remain separate from optimized evaluations. 8 dedicated workers, CPU/8 and 25% reserve; measured worker/coordinator wall times remain separate.",
+    "Sealed panel checkpoints reuse fit baselines and the .01 matching stencil, verified by checkpoint tests; no sharing between distinct channel units.",
+    "G2-only covariance stencils cost 24000 null panels per pipeline; confirmatory D5 has matching mean stencils only.",
+    "D5 resampling/LDA and I/O/hashes/scheduling are not measured here; reserve is an assumption, not demonstrated overhead.",
+    "Score bootstrap uses historical 15.70 seconds per nine slots; sensitivities use measured main null proxies.",
+    "No tiers removed. Coordinator provisions same-code shards with numerical equivalence if needed; incomplete work follows D9."
+  ]
+}

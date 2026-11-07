@@ -1,0 +1,38 @@
+{
+ "latent": {
+  "social_a0.0": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  },
+  "social_a0.03": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  },
+  "social_a0.3": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  },
+  "A": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  },
+  "B": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  },
+  "D": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  },
+  "E": {
+   "max_abs_diff": 0.0,
+   "bitwise_equal": 20
+  }
+ },
+ "lag_feature_max_abs_diff": {
+  "social_r0.7_a0.3": 4.440892098500626e-16,
+  "B_r0.7_phi0.8_eta0.3": 6.106226635438361e-16,
+  "C_r0.7_phi0.85": 6.661338147750939e-16
+ },
+ "seeds_per_case": 20
+}

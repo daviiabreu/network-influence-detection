@@ -1,0 +1,51 @@
+{
+  "baseline": "f5743882",
+  "rules": 267,
+  "rules_and_predicates_unchanged": true,
+  "shells": {
+    "results": {
+      "uses": 109,
+      "edited_lines": 58,
+      "accepted_rules": 49,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "e3b69fee6f5395b69988ab18847d4b137e572c63198dd0383dbea4d5fe991676",
+      "after_sha256": "1adddd1ef755226ec30136f751034bf2ddf5a7bc8a7de4bdc75e879b7f84a16e"
+    },
+    "abstract": {
+      "uses": 16,
+      "edited_lines": 13,
+      "accepted_rules": 13,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "f7726b5f025a8bf209d4d88c13b1e1dbc4f963764a305cf0d4a47368ab07f5fb",
+      "after_sha256": "e298e27f79a0f6b4f51515233c64dfb7886747fd745a321be4840147f8b54b52"
+    },
+    "discussion": {
+      "uses": 120,
+      "edited_lines": 53,
+      "accepted_rules": 48,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "9d5227ce85bff9e40a860c65e4e88f591c3524a9ef3ca7f467237df280c7eb3c",
+      "after_sha256": "ad9b8fecdfcee34f336d5de00e79f44acf0b55386136261d68c46121b77853e9"
+    },
+    "exploratory": {
+      "uses": 94,
+      "edited_lines": 50,
+      "accepted_rules": 45,
+      "bindings_unchanged": true,
+      "comments_and_controls_unchanged": true,
+      "before_sha256": "966e29eca52b178d95b9edb3894e7bd29a4469b7225b4cdd4eaee7d75d23a062",
+      "after_sha256": "1f48cadaf1cedf280782ee1539d65efe17f79a9b209f3fd815f9907b9fa9cd6f"
+    }
+  },
+  "main_only_plural_default_definition_added": true,
+  "base_abstract_unchanged": true,
+  "current_oracle_abstracts_unchanged": true,
+  "fixed_sections_unchanged": true,
+  "frozen_overlap": [],
+  "all_changes_within_authorized_scope": true,
+  "repin_receipt": "t41e-shell-repin-receipt-verified.json",
+  "rules_sha256": "ff0fc519976819d66840491ce67809363c6c8cbb8215913cf3c232135db331a9"
+}

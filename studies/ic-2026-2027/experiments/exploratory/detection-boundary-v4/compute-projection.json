@@ -1,0 +1,121 @@
+{
+  "kind": "conditional-compute-projection-not-allocation",
+  "workers": 8,
+  "reserve_fraction": 0.25,
+  "close_utc": "2026-10-19T02:59:00Z",
+  "rows": 3726,
+  "comparison_r_units": 414,
+  "cpu_seconds_per_panel": {
+    "anchor-social": 0.01631840625,
+    "main-social": 0.019763062499999998,
+    "main-null-A": 0.015304031249999999,
+    "main-null-B": 0.021820484374999997,
+    "main-null-C": 0.016537312499999998,
+    "main-null-D": 0.015306796875,
+    "main-null-E": 0.022044031250000002,
+    "control-social": 0.0476685625,
+    "control-null": 0.049386484375,
+    "mobility-social": 0.047394703125,
+    "mobility-null": 0.049409812500000004,
+    "c050": 0.01903892187500001,
+    "delta020": 0.020256578125,
+    "omega100": 0.01927903125000001,
+    "steps24-social": 0.261846125,
+    "steps24-null": 0.17666199999999999
+  },
+  "solver_evaluations_assumed": [
+    32,
+    39
+  ],
+  "scenarios": {
+    "0": {
+      "retry_fraction_assumed": 0,
+      "gate_hours": {
+        "G0": 33.51567920624999,
+        "G1b": 3.4071180555555554,
+        "G1c": 2.2893327148437503,
+        "G2": 58.77329468858507,
+        "G2c": 6.958074743641493,
+        "score_bootstrap_G1c_G2_G2c": 0.06450810185185187
+      },
+      "gate_total_hours": 105.00800751072771,
+      "tier_hours": {
+        "1": 5.252999710058597,
+        "2": 17.092891025488168,
+        "3": 354.62806267968443,
+        "4": 26.264998550293093,
+        "5": 28.06462227373066,
+        "6": 47.90461077421868,
+        "score_bootstrap": 0.282109375
+      },
+      "tiers_1_5_hours": 431.30357423925494,
+      "tiers_total_hours": 479.4902943884736,
+      "total_hours": 584.4983018992014
+    },
+    "0.25": {
+      "retry_fraction_assumed": 0.25,
+      "gate_hours": {
+        "G0": 66.91632920625,
+        "G1b": 3.4071180555555554,
+        "G1c": 2.2893327148437503,
+        "G2": 89.5333852094184,
+        "G2c": 12.991411568641494,
+        "score_bootstrap_G1c_G2_G2c": 0.06450810185185187
+      },
+      "gate_total_hours": 175.20208485656104,
+      "tier_hours": {
+        "1": 8.312156410058586,
+        "2": 27.080627675488422,
+        "3": 566.0987298421846,
+        "4": 41.56078205029284,
+        "5": 44.87896122373033,
+        "6": 73.32379877421864,
+        "score_bootstrap": 0.282109375
+      },
+      "tiers_1_5_hours": 687.9312572017549,
+      "tiers_total_hours": 761.5371653509735,
+      "total_hours": 936.7392502075345
+    },
+    "1": {
+      "retry_fraction_assumed": 1,
+      "gate_hours": {
+        "G0": 167.11827920624998,
+        "G1b": 3.4071180555555554,
+        "G1c": 2.2893327148437503,
+        "G2": 181.81365677191837,
+        "G2c": 31.091422043641494,
+        "score_bootstrap_G1c_G2_G2c": 0.06450810185185187
+      },
+      "gate_total_hours": 385.784316894061,
+      "tier_hours": {
+        "1": 17.489626510058613,
+        "2": 57.04383762548831,
+        "3": 1200.5107313296974,
+        "4": 87.44813255029348,
+        "5": 95.32197807373102,
+        "6": 149.58136277421877,
+        "score_bootstrap": 0.282109375
+      },
+      "tiers_1_5_hours": 1457.8143060892687,
+      "tiers_total_hours": 1607.6777782384875,
+      "total_hours": 1993.4620951325485
+    }
+  },
+  "limitations": [
+    "One B cell measured for solver; evaluation counts are proxies for other cells/families.",
+    "CPU time divided by eight assumes dedicated workers; wall contention is not multiplied a second time.",
+    "Controls use the observed PipelineResult already computed in tiers 1/2; no panel sharing discount between channels.",
+    "Mobility is fully charged as separate feature pipelines; hypothetical panel reuse is not a saving.",
+    "D5 resampling/LDA, I/O, hashing and scheduling remain within the 25% reserve only if measured overhead fits.",
+    "Score bootstrap uses the frozen 15.70-second nine-slot measurement, not a new benchmark.",
+    "Retries in matching use 4096; G2 uses both FD steps. Diagnostic stencils are additional in G0/G2c.",
+    "The single retry observation does not estimate a population retry frequency.",
+    "Full inventory may exceed the time window; incomplete units follow D9, without outcome-driven reordering."
+  ],
+  "inputs": {
+    "panel-cost-final-code.json": "fa1d7863f0684f0fef44ac336fd68725f99f30cee1e6b281e524ba1bed4a82c0",
+    "cost-measurements-with-retry.json": "06bff9a653e302f5f183360a7407ff08bd6c8478ab4b93cdc764522a60c0e041",
+    "inventory.json": "80bbe39367fcecd8b769830c5fa3424e1302f335619e4f31cafc7c0fc392de16"
+  },
+  "script_sha256": "6a527d60ae6770036a4be15d044c63dda1f5f78e130e44d912e8ae7f4f2e63bf"
+}

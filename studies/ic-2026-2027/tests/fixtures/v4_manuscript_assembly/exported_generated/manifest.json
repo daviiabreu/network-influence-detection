@@ -1,0 +1,32 @@
+{
+  "case": "release-day/passed-shp",
+  "files": {
+    "exploratory-boundary-comparisons.tex": "d2c5c9f6d456f92cc52283738e0322c11fc8aaca1d8b977ae6ad3dfe70339c49",
+    "exploratory-comparison-states.tex": "705ed3678316027b05b32dcb9b0d42849c9c47edee25da500e96bcf7c12cf8ed",
+    "exploratory-comparisons.tex": "095b8baea96cae2a716304f1bafff553962682fa4afcce1adc6a97ae20fe1a11",
+    "exploratory-selected-comparisons.tex": "f72e3995b25292f3f3fd36cf8f7ff0f6a1a151c7bb77908e369418a3d516dda9",
+    "exploratory-status.tex": "c1bf90fe083c0ac0800d914d0effee8d36063195804ed4845f34640d9c6d88ae",
+    "exploratory-stress-comparisons.tex": "5bbcc0db606f196aa7aaec98e459dae1989e3a5edc2b08f2d01ecc0818ba2a29",
+    "exploratory-x1b-boundaries.tex": "140a01797c3d1982aad12d231e225a86804eb6a83f8c376d584d36e3304fbee8",
+    "exploratory-x3-attempts.tex": "f205b85e31e0a382054d22c214fcac2fea04f50c2f7ecd9936debe6024e12500",
+    "exploratory-x3.tex": "b64e3d90511869df8d19cd47d536600c8b0b7622fb275610badc76fd29711bcc",
+    "exploratory-x4-calibration.tex": "0063c43a358315ce3b747468420cbd59a24873457b9fe3fc1ae83928559830f3",
+    "exploratory-x4-failures.tex": "7a6d87b685a5ecbee1320fedc8765f409978dc6cee6294454c7e76f9d7ad9094",
+    "exploratory-x4-normal.tex": "78018c794e6765f2da6d71f207f66670e8b3f172c09d909299692528ac5e1383",
+    "exploratory-x4-paired.tex": "79ec02631707e43a247a3e3b13367ffaca06c9df717d34feb7c19317ec5e634b",
+    "exploratory-x4a.tex": "55ddcd70af01719725135e7e71bff6fef2ac67b54d2ca4a4bbd82204bacc17d9",
+    "exploratory-x4b.tex": "ce058b8ff8f8917f22aa6c5bcab9f9292aa38981ee7704e1db3cc33677f3ca31",
+    "exploratory-x6-denominators.tex": "aa28099c4ea008f906926204d6acdd980593c0162eb4e65045b9c5191945a398",
+    "exploratory-x6-diagnostics.tex": "d944e09ae0644815b9123ee2af00837a6c54b40623e8a3d643938665813ce8fd",
+    "exploratory-x6-inventory.tex": "0972cfbcfded11280aadb75e1e8af3fc2c3167f771758452baed3ac2ead2b496",
+    "exploratory-x6-precision.tex": "0a44c9110670eb479988a6d8d2c9a9420c66c8688d389c6c362e79bb627f0125",
+    "exploratory-x6-truth.tex": "a579815fb376914d38428fac99a02cb662fb66708c4dd8334aae51cf7698b460",
+    "exploratory-x6.tex": "914916b42766f07fb2ec32c12f351cc755da242c10938e26c205652877f0c5c4",
+    "exploratory-x7-boundaries.tex": "1bc0cbc264d978b901adafa5d3507f7d7fce06f25a428ff5a1f3470e98307206",
+    "exploratory-x7-deltas.tex": "6085cfd3b081deca8a63e6e483db11e7af9791bce245a3a8a38d0971ea6485d2",
+    "exploratory-x7.tex": "8065ac901b5f17d9800b8ccac111868f96b9a1ec20cd81b950b7966c53b7091e"
+  },
+  "origin": "/private/tmp/v4-shell-assembly-audit-3qtbu4lb/release-day/passed-shp/generated",
+  "purpose": "Structural admissibility fixture; the 24-case audit binds each case to its own exported values and files.",
+  "synthetic": true
+}

@@ -1,0 +1,178 @@
+% Springer Nature sn-jnl class and bibliography style are not
+% redistributed here; obtain the current official package before compiling:
+% https://www.springernature.com/gp/authors/campaigns/latex-author-support
+% Stage the private source package with experiments/package_jcss_submission.py
+% to retain title macros in the local bibliography style fallback.
+% JCSS recommends the iicol option. This file requires sn-jnl.cls and sn-mathphys-num.bst.
+\documentclass[pdflatex,sn-mathphys-num,iicol]{sn-jnl}
+\usepackage{amsmath,amssymb,xcolor}
+\usepackage{graphicx}
+\usepackage{url}
+\maxdeadcycles=1000
+\newcommand{\bjtitle}[1]{\textit{#1}}
+\newcommand{\bbtitle}[1]{\textit{#1}}
+\newcommand{\burl}[1]{\url{#1}}
+% Every number of sections/results.tex and generated/*.tex is bound to the result
+% values JSON of the v4 report export; see pipeline/README.md.
+\newcommand{\resultnum}[2]{#2}
+\newcommand{\resultplural}[3]{#3}
+% The all-units table T1s of the v4 report, written by the export as a CSV.
+\newcommand{\allunitsresource}{Online Resource~1}
+% Breakable identifiers for code, test and file names in the ODD appendix.
+\DeclareUrlCommand\code{\urlstyle{tt}\def\UrlBreaks{\do\_\do\.\do\:\do\/\do\-\do\|\do\,}}
+
+\begin{document}
+
+% Final title, chosen on 2026-10-01 under the Owner's delegation (decision log
+% item 161); it replaces the working question title of 2026-09-28.
+\title[Detection boundaries in opinion panels]{Detection boundaries for nominal partner drift against matched persistence in synthetic opinion panels}
+
+\author*[1]{\fnm{Davi} \sur{Abreu da Silveira}}\email{daviabreudasilveira@gmail.com}
+
+\author[1]{\fnm{Henrique Mohallem} \sur{Paiva}}\email{henrique@inteli.edu.br}
+
+\affil*[1]{\orgname{Inteli -- Instituto de Tecnologia e Liderança}, \orgaddress{\city{São Paulo}, \state{SP}, \country{Brazil}}}
+
+% Draft abstract: replace bracketed fields only after validated analysis, and
+% keep the final text within the JCSS limit of 250 visible words. The design
+% baseline matches pipeline/drafts/2026-09-28/results-shells-abstract.md;
+% decisions 91 and 101 govern assembly and optional-clause order.
+% AB01, AB02, AB04, AB05 and AB07--AB09 trace the fixed prose in claim-evidence.md.
+\abstract{When exposure is unobserved, opinion panels can show patterns consistent with partner drift or persistence. We map the nominal partner-drift strength $a$ that a fixed lag-based discriminator needs to separate synthetic panels from matched no-network persistence. Eleven-wave panels approximate the Swiss Household Panel's observation pattern. Both processes share a known response signal share $r$, and persistence is matched to drift on short-lag population correlations. The detection boundary $a^*(r)$ is the first grid strength at which the expected panel-level area under the receiver operating characteristic curve (AUC), given a validated fit, reaches 0.70 against trait-plus-autoregressive persistence. Small and large denote interval-based regions divided at 0.03. [Insert the validated gate outcome and the full inventory counts of completed valid units.] [Insert the applicable boundary sentence, common signal-share list when required, frozen reading, first/sustained difference and mandatory X6 consequence.] After partial calibration exposure and protocol amendment, evaluation will use new seeds. Separation is conditional on the declared laws, response channel and discriminator and does not identify causal social influence.}
+
+\keywords{Opinion dynamics, Social influence, Panel data, Measurement error, Model discrimination, Agent-based model}
+
+\maketitle
+
+% Framing from the frozen design and focused review.
+\section{Introduction}
+\input{sections/introduction}
+
+% Model-family background.
+\section{Theoretical background}
+\input{sections/background}
+
+\section{Closest related work}\label{sec:related}
+\input{sections/related-work}
+
+% Amended protocol draft; no v4 confirmatory result is asserted.
+\section{Materials and methods}
+\input{sections/methods}
+
+% Verification of the frozen v4 implementation; no gate outcome is asserted.
+\input{sections/verification}
+\input{sections/ai-use}
+
+\section{Results}
+\input{sections/results}
+
+% Evidence: comparison of findings with accepted literature and alternatives.
+% Study artifact: validated analyses and accepted synthesis.
+\section{Discussion}
+\input{sections/discussion}
+
+% Evidence: warranted answer, demonstrated contribution and limitations.
+% Study artifact: selected question, validated analyses and discussion.
+\section{Conclusion}
+\input{sections/conclusion}
+
+% Evidence: actual contributions, support and any required disclosure.
+% Study artifact: authorship, funding and contribution records for the final paper.
+\section*{Acknowledgements}
+We thank Inteli for access to the laboratory computers used for the exploratory analyses. This study has been realized using the data collected by the Swiss Household Panel (SHP), which is based at the Swiss Centre of Expertise in the Social Sciences FORS. The project is financed by the Swiss National Science Foundation.
+
+% Evidence: work-specific data/code access, funding, interests and ethics applicability.
+% Study artifact: final data/code manifests and author declarations.
+\section*{Statements and Declarations}
+% Integrated 2026-09-28 from pipeline/drafts/2026-09-28/availability-v4.tex.
+% Markers % AVxx refer to rows in claim-evidence.md, section "Code and data
+% availability (integrated 2026-09-28)". No public release location, archive DOI
+% or gate outcome is asserted.
+\noindent\textbf{Data and code availability.}
+The simulation uses no survey microdata: every panel is synthetic. % AV01
+The secondary Swiss Household Panel reliability anchor (Appendix~\ref{app:odd}) was computed locally, on the first author's computer, from SHP microdata (\emph{Living in Switzerland}, version 12.0 \cite{shpgroup2026data}) obtained under the SHP data-use contract, which does not allow redistribution; only aggregate estimates, standard errors, fit statistics and counts left that restricted environment, and no microdata are included in the repository or in any release. % AV01
+Readers can request SHP data through the public FORS data page (\url{https://forscenter.ch/projects/swiss-household-panel/data/}), which links to SWISSUbase: select the appropriate wave of \emph{Living in Switzerland} under \emph{Datasets}, choose \emph{Start download}, sign in with a SWITCH edu-ID (or create one), and accept the usage contract through SWISSUbase before downloading. % AV01
+The simulation and analysis code, the frozen protocol files and the freeze record \texttt{freeze-v4.json} are those of Git revision \texttt{37513841} of the project repository; the two docking reports and the host-equivalence record are in later revisions of the same repository. % AV02
+The confirmatory code is that frozen tree; report, figure and anchor modules and their tests were added after the freeze, lie outside its code closure and are to be released separately from it. % AV10
+Public release location, archived revision and run and figure manifests: [to be filled from the validated final package]. % AV03
+The freeze record binds the interpreter build (Python 3.12.13), NumPy 2.5.3, the hash of the locked dependency file, single-threaded BLAS and the platform string of a macOS 27.0 arm64 machine, and the preflight refuses to run in any environment that differs from this record. % AV04
+The recorded Linux checks failed their declared criteria; their numerical diagnostics and reproduction limits are in \hyperref[supp:verification-details]{Supplementary Material: implementation verification}. % AV06 AV08
+Bitwise reproduction is claimed only for the frozen tree in the bound environment. % AV05
+
+% Submission-time attestations: the last sentence of Author contributions is true
+% only after every author has approved the final PDF (decision log item 161).
+\noindent\textbf{Other declarations.}
+
+\noindent\emph{Funding.} No funding was received for conducting this study.
+
+\noindent\emph{Competing interests.} The authors have no relevant financial or non-financial interests to disclose.
+
+\noindent\emph{Ethics approval and consent.} Not applicable: the study analyses simulated data, its exploratory reliability anchor uses anonymized Swiss Household Panel microdata obtained under the SHP data-use contract, and no data were collected from people for this study.
+
+\noindent\emph{Author contributions.} D.A.S.: conceptualization, methodology, software, formal analysis, investigation, visualization, project administration and writing (original draft, review and editing), with the AI assistance described in the Methods section. H.M.P.: supervision, resources and writing (review and editing). All authors read and approved the final manuscript.
+
+% Evidence: frozen v4 specification and code at 37513841; no result is asserted.
+\begin{appendices}
+\section{ODD+D model description}\label{app:odd}
+\input{sections/appendix-odd}
+\end{appendices}
+
+% Evidence: only cited papers with verified bibliographic records.
+% Study artifact: references.bib and claim-evidence.md, revised after synthesis.
+\phantomsection\addcontentsline{toc}{section}{References}
+\bibliography{references}
+
+\clearpage
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\ifdefined\theHtable
+  \renewcommand{\theHtable}{supp.\arabic{table}}
+\fi
+\ifdefined\theHfigure
+  \renewcommand{\theHfigure}{supp.\arabic{figure}}
+\fi
+
+\newif\ifsupplementcontent
+\newread\supplementstream
+\newcommand{\checksupplementcontent}[1]{%
+  \begingroup
+  \endlinechar=-1
+  \openin\supplementstream=#1.tex
+  \loop\unless\ifeof\supplementstream
+    \read\supplementstream to \supplementline
+    \unless\ifeof\supplementstream
+      \ifx\supplementline\empty\else
+        \global\supplementcontenttrue
+      \fi
+    \fi
+  \repeat
+  \closein\supplementstream
+  \endgroup
+}
+\checksupplementcontent{sections/supplement}
+\checksupplementcontent{sections/supplement-exploratory-x1-x2}
+\checksupplementcontent{generated/exploratory-x1b-boundaries}
+\checksupplementcontent{generated/exploratory-x7-boundaries}
+\checksupplementcontent{generated/supplement-auc-profiles}
+\checksupplementcontent{generated/supplement-family-offsets}
+\checksupplementcontent{generated/supplement-secondary-targets}
+\checksupplementcontent{generated/supplement-low-strength-cells}
+\checksupplementcontent{generated/supplement-gap-domain}
+\ifsupplementcontent
+  \section*{Supplementary Material}
+  \phantomsection\addcontentsline{toc}{section}{Supplementary Material}
+\fi
+\input{sections/supplement}
+\input{sections/supplement-exploratory-x1-x2}
+\input{generated/exploratory-x1b-boundaries}
+\input{generated/exploratory-x7-boundaries}
+\input{generated/supplement-auc-profiles}
+\input{generated/supplement-family-offsets}
+\input{generated/supplement-secondary-targets}
+\input{generated/supplement-low-strength-cells}
+\input{generated/supplement-gap-domain}
+\clearpage
+
+\end{document}

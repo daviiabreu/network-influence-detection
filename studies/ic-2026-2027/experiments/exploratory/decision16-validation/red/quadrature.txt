@@ -1,0 +1,12 @@
+........F                                                                [100%]
+=================================== FAILURES ===================================
+_ test_fixed_score_cluster_bootstrap_adds_nuisance_variance_without_dividing_by_refits _
+
+    def test_fixed_score_cluster_bootstrap_adds_nuisance_variance_without_dividing_by_refits() -> None:
+>       from ic_study.analysis.detection_boundary import fixed_score_uncertainty
+E       ImportError: cannot import name 'fixed_score_uncertainty' from 'ic_study.analysis.detection_boundary' (/Users/davi/.local/state/research-workbench/ic-question-consolidation/studies/ic-2026-2027/src/ic_study/analysis/detection_boundary.py)
+
+tests/unit/test_detection_boundary.py:115: ImportError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_boundary.py::test_fixed_score_cluster_bootstrap_adds_nuisance_variance_without_dividing_by_refits
+1 failed, 8 passed in 0.10s

@@ -1,0 +1,28 @@
+{
+ "primary_endpoints": 150,
+ "primary_equivalent": 150,
+ "primary_not_equivalent": [],
+ "secondary_tests": 2334,
+ "secondary_rejected_holm": [],
+ "constant_summaries_different": [],
+ "auc_tost_equivalent": {
+  "C1": true,
+  "C2": true,
+  "C3": true
+ },
+ "lda_auc_same_features": [
+  {
+   "cell": "C1",
+   "max_abs_auc_diff_same_features": 8.40000000000285e-05
+  },
+  {
+   "cell": "C2",
+   "max_abs_auc_diff_same_features": 8.799999999997699e-05
+  },
+  {
+   "cell": "C3",
+   "max_abs_auc_diff_same_features": 6.0000000000060005e-05
+  }
+ ],
+ "max_abs_d_any_welch": 0.12953173112332786
+}

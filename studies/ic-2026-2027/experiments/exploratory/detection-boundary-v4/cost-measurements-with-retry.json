@@ -1,0 +1,269 @@
+{
+  "kind": "isolated-cost-probes-not-G0",
+  "workers": 8,
+  "blas_threads": 1,
+  "size": 10626,
+  "waves": 11,
+  "seed_repetition": 9001,
+  "classifiers_trained": 0,
+  "host": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.13"
+  },
+  "panels": [
+    {
+      "operation": "anchor-social",
+      "cell": {
+        "share": 0,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.070194,
+      "worker_wall_seconds": 1.3262051669880748,
+      "wall_seconds": 0.3485725000500679
+    },
+    {
+      "operation": "main-social",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.30613,
+      "worker_wall_seconds": 1.5664876260561869,
+      "wall_seconds": 0.2075236669043079
+    },
+    {
+      "operation": "main-null-B",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.394935,
+      "worker_wall_seconds": 1.6793533748714253,
+      "wall_seconds": 0.2239539169240743
+    },
+    {
+      "operation": "main-null-C",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "C",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.0469780000000002,
+      "worker_wall_seconds": 1.3082346251467243,
+      "wall_seconds": 0.16952637501526624
+    },
+    {
+      "operation": "main-null-D",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "D",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 0.984394,
+      "worker_wall_seconds": 1.3084214569535106,
+      "wall_seconds": 0.175195874995552
+    },
+    {
+      "operation": "main-null-E",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "E",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.360887,
+      "worker_wall_seconds": 1.74499504303094,
+      "wall_seconds": 0.2287368749966845
+    },
+    {
+      "operation": "c050",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0.5,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.2504560000000002,
+      "worker_wall_seconds": 1.40721645927988,
+      "wall_seconds": 0.18794795800931752
+    },
+    {
+      "operation": "delta020",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0.2,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.3081299999999996,
+      "worker_wall_seconds": 1.5191106251440942,
+      "wall_seconds": 0.19866437499877065
+    },
+    {
+      "operation": "omega100",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 1,
+        "steps": 1,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 1.1846709999999998,
+      "worker_wall_seconds": 1.4567678332095966,
+      "wall_seconds": 0.20396887499373406
+    },
+    {
+      "operation": "steps24-social",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 24,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 16.893404999999998,
+      "worker_wall_seconds": 21.076753125875257,
+      "wall_seconds": 2.728480084100738
+    },
+    {
+      "operation": "steps24-null",
+      "cell": {
+        "share": 0.03,
+        "reliability": 0.7,
+        "family": "B",
+        "channel": "observed",
+        "error_correlation": 0,
+        "gain": 0,
+        "repulsion": 0.25,
+        "anchor": 0,
+        "steps": 24,
+        "mobility": false
+      },
+      "panels": 64,
+      "cpu_seconds": 11.262187,
+      "worker_wall_seconds": 13.413003123016097,
+      "wall_seconds": 1.723096500034444
+    }
+  ],
+  "solver_attempts": [
+    {
+      "panels": 33792,
+      "cpu_seconds": 712.9951010000003,
+      "worker_wall_seconds": 873.9164745869348,
+      "wall_seconds": 111.5120667089941,
+      "evaluations": 32,
+      "status": "interior",
+      "matching_pairs": 1024,
+      "attempt": 0,
+      "independent_validation_pass": false,
+      "validation_wall_seconds": 27.031113625038415,
+      "validation_cost": {
+        "panels": 8192,
+        "cpu_seconds": 174.48952399999996,
+        "worker_wall_seconds": 214.53263807669282
+      }
+    },
+    {
+      "panels": 163840,
+      "cpu_seconds": 3512.0295300000007,
+      "worker_wall_seconds": 4338.7257458395325,
+      "wall_seconds": 548.2828128329711,
+      "evaluations": 39,
+      "status": "interior",
+      "matching_pairs": 4096,
+      "attempt": 1,
+      "independent_validation_pass": true,
+      "validation_wall_seconds": 26.95600187499076,
+      "validation_cost": {
+        "panels": 8192,
+        "cpu_seconds": 174.18693200000052,
+        "worker_wall_seconds": 213.73359020671342
+      }
+    }
+  ],
+  "a": 0.03,
+  "r": 0.7,
+  "supersedes": "cost-measurements.json",
+  "total_solver_and_validation": {
+    "panels": 214016,
+    "cpu_seconds": 4573.701087000001,
+    "worker_wall_seconds": 5640.9084487098735
+  }
+}

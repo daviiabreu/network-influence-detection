@@ -1,0 +1,232 @@
+{
+ "schema": "ic-study.t57f-r-list-proof.v1",
+ "synthetic": true,
+ "change": "v4.bd/be/bc r lists written as runs on the declared grid",
+ "catalogs": [
+  {
+   "test": "tests/unit/test_v4_report_export.py::test_layout_preserves_pre_change_synthetic_catalogs[True]",
+   "pinned": "f7efa1fb79d9a9cb18fa43337239492dae69c340d281df1765450d90431bcdd8",
+   "new": "88cccbca8b5277a0773f152ccc23aa9c809d8cebcffc8449c24e9461c33721eb",
+   "reverting_the_r_lists_reproduces_the_pin": true,
+   "changed_keys": {
+    "v4.bd.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ]
+   },
+   "only_r_list_keys_changed": true
+  },
+  {
+   "test": "tests/unit/test_v4_exploratory_export.py::test_x1b_presentation_preserves_pre_change_catalog_bytes[release-False]",
+   "pinned": "f7efa1fb79d9a9cb18fa43337239492dae69c340d281df1765450d90431bcdd8",
+   "new": "88cccbca8b5277a0773f152ccc23aa9c809d8cebcffc8449c24e9461c33721eb",
+   "reverting_the_r_lists_reproduces_the_pin": true,
+   "changed_keys": {
+    "v4.bd.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ]
+   },
+   "only_r_list_keys_changed": true
+  },
+  {
+   "test": "tests/unit/test_v4_exploratory_export.py::test_x1b_presentation_preserves_pre_change_catalog_bytes[release+exploratory-False]",
+   "pinned": "28106bcec229da93928727f6c48491b7b3249ebd4deb45acdc98517674e54505",
+   "new": "17f71c8eda6abed50814456166ae50a525394a5c9dc6e49114a179c9efd6065d",
+   "reverting_the_r_lists_reproduces_the_pin": true,
+   "changed_keys": {
+    "v4.bd.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ]
+   },
+   "only_r_list_keys_changed": true
+  },
+  {
+   "test": "tests/unit/test_v4_exploratory_export.py::test_x1b_presentation_preserves_pre_change_catalog_bytes[release+exploratory-True]",
+   "pinned": "fa37f89f43d326f5f46af574f23494081c69ace3ef4dacfde17e125ce29484f5",
+   "new": "65ab9a0aecb499091ff40eb577f2a9f4e73ef00dd62a121c1eec0945b1994334",
+   "reverting_the_r_lists_reproduces_the_pin": true,
+   "changed_keys": {
+    "v4.bd.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ]
+   },
+   "only_r_list_keys_changed": true
+  },
+  {
+   "test": "tests/unit/test_v4_public_aggregates.py::test_short_path_equals_authorized_rendering[full]",
+   "pinned": "a74c685f71bd8d8ce045d8cf05617c4035075194fa3ce1f426f79aea21012995",
+   "new": "d4b65e73e59899beaaec0595fe16160303066f5bb444e8c604480a6ad79caff8",
+   "reverting_the_r_lists_reproduces_the_pin": true,
+   "changed_keys": {
+    "v4.bd.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bd.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.be.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_eligible": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_side_by_side": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ],
+    "v4.bc.r_persistence": [
+     "0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90",
+     "0.50--0.90"
+    ]
+   },
+   "only_r_list_keys_changed": true
+  }
+ ]
+}

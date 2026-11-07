@@ -1,0 +1,29 @@
+{
+  "schema": "ic-study.t57-caption-proof.v1",
+  "synthetic": true,
+  "test": "tests/unit/test_v4_gate_only_shp.py::test_exports_match_the_prechange_synthetic_bytes[True]",
+  "old_pinned": [
+    "dfa9e0f3adad3c1fd304a05f86b7ee5c1fd801bf93e0015c5614a96ab68cfa07",
+    "5e86e93728ec02c203121791e3ea965a44b155131bf84d4e167e761d8a3a92fb",
+    "59de678b193aabe480e03be054028ff828979b8ea867036b867f9af9cbb3f1a3"
+  ],
+  "patched_back_reproduces_old_pin": true,
+  "new": [
+    "dfa9e0f3adad3c1fd304a05f86b7ee5c1fd801bf93e0015c5614a96ab68cfa07",
+    "9aca3eaaa4abdc1c0b40a5749f9c6f0106c1d978bdc0754f4478435ba0734126",
+    "59de678b193aabe480e03be054028ff828979b8ea867036b867f9af9cbb3f1a3"
+  ],
+  "values_and_cells_unchanged": true,
+  "changed_generated_files": [
+    "primary-boundary-figure"
+  ],
+  "diff_lines": {
+    "primary-boundary-figure": [
+      "-['\\\\begin{figure*}[tp]', '\\\\centering', '\\\\includegraphics[width=\\\\textwidth,height=175mm,keepaspectratio]{generated/F1_a_star_by_family_synthetic.pdf}', '\\\\caption{SYNTHETIC REHEARSAL, NOT A RESULT. Detection boundary $a^*(r)$ against the confirmatory null family B (trait-state persistence) and the secondary families A (autoregressive persistence), C (autoregressive persistence with an altered response channel), D (state-dependent persistence) and E (stayer-mover persistence). The horizontal axis is the continuous response signal share $r$; the vertical axis is the nominal partner-drift strength $a$ at the positions of the frozen grid, so equal spacing does not denote equal increments of $a$, and nothing is interpolated. Filled circles give $a^*$ and bars its interval by inclusive inversion of the per-$r$ band; open circles give the sustained boundary $a_s^*$ of B. Triangles: not reached on the complete eligible grid; open squares: censored at a gap; the strip below marks units without a valid curve. Gray B markers in the other panels are a descriptive reference, not a between-family inference. Bands are simultaneous over the strengths of one $r$ only. \\\\dag marks the calibration-exposed $r$.}\\\\label{fig:v4-F1}', '\\\\end{figure*}']",
+      "+['\\\\begin{figure*}[tp]', '\\\\centering', '\\\\includegraphics[width=\\\\textwidth,height=175mm,keepaspectratio]{generated/F1_a_star_by_family_synthetic.pdf}', '\\\\caption{SYNTHETIC REHEARSAL, NOT A RESULT. Detection boundary $a^*(r)$ against the confirmatory null family B (trait-plus-autoregressive persistence) and the secondary families A (autoregressive persistence), C (autoregressive persistence with an altered response channel), D (state-dependent persistence) and E (stayer-mover persistence). The horizontal axis is the continuous response signal share $r$; the vertical axis is the nominal partner-drift strength $a$ at the positions of the frozen grid, so equal spacing does not denote equal increments of $a$, and nothing is interpolated. Filled circles give $a^*$ and bars its interval by inclusive inversion of the per-$r$ band; open circles give the sustained boundary $a_s^*$ of B. Triangles: not reached on the complete eligible grid; open squares: censored at a gap; the strip below marks units without a valid curve. Gray B markers in the other panels are a descriptive reference, not a between-family inference. Bands are simultaneous over the strengths of one $r$ only. \\\\dag marks the calibration-exposed $r$.}\\\\label{fig:v4-F1}', '\\\\end{figure*}']"
+    ]
+  },
+  "only_difference_is_the_null_b_name": true,
+  "old_name": "trait-state persistence",
+  "new_name": "trait-plus-autoregressive persistence"
+}

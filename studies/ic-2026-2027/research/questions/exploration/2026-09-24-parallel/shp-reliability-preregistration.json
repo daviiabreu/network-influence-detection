@@ -1,0 +1,72 @@
+{
+  "schema": "ic-study.shp-reliability-preregistration.v1",
+  "date": "2026-09-27",
+  "status": "frozen-before-microdata-access",
+  "item": "P$$P04",
+  "years": [1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009],
+  "person_key": "idpers",
+  "annual_column_pattern": "P{yy}P04",
+  "valid_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "missing_values": "negative codes, blank or missing; never impute as zero",
+  "primary": {
+    "model": "Gaussian latent AR(1) quasi-simplex",
+    "means": "free by wave",
+    "initial_latent_variance": "free",
+    "persistence": "constant across consecutive waves",
+    "innovation_variance": "constant across consecutive waves",
+    "measurement_error_variance": "equal across waves",
+    "missing_data": "FIML under MAR",
+    "anchor_year": 2004,
+    "estimand": "latent variance / observed variance for P04 in 2004",
+    "interval": "model-based Wald 95 percent from observed information"
+  },
+  "triplets": {
+    "windows": "all nine consecutive three-wave windows",
+    "covariance_fit": "unrestricted Gaussian FIML",
+    "heise": "common reliability rho12*rho23/rho13",
+    "wiley_wiley": "equal error variance theta=V2-C12*C23/C13; reliability_t=1-theta/Vt",
+    "invalid_solution": "report failure; do not clip into admissible range"
+  },
+  "sensitivity": [
+    "pairwise polychoric correlations followed by three-wave Heise identity",
+    "complete-case multi-wave fit",
+    "fit among respondents observed before 2004, a proxy rather than true SHP_I cohort"
+  ],
+  "sampling": {
+    "cohorts": "1999 original plus 2004 refreshment; no cohort inference from idpers",
+    "mode": "telephone in 1999-2009; verify contracted documentation before analysis",
+    "attrition": "FIML under MAR; complete-case comparison; MNAR not identified",
+    "design_se": "model-based only, not complex-survey-design standard errors"
+  },
+  "checks": [
+    "item wording and coding by wave",
+    "convergence and positive information",
+    "admissible variance and reliability",
+    "AIC and BIC",
+    "maximum complete-case correlation residual",
+    "triplet disagreement",
+    "complete-case and pre-2004 proxy differences",
+    "annual valid and missing counts",
+    "heaping at five and endpoints"
+  ],
+  "data_based_interval": {
+    "confidence_interval": "2004 model-based Wald 95 percent",
+    "specification_envelope": "minimum and maximum of nine Heise triplet point estimates, not a confidence interval"
+  },
+  "curve_use": {
+    "grid_r": [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9],
+    "effect": "highlight anchor and interval on frozen a*(r) curve only",
+    "prohibited": "changing grid, targets, strengths, nulls, confirmatory rules, or selecting r after curve results"
+  },
+  "empirical_illustration": "exploratory descriptive aggregates only; no causal claim",
+  "privacy": "no microdata row or identifier in prompt, log, commit, output, or report",
+  "method_sources": [
+    "https://doi.org/10.2307/2092790",
+    "https://doi.org/10.2307/2093858",
+    "https://www.wiley-vch.de/en/areas-interest/mathematics-statistics/margins-of-error-978-0-470-08148-8",
+    "https://doi.org/10.1093/jssam/smx025",
+    "https://doi.org/10.15195/v3.a43",
+    "https://doi.org/10.1007/s11205-011-9783-z",
+    "https://doi.org/10.18148/srm/2026.v20i2.8525"
+  ]
+}

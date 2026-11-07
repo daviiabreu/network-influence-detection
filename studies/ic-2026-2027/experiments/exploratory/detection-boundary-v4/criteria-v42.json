@@ -1,0 +1,138 @@
+{
+  "kind": "artificial-criteria-calibration-not-a-gate",
+  "schema": 2,
+  "seed_base": 250925000,
+  "development_trials": 3000,
+  "validation_trials": 3000,
+  "bootstrap_replicates": 399,
+  "workers": 8,
+  "ordinary_kurtosis": 8,
+  "G2_cells": 7,
+  "pipelines_per_cell": 100,
+  "disjoint_pairs_per_cell": 50,
+  "G2c_refits": [
+    100,
+    40
+  ],
+  "local_draws": 2000,
+  "dependence": "Independent pipelines; LOO dependence retained, paired differences resampled in intact pairs; independent gate cells.",
+  "failure_rate": 0.01,
+  "failure_model": "Independent Bernoulli technical gaps in each G2 pipeline and G2c refit; independent of data.",
+  "failure_rule": {
+    "G2_per_100": 5,
+    "G2_pooled_per_700": 14,
+    "G2c_per_100": 3,
+    "G2c_per_40": 2,
+    "ratio_pairs": "Drop any pair with a gap; retain all planned attempts in denominators."
+  },
+  "fd_model": {
+    "per_pipeline_log_ratio_mean": 0,
+    "per_pipeline_log_ratio_sd": 0.25,
+    "cell_statistic": "median",
+    "accepted_interval": [
+      0.8,
+      1.25
+    ]
+  },
+  "thresholds": {
+    "cell_lower": 0.49760137384808967,
+    "cell_upper": 1.2879137798463283,
+    "pooled_lower": 0.8183809739342108,
+    "pooled_upper": 1.0545065407006422
+  },
+  "G2c_fixed_thresholds": {
+    "one_sided_95_upper_minimum": 0.8,
+    "one_sided_95_lower_maximum": 2.0
+  },
+  "operating_characteristics": {
+    "correct": {
+      "G2": {
+        "pass_count": 2959,
+        "denominator": 3000,
+        "probability": 0.9863333333333333,
+        "mcse": 0.0021197396765396245
+      },
+      "G2c": {
+        "pass_count": 2895,
+        "denominator": 3000,
+        "probability": 0.965,
+        "mcse": 0.0033553439962742035
+      },
+      "joint": {
+        "pass_count": 2855,
+        "denominator": 3000,
+        "probability": 0.9516666666666667,
+        "mcse": 0.003915661809631599
+      },
+      "G2_given_failure_allowance": {
+        "pass_count": 2959,
+        "denominator": 2971,
+        "probability": 0.995960955907102,
+        "mcse": 0.0011636145093021045
+      }
+    },
+    "understated_20_percent": {
+      "G2": {
+        "pass_count": 130,
+        "denominator": 3000,
+        "probability": 0.043333333333333335,
+        "mcse": 0.003717326797379875
+      },
+      "G2c": {
+        "pass_count": 2166,
+        "denominator": 3000,
+        "probability": 0.722,
+        "mcse": 0.008179568040754556
+      },
+      "joint": {
+        "pass_count": 97,
+        "denominator": 3000,
+        "probability": 0.03233333333333333,
+        "mcse": 0.003229442102948479
+      },
+      "G2_given_failure_allowance": {
+        "pass_count": 130,
+        "denominator": 2971,
+        "probability": 0.043756311006395154,
+        "mcse": 0.0037527818136412656
+      }
+    },
+    "inflated_40_percent": {
+      "G2": {
+        "pass_count": 39,
+        "denominator": 3000,
+        "probability": 0.013,
+        "mcse": 0.002068090907092819
+      },
+      "G2c": {
+        "pass_count": 2042,
+        "denominator": 3000,
+        "probability": 0.6806666666666666,
+        "mcse": 0.008511943678454715
+      },
+      "joint": {
+        "pass_count": 28,
+        "denominator": 3000,
+        "probability": 0.009333333333333334,
+        "mcse": 0.0017555836847254177
+      },
+      "G2_given_failure_allowance": {
+        "pass_count": 39,
+        "denominator": 2971,
+        "probability": 0.013126893301918546,
+        "mcse": 0.0020881433468217642
+      }
+    }
+  },
+  "script_sha256": "59bd83c0c6ae554009a69eb1087925906184a6976d51a9ea3f0818a6b00dcb98",
+  "implementation_sha256": "539aa4df3ad0d6149973eb849bea0bf247c5136231b4bb1d441a6f8d42abf0fc",
+  "failure_allowance_pass_probability": 0.9903333333333333,
+  "fd_aggregate_pass_probability": 1.0,
+  "supersedes": "criteria-v4.json",
+  "supersedes_sha256": "352dafc081b01e3351f45d1da2fc5e0f41cdd2f293c0a7772adb6d13820816e8",
+  "conditional_on": [
+    "Available G2c local draws; a failed real baseline still blocks G2c",
+    "Declared independent 1% gap model and per-cell median FD model"
+  ],
+  "joint_targets_met": true
+}

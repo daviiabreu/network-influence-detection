@@ -1,0 +1,753 @@
+{
+  "format": "exploratory-reading-corpus-crosswalk-1",
+  "checked_at_utc": "2026-09-12T23:04:36.193047+00:00",
+  "input_sha256": "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+  "input_size_bytes": 33702090,
+  "base_commit": "623704c4a7aa3db4fcf4e44f445bbaf6f8e4b34a",
+  "input_proposals": 46400,
+  "target_count": 25,
+  "matched_targets": 23,
+  "algorithm": "Case-insensitive exact identifier equality over unchanged titled_works and untitled_works; union by existing work_id within a reading target. Queries are editorial leads, never merge decisions. No fuzzy or title matching.",
+  "limitations": [
+    "Proposed work identifiers are not accepted unique studies.",
+    "Multiple proposals per target remain unresolved; this file performs no merge.",
+    "Identifier match does not prove full-text version identity, eligibility, reading or quality.",
+    "Targets were chosen after acquisition; this is not an independent recall test.",
+    "No exact match does not demonstrate complete absence from the acquisition."
+  ],
+  "targets": [
+    {
+      "family": "empirical",
+      "reading_target": "Chacoma and Zanette 2015",
+      "queried_identifiers": [
+        "doi:10.1371/journal.pone.0140406"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1371/journal.pone.0140406"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.1b72c24dc03da6aa29445906",
+          "canonical_title": "Opinion Formation by Social Influence: From Experiments to Modeling",
+          "identifiers": [
+            "doi:10.1371/journal.pone.0140406",
+            "openalex:W1906769221"
+          ],
+          "publication_year": 2015,
+          "manifestation_observation_count": 3
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Gestefeld and Lorenz 2023",
+      "queried_identifiers": [
+        "doi:10.18564/jasss.5204"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.18564/jasss.5204"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.afe461499cdcc5eb7f9a4145",
+          "canonical_title": "Calibrating an Opinion Dynamics Model to Empirical Opinion Distributions and Transitions",
+          "identifiers": [
+            "dblp:journals/jasss/GestefeldL23",
+            "doi:10.18564/jasss.5204",
+            "openalex:W4388144615"
+          ],
+          "publication_year": 2023,
+          "manifestation_observation_count": 5
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Banisch and Shamon 2024",
+      "queried_identifiers": [
+        "doi:10.18564/jasss.5305"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.18564/jasss.5305"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.8e2cc0495a203c8f584884df",
+          "canonical_title": "Validating Argument-Based Opinion Dynamics with Survey Experiments",
+          "identifiers": [
+            "dblp:journals/jasss/BanischS24",
+            "doi:10.18564/jasss.5305",
+            "openalex:W4391546085"
+          ],
+          "publication_year": 2024,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Lenti et al WSDM 2024",
+      "queried_identifiers": [
+        "doi:10.1145/3616855.3635785",
+        "arxiv:2310.02766",
+        "doi:10.48550/arxiv.2310.02766"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1145/3616855.3635785",
+        "arxiv:2310.02766",
+        "doi:10.48550/arxiv.2310.02766"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.4911d6a3f4ead5303184c232",
+          "canonical_title": "Likelihood-Based Methods Improve Parameter Estimation in Opinion Dynamics Models.",
+          "identifiers": [
+            "dblp:conf/wsdm/LentiMM24",
+            "doi:10.1145/3616855.3635785",
+            "openalex:W4392384779"
+          ],
+          "publication_year": 2024,
+          "manifestation_observation_count": 3
+        },
+        {
+          "work_id": "work.v2.869152926d4685b5d5420e6e",
+          "canonical_title": "Likelihood-Based Methods Improve Parameter Estimation in Opinion Dynamics Models",
+          "identifiers": [
+            "dblp:journals/corr/abs-2310-02766",
+            "doi:10.48550/arxiv.2310.02766",
+            "openalex:W4387427381"
+          ],
+          "publication_year": 2023,
+          "manifestation_observation_count": 3
+        },
+        {
+          "work_id": "work.v2.e0113d1d6d09f0ed01633ebb",
+          "canonical_title": "Likelihood-Based Methods Improve Parameter Estimation in Opinion Dynamics Models",
+          "identifiers": [
+            "arxiv:2310.02766"
+          ],
+          "publication_year": 2023,
+          "manifestation_observation_count": 2
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Borile et al 2025/2026",
+      "queried_identifiers": [
+        "doi:10.1098/rsos.251253",
+        "arxiv:2506.11751",
+        "doi:10.48550/arxiv.2506.11751"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1098/rsos.251253",
+        "arxiv:2506.11751",
+        "doi:10.48550/arxiv.2506.11751"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.082b6c6be3d9f911c323a8e2",
+          "canonical_title": "Bias and identifiability in the bounded confidence model",
+          "identifiers": [
+            "doi:10.1098/rsos.251253",
+            "openalex:W7133933412"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 3
+        },
+        {
+          "work_id": "work.v2.1a9a118b30b70b898b868ade",
+          "canonical_title": "Bias and Identifiability in the Bounded Confidence Model",
+          "identifiers": [
+            "arxiv:2506.11751"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 4
+        },
+        {
+          "work_id": "work.v2.534ea57669daa9c10f6ae11d",
+          "canonical_title": "Bias and Identifiability in the Bounded Confidence Model",
+          "identifiers": [
+            "dblp:journals/corr/abs-2506-11751",
+            "doi:10.48550/arxiv.2506.11751",
+            "openalex:W4415069447"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Kolic et al 2025/2026",
+      "queried_identifiers": [
+        "doi:10.1093/pnasnexus/pgag161",
+        "arxiv:2509.17625",
+        "doi:10.48550/arxiv.2509.17625"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1093/pnasnexus/pgag161",
+        "arxiv:2509.17625"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.3c422c05df829d7eda64e6cd",
+          "canonical_title": "Comparing data assimilation and likelihood-based inference on latent state estimation in agent-based models",
+          "identifiers": [
+            "doi:10.1093/pnasnexus/pgag161",
+            "openalex:W4415254724"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 2
+        },
+        {
+          "work_id": "work.v2.db08e56810e050674788b2c3",
+          "canonical_title": "Comparing Data Assimilation and Likelihood-Based Inference on Latent State Estimation in Agent-Based Models",
+          "identifiers": [
+            "arxiv:2509.17625"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 2
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Moor-Smith and Carpentras 2026",
+      "queried_identifiers": [
+        "arxiv:2602.00876",
+        "doi:10.48550/arxiv.2602.00876"
+      ],
+      "exact_identifiers_found": [
+        "arxiv:2602.00876",
+        "doi:10.48550/arxiv.2602.00876"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.085e2e74ef9d5ba286c64c6b",
+          "canonical_title": "Testing the validity of multiple opinion dynamics models",
+          "identifiers": [
+            "doi:10.48550/arxiv.2602.00876",
+            "openalex:W7127396241"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 1
+        },
+        {
+          "work_id": "work.v2.ac28caec1ce152332ba2aed2",
+          "canonical_title": "Testing the validity of multiple opinion dynamics models",
+          "identifiers": [
+            "arxiv:2602.00876"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 1
+        }
+      ]
+    },
+    {
+      "family": "empirical",
+      "reading_target": "Tang et al 2025",
+      "queried_identifiers": [
+        "doi:10.18564/jasss.5566"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.18564/jasss.5566"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.cc541ed61e2db13e15a0d5dc",
+          "canonical_title": "An Empirical and Simulation Investigation of Bounded Confidence and Negative Influence in Opinion Dynamics Using Stochastic Actor-Oriented Model",
+          "identifiers": [
+            "dblp:journals/jasss/TangSF25",
+            "doi:10.18564/jasss.5566",
+            "openalex:W4407063450"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 8
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Sirbu et al 2019",
+      "queried_identifiers": [
+        "doi:10.1371/journal.pone.0213246"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1371/journal.pone.0213246"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.217343ab67e0f5a9e72fd597",
+          "canonical_title": "Algorithmic bias amplifies opinion polarization: A bounded confidence model",
+          "identifiers": [
+            "arxiv:1803.02111",
+            "doi:10.1371/journal.pone.0213246",
+            "openalex:W2790854217"
+          ],
+          "publication_year": 2018,
+          "manifestation_observation_count": 7
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Neuhauser et al 2020",
+      "queried_identifiers": [
+        "doi:10.1103/physreve.101.032310",
+        "arxiv:1910.09226",
+        "doi:10.48550/arxiv.1910.09226"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1103/physreve.101.032310"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.7228998a5695d5c5e3f5a151",
+          "canonical_title": "Multibody interactions and nonlinear consensus dynamics on networked systems",
+          "identifiers": [
+            "doi:10.1103/physreve.101.032310"
+          ],
+          "publication_year": 2020,
+          "manifestation_observation_count": 1
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Pansanella et al 2022",
+      "queried_identifiers": [
+        "doi:10.1007/978-3-030-93413-2_28",
+        "arxiv:2205.08412",
+        "doi:10.48550/arxiv.2205.08412"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1007/978-3-030-93413-2_28",
+        "arxiv:2205.08412"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.b9f6e8cffcf2203c00fbfded",
+          "canonical_title": "From Mean-Field to Complex Topologies: Network Effects on the Algorithmic Bias Model",
+          "identifiers": [
+            "arxiv:2205.08412",
+            "doi:10.1007/978-3-030-93413-2_28",
+            "openalex:W4205391415"
+          ],
+          "publication_year": 2022,
+          "manifestation_observation_count": 6
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Kan et al 2023",
+      "queried_identifiers": [
+        "doi:10.1093/comnet/cnac055",
+        "arxiv:2112.05856",
+        "doi:10.48550/arxiv.2112.05856"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1093/comnet/cnac055",
+        "arxiv:2112.05856"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.0be3e5534bea380433ede7a5",
+          "canonical_title": "An adaptive bounded-confidence model of opinion dynamics on networks.",
+          "identifiers": [
+            "dblp:journals/compnet/KanFP22",
+            "doi:10.1093/comnet/cnac055",
+            "openalex:W4226215676"
+          ],
+          "publication_year": 2022,
+          "manifestation_observation_count": 5
+        },
+        {
+          "work_id": "work.v2.e9fa5ec0ebab9901d8d53245",
+          "canonical_title": "An Adaptive Bounded-Confidence Model of Opinion Dynamics on Networks",
+          "identifiers": [
+            "arxiv:2112.05856"
+          ],
+          "publication_year": 2021,
+          "manifestation_observation_count": 2
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Hegselmann 2023",
+      "queried_identifiers": [
+        "doi:10.18564/jasss.5257"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.18564/jasss.5257"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.a7f19d1a966282c490d54da7",
+          "canonical_title": "Bounded Confidence Revisited: What We Overlooked, Underestimated, and Got Wrong",
+          "identifiers": [
+            "dblp:journals/jasss/Hegselmann23",
+            "doi:10.18564/jasss.5257",
+            "openalex:W4388144598"
+          ],
+          "publication_year": 2023,
+          "manifestation_observation_count": 3
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Li et al 2025",
+      "queried_identifiers": [
+        "doi:10.1137/23m1558951",
+        "arxiv:2303.07563",
+        "doi:10.48550/arxiv.2303.07563"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1137/23m1558951",
+        "arxiv:2303.07563",
+        "doi:10.48550/arxiv.2303.07563"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.41a1c4c4a786e8611aa11374",
+          "canonical_title": "Bounded-Confidence Models of Opinion Dynamics with Adaptive Confidence Bounds",
+          "identifiers": [
+            "arxiv:2303.07563"
+          ],
+          "publication_year": 2023,
+          "manifestation_observation_count": 3
+        },
+        {
+          "work_id": "work.v2.a8a484134135ec73333e1d11",
+          "canonical_title": "Bounded-Confidence Models of Opinion Dynamics with Adaptive Confidence Bounds.",
+          "identifiers": [
+            "dblp:journals/corr/abs-2303-07563",
+            "doi:10.48550/arxiv.2303.07563",
+            "openalex:W4327634095"
+          ],
+          "publication_year": 2023,
+          "manifestation_observation_count": 4
+        },
+        {
+          "work_id": "work.v2.b65cabf1172ca238682fb64a",
+          "canonical_title": "Bounded-Confidence Models of Opinion Dynamics with Adaptive Confidence Bounds.",
+          "identifiers": [
+            "dblp:journals/siamads/LiLP25",
+            "doi:10.1137/23m1558951",
+            "openalex:W4409303134"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Thompsky et al 2026",
+      "queried_identifiers": [
+        "arxiv:2605.20418",
+        "doi:10.48550/arxiv.2605.20418"
+      ],
+      "exact_identifiers_found": [
+        "arxiv:2605.20418",
+        "doi:10.48550/arxiv.2605.20418"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.76cb97f3b164682b059f69ef",
+          "canonical_title": "A Bounded-Confidence Model of Opinion Dynamics with Adaptive Interaction Probabilities",
+          "identifiers": [
+            "arxiv:2605.20418"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 2
+        },
+        {
+          "work_id": "work.v2.f1d9d7d9f5b0e16046f23a83",
+          "canonical_title": "A Bounded-Confidence Model of Opinion Dynamics with Adaptive Interaction Probabilities",
+          "identifiers": [
+            "dblp:journals/corr/abs-2605-20418",
+            "doi:10.48550/arxiv.2605.20418",
+            "openalex:W7161956178"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "mechanism",
+      "reading_target": "Gezha and Kozitsin 2026",
+      "queried_identifiers": [
+        "doi:10.3390/e28030333"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.3390/e28030333"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.e3357aa931d6eea1466cb900",
+          "canonical_title": "Control over Recommendation Algorithms in Heterogeneous Modular Systems with Dynamic Opinions",
+          "identifiers": [
+            "doi:10.3390/e28030333",
+            "openalex:W7137219528"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 1
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Cisneros-Velarde 2025",
+      "queried_identifiers": [
+        "doi:10.18653/v1/2025.findings-naacl.101"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.18653/v1/2025.findings-naacl.101"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.4da26e2eae1d48282f0918e9",
+          "canonical_title": "Biases in Opinion Dynamics in Multi-Agent Systems of Large Language Models: A Case Study on Funding Allocation",
+          "identifiers": [
+            "dblp:conf/naacl/CisnerosVelarde25",
+            "doi:10.18653/v1/2025.findings-naacl.101",
+            "openalex:W4411113253"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Ju et al 2024",
+      "queried_identifiers": [
+        "arxiv:2412.05093",
+        "doi:10.48550/arxiv.2412.05093"
+      ],
+      "exact_identifiers_found": [],
+      "status": "no_exact_identifier_match",
+      "proposal_matches": []
+    },
+    {
+      "family": "llm",
+      "reading_target": "Cau et al 2025",
+      "queried_identifiers": [
+        "doi:10.1140/epjds/s13688-025-00579-1"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1140/epjds/s13688-025-00579-1"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.0f80406ae1f1ca3bfcd5879a",
+          "canonical_title": "Selective agreement, not sycophancy: investigating opinion dynamics in LLM interactions.",
+          "identifiers": [
+            "dblp:journals/epjds/CauPPR25",
+            "doi:10.1140/epjds/s13688-025-00579-1",
+            "openalex:W4413415991"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 6
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Ashery et al 2025",
+      "queried_identifiers": [
+        "doi:10.1126/sciadv.adu9368"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.1126/sciadv.adu9368"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.832a769c69043b202e7872ce",
+          "canonical_title": "Emergent social conventions and collective bias in LLM populations",
+          "identifiers": [
+            "arxiv:2410.08948",
+            "doi:10.1126/sciadv.adu9368",
+            "openalex:W4410358178"
+          ],
+          "publication_year": 2024,
+          "manifestation_observation_count": 3
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Chuang et al DEBATE",
+      "queried_identifiers": [
+        "arxiv:2510.25110",
+        "doi:10.48550/arxiv.2510.25110"
+      ],
+      "exact_identifiers_found": [
+        "arxiv:2510.25110"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.78a70f696ffcd557dfe9fbf7",
+          "canonical_title": "DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents",
+          "identifiers": [
+            "arxiv:2510.25110"
+          ],
+          "publication_year": 2025,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Yang 2026",
+      "queried_identifiers": [
+        "arxiv:2606.22203",
+        "doi:10.48550/arxiv.2606.22203"
+      ],
+      "exact_identifiers_found": [
+        "arxiv:2606.22203",
+        "doi:10.48550/arxiv.2606.22203"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.4b20097902848471597b2802",
+          "canonical_title": "When Is Emergent Consensus Real? A Measured Coupling Gain and a Validity Diagnostic for LLM Agent Societies",
+          "identifiers": [
+            "doi:10.48550/arxiv.2606.22203",
+            "openalex:W7165676665"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 2
+        },
+        {
+          "work_id": "work.v2.782e4f4fbb82f7c3d5336cf5",
+          "canonical_title": "When Is Emergent Consensus Real? A Measured Coupling Gain and a Validity Diagnostic for LLM Agent Societies",
+          "identifiers": [
+            "arxiv:2606.22203"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 2
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Mehdizadeh and Hilbert 2026",
+      "queried_identifiers": [
+        "arxiv:2606.04197",
+        "doi:10.48550/arxiv.2606.04197"
+      ],
+      "exact_identifiers_found": [
+        "arxiv:2606.04197",
+        "doi:10.48550/arxiv.2606.04197"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.1ce583cd450bee2bccf0bafd",
+          "canonical_title": "Exploring the Topology and Memory of Consensus: How LLM Agents Agree, Fragment, or Settle When Forming Conventions",
+          "identifiers": [
+            "arxiv:2606.04197"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 1
+        },
+        {
+          "work_id": "work.v2.d5ce7d7a86b76e954a282ea2",
+          "canonical_title": "Exploring the Topology and Memory of Consensus: How LLM Agents Agree, Fragment, or Settle When Forming Conventions",
+          "identifiers": [
+            "doi:10.48550/arxiv.2606.04197",
+            "openalex:W7163547849"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 1
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Hashimoto et al 2026",
+      "queried_identifiers": [
+        "doi:10.18653/v1/2026.findings-acl.580",
+        "arxiv:2603.26701",
+        "doi:10.48550/arxiv.2603.26701"
+      ],
+      "exact_identifiers_found": [
+        "doi:10.18653/v1/2026.findings-acl.580",
+        "arxiv:2603.26701",
+        "doi:10.48550/arxiv.2603.26701"
+      ],
+      "status": "exact_identifier_match",
+      "proposal_matches": [
+        {
+          "work_id": "work.v2.19e7b8434086d8fad2a84379",
+          "canonical_title": "From Heard to Lived Opinions: Simulating Opinion Dynamics with Grounded LLM Agents in Economic Environments",
+          "identifiers": [
+            "dblp:journals/corr/abs-2603-26701",
+            "doi:10.48550/arxiv.2603.26701",
+            "openalex:W7147524432"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 4
+        },
+        {
+          "work_id": "work.v2.1c1bc98a43e1c93237fd5865",
+          "canonical_title": "From Heard to Lived Opinions: Simulating Opinion Dynamics with Grounded LLM Agents in Economic Environments",
+          "identifiers": [
+            "arxiv:2603.26701"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 3
+        },
+        {
+          "work_id": "work.v2.d146e3fb8bcc9fca28bb615e",
+          "canonical_title": "From Heard to Lived Opinions: Simulating Opinion Dynamics with Grounded LLM Agents in Economic Environments.",
+          "identifiers": [
+            "dblp:conf/acl/HashimotoKTTI26",
+            "doi:10.18653/v1/2026.findings-acl.580",
+            "openalex:W7166870633"
+          ],
+          "publication_year": 2026,
+          "manifestation_observation_count": 4
+        }
+      ]
+    },
+    {
+      "family": "llm",
+      "reading_target": "Sarangi et al 2026",
+      "queried_identifiers": [
+        "arxiv:2605.30258",
+        "doi:10.48550/arxiv.2605.30258"
+      ],
+      "exact_identifiers_found": [],
+      "status": "no_exact_identifier_match",
+      "proposal_matches": []
+    }
+  ]
+}

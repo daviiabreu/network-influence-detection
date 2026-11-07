@@ -1,0 +1,40 @@
+{
+  "facts": {
+    "gate.G2c.failed_comparisons": {
+      "source": {
+        "locator": "G2c complete summary; comparison pass flags",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed/gate/criteria.jsonl",
+        "sha256": "1985ff52dfd147d8ca27f63b4f6bee147f9f0c440caff6346c030d8fafecdba5"
+      },
+      "value": [
+        "a010"
+      ]
+    },
+    "gate.at_close": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed/assembly-notes.txt",
+        "sha256": "4b980f65d6fb381e4dfcd0058e31bc441305ae30896b02b4d115a7b33630a25c"
+      },
+      "value": true
+    },
+    "shp.reason": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed/assembly-notes.txt",
+        "sha256": "4b980f65d6fb381e4dfcd0058e31bc441305ae30896b02b4d115a7b33630a25c"
+      },
+      "value": "this artificial gate-only case includes no SHP run"
+    },
+    "shp.state": {
+      "source": {
+        "locator": "explicit artificial rehearsal assumption",
+        "record": "/private/tmp/g2c-failure-rehearsal.6Yk8Sb/i-comparison-failed/assembly-notes.txt",
+        "sha256": "4b980f65d6fb381e4dfcd0058e31bc441305ae30896b02b4d115a7b33630a25c"
+      },
+      "value": "not-run"
+    }
+  },
+  "schema": "ic-study.v4-manuscript-assembly-facts.v1",
+  "synthetic": true
+}

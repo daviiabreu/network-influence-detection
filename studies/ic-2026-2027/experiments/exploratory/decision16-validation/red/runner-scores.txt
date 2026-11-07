@@ -1,0 +1,39 @@
+......F                                                                  [100%]
+=================================== FAILURES ===================================
+____________________ test_scores_exclude_both_matched_lags _____________________
+
+tmp_path = PosixPath('/private/var/folders/9g/m2p5kh4x2zb802y1k59cvl7w0000gn/T/pytest-of-davi/pytest-2454/test_scores_exclude_both_match0')
+
+    def test_scores_exclude_both_matched_lags(tmp_path: Path) -> None:
+        from ic_study.simulation.detection_calibration import CellFit, DetectionPilot, PilotSpec
+    
+        class MatchedOnly(DetectionPilot):
+            def panel(self, phase: str, i: int, share: float, *,
+                      rho: float | None = None, trait: float = 0, family: str = 'B',
+                      ) -> dict[str, Floats]:
+                label = float(rho is None)
+                return {'observed': np.array([label, label, .2, .1, .05])}
+    
+        pilot = MatchedOnly(PilotSpec(grid=(0.,), size=66, training=4, checking=4), tmp_path/'run')
+>       scores = pilot.scores(0., CellFit(.8, .1, 'observed', .6), family='B')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/unit/test_detection_calibration.py:119: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <test_detection_calibration.test_scores_exclude_both_matched_lags.<locals>.MatchedOnly object at 0x109642c00>
+share = 0.0
+fitted = CellFit(rho=0.8, trait=0.1, channel='observed', target_lag1=0.6)
+family = 'B', mobility = False
+
+    def scores(
+        self, share: float, fitted: CellFit, *, family: str, mobility: bool = False
+    ) -> tuple[Floats, Floats]:
+>       if evaluation_phase not in {"check", "reference"}:
+           ^^^^^^^^^^^^^^^^
+E       NameError: name 'evaluation_phase' is not defined
+
+src/ic_study/simulation/detection_calibration.py:240: NameError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_calibration.py::test_scores_exclude_both_matched_lags
+1 failed, 6 passed in 0.11s

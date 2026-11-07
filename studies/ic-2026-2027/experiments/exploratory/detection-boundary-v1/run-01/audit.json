@@ -1,0 +1,10 @@
+{
+  "verified_input_hashes": 27,
+  "new_calibration_unique_seeds": 2176,
+  "previous_calibration_unique_seeds": 5248,
+  "previous_reserved_confirmatory_seeds": 31002,
+  "intersection_count": 0,
+  "new_confirmatory_seed_generation": false,
+  "confirmatory_simulations": 0,
+  "scope": "Actual previous pilot ledgers plus prior reservations; review scripts have separate namespaces but no execution ledgers were supplied"
+}

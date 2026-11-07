@@ -1,0 +1,34 @@
+...........F...F......                                                   [100%]
+=================================== FAILURES ===================================
+__ test_state_dependent_family_contains_active_updating_at_zero_heterogeneity __
+
+    def test_state_dependent_family_contains_active_updating_at_zero_heterogeneity() -> None:
+        from ic_study.models.detection_panel import influence_panel, state_dependent_panel
+    
+        ar = influence_panel(600, 11, 72, 93, share=0, rho=.8)
+>       nested = state_dependent_panel(600, 11, 72, center=.8, heterogeneity=0)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: state_dependent_panel() got an unexpected keyword argument 'heterogeneity'
+
+tests/unit/test_detection_panel.py:146: TypeError
+_____________ test_logit_band_handles_zero_se_and_saturated_cells ______________
+
+    def test_logit_band_handles_zero_se_and_saturated_cells() -> None:
+        estimate = np.array([[0.5, 1.0, 0.0]])
+        se = np.zeros_like(estimate)
+        reps = np.broadcast_to(estimate, (20, 1, 3)).copy()
+        low, high = studentised_band(
+            estimate, se, reps, np.zeros_like(reps), effective_n=100
+        )
+        assert np.all(np.isfinite(low)) and np.all(np.isfinite(high))
+        assert np.all(high > low)
+        assert low[0, 0] < 0.5 < high[0, 0]
+        assert 0 <= low.min() < high.max() <= 1
+>       assert high[0, 1] == 1 and low[0, 2] == 0
+E       assert (np.float64(0.9995470676171146) == 1)
+
+tests/unit/test_detection_boundary.py:57: AssertionError
+=========================== short test summary info ============================
+FAILED tests/unit/test_detection_panel.py::test_state_dependent_family_contains_active_updating_at_zero_heterogeneity
+FAILED tests/unit/test_detection_boundary.py::test_logit_band_handles_zero_se_and_saturated_cells
+2 failed, 20 passed in 0.24s

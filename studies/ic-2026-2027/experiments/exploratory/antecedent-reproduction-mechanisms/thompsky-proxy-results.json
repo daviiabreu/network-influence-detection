@@ -1,0 +1,261 @@
+{
+  "rows": [
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.001589875086210668,
+      "seed": 101,
+      "settled_at": 900,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.00303295801859349,
+      "seed": 101,
+      "settled_at": 1300,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.00030616705771535635,
+      "seed": 101,
+      "settled_at": 300,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0004515419714152813,
+      "seed": 101,
+      "settled_at": 400,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0014254170237109065,
+      "seed": 102,
+      "settled_at": 700,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.002144208992831409,
+      "seed": 102,
+      "settled_at": 900,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0005506660090759397,
+      "seed": 102,
+      "settled_at": 500,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.00034020794555544853,
+      "seed": 102,
+      "settled_at": 300,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.002067832974717021,
+      "seed": 103,
+      "settled_at": 1200,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0028476250590756536,
+      "seed": 103,
+      "settled_at": 1200,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0004052079748362303,
+      "seed": 103,
+      "settled_at": 400,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0008967079920694232,
+      "seed": 103,
+      "settled_at": 800,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0018010829808190465,
+      "seed": 104,
+      "settled_at": 1000,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0016746660694479942,
+      "seed": 104,
+      "settled_at": 700,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.000540665932931006,
+      "seed": 104,
+      "settled_at": 500,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0003322919365018606,
+      "seed": 104,
+      "settled_at": 300,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0009836669778451324,
+      "seed": 105,
+      "settled_at": 500,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0013895840384066105,
+      "seed": 105,
+      "settled_at": 600,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0009127910016104579,
+      "seed": 105,
+      "settled_at": 900,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0006779999239370227,
+      "seed": 105,
+      "settled_at": 600,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0014360420173034072,
+      "seed": 106,
+      "settled_at": 800,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0018775840289890766,
+      "seed": 106,
+      "settled_at": 800,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0002989579224959016,
+      "seed": 106,
+      "settled_at": 300,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0002227500081062317,
+      "seed": 106,
+      "settled_at": 200,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.00143174990080297,
+      "seed": 107,
+      "settled_at": 800,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0014975419035181403,
+      "seed": 107,
+      "settled_at": 600,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.00031391705852001905,
+      "seed": 107,
+      "settled_at": 300,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.00034304207656532526,
+      "seed": 107,
+      "settled_at": 300,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.001554667018353939,
+      "seed": 108,
+      "settled_at": 800,
+      "topology": "complete"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.002451290958561003,
+      "seed": 108,
+      "settled_at": 1000,
+      "topology": "complete"
+    },
+    {
+      "adaptive": false,
+      "censored": false,
+      "elapsed_seconds": 0.0011715420987457037,
+      "seed": 108,
+      "settled_at": 1100,
+      "topology": "cycle"
+    },
+    {
+      "adaptive": true,
+      "censored": false,
+      "elapsed_seconds": 0.0005797080229967833,
+      "seed": 108,
+      "settled_at": 500,
+      "topology": "cycle"
+    }
+  ],
+  "status": "exploratory_proxy"
+}

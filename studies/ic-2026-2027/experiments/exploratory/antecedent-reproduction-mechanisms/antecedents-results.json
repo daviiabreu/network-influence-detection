@@ -1,0 +1,97 @@
+{
+  "abed": {
+    "decoupled": [
+      [
+        0.0,
+        0.8765778384148346
+      ],
+      [
+        0.0,
+        0.8941093954085855
+      ]
+    ],
+    "decoupled_gap": 9.52418144350986e-11,
+    "decoupled_steps": 363,
+    "full": [
+      [
+        0.45450463316882533,
+        0.8212084688415328
+      ],
+      [
+        0.4548008332255316,
+        0.8464347589209714
+      ]
+    ],
+    "full_gap": 2.8453813875617406e-06,
+    "full_steps": 500,
+    "source": "https://arxiv.org/html/2603.21081#S3"
+  },
+  "dong": {
+    "archive_sha256": "57afbe543032e2138c23622f81ed48b72b37310e4f4c2ef14594e7cb3c9ad4ae",
+    "results": [
+      {
+        "P": 7.543574597444758e-13,
+        "absC": 7.534699318460791e-13,
+        "alpha": 0.59536354056902,
+        "elapsed_seconds": 0.04960241599474102,
+        "linear_threshold": 0.4214963119072707,
+        "nonlinear_threshold": 0.7692307692307692,
+        "p": 1,
+        "seed": 42
+      },
+      {
+        "P": 2.8277095918835754e-15,
+        "absC": 2.7071518160173445e-15,
+        "alpha": 0.59536354056902,
+        "elapsed_seconds": 0.03988341602962464,
+        "linear_threshold": 0.4214963119072707,
+        "nonlinear_threshold": 0.7692307692307692,
+        "p": 2,
+        "seed": 42
+      },
+      {
+        "P": 2.2697696586831961e-13,
+        "absC": 2.2548404658186139e-13,
+        "alpha": 0.59536354056902,
+        "elapsed_seconds": 0.037753542070277035,
+        "linear_threshold": 0.4214963119072707,
+        "nonlinear_threshold": 0.7692307692307692,
+        "p": 1,
+        "seed": 43
+      },
+      {
+        "P": 4.326859758580924e-16,
+        "absC": 2.5733152105161263e-16,
+        "alpha": 0.59536354056902,
+        "elapsed_seconds": 0.03909358300734311,
+        "linear_threshold": 0.4214963119072707,
+        "nonlinear_threshold": 0.7692307692307692,
+        "p": 2,
+        "seed": 43
+      }
+    ],
+    "source": "https://zenodo.org/api/records/21820152/files/Code_Public.zip/content"
+  },
+  "elapsed_seconds": 1.07326491700951,
+  "neuhauser": {
+    "outcomes": [
+      {
+        "final_mean": 0.14793208110410988,
+        "initial_mean": 0.2,
+        "lambda": -1.0
+      },
+      {
+        "final_mean": 0.19999999999999965,
+        "initial_mean": 0.2,
+        "lambda": 0.0
+      },
+      {
+        "final_mean": 0.2713991088023984,
+        "initial_mean": 0.2,
+        "lambda": 1.0
+      }
+    ],
+    "source": "https://arxiv.org/html/1910.09226v1#S4.SS4"
+  },
+  "status": "exploratory"
+}

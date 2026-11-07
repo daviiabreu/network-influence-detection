@@ -1,0 +1,31 @@
+% Draft 2026-09-28. Replaces paragraphs 4 and 5 of sections/introduction.tex
+% (source lines 7 and 9): paragraph 4 begins "Gestefeld and Lorenz calibrate a
+% model with interpersonal updating..." and ends "...an explicit response channel
+% and panel-level discrimination target."; paragraph 5 begins "We ask how much
+% nominal interaction innovation..." and ends "...not tuned to favor an arm."
+% Paragraphs 1-3 and 6-8 are unchanged. In the new paragraph 5, the eight
+% sentences from "We ask how much" to "not tuned to favor an arm." are carried
+% over verbatim; only the closing contribution sentences (IP07-IP09) are new.
+% Markers IPxx map to pipeline/drafts/2026-09-28/related-work-v4-ledger.md.
+% No v4 gate or tier result is stated or implied.
+
+% IP01
+Gestefeld and Lorenz calibrate a model with interpersonal updating to opinion distributions and to individual transitions in the SHP, using 11 annual waves of trust in government, and note that such data cannot validate the modeled interactions because they record no communication \cite{gestefeld2023}.
+% IP02
+Using repeated individual responses and communication records, the CoDiNG preprint concludes that opinion-dynamics models often fail to outperform trivial baselines such as keeping one's opinion \cite{coding2024}.
+% IP03
+Moor-Smith and Carpentras find that a minimum amount of drift is needed before a model beats a no-change baseline on repeated cross-sectional distributions, and that under noise the calibration optimizer can freeze into that baseline \cite{moor2026}.
+% IP04
+Carpentras and Quayle show that transforming a measurement scale can alter the apparent predictive fit of an agent-based model \cite{carpentras2023}.
+% IP05
+Separately, power studies show that reliability, number of waves and sample size jointly limit detection of within-person lagged effects \cite{mulder2023,dang2026}, and that influence effects can have low power even when the network is observed \cite{stadtfeld2020}.
+% IP06
+What these strands leave open, for a household panel without observed exposure, is how much interaction signal individual trajectories must carry before they become distinguishable from matched no-influence persistence, and how that amount changes with response reliability.
+
+We ask how much nominal interaction innovation makes a nonlinear bounded-confidence generator distinguishable from no-network updating in an 11-wave individual panel with SHP-like geometry. The frozen-protocol estimand is the entire reliability-indexed boundary $a^{*}(r)$ on a fixed $r=0.50$--$0.90$ grid; $r=0.70$ is illustrative. The strength $a$ is a share of the generator's pre-transport innovation budget, not a measured share of realized attitude change. The confirmatory comparator combines a stable trait with autoregressive updating. Secondary nulls include pure AR, mid-scale response error with heaping, state-dependent persistence, and a mover--stayer mixture. Arms share the observation geometry and category target. The two-parameter nulls match observed lag-one and lag-two correlations before classification; one-parameter nulls match lag one and report the lag-two residual. Reliability is fixed outside the outcome analysis, not tuned to favor an arm.
+% IP07
+No single component of this design is new: minimum signal against persistence, reliability-dependent sensitivity, power for influence and detectability maps all have antecedents, which the related-work section delimits.
+% IP08
+In a documented but limited search of OpenAlex, Semantic Scholar and arXiv on 27--28 September 2026, we did not identify a study that combines them, that is, one that estimates a detection boundary for influence strength as a function of response reliability against matched persistence nulls; this is not proof that none exists.
+% IP09
+The contribution is that conjunction, reported as an operational curve for the declared discriminator: because its AUC bounds the Bayes-optimal AUC from below, an attained $a^{*}(r)$ upper-bounds the threshold of an optimal discriminator under the same laws, and non-attainment does not establish indistinguishability.
