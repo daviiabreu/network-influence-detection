@@ -1,0 +1,1147 @@
+{
+  "batches": [
+    {
+      "batch_index": 1,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 3,
+          "no_empirical_data_reported": 240,
+          "not_reported": 38,
+          "observational_data": 13,
+          "other_data": 6
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 3,
+          "model_comparison": 1,
+          "not_reported": 245,
+          "other_author_stated_gap": 52
+        },
+        "influence_mechanism": {
+          "assimilation": 103,
+          "bounded_assimilation": 164,
+          "not_reported": 27,
+          "other_mechanism": 34,
+          "repulsion": 19,
+          "social_learning": 10
+        },
+        "model_family": {
+          "bounded_confidence": 157,
+          "linear_averaging": 66,
+          "not_reported": 21,
+          "other_named_family": 63,
+          "voter": 24
+        },
+        "network_topology": {
+          "adaptive_network": 18,
+          "complete": 21,
+          "not_reported": 176,
+          "other_topology": 49,
+          "spatial": 19,
+          "synthetic_network": 39
+        },
+        "opinion_representation": {
+          "continuous": 204,
+          "discrete": 27,
+          "not_reported": 38,
+          "other_representation": 36
+        },
+        "reported_outcomes": {
+          "consensus": 144,
+          "not_reported": 43,
+          "other_outcome": 148,
+          "persistent_diversity": 59,
+          "polarization": 48
+        },
+        "reproducibility_artifacts": {
+          "data": 0,
+          "environment": 1,
+          "not_reported": 299
+        },
+        "study_design": {
+          "analytical": 123,
+          "empirical": 10,
+          "not_reported": 47,
+          "secondary": 0,
+          "simulation": 186
+        },
+        "validation_method": {
+          "analytical": 117,
+          "empirical_macro": 4,
+          "empirical_micro": 5,
+          "not_reported": 57,
+          "numerical": 178,
+          "robustness": 51
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 300
+    },
+    {
+      "batch_index": 2,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 3,
+          "no_empirical_data_reported": 507,
+          "not_reported": 58,
+          "observational_data": 26,
+          "other_data": 14
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 6,
+          "model_comparison": 2,
+          "not_reported": 510,
+          "other_author_stated_gap": 94
+        },
+        "influence_mechanism": {
+          "assimilation": 201,
+          "bounded_assimilation": 374,
+          "not_reported": 41,
+          "other_mechanism": 65,
+          "repulsion": 36,
+          "social_learning": 13
+        },
+        "model_family": {
+          "bounded_confidence": 363,
+          "linear_averaging": 134,
+          "not_reported": 34,
+          "other_named_family": 96,
+          "voter": 49
+        },
+        "network_topology": {
+          "adaptive_network": 52,
+          "complete": 46,
+          "not_reported": 344,
+          "other_topology": 109,
+          "spatial": 36,
+          "synthetic_network": 75
+        },
+        "opinion_representation": {
+          "continuous": 453,
+          "discrete": 60,
+          "not_reported": 52,
+          "other_representation": 63
+        },
+        "reported_outcomes": {
+          "consensus": 292,
+          "not_reported": 69,
+          "other_outcome": 310,
+          "persistent_diversity": 153,
+          "polarization": 99
+        },
+        "reproducibility_artifacts": {
+          "data": 0,
+          "environment": 1,
+          "not_reported": 605
+        },
+        "study_design": {
+          "analytical": 308,
+          "empirical": 19,
+          "not_reported": 83,
+          "secondary": 0,
+          "simulation": 360
+        },
+        "validation_method": {
+          "analytical": 296,
+          "empirical_macro": 8,
+          "empirical_micro": 8,
+          "not_reported": 96,
+          "numerical": 350,
+          "robustness": 100
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 606
+    },
+    {
+      "batch_index": 3,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 6,
+          "no_empirical_data_reported": 796,
+          "not_reported": 76,
+          "observational_data": 59,
+          "other_data": 24
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 9,
+          "model_comparison": 3,
+          "not_reported": 801,
+          "other_author_stated_gap": 154
+        },
+        "influence_mechanism": {
+          "assimilation": 354,
+          "bounded_assimilation": 521,
+          "not_reported": 79,
+          "other_mechanism": 127,
+          "repulsion": 58,
+          "social_learning": 18
+        },
+        "model_family": {
+          "bounded_confidence": 503,
+          "linear_averaging": 217,
+          "not_reported": 71,
+          "other_named_family": 168,
+          "voter": 105
+        },
+        "network_topology": {
+          "adaptive_network": 83,
+          "complete": 96,
+          "not_reported": 498,
+          "other_topology": 189,
+          "spatial": 59,
+          "synthetic_network": 127
+        },
+        "opinion_representation": {
+          "continuous": 663,
+          "discrete": 131,
+          "not_reported": 90,
+          "other_representation": 112
+        },
+        "reported_outcomes": {
+          "consensus": 438,
+          "not_reported": 93,
+          "other_outcome": 545,
+          "persistent_diversity": 241,
+          "polarization": 150
+        },
+        "reproducibility_artifacts": {
+          "data": 0,
+          "environment": 2,
+          "not_reported": 952
+        },
+        "study_design": {
+          "analytical": 522,
+          "empirical": 45,
+          "not_reported": 119,
+          "secondary": 0,
+          "simulation": 563
+        },
+        "validation_method": {
+          "analytical": 505,
+          "empirical_macro": 18,
+          "empirical_micro": 17,
+          "not_reported": 138,
+          "numerical": 553,
+          "robustness": 140
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 954
+    },
+    {
+      "batch_index": 4,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 7,
+          "no_empirical_data_reported": 1100,
+          "not_reported": 88,
+          "observational_data": 90,
+          "other_data": 30
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 10,
+          "model_comparison": 4,
+          "not_reported": 1095,
+          "other_author_stated_gap": 210
+        },
+        "influence_mechanism": {
+          "assimilation": 506,
+          "bounded_assimilation": 603,
+          "not_reported": 148,
+          "other_mechanism": 208,
+          "repulsion": 82,
+          "social_learning": 28
+        },
+        "model_family": {
+          "bounded_confidence": 579,
+          "linear_averaging": 275,
+          "not_reported": 145,
+          "other_named_family": 268,
+          "voter": 179
+        },
+        "network_topology": {
+          "adaptive_network": 118,
+          "complete": 140,
+          "not_reported": 642,
+          "other_topology": 284,
+          "spatial": 88,
+          "synthetic_network": 178
+        },
+        "opinion_representation": {
+          "continuous": 807,
+          "discrete": 231,
+          "not_reported": 180,
+          "other_representation": 145
+        },
+        "reported_outcomes": {
+          "consensus": 619,
+          "not_reported": 115,
+          "other_outcome": 768,
+          "persistent_diversity": 344,
+          "polarization": 216
+        },
+        "reproducibility_artifacts": {
+          "data": 1,
+          "environment": 5,
+          "not_reported": 1297
+        },
+        "study_design": {
+          "analytical": 732,
+          "empirical": 70,
+          "not_reported": 164,
+          "secondary": 0,
+          "simulation": 753
+        },
+        "validation_method": {
+          "analytical": 707,
+          "empirical_macro": 26,
+          "empirical_micro": 20,
+          "not_reported": 185,
+          "numerical": 743,
+          "robustness": 179
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 1303
+    },
+    {
+      "batch_index": 5,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 12,
+          "no_empirical_data_reported": 1392,
+          "not_reported": 105,
+          "observational_data": 117,
+          "other_data": 36
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 12,
+          "model_comparison": 4,
+          "not_reported": 1393,
+          "other_author_stated_gap": 254
+        },
+        "influence_mechanism": {
+          "assimilation": 658,
+          "bounded_assimilation": 653,
+          "not_reported": 236,
+          "other_mechanism": 290,
+          "repulsion": 119,
+          "social_learning": 47
+        },
+        "model_family": {
+          "bounded_confidence": 624,
+          "linear_averaging": 337,
+          "not_reported": 223,
+          "other_named_family": 387,
+          "voter": 243
+        },
+        "network_topology": {
+          "adaptive_network": 165,
+          "complete": 175,
+          "not_reported": 786,
+          "other_topology": 369,
+          "spatial": 106,
+          "synthetic_network": 221
+        },
+        "opinion_representation": {
+          "continuous": 925,
+          "discrete": 319,
+          "not_reported": 290,
+          "other_representation": 183
+        },
+        "reported_outcomes": {
+          "consensus": 784,
+          "not_reported": 140,
+          "other_outcome": 989,
+          "persistent_diversity": 413,
+          "polarization": 290
+        },
+        "reproducibility_artifacts": {
+          "data": 1,
+          "environment": 6,
+          "not_reported": 1639
+        },
+        "study_design": {
+          "analytical": 917,
+          "empirical": 90,
+          "not_reported": 215,
+          "secondary": 0,
+          "simulation": 957
+        },
+        "validation_method": {
+          "analytical": 881,
+          "empirical_macro": 32,
+          "empirical_micro": 29,
+          "not_reported": 248,
+          "numerical": 944,
+          "robustness": 209
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 1646
+    },
+    {
+      "batch_index": 6,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 14,
+          "no_empirical_data_reported": 1623,
+          "not_reported": 125,
+          "observational_data": 160,
+          "other_data": 46
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 13,
+          "model_comparison": 4,
+          "not_reported": 1646,
+          "other_author_stated_gap": 306
+        },
+        "influence_mechanism": {
+          "assimilation": 791,
+          "bounded_assimilation": 695,
+          "not_reported": 306,
+          "other_mechanism": 371,
+          "repulsion": 141,
+          "social_learning": 66
+        },
+        "model_family": {
+          "bounded_confidence": 658,
+          "linear_averaging": 374,
+          "not_reported": 300,
+          "other_named_family": 507,
+          "voter": 305
+        },
+        "network_topology": {
+          "adaptive_network": 194,
+          "complete": 228,
+          "not_reported": 907,
+          "other_topology": 447,
+          "spatial": 130,
+          "synthetic_network": 267
+        },
+        "opinion_representation": {
+          "continuous": 1012,
+          "discrete": 403,
+          "not_reported": 395,
+          "other_representation": 219
+        },
+        "reported_outcomes": {
+          "consensus": 907,
+          "not_reported": 161,
+          "other_outcome": 1184,
+          "persistent_diversity": 474,
+          "polarization": 345
+        },
+        "reproducibility_artifacts": {
+          "data": 1,
+          "environment": 9,
+          "not_reported": 1941
+        },
+        "study_design": {
+          "analytical": 1073,
+          "empirical": 133,
+          "not_reported": 252,
+          "secondary": 0,
+          "simulation": 1132
+        },
+        "validation_method": {
+          "analytical": 1033,
+          "empirical_macro": 47,
+          "empirical_micro": 40,
+          "not_reported": 293,
+          "numerical": 1113,
+          "robustness": 250
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 1951
+    },
+    {
+      "batch_index": 7,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 18,
+          "no_empirical_data_reported": 1869,
+          "not_reported": 143,
+          "observational_data": 193,
+          "other_data": 58
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 16,
+          "model_comparison": 4,
+          "not_reported": 1904,
+          "other_author_stated_gap": 357
+        },
+        "influence_mechanism": {
+          "assimilation": 915,
+          "bounded_assimilation": 721,
+          "not_reported": 399,
+          "other_mechanism": 451,
+          "repulsion": 172,
+          "social_learning": 82
+        },
+        "model_family": {
+          "bounded_confidence": 679,
+          "linear_averaging": 393,
+          "not_reported": 387,
+          "other_named_family": 628,
+          "voter": 379
+        },
+        "network_topology": {
+          "adaptive_network": 232,
+          "complete": 264,
+          "not_reported": 1043,
+          "other_topology": 520,
+          "spatial": 163,
+          "synthetic_network": 304
+        },
+        "opinion_representation": {
+          "continuous": 1080,
+          "discrete": 508,
+          "not_reported": 515,
+          "other_representation": 243
+        },
+        "reported_outcomes": {
+          "consensus": 1031,
+          "not_reported": 181,
+          "other_outcome": 1396,
+          "persistent_diversity": 534,
+          "polarization": 412
+        },
+        "reproducibility_artifacts": {
+          "data": 1,
+          "environment": 11,
+          "not_reported": 2250
+        },
+        "study_design": {
+          "analytical": 1217,
+          "empirical": 165,
+          "not_reported": 302,
+          "secondary": 0,
+          "simulation": 1315
+        },
+        "validation_method": {
+          "analytical": 1172,
+          "empirical_macro": 61,
+          "empirical_micro": 50,
+          "not_reported": 350,
+          "numerical": 1286,
+          "robustness": 291
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 2262
+    },
+    {
+      "batch_index": 8,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 25,
+          "no_empirical_data_reported": 2094,
+          "not_reported": 162,
+          "observational_data": 231,
+          "other_data": 67
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 17,
+          "model_comparison": 5,
+          "not_reported": 2151,
+          "other_author_stated_gap": 409
+        },
+        "influence_mechanism": {
+          "assimilation": 1035,
+          "bounded_assimilation": 752,
+          "not_reported": 477,
+          "other_mechanism": 525,
+          "repulsion": 202,
+          "social_learning": 105
+        },
+        "model_family": {
+          "bounded_confidence": 705,
+          "linear_averaging": 417,
+          "not_reported": 467,
+          "other_named_family": 750,
+          "voter": 443
+        },
+        "network_topology": {
+          "adaptive_network": 263,
+          "complete": 299,
+          "not_reported": 1175,
+          "other_topology": 589,
+          "spatial": 184,
+          "synthetic_network": 349
+        },
+        "opinion_representation": {
+          "continuous": 1147,
+          "discrete": 602,
+          "not_reported": 630,
+          "other_representation": 276
+        },
+        "reported_outcomes": {
+          "consensus": 1134,
+          "not_reported": 206,
+          "other_outcome": 1589,
+          "persistent_diversity": 591,
+          "polarization": 479
+        },
+        "reproducibility_artifacts": {
+          "data": 1,
+          "environment": 12,
+          "not_reported": 2546
+        },
+        "study_design": {
+          "analytical": 1354,
+          "empirical": 205,
+          "not_reported": 340,
+          "secondary": 0,
+          "simulation": 1492
+        },
+        "validation_method": {
+          "analytical": 1304,
+          "empirical_macro": 77,
+          "empirical_micro": 64,
+          "not_reported": 398,
+          "numerical": 1455,
+          "robustness": 337
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 2559
+    },
+    {
+      "batch_index": 9,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 39,
+          "no_empirical_data_reported": 2299,
+          "not_reported": 180,
+          "observational_data": 268,
+          "other_data": 72
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 21,
+          "model_comparison": 6,
+          "not_reported": 2364,
+          "other_author_stated_gap": 468
+        },
+        "influence_mechanism": {
+          "assimilation": 1122,
+          "bounded_assimilation": 769,
+          "not_reported": 569,
+          "other_mechanism": 608,
+          "repulsion": 220,
+          "social_learning": 127
+        },
+        "model_family": {
+          "bounded_confidence": 718,
+          "linear_averaging": 437,
+          "not_reported": 559,
+          "other_named_family": 871,
+          "voter": 483
+        },
+        "network_topology": {
+          "adaptive_network": 294,
+          "complete": 332,
+          "not_reported": 1298,
+          "other_topology": 653,
+          "spatial": 212,
+          "synthetic_network": 375
+        },
+        "opinion_representation": {
+          "continuous": 1192,
+          "discrete": 677,
+          "not_reported": 757,
+          "other_representation": 313
+        },
+        "reported_outcomes": {
+          "consensus": 1211,
+          "not_reported": 227,
+          "other_outcome": 1779,
+          "persistent_diversity": 624,
+          "polarization": 545
+        },
+        "reproducibility_artifacts": {
+          "data": 2,
+          "environment": 15,
+          "not_reported": 2820
+        },
+        "study_design": {
+          "analytical": 1491,
+          "empirical": 253,
+          "not_reported": 362,
+          "secondary": 0,
+          "simulation": 1664
+        },
+        "validation_method": {
+          "analytical": 1433,
+          "empirical_macro": 92,
+          "empirical_micro": 85,
+          "not_reported": 434,
+          "numerical": 1618,
+          "robustness": 359
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 2835
+    },
+    {
+      "batch_index": 10,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 49,
+          "no_empirical_data_reported": 2509,
+          "not_reported": 199,
+          "observational_data": 303,
+          "other_data": 81
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 23,
+          "model_comparison": 6,
+          "not_reported": 2577,
+          "other_author_stated_gap": 537
+        },
+        "influence_mechanism": {
+          "assimilation": 1211,
+          "bounded_assimilation": 781,
+          "not_reported": 665,
+          "other_mechanism": 696,
+          "repulsion": 243,
+          "social_learning": 150
+        },
+        "model_family": {
+          "bounded_confidence": 726,
+          "linear_averaging": 449,
+          "not_reported": 654,
+          "other_named_family": 1000,
+          "voter": 527
+        },
+        "network_topology": {
+          "adaptive_network": 315,
+          "complete": 365,
+          "not_reported": 1441,
+          "other_topology": 712,
+          "spatial": 232,
+          "synthetic_network": 409
+        },
+        "opinion_representation": {
+          "continuous": 1230,
+          "discrete": 754,
+          "not_reported": 890,
+          "other_representation": 354
+        },
+        "reported_outcomes": {
+          "consensus": 1299,
+          "not_reported": 250,
+          "other_outcome": 1985,
+          "persistent_diversity": 663,
+          "polarization": 598
+        },
+        "reproducibility_artifacts": {
+          "data": 2,
+          "environment": 18,
+          "not_reported": 3098
+        },
+        "study_design": {
+          "analytical": 1613,
+          "empirical": 293,
+          "not_reported": 400,
+          "secondary": 0,
+          "simulation": 1827
+        },
+        "validation_method": {
+          "analytical": 1550,
+          "empirical_macro": 112,
+          "empirical_micro": 96,
+          "not_reported": 477,
+          "numerical": 1779,
+          "robustness": 394
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 3116
+    },
+    {
+      "batch_index": 11,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 53,
+          "no_empirical_data_reported": 2692,
+          "not_reported": 216,
+          "observational_data": 350,
+          "other_data": 94
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 23,
+          "model_comparison": 6,
+          "not_reported": 2784,
+          "other_author_stated_gap": 592
+        },
+        "influence_mechanism": {
+          "assimilation": 1280,
+          "bounded_assimilation": 789,
+          "not_reported": 771,
+          "other_mechanism": 775,
+          "repulsion": 263,
+          "social_learning": 172
+        },
+        "model_family": {
+          "bounded_confidence": 731,
+          "linear_averaging": 462,
+          "not_reported": 739,
+          "other_named_family": 1133,
+          "voter": 564
+        },
+        "network_topology": {
+          "adaptive_network": 327,
+          "complete": 385,
+          "not_reported": 1576,
+          "other_topology": 780,
+          "spatial": 252,
+          "synthetic_network": 434
+        },
+        "opinion_representation": {
+          "continuous": 1258,
+          "discrete": 827,
+          "not_reported": 1020,
+          "other_representation": 390
+        },
+        "reported_outcomes": {
+          "consensus": 1363,
+          "not_reported": 268,
+          "other_outcome": 2185,
+          "persistent_diversity": 691,
+          "polarization": 648
+        },
+        "reproducibility_artifacts": {
+          "data": 4,
+          "environment": 21,
+          "not_reported": 3355
+        },
+        "study_design": {
+          "analytical": 1745,
+          "empirical": 337,
+          "not_reported": 425,
+          "secondary": 0,
+          "simulation": 1994
+        },
+        "validation_method": {
+          "analytical": 1677,
+          "empirical_macro": 129,
+          "empirical_micro": 111,
+          "not_reported": 509,
+          "numerical": 1939,
+          "robustness": 424
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 3377
+    },
+    {
+      "batch_index": 12,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 60,
+          "no_empirical_data_reported": 2839,
+          "not_reported": 232,
+          "observational_data": 387,
+          "other_data": 100
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 23,
+          "model_comparison": 7,
+          "not_reported": 2936,
+          "other_author_stated_gap": 650
+        },
+        "influence_mechanism": {
+          "assimilation": 1343,
+          "bounded_assimilation": 801,
+          "not_reported": 843,
+          "other_mechanism": 838,
+          "repulsion": 282,
+          "social_learning": 191
+        },
+        "model_family": {
+          "bounded_confidence": 740,
+          "linear_averaging": 477,
+          "not_reported": 800,
+          "other_named_family": 1254,
+          "voter": 584
+        },
+        "network_topology": {
+          "adaptive_network": 342,
+          "complete": 403,
+          "not_reported": 1685,
+          "other_topology": 827,
+          "spatial": 271,
+          "synthetic_network": 454
+        },
+        "opinion_representation": {
+          "continuous": 1288,
+          "discrete": 879,
+          "not_reported": 1122,
+          "other_representation": 420
+        },
+        "reported_outcomes": {
+          "consensus": 1409,
+          "not_reported": 287,
+          "other_outcome": 2327,
+          "persistent_diversity": 717,
+          "polarization": 700
+        },
+        "reproducibility_artifacts": {
+          "data": 5,
+          "environment": 29,
+          "not_reported": 3558
+        },
+        "study_design": {
+          "analytical": 1837,
+          "empirical": 374,
+          "not_reported": 449,
+          "secondary": 0,
+          "simulation": 2101
+        },
+        "validation_method": {
+          "analytical": 1763,
+          "empirical_macro": 150,
+          "empirical_micro": 123,
+          "not_reported": 541,
+          "numerical": 2039,
+          "robustness": 443
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 3588
+    },
+    {
+      "batch_index": 13,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 67,
+          "no_empirical_data_reported": 2980,
+          "not_reported": 249,
+          "observational_data": 425,
+          "other_data": 110
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 28,
+          "model_comparison": 10,
+          "not_reported": 3087,
+          "other_author_stated_gap": 698
+        },
+        "influence_mechanism": {
+          "assimilation": 1389,
+          "bounded_assimilation": 808,
+          "not_reported": 921,
+          "other_mechanism": 902,
+          "repulsion": 292,
+          "social_learning": 217
+        },
+        "model_family": {
+          "bounded_confidence": 745,
+          "linear_averaging": 486,
+          "not_reported": 868,
+          "other_named_family": 1369,
+          "voter": 602
+        },
+        "network_topology": {
+          "adaptive_network": 360,
+          "complete": 422,
+          "not_reported": 1797,
+          "other_topology": 874,
+          "spatial": 286,
+          "synthetic_network": 469
+        },
+        "opinion_representation": {
+          "continuous": 1310,
+          "discrete": 931,
+          "not_reported": 1232,
+          "other_representation": 446
+        },
+        "reported_outcomes": {
+          "consensus": 1449,
+          "not_reported": 308,
+          "other_outcome": 2476,
+          "persistent_diversity": 735,
+          "polarization": 741
+        },
+        "reproducibility_artifacts": {
+          "data": 6,
+          "environment": 32,
+          "not_reported": 3758
+        },
+        "study_design": {
+          "analytical": 1924,
+          "empirical": 417,
+          "not_reported": 479,
+          "secondary": 0,
+          "simulation": 2203
+        },
+        "validation_method": {
+          "analytical": 1847,
+          "empirical_macro": 166,
+          "empirical_micro": 135,
+          "not_reported": 588,
+          "numerical": 2130,
+          "robustness": 462
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 3792
+    },
+    {
+      "batch_index": 14,
+      "category_counts": {
+        "empirical_grounding": {
+          "experiment": 72,
+          "no_empirical_data_reported": 3111,
+          "not_reported": 268,
+          "observational_data": 459,
+          "other_data": 117
+        },
+        "evidence_gaps": {
+          "macro_level_validation": 29,
+          "model_comparison": 12,
+          "not_reported": 3226,
+          "other_author_stated_gap": 752
+        },
+        "influence_mechanism": {
+          "assimilation": 1436,
+          "bounded_assimilation": 819,
+          "not_reported": 976,
+          "other_mechanism": 972,
+          "repulsion": 307,
+          "social_learning": 244
+        },
+        "model_family": {
+          "bounded_confidence": 749,
+          "linear_averaging": 493,
+          "not_reported": 930,
+          "other_named_family": 1479,
+          "voter": 621
+        },
+        "network_topology": {
+          "adaptive_network": 375,
+          "complete": 445,
+          "not_reported": 1911,
+          "other_topology": 907,
+          "spatial": 298,
+          "synthetic_network": 485
+        },
+        "opinion_representation": {
+          "continuous": 1329,
+          "discrete": 980,
+          "not_reported": 1338,
+          "other_representation": 470
+        },
+        "reported_outcomes": {
+          "consensus": 1487,
+          "not_reported": 327,
+          "other_outcome": 2618,
+          "persistent_diversity": 753,
+          "polarization": 793
+        },
+        "reproducibility_artifacts": {
+          "data": 7,
+          "environment": 35,
+          "not_reported": 3949
+        },
+        "study_design": {
+          "analytical": 2010,
+          "empirical": 453,
+          "not_reported": 503,
+          "secondary": 0,
+          "simulation": 2304
+        },
+        "validation_method": {
+          "analytical": 1928,
+          "empirical_macro": 184,
+          "empirical_micro": 145,
+          "not_reported": 625,
+          "numerical": 2224,
+          "robustness": 481
+        }
+      },
+      "frame_version": "5ddc759c6063ef40102f409ae5113992abfea55e21eee9a5f064601d9834a160",
+      "included_primary": 3986
+    }
+  ],
+  "frame": {
+    "empirical_grounding": [
+      "experiment",
+      "no_empirical_data_reported",
+      "not_reported",
+      "observational_data",
+      "other_data"
+    ],
+    "evidence_gaps": [
+      "macro_level_validation",
+      "model_comparison",
+      "not_reported",
+      "other_author_stated_gap"
+    ],
+    "influence_mechanism": [
+      "assimilation",
+      "bounded_assimilation",
+      "not_reported",
+      "other_mechanism",
+      "repulsion",
+      "social_learning"
+    ],
+    "model_family": [
+      "bounded_confidence",
+      "linear_averaging",
+      "not_reported",
+      "other_named_family",
+      "voter"
+    ],
+    "network_topology": [
+      "adaptive_network",
+      "complete",
+      "not_reported",
+      "other_topology",
+      "spatial",
+      "synthetic_network"
+    ],
+    "opinion_representation": [
+      "continuous",
+      "discrete",
+      "not_reported",
+      "other_representation"
+    ],
+    "reported_outcomes": [
+      "consensus",
+      "not_reported",
+      "other_outcome",
+      "persistent_diversity",
+      "polarization"
+    ],
+    "reproducibility_artifacts": [
+      "data",
+      "environment",
+      "not_reported"
+    ],
+    "study_design": [
+      "analytical",
+      "empirical",
+      "not_reported",
+      "secondary",
+      "simulation"
+    ],
+    "validation_method": [
+      "analytical",
+      "empirical_macro",
+      "empirical_micro",
+      "not_reported",
+      "numerical",
+      "robustness"
+    ]
+  },
+  "generated_for": "successor-1, 2026-09-30; included_primary is an inherited schema key, not certified eligibility",
+  "rule": {
+    "consecutive_transitions": 2,
+    "max_shift_pp": 2.0,
+    "min_included": 500
+  },
+  "schema": "ic-study.map-saturation-series.v1",
+  "source": "Existing adopted batch extractions; identity union then removal of the final secondary cohort from every prefix; eligibility corrections pending."
+}

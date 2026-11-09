@@ -1,0 +1,23 @@
+% T_M1_transitions; requires booktabs
+% max_shift_pp: largest |c/max(1,n_c) - p/max(1,n_p)| x 100 over every field and every code of either snapshot, missing counts 0; field/code attains it (ties: first in sorted order)
+% passes: max_shift_pp <= 2, no appearing code (c > 0, p = 0) and an unchanged frame_version
+% provisional_saturation: included_primary >= 500 and the last 2 transitions pass; the random-remainder audit is outside this series
+\begin{tabular}{rrrrllllll}
+\toprule
+from\_batch & to\_batch & included\_primary & max\_shift\_pp & field & code & appearing & frame\_changed & passes & provisional\_saturation \\
+\midrule
+1 & 2 & 624 & 9.485 & validation\_method & analytical & none & no & no & no \\
+2 & 3 & 974 & 7.061 & model\_family & bounded\_confidence & none & no & no & no \\
+3 & 4 & 1328 & 8.262 & influence\_mechanism & bounded\_assimilation & reproducibility\_artifacts/data & no & no & no \\
+4 & 5 & 1675 & 6.640 & influence\_mechanism & bounded\_assimilation & none & no & no & no \\
+5 & 6 & 1985 & 4.419 & opinion\_representation & continuous & none & no & no & no \\
+6 & 7 & 2300 & 4.070 & opinion\_representation & continuous & none & no & no & no \\
+7 & 8 & 2600 & 2.946 & opinion\_representation & continuous & none & no & no & no \\
+8 & 9 & 2882 & 2.765 & opinion\_representation & continuous & none & no & no & no \\
+9 & 10 & 3167 & 2.562 & opinion\_representation & continuous & none & no & no & no \\
+10 & 11 & 3436 & 2.227 & opinion\_representation & continuous & none & no & no & no \\
+11 & 12 & 3650 & 1.369 & opinion\_representation & continuous & none & no & yes & no \\
+12 & 13 & 3858 & 1.371 & opinion\_representation & continuous & none & no & yes & yes \\
+13 & 14 & 4056 & 1.197 & opinion\_representation & continuous & none & no & yes & yes \\
+\bottomrule
+\end{tabular}

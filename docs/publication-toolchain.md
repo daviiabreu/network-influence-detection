@@ -1,23 +1,24 @@
-# Toolchain da versão JCSS
+# JCSS manuscript toolchain
 
-As fontes editoriais ficam em
-`studies/ic-2026-2027/publications/jcss-journal/`. `build.py` compila o artigo e
-o Online Resource 1 numa cópia temporária e executa `check.py`. `package.py`
-prepara um kit de submissão a partir de um build completo e compara o texto
-do PDF recompilado com o build. Nenhum comando envia arquivos à revista.
+The manuscript sources live in
+`studies/ic-2026-2027/publications/jcss-journal/`. `build.py` compiles the
+article and Online Resource 1 in a temporary copy and runs `check.py`.
+`package.py` prepares a submission kit from a complete build and compares the
+text of the recompiled PDF with the build. No command sends anything to the
+journal.
 
-Instale Python 3.12, Tectonic e Poppler (`pdftotext` e `pdfinfo`). O ambiente
-original usava Tectonic 0.17.0; use essa versão quando a comparação com o build
-histórico exigir o mesmo engine. A
-[instalação oficial do Tectonic](https://tectonic-typesetting.github.io/book/latest/getting-started/install.html)
-descreve as distribuições disponíveis.
+Install Python 3.12, Tectonic and Poppler (`pdftotext` and `pdfinfo`). The
+original environment used Tectonic 0.17.0; use that version when you need to
+compare against the historical build with the same engine. The
+[official Tectonic installation guide](https://tectonic-typesetting.github.io/book/latest/getting-started/install.html)
+lists the available distributions.
 
-Baixe o template de artigo no
-[canal oficial Springer Nature](https://www.springernature.com/gp/authors/campaigns/latex-author-support/see-where-our-services-will-take-you/18782940)
-e extraia `sn-jnl.cls` e `sn-mathphys-num.bst` para uma pasta externa ao Git.
-Preserve a versão e o SHA-256 obtidos. O template não foi copiado nem
-relicenciado por esta extração. O empacotador aplica ao `.bst` a transformação
-editorial já existente no estudo, durante o staging.
+Download the article template from the
+[Springer Nature LaTeX author support page](https://www.springernature.com/gp/authors/campaigns/latex-author-support/see-where-our-services-will-take-you/18782940)
+and extract `sn-jnl.cls` and `sn-mathphys-num.bst` into a folder outside Git.
+Keep the version and SHA-256 you obtained. The template was not copied or
+relicensed by this repository. During staging, the packager applies to the
+`.bst` the editorial transformation already defined in the study.
 
 ```sh
 cd studies/ic-2026-2027/publications/jcss-journal
@@ -29,24 +30,24 @@ python3 package.py --template /path/to/springer-template \
   --build /path/to/scratch-build --out /path/to/new-submission-kit
 ```
 
-Os mesmos valores podem vir de `IC_STUDY_SPRINGER_TEMPLATE`,
-`IC_STUDY_TECTONIC` e `IC_STUDY_TECTONIC_CACHE`; opções explícitas prevalecem.
-`TECTONIC_CACHE_DIR` também é aceito para o cache. Sem configuração, o engine
-vem do `PATH`, o template de `$XDG_DATA_HOME/ic-study/springer-template` e o
-cache de `$XDG_CACHE_HOME/ic-study/tectonic`, com os padrões XDG usuais.
-Para compatibilidade com o ambiente original, as pastas de template/cache
-existentes em `.local/state/research-workbench/` e o engine Nix original são
-fallbacks locais. Não são necessários em outro computador.
+The same values can come from `IC_STUDY_SPRINGER_TEMPLATE`,
+`IC_STUDY_TECTONIC` and `IC_STUDY_TECTONIC_CACHE`; explicit options take
+precedence. `TECTONIC_CACHE_DIR` is also accepted for the cache. Without
+configuration, the engine comes from `PATH`, the template from
+`$XDG_DATA_HOME/ic-study/springer-template` and the cache from
+`$XDG_CACHE_HOME/ic-study/tectonic`, with the usual XDG defaults. For
+compatibility with the original machine, existing template and cache folders
+under `.local/state/research-workbench/` and the original Nix engine are local
+fallbacks; they are not needed elsewhere.
 
-Os dois comandos usam `--only-cached` por padrão. Num computador novo, execute
-`build.py` uma vez com `--allow-downloads` para preparar o cache escolhido;
-depois execute sem essa opção. O
-[manual do Tectonic](https://tectonic-typesetting.github.io/book/latest/getting-started/first-document.html)
-explica o download inicial e a variável do cache. Preparar o cache é uma etapa
-de dependências editoriais, não um experimento científico.
+Both commands use `--only-cached` by default. On a new machine, run `build.py`
+once with `--allow-downloads` to fill the chosen cache, then run it without
+that option. The
+[Tectonic manual](https://tectonic-typesetting.github.io/book/latest/getting-started/first-document.html)
+explains the first download and the cache variable.
 
-`build.py --submission` ativa os bloqueios editoriais adicionais já existentes.
-Uma compilação normal bem-sucedida ainda pode conter declarações pendentes.
-Builds e kits ficam fora das fontes; a pasta de build é substituída a cada
-execução e a pasta do kit deve ser nova. Não faça commit de templates externos,
-caches, PDFs de scratch ou dados privados.
+`build.py --submission` enables the stricter editorial checks, such as failing
+on open `[AT SUBMISSION …]` markers. A normal successful build may still
+contain pending declarations. Builds and kits stay outside the sources: the
+build folder is replaced on every run and the kit folder must be new. Do not
+commit external templates, caches, scratch PDFs or private data.

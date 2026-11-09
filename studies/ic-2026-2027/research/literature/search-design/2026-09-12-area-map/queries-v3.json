@@ -1,0 +1,1350 @@
+{
+  "schema_version": "1",
+  "protocol": {
+    "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v3.json",
+    "file_sha256": "107a43ef3eea63e4bb6294f80f3060ab84f2b9c81faec61dca37ccb454526943",
+    "canonical_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+    "protocol_id": "opinion-dynamics-systematic-map-v3",
+    "publication_window": [
+      "1970-01-01",
+      "2026-09-11"
+    ],
+    "thematic_queries": 60,
+    "exact_metadata_lookups": 967
+  },
+  "status": "planned_exact_queries_not_execution_claims",
+  "queries": [
+    {
+      "exact_query": "all:\"opinion dynamics\" OR all:\"opinion formation\" OR all:\"opinion evolution\"",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q01",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "all:\"bounded confidence\" OR all:\"mixing beliefs\" OR all:\"bounded-confidence\"",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q02",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"reaching a consensus\" AND all:probability) OR all:\"linear opinion pool\" OR all:\"opinion pooling\" OR all:\"social influence network\" OR all:\"social influence and opinions\" OR all:\"DeGroot model\" OR all:\"Friedkin-Johnsen\"",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q03",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"voter model\" OR all:\"q-voter\" OR all:\"majority rule\" OR all:\"closed community\") AND (all:opinion OR all:\"social influence\")",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q04",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"dissemination of culture\" OR all:\"cultural dissemination\" OR all:\"continuous opinions and discrete actions\") AND (all:opinion OR all:belief OR all:culture)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q05",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"adaptive network\" OR all:\"coevolving network\" OR all:\"co-evolving network\" OR all:\"coevolution of networks\") AND (all:opinion OR all:belief)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q06",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"kinetic opinion\" OR all:\"compromise model\" OR all:\"Boltzmann-type\") AND (all:opinion OR all:belief)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q07",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"biased assimilation\" OR all:\"negative influence\" OR all:\"backfire effect\") AND (all:opinion OR all:polarization)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q08",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "all:\"social influence\" AND (all:experiment OR all:empirical OR all:calibration OR all:validation) AND (all:opinion OR all:belief)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q09",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"large language model\" OR all:\"LLM-based agent\" OR all:\"generative agent\") AND (all:\"opinion dynamics\" OR all:\"opinion formation\")",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q10",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"belief dynamics\" OR all:\"belief system\" OR all:\"attitude change\") AND (all:model OR all:dynamics OR all:computational OR all:\"social influence\")",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q11",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "all:\"social learning\" AND (all:belief OR all:opinion OR all:Bayesian)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q12",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "all:\"naming game\" OR (all:\"social convention\" AND (all:model OR all:dynamics)) OR (all:\"committed minorities\" AND (all:opinion OR all:\"social consensus\"))",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q13",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:polarization OR all:polarisation OR all:\"echo chamber\" OR all:\"echo chambers\") AND (all:model OR all:modeling OR all:modelling OR all:dynamics OR all:\"agent-based\") AND (all:social OR all:opinion OR all:political OR all:ideological)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q14a",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:polarization OR all:polarisation OR all:\"echo chamber\" OR all:\"echo chambers\") AND (all:model OR all:modeling OR all:modelling OR all:dynamics OR all:\"agent-based\") AND (all:belief OR all:attitude OR all:cultural)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q14b",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:hypergraph OR all:hypergraphs OR all:multibody OR all:\"higher-order\" OR all:\"group interaction\") AND (all:opinion OR all:\"social influence\" OR (all:consensus AND all:social))",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q15",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(all:\"voting intention\" OR all:\"majority rule\" OR all:\"ideological opinions\") AND (all:opinion OR all:social OR all:political OR all:democratic)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.q16",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "opinion dynamics OR opinion formation OR opinion evolution",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q01",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "bounded confidence OR bounded-confidence OR mixing beliefs",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q02",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "DeGroot OR Friedkin-Johnsen",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q03a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "linear opinion pool OR opinion pooling",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q03b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "social influence and opinions",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q03c",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "voter model OR q-voter",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q04a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "Sznajd OR majority rule",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q04b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "cultural dissemination OR dissemination of culture OR continuous opinions and discrete actions",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q05",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "adaptive network OR coevolving network",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q06a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "co-evolving network OR coevolution of networks",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q06b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "kinetic opinion OR compromise model OR Boltzmann-type",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q07",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "biased assimilation OR negative influence OR backfire effect",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q08",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "social influence OR collective dynamics of opinion",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q09",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "LLM-based Agents OR generative agents",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q10",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "belief dynamics OR belief system",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q11a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "attitude change OR attitude dynamics",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q11b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "social learning OR non-bayesian learning",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q12a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "naming game OR social convention",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q13a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "committed minority OR committed minorities",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q13b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "opinion polarization OR opinion polarisation",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q14a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "political polarization OR political polarisation",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q14b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "echo chamber OR ideological polarization",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q14c",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "consensus dynamics OR multibody interactions",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q15a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "voter dynamics OR higher-order opinion",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q15b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "voting intention OR ideological opinions",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q16a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "\"opinion dynamics\" OR \"opinion formation\" OR \"opinion evolution\"",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q01",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "\"bounded confidence\" OR \"mixing beliefs\" OR \"bounded-confidence\"",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q02",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"reaching a consensus\" AND probability) OR \"linear opinion pool\" OR \"opinion pooling\" OR \"social influence network\" OR \"social influence and opinions\" OR \"DeGroot model\" OR \"Friedkin-Johnsen\"",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q03",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"voter model\" OR \"q-voter\" OR \"majority rule\" OR \"closed community\") AND (opinion OR \"social influence\")",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q04",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"dissemination of culture\" OR \"cultural dissemination\" OR \"continuous opinions and discrete actions\") AND (opinion OR belief OR culture)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q05",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"adaptive network\" OR \"coevolving network\" OR \"co-evolving network\" OR \"coevolution of networks\") AND (opinion OR belief)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q06",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"kinetic opinion\" OR \"compromise model\" OR \"Boltzmann-type\") AND (opinion OR belief)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q07",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"biased assimilation\" OR \"negative influence\" OR \"backfire effect\") AND (opinion OR polarization)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q08",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "\"social influence\" AND (experiment OR empirical OR calibration OR validation) AND (opinion OR belief)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q09",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"large language model\" OR \"LLM-based agent\" OR \"generative agent\") AND (\"opinion dynamics\" OR \"opinion formation\")",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q10",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"belief dynamics\" OR \"belief system\" OR \"attitude change\") AND (model OR dynamics OR computational OR \"social influence\")",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q11",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "\"social learning\" AND (belief OR opinion OR Bayesian)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q12",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "\"naming game\" OR (\"social convention\" AND (model OR dynamics)) OR (\"committed minorities\" AND (opinion OR \"social consensus\"))",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q13",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(polarization OR polarisation OR \"echo chamber\" OR \"echo chambers\") AND (model OR modeling OR modelling OR dynamics OR \"agent-based\") AND (social OR opinion OR political OR ideological OR belief OR attitude OR cultural)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2009-12-31"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q14a",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(polarization OR polarisation OR \"echo chamber\" OR \"echo chambers\") AND (model OR modeling OR modelling OR dynamics OR \"agent-based\") AND (social OR opinion OR political OR ideological OR belief OR attitude OR cultural)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "2010-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2019-12-31"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q14b",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(polarization OR polarisation OR \"echo chamber\" OR \"echo chambers\") AND (model OR modeling OR modelling OR dynamics OR \"agent-based\") AND (social OR opinion OR political OR ideological OR belief OR attitude OR cultural)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "2020-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q14c",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(hypergraph OR hypergraphs OR multibody OR \"higher-order\" OR \"group interaction\") AND (opinion OR \"social influence\" OR (consensus AND social))",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q15",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "(\"voting intention\" OR \"majority rule\" OR \"ideological opinions\") AND (opinion OR social OR political OR democratic)",
+      "execution_window": "Fresh acquisition under the broad-execution authorization of 2026-09-11 and this exact approved successor. Publication cutoff 2026-09-11; historical v2 remains unchanged.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.q16",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 100-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    }
+  ]
+}

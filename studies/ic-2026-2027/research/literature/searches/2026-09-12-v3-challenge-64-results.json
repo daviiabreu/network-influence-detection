@@ -1,0 +1,1236 @@
+{
+  "acquisition_report_sha256": "edfa48474097d7c81e441fdbe5089a924d514deabbb6baf3bbaf60e0df220a11",
+  "challenge_input_sha256": "1b964cce01eceefa765874f22733a628795a1fe8cd815deed700ef2b659612cc",
+  "format": "challenge-64-regression-metadata-1",
+  "generated_at": "2026-09-12T06:08:57.089546+00:00",
+  "interpretation": "Coverage regression after deliberate expansion and identifier recovery; not independent recall, eligibility or sensitivity.",
+  "records": [
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-039",
+      "doi": "10.1126/sciadv.adu9368",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0676",
+        "search.arxiv.q13",
+        "search.openalex.q13"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-053",
+      "doi": "10.1080/0022250X.2018.1517761",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 9,
+      "searches": [
+        "metadata.crossref.doi.0353",
+        "search.arxiv.q01",
+        "search.arxiv.q02",
+        "search.arxiv.q08",
+        "search.arxiv.q14a",
+        "search.openalex.q01",
+        "search.openalex.q02",
+        "search.openalex.q08",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-065",
+      "doi": "10.1088/1742-5468/2006/06/P06014",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": false,
+      "observations": 1,
+      "searches": [
+        "metadata.crossref.doi.0385"
+      ],
+      "sources": [
+        "crossref"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-071",
+      "doi": "10.1145/3589334.3645713",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0755",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-072",
+      "doi": "10.1103/PhysRevLett.124.048301",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0564",
+        "search.arxiv.q09",
+        "search.arxiv.q14a",
+        "search.openalex.q09",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-078",
+      "doi": "10.1103/PhysRevE.108.054304",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0466",
+        "search.arxiv.q14a",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-162",
+      "doi": "10.1609/icwsm.v16i1.19275",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0856",
+        "search.openalex.q01",
+        "search.openalex.q02",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-193",
+      "doi": "10.1103/PhysRevResearch.2.043117",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 6,
+      "searches": [
+        "metadata.crossref.doi.0583",
+        "search.arxiv.q04",
+        "search.arxiv.q14a",
+        "search.openalex.q01",
+        "search.openalex.q04",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-245",
+      "doi": "10.1016/j.ins.2021.12.069",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0113",
+        "search.arxiv.q14a",
+        "search.dblp.q14a",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-250",
+      "doi": "10.1080/0022250X.2010.532261",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0349",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-266",
+      "doi": "10.18564/jasss.4566",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0875",
+        "search.dblp.q14c",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-269",
+      "doi": "10.1016/j.physa.2015.10.006",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0170",
+        "search.openalex.q01",
+        "search.openalex.q08",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-275",
+      "doi": "10.1016/0022-2496(86)90019-2",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0073",
+        "search.openalex.q16"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-279",
+      "doi": "10.1016/j.physa.2003.10.041",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0156",
+        "search.openalex.q01",
+        "search.openalex.q14a"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-365",
+      "doi": "10.1103/PhysRevE.101.022305",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0442",
+        "search.arxiv.q04",
+        "search.arxiv.q15",
+        "search.openalex.q04",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-372",
+      "doi": "10.1038/s42005-022-00845-y",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0293",
+        "search.arxiv.q13",
+        "search.openalex.q13"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-417",
+      "doi": "10.1103/PhysRevE.111.L052301",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0473",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-516",
+      "doi": "10.1103/PhysRevE.78.036104",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": false,
+      "observations": 1,
+      "searches": [
+        "metadata.crossref.doi.0497"
+      ],
+      "sources": [
+        "crossref"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-569",
+      "doi": "10.1371/journal.pone.0074516",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0831",
+        "search.openalex.q08",
+        "search.openalex.q09",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-576",
+      "doi": "10.1103/PhysRevE.104.064305",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0453",
+        "search.arxiv.q15",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-577",
+      "doi": "10.1103/PhysRevE.101.032310",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": false,
+      "observations": 1,
+      "searches": [
+        "metadata.crossref.doi.0443"
+      ],
+      "sources": [
+        "crossref"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-610",
+      "doi": "10.1007/s41109-022-00495-7",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0067",
+        "search.openalex.q01",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-611",
+      "doi": "10.1038/s41598-023-39725-y",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0289",
+        "search.openalex.q01",
+        "search.openalex.q02",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-613",
+      "doi": "10.1016/j.physa.2023.129257",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0181",
+        "search.openalex.q04",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-614",
+      "doi": "10.1103/PhysRevE.105.054307",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0456",
+        "search.arxiv.q04",
+        "search.arxiv.q15",
+        "search.openalex.q04",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-629",
+      "doi": "10.1088/2632-072X/ac340f",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 7,
+      "searches": [
+        "metadata.crossref.doi.0399",
+        "search.arxiv.q01",
+        "search.arxiv.q14a",
+        "search.arxiv.q15",
+        "search.openalex.q01",
+        "search.openalex.q14c",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-633",
+      "doi": "10.1103/PhysRevE.104.044312",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 7,
+      "searches": [
+        "metadata.crossref.doi.0452",
+        "search.arxiv.q01",
+        "search.arxiv.q14a",
+        "search.arxiv.q15",
+        "search.openalex.q01",
+        "search.openalex.q14c",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-637",
+      "doi": "10.1038/s41598-019-43830-2",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0279",
+        "search.openalex.q01",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-673",
+      "doi": "10.1088/2632-072X/abcea3",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0398",
+        "search.arxiv.q14a",
+        "search.arxiv.q15"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-674",
+      "doi": "10.1063/5.0004996",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0320",
+        "search.arxiv.q14a",
+        "search.arxiv.q16",
+        "search.openalex.q14c",
+        "search.openalex.q16"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-676",
+      "doi": "10.1073/pnas.2102141118",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0337",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-704",
+      "doi": "10.1088/1742-5468/2010/06/P06005",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0389",
+        "search.arxiv.q01",
+        "search.openalex.q01"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-725",
+      "doi": "10.1098/rsif.2023.0372",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0425",
+        "search.openalex.q01",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-737",
+      "doi": "10.1371/journal.pone.0213246",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 7,
+      "searches": [
+        "metadata.crossref.doi.0843",
+        "search.arxiv.q01",
+        "search.arxiv.q02",
+        "search.arxiv.q14a",
+        "search.openalex.q01",
+        "search.openalex.q02",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-775",
+      "doi": "10.1103/PhysRevE.101.012101",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0441",
+        "search.arxiv.q14a",
+        "search.arxiv.q16",
+        "search.openalex.q14c",
+        "search.openalex.q16"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-812",
+      "doi": "10.1103/physreve.84.011130",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0510",
+        "search.arxiv.q13",
+        "search.openalex.q13"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-824",
+      "doi": "10.1145/3589334.3645714",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0756",
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q03",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-832",
+      "doi": "10.1063/5.0004787",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0319",
+        "search.arxiv.q01",
+        "search.openalex.q01"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "social-learning-naive",
+      "doi": "10.1257/mic.2.1.112",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": false,
+      "observations": 1,
+      "searches": [
+        "metadata.crossref.doi.0821"
+      ],
+      "sources": [
+        "crossref"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "social-learning-theory",
+      "doi": "10.3982/ECTA14613",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0930",
+        "search.openalex.q12"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "social-learning-nonbayesian",
+      "doi": "10.1016/j.geb.2012.06.001",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0106",
+        "search.dblp.q12a",
+        "search.openalex.q01",
+        "search.openalex.q12"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "nonlinear-tunable",
+      "doi": "10.1109/TAC.2022.3159527",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 6,
+      "searches": [
+        "metadata.crossref.doi.0611",
+        "search.arxiv.q01",
+        "search.arxiv.q14a",
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "llm-allocation",
+      "doi": "10.18653/v1/2025.findings-naacl.101",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0882",
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q10"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "recent-hyper-opinion",
+      "doi": "10.1371/journal.pone.0321718",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0848",
+        "search.openalex.q01",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "recent-multidimensional",
+      "doi": "10.1016/j.chaos.2025.116188",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0091",
+        "search.openalex.q01",
+        "search.openalex.q03",
+        "search.openalex.q15"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "evidence-dempster",
+      "doi": "10.3390/computers13080190",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0915",
+        "search.dblp.q01",
+        "search.openalex.q01"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "grand-scale",
+      "doi": "10.1080/0022250X.2025.2529179",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0354",
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "social-power",
+      "doi": "10.15195/v3.a20",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0852",
+        "search.openalex.q01"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-073",
+      "doi": "10.1103/PhysRevX.11.011012",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0590",
+        "search.arxiv.q14a",
+        "search.arxiv.q16",
+        "search.openalex.q16"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-082",
+      "doi": "10.1016/j.automatica.2023.111302",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0083",
+        "search.dblp.q01",
+        "search.dblp.q02",
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-124",
+      "doi": "10.1038/srep24775",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": false,
+      "observations": 1,
+      "searches": [
+        "metadata.crossref.doi.0300"
+      ],
+      "sources": [
+        "crossref"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-303",
+      "doi": "10.1111/bjso.12286",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0664",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-304",
+      "doi": "10.18564/jasss.5204",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0876",
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q11",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-411",
+      "doi": "10.18564/jasss.5298",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0878",
+        "search.openalex.q01",
+        "search.openalex.q09",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-444",
+      "doi": "10.18564/jasss.3220",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0869",
+        "search.dblp.q02",
+        "search.openalex.q02",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "rmp-ref-500",
+      "doi": "10.1037/rev0000291",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0246",
+        "search.openalex.q11",
+        "search.openalex.q14c"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-570",
+      "doi": "10.1371/journal.pcbi.1000959",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0826",
+        "search.arxiv.q01",
+        "search.arxiv.q09",
+        "search.openalex.q01",
+        "search.openalex.q09"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-620",
+      "doi": "10.1109/TAC.2016.2613905",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 6,
+      "searches": [
+        "metadata.crossref.doi.0608",
+        "search.arxiv.q01",
+        "search.arxiv.q03",
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q03"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "rmp-ref-740",
+      "doi": "10.1371/journal.pone.0157948",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 6,
+      "searches": [
+        "metadata.crossref.doi.0837",
+        "search.arxiv.q08",
+        "search.arxiv.q09",
+        "search.openalex.q08",
+        "search.openalex.q09",
+        "search.openalex.q14b"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "kinetic-toscani",
+      "doi": "10.4310/CMS.2006.v4.n3.a1",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0932",
+        "search.openalex.q01"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "kinetic-continuous",
+      "doi": "10.1137/060658679",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 4,
+      "searches": [
+        "metadata.crossref.doi.0693",
+        "search.arxiv.q01",
+        "search.dblp.q01",
+        "search.openalex.q01"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "dblp",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "kinetic-conviction",
+      "doi": "10.1103/PhysRevE.92.052818",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 5,
+      "searches": [
+        "metadata.crossref.doi.0533",
+        "search.arxiv.q01",
+        "search.arxiv.q07",
+        "search.openalex.q01",
+        "search.openalex.q07"
+      ],
+      "sources": [
+        "arxiv",
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": true,
+      "candidate_id": "empirical-chacoma",
+      "doi": "10.1371/journal.pone.0140406",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 3,
+      "searches": [
+        "metadata.crossref.doi.0834",
+        "search.openalex.q01",
+        "search.openalex.q09"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    },
+    {
+      "baseline_exact_doi_match": false,
+      "candidate_id": "belief-logic",
+      "doi": "10.1126/science.aag2624",
+      "eligibility_assessed": false,
+      "new_exact_doi_match": true,
+      "new_thematic_exact_doi_match": true,
+      "observations": 2,
+      "searches": [
+        "metadata.crossref.doi.0686",
+        "search.openalex.q11"
+      ],
+      "sources": [
+        "crossref",
+        "openalex"
+      ]
+    }
+  ],
+  "source_sha256": "d2c5bbe08f4063167fe9c090be27ce2889ac16eb811a56eda2ce0030010af440"
+}

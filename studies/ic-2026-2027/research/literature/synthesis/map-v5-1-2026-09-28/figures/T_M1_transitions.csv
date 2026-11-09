@@ -1,0 +1,14 @@
+from_batch,to_batch,included_primary,max_shift_pp,field,code,appearing,frame_changed,passes,provisional_saturation
+1,2,624,9.485,validation_method,analytical,none,no,no,no
+2,3,974,7.061,model_family,bounded_confidence,none,no,no,no
+3,4,1328,8.262,influence_mechanism,bounded_assimilation,reproducibility_artifacts/data,no,no,no
+4,5,1675,6.640,influence_mechanism,bounded_assimilation,none,no,no,no
+5,6,1985,4.419,opinion_representation,continuous,none,no,no,no
+6,7,2300,4.070,opinion_representation,continuous,none,no,no,no
+7,8,2600,2.946,opinion_representation,continuous,none,no,no,no
+8,9,2882,2.765,opinion_representation,continuous,none,no,no,no
+9,10,3167,2.562,opinion_representation,continuous,none,no,no,no
+10,11,3436,2.227,opinion_representation,continuous,none,no,no,no
+11,12,3650,1.369,opinion_representation,continuous,none,no,yes,no
+12,13,3858,1.371,opinion_representation,continuous,none,no,yes,yes
+13,14,4056,1.197,opinion_representation,continuous,none,no,yes,yes

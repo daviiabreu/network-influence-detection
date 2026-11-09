@@ -1,0 +1,86 @@
+{
+ "schema_version": "v5-mapping-codebook-1.1",
+ "status": "adopted under delegation (coordinator), pending ratification",
+ "general_rules": [
+  "Classify each field from the supplied title/abstract text only. Naming a model or mechanism that matches a code's definition is stated evidence for that code: this is classification by definition, not inference.",
+  "Assign several codes when the work explicitly studies several (e.g. two model families compared).",
+  "Use not_reported only when the text gives no basis for any code of that field.",
+  "Use other_* codes only for identifiable items outside the listed codes, never for items the listed definitions cover.",
+  "Evidence is a verbatim excerpt from one supplied source that supports the chosen code(s).",
+  "Add an other_* code alongside a listed code only when the text explicitly reports a distinct item that no listed code covers; never add other_* for aspects already captured by a listed code.",
+  "A named canonical model entails its standard representation and mechanism: bounded-confidence models entail continuous opinions and bounded_assimilation; linear-averaging models (DeGroot, Friedkin-Johnsen) entail continuous opinions and assimilation; voter-family models (voter, majority rule, Sznajd, q-voter) entail discrete opinions and assimilation; Axelrod entails other_representation (trait vectors). Code these unless the text states otherwise."
+ ],
+ "fields": {
+  "model_family": {
+   "bounded_confidence": "Agents are influenced only by opinions within a confidence threshold: Deffuant-Weisbuch, Hegselmann-Krause, relative agreement, and bounded-confidence variants (noise, heterogeneous thresholds, repulsion added).",
+   "linear_averaging": "Weighted averaging of others' opinions without a threshold: DeGroot, French-Harary, Friedkin-Johnsen (stubbornness/anchoring), Abelson, Taylor, linear consensus protocols applied to opinions.",
+   "voter": "Discrete-state copying or local-majority updating: voter model and variants (noisy, nonlinear, q-voter), Galam majority rule, Sznajd, invasion and link-update processes.",
+   "other_named_family": "An identifiable model outside the three families above: Axelrod cultural dissemination, social impact/Ising-type, Bayesian or naive social learning, argument-communication, CODA, contagion/epidemic models applied to opinions, game-theoretic opinion formation, LLM-agent opinion simulations.",
+   "not_reported": "No model family identifiable from the text."
+  },
+  "influence_mechanism": {
+   "assimilation": "Opinions move toward others' opinions (averaging, copying, persuasion toward the source) without a similarity restriction.",
+   "bounded_assimilation": "Assimilation restricted to sufficiently similar others (confidence threshold or similarity-gated influence).",
+   "social_learning": "Beliefs updated by inference from others' signals, choices or actions (Bayesian or heuristic learning).",
+   "repulsion": "Opinions move away from dissimilar or disliked others: negative influence, anticonformity, backfire, rejection.",
+   "other_mechanism": "Only an explicitly named mechanism outside the listed codes: reinforcement, argument exchange, media or algorithmic exposure effects, external fields, stubbornness-only dynamics.",
+   "not_reported": "No influence mechanism stated."
+  },
+  "opinion_representation": {
+   "continuous": "Real-valued opinions on an interval or real line.",
+   "discrete": "Binary or finite categorical opinion states.",
+   "other_representation": "Multidimensional vectors, cultural trait vectors, belief networks, argument sets, probability distributions or other structured states.",
+   "not_reported": "Representation not stated."
+  },
+  "network_topology": {
+   "complete": "All-to-all, mean-field or well-mixed interaction.",
+   "spatial": "Lattices, grids or spatially embedded interaction.",
+   "synthetic_network": "Generated random graphs: Erdos-Renyi, Barabasi-Albert/scale-free, Watts-Strogatz/small-world, stochastic block, configuration models.",
+   "adaptive_network": "Topology coevolves with opinions: rewiring, link update or network adaptation driven by states.",
+   "other_topology": "Empirical/real networks, multilayer or multiplex networks, hypergraphs, temporal networks or other specified structures.",
+   "not_reported": "Interaction structure not stated."
+  },
+  "reported_outcomes": {
+   "consensus": "Convergence to agreement or a single opinion cluster.",
+   "persistent_diversity": "Fragmentation, multiple clusters or coexistence reported without emphasis on polarization.",
+   "polarization": "Bimodal or extreme opinion splits, polarization or echo chambers as outcomes.",
+   "other_outcome": "Only explicitly reported outcomes outside consensus, persistent diversity and polarization: convergence time, cascade size, fit statistics, control or intervention effects.",
+   "not_reported": "No outcome reported."
+  },
+  "study_design": {
+   "analytical": "Mathematical analysis: proofs, mean-field or exact solutions, stability analysis.",
+   "simulation": "Computational experiments or agent-based simulations.",
+   "empirical": "Analysis of empirical data or human experiments together with an opinion model.",
+   "secondary": "Review, survey, perspective or tutorial.",
+   "not_reported": "Design not identifiable."
+  },
+  "validation_method": {
+   "analytical": "Results verified or derived analytically.",
+   "numerical": "Numerical or simulation checks of model behaviour (sweeps, convergence, phase diagrams).",
+   "empirical_macro": "Comparison with aggregate empirical data: distributions, polls, election or platform-level statistics.",
+   "empirical_micro": "Comparison with individual-level data: panels, experiments, interaction traces.",
+   "robustness": "Sensitivity or robustness analyses across parameters, structures or assumptions.",
+   "not_reported": "No validation stated."
+  },
+  "empirical_grounding": {
+   "experiment": "Human-subject experiments.",
+   "observational_data": "Observational empirical data: surveys, social media, voting or behavioural records.",
+   "other_data": "Other data sources used to calibrate or test the model.",
+   "no_empirical_data_reported": "The study is stated or evidently purely theoretical/computational with no empirical data.",
+   "not_reported": "Cannot tell whether empirical data are used."
+  },
+  "reproducibility_artifacts": {
+   "data": "Data availability stated.",
+   "environment": "Code, software or model implementation availability stated.",
+   "not_reported": "No availability statement."
+  },
+  "evidence_gaps": {
+   "macro_level_validation": "Authors state a need for empirical or aggregate-level validation of opinion models.",
+   "model_comparison": "Authors state a need to compare, discriminate or identify models or mechanisms.",
+   "other_author_stated_gap": "Another gap or future direction explicitly stated by the authors.",
+   "not_reported": "No gap stated."
+  }
+ },
+ "predecessor_sha256": "a1082d39b56c5b6a53bfce1f23eccfdfa9a93cab5d745b4b80ba89f0bfeeeaf0",
+ "development_note": "Refined on the batch-0001 double-extraction sample (development); agreement is evaluated on a fresh random double-extraction sample from batch-0002."
+}

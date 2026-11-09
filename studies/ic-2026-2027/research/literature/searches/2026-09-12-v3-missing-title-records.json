@@ -1,0 +1,258 @@
+{
+  "format": "missing-title-observation-metadata-1",
+  "generated_at": "2026-09-12T06:08:57.089546+00:00",
+  "interpretation": "Direct typed identifier evidence links only; not work grouping, conflict resolution or title amendment.",
+  "preparation_receipt_sha256": "fa934b8b065880228373d76040527a76fc7cdced9c92ebb69a31891485ccf4fa",
+  "records": [
+    {
+      "identifiers": [
+        "doi:10.2307/3092578",
+        "openalex:W2464068633"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.102c70989597ea089dab89ed77f9299c4bbc60c84f3af10df9902348f82e5435",
+      "origin": {
+        "kind": "api",
+        "page_index": 59,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 5903,
+        "raw_artifact_sha256": "d2b076dd497f1dc5dbe916dcfa94357be5af0993db0625c19318041e8ada477a",
+        "request_sha256": "955dd23f0bd598da8c3bb8e9c86253cf7795685a7466a2713fbc81de7d7fde81",
+        "schema_version": "1",
+        "search_id": "search.openalex.q11",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.e2dc695ba46159535b0b7266",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.5220/0010337101370148",
+        "openalex:W3128425659"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.24078d7f4f38ead1802d02e360e452c5fa8e7d838f480ae40a2582970739c86e",
+      "origin": {
+        "kind": "api",
+        "page_index": 44,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 4404,
+        "raw_artifact_sha256": "2c0019f18dd08114765775a918af264ef7d423f0955970687d50f99785ef3611",
+        "request_sha256": "098702f073a86b526d93a7ec54ba4b754feafb985af8262a48b232ac986e3569",
+        "schema_version": "1",
+        "search_id": "search.openalex.q01",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.c9aa697c335c7755b6efcc2b",
+      "titled_direct_identifier_companions": [
+        {
+          "observation_id": "observation.0e091e6de7003a13b1dffffeca752a9dd8403a2bbaa57e6de19a03b3363d2c3d",
+          "origin": {
+            "kind": "api",
+            "page_index": 0,
+            "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+            "rank": 1,
+            "raw_artifact_sha256": "78a92629fe5fc795ba8f252f4dde30ac85f6ad07c5866f844010b8a3d29322c5",
+            "request_sha256": "125a3db75d38e99c9dd75c14ad886c321ac96fe87716b6cb10bc4013ef3b7692",
+            "schema_version": "1",
+            "search_id": "metadata.crossref.doi.0936",
+            "source_id": "crossref"
+          },
+          "original_record_id": "crossref.813907bb9950da52687d88f5",
+          "shared_typed_identifiers": [
+            "doi:10.5220/0010337101370148"
+          ],
+          "title": "Exploring Narrative Economics: An Agent-based-modeling Platform that Integrates Automated Traders with Opinion Dynamics"
+        },
+        {
+          "observation_id": "observation.4bb37aa2130b94c3b1046fc6ec6475ce679b5210d0e070eb7decd46ce6788351",
+          "origin": {
+            "kind": "api",
+            "page_index": 2,
+            "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+            "rank": 203,
+            "raw_artifact_sha256": "d929a0afa19666c7b4f61906e34f3acb9afa4db5f9eecbb4251a857c4bb7c5ee",
+            "request_sha256": "c106a656c1de9f5e2144131d8c7086e363ba66479dce063204aa997e702f4838",
+            "schema_version": "1",
+            "search_id": "search.dblp.q01",
+            "source_id": "dblp"
+          },
+          "original_record_id": "dblp.dd1649ead56a783920195237",
+          "shared_typed_identifiers": [
+            "doi:10.5220/0010337101370148"
+          ],
+          "title": "Exploring Narrative Economics: An Agent-based-modeling Platform that Integrates Automated Traders with Opinion Dynamics."
+        }
+      ]
+    },
+    {
+      "identifiers": [
+        "doi:10.2979/africatoday.65.1.08",
+        "openalex:W2924130235"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.5c9272239df1810851ae74ea74c294fa27e1fe986d691b913f7e03e22e081b59",
+      "origin": {
+        "kind": "api",
+        "page_index": 25,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 2591,
+        "raw_artifact_sha256": "0ed8098e260e2376328abca016803f72d37dab58f5ebca1c09ef5a22d593d654",
+        "request_sha256": "d50de5cd14fbee011dbce18647826bed3dcbbd1c89b7d3b3ded84df119532e11",
+        "schema_version": "1",
+        "search_id": "search.openalex.q16",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.3ae7642beccf912dde0e9f94",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.5699/slaveasteurorev2.93.3.0552",
+        "openalex:W4246007157"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.61f43fecedb0dbf0fc926339631233420e10dd56f03755cb698f879bb7c756c0",
+      "origin": {
+        "kind": "api",
+        "page_index": 64,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 6461,
+        "raw_artifact_sha256": "13a44773ab6f8cd2b20c187a89b1be898a89523f88367b6493725666b24a7532",
+        "request_sha256": "81875de0efa8f55b3307ab2b7d2c9fa831ec9944b736d6d8758ebd8b805c1f16",
+        "schema_version": "1",
+        "search_id": "search.openalex.q11",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.fa2f1fc670662eb3dd4f0471",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.1023/a:1011486809357",
+        "openalex:W4234781124"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.a8822202786493b6caec5761f7f27415ac7c044feeea7a148f88d1212f238c9b",
+      "origin": {
+        "kind": "api",
+        "page_index": 28,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 2885,
+        "raw_artifact_sha256": "07eada19b5a66db4a5524e20047269c474dd619ea431e30684a928c6b725206d",
+        "request_sha256": "0202f7a936d53f01f4d51d213cded710d8f85a6daabb84423769cb712bbffa02",
+        "schema_version": "1",
+        "search_id": "search.openalex.q11",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.8c2eb109003d0f7e3c1943b3",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.5215/pennmaghistbio.141.1.0092",
+        "openalex:W4230734979"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.c2e62a6168efcac92e23ac08accedde61f5583165e64c10e0cbb2bf0ec3607ad",
+      "origin": {
+        "kind": "api",
+        "page_index": 28,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 2898,
+        "raw_artifact_sha256": "8151f58018bee1fa1c03d4e251e913c4d8cd090ccc1437a5167934831867f0a6",
+        "request_sha256": "c6569186e2dd52337039b4236492c01e0c6fecce50bbf73689f8889e4caead70",
+        "schema_version": "1",
+        "search_id": "search.openalex.q16",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.1ae36a412ba8c04f318c0526",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.51211/joia.v6i2.1513",
+        "openalex:W4225744751"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.c639248f0936172a71d544531051914a4787e55b69e8ff35f1398122c41b7deb",
+      "origin": {
+        "kind": "api",
+        "page_index": 48,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 4814,
+        "raw_artifact_sha256": "b9ffe4ad58e6e095f8c4bc31e6135be983c853f2adf4147e8ffcb2e51c101b0d",
+        "request_sha256": "7be2d14f40c522aa3688d6f96f3bac315ac6377e29e246e9d574bdd0ca54fd2f",
+        "schema_version": "1",
+        "search_id": "search.openalex.q11",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.306f3214c4ef4fff811f92be",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.5699/slaveasteurorev2.91.4.0934",
+        "openalex:W4256284576"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.c7c3840350af4810af7ace86e2a96b334ab2ff868273f4b1fff97e20d01b19f4",
+      "origin": {
+        "kind": "api",
+        "page_index": 21,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 2185,
+        "raw_artifact_sha256": "dbda396f8575115f161712500b4354f5047f646a100207943897b679f5d7d5c1",
+        "request_sha256": "04f1c14b80577fe84a30f1eec9d757188ac6d58d00786e5c09fc0fb8cfea7740",
+        "schema_version": "1",
+        "search_id": "search.openalex.q14b",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.f01aeb8f50f8da572b3bd993",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.1023/a:1024693130590",
+        "openalex:W4251393931"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.c92cc0fdcbcb8b26e5d421e7888cdb788765635ced02113aad7f6d5e8c2f3579",
+      "origin": {
+        "kind": "api",
+        "page_index": 45,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 4518,
+        "raw_artifact_sha256": "f4a73e7de81b765db56d91601260517a0b574e5e0a9c5ceb719daafbc8ae8fac",
+        "request_sha256": "e28b7f3703154280c8d30e10b386492cd6ee02bc49f724cec1df3a2ca3785aa4",
+        "schema_version": "1",
+        "search_id": "search.openalex.q11",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.95f96344a48dc0339b1bb31f",
+      "titled_direct_identifier_companions": []
+    },
+    {
+      "identifiers": [
+        "doi:10.1023/a:1009902810926",
+        "openalex:W1559965799"
+      ],
+      "identity_conflicts_assessed": false,
+      "observation_id": "observation.c99adadabff7febd3c6b0b704106b7464cfb3ac6e0c9a063c5bb542fc1f37e48",
+      "origin": {
+        "kind": "api",
+        "page_index": 5,
+        "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+        "rank": 520,
+        "raw_artifact_sha256": "78ae5fff921e41f382225e956e63082c1c575ffcdf5eebef80536ad6e4b9f568",
+        "request_sha256": "9dfa939d984dad10326cab592f0350a8d5e13b0fcc250c27059689d0ca5a1f0b",
+        "schema_version": "1",
+        "search_id": "search.openalex.q12",
+        "source_id": "openalex"
+      },
+      "original_record_id": "openalex.eaacb1cf57a4a7f0d1c1d18c",
+      "titled_direct_identifier_companions": []
+    }
+  ],
+  "source_sha256": "eaadac740ed13eaa93d55871178e6e2c711544068c5adbf1521b260f91f2e567"
+}

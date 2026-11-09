@@ -1,0 +1,1489 @@
+{
+  "schema_version": "coverage-exploration-1",
+  "status": "supplementary_citation_candidates",
+  "seed_doi": "10.1016/j.neucom.2026.133705",
+  "seed_title": "A survey on opinion dynamics: From rule-based models to data-driven and hybrid approaches",
+  "source_kind": "crossref_member_reference_deposit_and_registry_matching",
+  "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+  "source_sha256": "5d0d5f1ca1a7920f695c81cfe8a48c22b923c5b40609c05fd877d085f20a3496",
+  "reference_count": 185,
+  "doi_edge_count": 161,
+  "references_without_doi_count": 24,
+  "distinct_dois": [
+    "10.1002/widm.1484",
+    "10.1007/s00354-022-00191-1",
+    "10.1007/s10462-021-10030-2",
+    "10.1007/s10489-023-04924-7",
+    "10.1007/s10502-019-09325-9",
+    "10.1007/s11042-022-12101-0",
+    "10.1007/s11431-019-1451-6",
+    "10.1007/s13278-023-01063-2",
+    "10.1007/s40747-024-01446-8",
+    "10.1007/s44196-023-00277-8",
+    "10.1016/j.chaos.2017.05.016",
+    "10.1016/j.chaos.2022.113075",
+    "10.1016/j.chb.2024.108381",
+    "10.1016/j.cities.2022.104054",
+    "10.1016/j.engappai.2024.108127",
+    "10.1016/j.eswa.2023.121292",
+    "10.1016/j.eswa.2024.123315",
+    "10.1016/j.eswa.2024.124813",
+    "10.1016/j.inffus.2017.11.009",
+    "10.1016/j.inffus.2021.02.018",
+    "10.1016/j.inffus.2021.04.010",
+    "10.1016/j.inffus.2022.07.003",
+    "10.1016/j.inffus.2024.102410",
+    "10.1016/j.ins.2021.12.069",
+    "10.1016/j.ins.2022.11.101",
+    "10.1016/j.ins.2025.122260",
+    "10.1016/j.ipl.2019.03.012",
+    "10.1016/j.jocs.2010.12.007",
+    "10.1016/j.jtrangeo.2015.06.024",
+    "10.1016/j.knosys.2022.109133",
+    "10.1016/j.neucom.2015.08.031",
+    "10.1016/j.neucom.2018.07.005",
+    "10.1016/j.neucom.2018.10.031",
+    "10.1016/j.neucom.2019.07.044",
+    "10.1016/j.neucom.2020.12.079",
+    "10.1016/j.neucom.2023.01.008",
+    "10.1016/j.neucom.2023.127176",
+    "10.1016/j.neucom.2024.127400",
+    "10.1016/j.neucom.2024.128578",
+    "10.1016/j.neucom.2024.128680",
+    "10.1016/j.neucom.2024.129123",
+    "10.1016/j.neucom.2024.129156",
+    "10.1016/j.neucom.2025.129376",
+    "10.1016/j.neucom.2025.129862",
+    "10.1016/j.neucom.2025.130173",
+    "10.1016/j.neucom.2025.130425",
+    "10.1016/j.neucom.2025.130618",
+    "10.1016/j.neucom.2025.130717",
+    "10.1016/j.neucom.2025.130870",
+    "10.1016/j.neucom.2025.130939",
+    "10.1016/j.neucom.2025.131428",
+    "10.1016/j.neucom.2025.132396",
+    "10.1016/j.neucom.2026.132875",
+    "10.1016/j.neucom.2026.133098",
+    "10.1016/j.neunet.2017.11.011",
+    "10.1016/j.neunet.2024.106968",
+    "10.1016/j.neunet.2024.107090",
+    "10.1016/j.neunet.2025.107122",
+    "10.1016/j.neunet.2025.107839",
+    "10.1016/j.neunet.2025.107911",
+    "10.1016/j.physa.2010.05.010",
+    "10.1016/j.physa.2014.07.018",
+    "10.1016/j.physa.2018.08.085",
+    "10.1016/j.physa.2020.125033",
+    "10.1016/j.physa.2020.125537",
+    "10.1016/j.physa.2023.129358",
+    "10.1016/j.socnet.2010.03.006",
+    "10.1016/j.socnet.2014.05.002",
+    "10.1016/j.swevo.2025.101962",
+    "10.1016/j.techsoc.2022.101902",
+    "10.1016/j.ymssp.2021.107817",
+    "10.1027/1864-1105/a000062",
+    "10.1049/cit2.12161",
+    "10.1049/cit2.12360",
+    "10.1073/pnas.1804840115",
+    "10.1073/pnas.2023301118",
+    "10.1073/pnas.2207159119",
+    "10.1080/01621459.1974.10480137",
+    "10.1093/pan/mpu011",
+    "10.1093/pnasnexus/pgac260",
+    "10.1103/382x-g9xk",
+    "10.1103/physreve.111.064310",
+    "10.1103/physrevlett.124.048301",
+    "10.1109/jas.2022.105446",
+    "10.1109/jas.2024.124431",
+    "10.1109/jas.2025.125153",
+    "10.1109/jproc.2015.2460697",
+    "10.1109/tac.2015.2394954",
+    "10.1109/tac.2020.3024967",
+    "10.1109/tac.2022.3191791",
+    "10.1109/tac.2022.3200888",
+    "10.1109/tac.2025.3532785",
+    "10.1109/tac.2025.3548936",
+    "10.1109/tcbb.2023.3283801",
+    "10.1109/tcbb.2024.3410350",
+    "10.1109/tcsi.2003.817760",
+    "10.1109/tcsi.2004.836855",
+    "10.1109/tcss.2020.2974899",
+    "10.1109/tcss.2022.3209877",
+    "10.1109/tcss.2022.3221811",
+    "10.1109/tcss.2023.3330293",
+    "10.1109/tcss.2024.3435908",
+    "10.1109/tcss.2024.3438212",
+    "10.1109/tcss.2024.3508452",
+    "10.1109/tcsvt.2024.3474101",
+    "10.1109/tcyb.2019.2906263",
+    "10.1109/tcyb.2021.3079457",
+    "10.1109/tcyb.2021.3139673",
+    "10.1109/tcyb.2022.3185117",
+    "10.1109/tcyb.2024.3398585",
+    "10.1109/tfuzz.2016.2574911",
+    "10.1109/tfuzz.2022.3165373",
+    "10.1109/tii.2023.3241614",
+    "10.1109/tkde.2024.3424974",
+    "10.1109/tkde.2025.3621469",
+    "10.1109/tnnls.2015.2435014",
+    "10.1109/tnnls.2016.2582924",
+    "10.1109/tnnls.2019.2891252",
+    "10.1109/tnnls.2020.3042761",
+    "10.1109/tnnls.2022.3175899",
+    "10.1109/tnnls.2023.3311169",
+    "10.1109/tnnls.2024.3351674",
+    "10.1109/tnnls.2024.3462516",
+    "10.1109/tnnls.2025.3561415",
+    "10.1109/tnse.2024.3389741",
+    "10.1109/tnse.2025.3538123",
+    "10.1109/tnse.2025.3556379",
+    "10.1109/tnse.2025.3562075",
+    "10.1109/tnse.2026.3654942",
+    "10.1109/tsmc.2022.3178230",
+    "10.1109/tsmc.2023.3268758",
+    "10.1109/tsmc.2023.3281903",
+    "10.1111/ajps.12550",
+    "10.1111/jcom.12077",
+    "10.1126/sciadv.abq2044",
+    "10.1126/science.1248506",
+    "10.1126/science.159.3810.56",
+    "10.1126/science.aap9559",
+    "10.1137/130913250",
+    "10.1140/epjb/e2004-00111-4",
+    "10.1142/s0218202511500072",
+    "10.1145/3491206",
+    "10.1145/3580516",
+    "10.1145/3586075",
+    "10.1146/annurev-control-090523-100059",
+    "10.1177/0022242921995173",
+    "10.1177/17456916231186406",
+    "10.1186/s40649-017-0042-6",
+    "10.1186/s40854-020-00211-3",
+    "10.1209/epl/i2004-10421-1",
+    "10.1371/journal.pone.0316889",
+    "10.25300/misq/2022/15455",
+    "10.26599/bdma.2024.9020042",
+    "10.26599/tst.2024.9010120",
+    "10.26599/tst.2024.9010152",
+    "10.3389/fphy.2015.00064",
+    "10.3390/e25101402",
+    "10.3390/sym17060936"
+  ],
+  "edges": [
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0005",
+      "target_doi": "10.1109/tcss.2024.3435908",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0010",
+      "target_doi": "10.1016/j.neucom.2026.132875",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0015",
+      "target_doi": "10.1016/j.neucom.2024.129123",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0020",
+      "target_doi": "10.1109/tcss.2020.2974899",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0025",
+      "target_doi": "10.1016/j.neucom.2024.128578",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0030",
+      "target_doi": "10.1016/j.inffus.2022.07.003",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0035",
+      "target_doi": "10.1016/j.chaos.2022.113075",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0040",
+      "target_doi": "10.1109/tsmc.2023.3268758",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0045",
+      "target_doi": "10.1137/130913250",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0050",
+      "target_doi": "10.1209/epl/i2004-10421-1",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0060",
+      "target_doi": "10.1016/j.jtrangeo.2015.06.024",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0065",
+      "target_doi": "10.1016/j.socnet.2014.05.002",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0070",
+      "target_doi": "10.1109/tac.2022.3191791",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0075",
+      "target_doi": "10.1111/ajps.12550",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0080",
+      "target_doi": "10.1177/0022242921995173",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0085",
+      "target_doi": "10.1016/j.neucom.2023.127176",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0090",
+      "target_doi": "10.1016/j.inffus.2021.04.010",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0095",
+      "target_doi": "10.1007/s10462-021-10030-2",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0100",
+      "target_doi": "10.1007/s11042-022-12101-0",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0105",
+      "target_doi": "10.1016/j.cities.2022.104054",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0110",
+      "target_doi": "10.1016/j.physa.2014.07.018",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0115",
+      "target_doi": "10.1109/tac.2022.3200888",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0120",
+      "target_doi": "10.1109/tnse.2026.3654942",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0125",
+      "target_doi": "10.1016/j.neucom.2025.131428",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0130",
+      "target_doi": "10.1016/j.techsoc.2022.101902",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0140",
+      "target_doi": "10.1109/tnnls.2023.3311169",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0145",
+      "target_doi": "10.1109/tnnls.2024.3462516",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0155",
+      "target_doi": "10.1016/j.inffus.2017.11.009",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0160",
+      "target_doi": "10.1016/j.eswa.2024.123315",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0165",
+      "target_doi": "10.1016/j.inffus.2021.02.018",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0170",
+      "target_doi": "10.1016/j.ins.2022.11.101",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0175",
+      "target_doi": "10.1016/j.physa.2023.129358",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0180",
+      "target_doi": "10.1109/tcss.2023.3330293",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0185",
+      "target_doi": "10.1016/j.physa.2010.05.010",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0190",
+      "target_doi": "10.1109/tac.2025.3548936",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0195",
+      "target_doi": "10.1111/jcom.12077",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0205",
+      "target_doi": "10.1177/17456916231186406",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0210",
+      "target_doi": "10.1016/j.ymssp.2021.107817",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0215",
+      "target_doi": "10.1016/j.neucom.2024.127400",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0220",
+      "target_doi": "10.1016/j.engappai.2024.108127",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0235",
+      "target_doi": "10.1007/s40747-024-01446-8",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0240",
+      "target_doi": "10.1016/j.neucom.2020.12.079",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0245",
+      "target_doi": "10.1007/s44196-023-00277-8",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0250",
+      "target_doi": "10.1016/j.eswa.2024.124813",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0255",
+      "target_doi": "10.1109/tfuzz.2016.2574911",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0260",
+      "target_doi": "10.1016/j.neucom.2025.130173",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0265",
+      "target_doi": "10.1016/j.neucom.2025.130939",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0270",
+      "target_doi": "10.1007/s13278-023-01063-2",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0275",
+      "target_doi": "10.1016/j.neucom.2025.130870",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0280",
+      "target_doi": "10.1109/tac.2025.3532785",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0285",
+      "target_doi": "10.1016/j.physa.2018.08.085",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0290",
+      "target_doi": "10.1103/382x-g9xk",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0295",
+      "target_doi": "10.1016/j.physa.2020.125537",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0300",
+      "target_doi": "10.1371/journal.pone.0316889",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0305",
+      "target_doi": "10.3390/e25101402",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0310",
+      "target_doi": "10.1016/j.knosys.2022.109133",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0315",
+      "target_doi": "10.1016/j.inffus.2024.102410",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0320",
+      "target_doi": "10.1103/physreve.111.064310",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0325",
+      "target_doi": "10.1103/382x-g9xk",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0330",
+      "target_doi": "10.1080/01621459.1974.10480137",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0335",
+      "target_doi": "10.1109/tac.2015.2394954",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0340",
+      "target_doi": "10.1109/tkde.2024.3424974",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0345",
+      "target_doi": "10.1109/tac.2020.3024967",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0350",
+      "target_doi": "10.1109/tsmc.2022.3178230",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0355",
+      "target_doi": "10.1109/tnse.2025.3538123",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0360",
+      "target_doi": "10.1016/j.eswa.2023.121292",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0365",
+      "target_doi": "10.1137/130913250",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0375",
+      "target_doi": "10.3389/fphy.2015.00064",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0380",
+      "target_doi": "10.1109/tsmc.2023.3281903",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0385",
+      "target_doi": "10.1007/s11431-019-1451-6",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0390",
+      "target_doi": "10.1007/s10489-023-04924-7",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0395",
+      "target_doi": "10.1146/annurev-control-090523-100059",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0400",
+      "target_doi": "10.1016/j.chaos.2017.05.016",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0405",
+      "target_doi": "10.1126/sciadv.abq2044",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0410",
+      "target_doi": "10.1016/j.ins.2021.12.069",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0415",
+      "target_doi": "10.1016/j.physa.2020.125033",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0420",
+      "target_doi": "10.1142/s0218202511500072",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0425",
+      "target_doi": "10.1016/j.neucom.2025.129376",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0430",
+      "target_doi": "10.1016/j.neucom.2025.130618",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0435",
+      "target_doi": "10.1007/s10502-019-09325-9",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0440",
+      "target_doi": "10.1027/1864-1105/a000062",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0450",
+      "target_doi": "10.1016/j.neucom.2025.130717",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0455",
+      "target_doi": "10.1109/tcbb.2023.3283801",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0470",
+      "target_doi": "10.1016/j.neucom.2024.128680",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0475",
+      "target_doi": "10.1016/j.neucom.2025.129862",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0480",
+      "target_doi": "10.1016/j.socnet.2010.03.006",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0485",
+      "target_doi": "10.1140/epjb/e2004-00111-4",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0490",
+      "target_doi": "10.1145/3491206",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0495",
+      "target_doi": "10.1002/widm.1484",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0500",
+      "target_doi": "10.1007/s00354-022-00191-1",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0505",
+      "target_doi": "10.1145/3586075",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0510",
+      "target_doi": "10.1109/jproc.2015.2460697",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0515",
+      "target_doi": "10.1016/j.ins.2025.122260",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0520",
+      "target_doi": "10.1109/tcbb.2024.3410350",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0525",
+      "target_doi": "10.1016/j.neucom.2025.132396",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0530",
+      "target_doi": "10.1016/j.swevo.2025.101962",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0535",
+      "target_doi": "10.1016/j.neucom.2026.133098",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0540",
+      "target_doi": "10.1049/cit2.12161",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0545",
+      "target_doi": "10.1016/j.neunet.2025.107911",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0550",
+      "target_doi": "10.1109/tcsi.2004.836855",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0555",
+      "target_doi": "10.1109/tii.2023.3241614",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0560",
+      "target_doi": "10.1109/tnnls.2015.2435014",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0565",
+      "target_doi": "10.26599/tst.2024.9010120",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0570",
+      "target_doi": "10.26599/tst.2024.9010152",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0575",
+      "target_doi": "10.1016/j.neunet.2024.107090",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0580",
+      "target_doi": "10.1109/jas.2022.105446",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0590",
+      "target_doi": "10.1109/tnnls.2024.3351674",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0595",
+      "target_doi": "10.1109/tcyb.2024.3398585",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0600",
+      "target_doi": "10.1109/tnnls.2025.3561415",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0605",
+      "target_doi": "10.3390/sym17060936",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0610",
+      "target_doi": "10.1016/j.neunet.2024.106968",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0615",
+      "target_doi": "10.1016/j.neucom.2023.01.008",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0620",
+      "target_doi": "10.1109/tnnls.2019.2891252",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0625",
+      "target_doi": "10.1016/j.ipl.2019.03.012",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0630",
+      "target_doi": "10.1109/tcyb.2024.3398585",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0635",
+      "target_doi": "10.1016/j.neucom.2024.129156",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0640",
+      "target_doi": "10.1016/j.neucom.2015.08.031",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0645",
+      "target_doi": "10.1016/j.neucom.2025.130425",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0650",
+      "target_doi": "10.1049/cit2.12360",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0655",
+      "target_doi": "10.1016/j.neucom.2019.07.044",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0660",
+      "target_doi": "10.1016/j.neucom.2018.07.005",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0665",
+      "target_doi": "10.1109/tnnls.2020.3042761",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0670",
+      "target_doi": "10.1016/j.neucom.2018.10.031",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0675",
+      "target_doi": "10.1109/jas.2024.124431",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0680",
+      "target_doi": "10.1109/tcyb.2022.3185117",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0685",
+      "target_doi": "10.1109/tkde.2025.3621469",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0690",
+      "target_doi": "10.1109/tcsi.2003.817760",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0695",
+      "target_doi": "10.1109/tcyb.2019.2906263",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0700",
+      "target_doi": "10.1016/j.neunet.2017.11.011",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0705",
+      "target_doi": "10.1016/j.neunet.2025.107122",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0710",
+      "target_doi": "10.1109/tnnls.2016.2582924",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0730",
+      "target_doi": "10.1016/j.chb.2024.108381",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0740",
+      "target_doi": "10.25300/misq/2022/15455",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0745",
+      "target_doi": "10.1109/tnnls.2022.3175899",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0755",
+      "target_doi": "10.1145/3580516",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0770",
+      "target_doi": "10.1109/tcsvt.2024.3474101",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0790",
+      "target_doi": "10.26599/bdma.2024.9020042",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0795",
+      "target_doi": "10.1109/tcss.2024.3438212",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0800",
+      "target_doi": "10.1109/tcss.2024.3508452",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0805",
+      "target_doi": "10.1016/j.neunet.2025.107839",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0810",
+      "target_doi": "10.1109/jas.2025.125153",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0815",
+      "target_doi": "10.1126/science.159.3810.56",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0820",
+      "target_doi": "10.1109/tcyb.2021.3079457",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0830",
+      "target_doi": "10.1109/tnse.2025.3556379",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0835",
+      "target_doi": "10.1109/tnse.2025.3562075",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0840",
+      "target_doi": "10.1109/tnse.2024.3389741",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0850",
+      "target_doi": "10.1126/science.1248506",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0855",
+      "target_doi": "10.1186/s40649-017-0042-6",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0860",
+      "target_doi": "10.1126/science.aap9559",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0865",
+      "target_doi": "10.1109/tcss.2022.3221811",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0870",
+      "target_doi": "10.1103/physrevlett.124.048301",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0875",
+      "target_doi": "10.1073/pnas.2023301118",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0885",
+      "target_doi": "10.1109/tfuzz.2022.3165373",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0890",
+      "target_doi": "10.1109/tcyb.2021.3139673",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0895",
+      "target_doi": "10.1109/tcss.2022.3209877",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0900",
+      "target_doi": "10.1073/pnas.2207159119",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0905",
+      "target_doi": "10.1093/pan/mpu011",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0910",
+      "target_doi": "10.1016/j.jocs.2010.12.007",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0915",
+      "target_doi": "10.1186/s40854-020-00211-3",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0920",
+      "target_doi": "10.1073/pnas.1804840115",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.1016/j.neucom.2026.133705",
+      "reference_locator": "10.1016/j.neucom.2026.133705_bib0925",
+      "target_doi": "10.1093/pnasnexus/pgac260",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.neucom.2026.133705",
+      "doi_asserted_by": "crossref",
+      "target_identity_verified": false
+    }
+  ],
+  "unresolved_reference_locators": [
+    "10.1016/j.neucom.2026.133705_bib0055",
+    "10.1016/j.neucom.2026.133705_bib0135",
+    "10.1016/j.neucom.2026.133705_bib0150",
+    "10.1016/j.neucom.2026.133705_bib0200",
+    "10.1016/j.neucom.2026.133705_bib0225",
+    "10.1016/j.neucom.2026.133705_bib0230",
+    "10.1016/j.neucom.2026.133705_bib0370",
+    "10.1016/j.neucom.2026.133705_bib0445",
+    "10.1016/j.neucom.2026.133705_bib0460",
+    "10.1016/j.neucom.2026.133705_bib0465",
+    "10.1016/j.neucom.2026.133705_bib0585",
+    "10.1016/j.neucom.2026.133705_bib0715",
+    "10.1016/j.neucom.2026.133705_bib0720",
+    "10.1016/j.neucom.2026.133705_bib0725",
+    "10.1016/j.neucom.2026.133705_bib0735",
+    "10.1016/j.neucom.2026.133705_bib0750",
+    "10.1016/j.neucom.2026.133705_bib0760",
+    "10.1016/j.neucom.2026.133705_bib0765",
+    "10.1016/j.neucom.2026.133705_bib0775",
+    "10.1016/j.neucom.2026.133705_bib0780",
+    "10.1016/j.neucom.2026.133705_bib0785",
+    "10.1016/j.neucom.2026.133705_bib0825",
+    "10.1016/j.neucom.2026.133705_bib0845",
+    "10.1016/j.neucom.2026.133705_bib0880"
+  ],
+  "eligible_primary_study_count": null
+}

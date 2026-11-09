@@ -1,0 +1,18 @@
+# Recorded from the Research Owner broad execution instruction of 2026-09-11.
+# Basis: research/decisions/2026-09-11-broad-research-execution.md.
+# This records search authorization, not human screening or scientific acceptance.
+schema_version = "1"
+approval_id = "systematic-map-v3-search-20260911"
+decision = "approved"
+authorization = "systematic_review_search_execution"
+approved_at = 2026-09-12T01:59:30+00:00
+subject_path = "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v3.json"
+protocol_id = "opinion-dynamics-systematic-map-v3"
+protocol_version = "3.0.0"
+protocol_status = "review_candidate"
+protocol_sha256 = "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f"
+repository_commit = "3b71a915252c7986f3dbf5310117eace4c8fa98f"
+
+[[approvers]]
+role = "research_owner"
+name = "Davi Abreu da Silveira"

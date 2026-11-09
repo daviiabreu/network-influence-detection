@@ -1,0 +1,1074 @@
+{
+  "schema_version": "coverage-exploration-1",
+  "status": "supplementary_citation_candidates",
+  "seed_doi": "10.18564/jasss.3521",
+  "seed_url": "https://www.jasss.org/20/4/2.html",
+  "source_kind": "publisher_full_text_reference_list",
+  "source_sha256": "393eed8b2105e9f9fb0c8191c4cf39e4caa4f732797bb21d4128155a5a030999",
+  "reference_count": 174,
+  "doi_edge_count": 126,
+  "references_without_doi_count": 48,
+  "distinct_dois": [
+    "10.1002/(sici)1099-0526(199905/06)4:5<41::aid-cplx9>3.0.co;2-f",
+    "10.1002/cplx.20295",
+    "10.1002/ejsp.254",
+    "10.1007/978-1-349-16939-9",
+    "10.1007/978-1-4613-8542-4",
+    "10.1007/978-1-4615-1159-5",
+    "10.1007/978-1-4684-3659-4",
+    "10.1007/978-3-319-01952-9_5",
+    "10.1007/978-3-319-47253-9_1",
+    "10.1007/978-3-319-47253-9_22",
+    "10.1007/978-3-540-75261-5_15",
+    "10.1007/bf00869475",
+    "10.1007/s10588-005-6282-2",
+    "10.1007/s10588-008-9019-1",
+    "10.1007/s10588-011-9087-5",
+    "10.1016/0022-1031(78)90049-5",
+    "10.1016/0378-8733(95)00256-1",
+    "10.1016/j.jedc.2003.08.005",
+    "10.1016/j.physa.2003.10.041",
+    "10.1016/j.physa.2004.06.102",
+    "10.1016/j.physa.2006.04.103",
+    "10.1016/j.simpat.2007.11.020",
+    "10.1016/j.socnet.2012.07.002",
+    "10.1017/cbo9780511976735",
+    "10.1017/s0022381608080493",
+    "10.1037/0022-3514.36.8.872",
+    "10.1037/0022-3514.51.6.1156",
+    "10.1037/0022-3514.70.6.1218",
+    "10.1037/0022-3514.71.6.1181",
+    "10.1037/0033-2909.83.4.602",
+    "10.1037/0033-295x.97.3.362",
+    "10.1037/1089-2680.2.2.175",
+    "10.1037/h0027568",
+    "10.1037/h0046123",
+    "10.1037/h0048480",
+    "10.1037/h0093718",
+    "10.1038/nature11421",
+    "10.1038/srep01360",
+    "10.1038/srep40391",
+    "10.1073/pnas.1217220110",
+    "10.1080/0022250x.1990.9990069",
+    "10.1080/0022250x.2010.532261",
+    "10.1080/0022250x.2012.724486",
+    "10.1080/0022250x.2016.1147443",
+    "10.1080/00223980.1946.9917275",
+    "10.1080/01621459.1974.10480137",
+    "10.1080/01621459.1981.10477662",
+    "10.1086/230995",
+    "10.1086/261849",
+    "10.1086/430220",
+    "10.1086/653658",
+    "10.1086/659100",
+    "10.1086/681254",
+    "10.1088/0963-6625/9/3/303",
+    "10.1088/1742-5468/2009/08/p08001",
+    "10.1088/1742-5468/2010/06/p06005",
+    "10.1093/pan/mpp003",
+    "10.1103/physreve.67.026120",
+    "10.1103/physreve.67.045101",
+    "10.1103/physreve.79.046108",
+    "10.1103/revmodphys.81.591",
+    "10.1111/1540-6237.8401005",
+    "10.1111/j.1460-2466.1996.tb01501.x",
+    "10.1111/j.1467-9531.2010.01225.x",
+    "10.1126/science.1186605",
+    "10.1140/epjb/e20020045",
+    "10.1140/epjb/e2009-00283-3",
+    "10.1142/s0129183100000936",
+    "10.1142/s0129183104005644",
+    "10.1142/s0129183105007078",
+    "10.1142/s0129183107011789",
+    "10.1142/s0219525908001799",
+    "10.1142/s0219525910002633",
+    "10.1142/s0219525912500336",
+    "10.1146/annurev.neuro.27.070203.144230",
+    "10.1146/annurev.polisci.11.053106.153836",
+    "10.1146/annurev.psych.121208.131609",
+    "10.1146/annurev.psych.51.1.539",
+    "10.1146/annurev.soc.012809.102632",
+    "10.1146/annurev.soc.012809.102709",
+    "10.1146/annurev.soc.27.1.415",
+    "10.1177/000312240707200507",
+    "10.1177/0003122414564182",
+    "10.1177/0022002701045001004",
+    "10.1177/0022002702046002003",
+    "10.1177/0022002702251025",
+    "10.1177/0022002707307632",
+    "10.1177/0022002711414371",
+    "10.1177/0022002797041002001",
+    "10.1177/0038040711427314",
+    "10.1177/0049124113494573",
+    "10.1177/0093650207313159",
+    "10.1177/0146167208328166",
+    "10.1177/0146167291175001",
+    "10.1177/1088868307301032",
+    "10.1214/aop/1176996306",
+    "10.1257/jep.20.2.119",
+    "10.1287/orsc.1120.0767",
+    "10.1371/journal.pcbi.1000959",
+    "10.1371/journal.pone.0044489",
+    "10.1371/journal.pone.0074516",
+    "10.1371/journal.pone.0078433",
+    "10.1371/journal.pone.0140406",
+    "10.1371/journal.pone.0153334",
+    "10.1371/journal.pone.0157685",
+    "10.1371/journal.pone.0157948",
+    "10.18564/jasss.2813",
+    "10.18564/jasss.2967",
+    "10.18564/jasss.3161",
+    "10.18564/jasss.3220",
+    "10.18564/jasss.3316",
+    "10.18564/jasss.3419",
+    "10.2139/ssrn.2553436",
+    "10.2307/1519727",
+    "10.2307/1556384",
+    "10.2307/2094592",
+    "10.2307/2095216",
+    "10.2307/2096108",
+    "10.2307/2096280",
+    "10.2307/2657552",
+    "10.2307/2786737",
+    "10.3389/fphy.2015.00017",
+    "10.3389/fphy.2015.00064",
+    "10.3934/nhm.2015.10.477",
+    "10.4018/978-1-59904-522-1.ch004",
+    "10.5153/sro.3315"
+  ],
+  "edges": [
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "abramowitz2008",
+      "target_doi": "10.1017/s0022381608080493",
+      "source_url": "https://www.jasss.org/20/4/2.html#abramowitz2008",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "akers1979",
+      "target_doi": "10.2307/2094592",
+      "source_url": "https://www.jasss.org/20/4/2.html#akers1979",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "amblard2004",
+      "target_doi": "10.1016/j.physa.2004.06.102",
+      "source_url": "https://www.jasss.org/20/4/2.html#amblard2004",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "asch1956",
+      "target_doi": "10.1037/h0093718",
+      "source_url": "https://www.jasss.org/20/4/2.html#asch1956",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "axelrod1997",
+      "target_doi": "10.1177/0022002797041002001",
+      "source_url": "https://www.jasss.org/20/4/2.html#axelrod1997",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "baldassarri2007",
+      "target_doi": "10.1177/000312240707200507",
+      "source_url": "https://www.jasss.org/20/4/2.html#baldassarri2007",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "berger1981",
+      "target_doi": "10.1080/01621459.1981.10477662",
+      "source_url": "https://www.jasss.org/20/4/2.html#berger1981",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "bikhchandani1992",
+      "target_doi": "10.1086/261849",
+      "source_url": "https://www.jasss.org/20/4/2.html#bikhchandani1992",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "bohner2011",
+      "target_doi": "10.1146/annurev.psych.121208.131609",
+      "source_url": "https://www.jasss.org/20/4/2.html#bohner2011",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "bond2012",
+      "target_doi": "10.1038/nature11421",
+      "source_url": "https://www.jasss.org/20/4/2.html#bond2012",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "bramson2016",
+      "target_doi": "10.1080/0022250x.2016.1147443",
+      "source_url": "https://www.jasss.org/20/4/2.html#bramson2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "brewer1991",
+      "target_doi": "10.1177/0146167291175001",
+      "source_url": "https://www.jasss.org/20/4/2.html#brewer1991",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "brousmiche2016",
+      "target_doi": "10.18564/jasss.3161",
+      "source_url": "https://www.jasss.org/20/4/2.html#brousmiche2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "brousmiche2017",
+      "target_doi": "10.1007/978-3-319-47253-9_1",
+      "source_url": "https://www.jasss.org/20/4/2.html#brousmiche2017",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "carley1991",
+      "target_doi": "10.2307/2096108",
+      "source_url": "https://www.jasss.org/20/4/2.html#carley1991",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "castellano2009",
+      "target_doi": "10.1103/revmodphys.81.591",
+      "source_url": "https://www.jasss.org/20/4/2.html#castellano2009",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "centola2007",
+      "target_doi": "10.1177/0022002707307632",
+      "source_url": "https://www.jasss.org/20/4/2.html#centola2007",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "chacoma2015",
+      "target_doi": "10.1371/journal.pone.0140406",
+      "source_url": "https://www.jasss.org/20/4/2.html#chacoma2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "chattoe-brown2014",
+      "target_doi": "10.5153/sro.3315",
+      "source_url": "https://www.jasss.org/20/4/2.html#chattoe-brown2014",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "conte2002",
+      "target_doi": "10.1007/978-1-4615-1159-5",
+      "source_url": "https://www.jasss.org/20/4/2.html#conte2002",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "dandekar2013",
+      "target_doi": "10.1073/pnas.1217220110",
+      "source_url": "https://www.jasss.org/20/4/2.html#dandekar2013",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "deffuant2005",
+      "target_doi": "10.1086/430220",
+      "source_url": "https://www.jasss.org/20/4/2.html#deffuant2005",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "deffuant2008b",
+      "target_doi": "10.4018/978-1-59904-522-1.ch004",
+      "source_url": "https://www.jasss.org/20/4/2.html#deffuant2008b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "degroot1974",
+      "target_doi": "10.1080/01621459.1974.10480137",
+      "source_url": "https://www.jasss.org/20/4/2.html#degroot1974",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "dellaposta2015",
+      "target_doi": "10.1086/681254",
+      "source_url": "https://www.jasss.org/20/4/2.html#dellaposta2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "de2009",
+      "target_doi": "10.1103/physreve.79.046108",
+      "source_url": "https://www.jasss.org/20/4/2.html#de2009",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "dimaggio1996",
+      "target_doi": "10.1086/230995",
+      "source_url": "https://www.jasss.org/20/4/2.html#dimaggio1996",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "diprete2011",
+      "target_doi": "10.1086/659100",
+      "source_url": "https://www.jasss.org/20/4/2.html#diprete2011",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "duggins2017",
+      "target_doi": "10.18564/jasss.3316",
+      "source_url": "https://www.jasss.org/20/4/2.html#duggins2017",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "durkheim1982",
+      "target_doi": "10.1007/978-1-349-16939-9",
+      "source_url": "https://www.jasss.org/20/4/2.html#durkheim1982",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "dykstra2015",
+      "target_doi": "10.18564/jasss.2813",
+      "source_url": "https://www.jasss.org/20/4/2.html#dykstra2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "eagle2010",
+      "target_doi": "10.1126/science.1186605",
+      "source_url": "https://www.jasss.org/20/4/2.html#eagle2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "earley2000",
+      "target_doi": "10.2307/1556384",
+      "source_url": "https://www.jasss.org/20/4/2.html#earley2000",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "ellwardt2012",
+      "target_doi": "10.1016/j.socnet.2012.07.002",
+      "source_url": "https://www.jasss.org/20/4/2.html#ellwardt2012",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "epstein1999",
+      "target_doi": "10.1002/(sici)1099-0526(199905/06)4:5<41::aid-cplx9>3.0.co;2-f",
+      "source_url": "https://www.jasss.org/20/4/2.html#epstein1999",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "evans2003",
+      "target_doi": "10.1111/1540-6237.8401005",
+      "source_url": "https://www.jasss.org/20/4/2.html#evans2003",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "feld1982",
+      "target_doi": "10.2307/2095216",
+      "source_url": "https://www.jasss.org/20/4/2.html#feld1982",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "feliciani2017",
+      "target_doi": "10.18564/jasss.3419",
+      "source_url": "https://www.jasss.org/20/4/2.html#feliciani2017",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "fiorina2008",
+      "target_doi": "10.1146/annurev.polisci.11.053106.153836",
+      "source_url": "https://www.jasss.org/20/4/2.html#fiorina2008",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "flache2011a",
+      "target_doi": "10.1177/0022002711414371",
+      "source_url": "https://www.jasss.org/20/4/2.html#flache2011a",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "flache2011b",
+      "target_doi": "10.1080/0022250x.2010.532261",
+      "source_url": "https://www.jasss.org/20/4/2.html#flache2011b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "flache2008a",
+      "target_doi": "10.1007/s10588-008-9019-1",
+      "source_url": "https://www.jasss.org/20/4/2.html#flache2008a",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "flache2008b",
+      "target_doi": "10.1016/j.simpat.2007.11.020",
+      "source_url": "https://www.jasss.org/20/4/2.html#flache2008b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "fortunato2005",
+      "target_doi": "10.1142/s0129183105007078",
+      "source_url": "https://www.jasss.org/20/4/2.html#fortunato2005",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "french1956",
+      "target_doi": "10.1037/h0046123",
+      "source_url": "https://www.jasss.org/20/4/2.html#french1956",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "friedkin1990a",
+      "target_doi": "10.2307/2786737",
+      "source_url": "https://www.jasss.org/20/4/2.html#friedkin1990a",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "friedkin1990b",
+      "target_doi": "10.1080/0022250x.1990.9990069",
+      "source_url": "https://www.jasss.org/20/4/2.html#friedkin1990b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "friedkin2011",
+      "target_doi": "10.1017/cbo9780511976735",
+      "source_url": "https://www.jasss.org/20/4/2.html#friedkin2011",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "galam2002",
+      "target_doi": "10.1140/epjb/e20020045",
+      "source_url": "https://www.jasss.org/20/4/2.html#galam2002",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "galam2004",
+      "target_doi": "10.1016/j.physa.2003.10.041",
+      "source_url": "https://www.jasss.org/20/4/2.html#galam2004",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "gargiulo2012",
+      "target_doi": "10.1142/s0219525912500336",
+      "source_url": "https://www.jasss.org/20/4/2.html#gargiulo2012",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "giardini2015",
+      "target_doi": "10.3389/fphy.2015.00064",
+      "source_url": "https://www.jasss.org/20/4/2.html#giardini2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "glaeser2006",
+      "target_doi": "10.1257/jep.20.2.119",
+      "source_url": "https://www.jasss.org/20/4/2.html#glaeser2006",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "greig2002",
+      "target_doi": "10.1177/0022002702046002003",
+      "source_url": "https://www.jasss.org/20/4/2.html#greig2002",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "groeber2014",
+      "target_doi": "10.1080/0022250x.2012.724486",
+      "source_url": "https://www.jasss.org/20/4/2.html#groeber2014",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "grow2011",
+      "target_doi": "10.1007/s10588-011-9087-5",
+      "source_url": "https://www.jasss.org/20/4/2.html#grow2011",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "hedström2010",
+      "target_doi": "10.1146/annurev.soc.012809.102632",
+      "source_url": "https://www.jasss.org/20/4/2.html#hedström2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "hegselmann2015",
+      "target_doi": "10.3934/nhm.2015.10.477",
+      "source_url": "https://www.jasss.org/20/4/2.html#hegselmann2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "heider1946",
+      "target_doi": "10.1080/00223980.1946.9917275",
+      "source_url": "https://www.jasss.org/20/4/2.html#heider1946",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "ho2008",
+      "target_doi": "10.1177/0093650207313159",
+      "source_url": "https://www.jasss.org/20/4/2.html#ho2008",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "holley1975",
+      "target_doi": "10.1214/aop/1176996306",
+      "source_url": "https://www.jasss.org/20/4/2.html#holley1975",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "hovland1957",
+      "target_doi": "10.1037/h0048480",
+      "source_url": "https://www.jasss.org/20/4/2.html#hovland1957",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "huet2010",
+      "target_doi": "10.1142/s0219525910002633",
+      "source_url": "https://www.jasss.org/20/4/2.html#huet2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "huet2008",
+      "target_doi": "10.1142/s0219525908001799",
+      "source_url": "https://www.jasss.org/20/4/2.html#huet2008",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "imhoff2009",
+      "target_doi": "10.1177/0146167208328166",
+      "source_url": "https://www.jasss.org/20/4/2.html#imhoff2009",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "jager2005",
+      "target_doi": "10.1007/s10588-005-6282-2",
+      "source_url": "https://www.jasss.org/20/4/2.html#jager2005",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "klemm2003a",
+      "target_doi": "10.1103/physreve.67.045101",
+      "source_url": "https://www.jasss.org/20/4/2.html#klemm2003a",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "klemm2003b",
+      "target_doi": "10.1103/physreve.67.026120",
+      "source_url": "https://www.jasss.org/20/4/2.html#klemm2003b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "klemm2005",
+      "target_doi": "10.1016/j.jedc.2003.08.005",
+      "source_url": "https://www.jasss.org/20/4/2.html#klemm2005",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "krosnick2000",
+      "target_doi": "10.1088/0963-6625/9/3/303",
+      "source_url": "https://www.jasss.org/20/4/2.html#krosnick2000",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "kurahashi-nakamura2016",
+      "target_doi": "10.18564/jasss.3220",
+      "source_url": "https://www.jasss.org/20/4/2.html#kurahashi-nakamura2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "latané1996a",
+      "target_doi": "10.1111/j.1460-2466.1996.tb01501.x",
+      "source_url": "https://www.jasss.org/20/4/2.html#latané1996a",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "latané1996b",
+      "target_doi": "10.1037/0022-3514.70.6.1218",
+      "source_url": "https://www.jasss.org/20/4/2.html#latané1996b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "lehrer1975",
+      "target_doi": "10.1007/bf00869475",
+      "source_url": "https://www.jasss.org/20/4/2.html#lehrer1975",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "levendusky2009",
+      "target_doi": "10.1093/pan/mpp003",
+      "source_url": "https://www.jasss.org/20/4/2.html#levendusky2009",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "liggett1985",
+      "target_doi": "10.1007/978-1-4613-8542-4",
+      "source_url": "https://www.jasss.org/20/4/2.html#liggett1985",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "liu2015",
+      "target_doi": "10.1177/0003122414564182",
+      "source_url": "https://www.jasss.org/20/4/2.html#liu2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "lorenz2007",
+      "target_doi": "10.1142/s0129183107011789",
+      "source_url": "https://www.jasss.org/20/4/2.html#lorenz2007",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "lorenz2008",
+      "target_doi": "10.1007/978-3-540-75261-5_15",
+      "source_url": "https://www.jasss.org/20/4/2.html#lorenz2008",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "lorenz2009",
+      "target_doi": "10.1140/epjb/e2009-00283-3",
+      "source_url": "https://www.jasss.org/20/4/2.html#lorenz2009",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "lorenz2010",
+      "target_doi": "10.1002/cplx.20295",
+      "source_url": "https://www.jasss.org/20/4/2.html#lorenz2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "lorenz2017",
+      "target_doi": "10.1007/978-3-319-47253-9_22",
+      "source_url": "https://www.jasss.org/20/4/2.html#lorenz2017",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mark1998",
+      "target_doi": "10.2307/2657552",
+      "source_url": "https://www.jasss.org/20/4/2.html#mark1998",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mark2003",
+      "target_doi": "10.2307/1519727",
+      "source_url": "https://www.jasss.org/20/4/2.html#mark2003",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mäs2015",
+      "target_doi": "10.2139/ssrn.2553436",
+      "source_url": "https://www.jasss.org/20/4/2.html#mäs2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mäs2013a",
+      "target_doi": "10.1371/journal.pone.0074516",
+      "source_url": "https://www.jasss.org/20/4/2.html#mäs2013a",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mäs2010",
+      "target_doi": "10.1371/journal.pcbi.1000959",
+      "source_url": "https://www.jasss.org/20/4/2.html#mäs2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mäs2014",
+      "target_doi": "10.1007/978-3-319-01952-9_5",
+      "source_url": "https://www.jasss.org/20/4/2.html#mäs2014",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mäs2013b",
+      "target_doi": "10.1287/orsc.1120.0767",
+      "source_url": "https://www.jasss.org/20/4/2.html#mäs2013b",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mason2007",
+      "target_doi": "10.1177/1088868307301032",
+      "source_url": "https://www.jasss.org/20/4/2.html#mason2007",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mathias2016",
+      "target_doi": "10.18564/jasss.2967",
+      "source_url": "https://www.jasss.org/20/4/2.html#mathias2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mavrodiev2013",
+      "target_doi": "10.1038/srep01360",
+      "source_url": "https://www.jasss.org/20/4/2.html#mavrodiev2013",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "mcpherson2001",
+      "target_doi": "10.1146/annurev.soc.27.1.415",
+      "source_url": "https://www.jasss.org/20/4/2.html#mcpherson2001",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "moscovici1969",
+      "target_doi": "10.1037/h0027568",
+      "source_url": "https://www.jasss.org/20/4/2.html#moscovici1969",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "moussaïd2013",
+      "target_doi": "10.1371/journal.pone.0078433",
+      "source_url": "https://www.jasss.org/20/4/2.html#moussaïd2013",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "myers1978",
+      "target_doi": "10.1016/0022-1031(78)90049-5",
+      "source_url": "https://www.jasss.org/20/4/2.html#myers1978",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "myers1976",
+      "target_doi": "10.1037/0033-2909.83.4.602",
+      "source_url": "https://www.jasss.org/20/4/2.html#myers1976",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "nickerson1998",
+      "target_doi": "10.1037/1089-2680.2.2.175",
+      "source_url": "https://www.jasss.org/20/4/2.html#nickerson1998",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "nowak1990",
+      "target_doi": "10.1037/0033-295x.97.3.362",
+      "source_url": "https://www.jasss.org/20/4/2.html#nowak1990",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "opp1993",
+      "target_doi": "10.2307/2096280",
+      "source_url": "https://www.jasss.org/20/4/2.html#opp1993",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "parisi2003",
+      "target_doi": "10.1177/0022002702251025",
+      "source_url": "https://www.jasss.org/20/4/2.html#parisi2003",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "pineda2009",
+      "target_doi": "10.1088/1742-5468/2009/08/p08001",
+      "source_url": "https://www.jasss.org/20/4/2.html#pineda2009",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "rizzolatti2004",
+      "target_doi": "10.1146/annurev.neuro.27.070203.144230",
+      "source_url": "https://www.jasss.org/20/4/2.html#rizzolatti2004",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "rosenbaum1986",
+      "target_doi": "10.1037/0022-3514.51.6.1156",
+      "source_url": "https://www.jasss.org/20/4/2.html#rosenbaum1986",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "sassenberg2005",
+      "target_doi": "10.1002/ejsp.254",
+      "source_url": "https://www.jasss.org/20/4/2.html#sassenberg2005",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "shibanai2001",
+      "target_doi": "10.1177/0022002701045001004",
+      "source_url": "https://www.jasss.org/20/4/2.html#shibanai2001",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "shin2010",
+      "target_doi": "10.1088/1742-5468/2010/06/p06005",
+      "source_url": "https://www.jasss.org/20/4/2.html#shin2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "snijders2015",
+      "target_doi": "10.1146/annurev.soc.012809.102709",
+      "source_url": "https://www.jasss.org/20/4/2.html#snijders2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "snijders2011",
+      "target_doi": "10.1177/0049124113494573",
+      "source_url": "https://www.jasss.org/20/4/2.html#snijders2011",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "snyder1980",
+      "target_doi": "10.1007/978-1-4684-3659-4",
+      "source_url": "https://www.jasss.org/20/4/2.html#snyder1980",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "sobkowicz2012",
+      "target_doi": "10.1371/journal.pone.0044489",
+      "source_url": "https://www.jasss.org/20/4/2.html#sobkowicz2012",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "sobkowicz2015",
+      "target_doi": "10.3389/fphy.2015.00017",
+      "source_url": "https://www.jasss.org/20/4/2.html#sobkowicz2015",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "stark2012",
+      "target_doi": "10.1177/0038040711427314",
+      "source_url": "https://www.jasss.org/20/4/2.html#stark2012",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "stauffer2004",
+      "target_doi": "10.1142/s0129183104005644",
+      "source_url": "https://www.jasss.org/20/4/2.html#stauffer2004",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "steglich2010",
+      "target_doi": "10.1111/j.1467-9531.2010.01225.x",
+      "source_url": "https://www.jasss.org/20/4/2.html#steglich2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "sznajd-weron2000",
+      "target_doi": "10.1142/s0129183100000936",
+      "source_url": "https://www.jasss.org/20/4/2.html#sznajd-weron2000",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "takács2016",
+      "target_doi": "10.1371/journal.pone.0157948",
+      "source_url": "https://www.jasss.org/20/4/2.html#takács2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "ulloa2016",
+      "target_doi": "10.1371/journal.pone.0153334",
+      "source_url": "https://www.jasss.org/20/4/2.html#ulloa2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "valente1996",
+      "target_doi": "10.1016/0378-8733(95)00256-1",
+      "source_url": "https://www.jasss.org/20/4/2.html#valente1996",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "kerckhove2016",
+      "target_doi": "10.1371/journal.pone.0157685",
+      "source_url": "https://www.jasss.org/20/4/2.html#kerckhove2016",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "del2017",
+      "target_doi": "10.1038/srep40391",
+      "source_url": "https://www.jasss.org/20/4/2.html#del2017",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "vinokur1978",
+      "target_doi": "10.1037/0022-3514.36.8.872",
+      "source_url": "https://www.jasss.org/20/4/2.html#vinokur1978",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "wimmer2010",
+      "target_doi": "10.1086/653658",
+      "source_url": "https://www.jasss.org/20/4/2.html#wimmer2010",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "wio2006",
+      "target_doi": "10.1016/j.physa.2006.04.103",
+      "source_url": "https://www.jasss.org/20/4/2.html#wio2006",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "wood2000",
+      "target_doi": "10.1146/annurev.psych.51.1.539",
+      "source_url": "https://www.jasss.org/20/4/2.html#wood2000",
+      "target_identity_verified": false
+    },
+    {
+      "seed_identifier": "doi:10.18564/jasss.3521",
+      "reference_locator": "wood1996",
+      "target_doi": "10.1037/0022-3514.71.6.1181",
+      "source_url": "https://www.jasss.org/20/4/2.html#wood1996",
+      "target_identity_verified": false
+    }
+  ],
+  "unresolved_reference_locators": [
+    "abelson1964",
+    "allport1924",
+    "asch1955",
+    "bonacich2012",
+    "bourdieu1984",
+    "byrne1971",
+    "conte1995",
+    "deffuant2006",
+    "deffuant2002",
+    "deffuant2008a",
+    "deffuant2000",
+    "eagly1993a",
+    "eagly1993b",
+    "elias1978",
+    "feldman1969",
+    "festinger1957",
+    "festinger1950",
+    "flache2006",
+    "gentzkow2016",
+    "gonzález-avella2007",
+    "harary1959",
+    "hegselmann2002",
+    "heider1967",
+    "homans1950",
+    "hunter1984",
+    "katz1955",
+    "lau1998",
+    "lazarsfeld1954",
+    "macy2009",
+    "macy2003",
+    "merton1957",
+    "moscovici1994",
+    "myers1982",
+    "pearson2006",
+    "richerson2005",
+    "rogers1995",
+    "salzarulo2006",
+    "sherif1935",
+    "sherif1961",
+    "sherif1979",
+    "sobkowicz2009",
+    "stokman2013",
+    "stryker1980",
+    "tajfel1978",
+    "turner1995",
+    "urbig2008",
+    "urbig2007",
+    "valente1995"
+  ],
+  "eligible_primary_study_count": null
+}

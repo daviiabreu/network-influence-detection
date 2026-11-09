@@ -1,33 +1,44 @@
-# Seleção pública do compêndio
+# Public selection
 
-`network-influence-detection` reúne a implementação científica, os protocolos,
-as especificações e as fontes de publicação do paper. A extração começa uma
-história limpa a partir da seleção publicável do monorepo privado no commit
-`cbf7d721`. Estar rastreado na origem não foi tratado como licença para divulgar.
+`network-influence-detection` holds the scientific implementation, protocols,
+specifications and manuscript sources of the paper. It starts a clean history
+from a selection of the private monorepo at commit `cbf7d721`. Being tracked in
+the original repository was not treated as permission to publish.
 
-Os históricos de agentes, avaliações, promoções, aprovações privadas,
-coordenação de execução e contratos do runtime permaneceram no arquivo privado
-de preservação. Não são distribuídos nem necessários para instalar o pacote,
-executar a suíte hermética ou compilar os fontes editoriais. O framework
-agentic é mantido separadamente e não é dependência Python do estudo público.
+Agent histories, evaluations, promotions, private approvals, execution
+coordination and runtime contracts stayed in the private preservation archive.
+So did the venue search, which only informed where to submit. None of these
+are needed to install the package, run the hermetic suite or compile the
+manuscript. The agent framework
+is maintained separately and is not a Python dependency of this study.
 
-Protocolos e registros científicos mantêm a identidade de origem. Referências
-a um objeto Git ou a um arquivo omitido continuam sendo referências
-históricas; não se tornam um registro de autorização ou de execução neste
-repositório novo. O mapa de extração do proprietário registra seleção e hashes.
+The systematic literature map in `research/literature/` (protocols, search
+design, run records, preparation and synthesis) was restored unchanged after
+the first extraction. Its records quote third-party sources only in short
+excerpts; abstracts, full texts and corpus snapshots stayed in external state.
 
-Dados SHP, raw/interim/processed, sealed runs, holdouts privados, credenciais e
-estado de providers ficam externos. O template Springer também é obtido
-separadamente, conforme o [guia editorial](publication-toolchain.md).
+Protocols and scientific records keep their original identity. Some of them
+link to files that are not here: framework code and process notes
+(`workbench/`, `docs/process/`), now in the separate workflow repository, and
+the private `research/venues/`, `research/agents/` and `research/decisions/`
+records. Those links are historical references to the original monorepo; they do not become
+a record of authorization or execution in this repository. The [extraction map](../provenance/origin-map.json) records the
+selection and its hashes.
 
-As licenças MIT e CC BY 4.0 declaradas em bundles anteriores conservam seu
-escopo. Nenhuma licença geral nova se estende a dados, textos de terceiros,
-snapshots de fontes ou templates. Qualquer divulgação adicional exige seleção
-de conteúdo e direitos; as declarações de submissão permanecem sujeitas aos
-gates editoriais e institucionais próprios.
+Swiss Household Panel data, raw, interim and processed data, sealed runs,
+private holdouts, credentials and provider state stay external. The Springer
+template is obtained separately, as described in the
+[toolchain guide](publication-toolchain.md).
 
-`POST-RELEASE.md` e o dossiê histórico `ai-disclosure-evidence.md`, que continham
-localizadores privados de operação e auditoria, foram omitidos sem alterar seus
-originais. Os vínculos e hashes ficam na preservação privada. O disclosure
-editorial final e os protocolos científicos permanecem intactos. O lifecycle
-publicado contém apenas as linhas genéricas 1–48 da fonte de origem.
+This repository uses the same terms as the Zenodo archive: the MIT License for
+code, data and documentation and CC BY 4.0 for manuscript texts and figures, as
+set out in the [README](../README.md#licences). Neither extends to
+third-party texts, source snapshots, templates or Swiss Household Panel data.
+Any further release needs its own selection of content and rights.
+
+`POST-RELEASE.md` and the historical dossier `ai-disclosure-evidence.md`, which
+contained private operational and audit locators, were omitted without changing
+their originals. Their links and hashes remain in the private preservation. The
+final editorial AI disclosure and the scientific protocols are intact. The
+published research lifecycle contains only the generic lines 1–48 of its
+source.

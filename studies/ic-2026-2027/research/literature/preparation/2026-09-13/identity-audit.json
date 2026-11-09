@@ -1,0 +1,3555 @@
+{
+  "arxiv_rule_documentation": {
+    "accessed_on": "2026-09-13",
+    "claim": "General arXiv:ID to 10.48550/arXiv.ID rule only; no individual DOI or landing-page verification. The issued DOI refers to the canonical latest arXiv version and is separate from an author-provided editorial DOI.",
+    "url": "https://blog.arxiv.org/2022/02/17/new-arxiv-articles-are-now-automatically-assigned-dois/"
+  },
+  "deduplication_sha256": "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+  "derived_diagnostic_only": true,
+  "exact_replay_equal": true,
+  "examples": {
+    "arxiv_spelling_bridge": {
+      "count": 4750,
+      "examples": [
+        {
+          "arxiv_spelling_bridge": [
+            "arxiv:2607.05597"
+          ],
+          "candidate_id": "dedupe.v2.00014f5d902dc7fe832fd884",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.42c9c33f20031a4c1ab29b03bab1926047d0d627a87fa404b7002f233c9c4907",
+            "observation.681ee9d1d54349a3e41e39439f6fb3e11afe12849b22dd91edcdce741b21ce43"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.2607.05597",
+                "openalex:W7167689804"
+              ],
+              "landing_page_url": "https://doi.org/10.48550/arxiv.2607.05597",
+              "publication_type": "preprint",
+              "publication_year": 2026,
+              "rank": 6343,
+              "raw_artifact_sha256": "b66252e9e49782331c6cfa147bd0286afbb1c0e5e54b6a8b606336efadc2b91f",
+              "record_id": "observation.42c9c33f20031a4c1ab29b03bab1926047d0d627a87fa404b7002f233c9c4907",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "The collective statistical mechanical personality of a group",
+              "venue": "arXiv (Cornell University)"
+            },
+            {
+              "identifiers": [
+                "arxiv:2607.05597",
+                "category:q-bio.OT"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2607.05597",
+              "publication_type": "preprint",
+              "publication_year": 2026,
+              "rank": 1202,
+              "raw_artifact_sha256": "28919efe373ee3e3dbbb1ee6f62a845a7163e909a55ed59236200467620a16b6",
+              "record_id": "observation.681ee9d1d54349a3e41e39439f6fb3e11afe12849b22dd91edcdce741b21ce43",
+              "search_id": "search.arxiv.q01",
+              "source_id": "arxiv",
+              "title": "The collective statistical mechanical personality of a group",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": true,
+          "same_source": false,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.91c5295f134125fe51d5e314",
+            "work.v2.9ad05c4cd2d7bba015001c4a"
+          ],
+          "year_difference": 0
+        },
+        {
+          "arxiv_spelling_bridge": [
+            "arxiv:2201.05334"
+          ],
+          "candidate_id": "dedupe.v2.000dcf325c74bc6ab0dd42f5",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.6482cc124a553a75b5e5ed1f3e7247f906bc1dbe798e4144413781988b6576a3",
+            "observation.9084be359b9464d34b5d18c7b4655208d6e88351fbf1bafbc2fa1ca2545bf9c8"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.2201.05334",
+                "openalex:W4226111775"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2022,
+              "rank": 6684,
+              "raw_artifact_sha256": "51cc6a8dba6885348de6a23f00ced4a5cef9410214cf9779cc2f9f11ac06629e",
+              "record_id": "observation.6482cc124a553a75b5e5ed1f3e7247f906bc1dbe798e4144413781988b6576a3",
+              "search_id": "search.openalex.q14c",
+              "source_id": "openalex",
+              "title": "This Must Be the Place: Predicting Engagement of Online Communities in a Large-scale Distributed Campaign",
+              "venue": "arXiv (Cornell University)"
+            },
+            {
+              "identifiers": [
+                "arxiv:2201.05334",
+                "category:cs.SI"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2201.05334",
+              "publication_type": "preprint",
+              "publication_year": 2022,
+              "rank": 906,
+              "raw_artifact_sha256": "ae3ebd6fad8011e788d8bd4be2d3345b755f4c8a789cc67bb19daef579687b35",
+              "record_id": "observation.9084be359b9464d34b5d18c7b4655208d6e88351fbf1bafbc2fa1ca2545bf9c8",
+              "search_id": "search.arxiv.q14a",
+              "source_id": "arxiv",
+              "title": "This Must Be the Place: Predicting Engagement of Online Communities in a Large-scale Distributed Campaign",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": false,
+          "same_source": false,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.015837dbd110218594f7b013",
+            "work.v2.ded171f09dfa643b89014422"
+          ],
+          "year_difference": 0
+        },
+        {
+          "arxiv_spelling_bridge": [
+            "arxiv:2312.04603"
+          ],
+          "candidate_id": "dedupe.v2.0022b64e64960ec51d598830",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [
+            "doi"
+          ],
+          "record_ids": [
+            "observation.9f398343fb2ec7d06b0051ace2a70e90b388a8af20422400151972db96362d33",
+            "observation.f9cba7ee554e4ad02ee9b7b1f8f7316e56fea87de489cea35a72154997830741"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.2312.04603",
+                "openalex:W4389598933"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2312.04603",
+              "publication_type": "preprint",
+              "publication_year": 2023,
+              "rank": 4252,
+              "raw_artifact_sha256": "0b6e0ed3b6cd82fcd619bb96e992749e1752e1ce89beca32af35ea6fe9977ecc",
+              "record_id": "observation.9f398343fb2ec7d06b0051ace2a70e90b388a8af20422400151972db96362d33",
+              "search_id": "search.openalex.q14c",
+              "source_id": "openalex",
+              "title": "All Polarized but Still Different: a Multi-factorial Metric to Discriminate between Polarization Behaviors on Social Media",
+              "venue": "arXiv (Cornell University)"
+            },
+            {
+              "identifiers": [
+                "arxiv:2312.04603",
+                "category:cs.SI",
+                "doi:10.1145/3605098.3635972"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2312.04603",
+              "publication_type": "preprint",
+              "publication_year": 2023,
+              "rank": 724,
+              "raw_artifact_sha256": "75a5d40c846e6c577c4f5251b9a8ab2b65587625a04beb837a56a6fbea5bff1c",
+              "record_id": "observation.f9cba7ee554e4ad02ee9b7b1f8f7316e56fea87de489cea35a72154997830741",
+              "search_id": "search.arxiv.q14a",
+              "source_id": "arxiv",
+              "title": "All Polarized but Still Different: a Multi-factorial Metric to Discriminate between Polarization Behaviors on Social Media",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": false,
+          "same_source": false,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.37476ac0acb17b957455bde2",
+            "work.v2.e60a2ba2f37cc8058613375d"
+          ],
+          "year_difference": 0
+        }
+      ],
+      "interpretation": "Same arXiv base encoded with different identifier types; diagnostic only. No new alias normalization or merge is authorized by this report."
+    },
+    "different_arxiv_ids_same_doi": {
+      "count": 1,
+      "examples": [
+        {
+          "arxiv_spelling_bridge": [],
+          "candidate_id": "dedupe.v2.d0600a85fb102dce9e3db87f",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "arxiv"
+          ],
+          "raw_arxiv_evidence": [
+            {
+              "entries": [
+                {
+                  "doi": "10.1103/PhysRevE.88.022152",
+                  "entry_index": 4,
+                  "id": "http://arxiv.org/abs/1205.3943v3",
+                  "title": "A stochastic opinion dynamics model with domain size dependent dynamic evolution"
+                }
+              ],
+              "raw_artifact_sha256": "f6e9936dfb8df0199f8f97e87d97665fe2a577b356e5e3acad9b4d0ecdc1268f"
+            },
+            {
+              "entries": [
+                {
+                  "doi": "10.1103/PhysRevE.88.022152",
+                  "entry_index": 80,
+                  "id": "http://arxiv.org/abs/1306.6813v2",
+                  "title": "Opinion dynamics model with weighted influence: Exit probability and dynamics"
+                }
+              ],
+              "raw_artifact_sha256": "9f7fc7e669dd31b7f08d07ddafeeedb27220b4d286bb28519e2b6c569b0d816a"
+            }
+          ],
+          "record_ids": [
+            "observation.02fc62df3ad200a0cd6e5aa80c84297b47192b8561c5cb411ce75a41dcaf38d0",
+            "observation.850abfe6a53e753b11e0851f64e1396e108276e054f7b42d7dc699afe60da2c5"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:1205.3943",
+                "category:cond-mat.stat-mech",
+                "doi:10.1103/physreve.88.022152"
+              ],
+              "publication_year": 2012,
+              "raw_artifact_sha256": "f6e9936dfb8df0199f8f97e87d97665fe2a577b356e5e3acad9b4d0ecdc1268f",
+              "record_id": "observation.02fc62df3ad200a0cd6e5aa80c84297b47192b8561c5cb411ce75a41dcaf38d0",
+              "source_id": "arxiv",
+              "title": "A stochastic opinion dynamics model with domain size dependent dynamic evolution"
+            },
+            {
+              "identifiers": [
+                "arxiv:1306.6813",
+                "category:cond-mat.stat-mech",
+                "doi:10.1103/physreve.88.022152"
+              ],
+              "publication_year": 2013,
+              "raw_artifact_sha256": "9f7fc7e669dd31b7f08d07ddafeeedb27220b4d286bb28519e2b6c569b0d816a",
+              "record_id": "observation.850abfe6a53e753b11e0851f64e1396e108276e054f7b42d7dc699afe60da2c5",
+              "source_id": "arxiv",
+              "title": "Opinion dynamics model with weighted influence: Exit probability and dynamics"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": false,
+          "same_source": true,
+          "shared_identifiers": [
+            "doi:10.1103/physreve.88.022152"
+          ],
+          "signals": [
+            "conflicting_arxiv",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "arxiv"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.4fb1d4391cde897342a0e23a",
+            "work.v2.a281818a6d00dffbf03c2b45"
+          ],
+          "year_difference": 1
+        }
+      ],
+      "interpretation": "Observed metadata conflict, not a scientific distinct-work or same-work decision."
+    },
+    "exact_shared_title_diff": {
+      "count": 144,
+      "examples": [
+        {
+          "candidate_id": "dedupe.v2.015d38cb0e836f32adcd8bef",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": false,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.e285b50a798e94a966a23182001c4fb7bdb91d3620b516b0499a64bc1dfc2ac0",
+            "observation.eed50de609754add85c74a7609041ea20f24fa71d888640a5f408e79dd822ab5"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.1503.08785",
+                "openalex:W3123413783"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2015,
+              "rank": 1777,
+              "raw_artifact_sha256": "8d9e7c5fff9fdcc15199a878d2d2ca596c3986c936b86773c2225763f01ad1e1",
+              "record_id": "observation.e285b50a798e94a966a23182001c4fb7bdb91d3620b516b0499a64bc1dfc2ac0",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Prices of Options as Opinion Dynamics of the Market Players with Limited\\n Social Influence",
+              "venue": "arXiv (Cornell University)"
+            },
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.1503.08785",
+                "openalex:W1927170295"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2015,
+              "rank": 1728,
+              "raw_artifact_sha256": "8d9e7c5fff9fdcc15199a878d2d2ca596c3986c936b86773c2225763f01ad1e1",
+              "record_id": "observation.eed50de609754add85c74a7609041ea20f24fa71d888640a5f408e79dd822ab5",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Prices of Options as Opinion Dynamics of the Market Players with Limited Social Influence",
+              "venue": "RePEc: Research Papers in Economics"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [
+            "doi:10.48550/arxiv.1503.08785"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "publication_year_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.47d9f086c83e5a0a740d0d99",
+            "work.v2.6b67517dc66b9aae08a8c8a8"
+          ],
+          "year_difference": 0
+        },
+        {
+          "candidate_id": "dedupe.v2.05e722887e69ff237d5cf31c",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.1ab4d37c4fc97b0dfe96d2d5b542f28e98312b75ecc5d8fc1a71072161b7ded5",
+            "observation.2db63315651826aac2d03a7cc3c18a70d69da3b05853a7b304c49db280e34fdd"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:2501.00221",
+                "category:physics.soc-ph",
+                "doi:10.1142/s0129183127500616"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2501.00221",
+              "publication_type": "preprint",
+              "publication_year": 2024,
+              "rank": 207,
+              "raw_artifact_sha256": "7d57bfc1186edbfbec87a987465c8a940338d2fe7a56106f0c63cefc07fe758f",
+              "record_id": "observation.1ab4d37c4fc97b0dfe96d2d5b542f28e98312b75ecc5d8fc1a71072161b7ded5",
+              "search_id": "search.arxiv.q14a",
+              "source_id": "arxiv",
+              "title": "Modified Axelrod Model Showing Opinion Convergence And Polarization In Realistic Scale-Free Networks",
+              "venue": null
+            },
+            {
+              "identifiers": [
+                "doi:10.1142/s0129183127500616",
+                "openalex:W7130652488"
+              ],
+              "landing_page_url": "https://doi.org/10.1142/s0129183127500616",
+              "publication_type": "article",
+              "publication_year": 2026,
+              "rank": 5613,
+              "raw_artifact_sha256": "c6cf179e9c295da12ae4b663c28119547069ae5e9db2da23557f79fc570b6aa5",
+              "record_id": "observation.2db63315651826aac2d03a7cc3c18a70d69da3b05853a7b304c49db280e34fdd",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Modified Axelrod model showing opinion convergence and polarization in scale-free networks",
+              "venue": "International Journal of Modern Physics C"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [
+            "doi:10.1142/s0129183127500616"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.0b114a62c11b60468149c655",
+            "work.v2.b7119137d3725f43c76c5a8d"
+          ],
+          "year_difference": 2
+        },
+        {
+          "candidate_id": "dedupe.v2.06249c54d3ab4d056a0c854b",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": true,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.37d5b07bfac845b9591944c354f2e0ec2c1b7dca3af0c10af01b972f12bd417a",
+            "observation.e354afd55f95fc2d1ef780de0d0c23b0024a0f8e41078de13e48fd299cc4ac58"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1142/s0129183127500616",
+                "openalex:W4406031013"
+              ],
+              "landing_page_url": "https://doi.org/10.1142/s0129183127500616",
+              "publication_type": "article",
+              "publication_year": 2026,
+              "rank": 2408,
+              "raw_artifact_sha256": "7b556fc497307fa48e7b8b85eb2ca9afc35403693c1efdee012b3ad85782e64d",
+              "record_id": "observation.37d5b07bfac845b9591944c354f2e0ec2c1b7dca3af0c10af01b972f12bd417a",
+              "search_id": "search.openalex.q14c",
+              "source_id": "openalex",
+              "title": "Modified Axelrod model showing opinion convergence and polarization in scale-free networks",
+              "venue": "International Journal of Modern Physics C"
+            },
+            {
+              "identifiers": [
+                "arxiv:2501.00221",
+                "category:physics.soc-ph",
+                "doi:10.1142/s0129183127500616"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2501.00221",
+              "publication_type": "preprint",
+              "publication_year": 2024,
+              "rank": 661,
+              "raw_artifact_sha256": "b201fd154406be648bf8329e23e72f9ee08d1a578a744b665f60c55afeb4fa91",
+              "record_id": "observation.e354afd55f95fc2d1ef780de0d0c23b0024a0f8e41078de13e48fd299cc4ac58",
+              "search_id": "search.arxiv.q01",
+              "source_id": "arxiv",
+              "title": "Modified Axelrod Model Showing Opinion Convergence And Polarization In Realistic Scale-Free Networks",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [
+            "doi:10.1142/s0129183127500616"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.36fe11c3258e1e4180f8479d",
+            "work.v2.520751cd0e41ea02fc1e0a37"
+          ],
+          "year_difference": 2
+        },
+        {
+          "candidate_id": "dedupe.v2.066202b8231e6b70ed0682ae",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": false,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.4189cabc6298d3e16fac4839d03f961abc8f5b386f08919338d417e2cee5c444",
+            "observation.8517ab0de06ea5387c64c55c6fd4c7df1ae5f531ea20a2c7742fbf6da3947614"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.1909.12603",
+                "openalex:W3126120121"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2019,
+              "rank": 2043,
+              "raw_artifact_sha256": "8cd1e95343989ca264d35beda15f4267d73d6b10697531178cc9375db9f19ec2",
+              "record_id": "observation.4189cabc6298d3e16fac4839d03f961abc8f5b386f08919338d417e2cee5c444",
+              "search_id": "search.openalex.q16",
+              "source_id": "openalex",
+              "title": "Organisational Social Influence on Directed Hierarchical Graphs, from Tyranny to Anarchy",
+              "venue": "arXiv (Cornell University)"
+            },
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.1909.12603",
+                "openalex:W4288102087"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2019,
+              "rank": 641,
+              "raw_artifact_sha256": "9af060de14330eb2be9fbbce5f18bdff7df66f453dc5e73fe063639418fad058",
+              "record_id": "observation.8517ab0de06ea5387c64c55c6fd4c7df1ae5f531ea20a2c7742fbf6da3947614",
+              "search_id": "search.openalex.q04",
+              "source_id": "openalex",
+              "title": "Organisational Social Influence on Directed Hierarchical Graphs, from\\n Tyranny to Anarchy",
+              "venue": "arXiv (Cornell University)"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [
+            "doi:10.48550/arxiv.1909.12603"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "publication_year_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.affce38de76526dfb41060f4",
+            "work.v2.e02acb6d8f8e0c25e1325062"
+          ],
+          "year_difference": 0
+        }
+      ]
+    },
+    "same_metadata_except_acquisition": {
+      "count": 85,
+      "examples": [
+        {
+          "candidate_id": "dedupe.v2.09992b9861267a8417c08dca",
+          "cause": "exact_identifier_conflict_and_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.491cf94b4382fd70f7f5ad7360c90a3a711685fa3a36d1e273e79a2a234d8b8f",
+            "observation.7223a7602dd2b9a8b3856cca0d0b31a3b74654b539de71fa5afa0b272ac69cb9"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:2506.16302",
+                "category:cs.SI",
+                "doi:10.1109/tcss.2026.3669247"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2506.16302",
+              "publication_type": "preprint",
+              "publication_year": 2025,
+              "rank": 87,
+              "raw_artifact_sha256": "c26567729cff311cb5c52d85c640d3bb60c6c56648fb69081a9de69d1fe24dba",
+              "record_id": "observation.491cf94b4382fd70f7f5ad7360c90a3a711685fa3a36d1e273e79a2a234d8b8f",
+              "search_id": "search.arxiv.q01",
+              "source_id": "arxiv",
+              "title": "Cascade-driven opinion dynamics on social networks",
+              "venue": "IEEE Transactions on Computational Social Systems (2026)"
+            },
+            {
+              "identifiers": [
+                "arxiv:2506.16302",
+                "category:cs.SI",
+                "doi:10.1109/tcss.2026.3669247"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2506.16302",
+              "publication_type": "preprint",
+              "publication_year": 2025,
+              "rank": 43,
+              "raw_artifact_sha256": "53836d06c1f43b268a935956e0980d3365bcf45155f4d752d52a59510a700c5a",
+              "record_id": "observation.7223a7602dd2b9a8b3856cca0d0b31a3b74654b539de71fa5afa0b272ac69cb9",
+              "search_id": "search.arxiv.q03",
+              "source_id": "arxiv",
+              "title": "Cascade-driven opinion dynamics on social networks",
+              "venue": "IEEE Transactions on Computational Social Systems (2026)"
+            }
+          ],
+          "same_metadata_except_acquisition": true,
+          "same_source": true,
+          "shared_identifiers": [
+            "arxiv:2506.16302",
+            "doi:10.1109/tcss.2026.3669247"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "normalized_title_match",
+            "publication_year_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "arxiv"
+          ],
+          "type_pair": [
+            "preprint",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.7158c8fc738e8becc94ca375",
+            "work.v2.d0c8954f71817450f3ff02f6"
+          ],
+          "year_difference": 0
+        },
+        {
+          "candidate_id": "dedupe.v2.0c4b0d4a7e7cac1bcaa3c172",
+          "cause": "exact_identifier_conflict_and_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.161619fb4e9ddbbc10d7db6f0dccea3f64a8831856e270d4f069971094aaac73",
+            "observation.da33525f56555fc611feacea4687c13c8bf48b7de341109776b6531302cf323e"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1142/s0219525919500085",
+                "openalex:W1677939499"
+              ],
+              "landing_page_url": "https://doi.org/10.1142/s0219525919500085",
+              "publication_type": "article",
+              "publication_year": 2019,
+              "rank": 1109,
+              "raw_artifact_sha256": "2a99fca1d65e03248d37976407cfe9afc715155e4ae5ac6178fe1d281815dbae",
+              "record_id": "observation.161619fb4e9ddbbc10d7db6f0dccea3f64a8831856e270d4f069971094aaac73",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "TWO-OPINIONS-DYNAMICS GENERATED BY INFLEXIBLES AND NON-CONTRARIAN AND CONTRARIAN FLOATERS",
+              "venue": "Advances in Complex Systems"
+            },
+            {
+              "identifiers": [
+                "doi:10.1142/s0219525919500085",
+                "openalex:W1677939499"
+              ],
+              "landing_page_url": "https://doi.org/10.1142/s0219525919500085",
+              "publication_type": "article",
+              "publication_year": 2019,
+              "rank": 338,
+              "raw_artifact_sha256": "8892e34c5591458bc0f730bb86e113935c5dd2329659caee8f55f92e1db38efb",
+              "record_id": "observation.da33525f56555fc611feacea4687c13c8bf48b7de341109776b6531302cf323e",
+              "search_id": "search.openalex.q04",
+              "source_id": "openalex",
+              "title": "TWO-OPINIONS-DYNAMICS GENERATED BY INFLEXIBLES AND NON-CONTRARIAN AND CONTRARIAN FLOATERS",
+              "venue": "Advances in Complex Systems"
+            }
+          ],
+          "same_metadata_except_acquisition": true,
+          "same_source": true,
+          "shared_identifiers": [
+            "doi:10.1142/s0219525919500085",
+            "openalex:W1677939499"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "normalized_title_match",
+            "publication_year_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "article"
+          ],
+          "work_ids": [
+            "work.v2.3d803dd8f49b85c8efed726f",
+            "work.v2.7a13b543b8e5f7fc63885a9f"
+          ],
+          "year_difference": 0
+        },
+        {
+          "candidate_id": "dedupe.v2.0d734fe7a35b8dfcf8879006",
+          "cause": "exact_identifier_conflict_and_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.5fb3685f02ca1cfbd9e5909dfb6b05fd2a498bcaafb85308db39213fff668874",
+            "observation.735635151e9de747393944830011381e2945c84c4f7ac394a0c7010b6a67d7d8"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1145/2896377.2901488",
+                "openalex:W2419141001"
+              ],
+              "landing_page_url": "https://doi.org/10.1145/2896377.2901488",
+              "publication_type": "conference_paper",
+              "publication_year": 2016,
+              "rank": 1279,
+              "raw_artifact_sha256": "c7fccc8ee8ccca197ec267bc8970f6821dfe9cbaa87f602c27fadcb8e32b0d55",
+              "record_id": "observation.5fb3685f02ca1cfbd9e5909dfb6b05fd2a498bcaafb85308db39213fff668874",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents",
+              "venue": null
+            },
+            {
+              "identifiers": [
+                "doi:10.1145/2896377.2901488",
+                "openalex:W2419141001"
+              ],
+              "landing_page_url": "https://doi.org/10.1145/2896377.2901488",
+              "publication_type": "conference_paper",
+              "publication_year": 2016,
+              "rank": 169,
+              "raw_artifact_sha256": "a78cf8922fa5e952816df6f1f733bbdb0373d46075700258b9b70e29146276b8",
+              "record_id": "observation.735635151e9de747393944830011381e2945c84c4f7ac394a0c7010b6a67d7d8",
+              "search_id": "search.openalex.q04",
+              "source_id": "openalex",
+              "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": true,
+          "same_source": true,
+          "shared_identifiers": [
+            "doi:10.1145/2896377.2901488",
+            "openalex:W2419141001"
+          ],
+          "signals": [
+            "conflicting_doi",
+            "conflicting_openalex",
+            "normalized_title_match",
+            "publication_year_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "conference_paper",
+            "conference_paper"
+          ],
+          "work_ids": [
+            "work.v2.6a0726534a1b0ffc6eff64bf",
+            "work.v2.e9e2be1c938944252769a4fd"
+          ],
+          "year_difference": 0
+        },
+        {
+          "candidate_id": "dedupe.v2.108f551579b7c81a520184c6",
+          "cause": "exact_identifier_conflict_and_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.22b8992440c789f136ea5960ee19367a9d68a662ba944a3d0f02724f547feb3b",
+            "observation.e0e54a1a2ca28b9a24fe2cd6c58a8a034e8f71237bef896287a854e913bbdc4a"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1038/srep40391",
+                "openalex:W2471945448"
+              ],
+              "landing_page_url": "https://doi.org/10.1038/srep40391",
+              "publication_type": "article",
+              "publication_year": 2017,
+              "rank": 145,
+              "raw_artifact_sha256": "459022fe5ef8ddcecb786ca0fd887c0e7bc36a68364620094230e837d631d577",
+              "record_id": "observation.22b8992440c789f136ea5960ee19367a9d68a662ba944a3d0f02724f547feb3b",
+              "search_id": "search.openalex.q14b",
+              "source_id": "openalex",
+              "title": "Modeling confirmation bias and polarization",
+              "venue": "Scientific Reports"
+            },
+            {
+              "identifiers": [
+                "doi:10.1038/srep40391",
+                "openalex:W2471945448"
+              ],
+              "landing_page_url": "https://doi.org/10.1038/srep40391",
+              "publication_type": "article",
+              "publication_year": 2017,
+              "rank": 374,
+              "raw_artifact_sha256": "8fde7eb7796ed678142ba3d615f4e8723e42b0a04558c654c3b98358e6ef5aca",
+              "record_id": "observation.e0e54a1a2ca28b9a24fe2cd6c58a8a034e8f71237bef896287a854e913bbdc4a",
+              "search_id": "search.openalex.q02",
+              "source_id": "openalex",
+              "title": "Modeling confirmation bias and polarization",
+              "venue": "Scientific Reports"
+            }
+          ],
+          "same_metadata_except_acquisition": true,
+          "same_source": true,
+          "shared_identifiers": [
+            "doi:10.1038/srep40391",
+            "openalex:W2471945448"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "normalized_title_match",
+            "publication_year_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "article"
+          ],
+          "work_ids": [
+            "work.v2.20cefce3aac635a4911aa21f",
+            "work.v2.926edee79160f54b5c4dc160"
+          ],
+          "year_difference": 0
+        }
+      ]
+    },
+    "shared_id_component_only_conflict": {
+      "count": 231,
+      "examples": [
+        {
+          "candidate_id": "dedupe.v2.00e7c4a84f53bca78cf1731f",
+          "cause": "exact_identifier_conflict_and_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.4aee489a758359b945b466be0b35fcf17afcb73f39fa1beff69f9a23b397fdb5",
+            "observation.53057756bdd6cf4292b53676474cb5d0047557c012afbea6dbe54a5039c464a0"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:1906.11481",
+                "category:physics.soc-ph",
+                "doi:10.1016/j.physa.2021.125818"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/1906.11481",
+              "publication_type": "preprint",
+              "publication_year": 2019,
+              "rank": 705,
+              "raw_artifact_sha256": "4d98396d42752413cf67ebd33fec3727ef441e783c73b8c4b0c7df00d783c308",
+              "record_id": "observation.4aee489a758359b945b466be0b35fcf17afcb73f39fa1beff69f9a23b397fdb5",
+              "search_id": "search.arxiv.q01",
+              "source_id": "arxiv",
+              "title": "Broken Detailed Balance and Non-Equilibrium Dynamics in Noisy Social Learning Models",
+              "venue": "Volume 570, 15 May 2021"
+            },
+            {
+              "identifiers": [
+                "doi:10.1016/j.physa.2021.125818",
+                "openalex:W2953831744"
+              ],
+              "landing_page_url": "https://doi.org/10.1016/j.physa.2021.125818",
+              "publication_type": "article",
+              "publication_year": 2021,
+              "rank": 1137,
+              "raw_artifact_sha256": "5a768f387e6f0ef1a73867ded060b521143e9fac2066a059241ede678db6df8a",
+              "record_id": "observation.53057756bdd6cf4292b53676474cb5d0047557c012afbea6dbe54a5039c464a0",
+              "search_id": "search.openalex.q12",
+              "source_id": "openalex",
+              "title": "Broken detailed balance and non-equilibrium dynamics in noisy social learning models",
+              "venue": "Physica A Statistical Mechanics and its Applications"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [
+            "doi:10.1016/j.physa.2021.125818"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "normalized_title_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.6a69c21fe6cb58ace43fbd2d",
+            "work.v2.cd2dae8ecda9510248077c28"
+          ],
+          "year_difference": 2
+        },
+        {
+          "candidate_id": "dedupe.v2.05e722887e69ff237d5cf31c",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.1ab4d37c4fc97b0dfe96d2d5b542f28e98312b75ecc5d8fc1a71072161b7ded5",
+            "observation.2db63315651826aac2d03a7cc3c18a70d69da3b05853a7b304c49db280e34fdd"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:2501.00221",
+                "category:physics.soc-ph",
+                "doi:10.1142/s0129183127500616"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2501.00221",
+              "publication_type": "preprint",
+              "publication_year": 2024,
+              "rank": 207,
+              "raw_artifact_sha256": "7d57bfc1186edbfbec87a987465c8a940338d2fe7a56106f0c63cefc07fe758f",
+              "record_id": "observation.1ab4d37c4fc97b0dfe96d2d5b542f28e98312b75ecc5d8fc1a71072161b7ded5",
+              "search_id": "search.arxiv.q14a",
+              "source_id": "arxiv",
+              "title": "Modified Axelrod Model Showing Opinion Convergence And Polarization In Realistic Scale-Free Networks",
+              "venue": null
+            },
+            {
+              "identifiers": [
+                "doi:10.1142/s0129183127500616",
+                "openalex:W7130652488"
+              ],
+              "landing_page_url": "https://doi.org/10.1142/s0129183127500616",
+              "publication_type": "article",
+              "publication_year": 2026,
+              "rank": 5613,
+              "raw_artifact_sha256": "c6cf179e9c295da12ae4b663c28119547069ae5e9db2da23557f79fc570b6aa5",
+              "record_id": "observation.2db63315651826aac2d03a7cc3c18a70d69da3b05853a7b304c49db280e34fdd",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Modified Axelrod model showing opinion convergence and polarization in scale-free networks",
+              "venue": "International Journal of Modern Physics C"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [
+            "doi:10.1142/s0129183127500616"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.0b114a62c11b60468149c655",
+            "work.v2.b7119137d3725f43c76c5a8d"
+          ],
+          "year_difference": 2
+        },
+        {
+          "candidate_id": "dedupe.v2.06249c54d3ab4d056a0c854b",
+          "cause": "exact_identifier_conflict_without_title",
+          "component_only_conflict": true,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.37d5b07bfac845b9591944c354f2e0ec2c1b7dca3af0c10af01b972f12bd417a",
+            "observation.e354afd55f95fc2d1ef780de0d0c23b0024a0f8e41078de13e48fd299cc4ac58"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1142/s0129183127500616",
+                "openalex:W4406031013"
+              ],
+              "landing_page_url": "https://doi.org/10.1142/s0129183127500616",
+              "publication_type": "article",
+              "publication_year": 2026,
+              "rank": 2408,
+              "raw_artifact_sha256": "7b556fc497307fa48e7b8b85eb2ca9afc35403693c1efdee012b3ad85782e64d",
+              "record_id": "observation.37d5b07bfac845b9591944c354f2e0ec2c1b7dca3af0c10af01b972f12bd417a",
+              "search_id": "search.openalex.q14c",
+              "source_id": "openalex",
+              "title": "Modified Axelrod model showing opinion convergence and polarization in scale-free networks",
+              "venue": "International Journal of Modern Physics C"
+            },
+            {
+              "identifiers": [
+                "arxiv:2501.00221",
+                "category:physics.soc-ph",
+                "doi:10.1142/s0129183127500616"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2501.00221",
+              "publication_type": "preprint",
+              "publication_year": 2024,
+              "rank": 661,
+              "raw_artifact_sha256": "b201fd154406be648bf8329e23e72f9ee08d1a578a744b665f60c55afeb4fa91",
+              "record_id": "observation.e354afd55f95fc2d1ef780de0d0c23b0024a0f8e41078de13e48fd299cc4ac58",
+              "search_id": "search.arxiv.q01",
+              "source_id": "arxiv",
+              "title": "Modified Axelrod Model Showing Opinion Convergence And Polarization In Realistic Scale-Free Networks",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [
+            "doi:10.1142/s0129183127500616"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.36fe11c3258e1e4180f8479d",
+            "work.v2.520751cd0e41ea02fc1e0a37"
+          ],
+          "year_difference": 2
+        },
+        {
+          "candidate_id": "dedupe.v2.071004e9c6155bec41d7b87c",
+          "cause": "exact_identifier_conflict_and_title",
+          "component_only_conflict": true,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.7223a7602dd2b9a8b3856cca0d0b31a3b74654b539de71fa5afa0b272ac69cb9",
+            "observation.8afb8e8f19c5df0feb2f926fe75cc6ac7300cd14d8e3843f768ef952abaf7e7a"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:2506.16302",
+                "category:cs.SI",
+                "doi:10.1109/tcss.2026.3669247"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2506.16302",
+              "publication_type": "preprint",
+              "publication_year": 2025,
+              "rank": 43,
+              "raw_artifact_sha256": "53836d06c1f43b268a935956e0980d3365bcf45155f4d752d52a59510a700c5a",
+              "record_id": "observation.7223a7602dd2b9a8b3856cca0d0b31a3b74654b539de71fa5afa0b272ac69cb9",
+              "search_id": "search.arxiv.q03",
+              "source_id": "arxiv",
+              "title": "Cascade-driven opinion dynamics on social networks",
+              "venue": "IEEE Transactions on Computational Social Systems (2026)"
+            },
+            {
+              "identifiers": [
+                "doi:10.1109/tcss.2026.3669247",
+                "openalex:W4417538258"
+              ],
+              "landing_page_url": "https://doi.org/10.1109/tcss.2026.3669247",
+              "publication_type": "article",
+              "publication_year": 2026,
+              "rank": 2273,
+              "raw_artifact_sha256": "492c22b3f7a28fb03cf00952693885c68dfb9f4d1b5be1a5ef6a39fe2ece26d1",
+              "record_id": "observation.8afb8e8f19c5df0feb2f926fe75cc6ac7300cd14d8e3843f768ef952abaf7e7a",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Cascade-Driven Opinion Dynamics on Social Networks",
+              "venue": "IEEE Transactions on Computational Social Systems"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [
+            "doi:10.1109/tcss.2026.3669247"
+          ],
+          "signals": [
+            "conflicting_openalex",
+            "normalized_title_match",
+            "typed_work_identifier_match",
+            "work_identifier_conflict"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.d0c8954f71817450f3ff02f6",
+            "work.v2.eae265de97f0ded2c2d832bb"
+          ],
+          "year_difference": 1
+        }
+      ]
+    },
+    "title_only_conference_journal": {
+      "count": 131,
+      "examples": [
+        {
+          "arxiv_spelling_bridge": [],
+          "candidate_id": "dedupe.v2.0380c4639e8ef835f3359793",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": true,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "doi",
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.2db27ea7acb6151e8841bd4057fbd324ca3f0daa7f60e3bee0301681ac8fb1e8",
+            "observation.d59e5fbf3c10ee47b90e995fa11a39366fa508605aeb40fbaa34b2ca44c7bd82"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1109/icc.2017.7996912",
+                "openalex:W2741843808"
+              ],
+              "landing_page_url": "https://doi.org/10.1109/icc.2017.7996912",
+              "publication_type": "conference_paper",
+              "publication_year": 2017,
+              "rank": 239,
+              "raw_artifact_sha256": "85b6294b49ac109547e7e86c5e58e6a975c2fb42ad41d9079761ef89b08db3f3",
+              "record_id": "observation.2db27ea7acb6151e8841bd4057fbd324ca3f0daa7f60e3bee0301681ac8fb1e8",
+              "search_id": "search.openalex.q12",
+              "source_id": "openalex",
+              "title": "Non-Bayesian social learning with observation reuse and soft switching",
+              "venue": null
+            },
+            {
+              "identifiers": [
+                "doi:10.1145/3199513",
+                "openalex:W2806386733"
+              ],
+              "landing_page_url": "https://doi.org/10.1145/3199513",
+              "publication_type": "article",
+              "publication_year": 2018,
+              "rank": 96,
+              "raw_artifact_sha256": "b604a5153502a6bf4a67281c795e0601be9580c7dfed83e09e57dd0f059e2ee0",
+              "record_id": "observation.d59e5fbf3c10ee47b90e995fa11a39366fa508605aeb40fbaa34b2ca44c7bd82",
+              "search_id": "search.openalex.q12",
+              "source_id": "openalex",
+              "title": "Non-Bayesian Social Learning with Observation Reuse and Soft Switching",
+              "venue": "ACM Transactions on Sensor Networks"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": true,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "conference_paper"
+          ],
+          "work_ids": [
+            "work.v2.443528dc3a468dcf1813bfcc",
+            "work.v2.76b6594f55c3fb683259e26a"
+          ],
+          "year_difference": 1
+        },
+        {
+          "arxiv_spelling_bridge": [],
+          "candidate_id": "dedupe.v2.03c227dc137f6feb54130939",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.a77ac4bbe1188ab72c240c93459b4c20a354f9e7546387eabcb4a6c7046ed15b",
+            "observation.d986737a6c9172acfacf5a0088a44618a66a78c7b14672cb68786864fb31ed63"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "openalex:W2336148006"
+              ],
+              "landing_page_url": "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/71312/Details",
+              "publication_type": "conference_paper",
+              "publication_year": 2010,
+              "rank": 2635,
+              "raw_artifact_sha256": "86b792f9752f6382e1e0735071eaa28dfe83ce5e3b13650494cc668f7559208e",
+              "record_id": "observation.a77ac4bbe1188ab72c240c93459b4c20a354f9e7546387eabcb4a6c7046ed15b",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Opinion Dynamics for Decentralized Decision-Making in a Robot Swarm",
+              "venue": "Lecture notes in computer science"
+            },
+            {
+              "identifiers": [
+                "openalex:W2525452175"
+              ],
+              "landing_page_url": "https://lirias.kuleuven.be/handle/123456789/390443",
+              "publication_type": "article",
+              "publication_year": 2010,
+              "rank": 2629,
+              "raw_artifact_sha256": "86b792f9752f6382e1e0735071eaa28dfe83ce5e3b13650494cc668f7559208e",
+              "record_id": "observation.d986737a6c9172acfacf5a0088a44618a66a78c7b14672cb68786864fb31ed63",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Opinion Dynamics for Decentralized Decision-Making in a Robot Swarm",
+              "venue": "Swarm Intelligence"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "conference_paper"
+          ],
+          "work_ids": [
+            "work.v2.759224159b24a733d15ab5d8",
+            "work.v2.9a53dd9c2f6c249e40ac52a8"
+          ],
+          "year_difference": 0
+        },
+        {
+          "arxiv_spelling_bridge": [],
+          "candidate_id": "dedupe.v2.03c84d486d72f7db967c28a4",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.140bf08a8adc79ec8d10b958b528c74c1d816d66fe778da4ff53aa31edb87b79",
+            "observation.ab3e62c13e7b8d36a12093e54a1fbb536a71b362e9804a04e9d942c04cbe4808"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "openalex:W7145611521"
+              ],
+              "landing_page_url": null,
+              "publication_type": "conference_paper",
+              "publication_year": 2023,
+              "rank": 2650,
+              "raw_artifact_sha256": "86b792f9752f6382e1e0735071eaa28dfe83ce5e3b13650494cc668f7559208e",
+              "record_id": "observation.140bf08a8adc79ec8d10b958b528c74c1d816d66fe778da4ff53aa31edb87b79",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Resilient consensus in opinion dynamics under adversarial epidemics",
+              "venue": "Institutional Repositories DataBase (IRDB)"
+            },
+            {
+              "identifiers": [
+                "doi:10.1016/j.ifacol.2023.10.1899",
+                "openalex:W4388902974"
+              ],
+              "landing_page_url": "https://doi.org/10.1016/j.ifacol.2023.10.1899",
+              "publication_type": "article",
+              "publication_year": 2023,
+              "rank": 652,
+              "raw_artifact_sha256": "c2e0d39a80a3dabc85a342e7480a3e025fa743a4b6d9510573d8e07f62c5ec78",
+              "record_id": "observation.ab3e62c13e7b8d36a12093e54a1fbb536a71b362e9804a04e9d942c04cbe4808",
+              "search_id": "search.openalex.q02",
+              "source_id": "openalex",
+              "title": "Resilient Consensus in Opinion Dynamics Under Adversarial Epidemics",
+              "venue": "IFAC-PapersOnLine"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_nonempty_authors": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "conference_paper"
+          ],
+          "work_ids": [
+            "work.v2.429c0c65c1deeebf02746d4e",
+            "work.v2.e115111644fc557df6e2d942"
+          ],
+          "year_difference": 0
+        }
+      ],
+      "interpretation": "Provider labels retained; article does not prove journal identity."
+    },
+    "title_only_cross_preprint_publication": {
+      "count": 8111,
+      "examples": [
+        {
+          "candidate_id": "dedupe.v2.00083cf165cf68023f050cd2",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "doi",
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.1cdd065afb0c97f0e2f9683a2923a6a9045d09f2b5a34dea1ed7231b2f7af097",
+            "observation.ec1419aa9f45d8493f7816f5ba682faac569c63c974fff2e4cac1e6f488ba261"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1007/978-3-319-16268-3_18",
+                "openalex:W259033441"
+              ],
+              "landing_page_url": "https://doi.org/10.1007/978-3-319-16268-3_18",
+              "publication_type": "conference_paper",
+              "publication_year": 2015,
+              "rank": 5123,
+              "raw_artifact_sha256": "3eba76ecb44170988871de5775c4e53c1047ce96b4ccb19a6e822d0c6575a93f",
+              "record_id": "observation.1cdd065afb0c97f0e2f9683a2923a6a9045d09f2b5a34dea1ed7231b2f7af097",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Persistence in Voting Behavior: Stronghold Dynamics in Elections",
+              "venue": "Lecture notes in computer science"
+            },
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.1503.06692",
+                "openalex:W3126103966"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2015,
+              "rank": 1851,
+              "raw_artifact_sha256": "665dda61658c60feb91ae7f02314e8f4dd8b23f2e4d6eb86de9f64faf3e3b559",
+              "record_id": "observation.ec1419aa9f45d8493f7816f5ba682faac569c63c974fff2e4cac1e6f488ba261",
+              "search_id": "search.openalex.q12",
+              "source_id": "openalex",
+              "title": "Persistence in voting behavior: stronghold dynamics in elections",
+              "venue": "SSRN Electronic Journal"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "conference_paper",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.223879c785274e244028f30d",
+            "work.v2.77958436d0a6e871c10eadd2"
+          ],
+          "year_difference": 0
+        },
+        {
+          "candidate_id": "dedupe.v2.000aae41874acacaf08c10e8",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "doi"
+          ],
+          "record_ids": [
+            "observation.43853aeddf133e39432236866c9df9cd66d6a0d8b36ef230ed25a05ef18ee1e5",
+            "observation.8f4b6ff9703a2bacdcd981428284793a570792d4a63db211e2d1426ed5334589"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.48550/arxiv.1512.05058",
+                "openalex:W2267397975"
+              ],
+              "landing_page_url": null,
+              "publication_type": "preprint",
+              "publication_year": 2015,
+              "rank": 1000,
+              "raw_artifact_sha256": "6e7bcc32216049253cb4944786aed7b34db4984c4165b662c66cdbade6241629",
+              "record_id": "observation.43853aeddf133e39432236866c9df9cd66d6a0d8b36ef230ed25a05ef18ee1e5",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Noise Leads to Quasi-Consensus of Hegselmann-Krause Opinion Dynamics",
+              "venue": "arXiv (Cornell University)"
+            },
+            {
+              "identifiers": [
+                "dblp:journals/automatica/SuCH17",
+                "doi:10.1016/j.automatica.2017.08.008"
+              ],
+              "landing_page_url": "https://dblp.org/rec/journals/automatica/SuCH17",
+              "publication_type": "other",
+              "publication_year": 2017,
+              "rank": 440,
+              "raw_artifact_sha256": "9746b4e648f0c99dab3fce7b174b8bc72f0a7ecdfa7af80423e965954f78773c",
+              "record_id": "observation.8f4b6ff9703a2bacdcd981428284793a570792d4a63db211e2d1426ed5334589",
+              "search_id": "search.dblp.q01",
+              "source_id": "dblp",
+              "title": "Noise leads to quasi-consensus of Hegselmann-Krause opinion dynamics.",
+              "venue": "Autom."
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "dblp",
+            "openalex"
+          ],
+          "type_pair": [
+            "other",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.cab0d863e109e08476e2e49f",
+            "work.v2.ece66f7910d77886deb7b049"
+          ],
+          "year_difference": 2
+        },
+        {
+          "candidate_id": "dedupe.v2.000c9f7e32bc1afbfe437ee9",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.99d91caf84261e69427506f45667fcaa540db805cc2e82a3f55d852928466bd8",
+            "observation.d837d790ef1887aeeba7e4d52bb9eabc98887feae2bfeb4ffeeccf8ca62dbd32"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.1137/25m1730818",
+                "openalex:W7118017625"
+              ],
+              "landing_page_url": "https://doi.org/10.1137/25m1730818",
+              "publication_type": "article",
+              "publication_year": 2026,
+              "rank": 4880,
+              "raw_artifact_sha256": "b4cb3dc19da41f87fd287795794dfde14aac52f5f791dac51d1c05a899936fd8",
+              "record_id": "observation.99d91caf84261e69427506f45667fcaa540db805cc2e82a3f55d852928466bd8",
+              "search_id": "search.openalex.q01",
+              "source_id": "openalex",
+              "title": "Bounded-Confidence Models of Multidimensional Opinions with Topic-Weighted Discordance",
+              "venue": "SIAM Journal on Applied Dynamical Systems"
+            },
+            {
+              "identifiers": [
+                "arxiv:2502.00284",
+                "category:physics.soc-ph"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2502.00284",
+              "publication_type": "preprint",
+              "publication_year": 2025,
+              "rank": 44,
+              "raw_artifact_sha256": "3e3952bf648d9d3e548a87efd8f3ddfe545c2b811ccb3832ad34143add8bb25d",
+              "record_id": "observation.d837d790ef1887aeeba7e4d52bb9eabc98887feae2bfeb4ffeeccf8ca62dbd32",
+              "search_id": "search.arxiv.q02",
+              "source_id": "arxiv",
+              "title": "Bounded-Confidence Models of Multidimensional Opinions with Topic-Weighted Discordance",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "arxiv",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.535355468fc1dec5179065fa",
+            "work.v2.d9dce329b2db02a58660692b"
+          ],
+          "year_difference": 1
+        },
+        {
+          "candidate_id": "dedupe.v2.0015dc1fd114264fb52c940c",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [],
+          "record_ids": [
+            "observation.085603b6efa17203d7518612d62e0f552a913847377a9c61d58c5f4e05532688",
+            "observation.55b8697b38d9c6f94bb0f7eac424ef08bc91cb4420d14756a59fbdf1a51bdad2"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "arxiv:2002.09366",
+                "category:physics.soc-ph",
+                "doi:10.1016/j.chaos.2020.109893"
+              ],
+              "landing_page_url": "https://arxiv.org/abs/2002.09366",
+              "publication_type": "preprint",
+              "publication_year": 2020,
+              "rank": 425,
+              "raw_artifact_sha256": "f6e9936dfb8df0199f8f97e87d97665fe2a577b356e5e3acad9b4d0ecdc1268f",
+              "record_id": "observation.085603b6efa17203d7518612d62e0f552a913847377a9c61d58c5f4e05532688",
+              "search_id": "search.arxiv.q01",
+              "source_id": "arxiv",
+              "title": "Hysteresis and disorder-induced order in continuous kinetic-like opinion dynamics in complex networks",
+              "venue": "Chaos, Solitons & Fractals 137, 109893 (2020)"
+            },
+            {
+              "identifiers": [
+                "dblp:journals/corr/abs-2002-09366"
+              ],
+              "landing_page_url": "https://dblp.org/rec/journals/corr/abs-2002-09366",
+              "publication_type": "other",
+              "publication_year": 2020,
+              "rank": 568,
+              "raw_artifact_sha256": "a86e34c37caffeffc1ced5d84a509ba246b2a2262454280bd78bc1fe36969faf",
+              "record_id": "observation.55b8697b38d9c6f94bb0f7eac424ef08bc91cb4420d14756a59fbdf1a51bdad2",
+              "search_id": "search.dblp.q01",
+              "source_id": "dblp",
+              "title": "Hysteresis and disorder-induced order in continuous kinetic-like opinion dynamics in complex networks.",
+              "venue": "CoRR"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": false,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match",
+            "publication_year_match"
+          ],
+          "source_pair": [
+            "arxiv",
+            "dblp"
+          ],
+          "type_pair": [
+            "other",
+            "preprint"
+          ],
+          "work_ids": [
+            "work.v2.8466a829c0e2ceb44c77a293",
+            "work.v2.a7f0d50b1cf6204360df76aa"
+          ],
+          "year_difference": 0
+        }
+      ]
+    },
+    "title_only_year_gap_10plus": {
+      "count": 691,
+      "examples": [
+        {
+          "candidate_id": "dedupe.v2.00126ae0bf034ea443192403",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": true,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.d4bf66080cec17d428bdb668ccde1ccbdc3749dbbb63817721f9247af2d7221b",
+            "observation.ff2f1d6e119a9e3faddc2d064beb8ed77fc607fa2d7c933db20c6e825edd5ade"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "openalex:W2593954277"
+              ],
+              "landing_page_url": "https://shs.hal.science/halshs-00119536",
+              "publication_type": "article",
+              "publication_year": 1984,
+              "rank": 2599,
+              "raw_artifact_sha256": "0ed8098e260e2376328abca016803f72d37dab58f5ebca1c09ef5a22d593d654",
+              "record_id": "observation.d4bf66080cec17d428bdb668ccde1ccbdc3749dbbb63817721f9247af2d7221b",
+              "search_id": "search.openalex.q16",
+              "source_id": "openalex",
+              "title": "A Geometric Study of Shareholders’ Voting in Incomplete Markets: Multivariate Median and Mean Shareholder Theorems",
+              "venue": "HAL (Le Centre pour la Communication Scientifique Directe)"
+            },
+            {
+              "identifiers": [
+                "doi:10.1007/s00355-006-0138-7",
+                "openalex:W2056509672"
+              ],
+              "landing_page_url": "https://doi.org/10.1007/s00355-006-0138-7",
+              "publication_type": "article",
+              "publication_year": 2006,
+              "rank": 1794,
+              "raw_artifact_sha256": "b612b89071bdfb58d607565927647b8536c6fd980adf5fda44ec3226427405c0",
+              "record_id": "observation.ff2f1d6e119a9e3faddc2d064beb8ed77fc607fa2d7c933db20c6e825edd5ade",
+              "search_id": "search.openalex.q16",
+              "source_id": "openalex",
+              "title": "A Geometric Study of Shareholders’ Voting in Incomplete Markets: Multivariate Median and Mean Shareholder Theorems",
+              "venue": "Social Choice and Welfare"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "article"
+          ],
+          "work_ids": [
+            "work.v2.8d6f44d4ad8929dc9234cb2c",
+            "work.v2.b67ca7d2c43386ef193a76a8"
+          ],
+          "year_difference": 22
+        },
+        {
+          "candidate_id": "dedupe.v2.00429cceab2ebffdca734e26",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": true,
+          "pair_identifier_plurality_kinds": [
+            "doi",
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.5d39325cb0cd7fa9df56097b944011dd06e3dd85f6b922adcec59d9c1cd0fbd4",
+            "observation.e354c91038796be3af88d945054fd1d72a982998ef294f23300c0a5a556e562e"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.7748/ns.20.36.31.s39",
+                "openalex:W2511138838"
+              ],
+              "landing_page_url": "https://doi.org/10.7748/ns.20.36.31.s39",
+              "publication_type": "article",
+              "publication_year": 2006,
+              "rank": 307,
+              "raw_artifact_sha256": "e8af693d3f929abdb9d22461b1a400c247f3fed1954786b6d4e941376c2f7ed1",
+              "record_id": "observation.5d39325cb0cd7fa9df56097b944011dd06e3dd85f6b922adcec59d9c1cd0fbd4",
+              "search_id": "search.openalex.q13",
+              "source_id": "openalex",
+              "title": "The name game",
+              "venue": "Nursing Standard"
+            },
+            {
+              "identifiers": [
+                "doi:10.1016/0037-198x(76)90002-x",
+                "openalex:W4252236067"
+              ],
+              "landing_page_url": "https://doi.org/10.1016/0037-198x(76)90002-x",
+              "publication_type": "article",
+              "publication_year": 1976,
+              "rank": 115,
+              "raw_artifact_sha256": "fb211606629029233167eb57a11ad9901e886c1af8fe39e06299ff4aa6cc90fe",
+              "record_id": "observation.e354c91038796be3af88d945054fd1d72a982998ef294f23300c0a5a556e562e",
+              "search_id": "search.openalex.q13",
+              "source_id": "openalex",
+              "title": "The name game",
+              "venue": "Seminars in Roentgenology"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "article"
+          ],
+          "work_ids": [
+            "work.v2.085207cae68aa1835481b8c9",
+            "work.v2.db52cfa8d2f01affb79f35a3"
+          ],
+          "year_difference": 30
+        },
+        {
+          "candidate_id": "dedupe.v2.010272727533428b3eb05e34",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.6ae9567653d7dd277146433fcae8b2e251d7170352664d31df4622c0623a10aa",
+            "observation.80b614c65f6cfe0551cb1d4bda8ab0f8ef5f3cfe2a5b9a18d707db4eaf4cb874"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "openalex:W2288145563"
+              ],
+              "landing_page_url": null,
+              "publication_type": "article",
+              "publication_year": 2014,
+              "rank": 315,
+              "raw_artifact_sha256": "e8af693d3f929abdb9d22461b1a400c247f3fed1954786b6d4e941376c2f7ed1",
+              "record_id": "observation.6ae9567653d7dd277146433fcae8b2e251d7170352664d31df4622c0623a10aa",
+              "search_id": "search.openalex.q13",
+              "source_id": "openalex",
+              "title": "The name game",
+              "venue": "The Victorian naturalist"
+            },
+            {
+              "identifiers": [
+                "openalex:W1572280939"
+              ],
+              "landing_page_url": null,
+              "publication_type": "article",
+              "publication_year": 1984,
+              "rank": 319,
+              "raw_artifact_sha256": "e8af693d3f929abdb9d22461b1a400c247f3fed1954786b6d4e941376c2f7ed1",
+              "record_id": "observation.80b614c65f6cfe0551cb1d4bda8ab0f8ef5f3cfe2a5b9a18d707db4eaf4cb874",
+              "search_id": "search.openalex.q13",
+              "source_id": "openalex",
+              "title": "The Name Game.",
+              "venue": null
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "article"
+          ],
+          "work_ids": [
+            "work.v2.bc174d0c3b8ec62dc65d3992",
+            "work.v2.d679e262320a8298f03abc7f"
+          ],
+          "year_difference": 30
+        },
+        {
+          "candidate_id": "dedupe.v2.018861567a567bc58fef4433",
+          "cause": "title_without_shared_typed_identifier",
+          "component_only_conflict": false,
+          "exact_authors": false,
+          "exact_title": false,
+          "pair_identifier_plurality_kinds": [
+            "openalex"
+          ],
+          "record_ids": [
+            "observation.2c79c7bc578667aab8cdad0042c1ba9f7992b23c42475400accc519ae346fd73",
+            "observation.eb3534cf53b6bb1a62bde643b21387743926d7cbbdc45368ab703182d129fee7"
+          ],
+          "records": [
+            {
+              "identifiers": [
+                "doi:10.7748/ns.30.30.24.s25",
+                "openalex:W2409041802"
+              ],
+              "landing_page_url": "https://doi.org/10.7748/ns.30.30.24.s25",
+              "publication_type": "article",
+              "publication_year": 2016,
+              "rank": 295,
+              "raw_artifact_sha256": "0c428b01ed08cac367eb96bac58ccca6cf42358d548e156459629ae257d73b72",
+              "record_id": "observation.2c79c7bc578667aab8cdad0042c1ba9f7992b23c42475400accc519ae346fd73",
+              "search_id": "search.openalex.q13",
+              "source_id": "openalex",
+              "title": "The name game",
+              "venue": "Nursing Standard"
+            },
+            {
+              "identifiers": [
+                "openalex:W1526580684"
+              ],
+              "landing_page_url": null,
+              "publication_type": "article",
+              "publication_year": 1998,
+              "rank": 316,
+              "raw_artifact_sha256": "e8af693d3f929abdb9d22461b1a400c247f3fed1954786b6d4e941376c2f7ed1",
+              "record_id": "observation.eb3534cf53b6bb1a62bde643b21387743926d7cbbdc45368ab703182d129fee7",
+              "search_id": "search.openalex.q13",
+              "source_id": "openalex",
+              "title": "The Name Game.",
+              "venue": "School planning & management"
+            }
+          ],
+          "same_metadata_except_acquisition": false,
+          "same_source": true,
+          "shared_identifiers": [],
+          "signals": [
+            "normalized_title_match"
+          ],
+          "source_pair": [
+            "openalex",
+            "openalex"
+          ],
+          "type_pair": [
+            "article",
+            "article"
+          ],
+          "work_ids": [
+            "work.v2.690de16b47872f50ec81cbfe",
+            "work.v2.f242de17eb1717b4c248d76b"
+          ],
+          "year_difference": 18
+        }
+      ]
+    }
+  },
+  "executed_from_git_commit": "b1f8bea6574137ce176ddfd5aecab5d158e93c1f",
+  "format": "corpus-v3-identity-audit-1",
+  "generated_on": "2026-09-13",
+  "interpretation": "Read-only evidence audit and review preparation. All identities remain proposed; all original candidate IDs are preserved. No scientific adjudication or canonical corpus transition.",
+  "largest_component_evidence": [
+    {
+      "causes": {
+        "title_without_shared_typed_identifier": 989
+      },
+      "component_id": "identity-component.56675585445b3561389a96b7",
+      "example_records": [
+        {
+          "identifiers": [
+            "doi:10.1016/0037-198x(76)90002-x",
+            "openalex:W4252236067"
+          ],
+          "landing_page_url": "https://doi.org/10.1016/0037-198x(76)90002-x",
+          "publication_type": "article",
+          "publication_year": 1976,
+          "rank": 115,
+          "raw_artifact_sha256": "fb211606629029233167eb57a11ad9901e886c1af8fe39e06299ff4aa6cc90fe",
+          "record_id": "observation.e354c91038796be3af88d945054fd1d72a982998ef294f23300c0a5a556e562e",
+          "search_id": "search.openalex.q13",
+          "source_id": "openalex",
+          "title": "The name game",
+          "venue": "Seminars in Roentgenology"
+        },
+        {
+          "identifiers": [
+            "doi:10.1016/s0378-5122(96)82002-0",
+            "openalex:W2045981903"
+          ],
+          "landing_page_url": "https://doi.org/10.1016/s0378-5122(96)82002-0",
+          "publication_type": "article",
+          "publication_year": 1996,
+          "rank": 146,
+          "raw_artifact_sha256": "fb211606629029233167eb57a11ad9901e886c1af8fe39e06299ff4aa6cc90fe",
+          "record_id": "observation.013e91cee60b80263ae05d34b582046a49aa60acf19433f4dd59d24143e8089d",
+          "search_id": "search.openalex.q13",
+          "source_id": "openalex",
+          "title": "The name game",
+          "venue": "Maturitas"
+        },
+        {
+          "identifiers": [
+            "doi:10.1016/0378-5122(96)01033-x",
+            "openalex:W4236504562"
+          ],
+          "landing_page_url": "https://doi.org/10.1016/0378-5122(96)01033-x",
+          "publication_type": "article",
+          "publication_year": 1996,
+          "rank": 309,
+          "raw_artifact_sha256": "e8af693d3f929abdb9d22461b1a400c247f3fed1954786b6d4e941376c2f7ed1",
+          "record_id": "observation.aa1d3f987ea77045e1f77b6f8100bc798b0b1ef37482df1f49dd1af2c267eb0d",
+          "search_id": "search.openalex.q13",
+          "source_id": "openalex",
+          "title": "The name game",
+          "venue": "Maturitas"
+        }
+      ],
+      "identifier_plurality_kinds": [
+        "doi",
+        "openalex"
+      ],
+      "publication_types": [
+        "article"
+      ],
+      "record_count": 45,
+      "record_pair_count": 989,
+      "titles": [
+        "THE NAME GAME",
+        "The Name Game",
+        "The Name Game.",
+        "The name game",
+        "The name game.",
+        "‘THE NAME GAME’"
+      ],
+      "work_ids": [
+        "work.v2.085207cae68aa1835481b8c9",
+        "work.v2.0ba3e6d08c5a006c447e8c94",
+        "work.v2.14df1352eb45cfaabeeddb5a",
+        "work.v2.158e8b1628d73a1b31220885",
+        "work.v2.32a0c36998667de4207a8a37",
+        "work.v2.32f0a50600dd26307caa9041",
+        "work.v2.3a3fce4171ed8de5efdcd7a3",
+        "work.v2.3b130eb208cbf0488da62580",
+        "work.v2.3f94c0bfd9c3034f280cec60",
+        "work.v2.4075843b670406222575b329",
+        "work.v2.5034d6d3938a686878db6065",
+        "work.v2.690de16b47872f50ec81cbfe",
+        "work.v2.691942c7de389f46f2b1d61c",
+        "work.v2.69d4386e33785f0f1c64bd08",
+        "work.v2.69ecb2a28648ac7655190a3d",
+        "work.v2.73cb7f6e7816acef12b4bb0a",
+        "work.v2.760996cb3a1ee4e88b982baa",
+        "work.v2.78e9284d4bde2ddfe9202a24",
+        "work.v2.8f4e3c7605a80887bd9de9e0",
+        "work.v2.92fd59dc90bb88edca74ed8d",
+        "work.v2.9460e9042ab371ff13b72d66",
+        "work.v2.97ab3e976e62fdd2d1d52ebc",
+        "work.v2.9c13899c5988a9242f4cba4f",
+        "work.v2.9ce69d742177c5fcde97952f",
+        "work.v2.ad0d3e5dd9e0b0329ed89c62",
+        "work.v2.b05adeecd80cb766cc78099f",
+        "work.v2.bc174d0c3b8ec62dc65d3992",
+        "work.v2.bc6cbef7b8aabdec1ee7a71b",
+        "work.v2.becaf77cf91a7b3ed621d5bf",
+        "work.v2.c4a1cf52fab276c3f788c65b",
+        "work.v2.c680d32d9f52aab58aac0f19",
+        "work.v2.d679e262320a8298f03abc7f",
+        "work.v2.d9aff5407d954bf6e47e9cc8",
+        "work.v2.db52cfa8d2f01affb79f35a3",
+        "work.v2.dcd2d5afbe8fbcd1b741bc32",
+        "work.v2.dd54b509d1e545fb43897a86",
+        "work.v2.e67deac59783a04a25d763ef",
+        "work.v2.e6e481017904f2d232a62de6",
+        "work.v2.ebc2aecd22ef2c96595259d8",
+        "work.v2.f1afdf55e05f1e7dbe4d0e68",
+        "work.v2.f242de17eb1717b4c248d76b",
+        "work.v2.f3ea5047a1182632e002b981",
+        "work.v2.f56a273fcd753b49fa187e76",
+        "work.v2.f73baae2ba7bc115f01eff4c"
+      ],
+      "work_pair_count": 946,
+      "year_range": [
+        1970,
+        2017
+      ]
+    },
+    {
+      "causes": {
+        "title_without_shared_typed_identifier": 78
+      },
+      "component_id": "identity-component.f0bb4767883ce761ac6f4c26",
+      "example_records": [
+        {
+          "identifiers": [
+            "doi:10.31234/osf.io/8dbft_v4",
+            "openalex:W4412423107"
+          ],
+          "landing_page_url": "https://doi.org/10.31234/osf.io/8dbft_v4",
+          "publication_type": "preprint",
+          "publication_year": 2025,
+          "rank": 7208,
+          "raw_artifact_sha256": "59ecee73fe21b198ce6d533707043e4de30dfe2b5601d9ff9141f28cb727c1b5",
+          "record_id": "observation.ef266e1077b54ce7122a223f74c2236850747d1d4626c2288420f4ab4fab46c8",
+          "search_id": "search.openalex.q14c",
+          "source_id": "openalex",
+          "title": "WITHDRAWN",
+          "venue": null
+        },
+        {
+          "identifiers": [
+            "doi:10.31234/osf.io/kyrqh_v2",
+            "openalex:W4410411403"
+          ],
+          "landing_page_url": "https://doi.org/10.31234/osf.io/kyrqh_v2",
+          "publication_type": "preprint",
+          "publication_year": 2025,
+          "rank": 6751,
+          "raw_artifact_sha256": "13c341f18fd770e364d923804e2d6fce07d0e7e2ae22015f1f0ad9146047ba62",
+          "record_id": "observation.b0b5667ba4b897363109940ee8e991d35d4ebaccf3b1e910617a5d928054daf6",
+          "search_id": "search.openalex.q14c",
+          "source_id": "openalex",
+          "title": "WITHDRAWN",
+          "venue": null
+        },
+        {
+          "identifiers": [
+            "doi:10.31234/osf.io/umj9g_v2",
+            "openalex:W4413128094"
+          ],
+          "landing_page_url": "https://doi.org/10.31234/osf.io/umj9g_v2",
+          "publication_type": "preprint",
+          "publication_year": 2025,
+          "rank": 7629,
+          "raw_artifact_sha256": "592b41a92f645b374aab6222a9149be892777932a0dd50bd794b970dd7f07925",
+          "record_id": "observation.02d53111468cce7e3dbc553fbeafa635815702b5d015219a527e8aa1ffbd726e",
+          "search_id": "search.openalex.q14c",
+          "source_id": "openalex",
+          "title": "WITHDRAWN",
+          "venue": null
+        }
+      ],
+      "identifier_plurality_kinds": [
+        "doi",
+        "openalex"
+      ],
+      "publication_types": [
+        "preprint"
+      ],
+      "record_count": 13,
+      "record_pair_count": 78,
+      "titles": [
+        "WITHDRAWN"
+      ],
+      "work_ids": [
+        "work.v2.00f8d0209b2e7f05ae4d6648",
+        "work.v2.17d675cc64d85338b7ff214a",
+        "work.v2.2501412c5d7b6f35811f02e7",
+        "work.v2.42ed4faacad548da621ce78e",
+        "work.v2.5cffa9b2a03924838c588750",
+        "work.v2.6579cc455fee40796e1389e6",
+        "work.v2.970015c42416af03eba79991",
+        "work.v2.9e0d02c21725dcb3afc2f4e2",
+        "work.v2.a6315eb8f3ced3dec24787e6",
+        "work.v2.bad4c90b06ed9e800344a611",
+        "work.v2.d50b8f95842695d33a600f69",
+        "work.v2.e0e676a22729c9bb0ce9d774",
+        "work.v2.fb385759a3efbff50dc01def"
+      ],
+      "work_pair_count": 78,
+      "year_range": [
+        2025,
+        2025
+      ]
+    },
+    {
+      "causes": {
+        "title_without_shared_typed_identifier": 78
+      },
+      "component_id": "identity-component.0507dedc4f85fcfb4f128d7a",
+      "example_records": [
+        {
+          "identifiers": [
+            "doi:10.1093/poq/nfy008",
+            "openalex:W2796531731"
+          ],
+          "landing_page_url": "https://doi.org/10.1093/poq/nfy008",
+          "publication_type": "article",
+          "publication_year": 2018,
+          "rank": 1709,
+          "raw_artifact_sha256": "fdf3a7b57900c67c2efd54233766c7d1c0b96f43dac1de8cf866903157a5ebab",
+          "record_id": "observation.429daa6a1b08deadd8de9e0b4910ffa0cb109347541dd4af7cb4f1010e1abffc",
+          "search_id": "search.openalex.q14b",
+          "source_id": "openalex",
+          "title": "Introduction",
+          "venue": "Public Opinion Quarterly"
+        },
+        {
+          "identifiers": [
+            "doi:10.5325/nathhawtrevi.48.2.0125",
+            "openalex:W4322710763"
+          ],
+          "landing_page_url": "https://doi.org/10.5325/nathhawtrevi.48.2.0125",
+          "publication_type": "article",
+          "publication_year": 2022,
+          "rank": 6391,
+          "raw_artifact_sha256": "39529bee0dfb20679e7fc635868d594332c97641ea3109b676c0e0c082107b84",
+          "record_id": "observation.16ef405a96fbe013850cbcaae87bc45f208495480764967f2cae3f26dfbe1aa7",
+          "search_id": "search.openalex.q14c",
+          "source_id": "openalex",
+          "title": "Introduction",
+          "venue": "Nathaniel Hawthorne Review"
+        },
+        {
+          "identifiers": [
+            "doi:10.1162/daed_e_00455",
+            "openalex:W4237829810"
+          ],
+          "landing_page_url": "https://doi.org/10.1162/daed_e_00455",
+          "publication_type": "article",
+          "publication_year": 2017,
+          "rank": 1157,
+          "raw_artifact_sha256": "9b8f1685bf092eaec4949a388054de7c4382698070bd483720da3011056a55aa",
+          "record_id": "observation.95d0062073cddf1227e38e7158d4e30c39276c217043b9cc3677d2e351343448",
+          "search_id": "search.openalex.q03",
+          "source_id": "openalex",
+          "title": "Introduction",
+          "venue": "Daedalus"
+        }
+      ],
+      "identifier_plurality_kinds": [
+        "doi",
+        "openalex"
+      ],
+      "publication_types": [
+        "article"
+      ],
+      "record_count": 13,
+      "record_pair_count": 78,
+      "titles": [
+        "INTRODUCTION",
+        "Introduction"
+      ],
+      "work_ids": [
+        "work.v2.07fd52e61d1a15b15b27dae9",
+        "work.v2.0dfd5170526457e3b33d37f4",
+        "work.v2.30b47b9d6c31ce43147845c3",
+        "work.v2.3383e5fc1390c8d15ee483b3",
+        "work.v2.407d3a8941766b1a4322e9c3",
+        "work.v2.4575bcf76a8678c15b5053d1",
+        "work.v2.686f2c21b5a6469973340f2a",
+        "work.v2.89fc55144f7204ed55eaced7",
+        "work.v2.8ecc38f7aa76e4de61f80c83",
+        "work.v2.c7af167c117eefb10e238e26",
+        "work.v2.d81bd613cbefd85cf407d783",
+        "work.v2.da3575292049e1967d65b15f",
+        "work.v2.fdab8dc556540e657b3e830b"
+      ],
+      "work_pair_count": 78,
+      "year_range": [
+        1983,
+        2026
+      ]
+    },
+    {
+      "causes": {
+        "title_without_shared_typed_identifier": 66
+      },
+      "component_id": "identity-component.cf9abdf87025306b919b5713",
+      "example_records": [
+        {
+          "identifiers": [
+            "doi:10.5281/zenodo.19135966",
+            "openalex:W7139967414"
+          ],
+          "landing_page_url": "https://doi.org/10.5281/zenodo.19135966",
+          "publication_type": "preprint",
+          "publication_year": 2026,
+          "rank": 7518,
+          "raw_artifact_sha256": "b45c226c408c4cd59e5618672b9421a71417fbf72330d1d7182866b68d8aa7cf",
+          "record_id": "observation.9caf77622418ae528516fb94e4200a6c0dd4bdcdd26a54a6b7730bf04f00914e",
+          "search_id": "search.openalex.q01",
+          "source_id": "openalex",
+          "title": "地方・都市構造内のコンビニ化するドラッグストアの実態 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)"
+        },
+        {
+          "identifiers": [
+            "doi:10.5281/zenodo.19135965",
+            "openalex:W7139946111"
+          ],
+          "landing_page_url": "https://doi.org/10.5281/zenodo.19135965",
+          "publication_type": "preprint",
+          "publication_year": 2026,
+          "rank": 7598,
+          "raw_artifact_sha256": "b45c226c408c4cd59e5618672b9421a71417fbf72330d1d7182866b68d8aa7cf",
+          "record_id": "observation.aec094da5d91d3c77ef7fc8f298d5b2768b45becc488f601f0daab20d01e73bb",
+          "search_id": "search.openalex.q01",
+          "source_id": "openalex",
+          "title": "地方・都市構造内のコンビニ化するドラッグストアの実態 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)"
+        },
+        {
+          "identifiers": [
+            "doi:10.5281/zenodo.19135952",
+            "openalex:W7139938176"
+          ],
+          "landing_page_url": "https://doi.org/10.5281/zenodo.19135952",
+          "publication_type": "preprint",
+          "publication_year": 2026,
+          "rank": 7562,
+          "raw_artifact_sha256": "b45c226c408c4cd59e5618672b9421a71417fbf72330d1d7182866b68d8aa7cf",
+          "record_id": "observation.78d0f24ee38cf756f7a42e5d4448a9819ff20ab9de4c7a94522e4f2ebbf654c6",
+          "search_id": "search.openalex.q01",
+          "source_id": "openalex",
+          "title": "ジオ・メンタルヘルス・エコシステム構造分析 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)"
+        }
+      ],
+      "identifier_plurality_kinds": [
+        "doi",
+        "openalex"
+      ],
+      "publication_types": [
+        "preprint"
+      ],
+      "record_count": 12,
+      "record_pair_count": 66,
+      "titles": [
+        "ジオシステム・全国土木・建築事業の変動 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+        "ジオ・メンタルヘルス・エコシステム構造分析 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+        "ソーシャルメンタル:パチンコ・ギャンブル・ナイトソーシャル・質屋等娯楽経済圏における空間的動向 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+        "リサイクル・中古売買店舗のチェーン化社会 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)",
+        "地方・都市構造内のコンビニ化するドラッグストアの実態 電話帳登録データを用いた社会的変動を捉える-1ヶ月更新型高解像度な空間的・方向的な社会空間ダイナミクスの研究(2025:09-2026:01)"
+      ],
+      "work_ids": [
+        "work.v2.1d246009689beaa82cd1d601",
+        "work.v2.37448200cac29b5ef29444ef",
+        "work.v2.4c687ec6c4fde9c66d21e469",
+        "work.v2.4fe795a85efd563a12a4bb08",
+        "work.v2.5a9c123168a9d92c10ffa43a",
+        "work.v2.670055a476f68f9ccbb6afbb",
+        "work.v2.6c486e38c4c7aa6257bbef0a",
+        "work.v2.87cced4bfaa8bd88e6071939",
+        "work.v2.9522107d3080635758b194de",
+        "work.v2.a54166eae3b4f0238120f491",
+        "work.v2.e50f2b80e77f2e407f1f1d42",
+        "work.v2.f8e0578a1567b5cdd2a4bb67"
+      ],
+      "work_pair_count": 66,
+      "year_range": [
+        2026,
+        2026
+      ]
+    },
+    {
+      "causes": {
+        "exact_identifier_conflict_and_title": 24,
+        "exact_identifier_conflict_without_title": 21,
+        "title_without_shared_typed_identifier": 3
+      },
+      "component_id": "identity-component.d2fe8db74013bc18c5a9fab5",
+      "example_records": [
+        {
+          "identifiers": [
+            "arxiv:2006.07265",
+            "category:cs.SI",
+            "doi:10.1007/978-3-030-93413-2_29"
+          ],
+          "landing_page_url": "https://arxiv.org/abs/2006.07265",
+          "publication_type": "preprint",
+          "publication_year": 2020,
+          "rank": 197,
+          "raw_artifact_sha256": "37b5e792d1da0adbad6c8aaebf570278eee85d5468b066c94bf87ef89899d081",
+          "record_id": "observation.4124e2d8654b474a107da1e2e2db9df9b1c4185aa0d034d4939d103a950a861f",
+          "search_id": "search.arxiv.q04",
+          "source_id": "arxiv",
+          "title": "Towards control of opinion diversity by introducing zealots into a polarised social group",
+          "venue": "Proceedings of the Tenth International Conference on Complex Networks and Their Applications COMPLEX NETWORKS 2021"
+        },
+        {
+          "identifiers": [
+            "arxiv:2006.07265",
+            "category:cs.SI",
+            "doi:10.1007/978-3-030-93413-2_29"
+          ],
+          "landing_page_url": "https://arxiv.org/abs/2006.07265",
+          "publication_type": "preprint",
+          "publication_year": 2020,
+          "rank": 96,
+          "raw_artifact_sha256": "a5202ebb04ecce47a17deb4d478c428fac6d16daa5d9b88077ae30b3f27130fa",
+          "record_id": "observation.71ae66945097e655c4fd3509bbf8cc6432bbe373860d0bacdc963d171d83e109",
+          "search_id": "search.arxiv.q14b",
+          "source_id": "arxiv",
+          "title": "Towards control of opinion diversity by introducing zealots into a polarised social group",
+          "venue": "Proceedings of the Tenth International Conference on Complex Networks and Their Applications COMPLEX NETWORKS 2021"
+        },
+        {
+          "identifiers": [
+            "doi:10.1007/978-3-030-93413-2_29",
+            "openalex:W3200231578"
+          ],
+          "landing_page_url": "https://doi.org/10.1007/978-3-030-93413-2_29",
+          "publication_type": "conference_paper",
+          "publication_year": 2022,
+          "rank": 715,
+          "raw_artifact_sha256": "d5ad4ba7557ece630ae45180a5151ff6d992e496993d208921fb17e3b430e63b",
+          "record_id": "observation.c048b7b79d788751af58180849ba275cb10c7f8497ba0466acd40921dd5ac254",
+          "search_id": "search.openalex.q04",
+          "source_id": "openalex",
+          "title": "Towards Control of Opinion Diversity by Introducing Zealots into a Polarised Social Group",
+          "venue": "Studies in computational intelligence"
+        }
+      ],
+      "identifier_plurality_kinds": [
+        "openalex"
+      ],
+      "publication_types": [
+        "conference_paper",
+        "other",
+        "preprint"
+      ],
+      "record_count": 11,
+      "record_pair_count": 48,
+      "titles": [
+        "How opinions crystallise: an analysis of polarisation in the voter model",
+        "How opinions crystallise: an analysis of polarisation in the voter model.",
+        "Towards Control of Opinion Diversity by Introducing Zealots into a Polarised Social Group",
+        "Towards control of opinion diversity by introducing zealots into a polarised social group"
+      ],
+      "work_ids": [
+        "work.v2.082cadd65e225a55a756d749",
+        "work.v2.0f718549c9e139576478f0f7",
+        "work.v2.3a922c2a4ba08e61c6bd6709",
+        "work.v2.4a51a32fc72b161d66485f57",
+        "work.v2.4dfdc32f2419d31a9842f434",
+        "work.v2.674070e22c9a50e78dcbc392",
+        "work.v2.997033a74c5e4c0ce422ca25",
+        "work.v2.9a90299561fa5ea95466846e",
+        "work.v2.b17fc0bc2110e24e4f714c07",
+        "work.v2.c65d32a9e286cf3aea5b62fa",
+        "work.v2.df25843d7581d52f4347a423"
+      ],
+      "work_pair_count": 48,
+      "year_range": [
+        2020,
+        2022
+      ]
+    },
+    {
+      "causes": {
+        "title_without_shared_typed_identifier": 65
+      },
+      "component_id": "identity-component.c8aed0267eeca4c4c8781ac0",
+      "example_records": [
+        {
+          "identifiers": [
+            "doi:10.1063/1.2800104",
+            "openalex:W4249804487"
+          ],
+          "landing_page_url": "https://doi.org/10.1063/1.2800104",
+          "publication_type": "article",
+          "publication_year": 2007,
+          "rank": 832,
+          "raw_artifact_sha256": "d0cb76243c5178652410b50f3dd29a715f67b219644da4268632aa63a81cb1d4",
+          "record_id": "observation.0622a4b9721a1dcb61234b0a66bf4a725ba954eaafc1cf316ddb84144e63b117",
+          "search_id": "search.openalex.q14a",
+          "source_id": "openalex",
+          "title": "New books",
+          "venue": "Physics Today"
+        },
+        {
+          "identifiers": [
+            "doi:10.1063/1.2963016",
+            "openalex:W4205165248"
+          ],
+          "landing_page_url": "https://doi.org/10.1063/1.2963016",
+          "publication_type": "article",
+          "publication_year": 2008,
+          "rank": 996,
+          "raw_artifact_sha256": "31e4d34e1d51417cbfe278146b0f82499a62fbd05b6db00334b87c1c61a30720",
+          "record_id": "observation.5c4b70c89c49c03948f9237f4cc921ebf221583aa454bbefcc0b45394479cea2",
+          "search_id": "search.openalex.q14a",
+          "source_id": "openalex",
+          "title": "New books",
+          "venue": "Physics Today"
+        },
+        {
+          "identifiers": [
+            "doi:10.1063/1.2947654",
+            "openalex:W4239777607"
+          ],
+          "landing_page_url": "https://doi.org/10.1063/1.2947654",
+          "publication_type": "article",
+          "publication_year": 2008,
+          "rank": 847,
+          "raw_artifact_sha256": "d0cb76243c5178652410b50f3dd29a715f67b219644da4268632aa63a81cb1d4",
+          "record_id": "observation.6e8c678947eb75a6adfe2a5795f1140c7b5ecd0e5dc793246263dee8c9817592",
+          "search_id": "search.openalex.q14a",
+          "source_id": "openalex",
+          "title": "New books",
+          "venue": "Physics Today"
+        }
+      ],
+      "identifier_plurality_kinds": [
+        "doi",
+        "openalex"
+      ],
+      "publication_types": [
+        "article"
+      ],
+      "record_count": 12,
+      "record_pair_count": 65,
+      "titles": [
+        "New Books",
+        "New books"
+      ],
+      "work_ids": [
+        "work.v2.0cdb73226699ea63e2ee70e4",
+        "work.v2.19e55c6440f3995fd2acb680",
+        "work.v2.1db405f2a5d5fedea7f18d3c",
+        "work.v2.1f51828251c76bd1dcff1275",
+        "work.v2.3ac2f728d4f4cd8bc5345e24",
+        "work.v2.49dc6e273ba3c27f7560e7a0",
+        "work.v2.4d8c9f7f5dd2d7d12183aff6",
+        "work.v2.7acf663237854f89a595b427",
+        "work.v2.a3c991d7d0e23fec4e723466",
+        "work.v2.ccb235c381d9d0f86ef0e5fe",
+        "work.v2.ecb3046dcff3de2f51581804"
+      ],
+      "work_pair_count": 55,
+      "year_range": [
+        2002,
+        2017
+      ]
+    }
+  ],
+  "method": {
+    "arxiv_spelling_bridge": "syntactic diagnostic mapping doi:10.48550/arxiv.BASE and arxiv:BASE with existing arxiv validator; current typed_work_identifier does not implement this cross-type mapping",
+    "candidate_causes": "shared typed ID and normalized-title flags on unchanged candidate records",
+    "components": "undirected connected components of candidate work-pair graph, no union recorded as scholarly identity",
+    "publication_types": "literal provider-normalized labels; no conference/journal equivalence inferred",
+    "record_replay": "deduplicate_records_v3(records, protocol.deduplication_policy) exact object equality to CAS result",
+    "source_content": "all record metadata inspected in process; only metadata, hashes, identifiers and derived comparisons exported, no abstracts/full text",
+    "work_pairs": "sorted pair of unchanged proposed work IDs"
+  },
+  "no_corpus_mutations": true,
+  "no_human_decisions_authored": true,
+  "private_full_diagnostic": {
+    "path": "/Users/davi/.local/state/research-workbench/corpus-preparation-20260913/identity-audit/diagnostic.json",
+    "sha256": "eaa2780fcb94e3f7b1d4abd35ac32628704bd1ccaacf5266d095856ee9b65981",
+    "size_bytes": 20713111
+  },
+  "private_operator_sha256s": {
+    "audit.py": "666042b05af05fcb23a1b3af855d7c352b00b5239139264bd3c143c1e34a66cc",
+    "extend.py": "7a8255509293c6c564ad4fabf94cdd66b0640deff4a70328c6db94c5cc5dab8a"
+  },
+  "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+  "readiness_conflict_evidence": [
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.0ffb6e9e1e1f6c98e735de8c8859c3cb002e75adaadae2e15b769a4bd13a78b4"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 224,
+          "fields": {
+            "doi": "https://doi.org/10.2200/S00135ED1V01Y200905HCI004",
+            "p": "https://dblp.org/rec/series/synthesis/2009Gay",
+            "title": "Context-Aware Mobile Computing: Affordances of Space, Social Awareness, and Social Influence",
+            "venue": "Synthesis Lectures on Human-Centered Informatics",
+            "year": "2009"
+          }
+        },
+        {
+          "binding_index": 225,
+          "fields": {
+            "doi": "https://doi.org/10.1007/978-3-031-02187-9",
+            "p": "https://dblp.org/rec/series/synthesis/2009Gay",
+            "title": "Context-Aware Mobile Computing: Affordances of Space, Social Awareness, and Social Influence",
+            "venue": "Synthesis Lectures on Human-Centered Informatics",
+            "year": "2009"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:series/synthesis/2009Gay",
+            "doi:10.1007/978-3-031-02187-9",
+            "doi:10.2200/s00135ed1v01y200905hci004"
+          ],
+          "landing_page_url": "https://dblp.org/rec/series/synthesis/2009Gay",
+          "publication_type": "other",
+          "publication_year": 2009,
+          "rank": 1068,
+          "raw_artifact_sha256": "901709d736d04cd791b5f2a5cd5cccdbd21d2bf9ff28770382f4922f6c1b8b26",
+          "record_id": "observation.0ffb6e9e1e1f6c98e735de8c8859c3cb002e75adaadae2e15b769a4bd13a78b4",
+          "search_id": "search.dblp.q09",
+          "source_id": "dblp",
+          "title": "Context-Aware Mobile Computing: Affordances of Space, Social Awareness, and Social Influence",
+          "venue": "Synthesis Lectures on Human-Centered Informatics"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.0a292b87dab05b9d6ac08104"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.d51b10b7d67742a8b9355eba86ce094db0c6a061921a0fc9ffca24c39c93ef7e"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 234,
+          "fields": {
+            "doi": "https://doi.org/10.1145/1073368.1073370",
+            "p": "https://dblp.org/rec/conf/sca/BuchsbaumB05",
+            "title": "Imitation as a first step to social learning in synthetic characters: a graph-based approach.",
+            "venue": "Symposium on Computer Animation",
+            "year": "2005"
+          }
+        },
+        {
+          "binding_index": 235,
+          "fields": {
+            "doi": "https://doi.org/10.2312/SCA/SCA05/009-018",
+            "p": "https://dblp.org/rec/conf/sca/BuchsbaumB05",
+            "title": "Imitation as a first step to social learning in synthetic characters: a graph-based approach.",
+            "venue": "Symposium on Computer Animation",
+            "year": "2005"
+          }
+        },
+        {
+          "binding_index": 236,
+          "fields": {
+            "doi": "https://doi.org/10.2312/SCA/SCA05/009-018",
+            "p": "https://dblp.org/rec/conf/sca/BuchsbaumB05",
+            "title": "Imitation as a first step to social learning in synthetic characters: a graph-based approach.",
+            "venue": "Symposium on Computer Animation",
+            "year": "2005"
+          }
+        },
+        {
+          "binding_index": 237,
+          "fields": {
+            "doi": "https://doi.org/10.1145/1073368.1073370",
+            "p": "https://dblp.org/rec/conf/sca/BuchsbaumB05",
+            "title": "Imitation as a first step to social learning in synthetic characters: a graph-based approach.",
+            "venue": "Symposium on Computer Animation",
+            "year": "2005"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/sca/BuchsbaumB05",
+            "doi:10.1145/1073368.1073370",
+            "doi:10.2312/sca/sca05/009-018"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/sca/BuchsbaumB05",
+          "publication_type": "other",
+          "publication_year": 2005,
+          "rank": 378,
+          "raw_artifact_sha256": "05ed929d086c31600fa644d41249011350fa73db89602a6766e58dd3d620a697",
+          "record_id": "observation.d51b10b7d67742a8b9355eba86ce094db0c6a061921a0fc9ffca24c39c93ef7e",
+          "search_id": "search.dblp.q12a",
+          "source_id": "dblp",
+          "title": "Imitation as a first step to social learning in synthetic characters: a graph-based approach.",
+          "venue": "Symposium on Computer Animation"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.0cabb1d4b81a24cea2e32b10"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.fe0f76925d93889724b65e753f9e9c640f68246526a74b00f78bbe6ff360f850"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 286,
+          "fields": {
+            "doi": "https://doi.org/10.1145/3393691.3394217",
+            "p": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+            "venue": "SIGMETRICS (Abstracts)",
+            "year": "2020"
+          }
+        },
+        {
+          "binding_index": 287,
+          "fields": {
+            "doi": "https://doi.org/10.1145/3393691.3394217",
+            "p": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+            "venue": "SIGMETRICS (Abstracts)",
+            "year": "2020"
+          }
+        },
+        {
+          "binding_index": 288,
+          "fields": {
+            "doi": "https://doi.org/10.1145/3410048.3410065",
+            "p": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+            "venue": "SIGMETRICS (Abstracts)",
+            "year": "2020"
+          }
+        },
+        {
+          "binding_index": 289,
+          "fields": {
+            "doi": "https://doi.org/10.1145/3410048.3410065",
+            "p": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+            "venue": "SIGMETRICS (Abstracts)",
+            "year": "2020"
+          }
+        },
+        {
+          "binding_index": 290,
+          "fields": {
+            "doi": "https://doi.org/10.1145/3410048.3410065",
+            "p": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+            "venue": "SIGMETRICS (Abstracts)",
+            "year": "2020"
+          }
+        },
+        {
+          "binding_index": 291,
+          "fields": {
+            "doi": "https://doi.org/10.1145/3393691.3394217",
+            "p": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+            "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+            "venue": "SIGMETRICS (Abstracts)",
+            "year": "2020"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/sigmetrics/SankararamanGS20",
+            "doi:10.1145/3393691.3394217",
+            "doi:10.1145/3410048.3410065"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/sigmetrics/SankararamanGS20",
+          "publication_type": "other",
+          "publication_year": 2020,
+          "rank": 394,
+          "raw_artifact_sha256": "05ed929d086c31600fa644d41249011350fa73db89602a6766e58dd3d620a697",
+          "record_id": "observation.fe0f76925d93889724b65e753f9e9c640f68246526a74b00f78bbe6ff360f850",
+          "search_id": "search.dblp.q12a",
+          "source_id": "dblp",
+          "title": "Social Learning in Multi Agent Multi Armed Bandits.",
+          "venue": "SIGMETRICS (Abstracts)"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.207e84117323b8b22a0f51ff"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.46673b2b1a8e75ea27a33e8f5a2d6f310d708f3f13181b5be7d39fdf9cd8a316"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 95,
+          "fields": {
+            "doi": "https://doi.org/10.7551/978-0-262-33936-0-CH007",
+            "p": "https://dblp.org/rec/conf/alife/Pacheco16",
+            "title": "Linking Individual to Collective Behavior in Complex Adaptive Networks.",
+            "venue": "ALIFE",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 96,
+          "fields": {
+            "doi": "https://doi.org/10.1162/978-0-262-33936-0-CH007",
+            "p": "https://dblp.org/rec/conf/alife/Pacheco16",
+            "title": "Linking Individual to Collective Behavior in Complex Adaptive Networks.",
+            "venue": "ALIFE",
+            "year": "2016"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/alife/Pacheco16",
+            "doi:10.1162/978-0-262-33936-0-ch007",
+            "doi:10.7551/978-0-262-33936-0-ch007"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/alife/Pacheco16",
+          "publication_type": "other",
+          "publication_year": 2016,
+          "rank": 32,
+          "raw_artifact_sha256": "5777fb885ebbd736058921ca49188c93793b0c413072809d9e52ab09b4b54351",
+          "record_id": "observation.46673b2b1a8e75ea27a33e8f5a2d6f310d708f3f13181b5be7d39fdf9cd8a316",
+          "search_id": "search.dblp.q06a",
+          "source_id": "dblp",
+          "title": "Linking Individual to Collective Behavior in Complex Adaptive Networks.",
+          "venue": "ALIFE"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.22441ec89b2a3be41c291677"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.30dbc3e36b60904db88cf897ca81b8190433ef1f0a78fd4f42ab0e4ed1731781"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 64,
+          "fields": {
+            "doi": "https://doi.org/10.1162/978-0-262-33936-0-CH051",
+            "p": "https://dblp.org/rec/conf/alife/000116",
+            "title": "Social Learning, Environmental Adversity and the Evolution of Cooperation.",
+            "venue": "ALIFE",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 65,
+          "fields": {
+            "doi": "https://doi.org/10.7551/978-0-262-33936-0-CH051",
+            "p": "https://dblp.org/rec/conf/alife/000116",
+            "title": "Social Learning, Environmental Adversity and the Evolution of Cooperation.",
+            "venue": "ALIFE",
+            "year": "2016"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/alife/000116",
+            "doi:10.1162/978-0-262-33936-0-ch051",
+            "doi:10.7551/978-0-262-33936-0-ch051"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/alife/000116",
+          "publication_type": "other",
+          "publication_year": 2016,
+          "rank": 19,
+          "raw_artifact_sha256": "9c42b40d7f648f88728ad2a90bb75587ff4d5f2d10dc7eaabbb7436c9fcd4655",
+          "record_id": "observation.30dbc3e36b60904db88cf897ca81b8190433ef1f0a78fd4f42ab0e4ed1731781",
+          "search_id": "search.dblp.q12a",
+          "source_id": "dblp",
+          "title": "Social Learning, Environmental Adversity and the Evolution of Cooperation.",
+          "venue": "ALIFE"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.303828e0b4b15db99f7fa67a"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.5cd7f815e1ae47f8d16eba137876095920ecf81251e1a82d7231fa885ac47bac"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 160,
+          "fields": {
+            "doi": "https://doi.org/10.1109/ISCA.1992.753323",
+            "p": "https://dblp.org/rec/conf/isca/ChienK92",
+            "title": "Planar-Adaptive Routing: Low-cost Adaptive Networks for Multiprocessors.",
+            "venue": "ISCA",
+            "year": "1992"
+          }
+        },
+        {
+          "binding_index": 161,
+          "fields": {
+            "doi": "https://doi.org/10.1145/139669.140383",
+            "p": "https://dblp.org/rec/conf/isca/ChienK92",
+            "title": "Planar-Adaptive Routing: Low-cost Adaptive Networks for Multiprocessors.",
+            "venue": "ISCA",
+            "year": "1992"
+          }
+        },
+        {
+          "binding_index": 162,
+          "fields": {
+            "doi": "https://doi.org/10.1145/139669.140383",
+            "p": "https://dblp.org/rec/conf/isca/ChienK92",
+            "title": "Planar-Adaptive Routing: Low-cost Adaptive Networks for Multiprocessors.",
+            "venue": "ISCA",
+            "year": "1992"
+          }
+        },
+        {
+          "binding_index": 163,
+          "fields": {
+            "doi": "https://doi.org/10.1109/ISCA.1992.753323",
+            "p": "https://dblp.org/rec/conf/isca/ChienK92",
+            "title": "Planar-Adaptive Routing: Low-cost Adaptive Networks for Multiprocessors.",
+            "venue": "ISCA",
+            "year": "1992"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/isca/ChienK92",
+            "doi:10.1109/isca.1992.753323",
+            "doi:10.1145/139669.140383"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/isca/ChienK92",
+          "publication_type": "other",
+          "publication_year": 1992,
+          "rank": 337,
+          "raw_artifact_sha256": "25a5a898dacc824e45dd74f4ecfd1ba59deb3ada41e064439604df4f27549d08",
+          "record_id": "observation.5cd7f815e1ae47f8d16eba137876095920ecf81251e1a82d7231fa885ac47bac",
+          "search_id": "search.dblp.q06a",
+          "source_id": "dblp",
+          "title": "Planar-Adaptive Routing: Low-cost Adaptive Networks for Multiprocessors.",
+          "venue": "ISCA"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.a39620a3778be2238982976f"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.50ac5c7d18341de4821ffdf33e37850dfd4bc0d99479196c43527cbe369a347b"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 183,
+          "fields": {
+            "doi": "https://doi.org/10.1145/952989.803455",
+            "p": "https://dblp.org/rec/conf/sigcse/Lucas76",
+            "title": "Planned attitude change while teaching computer literacy.",
+            "venue": "SIGCSE-SIGCUE",
+            "year": "1976"
+          }
+        },
+        {
+          "binding_index": 184,
+          "fields": {
+            "doi": "https://doi.org/10.1145/800107.803455",
+            "p": "https://dblp.org/rec/conf/sigcse/Lucas76",
+            "title": "Planned attitude change while teaching computer literacy.",
+            "venue": "SIGCSE-SIGCUE",
+            "year": "1976"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/sigcse/Lucas76",
+            "doi:10.1145/800107.803455",
+            "doi:10.1145/952989.803455"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/sigcse/Lucas76",
+          "publication_type": "other",
+          "publication_year": 1976,
+          "rank": 59,
+          "raw_artifact_sha256": "fe30d7d4d22ec64bea7891963aaa95093343a1d0cee7f27ce69264c435d8d6f6",
+          "record_id": "observation.50ac5c7d18341de4821ffdf33e37850dfd4bc0d99479196c43527cbe369a347b",
+          "search_id": "search.dblp.q11b",
+          "source_id": "dblp",
+          "title": "Planned attitude change while teaching computer literacy.",
+          "venue": "SIGCSE-SIGCUE"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.c5b7e2a6c58a7914e5e6e4ce"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.b9810b9084b0ecf6ddcf34478c889337fbe39d1dc7dfec6a59daaf39b7258c9b"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 64,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2964791.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 65,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2896377.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 66,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2964791.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 67,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2896377.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 68,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2964791.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 69,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2896377.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/sigmetrics/MukhopadhyayMR16",
+            "doi:10.1145/2896377.2901488",
+            "doi:10.1145/2964791.2901488"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+          "publication_type": "other",
+          "publication_year": 2016,
+          "rank": 323,
+          "raw_artifact_sha256": "7c2bc5fcd8e6cfcc3eff61d72d53d2021a7909ede6ea827759b5f3cc69bb7b97",
+          "record_id": "observation.b9810b9084b0ecf6ddcf34478c889337fbe39d1dc7dfec6a59daaf39b7258c9b",
+          "search_id": "search.dblp.q01",
+          "source_id": "dblp",
+          "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+          "venue": "SIGMETRICS"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.eab89dfcf72f4f1a2f7deafa"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.63bb749ff6144f583737714fe378f1852cbaaf786355996e2af332ff47aaa33d"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 68,
+          "fields": {
+            "doi": "https://doi.org/10.1162/978-0-262-32621-6-CH118",
+            "p": "https://dblp.org/rec/conf/alife/MarriottC14",
+            "title": "The Effect of Social Learning on Individual Learning.",
+            "venue": "ALIFE",
+            "year": "2014"
+          }
+        },
+        {
+          "binding_index": 69,
+          "fields": {
+            "doi": "https://doi.org/10.7551/978-0-262-32621-6-CH118",
+            "p": "https://dblp.org/rec/conf/alife/MarriottC14",
+            "title": "The Effect of Social Learning on Individual Learning.",
+            "venue": "ALIFE",
+            "year": "2014"
+          }
+        },
+        {
+          "binding_index": 70,
+          "fields": {
+            "doi": "https://doi.org/10.1162/978-0-262-32621-6-CH118",
+            "p": "https://dblp.org/rec/conf/alife/MarriottC14",
+            "title": "The Effect of Social Learning on Individual Learning.",
+            "venue": "ALIFE",
+            "year": "2014"
+          }
+        },
+        {
+          "binding_index": 71,
+          "fields": {
+            "doi": "https://doi.org/10.7551/978-0-262-32621-6-CH118",
+            "p": "https://dblp.org/rec/conf/alife/MarriottC14",
+            "title": "The Effect of Social Learning on Individual Learning.",
+            "venue": "ALIFE",
+            "year": "2014"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/alife/MarriottC14",
+            "doi:10.1162/978-0-262-32621-6-ch118",
+            "doi:10.7551/978-0-262-32621-6-ch118"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/alife/MarriottC14",
+          "publication_type": "other",
+          "publication_year": 2014,
+          "rank": 21,
+          "raw_artifact_sha256": "9c42b40d7f648f88728ad2a90bb75587ff4d5f2d10dc7eaabbb7436c9fcd4655",
+          "record_id": "observation.63bb749ff6144f583737714fe378f1852cbaaf786355996e2af332ff47aaa33d",
+          "search_id": "search.dblp.q12a",
+          "source_id": "dblp",
+          "title": "The Effect of Social Learning on Individual Learning.",
+          "venue": "ALIFE"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.ee09e0e8fc8e6120b1198a84"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.f52caf21ba5718172127d3998fd1c0d39380baef0ce11a7b0b4ab0cdfcf29513"
+      ],
+      "raw_dblp_binding_evidence": [
+        {
+          "binding_index": 75,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2964791.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 76,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2896377.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 77,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2896377.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 78,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2964791.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 79,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2896377.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        },
+        {
+          "binding_index": 80,
+          "fields": {
+            "doi": "https://doi.org/10.1145/2964791.2901488",
+            "p": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+            "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+            "venue": "SIGMETRICS",
+            "year": "2016"
+          }
+        }
+      ],
+      "records": [
+        {
+          "identifiers": [
+            "dblp:conf/sigmetrics/MukhopadhyayMR16",
+            "doi:10.1145/2896377.2901488",
+            "doi:10.1145/2964791.2901488"
+          ],
+          "landing_page_url": "https://dblp.org/rec/conf/sigmetrics/MukhopadhyayMR16",
+          "publication_type": "other",
+          "publication_year": 2016,
+          "rank": 29,
+          "raw_artifact_sha256": "8e80b00f975096065e5a068eed018f882d9159c5e497d3adb94d95ea77e6fe81",
+          "record_id": "observation.f52caf21ba5718172127d3998fd1c0d39380baef0ce11a7b0b4ab0cdfcf29513",
+          "search_id": "search.dblp.q04b",
+          "source_id": "dblp",
+          "title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+          "venue": "SIGMETRICS"
+        }
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.f98f5b718cb484ff044b85a9"
+    }
+  ],
+  "records_sha256": "772afb69e868ef3fc6cf94e79d3c1b422f11f8fba453621c0092fc65028fa5a1",
+  "review_cards": {
+    "artifact": {
+      "path": "/Users/davi/.local/state/research-workbench/corpus-preparation-20260913/identity-audit/review-cards.json",
+      "sha256": "4779f20d33072b10d68c18e4535555ad7684b7e1333c4c5441a9ec525059086f",
+      "size_bytes": 19879926
+    },
+    "candidate_count": 20964,
+    "candidate_ids_preserved_fraction": 1.0,
+    "component_count": 4990,
+    "exclusive_candidate_categories": {
+      "exact_identifier_conflict": 442,
+      "syntactic_arxiv_bridge": 4750,
+      "title_only": 15772
+    },
+    "exclusive_work_pair_categories": {
+      "exact_identifier_conflict": 442,
+      "syntactic_arxiv_bridge": 1951,
+      "title_only": 8361
+    },
+    "mixed_work_pair_category_profiles": {
+      "exact_identifier_conflict": 442,
+      "syntactic_arxiv_bridge": 1757,
+      "syntactic_arxiv_bridge+title_only": 194,
+      "title_only": 8361
+    },
+    "operator": {
+      "path": "/Users/davi/.local/state/research-workbench/corpus-preparation-20260913/identity-audit/generate-review-cards.py",
+      "sha256": "f91d25c1b8b16a263313a03f12253f1b39d5adb696d39e371b0e703192d61b04"
+    },
+    "queued_proposed_work_count": 12025,
+    "work_pair_count": 10754
+  },
+  "review_cards_reproduced_same_hash": true,
+  "review_queue_sha256": "f979fdc89063fe3f38ce63dd828540b2a756cacedf68f9066e9b64275d0b9e41",
+  "summary": {
+    "arxiv_spelling_bridge": {
+      "components": 1940,
+      "record_pairs": 4750,
+      "work_pairs": 1951
+    },
+    "automatic_resolutions_under_current_policy": 0,
+    "cause_record_pair_counts": {
+      "exact_identifier_conflict_and_title": 298,
+      "exact_identifier_conflict_without_title": 144,
+      "title_without_shared_typed_identifier": 20522
+    },
+    "cause_work_pair_counts": {
+      "exact_identifier_conflict_and_title": 298,
+      "exact_identifier_conflict_without_title": 144,
+      "title_without_shared_typed_identifier": 10312
+    },
+    "component_cause_profiles": {
+      "exact_identifier_conflict_and_title": 17,
+      "exact_identifier_conflict_and_title+exact_identifier_conflict_without_title": 3,
+      "exact_identifier_conflict_and_title+exact_identifier_conflict_without_title+title_without_shared_typed_identifier": 13,
+      "exact_identifier_conflict_and_title+title_without_shared_typed_identifier": 29,
+      "exact_identifier_conflict_without_title": 2,
+      "exact_identifier_conflict_without_title+title_without_shared_typed_identifier": 49,
+      "title_without_shared_typed_identifier": 4877
+    },
+    "component_type_set_counts": {
+      "article": 829,
+      "article+book": 1,
+      "article+conference_paper": 24,
+      "article+conference_paper+journal_article+other+preprint": 1,
+      "article+conference_paper+other": 26,
+      "article+conference_paper+other+preprint": 8,
+      "article+conference_paper+preprint": 9,
+      "article+journal_article": 5,
+      "article+journal_article+other": 1,
+      "article+journal_article+other+preprint": 64,
+      "article+journal_article+preprint": 62,
+      "article+journal_article+review": 1,
+      "article+other": 54,
+      "article+other+preprint": 303,
+      "article+preprint": 1112,
+      "article+review": 1,
+      "book": 1,
+      "book+other": 1,
+      "book_chapter+other+preprint": 1,
+      "book_chapter+preprint": 1,
+      "conference_paper": 40,
+      "conference_paper+journal_article+other+preprint": 1,
+      "conference_paper+journal_article+preprint": 1,
+      "conference_paper+other": 47,
+      "conference_paper+other+preprint": 135,
+      "conference_paper+other+preprint+proceedings_article": 6,
+      "conference_paper+preprint": 205,
+      "conference_paper+preprint+proceedings_article": 4,
+      "journal_article": 1,
+      "journal_article+other": 7,
+      "journal_article+other+preprint": 2,
+      "journal_article+preprint": 3,
+      "journal_article+preprint+review": 1,
+      "other": 255,
+      "other+preprint": 265,
+      "preprint": 1498,
+      "preprint+review": 8,
+      "review": 6
+    },
+    "component_work_size_distribution": {
+      "10": 1,
+      "11": 2,
+      "12": 1,
+      "13": 2,
+      "2": 3492,
+      "3": 1168,
+      "4": 254,
+      "44": 1,
+      "5": 36,
+      "6": 14,
+      "7": 10,
+      "8": 8,
+      "9": 1
+    },
+    "components_with_exact_identifier_candidates": 113,
+    "conflicted_exact_identifier_component_record_count": 334,
+    "conflicted_exact_identifier_components": 121,
+    "conflicted_exact_identifier_kind_counts": {
+      "arxiv": 1,
+      "doi": 8,
+      "doi+openalex": 1,
+      "openalex": 111
+    },
+    "exact_identifier_components_before_split": 46187,
+    "exact_identifier_observation_reduction_already_done": 8170,
+    "exact_identifier_proposed_works": 5553,
+    "observations": 54570,
+    "observations_in_components": 15950,
+    "observations_in_exact_identifier_proposed_works": 13723,
+    "pair_identifier_plurality_kind_counts": {
+      "arxiv": 1,
+      "dblp": 304,
+      "dblp+doi": 306,
+      "doi": 1860,
+      "doi+openalex": 6363,
+      "none": 9561,
+      "openalex": 2569
+    },
+    "pairs_same_metadata_except_acquisition": 85,
+    "pairs_shared_identifier_without_pair_plurality": 231,
+    "proposed_works": 46400,
+    "readiness_conflict_unique_dblp_ids": 9,
+    "readiness_conflicts": 10,
+    "readiness_conflicts_outside_identity_queue": 6,
+    "record_pairs": 20964,
+    "record_pairs_repeated_per_work_pair": 10210,
+    "safe_review_card_reduction_percent": 48.7025,
+    "same_metadata_except_acquisition": {
+      "components": 25,
+      "record_pairs": 85,
+      "work_pairs": 85
+    },
+    "scientifically_confirmed_distinct_or_same_work_pairs": 0,
+    "shared_identifier_pair_plurality_counts": {
+      "arxiv": 1,
+      "doi": 17,
+      "openalex": 193
+    },
+    "shared_identifier_with_pair_plurality": {
+      "components": 113,
+      "record_pairs": 211,
+      "work_pairs": 211
+    },
+    "shared_identifier_without_pair_plurality": {
+      "components": 40,
+      "record_pairs": 231,
+      "work_pairs": 231
+    },
+    "signal_counts": {
+      "conflicting_arxiv": 3,
+      "conflicting_doi": 29,
+      "conflicting_openalex": 439,
+      "normalized_title_match": 20820,
+      "publication_year_match": 14249,
+      "typed_work_identifier_match": 442,
+      "work_identifier_conflict": 442
+    },
+    "source_pair_counts": {
+      "arxiv+arxiv": 16,
+      "arxiv+crossref": 95,
+      "arxiv+dblp": 1529,
+      "arxiv+openalex": 7515,
+      "crossref+crossref": 2,
+      "crossref+dblp": 73,
+      "crossref+openalex": 205,
+      "dblp+dblp": 611,
+      "dblp+openalex": 1916,
+      "openalex+openalex": 9002
+    },
+    "title_only_conference_vs_article_type_pairs": 131,
+    "title_only_preprint_vs_other_type_pairs": 8111,
+    "title_only_same_nonempty_authors": {
+      "components": 3648,
+      "record_pairs": 11580,
+      "work_pairs": 6101
+    },
+    "title_only_year_gap_10plus_pairs": 691,
+    "titled_works": 46391,
+    "type_pair_counts": {
+      "article+article": 2780,
+      "article+book": 1,
+      "article+conference_paper": 128,
+      "article+journal_article": 50,
+      "article+other": 604,
+      "article+preprint": 4158,
+      "article+review": 2,
+      "book+book": 1,
+      "book+other": 1,
+      "book_chapter+preprint": 6,
+      "conference_paper+conference_paper": 180,
+      "conference_paper+journal_article": 3,
+      "conference_paper+other": 376,
+      "conference_paper+preprint": 1347,
+      "conference_paper+proceedings_article": 6,
+      "journal_article+journal_article": 1,
+      "journal_article+other": 67,
+      "journal_article+preprint": 205,
+      "other+other": 611,
+      "other+preprint": 2465,
+      "other+proceedings_article": 5,
+      "preprint+preprint": 7914,
+      "preprint+proceedings_article": 29,
+      "preprint+review": 13,
+      "review+review": 11
+    },
+    "untitled_works": 9,
+    "work_components": 4990,
+    "work_pairs": 10754,
+    "work_pairs_shared_identifier_without_pair_plurality": 231,
+    "works_in_components": 12025,
+    "year_difference_counts": {
+      "0": 14249,
+      "1": 3867,
+      "10": 57,
+      "11": 61,
+      "12": 47,
+      "13": 55,
+      "14": 48,
+      "15": 38,
+      "16": 22,
+      "17": 29,
+      "18": 38,
+      "19": 23,
+      "2": 1276,
+      "20": 30,
+      "21": 23,
+      "22": 17,
+      "23": 24,
+      "24": 15,
+      "25": 15,
+      "26": 18,
+      "27": 16,
+      "28": 16,
+      "29": 7,
+      "3": 268,
+      "30": 5,
+      "31": 8,
+      "32": 12,
+      "33": 11,
+      "34": 9,
+      "35": 8,
+      "36": 6,
+      "37": 1,
+      "38": 4,
+      "39": 7,
+      "4": 176,
+      "40": 4,
+      "41": 5,
+      "42": 3,
+      "43": 4,
+      "44": 1,
+      "45": 1,
+      "46": 2,
+      "47": 1,
+      "5": 145,
+      "6": 89,
+      "7": 79,
+      "8": 75,
+      "9": 45,
+      "None": 4
+    }
+  },
+  "verification": {
+    "all_verified_source_hashes_unchanged": true,
+    "candidate_queue_equal": true,
+    "deduplication_v3_replay_equal": true,
+    "full_quality_matrix_executed": false,
+    "input_partition_complete": true,
+    "metadata_queue_equal": true,
+    "owner_adjudication_queue_rejects_metadata_queue": true,
+    "schemas_1_2_deduplication_rejects_v3": true
+  },
+  "verified_artifacts": {
+    "05ed929d086c31600fa644d41249011350fa73db89602a6766e58dd3d620a697": 138936,
+    "25a5a898dacc824e45dd74f4ecfd1ba59deb3ada41e064439604df4f27549d08": 177868,
+    "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53": 33702090,
+    "5777fb885ebbd736058921ca49188c93793b0c413072809d9e52ab09b4b54351": 151064,
+    "772afb69e868ef3fc6cf94e79d3c1b422f11f8fba453621c0092fc65028fa5a1": 116475949,
+    "7c2bc5fcd8e6cfcc3eff61d72d53d2021a7909ede6ea827759b5f3cc69bb7b97": 141271,
+    "8e80b00f975096065e5a068eed018f882d9159c5e497d3adb94d95ea77e6fe81": 105111,
+    "901709d736d04cd791b5f2a5cd5cccdbd21d2bf9ff28770382f4922f6c1b8b26": 109645,
+    "9c42b40d7f648f88728ad2a90bb75587ff4d5f2d10dc7eaabbb7436c9fcd4655": 139278,
+    "9f7fc7e669dd31b7f08d07ddafeeedb27220b4d286bb28519e2b6c569b0d816a": 210093,
+    "f6e9936dfb8df0199f8f97e87d97665fe2a577b356e5e3acad9b4d0ecdc1268f": 232845,
+    "f979fdc89063fe3f38ce63dd828540b2a756cacedf68f9066e9b64275d0b9e41": 7215806,
+    "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f": 995733,
+    "fe30d7d4d22ec64bea7891963aaa95093343a1d0cee7f27ce69264c435d8d6f6": 142448
+  }
+}

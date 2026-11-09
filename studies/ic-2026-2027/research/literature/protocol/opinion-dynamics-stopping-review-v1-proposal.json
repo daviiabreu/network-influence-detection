@@ -1,0 +1,900 @@
+{
+  "amendment_policy": {
+    "requires_affected_artifact_ids": true,
+    "requires_dated_reason": true,
+    "requires_rescreen_decision": true
+  },
+  "completion_criteria": [
+    "All approved searches reached their stopping rule or have a disclosed incomplete status.",
+    "All deduplication candidates, screening conflicts and extraction conflicts have an owner disposition; rule- or AI-proposed dispositions were adopted in batch only after a seeded stratified audit with zero errors sized for at most 2 percent error at 95 percent confidence, and any audit error returned the whole stratum to review.",
+    "Calibration ran under a reference amendment of this protocol that adds only calibration_reference_policy bound to this protocol's canonical hash, used 50 works drawn with the registered seed from the corpus-query selection, disjoint from the 50 v4 development cases, which are declared adjustment material, and is reported as agreement with owner-adopted references.",
+    "Every full text still unavailable after open-access retrieval and the owner's institutional request has the terminal not_retrieved disposition and is reported under PRISMA 2020 as a report not retrieved, never as an eligibility exclusion.",
+    "Every synthesis claim links to validated extractions, preserves conflicting or uncertain evidence and keeps not_reported values distinct from unresolved fields.",
+    "Every title/abstract conflict, uncertain judgment, divergent assignment or exhausted attempt chain (at most three counted and five total attempts per task, all retained) was routed through the owner queue to full-text screening, and every full-text exclusion was decided individually by the research owner.",
+    "PRISMA counts reconcile with the immutable search, deduplication and screening records; v4 records outside the focused strategy are reported, in records and in works, as removed before screening by the focused lexical filter, never as screening exclusions.",
+    "The frozen corpus strategy retrieved at least 0.90 of the in-corpus items of the known-item test half, reported overall and separately for bounded-confidence-named and related items, and any successor strategy passed the same gate on a new test set.",
+    "The stratified unmatched-record sample was screened before main title/abstract screening, any eligible sampled work triggered a successor strategy before main screening, and the weighted estimate of missed eligible works is reported with its intervals.",
+    "The synthesis states a verdict for each registered candidate-gap sub-claim under its registered conditions; a supported overall verdict is necessary but not sufficient for selecting a question, and a refuted one is recorded as a negative result.",
+    "Two consecutive citation-chasing rounds produced no new eligible work after deduplication, each round's filter-only strategies having been appended by a dated amendment before execution."
+  ],
+  "created_on": "2026-09-18",
+  "deduplication_policy": {
+    "algorithm_version": "2",
+    "conflict_disposition": "adjudication",
+    "exact_identifier_priority": [
+      "arxiv",
+      "dblp",
+      "doi",
+      "openalex"
+    ],
+    "exact_identifier_semantics": "allowlist",
+    "fuzzy_match_requires_adjudication": true,
+    "preserve_manifestation_types": [
+      "conference_article",
+      "journal_article",
+      "preprint"
+    ],
+    "title_only_auto_merge": false,
+    "work_counting_unit": "scholarly_work"
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "exclude.no_computational_model",
+      "edge_cases": [
+        "A conceptual framework mentions agents but defines no executable or mathematical dynamics.",
+        "A general steady-state or warm-up detection method for stochastic simulation evaluated only on non-opinion models: exclude; it may be cited as methodological context outside the review counts.",
+        "A social-media study measures polarization without modeling opinion change."
+      ],
+      "examples": [
+        "A purely qualitative essay about public opinion."
+      ],
+      "kind": "exclusion",
+      "priority": 4,
+      "reason_code": "no_computational_model",
+      "stage": "both",
+      "statement": "Exclude work that neither defines, analyzes, implements, nor empirically evaluates a computational or mathematical model of opinion or belief dynamics."
+    },
+    {
+      "criterion_id": "exclude.no_long_run_outcome",
+      "edge_cases": [
+        "A calibration study fits bounded-confidence parameters to survey waves and reports fit metrics: include when the fitted runs are evaluated at a stated horizon or stopping rule, otherwise exclude.",
+        "Outcomes are reported only at a fixed horizon without a convergence claim: include, because the horizon is the stopping rule."
+      ],
+      "examples": [
+        "A software paper that describes a bounded-confidence simulator and shows one illustrative trajectory without any claim about final states."
+      ],
+      "kind": "exclusion",
+      "absence_evidence": "whole_text_pool",
+      "priority": 5,
+      "reason_code": "no_long_run_outcome",
+      "stage": "full_text",
+      "statement": "Exclude bounded-confidence work whose full text reports neither simulated nor analytical long-run behavior of the opinion dynamics: convergence, consensus, final clusters, fragmentation, polarization at the end of the reported runs, or convergence and termination times."
+    },
+    {
+      "criterion_id": "exclude.no_scholarly_product",
+      "edge_cases": [
+        "A non-archival extended abstract is linked to a later full paper.",
+        "A preprint is the only accessible manifestation of an otherwise eligible work."
+      ],
+      "examples": [
+        "A blog post describing a simulation without a scholarly manuscript."
+      ],
+      "kind": "exclusion",
+      "priority": 2,
+      "reason_code": "no_scholarly_product",
+      "stage": "both",
+      "statement": "Exclude editorials, news, slides, calls for papers, and other non-scholarly products; retain eligible preprints only as manifestations of a scholarly work."
+    },
+    {
+      "criterion_id": "exclude.no_stopping_or_partition_content",
+      "edge_cases": [
+        "A discrete-state model reports times to an absorbing state and states how runs that did not reach it within the budget were treated: include under (d).",
+        "A model reports final clusters or polarization without describing how clusters were identified: exclude unless (a), (c) or (d) holds.",
+        "A simulation or LLM-agent study stops after a fixed number of steps or rounds and reports the resulting opinion groups: exclude unless (b), (c) or (d) holds, because a bare horizon does not qualify."
+      ],
+      "examples": [
+        "A DeGroot or Friedkin-Johnsen convergence proof without simulations: context only, not included.",
+        "A voter-model paper that reports only exit probabilities and mean consensus times."
+      ],
+      "kind": "exclusion",
+      "absence_evidence": "whole_text_pool",
+      "priority": 6,
+      "reason_code": "no_stopping_or_partition_content",
+      "stage": "full_text",
+      "statement": "Exclude work on a model outside the bounded-confidence family unless its full text meets at least one condition: (a) it states a stopping, convergence or termination criterion beyond a bare fixed horizon; (b) it states a procedure for identifying final opinion clusters; (c) it reports a sensitivity analysis of outcomes to the stopping rule, tolerance, horizon or numeric precision; (d) it reports how runs that did not stop, or metastable states, were treated. Analytical convergence results for such models are context only and do not qualify."
+    },
+    {
+      "criterion_id": "exclude.not_human_opinion_domain",
+      "edge_cases": [
+        "A Hegselmann-Krause or Deffuant convergence proof written for multi-agent systems: include, because the model is defined as an opinion model even when the proof uses control terminology.",
+        "A generic consensus model reports both engineering and human-opinion experiments.",
+        "An LLM-agent study explicitly models human-like belief or opinion change."
+      ],
+      "examples": [
+        "A robot-control consensus protocol with no social interpretation."
+      ],
+      "kind": "exclusion",
+      "priority": 3,
+      "reason_code": "not_human_opinion_domain",
+      "stage": "both",
+      "statement": "Exclude consensus, diffusion, or contagion studies that have no explicit interpretation or evaluation involving human opinions, beliefs, attitudes, or social influence."
+    },
+    {
+      "criterion_id": "exclude.outside_date_or_language",
+      "edge_cases": [
+        "An English abstract accompanies a full text in another language.",
+        "Online-first and issue publication years differ."
+      ],
+      "examples": [
+        "A publication dated after the 2026-09-11 cutoff."
+      ],
+      "kind": "exclusion",
+      "priority": 1,
+      "reason_code": "outside_date_or_language",
+      "stage": "both",
+      "statement": "Exclude works outside the registered publication interval or without an English full-text manifestation available for screening."
+    },
+    {
+      "criterion_id": "include.bounded_confidence_family",
+      "edge_cases": [
+        "A bounded-confidence rule is one component of a larger recommender or media model: include when agent opinions follow the bounded-confidence rule.",
+        "A survey of bounded-confidence models: map it as a citation-chasing seed and recall source, not as a primary study.",
+        "An agent-based model uses a confidence threshold only to decide who is exposed, not who influences whom: judge uncertain at title/abstract and decide at full text."
+      ],
+      "examples": [
+        "A Deffuant-Weisbuch simulation on Erdos-Renyi and modular networks that counts final opinion clusters.",
+        "A proof of finite-time termination of the Hegselmann-Krause dynamics."
+      ],
+      "kind": "inclusion",
+      "priority": 7,
+      "reason_code": "bounded_confidence_family",
+      "stage": "both",
+      "statement": "Include scholarly work that defines, analyzes, simulates, calibrates or compares a bounded-confidence opinion-dynamics model, including Deffuant-Weisbuch, Hegselmann-Krause, relative agreement and their network, adaptive, heterogeneous, noisy, repulsive, kinetic, mean-field and continuous-time variants."
+    },
+    {
+      "criterion_id": "include.related_model_stopping_or_fragmentation",
+      "edge_cases": [
+        "A continuous-opinion model with repulsion outside the bounded-confidence family reports final clusters without a stated procedure: exclude at full text unless (a), (c) or (d) holds.",
+        "A related model mentions convergence or clusters in the abstract without detail: judge uncertain at title/abstract, which forwards the work to full text."
+      ],
+      "examples": [
+        "A DeGroot or Friedkin-Johnsen simulation that states its convergence tolerance and checks the sensitivity of the final state.",
+        "An Axelrod cultural-dissemination study that explains how it detects the absorbing state and counts cultural regions."
+      ],
+      "kind": "inclusion",
+      "priority": 8,
+      "reason_code": "related_model_stopping_or_fragmentation",
+      "stage": "both",
+      "statement": "Include work on another opinion-dynamics model only when its full text meets at least one of conditions (a) to (d) of exclude.no_stopping_or_partition_content. At title/abstract stage, judge uncertain when the title or abstract suggests any of them."
+    }
+  ],
+  "extraction_fields": [
+    {
+      "allowed_values": [
+        "analytical_cluster_count",
+        "cached_partition",
+        "clustering_algorithm",
+        "effective_graph_components",
+        "histogram_or_density_peaks",
+        "opinion_gap_threshold",
+        "other",
+        "summary_statistics_only"
+      ],
+      "cardinality": "one_or_more",
+      "description": "How the work maps a stopped or final opinion state to opinion clusters and declares consensus, polarization or fragmentation. analytical_cluster_count: derived from theory rather than from simulated states. cached_partition: a grouping computed earlier in the run and retained without recomputation at the declared end. clustering_algorithm: k-means, DBSCAN, hierarchical or similar. effective_graph_components: connected components of the network restricted to pairs within the confidence bound, recomputed at the declared end. histogram_or_density_peaks: bins or density maxima of the opinion distribution. opinion_gap_threshold: sorted opinions split where a gap exceeds a threshold. summary_statistics_only: dispersion, polarization or entropy indices without identified clusters. Record gap and minimum-size thresholds in stopping_rule_parameters. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "cluster_identification_method",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [
+        "analytical_guarantee",
+        "censoring_reported",
+        "continuation_after_stop",
+        "criteria_compared",
+        "none_beyond_rule",
+        "other"
+      ],
+      "cardinality": "one_or_more",
+      "description": "Checks beyond the stopping rule that the declared final state or partition will not change. analytical_guarantee: the work proves or cites a result guaranteeing the final partition or convergence under its stated assumptions. censoring_reported: runs that did not meet the stopping rule within the budget are counted and their treatment is stated. continuation_after_stop: simulation continues past the declared stop to confirm that the outcome does not change. criteria_compared: two or more stopping or convergence criteria are applied to the same runs. none_beyond_rule: a stopping rule is reported but no further check. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "convergence_diagnostic",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Any convergence, finite-termination, termination-time or final-partition result that the work proves or relies on, with its exact assumptions: graph class (complete, sparse, modular, any fixed connected graph), symmetric or asymmetric updates, fixed, adaptive or time-varying topology, homogeneous or heterogeneous confidence, noise or repulsion. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "convergence_guarantee_assumptions",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Empirical datasets, calibration targets, or observed social systems used by the work. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "empirical_grounding",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Explicit limitations, unresolved anomalies, and future-work gaps stated by the authors. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "evidence_gaps",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [
+        "asymptotic_convergence",
+        "edge_restricted_certificate",
+        "finite_time_termination",
+        "global_separation_certificate",
+        "other",
+        "termination_time_bound"
+      ],
+      "cardinality": "one_or_more",
+      "description": "Kind of analytical guarantee the work proves or cites for its dynamics or stopping decision. asymptotic_convergence: opinions converge as time grows. finite_time_termination: the dynamics reach a fixed state in finitely many steps. termination_time_bound: an explicit bound on convergence or termination time. global_separation_certificate: groups at least the confidence bound apart in opinion space will never interact again, valid on any graph, as in the rule of Meng, Van Gorder and Porter (2018). edge_restricted_certificate: a sufficient condition checked only over base-network edges or edge-connected component pairs, for example separation of component opinion intervals, that is proved or cited to exclude any future cross-group interaction; a pointwise check of current endpoint opinions without such a proof is not a certificate. Record the graph class each guarantee assumes in convergence_guarantee_assumptions. When the work states or relies on no guarantee, the field is not_reported. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "guarantee_type",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Opinion-dynamics model family or families studied, including named classical and LLM-agent variants. Open vocabulary.",
+      "field_id": "model_family",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [
+        "complete_or_mean_field",
+        "dense_noncomplete",
+        "sparse",
+        "varied"
+      ],
+      "cardinality": "one",
+      "description": "Class of the interaction networks on which the reported results rest, under the sparse_network definition. complete_or_mean_field: complete graph or well-mixed population. dense_noncomplete: mean degree at least 10 percent of the number of agents but not complete. sparse: mean degree constant as the number of agents grows, or below 10 percent of it. varied: results span more than one class; record each class in the value's locator text. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "network_sparsity_class",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Interaction structure details needed to classify sparsity: generator or data source, number of agents, mean degree or density and how it scales with the number of agents, degree distribution, modular or community structure and bridges, whether the network is fixed, adaptive or time-varying, connectivity of the initial graph and number of network realizations. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "network_sparsity_details",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [
+        "adaptive_topology",
+        "fixed_topology",
+        "modular_or_community",
+        "other",
+        "time_varying_topology"
+      ],
+      "cardinality": "one_or_more",
+      "description": "Structural properties of the interaction networks. fixed_topology: the base network does not change during a run. adaptive_topology: edges or weights change with opinions. time_varying_topology: edges change independently of opinions. modular_or_community: the network has planted or reported communities, modules or bridges between groups. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "network_structure_flags",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Network, spatial, complete-graph, platform-derived, or other interaction structures. Open vocabulary. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "network_topology",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Availability and identity of code, data, parameters, seeds, environment, and executable reproduction artifacts. Include whether the stopping rule and cluster identification are present in released code. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "reproducibility_artifacts",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Numerical settings of the stopping rule and of cluster identification: tolerances, horizons or event budgets, window lengths, how time is counted (pairwise interactions, sweeps, synchronous steps, continuous time), how often the rule is checked, numeric precision, and gap or minimum-size thresholds used to declare clusters. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "stopping_rule_parameters",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [
+        "absorbing_state_check",
+        "analytical_only",
+        "cluster_spread_tolerance",
+        "edge_separation_check",
+        "fixed_horizon",
+        "global_separation_check",
+        "opinion_change_tolerance",
+        "other",
+        "statistical_steady_state_test"
+      ],
+      "cardinality": "one_or_more",
+      "description": "Condition under which a run ends and its state is treated as final. absorbing_state_check: no admissible interaction can change any opinion. analytical_only: no simulated runs; results are analytical limits. cluster_spread_tolerance: opinion range or diameter within each group or component falls below a tolerance. fixed_horizon: a fixed number of steps, sweeps, rounds or time. opinion_change_tolerance: per-step or windowed change of opinions falls below a tolerance. global_separation_check: all declared groups are also required to lie at least the confidence bound apart in opinion space. edge_separation_check: separation is checked only across base-network edges or between edge-connected components, whether on current endpoint opinions or on component opinion intervals. statistical_steady_state_test: a statistical stationarity or warm-up detection method. Record every rule that applies. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "stopping_rule_type",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Whether the work varies the stopping rule, tolerance, horizon or numeric precision, or compares criteria, and what changed in reported outcomes: number or sizes of clusters, consensus or fragmentation classification, convergence or termination times, or model comparisons. State the network settings and tolerance ranges in which each change or absence of change was observed. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "stopping_sensitivity_analysis",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "cardinality": "one_or_more",
+      "description": "Evidence type of the work, using the study types declared in scope: analytical (proofs or derivations), empirical (observed data used to specify, calibrate or test a model) and simulation (numerical runs). Record every type that applies.",
+      "field_id": "study_type",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Analytical, numerical, empirical, sensitivity, robustness, or external validation performed. Open vocabulary. Absence is the explicit not_reported state, allowed only over the whole-text block pool after examining the complete text projection; figures, table images and supplements outside the projection are not examined, and over a curated pool the field stays unresolved.",
+      "field_id": "validation_method",
+      "locator_required": true,
+      "not_reported_allowed": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    }
+  ],
+  "full_text_policy": {
+    "allowed_media_types": [
+      "application/pdf",
+      "text/html"
+    ],
+    "artifact_store_profile": "restricted_content_addressed",
+    "max_bytes": 50000000,
+    "max_pages": 1000,
+    "minimum_ocr_confidence": 0.9,
+    "ocr_policy": "versioned_opt_in",
+    "restricted_content_stays_local": true,
+    "unavailable_disposition": "not_retrieved"
+  },
+  "information_sources": [
+    {
+      "access_class": "public",
+      "access_method": "public_api",
+      "adapter_id": "arxiv_atom_v1",
+      "adapter_version": "1.0.0",
+      "authority_scope": "Supplementary discovery of preprint manifestations that name the Hegselmann-Krause, Deffuant or relative-agreement models, which no v4 query named, and of steady-state detection in opinion simulations.",
+      "credential_required": false,
+      "evidence_urls": [
+        "https://info.arxiv.org/help/api/user-manual.html"
+      ],
+      "export_format": "arxiv_atom",
+      "limitations": [
+        "Preprint and published manifestations may lack a shared DOI and require identifier reconciliation or human adjudication.",
+        "Search all-fields covers arXiv metadata, not article full text; sources overlap with OpenAlex.",
+        "The adapter does not apply a publication-date filter; eligibility must inspect the retained original publication date, never infer a day from a year."
+      ],
+      "maintainer": "arXiv",
+      "name": "arXiv Atom API",
+      "native_query_syntax": "arxiv_search_query",
+      "source_id": "arxiv",
+      "source_kind": "bibliographic_index"
+    },
+    {
+      "access_class": "restricted",
+      "access_method": "prior_acquisition",
+      "adapter_id": "corpus_query_v1",
+      "adapter_version": "1.0.0",
+      "authority_scope": "Deterministic query over the 54,570 observations acquired by the 1,027 searches of approved protocol v3 and carried unchanged by approved protocol v4 (canonical ff8a14178e72; v3 fa280dff232e). The corpus preparation receipt fa934b8b0658 links the pinned acquisition receipt to the pinned observations; the receipt names acquisition report edfa48474097. No provider is contacted.",
+      "credential_required": false,
+      "evidence_urls": [
+        "https://doi.org/10.1186/s13643-020-01542-z"
+      ],
+      "export_format": "review_observations_json",
+      "limitations": [
+        "Inherits every coverage limit of the v4 acquisition: 1,027 queries without stopping or termination terms, 14,878 observations without an abstract and a 2026-09-11 publication cutoff.",
+        "Lexical matching on titles and abstracts misses works that use other vocabulary unless supplementary searches, citation chasing or the unmatched-record sample reach them.",
+        "Matching is per observation: other manifestations of a selected work that do not match, and unselected partners of pending duplicate candidates, are not carried into this acquisition.",
+        "The strategy was drafted after examining this corpus; the resulting post hoc narrowing is disclosed and tested by the known-item check and the unmatched-record sample."
+      ],
+      "maintainer": "Research workbench, IC 2026-2027 study",
+      "name": "Pinned observations of the opinion-dynamics map v4 acquisition",
+      "native_query_syntax": "corpus_boolean_v1",
+      "source_id": "corpus_query",
+      "source_kind": "bibliographic_database"
+    },
+    {
+      "access_class": "public",
+      "access_method": "public_api",
+      "adapter_id": "openalex_works_v1",
+      "adapter_version": "1.0.0",
+      "authority_scope": "Supplementary title and abstract discovery of works naming the Hegselmann-Krause, Deffuant or relative-agreement models and of steady-state detection terms absent from the v4 queries, and the citation graph used for filter-only forward and backward chasing.",
+      "credential_required": true,
+      "evidence_urls": [
+        "https://help.openalex.org/api/",
+        "https://help.openalex.org/api/authentication/",
+        "https://help.openalex.org/api/paging/",
+        "https://help.openalex.org/api/searching/"
+      ],
+      "export_format": "openalex_json",
+      "limitations": [
+        "Coverage expansion can introduce repository manifestations and additional screening noise.",
+        "Metadata and indexed abstracts can change as the live index is updated.",
+        "OpenAlex does not apply the review protocol's scientific quality threshold.",
+        "OpenAlex ingests arXiv and other sources, so overlaps are expected and sources are not statistically independent.",
+        "Supplementary results overlap heavily with the v4 corpus; deduplication against the corpus query removes repeated works.",
+        "Titles and indexed abstracts may be missing or incomplete; registered citation chasing and complementary sources address coverage gaps."
+      ],
+      "maintainer": "OurResearch",
+      "name": "OpenAlex Works API",
+      "native_query_syntax": "openalex_search",
+      "source_id": "openalex",
+      "source_kind": "bibliographic_index"
+    }
+  ],
+  "objectives": [
+    "Map stopping, convergence, termination and cluster-identification practices in simulations of bounded-confidence and related opinion-dynamics models, with emphasis on sparse networks.",
+    "Relate simulation practice to analytical convergence and termination results and to the network assumptions those results require.",
+    "Test the exploratory candidate gap from the 2026-09-12 exploration and pilot A without selecting the final IC question, and record a negative result when the evidence does not support it."
+  ],
+  "operational_definitions": [
+    {
+      "definition": "An opinion-dynamics model in which an agent is influenced by another only when their opinions differ by less than a confidence bound, which may be heterogeneous, adaptive or noisy; includes Deffuant-Weisbuch pairwise updates, Hegselmann-Krause synchronous averaging, relative agreement and their network, kinetic, mean-field and continuous-time variants.",
+      "term_id": "bounded_confidence_model"
+    },
+    {
+      "definition": "Exploratory candidate from the 2026-09-12 exploration and pilot A: in bounded-confidence simulations on sparse or modular fixed networks, tolerance- or horizon-based stopping can declare a final partition before groups are separated. The synthesis gives one verdict per sub-claim (candidate_gap_practice, candidate_gap_certificate, candidate_gap_consequence): supported, refuted or undetermined under its registered conditions, using only extracted field values of included works with their locators; pilot results are not evidence here. The overall verdict is refuted when any sub-claim is refuted; supported when practice and certificate are supported and consequence is not refuted, stating whether consequence is supported (already shown) or undetermined (untested); undetermined otherwise. Supported is necessary but not sufficient for selecting a question: charter lines 121-125 also require plausible novelty, importance, falsifiability, feasible baselines, a validation path and compatible resources, which the Research Owner judges.",
+      "term_id": "candidate_gap"
+    },
+    {
+      "definition": "Sub-claim that no included work provides an edge-restricted certificate for fixed sparse or modular networks. Refuted when any included work has guarantee_type edge_restricted_certificate proved or cited for bounded-confidence updates on fixed networks. A global_separation_certificate, such as the rule of Meng, Van Gorder and Porter (2018) requiring groups at least the confidence bound apart in opinion space, is valid on any graph but checks every pair of groups; it does not refute this sub-claim and is reported as a direct antecedent that any edge-restricted certificate must be compared with. Supported otherwise.",
+      "term_id": "candidate_gap_certificate"
+    },
+    {
+      "definition": "Sub-claim that the stopping choice can change reported fragmentation outcomes on sparse or modular networks. Supported when at least one included work reports, in stopping_sensitivity_analysis or through convergence_diagnostic criteria_compared, that changing the stopping rule, tolerance, horizon or precision changed cluster counts, cluster sizes or the consensus or fragmentation classification on such networks. Refuted when at least two included works report such analyses on sparse or modular fixed networks, covering tolerances at least as large as those found under candidate_gap_practice, and none reports a change. Undetermined otherwise, reported as untested.",
+      "term_id": "candidate_gap_consequence"
+    },
+    {
+      "definition": "Sub-claim about practice. Base set: included bounded-confidence studies with study_type simulation whose network_sparsity_class is sparse or whose network_structure_flags include modular_or_community, with fixed_topology. Reporting studies: those with any stopping_rule_type. Unverified studies: reporting studies whose stopping rules are only cluster_spread_tolerance, opinion_change_tolerance or fixed_horizon, and whose convergence_diagnostic has none of analytical_guarantee, continuation_after_stop or criteria_compared. Supported when there are at least two unverified studies and they are at least half of the reporting studies. Refuted when there are at least two reporting studies and unverified studies are fewer than half. Undetermined when fewer than two studies report a stopping rule. The share with stopping_rule_type not reported is reported separately and counts toward neither side.",
+      "term_id": "candidate_gap_practice"
+    },
+    {
+      "definition": "The procedure that maps a stopped or final opinion state to opinion clusters, such as components of the effective graph, gaps in opinion space, histogram peaks or clustering algorithms, including any gap or minimum-size threshold.",
+      "term_id": "cluster_identification"
+    },
+    {
+      "definition": "Any check beyond the stopping rule that the declared final state or partition will not change: an analytical guarantee, continuation after the stop, comparison of criteria on the same runs, or explicit treatment of runs that did not stop.",
+      "term_id": "convergence_diagnostic"
+    },
+    {
+      "definition": "Any explicit use of observed data, measured networks, surveys, experiments, platform traces, or empirical targets to specify, calibrate, compare, or validate a model.",
+      "term_id": "empirical_grounding"
+    },
+    {
+      "definition": "A stopped or final state with more than one opinion cluster as declared by the work; polarization into two clusters is a special case.",
+      "term_id": "fragmentation"
+    },
+    {
+      "definition": "Before the registered execution of search.corpus_query.focused, the Research Owner builds a known-item list from the reference lists of two published reviews he selects, keeping the references that meet this protocol's eligibility in his judgment. The builder does not open any output of the draft strategy, such as focused_ids_final.json or dry-run executions. Items are matched to the pinned observations by normalized DOI, then arXiv identifier, then exact normalized title (NFKD, casefold, alphanumeric tokens) with publication year within one year; unmatched items are absent from the corpus. A random split with random.Random(20260918) over the list sorted by item key divides it into development and test halves; the list and both halves are hashed and recorded before execution. The development half may inform changes before the strategy is frozen; the test half is evaluated once on the frozen strategy and must hold at least 30 items present in the corpus, otherwise a third review is added before the split. Recall is the share of in-corpus test items with at least one selected observation, reported with a 95 percent Wilson interval overall and separately for items naming a bounded-confidence model and for related items. The gate is 0.90 on the overall point estimate. A successor strategy is accepted only after passing the same gate on a new test set built from a review not used before. Items absent from the corpus measure the coverage of supplementary searches and citation chasing.",
+      "term_id": "known_item_check"
+    },
+    {
+      "definition": "A mathematical or computational process in which human opinions, beliefs, attitudes, polarization, consensus, or social influence change through time or interaction.",
+      "term_id": "opinion_dynamics"
+    },
+    {
+      "definition": "Evidence that another researcher can identify the implementation, inputs, parameters, seeds, environment, and steps needed to regenerate reported results.",
+      "term_id": "reproducibility"
+    },
+    {
+      "definition": "An interaction network in which each agent is linked to a small fraction of the population: the work holds mean degree constant as the number of agents grows, or reports a mean degree below 10 percent of the number of agents. Complete graphs and mean-field mixing are not sparse. Recorded in network_sparsity_class; modular structure and fixed topology are recorded in network_structure_flags.",
+      "term_id": "sparse_network"
+    },
+    {
+      "definition": "The condition under which a simulation run is ended and its state treated as final, or the horizon at which outcomes are measured: fixed horizons, tolerances on opinion change or cluster spread, absorbing-state checks, separation checks and statistical steady-state tests.",
+      "term_id": "stopping_rule"
+    },
+    {
+      "definition": "A validation sample that is neither an identification source nor a recall measure. Frame: proposed works of the pinned result-3 grouping (41a54060be22) with an observation matching the frame query below, with no observation selected by search.corpus_query.focused and no pending duplicate candidate linking them to a selected work. High-risk stratum: frame works with an observation matching (converg* OR asymptotic* OR cluster* OR consensus* OR equilibri* OR \"steady state\" OR polariz* OR polaris*); other stratum: the rest. Draw 150 high-risk and 50 other works without replacement with random.Random(20260918) over each stratum sorted by work id. Only the 200 drawn works are screened, by the same dual process and before main title/abstract screening. Estimated missed eligible works: N_high x_high/150 + N_other x_other/50, with exact intervals per stratum. Any eligible sampled work requires a successor strategy covering its vocabulary before main screening; eligible sampled works enter the synthesis as identified by other methods. Frame query, corpus_boolean_v1 over title and abstract: (\"opinion dynamics*\" OR \"opinion formation*\" OR \"opinion evolution*\" OR \"opinion model*\" OR \"bounded confidence\" OR deffuant* OR hegsel* OR \"voter model*\" OR \"q voter*\" OR sznajd* OR degroot* OR friedkin* OR \"social influence model*\" OR \"opinion influence model*\" OR \"consensus dynamics*\" OR \"consensus formation*\" OR \"consensus model*\" OR \"agent based model* of opinion*\" OR \"agent based model* of polariz*\" OR \"agent based model* of belief*\" OR \"belief dynamics*\" OR \"attitude dynamics*\" OR hegelsm* OR krause* OR \"2r conjecture\" OR \"bounded trust\")",
+      "term_id": "unmatched_record_sample"
+    },
+    {
+      "definition": "A check that model structure, implementation, calibration, predictions, sensitivity, or conclusions are adequate for the stated scientific claim.",
+      "term_id": "validation"
+    }
+  ],
+  "protocol_id": "opinion-dynamics-stopping-review-v1",
+  "protocol_version": "1.0.0",
+  "quality_criteria": [
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.empirical_validity",
+      "evidence_locator_required": true,
+      "question": "Are calibration targets, empirical comparisons, and their limitations reported well enough to evaluate the claimed real-world validity?",
+      "synthesis_use": "stratify_only"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.model_specification",
+      "evidence_locator_required": true,
+      "question": "Are states, parameters, interaction rules, topology, initial conditions, and outcome definitions specified well enough to assess the model?",
+      "synthesis_use": "describe"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.reproducibility",
+      "evidence_locator_required": true,
+      "question": "Are code, data, parameters, seeds, environment, and execution instructions available or reported sufficiently for independent reproduction?",
+      "synthesis_use": "describe"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.robustness",
+      "evidence_locator_required": true,
+      "question": "Are sensitivity, uncertainty, alternative assumptions, stochastic variability, or out-of-sample behavior assessed in proportion to the claims?",
+      "synthesis_use": "sensitivity_analysis"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.termination_reporting",
+      "evidence_locator_required": true,
+      "question": "Are the stopping rule, its parameters and checking schedule, the treatment of runs that did not stop, and the cluster-identification procedure reported well enough to reproduce the declared final states?",
+      "synthesis_use": "describe"
+    }
+  ],
+  "reporting_guidelines": [
+    {
+      "guideline_id": "prisma-2020",
+      "url": "https://www.prisma-statement.org/prisma-2020",
+      "version": "2020"
+    },
+    {
+      "guideline_id": "prisma-s",
+      "url": "https://www.equator-network.org/reporting-guidelines/prisma-s/",
+      "version": "2021"
+    }
+  ],
+  "research_owner": "Davi Abreu da Silveira",
+  "review_kind": "systematic_review",
+  "review_questions": [
+    {
+      "question": "Which stopping, convergence and termination rules, with which parameters, do simulation studies of bounded-confidence and related opinion-dynamics models use, and how completely do they report them?",
+      "question_id": "rq1"
+    },
+    {
+      "question": "How do these studies identify final opinion clusters and declare consensus, polarization or fragmentation, and which checks confirm that the declared partition is final?",
+      "question_id": "rq2"
+    },
+    {
+      "question": "Which analytical results guarantee convergence, finite termination or the final cluster structure of bounded-confidence dynamics, and under which assumptions on network structure, update symmetry, topology change and noise?",
+      "question_id": "rq3"
+    },
+    {
+      "question": "Which studies assess the sensitivity of reported outcomes to the stopping rule, tolerance, horizon or numeric precision, and what changes do they report, particularly on sparse networks?",
+      "question_id": "rq4"
+    },
+    {
+      "question": "For each registered sub-claim of the exploratory candidate gap, is the evidence supporting, refuting or undetermined?",
+      "question_id": "rq5"
+    }
+  ],
+  "schema_version": "1",
+  "scope": {
+    "grey_literature_policy": "exclude",
+    "languages": [
+      "en"
+    ],
+    "publication_date_from": "1970-01-01",
+    "publication_date_to": "2026-09-11",
+    "publication_types": [
+      "conference_article",
+      "journal_article",
+      "preprint"
+    ],
+    "secondary_study_policy": "map_and_snowball",
+    "study_types": [
+      "analytical",
+      "empirical",
+      "simulation"
+    ]
+  },
+  "screening_policy": {
+    "allowed_judgments": [
+      "exclude",
+      "include",
+      "uncertain"
+    ],
+    "assignment_seed": 20260918,
+    "batch_size": 25,
+    "blind_reviewer_ids": [
+      "screener_a",
+      "screener_b"
+    ],
+    "calibration_record_count": 50,
+    "conflict_adjudicator": "research_owner",
+    "full_text_exclusion_authority": "research_owner",
+    "maximum_calibration_false_exclusions": 0,
+    "minimum_calibration_recall": 0.95,
+    "operational_failure_disposition": "pending_retrieval",
+    "title_abstract_owner_audit_fraction": 0.2
+  },
+  "searches": [
+    {
+      "exact_query": "all:Hegselmann OR all:Deffuant OR all:\"Krause model\" OR all:\"relative agreement model\"",
+      "execution_window": "Single execution after owner approval and after the known-item list and its development and test halves are recorded with their SHA-256. Publication cutoff 2026-09-11, aligned with the corpus; every request time is recorded.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 10,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.s01",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 10-page cap, inconsistent pagination or count, malformed response or unresolved provider failure. A cap never establishes absence and requires a registered successor or an owner decision before screening."
+    },
+    {
+      "exact_query": "(all:\"steady state\" OR all:\"stopping criterion\" OR all:\"stopping rule\" OR all:\"termination criterion\" OR all:\"convergence criterion\" OR all:equilibration) AND (all:\"agent-based\" OR all:\"multi-agent\") AND (all:opinion OR all:\"social influence\" OR all:polarization)",
+      "execution_window": "Single execution after owner approval and after the known-item list and its development and test halves are recorded with their SHA-256. Publication cutoff 2026-09-11, aligned with the corpus; every request time is recorded.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 10,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.arxiv.s02",
+      "searched_fields": [
+        "all"
+      ],
+      "sort": "provider_default",
+      "source_id": "arxiv",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 10-page cap, inconsistent pagination or count, malformed response or unresolved provider failure. A cap never establishes absence and requires a registered successor or an owner decision before screening."
+    },
+    {
+      "exact_query": "(\"bounded confidence\" OR deffuant* OR hegsel* OR \"hk model\" OR \"hk dynamics\" OR \"dw model\" OR \"bound of confidence\" OR \"radius of confidence\" OR \"threshold of confidence\" OR \"confidence bound\" OR \"confidence bounds\" OR \"confidence radius\" OR \"confidence radii\" OR \"confidence threshold\" OR \"confidence thresholds\" OR weisbuch* OR \"relative agreement model*\" OR \"bounded compromise*\" OR \"krauses model*\" OR \"krauses consensus*\" OR \"krauses dynamics*\" OR \"krauses multi*\" OR \"mixing beliefs*\" OR hegelsm* OR krause* OR \"2r conjecture\" OR \"bounded trust\") OR ((\"opinion dynamics*\" OR \"opinion formation*\" OR \"opinion evolution*\" OR \"opinion model*\" OR \"bounded confidence\" OR deffuant* OR hegsel* OR \"voter model*\" OR \"q voter*\" OR sznajd* OR degroot* OR friedkin* OR \"social influence model*\" OR \"opinion influence model*\" OR \"consensus dynamics*\" OR \"consensus formation*\" OR \"consensus model*\" OR \"agent based model* of opinion*\" OR \"agent based model* of polariz*\" OR \"agent based model* of belief*\" OR \"belief dynamics*\" OR \"attitude dynamics*\" OR hegelsm* OR krause* OR \"2r conjecture\" OR \"bounded trust\") AND ((\"stopping criteri*\" OR \"stopping rule*\" OR \"stopping condition*\" OR \"stopping time*\" OR \"terminat* criteri*\" OR \"terminat* condition*\" OR \"terminat* rule*\" OR \"convergence criteri*\" OR \"convergence condition*\" OR \"convergence test*\" OR \"convergence detection*\" OR \"convergence check*\" OR \"convergence threshold*\" OR \"convergence tolerance*\" OR \"convergence time\" OR \"convergence times\" OR \"consensus time\" OR \"consensus times\" OR \"freezing time\" OR \"freezing times\" OR \"relaxation time\" OR \"relaxation times\" OR \"absorption time\" OR \"absorption times\" OR \"fixation time\" OR \"fixation times\" OR \"ordering time\" OR \"ordering times\" OR \"stabilisation time\" OR \"stabilisation times\" OR \"stabilization time\" OR \"stabilization times\" OR \"equilibration time\" OR \"equilibration times\" OR \"time to consensus*\" OR \"time to convergence*\" OR \"time to converge*\" OR \"time to stabili*\" OR \"time to equilibri*\" OR \"time to reach consensus*\" OR \"time to reach convergence*\" OR \"time to reach converge*\" OR \"time to reach stabili*\" OR \"time to reach equilibri*\" OR \"finite time convergence*\" OR \"finite time consensus*\" OR \"finite time stabili*\" OR \"rate of convergence*\" OR \"speed of convergence*\" OR \"convergence rate*\" OR \"convergence speed*\" OR \"absorbing state*\" OR \"steady state detection*\" OR stationarity OR \"long transient*\" OR \"slow transient*\" OR \"metastable transient*\" OR metastab* OR \"slow convergence*\" OR \"slow relaxation*\" OR \"slow dynamics*\" OR \"termination time*\" OR \"halting time*\" OR \"termination of the simulation*\" OR \"halting of the simulation*\" OR \"simulation length*\" OR \"simulation horizon*\" OR \"simulation duration*\" OR \"numerical precision*\" OR \"numerical accuracy*\" OR \"numerical error*\" OR \"numerical artifact*\" OR \"numerical issue*\" OR \"numerical problem*\" OR \"numerical difficult*\" OR \"numerical point precision*\" OR \"numerical point accuracy*\" OR \"numerical point error*\" OR \"numerical point artifact*\" OR \"numerical point issue*\" OR \"numerical point problem*\" OR \"numerical point difficult*\" OR \"floating precision*\" OR \"floating accuracy*\" OR \"floating error*\" OR \"floating artifact*\" OR \"floating issue*\" OR \"floating problem*\" OR \"floating difficult*\" OR \"floating point precision*\" OR \"floating point accuracy*\" OR \"floating point error*\" OR \"floating point artifact*\" OR \"floating point issue*\" OR \"floating point problem*\" OR \"floating point difficult*\" OR \"does not converge*\" OR \"do not converge*\" OR \"will not converge*\" OR \"may not converge*\" OR nonconvergen* OR \"non convergen*\" OR \"never converge*\" OR \"never reach*\" OR \"fail* to converge*\" OR \"asymptotic behavio*\") OR (fragment* OR \"opinion cluster\" OR \"opinion clusters\" OR \"final cluster\" OR \"final clusters\" OR \"number of clusters\" OR \"number of groups\" OR \"number of opinions\" OR \"number of factions\" OR \"number of opinion clusters\" OR \"number of opinion groups\" OR \"number of opinion opinions\" OR \"number of opinion factions\" OR \"cluster formation*\" OR \"cluster detection*\" OR \"cluster count*\" OR \"cluster number*\" OR \"cluster of opinions\" OR \"clustering of opinions\" OR multicluster* OR \"multi cluster*\" OR \"plurality of opinions\" OR \"coexistence of opinions\" OR \"opinion groups\" OR \"opinion camps\" OR \"opinion factions\" OR clustering)))",
+      "execution_window": "Single deterministic evaluation after owner approval and after the known-item list and its halves are recorded with their SHA-256; no provider is contacted. Publication cutoff 2026-09-11, inherited from the pinned observations.",
+      "export_procedure": "Copy the pinned observations into the acquisition store as a restricted artifact and persist every page, with each matched record keeping its prior observation id and original fields, as specified for corpus_query_v1.",
+      "filters": [
+        {
+          "key": "acquisition_receipt_sha256",
+          "value": "5aa52db3b98487a17a5c50d246c23e4c97d611a4a1c6c589119c2cf8d29bc675"
+        },
+        {
+          "key": "observations_sha256",
+          "value": "772afb69e868ef3fc6cf94e79d3c1b422f11f8fba453621c0092fc65028fa5a1"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 100,
+      "page_size": 1000,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "none",
+      "search_id": "search.corpus_query.focused",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "corpus_query",
+      "stopping_rule": "Complete when every pinned observation has been evaluated once in artifact order and the matched observations are exhausted. A digest mismatch, malformed query or page cap stops the search as incomplete before screening."
+    },
+    {
+      "exact_query": "Hegselmann OR Deffuant OR \"Krause model\" OR \"relative agreement model\"",
+      "execution_window": "Single execution after owner approval and after the known-item list and its development and test halves are recorded with their SHA-256. Publication cutoff 2026-09-11, aligned with the corpus; every request time is recorded.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 20,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.s01",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 20-page cap, inconsistent pagination or count, malformed response or unresolved provider failure. A cap never establishes absence and requires a registered successor or an owner decision before screening."
+    },
+    {
+      "exact_query": "(\"steady state\" OR \"steady-state\" OR \"stopping criterion\" OR \"stopping rule\" OR \"termination criterion\" OR \"convergence criterion\" OR \"warm-up\" OR equilibration OR stationarity) AND (\"agent-based\" OR \"agent based\" OR \"individual-based\" OR \"multi-agent\") AND (opinion OR \"social influence\" OR polarization OR polarisation OR \"belief dynamics\")",
+      "execution_window": "Single execution after owner approval and after the known-item list and its development and test halves are recorded with their SHA-256. Publication cutoff 2026-09-11, aligned with the corpus; every request time is recorded.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [
+        {
+          "key": "from_publication_date",
+          "value": "1970-01-01"
+        },
+        {
+          "key": "to_publication_date",
+          "value": "2026-09-11"
+        },
+        {
+          "key": "type",
+          "value": "article|conference-paper|preprint|review"
+        }
+      ],
+      "locale": "en",
+      "max_pages": 20,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.openalex.s02",
+      "searched_fields": [
+        "abstract",
+        "title"
+      ],
+      "sort": "provider_default",
+      "source_id": "openalex",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 20-page cap, inconsistent pagination or count, malformed response or unresolved provider failure. A cap never establishes absence and requires a registered successor or an owner decision before screening."
+    }
+  ],
+  "status": "review_candidate",
+  "supersedes": "opinion-dynamics-systematic-map-v4",
+  "supplementary_search_policy": {
+    "google_scholar_mode": "manual_supplement_only",
+    "methods": [
+      "backward_citation_chasing",
+      "controlled_acm_digital_library_export",
+      "controlled_ieee_xplore_export",
+      "crossref_identifier_recovery",
+      "forward_citation_chasing",
+      "known_item_check",
+      "secondary_study_seed",
+      "unmatched_record_sample"
+    ],
+    "requires_source_specific_record": true,
+    "stopping_rule": "Seeds are the works included after full-text screening and the secondary studies found during screening. Each round registers, by dated amendment before execution, one OpenAlex filter-only strategy per seed and direction (cites: for forward, cited_by: for backward) for works newly included in the previous round, recovers missing identifiers by exact Crossref DOI lookup, deduplicates against everything already identified and screens new records with the same dual process. Stop after two consecutive rounds with no new eligible work after deduplication. If a round would add more than 3,000 new records after deduplication, it pauses for a recorded owner decision before screening. Keep seeds, citation edges, exact requests, dates and source records; references without a verified identifier remain in a reconciliation ledger. Davi performs the controlled ACM and IEEE exports before title/abstract screening starts or they are reported as not executed with the reason. Secondary seeds never become primary inclusions automatically."
+  },
+  "synthesis_plan": {
+    "counting_unit": "scholarly_work",
+    "meta_analysis_authorized": false,
+    "methods": [
+      "candidate_gap_test",
+      "gap_matrix",
+      "narrative_synthesis",
+      "structured_tabulation"
+    ],
+    "minimum_claim_support": 2,
+    "novelty_claim_authorized": false,
+    "planned_strata": [
+      "cluster_identification_method",
+      "guarantee_type",
+      "model_family",
+      "network_sparsity_class",
+      "network_structure_flags",
+      "network_topology",
+      "stopping_rule_type",
+      "study_type"
+    ],
+    "preserve_conflicts_and_uncertainty": true,
+    "separate_observation_interpretation_inference": true
+  },
+  "title": "Systematic review of stopping, convergence and fragmentation diagnosis in bounded-confidence opinion-dynamics simulations",
+  "update_policy": {
+    "check_corrections_and_retractions": true,
+    "rerun_creates_successor": true,
+    "search_cutoff_required": true
+  }
+}

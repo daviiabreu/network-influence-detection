@@ -1,0 +1,1122 @@
+{
+  "format": "source-bound-metadata-resolution-proposals-1",
+  "local_research_date": "2026-09-13",
+  "timezone": "America/Sao_Paulo",
+  "created_at": "2026-09-14T00:24:15.349630+00:00",
+  "status": "proposal_only_not_promoted",
+  "input_inventory_path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-corpus-pending-metadata.json",
+  "input_inventory_sha256": "03981e02b2ec25f82aba52fde7393e5a7fc23dec5538dd42d37df147e5a1e196",
+  "input_deduplication_sha256": "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+  "external_evidence_directory": "/Users/davi/.local/state/research-workbench/corpus-preparation-20260913/metadata-sources",
+  "external_manifest_sha256": "13943c008cbdb783140418dc8d81d67f204ff3fd6f1579d0c3e9acb6ba1bcd1f",
+  "source_registry": [
+    {
+      "source_id": "arxiv-1910.02100",
+      "url": "https://export.arxiv.org/api/query?id_list=1910.02100&max_results=1",
+      "status": "HTTP Error 429: Unknown Error",
+      "snapshot_file": "arxiv-1910.02100.json",
+      "snapshot_sha256": "02de8aeefba212e96119b9d07bf2c9376b2521368e126782d830eb8517aad66b",
+      "snapshot_size_bytes": 317,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:19:39.269782+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/953026.803455",
+      "url": "https://api.crossref.org/works/10.1145/953026.803455",
+      "status": 200,
+      "snapshot_file": "crossref-002a3e4abc7e74c6.json",
+      "snapshot_sha256": "80001ff060ca54f15df5dad25fecaf01f36c09f91ce1af46cf6617cce87d3fb7",
+      "snapshot_size_bytes": 3218,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:19:38.744959+00:00"
+    },
+    {
+      "source_id": "crossref:10.5699/slaveasteurorev2.91.4.0934",
+      "url": "https://api.crossref.org/works/10.5699/slaveasteurorev2.91.4.0934",
+      "status": 200,
+      "snapshot_file": "crossref-12dd6d32e4949ee8.json",
+      "snapshot_sha256": "c08e1aa1f78be4235b250082fc1beb4128b64f048d087c230a41a211c26485e9",
+      "snapshot_size_bytes": 2315,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:04.167579+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/146628.140383",
+      "url": "https://api.crossref.org/works/10.1145/146628.140383",
+      "status": 200,
+      "snapshot_file": "crossref-200570c262259e8a.json",
+      "snapshot_sha256": "58a3e0f65bf8426276307ab24ef556e43a95fb3ab58b5c8beff82d58b7b66254",
+      "snapshot_size_bytes": 3370,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:19:38.177060+00:00"
+    },
+    {
+      "source_id": "crossref:10.1023/a:1024693130590",
+      "url": "https://api.crossref.org/works/10.1023/a%3A1024693130590",
+      "status": 200,
+      "snapshot_file": "crossref-2aa65fc33fa7440d.json",
+      "snapshot_sha256": "18f0eb99cd62804958ac3a78edcf7ef59f997927aecc44451fdb74cd93ca49c4",
+      "snapshot_size_bytes": 2440,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:00.839047+00:00"
+    },
+    {
+      "source_id": "crossref:10.2200/s00135ed1v01y200905hci004",
+      "url": "https://api.crossref.org/works/10.2200/s00135ed1v01y200905hci004",
+      "status": 200,
+      "snapshot_file": "crossref-34fa2b1b8d426864.json",
+      "snapshot_sha256": "471ea01b592ad5e49e18c07b7cf108677ac0cfae88a1820fa7aad430e8ca5853",
+      "snapshot_size_bytes": 3138,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:02.970024+00:00"
+    },
+    {
+      "source_id": "crossref:10.51211/joia.v6i2.1513",
+      "url": "https://api.crossref.org/works/10.51211/joia.v6i2.1513",
+      "status": 200,
+      "snapshot_file": "crossref-4e27bd4a65c1a6d2.json",
+      "snapshot_sha256": "f4143761a0980dfb87384007b67ded5d690992ed296047f45a55d478aa755270",
+      "snapshot_size_bytes": 2812,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:03.957020+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/139669.140383",
+      "url": "https://api.crossref.org/works/10.1145/139669.140383",
+      "status": 200,
+      "snapshot_file": "crossref-567c5cb1240f825a.json",
+      "snapshot_sha256": "f6c2083ca14e4e760a6542cdd0ccb049785a73a11e0585a9eeb88d939abc51df",
+      "snapshot_size_bytes": 3094,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:01.352493+00:00"
+    },
+    {
+      "source_id": "crossref:10.1007/978-3-031-02187-9",
+      "url": "https://api.crossref.org/works/10.1007/978-3-031-02187-9",
+      "status": 200,
+      "snapshot_file": "crossref-61fcf4f054615efc.json",
+      "snapshot_sha256": "8d75ffd33afcf29fb2d92544fd5559981cb1e6999ccc16b859aef5024a9c59de",
+      "snapshot_size_bytes": 2925,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:00.317280+00:00"
+    },
+    {
+      "source_id": "crossref:10.5215/pennmaghistbio.141.1.0092",
+      "url": "https://api.crossref.org/works/10.5215/pennmaghistbio.141.1.0092",
+      "status": 200,
+      "snapshot_file": "crossref-69e22d39b168c9af.json",
+      "snapshot_sha256": "64d0a7a224a70f840d4b0be76b4c5e7d2f8cbba3c20dfc1b0243c5f8b75d2a74",
+      "snapshot_size_bytes": 2338,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:03.991642+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/952989.803455",
+      "url": "https://api.crossref.org/works/10.1145/952989.803455",
+      "status": 200,
+      "snapshot_file": "crossref-6a9fe3a43505eb4e.json",
+      "snapshot_sha256": "cd95d3675bb554c86af8fccbb31dbd1f124fcab1e34d2ab3a4dcc4c76505d8d3",
+      "snapshot_size_bytes": 3214,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:02.409197+00:00"
+    },
+    {
+      "source_id": "crossref:10.1162/978-0-262-33936-0-ch007",
+      "url": "https://api.crossref.org/works/10.1162/978-0-262-33936-0-ch007",
+      "status": 200,
+      "snapshot_file": "crossref-6fb0c44aebfc1104.json",
+      "snapshot_sha256": "5ea8d3e3586ff57d970dc9f2b7a7400b383e5bc8ef9c8009b36afe57fa8810d9",
+      "snapshot_size_bytes": 2277,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:02.592029+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/3393691.3394217",
+      "url": "https://api.crossref.org/works/10.1145/3393691.3394217",
+      "status": 200,
+      "snapshot_file": "crossref-731ce5f78d28d7d6.json",
+      "snapshot_sha256": "9979fb6476715e5af144139861d2dad556850c9cf7ecf6e6af828ffa8c63e31b",
+      "snapshot_size_bytes": 3977,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:01.871611+00:00"
+    },
+    {
+      "source_id": "crossref:10.1023/a:1011486809357",
+      "url": "https://api.crossref.org/works/10.1023/a%3A1011486809357",
+      "status": 200,
+      "snapshot_file": "crossref-a3f89afb41d3ab97.json",
+      "snapshot_sha256": "9e3fd1867a51eec983455c058c0e098f3cb3f74dd7cedc8ea03b78771d8d0f5b",
+      "snapshot_size_bytes": 2237,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:00.317764+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/2896377.2901488",
+      "url": "https://api.crossref.org/works/10.1145/2896377.2901488",
+      "status": 200,
+      "snapshot_file": "crossref-a43aa1e6d7fd088e.json",
+      "snapshot_sha256": "fc1be87c003b01b351dc686fe1bbc370346512038590094ac0299105dae2a5cd",
+      "snapshot_size_bytes": 3936,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:01.366287+00:00"
+    },
+    {
+      "source_id": "crossref:10.2312/sca/sca05/009-018",
+      "url": "https://api.crossref.org/works/10.2312/sca/sca05/009-018",
+      "status": 404,
+      "snapshot_file": "crossref-a5ae8c706df76c2c.json",
+      "snapshot_sha256": "84a0db9431bb505653674594a08ffc28651e4ea9ad4fdebd6858de54f6898337",
+      "snapshot_size_bytes": 485,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:03.445114+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/800107.803455",
+      "url": "https://api.crossref.org/works/10.1145/800107.803455",
+      "status": 200,
+      "snapshot_file": "crossref-a7e04874ec82564d.json",
+      "snapshot_sha256": "503f0066a257f66fddc8c949d5245d118c091fa72de099d8e24a5014d6465d9f",
+      "snapshot_size_bytes": 2941,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:02.051922+00:00"
+    },
+    {
+      "source_id": "crossref:10.7551/978-0-262-33936-0-ch007",
+      "url": "https://api.crossref.org/works/10.7551/978-0-262-33936-0-ch007",
+      "status": 200,
+      "snapshot_file": "crossref-b3657dba190e2627.json",
+      "snapshot_sha256": "7c9a805ce9de5f9ba298ea1db8ca60f99122cffd019b415f27744f468975b754",
+      "snapshot_size_bytes": 2244,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:04.695318+00:00"
+    },
+    {
+      "source_id": "crossref:10.2307/3092578",
+      "url": "https://api.crossref.org/works/10.2307/3092578",
+      "status": 200,
+      "snapshot_file": "crossref-b39dcd58cf170796.json",
+      "snapshot_sha256": "4d1c417858e4c0fe327f4a9f849f9481bd9b001cfaf0ba0b67f168cd954186e5",
+      "snapshot_size_bytes": 2739,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:03.118722+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/1073368.1073370",
+      "url": "https://api.crossref.org/works/10.1145/1073368.1073370",
+      "status": 200,
+      "snapshot_file": "crossref-b8da0f2e06373965.json",
+      "snapshot_sha256": "d46c8e20035f31885bd7983c62cfafd6d2d795dbf3d898ef6142241a3b2e19e2",
+      "snapshot_size_bytes": 3199,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:00.852809+00:00"
+    },
+    {
+      "source_id": "crossref:10.1109/isca.1992.753323",
+      "url": "https://api.crossref.org/works/10.1109/isca.1992.753323",
+      "status": 200,
+      "snapshot_file": "crossref-bad6fd76e098a613.json",
+      "snapshot_sha256": "8e7843c727cc22e1809e982240c7cbfb27b4cd9da59b579fe13165d8ef84cd54",
+      "snapshot_size_bytes": 2505,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:00.848228+00:00"
+    },
+    {
+      "source_id": "crossref:10.2979/africatoday.65.1.08",
+      "url": "https://api.crossref.org/works/10.2979/africatoday.65.1.08",
+      "status": 200,
+      "snapshot_file": "crossref-bf0250d184a0b937.json",
+      "snapshot_sha256": "b043f677b1f6790b89f2799631a6fb58ee1e54ab9f79fdd641ef600e8d798cf2",
+      "snapshot_size_bytes": 2234,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:03.636259+00:00"
+    },
+    {
+      "source_id": "crossref:10.7551/978-0-262-32621-6-ch118",
+      "url": "https://api.crossref.org/works/10.7551/978-0-262-32621-6-ch118",
+      "status": 200,
+      "snapshot_file": "crossref-bfd8293ea6e6e572.json",
+      "snapshot_sha256": "86c8628e254413d8e7d056dfab5e66e8e4b48a43599e8baf5fe4b7cedad58e3a",
+      "snapshot_size_bytes": 2896,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:04.509256+00:00"
+    },
+    {
+      "source_id": "crossref:10.1023/a:1009902810926",
+      "url": "https://api.crossref.org/works/10.1023/a%3A1009902810926",
+      "status": 200,
+      "snapshot_file": "crossref-d14437f65010bcc8.json",
+      "snapshot_sha256": "44b38113e09c40ba4f0cff375a6704eeb7ea9df0a5723b564c7dd7955c1cd5f5",
+      "snapshot_size_bytes": 2483,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:00.317634+00:00"
+    },
+    {
+      "source_id": "crossref:10.7551/978-0-262-33936-0-ch051",
+      "url": "https://api.crossref.org/works/10.7551/978-0-262-33936-0-ch051",
+      "status": 200,
+      "snapshot_file": "crossref-dcc241e4fd672c11.json",
+      "snapshot_sha256": "100bf27829b769c94024e50a99d3c46d2ba7d03b5fff5ada6bc19c1517c39751",
+      "snapshot_size_bytes": 2245,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:04.985821+00:00"
+    },
+    {
+      "source_id": "crossref:10.1162/978-0-262-32621-6-ch118",
+      "url": "https://api.crossref.org/works/10.1162/978-0-262-32621-6-ch118",
+      "status": 200,
+      "snapshot_file": "crossref-de6ad4b3f407a154.json",
+      "snapshot_sha256": "4bf75b1b49a4ac838c256fb74bb3d441c4578693aa2b0480530c380a2fa98646",
+      "snapshot_size_bytes": 2930,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:02.449390+00:00"
+    },
+    {
+      "source_id": "crossref:10.1162/978-0-262-33936-0-ch051",
+      "url": "https://api.crossref.org/works/10.1162/978-0-262-33936-0-ch051",
+      "status": 200,
+      "snapshot_file": "crossref-dfef26cab81ac0f7.json",
+      "snapshot_sha256": "40b682382ab05a972f4dfac2841b8e99225a63962f038cb04adb4f2a95e033ad",
+      "snapshot_size_bytes": 2278,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:02.928380+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/2964791.2901488",
+      "url": "https://api.crossref.org/works/10.1145/2964791.2901488",
+      "status": 200,
+      "snapshot_file": "crossref-f3454e1d8a667d9f.json",
+      "snapshot_sha256": "f66e19296b957811cd3ec1f47297d6e1e5dbf1fd7f14e379707f968a6d3b6397",
+      "snapshot_size_bytes": 3999,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:01.392668+00:00"
+    },
+    {
+      "source_id": "crossref:10.5699/slaveasteurorev2.93.3.0552",
+      "url": "https://api.crossref.org/works/10.5699/slaveasteurorev2.93.3.0552",
+      "status": 200,
+      "snapshot_file": "crossref-f8f85f225607e46d.json",
+      "snapshot_sha256": "e49efdb0fa49b8fbede402446cd1de6ad4ec7b8468e02a36614f56a84c7d177d",
+      "snapshot_size_bytes": 2321,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:04.471114+00:00"
+    },
+    {
+      "source_id": "crossref:10.1145/3410048.3410065",
+      "url": "https://api.crossref.org/works/10.1145/3410048.3410065",
+      "status": 200,
+      "snapshot_file": "crossref-fb3204a3b1e0e62f.json",
+      "snapshot_sha256": "af8467dc4a39bf8eb01250702295c6e6d1342725eba8cf08b2e5a6f9bc805636",
+      "snapshot_size_bytes": 3827,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:16:01.936239+00:00"
+    },
+    {
+      "source_id": "dblp-nine-records",
+      "url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+%3Fp+%3Ftitle+%3Fyear+%3Fvenue+%3Fdoi+WHERE+%7B+VALUES+%3Fp+%7B+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Falife%2F000116%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Falife%2FMarriottC14%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Falife%2FPacheco16%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Fisca%2FChienK92%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Fsca%2FBuchsbaumB05%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Fsigcse%2FLucas76%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Fsigmetrics%2FMukhopadhyayMR16%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fconf%2Fsigmetrics%2FSankararamanGS20%3E+%3Chttps%3A%2F%2Fdblp.org%2Frec%2Fseries%2Fsynthesis%2F2009Gay%3E+%7D+%3Fp+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B+%3Fp+dblp%3AyearOfPublication+%3Fyear+%7D+OPTIONAL+%7B+%3Fp+dblp%3ApublishedIn+%3Fvenue+%7D+OPTIONAL+%7B+%3Fp+dblp%3Adoi+%3Fdoi+%7D+%7D+ORDER+BY+%3Fp+%3Fdoi+LIMIT+100&format=json",
+      "status": 200,
+      "snapshot_file": "dblp-nine-records.json",
+      "snapshot_sha256": "76119feed94afc1dcd1effd6cf9204db8881eec75fd6802455379f5373c79e4d",
+      "snapshot_size_bytes": 15729,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:18:35.971619+00:00"
+    },
+    {
+      "source_id": "acm-bandits-review",
+      "url": "https://dl.acm.org/doi/10.1145/3410048.3410065",
+      "status": 403,
+      "snapshot_file": "editorial-acm-bandits-review.json",
+      "snapshot_sha256": "93a245f8e736d7d0caa3ebe081881794794cb213d8b185e22df9203d664b1839",
+      "snapshot_size_bytes": 465,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:41.140692+00:00"
+    },
+    {
+      "source_id": "acm-bandits",
+      "url": "https://dl.acm.org/doi/10.1145/3393691.3394217",
+      "status": 403,
+      "snapshot_file": "editorial-acm-bandits.json",
+      "snapshot_sha256": "4b46313496437fb6cd48714717e55bd86a0031f769203283d475ea11b1e4076e",
+      "snapshot_size_bytes": 458,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:40.759951+00:00"
+    },
+    {
+      "source_id": "eg-sca",
+      "url": "https://doi.org/10.2312/SCA/SCA05/009-018",
+      "status": 200,
+      "snapshot_file": "editorial-eg-sca.json",
+      "snapshot_sha256": "4c280aeb7bddd48f9c8635deecea34d6ed99de189a3f2d5ec683d940df13898f",
+      "snapshot_size_bytes": 1974,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.919063+00:00"
+    },
+    {
+      "source_id": "ieee-planar",
+      "url": "https://ieeexplore.ieee.org/document/753323/",
+      "status": 202,
+      "snapshot_file": "editorial-ieee-planar.json",
+      "snapshot_sha256": "2636089a3759f6b69a752026754d54b54ffc2303b09342d05df9cb1341e7b440",
+      "snapshot_size_bytes": 762,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:41.185971+00:00"
+    },
+    {
+      "source_id": "joia",
+      "url": "https://ejournal-binainsani.ac.id/index.php/JOIA/article/view/1513",
+      "status": "<urlopen error [Errno 61] Connection refused>",
+      "snapshot_file": "editorial-joia.json",
+      "snapshot_sha256": "fa9df2883910d95052ee05baef4d84b0b84cc1992a90b6108ebbe28a64d71a15",
+      "snapshot_size_bytes": 420,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.145722+00:00"
+    },
+    {
+      "source_id": "jstor-africa",
+      "url": "https://www.jstor.org/stable/10.2979/africatoday.65.1.08",
+      "status": 200,
+      "snapshot_file": "editorial-jstor-africa.json",
+      "snapshot_sha256": "a11b509d2d0adf718e50d9c1de1a37b3c2f031a825c2947b900a42c47cc545fa",
+      "snapshot_size_bytes": 729,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.835829+00:00"
+    },
+    {
+      "source_id": "jstor-penn",
+      "url": "https://www.jstor.org/stable/10.5215/pennmaghistbio.141.1.0092",
+      "status": 200,
+      "snapshot_file": "editorial-jstor-penn.json",
+      "snapshot_sha256": "07956544077544b6438856e941f35eba2f1d985b0ba94b1039f5d583089c10fb",
+      "snapshot_size_bytes": 739,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.836038+00:00"
+    },
+    {
+      "source_id": "jstor-seer-2013",
+      "url": "https://www.jstor.org/stable/10.5699/slaveasteurorev2.91.4.0934",
+      "status": 200,
+      "snapshot_file": "editorial-jstor-seer-2013.json",
+      "snapshot_sha256": "c2741d55da8b5c209d9fb2a6d60f3c38cc6ea1a0ff5f6da359c59d0e5e90ec25",
+      "snapshot_size_bytes": 746,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.638019+00:00"
+    },
+    {
+      "source_id": "jstor-seer-2015",
+      "url": "https://www.jstor.org/stable/10.5699/slaveasteurorev2.93.3.0552",
+      "status": 200,
+      "snapshot_file": "editorial-jstor-seer-2015.json",
+      "snapshot_sha256": "25720e21132ee0f2c0d4d9cf70c56c7b4525cc86554c5f14615be267f9ababf8",
+      "snapshot_size_bytes": 746,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.776164+00:00"
+    },
+    {
+      "source_id": "mit-ch007",
+      "url": "https://direct.mit.edu/isal/article-abstract/doi/10.1162/978-0-262-33936-0-ch007",
+      "status": 403,
+      "snapshot_file": "editorial-mit-ch007.json",
+      "snapshot_sha256": "75b809cc3d69200f214fc561c78085869226407c044effee896a12bf8c38da3d",
+      "snapshot_size_bytes": 524,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:40.371595+00:00"
+    },
+    {
+      "source_id": "mit-ch051",
+      "url": "https://direct.mit.edu/isal/article-abstract/doi/10.1162/978-0-262-33936-0-ch051",
+      "status": 403,
+      "snapshot_file": "editorial-mit-ch051.json",
+      "snapshot_sha256": "597a92c2d0854cd10771d54b83f8d7697c2033836ae84c84f0b0857f6766cb6c",
+      "snapshot_size_bytes": 524,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:40.460154+00:00"
+    },
+    {
+      "source_id": "mit-ch118",
+      "url": "https://direct.mit.edu/isal/article-abstract/doi/10.1162/978-0-262-32621-6-ch118",
+      "status": 403,
+      "snapshot_file": "editorial-mit-ch118.json",
+      "snapshot_sha256": "f04bb0ac22281a131769b5404367a9747076ff603f3a66986a4a8ec3618e1675",
+      "snapshot_size_bytes": 524,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:40.579451+00:00"
+    },
+    {
+      "source_id": "oup-review",
+      "url": "https://academic.oup.com/jah/article-abstract/89/4/1516/744961",
+      "status": 403,
+      "snapshot_file": "editorial-oup-review.json",
+      "snapshot_sha256": "ef28341ace11dc72242518f959421737c774083d76afa79e4fa4ed07de454927",
+      "snapshot_size_bytes": 489,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.546695+00:00"
+    },
+    {
+      "source_id": "springer-book",
+      "url": "https://link.springer.com/book/10.1007/978-3-031-02187-9",
+      "status": 200,
+      "snapshot_file": "editorial-springer-book.json",
+      "snapshot_sha256": "fcd79f0053b5faf544a752c7abd0ff50377047dc76c036ec51bb1e86b701ca1f",
+      "snapshot_size_bytes": 2343,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:39.863913+00:00"
+    },
+    {
+      "source_id": "springer-learning",
+      "url": "https://link.springer.com/article/10.1023/A:1009902810926",
+      "status": 200,
+      "snapshot_file": "editorial-springer-learning.json",
+      "snapshot_sha256": "4d9baf63a2ad4d4af07767c328cbc9b36ea0370dc0f49485199f16a99e0ae55a",
+      "snapshot_size_bytes": 4201,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:37.356232+00:00"
+    },
+    {
+      "source_id": "springer-policy",
+      "url": "https://link.springer.com/article/10.1023/A:1011486809357",
+      "status": 200,
+      "snapshot_file": "editorial-springer-policy.json",
+      "snapshot_sha256": "e63c62cc88262e3d7eb8cec09ecb19e20851055a8a36741f758b0177f29fb527",
+      "snapshot_size_bytes": 4017,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:37.356053+00:00"
+    },
+    {
+      "source_id": "springer-settlement",
+      "url": "https://link.springer.com/article/10.1023/A:1024693130590",
+      "status": 200,
+      "snapshot_file": "editorial-springer-settlement.json",
+      "snapshot_sha256": "c92ae8fb3017a78960861c62fb66a412c80f84fa23971eeec4902df2182c1fc9",
+      "snapshot_size_bytes": 4185,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:17:37.356375+00:00"
+    },
+    {
+      "source_id": "web-access-failures",
+      "url": null,
+      "status": "mixed_failures",
+      "snapshot_file": "web-access-failures.json",
+      "snapshot_sha256": "18c83f84c6eb70c2baf78f93c574954976996dcbef08610a6ed5992dde7188f4",
+      "snapshot_size_bytes": 1156,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-arxiv-bandits",
+      "url": "https://arxiv.org/abs/1910.02100",
+      "status": "indexed_metadata_readable_live_api_rate_limited",
+      "snapshot_file": "web-arxiv-bandits.json",
+      "snapshot_sha256": "af4c0d6eda6afcebba6bc425a5e9d452d91aca8f4f233563ea1053aeace9345e",
+      "snapshot_size_bytes": 886,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-cityu-africa",
+      "url": "https://scholars.cityu.edu.hk/en/publications/book-review-longman-timothy-2017-memory-and-justice-in-post-genoc/",
+      "status": "indexed_metadata_readable",
+      "snapshot_file": "web-cityu-africa.json",
+      "snapshot_sha256": "c7593237f2ec9a6e20f732430c918df013d4b040b0f63d6c2a101c016c9c27aa",
+      "snapshot_size_bytes": 1257,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-crossref-alias",
+      "url": "https://www.crossref.org/documentation/reports/conflict-report/",
+      "status": "documentation_readable",
+      "snapshot_file": "web-crossref-alias.json",
+      "snapshot_sha256": "f0604cd73eafb0e9bbd0be2f8a31d5c8e150a4ba41b44dfbd4bf7f87521c25c1",
+      "snapshot_size_bytes": 883,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-crossref-rest-alias",
+      "url": "https://community.crossref.org/t/adding-redirects-for-aliased-dois-in-the-rest-api/13138",
+      "status": "documentation_readable",
+      "snapshot_file": "web-crossref-rest-alias.json",
+      "snapshot_sha256": "82e59f7fbc6e2991f5978283fa7954823318232367921b6b023b796a8b458e38",
+      "snapshot_size_bytes": 855,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-eg-collection",
+      "url": "https://diglib.eg.org/collections/89730924-997a-49f6-8db6-1ba88756b04e",
+      "status": "indexed_metadata_readable",
+      "snapshot_file": "web-eg-collection.json",
+      "snapshot_sha256": "b2cf37d4adaab4e50f11adaf067872e77afee9a0a8d7bd0ecaa78f714ecd39de",
+      "snapshot_size_bytes": 984,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-joia",
+      "url": "https://ejournal-binainsani.ac.id/index.php/JOIA/article/view/1513",
+      "status": "indexed_metadata_readable_direct_connection_refused",
+      "snapshot_file": "web-joia.json",
+      "snapshot_sha256": "b1cbe52a2f345172505b4b091c55101788153f9f2b3e1747b5be37a1385b6300",
+      "snapshot_size_bytes": 1007,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-jstor-penn",
+      "url": "https://www.jstor.org/stable/10.5215/pennmaghistbio.141.issue-1",
+      "status": "metadata_readable",
+      "snapshot_file": "web-jstor-penn.json",
+      "snapshot_sha256": "03796061dad79814382fd5b3b2d72ed80d1f251b4d77afd73a3c9795290dd36f",
+      "snapshot_size_bytes": 969,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-jstor-seer-2013",
+      "url": "https://www.jstor.org/stable/10.5699/slaveasteurorev2.91.issue-4",
+      "status": "indexed_metadata_readable",
+      "snapshot_file": "web-jstor-seer-2013.json",
+      "snapshot_sha256": "c44d05516d215eb1b6ef1e18024edb29491e0a02ea6fb6bb70a68fd6dbae2dc3",
+      "snapshot_size_bytes": 1018,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-jstor-seer-2015",
+      "url": "https://www.jstor.org/stable/10.5699/slaveasteurorev2.93.issue-3",
+      "status": "indexed_metadata_readable",
+      "snapshot_file": "web-jstor-seer-2015.json",
+      "snapshot_sha256": "159a1748d8d3b7d921b1b553f82651ba545a05e22f81e0ebcb26df848aadb733",
+      "snapshot_size_bytes": 974,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-oup-review-metadata",
+      "url": "https://academic.oup.com/jah/article-pdf/89/4/1516/2231027/89-4-1516.pdf",
+      "status": "indexed_metadata_readable_no_pdf_download",
+      "snapshot_file": "web-oup-review-metadata.json",
+      "snapshot_sha256": "4d199d0a6677b7d596ea7e7c490c64b58ac53c1731613424520cbe377b0da028",
+      "snapshot_size_bytes": 923,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    },
+    {
+      "source_id": "web-oup-toc",
+      "url": "https://academic.oup.com/jah/issue/89/4",
+      "status": "indexed_metadata_readable",
+      "snapshot_file": "web-oup-toc.json",
+      "snapshot_sha256": "e60c89c80de323c663fd39218646bd23abf55fbefc54d79d6255e9e60d8ee94a",
+      "snapshot_size_bytes": 907,
+      "access_class": "public_metadata_projection",
+      "recorded_at": "2026-09-14T00:21:20.037467+00:00"
+    }
+  ],
+  "title_proposals": [
+    {
+      "work_id": "work.v2.26bfa8f4d833cac14f231b10",
+      "candidate_id": "metadata.v1.d42cd08313775db8cb6ed4cc",
+      "record_ids": [
+        "observation.a8822202786493b6caec5761f7f27415ac7c044feeea7a148f88d1212f238c9b"
+      ],
+      "doi": "10.1023/a:1011486809357",
+      "original_title": null,
+      "finding": "confirmed_publisher_article_title",
+      "proposed_article_title": "The Social Psychology of Policy Analysis",
+      "reviewed_work_title": null,
+      "editorial_display_heading": null,
+      "independent_review_title": "not_applicable",
+      "source_ids": [
+        "crossref:10.1023/a:1011486809357",
+        "springer-policy"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Stage exact citation_title bound to citation_doi; preserve the title-less observation.",
+      "evidence_note": "HTTP 200 publisher metadata includes citation_title and citation_doi; Crossref title remains empty. Publisher dc.type=OriginalPaper is a bibliographic label, not an eligibility decision."
+    },
+    {
+      "work_id": "work.v2.34b9be3dede102b1618f9628",
+      "candidate_id": "metadata.v1.2549f65cfc14c6b88e8f661f",
+      "record_ids": [
+        "observation.c99adadabff7febd3c6b0b704106b7464cfb3ac6e0c9a063c5bb542fc1f37e48"
+      ],
+      "doi": "10.1023/a:1009902810926",
+      "original_title": null,
+      "finding": "confirmed_publisher_article_title",
+      "proposed_article_title": "Self-efficacy Theory and Learning Environment Research",
+      "reviewed_work_title": null,
+      "editorial_display_heading": null,
+      "independent_review_title": "not_applicable",
+      "source_ids": [
+        "crossref:10.1023/a:1009902810926",
+        "springer-learning"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Stage exact citation_title bound to citation_doi; preserve the title-less observation.",
+      "evidence_note": "HTTP 200 publisher metadata includes citation_title and citation_doi; Crossref title remains empty. Publisher dc.type=OriginalPaper is a bibliographic label, not an eligibility decision."
+    },
+    {
+      "work_id": "work.v2.43351c396ccca39bae01717a",
+      "candidate_id": "metadata.v1.0e18d44d37cf2642f10b72ae",
+      "record_ids": [
+        "observation.c7c3840350af4810af7ace86e2a96b334ab2ff868273f4b1fff97e20d01b19f4"
+      ],
+      "doi": "10.5699/slaveasteurorev2.91.4.0934",
+      "original_title": null,
+      "finding": "publisher_index_explicitly_untitled",
+      "proposed_article_title": null,
+      "reviewed_work_title": "Party Patronage and Party Government in European Democracies",
+      "editorial_display_heading": null,
+      "independent_review_title": null,
+      "source_ids": [
+        "crossref:10.5699/slaveasteurorev2.91.4.0934",
+        "web-jstor-seer-2013"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Keep authorial title null and represent explicitly untitled book review with separate reviewed-work metadata.",
+      "evidence_note": "Primary JSTOR issue labels the review Untitled; the adjacent book title is not the review authorial title. Direct individual-page HTTP 200 is a Client Challenge."
+    },
+    {
+      "work_id": "work.v2.59d8455c664a03aeb09642b5",
+      "candidate_id": "metadata.v1.ea8185255c7dc5d57ab30655",
+      "record_ids": [
+        "observation.5c9272239df1810851ae74ea74c294fa27e1fe986d691b913f7e03e22e081b59"
+      ],
+      "doi": "10.2979/africatoday.65.1.08",
+      "original_title": null,
+      "finding": "no_authorial_title_verified",
+      "proposed_article_title": null,
+      "reviewed_work_title": "Memory and Justice in Post-Genocide Rwanda",
+      "editorial_display_heading": null,
+      "independent_review_title": null,
+      "source_ids": [
+        "crossref:10.2979/africatoday.65.1.08",
+        "web-cityu-africa",
+        "jstor-africa",
+        "web-access-failures"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Keep article title null; preserve institutional book-review heading and reviewed-work metadata separately.",
+      "evidence_note": "Historical JSTOR evidence explicitly called this Untitled; current direct response is a challenge and web open exposes no usable metadata, so current authorial-title absence is not independently established. CityU provides a descriptive Book Review heading and 2019-01, whereas Crossref says 2018; retain the date disagreement.",
+      "institutional_display_heading": "Book Review: Longman, Timothy. 2017. Memory and Justice in Post-Genocide Rwanda",
+      "publication_date_conflict": {
+        "crossref": 2018,
+        "institutional": "2019-01"
+      }
+    },
+    {
+      "work_id": "work.v2.68b38a78b030274e4327db4b",
+      "candidate_id": "metadata.v1.2b16f287360d30fbd72386e5",
+      "record_ids": [
+        "observation.61f43fecedb0dbf0fc926339631233420e10dd56f03755cb698f879bb7c756c0"
+      ],
+      "doi": "10.5699/slaveasteurorev2.93.3.0552",
+      "original_title": null,
+      "finding": "publisher_index_explicitly_untitled",
+      "proposed_article_title": null,
+      "reviewed_work_title": "Hip Hop Ukraine: Music, Race, and African Migration",
+      "editorial_display_heading": null,
+      "independent_review_title": null,
+      "source_ids": [
+        "crossref:10.5699/slaveasteurorev2.93.3.0552",
+        "web-jstor-seer-2015"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Keep authorial title null and represent explicitly untitled book review with separate reviewed-work metadata.",
+      "evidence_note": "Primary JSTOR issue labels the review Untitled; the adjacent book title is not the review authorial title. Direct individual-page HTTP 200 is a Client Challenge."
+    },
+    {
+      "work_id": "work.v2.822e2c15599b7ea8ea32b51e",
+      "candidate_id": "metadata.v1.8a79703d6ac027039213a5f9",
+      "record_ids": [
+        "observation.c639248f0936172a71d544531051914a4787e55b69e8ff35f1398122c41b7deb"
+      ],
+      "doi": "10.51211/joia.v6i2.1513",
+      "original_title": null,
+      "finding": "primary_index_title_candidate",
+      "proposed_article_title": "Levers of Control, Organizational Life Cycle, dan Strategi: Sebuah Pendekatan Kualitatif",
+      "reviewed_work_title": null,
+      "editorial_display_heading": null,
+      "independent_review_title": "not_applicable",
+      "source_ids": [
+        "crossref:10.51211/joia.v6i2.1513",
+        "web-joia",
+        "joia"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Stage the publisher-index title candidate with source-mode limitation; direct publisher metadata verification remains pending.",
+      "evidence_note": "Primary-page index binds title, DOI, author, date and pages. Direct connection was refused; Crossref title remains empty."
+    },
+    {
+      "work_id": "work.v2.88dd1def024be7a453c6df2f",
+      "candidate_id": "metadata.v1.b1a486199ea6c6fee2c9a177",
+      "record_ids": [
+        "observation.102c70989597ea089dab89ed77f9299c4bbc60c84f3af10df9902348f82e5435"
+      ],
+      "doi": "10.2307/3092578",
+      "original_title": null,
+      "finding": "review_heading_candidate",
+      "proposed_article_title": null,
+      "reviewed_work_title": "A Controversial Spirit: Evangelical Awakenings in the South",
+      "editorial_display_heading": "A Controversial Spirit: Evangelical Awakenings in the South",
+      "independent_review_title": null,
+      "source_ids": [
+        "crossref:10.2307/3092578",
+        "web-oup-toc",
+        "web-oup-review-metadata",
+        "oup-review"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Retain original review title as null; stage the publisher bibliographic heading separately from the reviewed book and reviewer.",
+      "evidence_note": "OUP issue places the DOI under Book Reviews and credits James O. Farmer. Philip N. Mulder is the reviewed-book author. Crossref lists both in author; do not carry both into a review-author field.",
+      "reviewer": "James O. Farmer",
+      "reviewed_work_creators": [
+        "Philip N. Mulder"
+      ]
+    },
+    {
+      "work_id": "work.v2.da28e163d6aa1e29945ea182",
+      "candidate_id": "metadata.v1.8b2b44dc633a7d71814adc05",
+      "record_ids": [
+        "observation.c2e62a6168efcac92e23ac08accedde61f5583165e64c10e0cbb2bf0ec3607ad"
+      ],
+      "doi": "10.5215/pennmaghistbio.141.1.0092",
+      "original_title": null,
+      "finding": "publisher_index_explicitly_untitled",
+      "proposed_article_title": null,
+      "reviewed_work_title": "Governed by a Spirit of Opposition: The Origins of American Political Practice in Colonial Philadelphia",
+      "editorial_display_heading": null,
+      "independent_review_title": null,
+      "source_ids": [
+        "crossref:10.5215/pennmaghistbio.141.1.0092",
+        "web-jstor-penn"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Keep authorial title null and represent explicitly untitled book review with separate reviewed-work metadata.",
+      "evidence_note": "Primary JSTOR issue labels the review Untitled; the adjacent book title is not the review authorial title. Direct individual-page HTTP 200 is a Client Challenge."
+    },
+    {
+      "work_id": "work.v2.e152588b3504fa1bf0b39a4c",
+      "candidate_id": "metadata.v1.c6b942a2d4575be4a7f3f3b0",
+      "record_ids": [
+        "observation.c92cc0fdcbcb8b26e5d421e7888cdb788765635ced02113aad7f6d5e8c2f3579"
+      ],
+      "doi": "10.1023/a:1024693130590",
+      "original_title": null,
+      "finding": "confirmed_publisher_article_title",
+      "proposed_article_title": "When Settlement and Resolution Are in Conflict: Searching for a Mideast Peace Dividend",
+      "reviewed_work_title": null,
+      "editorial_display_heading": null,
+      "independent_review_title": "not_applicable",
+      "source_ids": [
+        "crossref:10.1023/a:1024693130590",
+        "springer-settlement"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false,
+      "proposed_action": "Stage exact citation_title bound to citation_doi; preserve the title-less observation.",
+      "evidence_note": "HTTP 200 publisher metadata includes citation_title and citation_doi; Crossref title remains empty. Publisher dc.type=OriginalPaper is a bibliographic label, not an eligibility decision."
+    }
+  ],
+  "identifier_proposals": [
+    {
+      "work_id": "work.v2.0a292b87dab05b9d6ac08104",
+      "record_ids": [
+        "observation.0ffb6e9e1e1f6c98e735de8c8859c3cb002e75adaadae2e15b769a4bd13a78b4"
+      ],
+      "dblp_id": "series/synthesis/2009Gay",
+      "source_title": "Context-Aware Mobile Computing: Affordances of Space, Social Awareness, and Social Influence",
+      "doi_values": [
+        "10.1007/978-3-031-02187-9",
+        "10.2200/s00135ed1v01y200905hci004"
+      ],
+      "finding": "confirmed_crossref_alias",
+      "confirmed_primary_doi": "10.1007/978-3-031-02187-9",
+      "confirmed_aliases": [
+        "10.2200/s00135ed1v01y200905hci004"
+      ],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage evidenced alias while retaining the original identifiers.",
+      "evidence_note": "Crossref request for 10.2200 returns HTTP 301 to 10.1007; the returned DOI, title/subtitle and Geri Gay match. Print 2009 and online 2022-03-05 coexist; do not reinterpret online migration as a new work.",
+      "source_ids": [
+        "crossref:10.1007/978-3-031-02187-9",
+        "crossref:10.2200/s00135ed1v01y200905hci004",
+        "dblp-nine-records",
+        "springer-book",
+        "web-crossref-alias",
+        "web-crossref-rest-alias"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.0cabb1d4b81a24cea2e32b10",
+      "record_ids": [
+        "observation.d51b10b7d67742a8b9355eba86ce094db0c6a061921a0fc9ffca24c39c93ef7e"
+      ],
+      "dblp_id": "conf/sca/BuchsbaumB05",
+      "source_title": "Imitation as a first step to social learning in synthetic characters: a graph-based approach.",
+      "doi_values": [
+        "10.1145/1073368.1073370",
+        "10.2312/sca/sca05/009-018"
+      ],
+      "finding": "joint_publication_identifiers_no_alias_confirmed",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Eurographics DOI resolves to its publisher metadata with the same title, authors and 2005 collection as the ACM record. DBLP links both. Crossref 404 for the Eurographics DOI does not invalidate it. No formal primary/alias pair is established.",
+      "source_ids": [
+        "crossref:10.1145/1073368.1073370",
+        "crossref:10.2312/sca/sca05/009-018",
+        "dblp-nine-records",
+        "eg-sca",
+        "web-eg-collection"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.207e84117323b8b22a0f51ff",
+      "record_ids": [
+        "observation.fe0f76925d93889724b65e753f9e9c640f68246526a74b00f78bbe6ff360f850"
+      ],
+      "dblp_id": "conf/sigmetrics/SankararamanGS20",
+      "source_title": "Social Learning in Multi Agent Multi Armed Bandits.",
+      "doi_values": [
+        "10.1145/3393691.3394217",
+        "10.1145/3410048.3410065"
+      ],
+      "finding": "parallel_short_publications_no_alias_confirmed",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "The conference DOI is in SIGMETRICS Abstracts, pages 29-30; the other DOI is ACM SIGMETRICS Performance Evaluation Review 48(1), pages 29-30. Title/authors and DBLP record agree, but relation is empty. Preserve both manifestations and do not confuse these two-page items with a full-length journal version.",
+      "source_ids": [
+        "crossref:10.1145/3393691.3394217",
+        "crossref:10.1145/3410048.3410065",
+        "dblp-nine-records",
+        "acm-bandits",
+        "acm-bandits-review",
+        "web-arxiv-bandits",
+        "arxiv-1910.02100"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.22441ec89b2a3be41c291677",
+      "record_ids": [
+        "observation.46673b2b1a8e75ea27a33e8f5a2d6f310d708f3f13181b5be7d39fdf9cd8a316"
+      ],
+      "dblp_id": "conf/alife/Pacheco16",
+      "source_title": "Linking Individual to Collective Behavior in Complex Adaptive Networks.",
+      "doi_values": [
+        "10.1162/978-0-262-33936-0-ch007",
+        "10.7551/978-0-262-33936-0-ch007"
+      ],
+      "finding": "publisher_links_converge_no_alias_confirmed",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Both Crossref deposits have matching title, Jorge M. Pacheco, 2016 and page 19. The 10.7551 resource points to a publisher URL containing 10.1162. Both REST DOI requests retain their own DOI; no alias redirect or relation is recorded.",
+      "source_ids": [
+        "crossref:10.1162/978-0-262-33936-0-ch007",
+        "crossref:10.7551/978-0-262-33936-0-ch007",
+        "dblp-nine-records",
+        "mit-ch007"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.303828e0b4b15db99f7fa67a",
+      "record_ids": [
+        "observation.30dbc3e36b60904db88cf897ca81b8190433ef1f0a78fd4f42ab0e4ed1731781"
+      ],
+      "dblp_id": "conf/alife/000116",
+      "source_title": "Social Learning, Environmental Adversity and the Evolution of Cooperation.",
+      "doi_values": [
+        "10.1162/978-0-262-33936-0-ch051",
+        "10.7551/978-0-262-33936-0-ch051"
+      ],
+      "finding": "publisher_links_converge_no_alias_confirmed",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Both deposits identify Peter Andras, the same title, ALIFE 2016 and pages 290-297. The 10.7551 resource points to a publisher URL containing 10.1162. No formal alias confirmed.",
+      "source_ids": [
+        "crossref:10.1162/978-0-262-33936-0-ch051",
+        "crossref:10.7551/978-0-262-33936-0-ch051",
+        "dblp-nine-records",
+        "mit-ch051"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.a39620a3778be2238982976f",
+      "record_ids": [
+        "observation.5cd7f815e1ae47f8d16eba137876095920ecf81251e1a82d7231fa885ac47bac"
+      ],
+      "dblp_id": "conf/isca/ChienK92",
+      "source_title": "Planar-Adaptive Routing: Low-cost Adaptive Networks for Multiprocessors.",
+      "doi_values": [
+        "10.1109/isca.1992.753323",
+        "10.1145/139669.140383"
+      ],
+      "finding": "joint_publication_identifiers_no_alias_confirmed",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "IEEE and ACM records agree on Chien/Kim, ISCA 1992 and pages 268-277; ACM splits title/subtitle. DBLP links both. ACM declares an additional journal manifestation 10.1145/146628.140383 identical to its conference DOI; that relation does not explicitly cover the IEEE DOI.",
+      "source_ids": [
+        "crossref:10.1109/isca.1992.753323",
+        "crossref:10.1145/139669.140383",
+        "dblp-nine-records",
+        "ieee-planar",
+        "crossref:10.1145/146628.140383"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.c5b7e2a6c58a7914e5e6e4ce",
+      "record_ids": [
+        "observation.50ac5c7d18341de4821ffdf33e37850dfd4bc0d99479196c43527cbe369a347b"
+      ],
+      "dblp_id": "conf/sigcse/Lucas76",
+      "source_title": "Planned attitude change while teaching computer literacy.",
+      "doi_values": [
+        "10.1145/800107.803455",
+        "10.1145/952989.803455"
+      ],
+      "finding": "explicit_identical_manifestations_no_alias",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Crossref explicitly relates the conference DOI and ACM SIGCSE Bulletin DOI by is-identical-to. William R. Lucas, title and pages 90-94 agree. A third directly linked manifestation in ACM SIGCUE Outlook has DOI 10.1145/953026.803455. Preserve the three publication containers.",
+      "source_ids": [
+        "crossref:10.1145/800107.803455",
+        "crossref:10.1145/952989.803455",
+        "dblp-nine-records",
+        "web-crossref-alias",
+        "crossref:10.1145/953026.803455"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.eab89dfcf72f4f1a2f7deafa",
+      "record_ids": [
+        "observation.b9810b9084b0ecf6ddcf34478c889337fbe39d1dc7dfec6a59daaf39b7258c9b"
+      ],
+      "dblp_id": "conf/sigmetrics/MukhopadhyayMR16",
+      "source_title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+      "doi_values": [
+        "10.1145/2896377.2901488",
+        "10.1145/2964791.2901488"
+      ],
+      "finding": "explicit_identical_manifestations_no_alias",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Crossref explicitly relates the conference DOI and Performance Evaluation Review 44(1) DOI by is-identical-to. Authors, title and pages 385-386 agree. Two input work proposals contain the same DBLP ID and DOI pair; apply any later recorded resolution consistently to both.",
+      "source_ids": [
+        "crossref:10.1145/2896377.2901488",
+        "crossref:10.1145/2964791.2901488",
+        "dblp-nine-records",
+        "web-crossref-alias"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.ee09e0e8fc8e6120b1198a84",
+      "record_ids": [
+        "observation.63bb749ff6144f583737714fe378f1852cbaaf786355996e2af332ff47aaa33d"
+      ],
+      "dblp_id": "conf/alife/MarriottC14",
+      "source_title": "The Effect of Social Learning on Individual Learning.",
+      "doi_values": [
+        "10.1162/978-0-262-32621-6-ch118",
+        "10.7551/978-0-262-32621-6-ch118"
+      ],
+      "finding": "publisher_links_converge_no_alias_confirmed",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Both deposits agree on title, 2014-07-30 and pages 736-743; 10.7551 points to a publisher URL containing 10.1162. Both expose an institutional entry in the author field, possibly an affiliation deposited in that field. This remains a hypothesis pending an independent publisher author list or another permitted primary manifestation; preserve all source entries. No formal alias confirmed.",
+      "source_ids": [
+        "crossref:10.1162/978-0-262-32621-6-ch118",
+        "crossref:10.7551/978-0-262-32621-6-ch118",
+        "dblp-nine-records",
+        "mit-ch118"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    },
+    {
+      "work_id": "work.v2.f98f5b718cb484ff044b85a9",
+      "record_ids": [
+        "observation.f52caf21ba5718172127d3998fd1c0d39380baef0ce11a7b0b4ab0cdfcf29513"
+      ],
+      "dblp_id": "conf/sigmetrics/MukhopadhyayMR16",
+      "source_title": "Majority Rule Based Opinion Dynamics with Biased and Stubborn Agents.",
+      "doi_values": [
+        "10.1145/2896377.2901488",
+        "10.1145/2964791.2901488"
+      ],
+      "finding": "explicit_identical_manifestations_no_alias",
+      "confirmed_primary_doi": null,
+      "confirmed_aliases": [],
+      "proposed_scholarly_work_relationship": "same_work_candidate_with_identifiers_and_manifestations_preserved",
+      "proposed_action": "Stage source-bound identifier semantics and preserve all publication manifestations; do not delete a DOI or choose a canonical primary merely from order.",
+      "evidence_note": "Crossref explicitly relates the conference DOI and Performance Evaluation Review 44(1) DOI by is-identical-to. Authors, title and pages 385-386 agree. Two input work proposals contain the same DBLP ID and DOI pair; apply any later recorded resolution consistently to both.",
+      "source_ids": [
+        "crossref:10.1145/2896377.2901488",
+        "crossref:10.1145/2964791.2901488",
+        "dblp-nine-records",
+        "web-crossref-alias"
+      ],
+      "promotion_status": "proposal_only",
+      "eligibility_assessed": false
+    }
+  ],
+  "coverage": {
+    "title_candidates": 9,
+    "readiness_conflicts": 10,
+    "distinct_doi_pairs": 9,
+    "initial_doi_requests": 27,
+    "directly_related_doi_requests": 2,
+    "dblp_publication_ids": 9,
+    "dblp_doi_bindings": 18
+  },
+  "canonical_corpus_modified": false,
+  "protocol_modified": false,
+  "acquisition_cas_modified": false,
+  "human_judgments_authored": false,
+  "scientific_eligibility_assessed": false,
+  "screening_or_calibration_executed": false,
+  "limitations": [
+    "No formal single-primary DOI established for eight of nine pairs. Explicit identical-content relations and joint publication evidence must not be mislabeled aliases.",
+    "Three JSTOR index entries explicitly label reviews Untitled. A fourth lacks a verified authorial title in the current pass; retain the historical Untitled evidence and present access limit.",
+    "JOIA and OUP headings are primary indexed projections; direct access failed.",
+    "arXiv exact-ID API request returned 429, so no version-specific relationship was promoted from the search hit.",
+    "This is a bibliographic proposal set, not a corpus-resolution receipt, merge, eligibility decision, calibration or Research Owner acceptance."
+  ]
+}

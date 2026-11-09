@@ -1,0 +1,30 @@
+{
+  "candidate_id": "huang-zhang-2026-postfreeze-lead",
+  "doi": "10.5117/ccr2026.2.9.huan",
+  "title": "Influence in Motion: Tracing Persuasive Dynamics via Multi‐Agent Networks",
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        31
+      ]
+    ]
+  },
+  "discovered_after_challenge_freeze": true,
+  "part_of_64_denominator": false,
+  "discovery_provenance": "root relayed primary publisher lead from venue discovery",
+  "primary_url": "https://www.aup-online.com/content/journals/10.5117/CCR2026.2.9.HUAN",
+  "observed_metadata_sha256": "9de1f114248c8fb619b52bda8dcbe95de584304e2ef13c1a7e2fa5a7ce226003",
+  "baseline_observations_matched": 2,
+  "baseline_matched_sources": [
+    "openalex"
+  ],
+  "baseline_matched_searches": [
+    "search.openalex.q01",
+    "search.openalex.q10"
+  ],
+  "baseline_source_sha256": "f1136eda2f2a3a181f71b1372669b7ec7db0c4b521ec22e98ee3be35b69e2860",
+  "eligibility_status": "pending_full_text_screening",
+  "abstract_assessment": "Publisher abstract explicitly describes opinion dynamics via LLM agents, deliberation on real-world controversy, and co-evolving social network topology."
+}

@@ -1,0 +1,17 @@
+{
+  "audit_missing_categories": [],
+  "audit_unresolved": 101,
+  "maximum_proportion_shifts": [
+    0.01370658372213579,
+    0.011973889650645275
+  ],
+  "reasons": [
+    "incomplete_audit_screening_or_extraction"
+  ],
+  "remainder_relevant_estimate": 1491.2825,
+  "remainder_relevant_wilson_interval": [
+    936.9357755437998,
+    11981.877638526761
+  ],
+  "stop": false
+}

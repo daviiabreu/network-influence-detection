@@ -1,0 +1,350 @@
+{
+  "schema_version": "1",
+  "purpose": "bounded_query_design_pilot",
+  "measurement_id": "arxiv-pilot-v3",
+  "input_protocol": "arxiv-pilot-v1.json",
+  "protocol_sha256": "262904eace32d7400e4d97a5db9c430984866895251f61fc3d6cacf308322420",
+  "result_sha256": "f45616b082429ead2b37f99ed2908516a7f984a30c67d31576db959125035b27",
+  "offline_replay_matches": true,
+  "report": {
+    "blocking_statuses": [
+      "page_cap_reached"
+    ],
+    "found_pairs": 10,
+    "incomplete_pairs": 44,
+    "not_found_pairs": 106,
+    "protocol_sha256": "262904eace32d7400e4d97a5db9c430984866895251f61fc3d6cacf308322420",
+    "recall_is_assertable": false,
+    "schema_version": "1",
+    "total_pairs": 160
+  },
+  "queries": [
+    {
+      "search_id": "search.arxiv.q01",
+      "execution_status": "incomplete",
+      "matched_total": 1535,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "da2c508c6e3ed685e8c1413cd86d938c4a720ba53f0a157594ff11ab98d89442",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=all%3A%22opinion%20dynamics%22%20OR%20all%3A%22opinion%20formation%22%20OR%20all%3A%22opinion%20evolution%22&start=0",
+          "retrieved_at": "2026-09-08T02:05:35.924508Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q01",
+          "source_id": "arxiv"
+        },
+        {
+          "page_index": 1,
+          "raw_artifact_sha256": "2b15a14f8461123e88bcaa219ee480ffa7f9a50c66f2d9262fd7fa6bc7be6882",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=all%3A%22opinion%20dynamics%22%20OR%20all%3A%22opinion%20formation%22%20OR%20all%3A%22opinion%20evolution%22&start=100",
+          "retrieved_at": "2026-09-08T02:05:46.001555Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q01",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q02",
+      "execution_status": "complete",
+      "matched_total": 196,
+      "retained_record_count": 196,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "2fbbc35291126559c7353764551d8977b0c1bc1f87cbadb6344c2b579f242d53",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=all%3A%22bounded%20confidence%22%20OR%20all%3A%22mixing%20beliefs%22%20OR%20all%3A%22bounded-confidence%22&start=0",
+          "retrieved_at": "2026-09-08T02:05:56.076086Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q02",
+          "source_id": "arxiv"
+        },
+        {
+          "page_index": 1,
+          "raw_artifact_sha256": "031cc340cb288a75443ce532efa1de7da3ae4ec8d00963d8b8f8f46646b57ec5",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=all%3A%22bounded%20confidence%22%20OR%20all%3A%22mixing%20beliefs%22%20OR%20all%3A%22bounded-confidence%22&start=100",
+          "retrieved_at": "2026-09-08T02:06:06.161812Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q02",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q03",
+      "execution_status": "incomplete",
+      "matched_total": 229,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "8fa98277ce2589c43e72b17a7978f404dd0c9fc522a5648bcfaa340e459864da",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22reaching%20a%20consensus%22%20AND%20all%3Aprobability%29%20OR%20all%3A%22linear%20opinion%20pool%22%20OR%20all%3A%22opinion%20pooling%22%20OR%20all%3A%22social%20influence%20network%22%20OR%20all%3A%22social%20influence%20and%20opinions%22%20OR%20all%3A%22DeGroot%20model%22%20OR%20all%3A%22Friedkin-Johnsen%22&start=0",
+          "retrieved_at": "2026-09-08T02:06:16.232217Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q03",
+          "source_id": "arxiv"
+        },
+        {
+          "page_index": 1,
+          "raw_artifact_sha256": "7d5fc00aa37890a5817526337c78e09bc715ef0319430a7f388c7fff3b9b018d",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22reaching%20a%20consensus%22%20AND%20all%3Aprobability%29%20OR%20all%3A%22linear%20opinion%20pool%22%20OR%20all%3A%22opinion%20pooling%22%20OR%20all%3A%22social%20influence%20network%22%20OR%20all%3A%22social%20influence%20and%20opinions%22%20OR%20all%3A%22DeGroot%20model%22%20OR%20all%3A%22Friedkin-Johnsen%22&start=100",
+          "retrieved_at": "2026-09-08T02:06:26.316098Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q03",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q04",
+      "execution_status": "incomplete",
+      "matched_total": 318,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "bdb07643a2361b09d1ce2886db1b3cb12b6a8b38b214104b73a3044a7d5a21d2",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22voter%20model%22%20OR%20all%3A%22q-voter%22%20OR%20all%3A%22majority%20rule%22%20OR%20all%3A%22closed%20community%22%29%20AND%20%28all%3Aopinion%20OR%20all%3A%22social%20influence%22%29&start=0",
+          "retrieved_at": "2026-09-08T02:06:36.400243Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q04",
+          "source_id": "arxiv"
+        },
+        {
+          "page_index": 1,
+          "raw_artifact_sha256": "98eba58a1957124677c54cdcc6a0691d56603361950e7b26d19943abfc375b00",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22voter%20model%22%20OR%20all%3A%22q-voter%22%20OR%20all%3A%22majority%20rule%22%20OR%20all%3A%22closed%20community%22%29%20AND%20%28all%3Aopinion%20OR%20all%3A%22social%20influence%22%29&start=100",
+          "retrieved_at": "2026-09-08T02:06:46.468537Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q04",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q05",
+      "execution_status": "complete",
+      "matched_total": 62,
+      "retained_record_count": 62,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "01ffb6288529fb9e169579cbd3dee168f614ac29190f21e1478761b82fcd62ea",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22dissemination%20of%20culture%22%20OR%20all%3A%22cultural%20dissemination%22%20OR%20all%3A%22continuous%20opinions%20and%20discrete%20actions%22%29%20AND%20%28all%3Aopinion%20OR%20all%3Abelief%20OR%20all%3Aculture%29&start=0",
+          "retrieved_at": "2026-09-08T02:06:56.582390Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q05",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q06",
+      "execution_status": "complete",
+      "matched_total": 44,
+      "retained_record_count": 44,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "cbf1132315ae0b6bb0edc0fa18671de6d359835bca377a879a2275e180a0fce5",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22adaptive%20network%22%20OR%20all%3A%22coevolving%20network%22%20OR%20all%3A%22co-evolving%20network%22%20OR%20all%3A%22coevolution%20of%20networks%22%29%20AND%20%28all%3Aopinion%20OR%20all%3Abelief%29&start=0",
+          "retrieved_at": "2026-09-08T02:07:06.651825Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q06",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q07",
+      "execution_status": "complete",
+      "matched_total": 24,
+      "retained_record_count": 24,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "005a36a6b2b44e9d808e0f7d8b1756930171f16b8549a3b2b6ec3ac53a7bf8f9",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22kinetic%20opinion%22%20OR%20all%3A%22compromise%20model%22%20OR%20all%3A%22Boltzmann-type%22%29%20AND%20%28all%3Aopinion%20OR%20all%3Abelief%29&start=0",
+          "retrieved_at": "2026-09-08T02:07:16.706000Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q07",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q08",
+      "execution_status": "complete",
+      "matched_total": 27,
+      "retained_record_count": 27,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "d8745221a5a70e9f08cb2d9364fa3af16d7da3d76e4ffe5705af6b805bf3bbc0",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22biased%20assimilation%22%20OR%20all%3A%22negative%20influence%22%20OR%20all%3A%22backfire%20effect%22%29%20AND%20%28all%3Aopinion%20OR%20all%3Apolarization%29&start=0",
+          "retrieved_at": "2026-09-08T02:07:26.768451Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q08",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q09",
+      "execution_status": "complete",
+      "matched_total": 66,
+      "retained_record_count": 66,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "90ddc4f59cd1593ce1446271b2268fcab3db62a732e5a6acd49dedece4181163",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=all%3A%22social%20influence%22%20AND%20%28all%3Aexperiment%20OR%20all%3Aempirical%20OR%20all%3Acalibration%20OR%20all%3Avalidation%29%20AND%20%28all%3Aopinion%20OR%20all%3Abelief%29&start=0",
+          "retrieved_at": "2026-09-08T02:07:36.833538Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q09",
+          "source_id": "arxiv"
+        }
+      ]
+    },
+    {
+      "search_id": "search.arxiv.q10",
+      "execution_status": "complete",
+      "matched_total": 37,
+      "retained_record_count": 37,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "f4e0953a7a9cef69c98ff955bb849ea88a7dbee676453bb605988c9f66d042a0",
+          "request_url": "https://export.arxiv.org/api/query?max_results=100&search_query=%28all%3A%22large%20language%20model%22%20OR%20all%3A%22LLM-based%20agent%22%20OR%20all%3A%22generative%20agent%22%29%20AND%20%28all%3A%22opinion%20dynamics%22%20OR%20all%3A%22opinion%20formation%22%29&start=0",
+          "retrieved_at": "2026-09-08T02:07:46.888133Z",
+          "schema_version": "1",
+          "search_id": "search.arxiv.q10",
+          "source_id": "arxiv"
+        }
+      ]
+    }
+  ],
+  "seed_matches": [
+    {
+      "manifestation_id": "arxiv.1fa852860dc92a5860345477",
+      "rank": 107,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q01",
+      "seed_id": "chuang2024",
+      "source_id": "arxiv",
+      "status": "found_title_match_needs_adjudication"
+    },
+    {
+      "manifestation_id": "arxiv.1abea06124b318bfdb381133",
+      "rank": 156,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q01",
+      "seed_id": "moussaid2013",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.aee33ac3452440eb268425d2",
+      "rank": 14,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q02",
+      "seed_id": "lorenz2007",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.659bd9b36cdda876fa70e947",
+      "rank": 3,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q04",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.9d9e4eacbdba052e2575571b",
+      "rank": 57,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q04",
+      "seed_id": "sznajd2000",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.a538fb778e549baa4a882b43",
+      "rank": 10,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q05",
+      "seed_id": "martins2008",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.21f25999dfed1d527abd4e27",
+      "rank": 6,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q06",
+      "seed_id": "holme2006",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.1552d19dca8cb824d6b5ccbe",
+      "rank": 2,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q08",
+      "seed_id": "dandekar2013",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.1abea06124b318bfdb381133",
+      "rank": 2,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q09",
+      "seed_id": "moussaid2013",
+      "source_id": "arxiv",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": "arxiv.1fa852860dc92a5860345477",
+      "rank": 3,
+      "schema_version": "1",
+      "search_id": "search.arxiv.q10",
+      "seed_id": "chuang2024",
+      "source_id": "arxiv",
+      "status": "found_title_match_needs_adjudication"
+    }
+  ],
+  "predecessors": [
+    {
+      "measurement_id": "arxiv-pilot-v1",
+      "result_sha256": "692fe429270b5b64ea7a86a45dba57ad9cb7a189667b12dc0ec620535c6642af",
+      "limitation": "Provider failure attempts were not checkpointed; successful pages and raw bodies retained."
+    },
+    {
+      "measurement_id": "arxiv-pilot-v2",
+      "result_sha256": "5ed269eef7fbd883d7aab91410edfda5bcc9cc714333cd01ea4d0df255973a39",
+      "offline_replay_matches": true,
+      "limitation": "Final pages falsely rejected because itemsPerPage was assumed to equal returned record count."
+    }
+  ]
+}

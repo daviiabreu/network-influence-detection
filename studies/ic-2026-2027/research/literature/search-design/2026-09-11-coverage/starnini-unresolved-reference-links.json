@@ -1,0 +1,19 @@
+{
+  "schema_version": "coverage-exploration-1",
+  "source_html_sha256": "b429006dd552984cccddb1e8080cca3c7c7fc985b2c9075bd03561c640b53da1",
+  "status": "unresolved_reference_links",
+  "references": [
+    {
+      "reference_locator": "bib.bib138",
+      "literal_link": "https://doi.org/https://doi.org/10.1016/j.physa.2006.06.018",
+      "candidate_doi": "10.1016/j.physa.2006.06.018"
+    },
+    {
+      "reference_locator": "bib.bib492",
+      "literal_link": "https://doi.org/https://doi.org/10.1016/j.chaos.2025.116153",
+      "candidate_doi": "10.1016/j.chaos.2025.116153"
+    }
+  ],
+  "normalization_applied_to_original_edges": false,
+  "requires_exact_metadata_validation": true
+}

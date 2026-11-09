@@ -42,3 +42,6 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["B", "E", "F", "I", "N", "RUF", "SIM", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"research/literature/**" = ["I001"]

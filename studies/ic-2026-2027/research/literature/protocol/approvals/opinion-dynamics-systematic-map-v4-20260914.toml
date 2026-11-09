@@ -1,0 +1,19 @@
+# Recorded from Davi's "aprovado, segue" instruction for the 2026-09-14 amendment.
+# Basis: research/decisions/2026-09-14-assisted-calibration-references.md.
+# Continues the authorized unchanged search scope; no new acquisition is executed.
+# Does not adopt individual answers, declare tuning history or approve calibration.
+schema_version = "1"
+approval_id = "systematic-map-v4-assisted-references-20260914"
+decision = "approved"
+authorization = "systematic_review_search_execution"
+approved_at = 2026-09-14T19:26:56+00:00
+subject_path = "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v4.json"
+protocol_id = "opinion-dynamics-systematic-map-v4"
+protocol_version = "4.0.0"
+protocol_status = "review_candidate"
+protocol_sha256 = "ff8a14178e725983945c049e75181e8eeb1f3cee56a831e714cc78b09245d413"
+repository_commit = "2bfeb201cd02d177f5ad368672af7c2325c173ce"
+
+[[approvers]]
+role = "research_owner"
+name = "Davi Abreu da Silveira"

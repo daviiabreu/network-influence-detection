@@ -1,0 +1,110 @@
+{
+  "audit_binding": "historical snapshot only; not rebound to the filtered series",
+  "condition_3_revalidated": false,
+  "conditions_1_2_first_window_end": 13,
+  "historical_audit_unresolved": 101,
+  "minimum_500_first_batch": 2,
+  "remainder_scenarios": [
+    {
+      "numerator": 17,
+      "point": 1491.2825,
+      "remaining_unscreened": 35089,
+      "sample": 400,
+      "wilson95_scaled": [
+        936.9357755437998,
+        2351.0350842011594
+      ]
+    },
+    {
+      "numerator": 118,
+      "point": 10351.255,
+      "remaining_unscreened": 35089,
+      "sample": 400,
+      "wilson95_scaled": [
+        8857.480888790653,
+        11981.877638526761
+      ]
+    }
+  ],
+  "stop": false,
+  "transitions": [
+    {
+      "conditions_1_2": false,
+      "from_batch": 1,
+      "maximum_shift_pp": 9.844884488448846,
+      "to_batch": 2
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 2,
+      "maximum_shift_pp": 7.175623222699623,
+      "to_batch": 3
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 3,
+      "maximum_shift_pp": 8.33433891471222,
+      "to_batch": 4
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 4,
+      "maximum_shift_pp": 6.60588845817065,
+      "to_batch": 5
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 5,
+      "maximum_shift_pp": 4.32600535725518,
+      "to_batch": 6
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 6,
+      "maximum_shift_pp": 4.125477378804588,
+      "to_batch": 7
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 7,
+      "maximum_shift_pp": 2.9231619198066214,
+      "to_batch": 8
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 8,
+      "maximum_shift_pp": 2.77634079119034,
+      "to_batch": 9
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 9,
+      "maximum_shift_pp": 2.572171168662396,
+      "to_batch": 10
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 10,
+      "maximum_shift_pp": 2.221685395009587,
+      "to_batch": 11
+    },
+    {
+      "conditions_1_2": false,
+      "from_batch": 11,
+      "maximum_shift_pp": 1.399344176571199,
+      "to_batch": 12
+    },
+    {
+      "conditions_1_2": true,
+      "from_batch": 12,
+      "maximum_shift_pp": 1.3510223953261902,
+      "to_batch": 13
+    },
+    {
+      "conditions_1_2": true,
+      "from_batch": 13,
+      "maximum_shift_pp": 1.2047175663344956,
+      "to_batch": 14
+    }
+  ]
+}

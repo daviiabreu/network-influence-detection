@@ -1,60 +1,67 @@
-# Reprodutibilidade e proveniência
+# Reproducibility and provenance
 
-Esta é uma extração do compêndio em `studies/ic-2026-2027/` no commit
-`cbf7d721` do histórico privado de `research-workbench`. O repositório novo
-começa uma história de manutenção própria. Os commits, assinaturas, aprovações
-e hashes históricos continuam identificando seus objetos originais; não foram
-reassinados nem convertidos em evidência sobre o novo repositório.
+This repository is an extraction of the study compendium under
+`studies/ic-2026-2027/`, taken at commit `cbf7d721` of the private
+`research-workbench` history. It starts its own maintenance history. Historical
+commits, signatures, approvals and hashes still identify their original
+objects; they were not re-signed or turned into evidence about this repository.
 
-Os caminhos do estudo foram preservados para que protocolos, especificações,
-registros congelados e fontes editoriais conservem seus identificadores.
-O mapa de extração do proprietário registra os arquivos selecionados, omitidos
-e adaptados. A cópia privada do histórico original e seus backups continuam
-sendo necessários para verificações que dependem de objetos Git antigos.
+Study paths were kept unchanged so that protocols, specifications, frozen
+records and manuscript sources keep their identifiers. The
+[extraction map](../provenance/origin-map.json) lists the selected, omitted and
+adapted files. Checks that depend on old Git objects still need the private
+copy of the original history.
 
-## O que pode ser reproduzido sem dados externos
+## What you can reproduce without external data
 
-`uv sync --locked --group dev`, executado em `studies/ic-2026-2027/`, instala
-o pacote científico com Python 3.12. `just quality` verifica estrutura, lint,
-tipos, testes herméticos com casos reduzidos e fixtures sintéticas e a
-instalação do wheel fora do checkout. Os comandos não executam workflows de
-agentes, providers, experimentos completos ou replay dos resultados reais.
+Running `uv sync --locked --group dev` in `studies/ic-2026-2027/` installs the
+scientific package with Python 3.12. `just quality` checks structure, lint,
+types, hermetic tests on reduced cases and synthetic fixtures, and installation
+of the wheel outside the checkout. These commands do not run agent workflows,
+model providers, full experiments or a replay of the real results.
 
-As fontes de `publications/jcss-journal/` podem ser compiladas e conferidas com
-um toolchain editorial externo. O [guia do toolchain](publication-toolchain.md)
-define os requisitos. Compilação e testes de empacotamento verificam a entrega
-editorial; não refazem a análise que originou os números publicados.
+The sources in `publications/jcss-journal/` can be compiled and checked with an
+external editorial toolchain described in the
+[toolchain guide](publication-toolchain.md). Compiling and packaging verify the
+editorial deliverable; they do not redo the analysis behind the published
+numbers.
 
-## O que continua externo
+The [Zenodo archive](https://doi.org/10.5281/zenodo.23418473) contains the
+frozen confirmatory code and the released simulation outputs. Its scripts
+regenerate every result table and figure of the article except the exploratory
+summary table, whose values are transcribed from archived records. The exact
+scope is documented in Online Resource 1 of the manuscript.
 
-Os microdados SHP dependem de acesso e licença próprios. Bytes de raw,
-interim, processed, conteúdo protegido, holdouts privados, sealed runs,
-credenciais e coordenação privada não são distribuídos. Os manifests e hashes
-registrados no estudo indicam a identidade esperada; eles não fornecem acesso
-aos bytes e não demonstram que um replay tenha sido executado nesta extração.
+## What stays external
 
-As instalações históricas sob `.local/state/research-workbench/` e os caminhos
-Nix citados em fontes congeladas descrevem o ambiente de origem. Não são uma
-dependência do wheel nem autorização para ler ou modificar esses locais.
-Código científico antigo continua aceitando entradas explícitas nas interfaces
-que as oferecem; alterações futuras de portabilidade devem preservar as fontes
-congeladas ou criar um sucessor documentado.
+Swiss Household Panel microdata require their own access agreement and
+licence. Raw, interim and processed data, restricted content, private holdouts,
+sealed runs, credentials and private coordination are not distributed. The
+manifests and hashes recorded in the study state the expected identity of those
+bytes; they do not grant access to them and do not show that a replay was run
+during the extraction.
 
-Os coordenadores e contratos históricos específicos do IC, as aprovações
-privadas e o histórico de agentes permanecem apenas na preservação privada do
-monorepo original. Não são dependências deste compêndio público. Sua reprodução
-exige o checkout original, a versão correspondente do framework e as
-autorizações e entradas originais. Não foram executados nesta extração.
+Paths under `.local/state/research-workbench/` and Nix store paths cited in
+frozen sources describe the original environment. They are not dependencies of
+the wheel. Older scientific code still accepts explicit inputs where its
+interfaces offer them; future portability changes should preserve frozen
+sources or create a documented successor.
 
-## Evidência e licenças
+IC-specific coordinators and runtime contracts, private approvals and agent
+histories remain only in the private preservation of the original monorepo.
+They are not dependencies of this compendium. Reproducing them requires the
+original checkout, the matching framework version and the original inputs and
+authorizations; none of that was run during the extraction.
 
-Resultados e afirmações numéricas continuam vinculados às fontes e recibos
-históricos apontados pelas publicações. Uma validação de engenharia atual não
-substitui os gates científicos, a licença de um dado, uma decisão ética ou uma
-aprovação de submissão. Uma nova execução precisa gerar seu próprio manifesto
-com código, ambiente, entradas, parâmetros, sementes e estado de validação.
+## Evidence and licences
 
-As licenças MIT e CC BY 4.0 declaradas em bundles anteriores valem para o
-escopo declarado nesses bundles. A extração não concede uma licença geral a
-textos de terceiros, templates Springer, dados SHP ou snapshots de fontes.
-Consulte a [seleção de divulgação](publication-selection.md) antes de publicar.
+Results and numerical claims remain bound to the historical sources and
+receipts referenced by the publications. A current engineering check does not
+replace the scientific gates, a data licence, an ethics decision or a
+submission approval. A new run must produce its own manifest with code,
+environment, inputs, parameters, seeds and validation state.
+
+This repository is licensed like the Zenodo archive (see the
+[README](../README.md#licences)). Those licences do not cover third-party
+texts, Springer templates, Swiss Household Panel data or source snapshots. See
+the [public selection notes](publication-selection.md).

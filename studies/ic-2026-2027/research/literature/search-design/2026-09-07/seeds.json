@@ -1,0 +1,146 @@
+[
+  {
+    "schema_version": "1",
+    "seed_id": "axelrod1997",
+    "declared_title": "The Dissemination of Culture: A Model with Local Convergence and Global Polarization",
+    "doi": "10.1177/0022002797041002001",
+    "declared_identifiers": [
+      "openalex:W2151789396"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "castellano2009qvoter",
+    "declared_title": "Nonlinear q-voter model",
+    "doi": "10.1103/physreve.80.041129",
+    "declared_identifiers": [
+      "openalex:W1579536899"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "castellano2009rmp",
+    "declared_title": "Statistical physics of social dynamics",
+    "doi": "10.1103/revmodphys.81.591",
+    "declared_identifiers": [
+      "openalex:W2058105398"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "chuang2024",
+    "declared_title": "Simulating Opinion Dynamics with Networks of LLM-based Agents",
+    "doi": "10.18653/v1/2024.findings-naacl.211",
+    "declared_identifiers": [
+      "openalex:W4401043540"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "clifford1973",
+    "declared_title": "A model for spatial conflict",
+    "doi": "10.1093/biomet/60.3.581",
+    "declared_identifiers": [
+      "openalex:W2051510192"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "dandekar2013",
+    "declared_title": "Biased assimilation, homophily, and the dynamics of polarization",
+    "doi": "10.1073/pnas.1217220110",
+    "declared_identifiers": [
+      "openalex:W4240828654"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "deffuant2000",
+    "declared_title": "Mixing beliefs among interacting agents",
+    "doi": "10.1142/s0219525900000078",
+    "declared_identifiers": [
+      "openalex:W2083689991"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "degroot1974",
+    "declared_title": "Reaching a Consensus",
+    "doi": "10.1080/01621459.1974.10480137",
+    "declared_identifiers": [
+      "openalex:W1998692453"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "flache2017",
+    "declared_title": "Models of Social Influence: Towards the Next Frontiers",
+    "doi": "10.18564/jasss.3521",
+    "declared_identifiers": [
+      "openalex:W2765195368"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "friedkin1990",
+    "declared_title": "Social influence and opinions",
+    "doi": "10.1080/0022250x.1990.9990069",
+    "declared_identifiers": [
+      "openalex:W2027514326"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "hegselmann2002",
+    "declared_title": "Opinion dynamics and bounded confidence: models, analysis and simulation",
+    "doi": null,
+    "declared_identifiers": [
+      "openalex:W2113096089"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "holme2006",
+    "declared_title": "Nonequilibrium phase transition in the coevolution of networks and opinions",
+    "doi": "10.1103/physreve.74.056108",
+    "declared_identifiers": [
+      "openalex:W1991442303"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "lorenz2007",
+    "declared_title": "Continuous Opinion Dynamics under Bounded Confidence: A Survey",
+    "doi": "10.1142/s0129183107011789",
+    "declared_identifiers": [
+      "openalex:W2159918425"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "martins2008",
+    "declared_title": "Continuous Opinions and Discrete Actions in Opinion Dynamics Problems",
+    "doi": "10.1142/s0129183108012339",
+    "declared_identifiers": [
+      "openalex:W2124535681"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "moussaid2013",
+    "declared_title": "Social Influence and the Collective Dynamics of Opinion Formation",
+    "doi": "10.1371/journal.pone.0078433",
+    "declared_identifiers": [
+      "openalex:W2019976298"
+    ]
+  },
+  {
+    "schema_version": "1",
+    "seed_id": "sznajd2000",
+    "declared_title": "Opinion evolution in closed community",
+    "doi": "10.1142/s0129183100000936",
+    "declared_identifiers": [
+      "openalex:W1556269759"
+    ]
+  }
+]

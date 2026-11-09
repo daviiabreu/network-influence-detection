@@ -1,0 +1,37 @@
+{
+  "code": {
+    "commit": "10ae2af51eb21fc07f903aa1300805ba69942c13",
+    "modules_sha256": {
+      "map_saturation_figures.py": "5e6d306071d7a4ea733a0fad5f8fecd87d853b28bf0e5eaaedf12c0370959ced",
+      "v4_report_figures.py": "17ed36be4d9c17494e978f5145886e9c343f52bcf11262ee0f7bd85eb5011ac0",
+      "v4_report_tables.py": "af4a7ece1f3faf71750b87b639dcb9c266930dec82ce82cde2845051435a1f5a"
+    },
+    "reporting_code_dirty": false
+  },
+  "dpi": 300,
+  "formats": [
+    "pdf",
+    "png"
+  ],
+  "inputs": {
+    "series": {
+      "name": "series.json",
+      "sha256": "bd17861913b43817ab0870d002942ad17d8049dc89c985e5b7825a95142ddb69"
+    }
+  },
+  "outputs": {
+    "M1_saturation_trajectory.pdf": "413913a749425c3ad3c4143af990ee4f3880d62f03ba2d374b3951fd4d9043ed",
+    "M1_saturation_trajectory.png": "ca5519c607354c652f41cffd456d95ede1687627c3648bd9743e4e18fdc5db66",
+    "M2_category_shares.pdf": "769e25da91778f9b3a80f2ca598410a4562be3e41f6887a996e39a5b9b3b0c31",
+    "M2_category_shares.png": "8bc52f837a13defefe9b3322ed3f27b44ccea553bfd650071ebec7ecc3abacfc",
+    "T_M1_transitions.csv": "5afa5e25e954ad122cf2648dc0027a369ce78ecde4301a9371c00b8c87e95fea",
+    "T_M1_transitions.tex": "f103bffc404ee4bff51746264de91ad9b914693a3e7246901e37b60e1a595fb6"
+  },
+  "rule": {
+    "consecutive_transitions": 2,
+    "max_shift_pp": 2.0,
+    "min_included": 500
+  },
+  "schema": "ic-study.map-saturation-figures-manifest.v1",
+  "synthetic": false
+}

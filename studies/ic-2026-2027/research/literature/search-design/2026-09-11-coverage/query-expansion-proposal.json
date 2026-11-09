@@ -1,0 +1,72 @@
+{
+  "status": "exploratory_query_expansion_proposal",
+  "baseline_membership_sha256": "4aa80c3ce83e414ff1a128f03487883a993237490b56eee603b70cf5e7206a0f",
+  "note": "Derived after baseline challenge; cannot claim an independent pass after rerunning these tuned queries. Higher-order/consensus and convention results require explicit human-social model eligibility; topical false positives remain screened records. OA title/abstract semantics required; translate fields and record provider-specific literals. Broad q14 needs volume/cap check and partition if needed without discarding remainder.",
+  "queries": [
+    {
+      "suggested_family_id": "q11",
+      "family": "belief_attitude",
+      "title_abstract_boolean": "(\"belief dynamics\" OR \"belief system\" OR \"attitude change\") AND (model OR dynamics OR computational OR \"social influence\")",
+      "unmatched_challenge_candidates": [
+        "belief-logic",
+        "rmp-ref-500"
+      ]
+    },
+    {
+      "suggested_family_id": "q12",
+      "family": "social_learning",
+      "title_abstract_boolean": "\"social learning\" AND (belief OR opinion OR Bayesian)",
+      "unmatched_challenge_candidates": [
+        "social-learning-naive",
+        "social-learning-theory"
+      ]
+    },
+    {
+      "suggested_family_id": "q13",
+      "family": "conventions_committed",
+      "title_abstract_boolean": "\"naming game\" OR (\"social convention\" AND (model OR dynamics)) OR (\"committed minorities\" AND (opinion OR \"social consensus\"))",
+      "unmatched_challenge_candidates": [
+        "rmp-ref-065",
+        "rmp-ref-039",
+        "rmp-ref-372",
+        "rmp-ref-812"
+      ]
+    },
+    {
+      "suggested_family_id": "q14",
+      "family": "polarization_beyond_phrase",
+      "title_abstract_boolean": "(polarization OR polarisation OR \"echo chamber\" OR \"echo chambers\") AND (model OR modeling OR modelling OR dynamics OR \"agent-based\")",
+      "unmatched_challenge_candidates": [
+        "rmp-ref-078",
+        "rmp-ref-245",
+        "rmp-ref-250",
+        "rmp-ref-266",
+        "rmp-ref-674",
+        "rmp-ref-676",
+        "rmp-ref-073",
+        "rmp-ref-303"
+      ]
+    },
+    {
+      "suggested_family_id": "q15",
+      "family": "group_higher_order",
+      "title_abstract_boolean": "(hypergraph OR hypergraphs OR multibody OR \"higher-order\" OR \"group interaction\") AND (opinion OR \"social influence\" OR (consensus AND social))",
+      "unmatched_challenge_candidates": [
+        "rmp-ref-417",
+        "rmp-ref-576",
+        "rmp-ref-577",
+        "rmp-ref-673"
+      ]
+    },
+    {
+      "suggested_family_id": "q16",
+      "family": "political_voting_models",
+      "title_abstract_boolean": "(\"voting intention\" OR \"majority rule\" OR \"ideological opinions\") AND (opinion OR social OR political OR democratic)",
+      "unmatched_challenge_candidates": [
+        "rmp-ref-275",
+        "rmp-ref-775",
+        "rmp-ref-073"
+      ]
+    }
+  ]
+}

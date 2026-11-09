@@ -28,20 +28,6 @@
   ],
   "files": [
     {
-      "path": ".DS_Store",
-      "sha256": "9a002f12c13920c07a364437c0660fcd8927564869422f5f48f011dc3a4ded4f",
-      "original_blob": null,
-      "current_blob": "6213fdee3242ff00b31a6d695a53b5d19177e84d",
-      "relationship": "new"
-    },
-    {
-      "path": ".github/.DS_Store",
-      "sha256": "423a6e36e8b7d508f687c33fbd1c5a680393a8ff862ed4852e3621a13cf3fb2e",
-      "original_blob": null,
-      "current_blob": "c5943a6b2f0dabf3b7c1f6872e4262b26d451c8c",
-      "relationship": "new"
-    },
-    {
       "path": ".github/workflows/quality.yml",
       "sha256": "1b8d9b5d837f39cecd24cb3b335b25140f045f069ed178fa1c95673030eda8ca",
       "original_blob": "a81cadbe845640dd831f53de9f5d1afcb9930fd3",
@@ -75,13 +61,6 @@
       "original_blob": "867db329beefa48025a98b5f6a8fa9ac1b74b135",
       "current_blob": "af4228b89eb9a5a7dfd593e447ab896e5c80b157",
       "relationship": "adapted"
-    },
-    {
-      "path": "docs/.DS_Store",
-      "sha256": "ab6cabefc75b6927dfb6661612046c1893abc796cdb7d935bdb4e74ca7ac7a7a",
-      "original_blob": null,
-      "current_blob": "a6d8327162e45f521cf3c407ecd7d5ea2730f4d7",
-      "relationship": "new"
     },
     {
       "path": "docs/architecture.md",
@@ -179,20 +158,6 @@
       "sha256": "262a0ea4fdd17cd826cafe204420fa9897eeef9489fc9f9c69f75542c74abbf7",
       "original_blob": null,
       "current_blob": "641351b16069392e3ff209997834c37116817d49",
-      "relationship": "new"
-    },
-    {
-      "path": "studies/.DS_Store",
-      "sha256": "b6ef4ff1907b7ea38582a24d12201a6a9e9bcbceada271478cef385f1dc76309",
-      "original_blob": null,
-      "current_blob": "d82a3d323a83e8fb94046d7fc7a6218b954fbb05",
-      "relationship": "new"
-    },
-    {
-      "path": "studies/ic-2026-2027/.DS_Store",
-      "sha256": "714498303b3c545b4a80ecf44a2ee2561185d19447d24e04dbe500ffda12195f",
-      "original_blob": null,
-      "current_blob": "c7edd603b801600bb984042e0285635fe3c0498c",
       "relationship": "new"
     },
     {
@@ -770,6 +735,174 @@
       "relationship": "unchanged"
     },
     {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/IMPLEMENTATION-FIXES.md",
+      "sha256": "83dfb162711850363a3c3560e9090eb0259e2fa24ec3b6a2358a5d15f5ebbf83",
+      "original_blob": "ba83ec6360ab04044fbab8f5f63d882bf0b720fd",
+      "current_blob": "ba83ec6360ab04044fbab8f5f63d882bf0b720fd",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README-x3-x7.md",
+      "sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219",
+      "original_blob": "64c320f5b08cac220c4065526047e44e6844be9b",
+      "current_blob": "64c320f5b08cac220c4065526047e44e6844be9b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README.md",
+      "sha256": "3fb11dbcdc6c7d503bc86f51c133081f77d819372246c6274509661807c33db3",
+      "original_blob": "bbddbd70b919dafda5572e100c9627fc4efc3a99",
+      "current_blob": "bbddbd70b919dafda5572e100c9627fc4efc3a99",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/REPORT.md",
+      "sha256": "4f902e63e33f4757e439f1048e0d5a2111e9ac107ed6e57a597887ed35ff86a0",
+      "original_blob": "8ecf344e89c2fe96d68b4f4f563d031e6e5adc79",
+      "current_blob": "8ecf344e89c2fe96d68b4f4f563d031e6e5adc79",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/VALIDATION-FIXES.md",
+      "sha256": "b5e2d2357b378da2304386ead5fbce77fe2ba3d14a95aedcdb8239d57830bb55",
+      "original_blob": "3457cba885b058feec12081b2ebdc75b53f2d72e",
+      "current_blob": "3457cba885b058feec12081b2ebdc75b53f2d72e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/v4-post-release-chain.sh",
+      "sha256": "c7b8713ccc07d695954464e55aad9ca63077938ee38ba291a53f3b5f96450912",
+      "original_blob": "ad52795b72728f5478fcbc9f943d09814cef06a7",
+      "current_blob": "ad52795b72728f5478fcbc9f943d09814cef06a7",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/v4-release-wait.next.sh",
+      "sha256": "af4080b55f48b124dd23fb5fcc8f1c2ac6032cd7b0172ee567d9445887cf1fd5",
+      "original_blob": "c3bd424609aec7569e7c8863578141653d510cb7",
+      "current_blob": "c3bd424609aec7569e7c8863578141653d510cb7",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/v4_event_automation.py",
+      "sha256": "5a27eba71a3d3dbda47dbeb3b67f483328175d2ad5b18ff91032e78c0e204dab",
+      "original_blob": "5d12dc21f5a456f1a7b156f9014211b3a4e64aef",
+      "current_blob": "5d12dc21f5a456f1a7b156f9014211b3a4e64aef",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/x3x7-export-watch.sh",
+      "sha256": "37d753d2b551bf9004adffd5815584fe36eab2e1c4a45cfc753ede15a713879b",
+      "original_blob": "59f91c4bf24be73b61756d1571eec8dbb7d39e57",
+      "current_blob": "59f91c4bf24be73b61756d1571eec8dbb7d39e57",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/compatibility-c8e4861f.json",
+      "sha256": "fcb13d496ffbfc8926b65c9a951d002b755ba32e6733449d57863aac8a8bf3c1",
+      "original_blob": "aabd56d2864d1df42d32175e39f5c81c11562e76",
+      "current_blob": "aabd56d2864d1df42d32175e39f5c81c11562e76",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration-x3-x7.json",
+      "sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65",
+      "original_blob": "f122f1cc1174cabb4525f1c35ebd2b8f9f7a7f2e",
+      "current_blob": "f122f1cc1174cabb4525f1c35ebd2b8f9f7a7f2e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration.json",
+      "sha256": "427cd416392bcfe7440da82b12705d0e4a439b176e89a554105aa990dce072d7",
+      "original_blob": "a4c26ff8863dfec623f27946a8896886a97fa661",
+      "current_blob": "a4c26ff8863dfec623f27946a8896886a97fa661",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/launch-x3x7.sh",
+      "sha256": "7a3e087b14c2e7ce3f7d6230accf3a193e97d3bb05b13e64ba4876d823fb34c7",
+      "original_blob": "c564079c2280088613b7d12189d77d0205cb51be",
+      "current_blob": "c564079c2280088613b7d12189d77d0205cb51be",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x1a.json",
+      "sha256": "04e92b6c8b6594c87f98bbc9c639f257a545b5f38d9fc16fd6dfb5cdefec6c6f",
+      "original_blob": "8ebb91e4f353fe0da5ff43abb384829775dc7cd9",
+      "current_blob": "8ebb91e4f353fe0da5ff43abb384829775dc7cd9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x1b-precondition.json",
+      "sha256": "1664d801efbee08de063d9175e7eb0f96905146391e7bca151413eee55501dac",
+      "original_blob": "6090a22df03c41844d91aa68a7a2c142b08455f4",
+      "current_blob": "6090a22df03c41844d91aa68a7a2c142b08455f4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x1b.json",
+      "sha256": "f4f156c51a500fe427ea01bcb48a1e166983909e46827df63b1c8a34785547aa",
+      "original_blob": "802b93a655453747a664b558706ea611548aaa84",
+      "current_blob": "802b93a655453747a664b558706ea611548aaa84",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x2.json",
+      "sha256": "073632af8a21f4f715bf961cd3d968546447f889ddef96882cd78a81af5fcba1",
+      "original_blob": "e86d66373bde7862b1fd77506b8e75656e295ade",
+      "current_blob": "e86d66373bde7862b1fd77506b8e75656e295ade",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x5-precondition.json",
+      "sha256": "6911209e350287bcc745be834351f056bbf01fa2b3e5a9f908b59648a6f05a5c",
+      "original_blob": "4d8f5b41c84ad020294802667ad87daf6f2f8b7f",
+      "current_blob": "4d8f5b41c84ad020294802667ad87daf6f2f8b7f",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x5.json",
+      "sha256": "88e78a38ed7e5f07a48e6f0a18fab254abc7a21f684da8885e18b1b7870bcf36",
+      "original_blob": "d42baf8f359f047ffb57e77a932714743303d006",
+      "current_blob": "d42baf8f359f047ffb57e77a932714743303d006",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x7-precondition.json",
+      "sha256": "cc01fc6bce699877895636a95ffa585222251091407efb0f317b50a0bca58f8b",
+      "original_blob": "168f99139e7ed95f02ea3b88e83ed2f23e7f9f18",
+      "current_blob": "168f99139e7ed95f02ea3b88e83ed2f23e7f9f18",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/run-x3x7-stages.sh",
+      "sha256": "39e2232e83905395b933168646d961ef2f0770655385d49f6611e8a42ef4c3fa",
+      "original_blob": "7fb82070ac86bd0650c9f4abda8fc23d0c2bdfab",
+      "current_blob": "7fb82070ac86bd0650c9f4abda8fc23d0c2bdfab",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/AMENDMENT-v4.4.md",
+      "sha256": "4757e6a1e2c2e2541c8e345a4252e403696784425697523b717028ea7bae1dbe",
+      "original_blob": "fae56b3d4fbe500dea667c35674fd27f0be6a164",
+      "current_blob": "fae56b3d4fbe500dea667c35674fd27f0be6a164",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/freeze-v44.json",
+      "sha256": "0ea691289de9be0f948adc46e7759346463a54ce91c036332a6ebcac8def27b6",
+      "original_blob": "44b32f30883f4f16fb993ac5bbe66fed64512600",
+      "current_blob": "44b32f30883f4f16fb993ac5bbe66fed64512600",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/v44_run_curve.py",
+      "sha256": "0ea2e41e6a8a9939ad59b7fbac8fc95d23ffc2b026966c388e09bd01d9c7b7b5",
+      "original_blob": "59c2b487a2218f24a13e9c316d4cbefdfd88b59a",
+      "current_blob": "59c2b487a2218f24a13e9c316d4cbefdfd88b59a",
+      "relationship": "unchanged"
+    },
+    {
       "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4/README.md",
       "sha256": "166aaa4f25d9de272296684e251ce91c967c2558d6999ab917d778d862e0e9e3",
       "original_blob": "3738d590d12674df917c830a56c4c12759d63a88",
@@ -1330,174 +1463,6 @@
       "relationship": "unchanged"
     },
     {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/IMPLEMENTATION-FIXES.md",
-      "sha256": "83dfb162711850363a3c3560e9090eb0259e2fa24ec3b6a2358a5d15f5ebbf83",
-      "original_blob": "ba83ec6360ab04044fbab8f5f63d882bf0b720fd",
-      "current_blob": "ba83ec6360ab04044fbab8f5f63d882bf0b720fd",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README-x3-x7.md",
-      "sha256": "9bf7638b153ae779dad3720aa4c95a255fd37928d0d25fdb31b222e08acb3219",
-      "original_blob": "64c320f5b08cac220c4065526047e44e6844be9b",
-      "current_blob": "64c320f5b08cac220c4065526047e44e6844be9b",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/README.md",
-      "sha256": "3fb11dbcdc6c7d503bc86f51c133081f77d819372246c6274509661807c33db3",
-      "original_blob": "bbddbd70b919dafda5572e100c9627fc4efc3a99",
-      "current_blob": "bbddbd70b919dafda5572e100c9627fc4efc3a99",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/REPORT.md",
-      "sha256": "4f902e63e33f4757e439f1048e0d5a2111e9ac107ed6e57a597887ed35ff86a0",
-      "original_blob": "8ecf344e89c2fe96d68b4f4f563d031e6e5adc79",
-      "current_blob": "8ecf344e89c2fe96d68b4f4f563d031e6e5adc79",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/VALIDATION-FIXES.md",
-      "sha256": "b5e2d2357b378da2304386ead5fbce77fe2ba3d14a95aedcdb8239d57830bb55",
-      "original_blob": "3457cba885b058feec12081b2ebdc75b53f2d72e",
-      "current_blob": "3457cba885b058feec12081b2ebdc75b53f2d72e",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/v4-post-release-chain.sh",
-      "sha256": "c7b8713ccc07d695954464e55aad9ca63077938ee38ba291a53f3b5f96450912",
-      "original_blob": "ad52795b72728f5478fcbc9f943d09814cef06a7",
-      "current_blob": "ad52795b72728f5478fcbc9f943d09814cef06a7",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/v4-release-wait.next.sh",
-      "sha256": "af4080b55f48b124dd23fb5fcc8f1c2ac6032cd7b0172ee567d9445887cf1fd5",
-      "original_blob": "c3bd424609aec7569e7c8863578141653d510cb7",
-      "current_blob": "c3bd424609aec7569e7c8863578141653d510cb7",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/v4_event_automation.py",
-      "sha256": "5a27eba71a3d3dbda47dbeb3b67f483328175d2ad5b18ff91032e78c0e204dab",
-      "original_blob": "5d12dc21f5a456f1a7b156f9014211b3a4e64aef",
-      "current_blob": "5d12dc21f5a456f1a7b156f9014211b3a4e64aef",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/automation/x3x7-export-watch.sh",
-      "sha256": "37d753d2b551bf9004adffd5815584fe36eab2e1c4a45cfc753ede15a713879b",
-      "original_blob": "59f91c4bf24be73b61756d1571eec8dbb7d39e57",
-      "current_blob": "59f91c4bf24be73b61756d1571eec8dbb7d39e57",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/compatibility-c8e4861f.json",
-      "sha256": "fcb13d496ffbfc8926b65c9a951d002b755ba32e6733449d57863aac8a8bf3c1",
-      "original_blob": "aabd56d2864d1df42d32175e39f5c81c11562e76",
-      "current_blob": "aabd56d2864d1df42d32175e39f5c81c11562e76",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration-x3-x7.json",
-      "sha256": "7d733fdade89f3d6036ed7101900dbffbfebe36db823bb7c523e13fb637e5c65",
-      "original_blob": "f122f1cc1174cabb4525f1c35ebd2b8f9f7a7f2e",
-      "current_blob": "f122f1cc1174cabb4525f1c35ebd2b8f9f7a7f2e",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/declaration.json",
-      "sha256": "427cd416392bcfe7440da82b12705d0e4a439b176e89a554105aa990dce072d7",
-      "original_blob": "a4c26ff8863dfec623f27946a8896886a97fa661",
-      "current_blob": "a4c26ff8863dfec623f27946a8896886a97fa661",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/launch-x3x7.sh",
-      "sha256": "7a3e087b14c2e7ce3f7d6230accf3a193e97d3bb05b13e64ba4876d823fb34c7",
-      "original_blob": "c564079c2280088613b7d12189d77d0205cb51be",
-      "current_blob": "c564079c2280088613b7d12189d77d0205cb51be",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x1a.json",
-      "sha256": "04e92b6c8b6594c87f98bbc9c639f257a545b5f38d9fc16fd6dfb5cdefec6c6f",
-      "original_blob": "8ebb91e4f353fe0da5ff43abb384829775dc7cd9",
-      "current_blob": "8ebb91e4f353fe0da5ff43abb384829775dc7cd9",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x1b-precondition.json",
-      "sha256": "1664d801efbee08de063d9175e7eb0f96905146391e7bca151413eee55501dac",
-      "original_blob": "6090a22df03c41844d91aa68a7a2c142b08455f4",
-      "current_blob": "6090a22df03c41844d91aa68a7a2c142b08455f4",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x1b.json",
-      "sha256": "f4f156c51a500fe427ea01bcb48a1e166983909e46827df63b1c8a34785547aa",
-      "original_blob": "802b93a655453747a664b558706ea611548aaa84",
-      "current_blob": "802b93a655453747a664b558706ea611548aaa84",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x2.json",
-      "sha256": "073632af8a21f4f715bf961cd3d968546447f889ddef96882cd78a81af5fcba1",
-      "original_blob": "e86d66373bde7862b1fd77506b8e75656e295ade",
-      "current_blob": "e86d66373bde7862b1fd77506b8e75656e295ade",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x5-precondition.json",
-      "sha256": "6911209e350287bcc745be834351f056bbf01fa2b3e5a9f908b59648a6f05a5c",
-      "original_blob": "4d8f5b41c84ad020294802667ad87daf6f2f8b7f",
-      "current_blob": "4d8f5b41c84ad020294802667ad87daf6f2f8b7f",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x5.json",
-      "sha256": "88e78a38ed7e5f07a48e6f0a18fab254abc7a21f684da8885e18b1b7870bcf36",
-      "original_blob": "d42baf8f359f047ffb57e77a932714743303d006",
-      "current_blob": "d42baf8f359f047ffb57e77a932714743303d006",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/results/x7-precondition.json",
-      "sha256": "cc01fc6bce699877895636a95ffa585222251091407efb0f317b50a0bca58f8b",
-      "original_blob": "168f99139e7ed95f02ea3b88e83ed2f23e7f9f18",
-      "current_blob": "168f99139e7ed95f02ea3b88e83ed2f23e7f9f18",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-exploratory/run-x3x7-stages.sh",
-      "sha256": "39e2232e83905395b933168646d961ef2f0770655385d49f6611e8a42ef4c3fa",
-      "original_blob": "7fb82070ac86bd0650c9f4abda8fc23d0c2bdfab",
-      "current_blob": "7fb82070ac86bd0650c9f4abda8fc23d0c2bdfab",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/AMENDMENT-v4.4.md",
-      "sha256": "4757e6a1e2c2e2541c8e345a4252e403696784425697523b717028ea7bae1dbe",
-      "original_blob": "fae56b3d4fbe500dea667c35674fd27f0be6a164",
-      "current_blob": "fae56b3d4fbe500dea667c35674fd27f0be6a164",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/freeze-v44.json",
-      "sha256": "0ea691289de9be0f948adc46e7759346463a54ce91c036332a6ebcac8def27b6",
-      "original_blob": "44b32f30883f4f16fb993ac5bbe66fed64512600",
-      "current_blob": "44b32f30883f4f16fb993ac5bbe66fed64512600",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/experiments/exploratory/detection-boundary-v4-successor-v44/v44_run_curve.py",
-      "sha256": "0ea2e41e6a8a9939ad59b7fbac8fc95d23ffc2b026966c388e09bd01d9c7b7b5",
-      "original_blob": "59c2b487a2218f24a13e9c316d4cbefdfd88b59a",
-      "current_blob": "59c2b487a2218f24a13e9c316d4cbefdfd88b59a",
-      "relationship": "unchanged"
-    },
-    {
       "path": "studies/ic-2026-2027/experiments/exploratory/fragmentation-pilot-v1/README.md",
       "sha256": "a6c64b3adc98b5766cf9960d425e26f548598c30284b8c39317044acb72cd462",
       "original_blob": "892af02bd9af760eda6fadbeb0c0fedd9c52a27f",
@@ -1967,6 +1932,13 @@
       "relationship": "unchanged"
     },
     {
+      "path": "studies/ic-2026-2027/publications/jcss-journal/esm.tex",
+      "sha256": "e1be6be9582786aefcf74a1a3dff52a94fffd4d2143d2b76a46e9070d0b98da9",
+      "original_blob": "1d651a1b5df0661d2b570477d1bca2f3262c58de",
+      "current_blob": "1d651a1b5df0661d2b570477d1bca2f3262c58de",
+      "relationship": "unchanged"
+    },
+    {
       "path": "studies/ic-2026-2027/publications/jcss-journal/esm/additional-results.tex",
       "sha256": "38ff3443e55cd5b4154d61969ff1e6e6e2a7722893a2dfb70813b9820e6a8a3d",
       "original_blob": "661f98857eea929313c6fd6a3ed37c616733c0ad",
@@ -2062,13 +2034,6 @@
       "sha256": "bb7c1a8019aac804d53f98860cb4b08fa83b17d88a23f693c6ce4366c56bcc8f",
       "original_blob": "ca9d499af8e5d6d940e87d727daa4a064fdb713d",
       "current_blob": "ca9d499af8e5d6d940e87d727daa4a064fdb713d",
-      "relationship": "unchanged"
-    },
-    {
-      "path": "studies/ic-2026-2027/publications/jcss-journal/esm.tex",
-      "sha256": "e1be6be9582786aefcf74a1a3dff52a94fffd4d2143d2b76a46e9070d0b98da9",
-      "original_blob": "1d651a1b5df0661d2b570477d1bca2f3262c58de",
-      "current_blob": "1d651a1b5df0661d2b570477d1bca2f3262c58de",
       "relationship": "unchanged"
     },
     {
@@ -3885,6 +3850,48 @@
       "relationship": "unchanged"
     },
     {
+      "path": "studies/ic-2026-2027/research/literature/READINESS.md",
+      "sha256": "81036265619348be26928bc2cf0787f9d1427c6a09709b9ebea8cc91ab3b72ea",
+      "original_blob": "a395e566db458260203f08891da16072c58b6298",
+      "current_blob": "a395e566db458260203f08891da16072c58b6298",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/README.md",
+      "sha256": "a79d0f17f2bff28a954269b1763df1d8e4472aa4f524c8d5964cd5ea17b7b040",
+      "original_blob": "89eaee06555c986af2b64d94145eccfb48486705",
+      "current_blob": "89eaee06555c986af2b64d94145eccfb48486705",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/corpus/README.md",
+      "sha256": "fe3abab8572d962fbcfc302adede0d22099c1409dfa8dc1625fffd0da7b4e3fc",
+      "original_blob": "df7a76e4cfedc2f3b82c7dc08517d0ccedaca808",
+      "current_blob": "df7a76e4cfedc2f3b82c7dc08517d0ccedaca808",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/extractions/README.md",
+      "sha256": "edd58bce1c98c8e896e843f6ed479ca2f2ba3579cd6d5e62e253f6cd5b9a783d",
+      "original_blob": "35a3fcb1b6bdcf2ae40ee3e5f98b14dd2127d1e9",
+      "current_blob": "35a3fcb1b6bdcf2ae40ee3e5f98b14dd2127d1e9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/no-abstract-sample-20260927/results.jsonl",
+      "sha256": "29e4b02faddcd6dc3cf9342dedc1f09f74055247a3167961a022a83270234fbd",
+      "original_blob": "0521295cebf18ddf0b4e8fb0eaf3072fe2dfd347",
+      "current_blob": "0521295cebf18ddf0b4e8fb0eaf3072fe2dfd347",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/no-abstract-sample-20260927/summary.md",
+      "sha256": "1530a36bc393ccc3c82049cea2e771c5e64d215cb7dd5d599e67fb089b415c52",
+      "original_blob": "469a7befb4c0691f275c727319ab8472a63330a0",
+      "current_blob": "469a7befb4c0691f275c727319ab8472a63330a0",
+      "relationship": "unchanged"
+    },
+    {
       "path": "studies/ic-2026-2027/research/literature/positioning-a-star-r/antecedent-search-2026-09-30.md",
       "sha256": "87a510017954fb6ebc781ecedd2aeaeb4c2ac3549e415cfbbc155f78568ad8c5",
       "original_blob": "48fcd0b2b66534360531e0dbe54b67d8f70fcd82",
@@ -3917,6 +3924,1322 @@
       "sha256": "af45831881dfc90096b6644ea227982fca4056189e06be76e3e70a00269433cc",
       "original_blob": "4dc6835f899509f2fde4b9b888337697848b160a",
       "current_blob": "4dc6835f899509f2fde4b9b888337697848b160a",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/README.md",
+      "sha256": "500674b0d422fe0b147f9bdeeeb8a4d8a06df817855b2216bcdc4673d342bc6a",
+      "original_blob": "b03c37fb993a50f93a35888b9665eee8a6fbab62",
+      "current_blob": "b03c37fb993a50f93a35888b9665eee8a6fbab62",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/calibration-import.md",
+      "sha256": "c5f02e144bab4781cf64775b87cdcf2b34dba9bc75caae5beaafebcab87a38ad",
+      "original_blob": "6554bd2aa6bec2d71b04aeb32ffa8352d37de6ba",
+      "current_blob": "6554bd2aa6bec2d71b04aeb32ffa8352d37de6ba",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/calibration-readiness.md",
+      "sha256": "4a6cd12ca65d44f7124b0f580bd45db2293a13979ce9c12e6872558a84335038",
+      "original_blob": "a06878e568c59e8179f4daaa2301d7faa2045a6d",
+      "current_blob": "a06878e568c59e8179f4daaa2301d7faa2045a6d",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/fulltext-preparation.md",
+      "sha256": "4ff44df4927f9edf5e9e8126cb4160ee478c7c53212409a7988b681f4431691f",
+      "original_blob": "7bd47ae5f0f19a115da705dd8a1343051e3a63a1",
+      "current_blob": "7bd47ae5f0f19a115da705dd8a1343051e3a63a1",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/identity-audit.json",
+      "sha256": "d4f34ac648efe79c26c2e978eeeb1319fe052eaf3ebef643fc26187126834be1",
+      "original_blob": "a1d0f89c2d56a7c8b6860ce3aa0105f7ef24febb",
+      "current_blob": "a1d0f89c2d56a7c8b6860ce3aa0105f7ef24febb",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/identity-audit.md",
+      "sha256": "f40866c10789027eacaccf72e87f033b15d9dcd25224a3622a1c9afe2f0f6510",
+      "original_blob": "2bd03d2240a61552dc235ef932885eda1112f39f",
+      "current_blob": "2bd03d2240a61552dc235ef932885eda1112f39f",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/identity-transition-plan.md",
+      "sha256": "2475d960bdb0346e2376ab8f61c65f997a1c02e7f104cbc6a2651bb702ee3c34",
+      "original_blob": "46258619492a4176d195b5c5d31616ebaa392858",
+      "current_blob": "46258619492a4176d195b5c5d31616ebaa392858",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/identity-transition.md",
+      "sha256": "e7e2141d64d1be38740e0e2a538018b690ae57037c49be74f14cc74a5d4140a0",
+      "original_blob": "3a0bff51fad3cc410e4bc39a9e5da92af67bb106",
+      "current_blob": "3a0bff51fad3cc410e4bc39a9e5da92af67bb106",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/metadata-proposals.json",
+      "sha256": "daf9a89d8572d1fb06d925c0fa770cf9c73865fb87c6f42bb218f7dfb13b6096",
+      "original_blob": "49c03e3983940bcb7714d23e1e0525c301c854f7",
+      "current_blob": "49c03e3983940bcb7714d23e1e0525c301c854f7",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/metadata-sources.md",
+      "sha256": "69049842f1be5d212217ca11554e334547205daabae81a5a953a18f53ebb9444",
+      "original_blob": "890155566a4ad3b75e13006d51516504e73039b4",
+      "current_blob": "890155566a4ad3b75e13006d51516504e73039b4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/methods.md",
+      "sha256": "c3e66edef39b666efb056e87b9b0cc2dd30f8b1bd2f2e5254b187b6720ce2839",
+      "original_blob": "ca4ec25dace88a7fd6f203513ff1955fc89ceb46",
+      "current_blob": "ca4ec25dace88a7fd6f203513ff1955fc89ceb46",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/review-calibration-import.md",
+      "sha256": "6edc41b88d8873241dca7fc7e2f95d069dd0fdb366341f47e8f93615928ae1f4",
+      "original_blob": "f6c1b67fa4e0131b5bc2cd36db14657657436955",
+      "current_blob": "f6c1b67fa4e0131b5bc2cd36db14657657436955",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/review-calibration-input-limit.md",
+      "sha256": "8f1b455f1f0b21878e405755a77370f116c6bbb54d7083789e2bfb3d7d3de37b",
+      "original_blob": "52e592a938958e832ee955f6fdd08d1801b7a558",
+      "current_blob": "52e592a938958e832ee955f6fdd08d1801b7a558",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/review-fulltext.md",
+      "sha256": "50503af0f9d4f1ed71a70deca22f55d22cab9a308d1ef00b9822c24c5e4faf23",
+      "original_blob": "822316a08834cf1ecfa5b85243a94220a9e0cfd6",
+      "current_blob": "822316a08834cf1ecfa5b85243a94220a9e0cfd6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/review-identity-calibration.md",
+      "sha256": "48cc2cbb288c9d2322864291f97944060135cbbe880f878e1b5677267d001daa",
+      "original_blob": "7153e9889fb5b13b441a0eb5033b5061dc55f830",
+      "current_blob": "7153e9889fb5b13b441a0eb5033b5061dc55f830",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/review-identity-transition.md",
+      "sha256": "d3fde799bb74e7082b51c35f139ba81e0dc5b125867f86bea9a14bd8664972d6",
+      "original_blob": "cf43a16e8710c51a375b99121c394c17db3873a3",
+      "current_blob": "cf43a16e8710c51a375b99121c394c17db3873a3",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/review-metadata-methods.md",
+      "sha256": "b05bd88969ef836e04a591a4e3680a10acd95b7d8fd173a1d896e674086c79cc",
+      "original_blob": "351902a3327467fcf7a26aa0e534003196c42107",
+      "current_blob": "351902a3327467fcf7a26aa0e534003196c42107",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-13/validation.md",
+      "sha256": "6a168db5fbc6c96e96ce84835d4cde5a38a0e484856f06d57572aad4000063b7",
+      "original_blob": "10bdebdf539f1b397bd7bb9659fda39ef7319ed5",
+      "current_blob": "10bdebdf539f1b397bd7bb9659fda39ef7319ed5",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/README.md",
+      "sha256": "d0adacee98f1aad5308a381bd4451709adc9dd93d8015275a27449e3015146d9",
+      "original_blob": "a5a87fce18c84ef374bee0ed24d9327a7ae06e84",
+      "current_blob": "a5a87fce18c84ef374bee0ed24d9327a7ae06e84",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/assisted-calibration-import-binding-v1.json",
+      "sha256": "69d47119a0ea8bc5336a036ed94d7e9df851a3bfd0c9bd4382f5e8edac39258d",
+      "original_blob": "7a156a5c85636fb79909fc0eaeeae510595f6f37",
+      "current_blob": "7a156a5c85636fb79909fc0eaeeae510595f6f37",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/assisted-import.md",
+      "sha256": "eb19a28e0b1cadc1bd05ac085485d3880b4b7e30dd8b5fd21d0216fae17e09dd",
+      "original_blob": "d9efb3478bf24d22bc51dd6a9c6275a5b8970134",
+      "current_blob": "d9efb3478bf24d22bc51dd6a9c6275a5b8970134",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/assisted-reference-amendment-proposal.md",
+      "sha256": "dbcd3e271727aa6bf03d3836efb767c9b90a46259d1490497a1b4783791610c1",
+      "original_blob": "9f59febc9231257933e6f97e1e1bd9a8d9bc821d",
+      "current_blob": "9f59febc9231257933e6f97e1e1bd9a8d9bc821d",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/continuation.md",
+      "sha256": "451ee59333a083193c9f5eb63fb9dec7c1e4c8ab348a6537f3a5c2ebf865c6ba",
+      "original_blob": "a7f2c1eb2e95091d4348133346fa4dbcbe930f95",
+      "current_blob": "a7f2c1eb2e95091d4348133346fa4dbcbe930f95",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/followup-method.md",
+      "sha256": "1d55c2229c8f96bb6f55a3ffbafb7f6f63e00c036ab8aa8508bc31a7d2c9d566",
+      "original_blob": "e7e09734e644ed55f647cd00c2401075fdebc414",
+      "current_blob": "e7e09734e644ed55f647cd00c2401075fdebc414",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-14/followup.md",
+      "sha256": "b8ebeb6edb88aa67de09bc5afa3a816bb3dc3081d73faba5d5afbed2485e406e",
+      "original_blob": "1b7e5562bbb2842d08ef483cda4303356f11f471",
+      "current_blob": "1b7e5562bbb2842d08ef483cda4303356f11f471",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-15/authenticated-continuation.md",
+      "sha256": "a21b32066cc606f03f6a3bf2a85829044efe0f6afd08209b87989e8e4b2f5cef",
+      "original_blob": "4a9c57bc908bf578e0293bf7e1e51badd5b37975",
+      "current_blob": "4a9c57bc908bf578e0293bf7e1e51badd5b37975",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-15/continuation.md",
+      "sha256": "ff7e77c1403d42886ef1456a5cc66b4b3d93789586dc5df258288d87ae47af3d",
+      "original_blob": "107b13c5e6d40b4093953eb15398aaecaa4c8ecd",
+      "current_blob": "107b13c5e6d40b4093953eb15398aaecaa4c8ecd",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-15/extraction-adjudication-method.md",
+      "sha256": "3bf107a9e3b15e8dbfe1fd19682a026c49e97ba76699692335ad9713bc158a00",
+      "original_blob": "5e9770ad0979a0f87c79235f2dd0883c993d0967",
+      "current_blob": "5e9770ad0979a0f87c79235f2dd0883c993d0967",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-15/extraction-evaluation-evidence.md",
+      "sha256": "ff8d6434fc3e8cbc7e2740e39a5e2cf9339172f40394a8c2e9ff79bda07a2a8d",
+      "original_blob": "4bc68ae47ee9af53414cb3bbf03654fd50c47e69",
+      "current_blob": "4bc68ae47ee9af53414cb3bbf03654fd50c47e69",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-15/extraction-evaluation-policy-v1.json",
+      "sha256": "207ca2c5a323e3e0e35da1e8ef7fc1a1c305acfc97f8eeea7a931571171c6d1d",
+      "original_blob": "22b3fa8443a2239edb06789822be50a9c4816d73",
+      "current_blob": "22b3fa8443a2239edb06789822be50a9c4816d73",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-16/editorial-source-refresh.md",
+      "sha256": "a0b85925374ac8e5117a5b7e04e2359b7f8af2ed550753896ebd4719ef4afba3",
+      "original_blob": "d374d7e9cef90d0cb6a15b33dcbcb8af40e294f3",
+      "current_blob": "d374d7e9cef90d0cb6a15b33dcbcb8af40e294f3",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-17/identity-proposals.md",
+      "sha256": "7fb3a14553afef013a7d821ab848e4f9679f27e08f2dd5e56a621f4ecdc82ab9",
+      "original_blob": "3bdbe52c1892b899303c16ea2db9c577b839823b",
+      "current_blob": "3bdbe52c1892b899303c16ea2db9c577b839823b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-18/review-design-decision-packet.md",
+      "sha256": "1d59d6fe1fbce86c6aeccabbcbcf3895deeeee74b997408ada0cb94dd157460c",
+      "original_blob": "84103bec5e396cac213f9c47a363b57a85c0a349",
+      "current_blob": "84103bec5e396cac213f9c47a363b57a85c0a349",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-23/africa-today-issue-toc-evidence.md",
+      "sha256": "95b579e8075626561b998e15b9b8324263409f28dcd5977fe4cef5c616c2b76b",
+      "original_blob": "7fac3ce98c7abaf6c7db1804a696a5fa5ef30a60",
+      "current_blob": "7fac3ce98c7abaf6c7db1804a696a5fa5ef30a60",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-23/africa-today-title-follow-up.md",
+      "sha256": "5b2d2b42c323e9d30cc2fce14cbf30168d3e90fa0035ec60992f6c54ee7776b5",
+      "original_blob": "9ce8bc70006d835fdc60544a89c1b002570a0a93",
+      "current_blob": "9ce8bc70006d835fdc60544a89c1b002570a0a93",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/africa-today-human-action-request.md",
+      "sha256": "3df2b225e8b96215b715330e920b6184a92478ff4270b109082f3a7c32cef305",
+      "original_blob": "0e386c9a304e9f498be7fa99874d6965cc5343fd",
+      "current_blob": "0e386c9a304e9f498be7fa99874d6965cc5343fd",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/africa-today-source-policy-proposal.md",
+      "sha256": "d43a1a8387c4c935d08c000bbd1e6da49ea051dc8c82e86742ab02c6c7c0a5ef",
+      "original_blob": "9763cc03d5fefa085119e3796a1818862113492f",
+      "current_blob": "9763cc03d5fefa085119e3796a1818862113492f",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/broad-map-calibration-decision-batch.md",
+      "sha256": "63cf247e1431a4d8ea6910c608b252bf436526473a7f89cd13dacd0874fe83dc",
+      "original_blob": "29ba2a0361036396e1a2fcd4bfebe7223122fe95",
+      "current_blob": "29ba2a0361036396e1a2fcd4bfebe7223122fe95",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/broad-map-decision-batch-1.md",
+      "sha256": "6378e2ace055824c89eccb6cca401ee98d5b70867df35a08b927c837ceddef2d",
+      "original_blob": "1a674e1904b824daa48d5413be363848d4ec24a6",
+      "current_blob": "1a674e1904b824daa48d5413be363848d4ec24a6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/c2-v2-decision-brief.md",
+      "sha256": "80bb19e5f4a275bcc38535366d827d9c26726f657be1f1dc42032ec5557e3166",
+      "original_blob": "9bed5be541562d0720630abd71e18dc92f1d39c1",
+      "current_blob": "9bed5be541562d0720630abd71e18dc92f1d39c1",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/c2-v2-execute.py",
+      "sha256": "ea6a844e2feaa7911f7fd215e387d224c76ef55a1c93192b88aa1ea174d19a27",
+      "original_blob": "dc8b1d8fb8833fce527cbbc54706f4a83a92aa2f",
+      "current_blob": "dc8b1d8fb8833fce527cbbc54706f4a83a92aa2f",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/c2-v2-execution-result.md",
+      "sha256": "9e4011a0317d7e881959b76a5fceabdcc2863c42a6325eebc47ba4b6fd62d7d3",
+      "original_blob": "00689159e2efeb44a08c72653a6647f6301a1b29",
+      "current_blob": "00689159e2efeb44a08c72653a6647f6301a1b29",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/c2-v2-new-identity-cards-audit.md",
+      "sha256": "d35448d9807e31a27f25e0e008071e2e1a4f4be3f7baa7033407c9ac9310418e",
+      "original_blob": "1ab3dc48458b2d14d839afc0ca543e9b3575415b",
+      "current_blob": "1ab3dc48458b2d14d839afc0ca543e9b3575415b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/c2-v2-prepare.py",
+      "sha256": "6d9875bccb4c15d5166077d52781027fc329692f0de8018a82a28cd41f9a2519",
+      "original_blob": "2d6c3a65a79d525a8607db2516f3e3ff8e8fa620",
+      "current_blob": "2d6c3a65a79d525a8607db2516f3e3ff8e8fa620",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/c2-v2-result.md",
+      "sha256": "9c41a6a1a794553d8245f78fbd92717ea18dc05cb8ba9b547ef0d8c807fc5b75",
+      "original_blob": "014b93f1adea7ed1cd443df6d192857ff88f78d3",
+      "current_blob": "014b93f1adea7ed1cd443df6d192857ff88f78d3",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/calibration-cohort-v2-plan.md",
+      "sha256": "bbeb535ed072425df99a8a885e866b9557e5a188f993a2ffee9af2cb024cbaf2",
+      "original_blob": "8a3b6c8aaa57ed4f6f5387dc1f5ee49233403492",
+      "current_blob": "8a3b6c8aaa57ed4f6f5387dc1f5ee49233403492",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/doi-alternates-primary-evidence.md",
+      "sha256": "59a39eac047c1c0f3008babb3491172daf357b1d008c14d00c9239f425f251a7",
+      "original_blob": "b367a51e6ef2ed614c4c261a19b222d7c1e773d6",
+      "current_blob": "b367a51e6ef2ed614c4c261a19b222d7c1e773d6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/evobot-six-field-adopted-evidence-audit.md",
+      "sha256": "4a3e55adeec05c92fa150d9e55e83858f541ebfdf3bfcdc74c29821075dae5a4",
+      "original_blob": "45d9ac57af9dcd32e3b7f0c67775bb2247482930",
+      "current_blob": "45d9ac57af9dcd32e3b7f0c67775bb2247482930",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/evobot-six-field-extraction-reference-successor.md",
+      "sha256": "fd06491c1e015e0d499115908368330a93a8fd2cb9b1fda2f3ba55287568b8ae",
+      "original_blob": "4a338b271731224825e88ffd9b81ce2384fed3ea",
+      "current_blob": "4a338b271731224825e88ffd9b81ce2384fed3ea",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/evobot-two-field-reference-successors.md",
+      "sha256": "0a1d0b6d7c25611a570c57dace9f2c9cc9508f0e347cbdd43ceb59ff02ea6ad2",
+      "original_blob": "ec43d5310f2666d48e7c21a3215dd3b16ac64a62",
+      "current_blob": "ec43d5310f2666d48e7c21a3215dd3b16ac64a62",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/focused-related-work-report.md",
+      "sha256": "c52ee893670e50079934a53f3e9577a093394bce3c7f976e27cf4d1f127daad6",
+      "original_blob": "a20fc205e7d61bced23566f8e9d11c60a8a48728",
+      "current_blob": "a20fc205e7d61bced23566f8e9d11c60a8a48728",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/focused-related-work-screening-slice-a.md",
+      "sha256": "622c8ca051c3b2b56710400ff93e0a1d8dab9aaa3bbb5e69fff2b317271183b6",
+      "original_blob": "078844675473eb2d38d81a455ff90ca7d79992d6",
+      "current_blob": "078844675473eb2d38d81a455ff90ca7d79992d6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/focused-related-work-screening-slice-b.md",
+      "sha256": "518e488fb4fde5d0f34e41a88f24b966ac77f45b9252fd634e9699dfd42bd71a",
+      "original_blob": "a4ff5fc7f3e51b1c4c11b4779840498f81b7570c",
+      "current_blob": "a4ff5fc7f3e51b1c4c11b4779840498f81b7570c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/identity-t4-audit-proposals.md",
+      "sha256": "288ea6d429f3ee3f48ebb8b4b55d05363db764dacb26fde761291e03d4f15ab7",
+      "original_blob": "bb1d71c605df73bd2d87536d78ee58bfb7f30df2",
+      "current_blob": "bb1d71c605df73bd2d87536d78ee58bfb7f30df2",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/remaining-references-inventory.md",
+      "sha256": "3dff1039879c39de8f4c4b1b9b26b73337cb78401fb0a2059df1361c12e9a1a7",
+      "original_blob": "3efdf93a6e61125ed7995776080de74bc9a26399",
+      "current_blob": "3efdf93a6e61125ed7995776080de74bc9a26399",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/verification-cohort-candidates.md",
+      "sha256": "259ce554f92c9b7a59d56c0564d113b5f6347344d13b374c6f657f3f460d59d3",
+      "original_blob": "75826475764feb8dd5e4d41bf34aa7276efcbb77",
+      "current_blob": "75826475764feb8dd5e4d41bf34aa7276efcbb77",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-24/verification-cohort-select.py",
+      "sha256": "c5759b35a33b216d0c8ad54839454165aee93396f415c2b1593444766396a1a0",
+      "original_blob": "248ae3267002f4abcd1ab8dfe64a6800a2453814",
+      "current_blob": "248ae3267002f4abcd1ab8dfe64a6800a2453814",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/acquire_oa_pool.py",
+      "sha256": "8bf7b01fa253713fe8066e6882aa367a0f12ec7445352ffa6903da5891470c4a",
+      "original_blob": "2a129d814348b85e8dc5e50fa3e000b638f522d9",
+      "current_blob": "2a129d814348b85e8dc5e50fa3e000b638f522d9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/adjudication.py",
+      "sha256": "8ccad1d2fdb8afc370e41792f7b516634f0aac4ed5b06b788ff7990d9afc264d",
+      "original_blob": "3a05fcfbcf7b5dbe0cb3ab88d221fd1401d4c8da",
+      "current_blob": "3a05fcfbcf7b5dbe0cb3ab88d221fd1401d4c8da",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/broad-map-v5-delivery.md",
+      "sha256": "52255fa385a0754c4b49826e12fecea71efb9ad896ba8afd48090308e748c7db",
+      "original_blob": "2e61d2425ca673d453351e18440980827da6bd49",
+      "current_blob": "2e61d2425ca673d453351e18440980827da6bd49",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/claude-novelty-challenge.md",
+      "sha256": "1a4c99935f352f4dc9e4930414cf2df1e7f0d8711c8b7831b675f6487a8e4107",
+      "original_blob": "33e3cf131d52d754dc61229172feafb50b8d145f",
+      "current_blob": "33e3cf131d52d754dc61229172feafb50b8d145f",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/cohort-v2-preparation.md",
+      "sha256": "71f6484a5c2426eb585a01ca350b9b5c1ac6019dc22816a82a194c529b983367",
+      "original_blob": "5f6fa59802671e07706ccc95204b051b3bc1ddf9",
+      "current_blob": "5f6fa59802671e07706ccc95204b051b3bc1ddf9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/cohort_v2.py",
+      "sha256": "01e87245210f6a0399fc4c8c4a51e3015aadd53a0405bc2b48aa473a1c01bfd8",
+      "original_blob": "b6adbaf1d57f189851a066bebfc414c29da84126",
+      "current_blob": "b6adbaf1d57f189851a066bebfc414c29da84126",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/focused-related-work-chase-slice-c.md",
+      "sha256": "c86993208388e63a5c16910179b381e189e105b760a42bf3333fecc4a01315ea",
+      "original_blob": "1bd781cde7d7324447f978d5c499b41dbcc30d29",
+      "current_blob": "1bd781cde7d7324447f978d5c499b41dbcc30d29",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/focused-related-work-chase-slice-d.md",
+      "sha256": "ef92c7e280f6661f926240df34e8eb859968132cc18d5b49d135dc0fbbdb5fd9",
+      "original_blob": "9b59137c9bc5d02cc4c0a5713ba02645addcf4f8",
+      "current_blob": "9b59137c9bc5d02cc4c0a5713ba02645addcf4f8",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/mapping-extraction-frame-v5.json",
+      "sha256": "996295279dc3b44ac39593213fb99fce6fc7ecb3ba19ddcdb8cf37059c0a1be9",
+      "original_blob": "841ea0cb3a0efc4ed05a2661c02bb7ddbd1b2e73",
+      "current_blob": "841ea0cb3a0efc4ed05a2661c02bb7ddbd1b2e73",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/prioritized-screening-v5-sources.md",
+      "sha256": "b81f09a3a4bae09a85adb723864221fafd9c2da10828481f6aa0ecde4f75b36a",
+      "original_blob": "d1ca7150927cf561fa6d76e7c73fc426a2d915d3",
+      "current_blob": "d1ca7150927cf561fa6d76e7c73fc426a2d915d3",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/ranking-diagnostics-v5.json",
+      "sha256": "99c383a6a800656057847b5a8e24c3ee4d458a99f0540ee6cb5b5f3c1508e325",
+      "original_blob": "0829d4c8dda5aa776aa2db7e8b1583200d9b12f4",
+      "current_blob": "0829d4c8dda5aa776aa2db7e8b1583200d9b12f4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/ranking-recall-curves-v5.svg",
+      "sha256": "cdd725811d47f44c213a9f83e42af527eeccf6260c6c6bdce71889fd3c903fd0",
+      "original_blob": "41dd42e053495fdeab6c5d27bb7df84a68350a48",
+      "current_blob": "41dd42e053495fdeab6c5d27bb7df84a68350a48",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/screening-throughput.md",
+      "sha256": "35bf6eead520452c59f06a8f08b4edb6240c6e32b0599595ad32275c23a918d8",
+      "original_blob": "2cd076c7069ccb7b574df66c5baf378aa47f43da",
+      "current_blob": "2cd076c7069ccb7b574df66c5baf378aa47f43da",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/test_cohort_v2.py",
+      "sha256": "fd6a8e7ed9acdc8bbd5bc4414cf38194faed87ed7357d3e9f30b5f1694b852fc",
+      "original_blob": "ec5f8017dc161317f851d08bf77a5e330a5e9e51",
+      "current_blob": "ec5f8017dc161317f851d08bf77a5e330a5e9e51",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/preparation/2026-09-25/validation-v5.md",
+      "sha256": "c4b16abe5df9c884bdf06b1c7423cc37400bf13e5dee0a5f62c879cbcde3e545",
+      "original_blob": "6f8b8b55c88e7ed4756a57bc162a53aed435ce6e",
+      "current_blob": "6f8b8b55c88e7ed4756a57bc162a53aed435ce6e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/2026-09-24-focused-related-work-review-draft.md",
+      "sha256": "7a45cb16e4bfbd594a5c1c25e4c0c4fa19b36e44412da47d3a232b9bde42f24f",
+      "original_blob": "872c6668813f3977575ad0884067cfc4cda17008",
+      "current_blob": "872c6668813f3977575ad0884067cfc4cda17008",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/approvals/README.md",
+      "sha256": "4b15e4e310b72b28e716e0467e3ffd04968d1c6c0636695d584d9102e6f166c0",
+      "original_blob": "2ad80008af1374f758f90adcc2f152458a689596",
+      "current_blob": "2ad80008af1374f758f90adcc2f152458a689596",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/approvals/opinion-dynamics-systematic-map-v2-20260909.toml",
+      "sha256": "03e85da8d3664765183c8c5e1d41ac7982c5cee0647d831c70e57c1be0ceb597",
+      "original_blob": "f8fc43dec16e89e73051aec58acbcfaec30a78dc",
+      "current_blob": "f8fc43dec16e89e73051aec58acbcfaec30a78dc",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/approvals/opinion-dynamics-systematic-map-v3-20260911.toml",
+      "sha256": "135e44b462f7001b3ca4c9088be3829d6fe1633b34547fb612f937dc0601b774",
+      "original_blob": "abe00e871c8c84e11d6c3d8f1a45fc4135862991",
+      "current_blob": "abe00e871c8c84e11d6c3d8f1a45fc4135862991",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/approvals/opinion-dynamics-systematic-map-v4-20260914.toml",
+      "sha256": "bc1f33ffa4cdcbe7c1f4bc312e911a0728345b276f728eda8695658097252017",
+      "original_blob": "3404503ab9b204da1f3919144baa235e7cdeb8a1",
+      "current_blob": "3404503ab9b204da1f3919144baa235e7cdeb8a1",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/approvals/opinion-dynamics-systematic-map-v5-20260924.toml",
+      "sha256": "97e3510b510cbc45d7d925314115508c7cf33491044e36d3243551a1518a83aa",
+      "original_blob": "98b5bc8bff3adfe646fe678fda18ebc64e3a974c",
+      "current_blob": "98b5bc8bff3adfe646fe678fda18ebc64e3a974c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-stopping-review-v1-proposal.json",
+      "sha256": "0ed494cc9b40740eacb7038b09acbc534214ebc31a5e9dd1f7394178dd53b9d8",
+      "original_blob": "491bba91fd81ce8f4ad26919216c525d82021ef6",
+      "current_blob": "491bba91fd81ce8f4ad26919216c525d82021ef6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-stopping-review-v1-review.md",
+      "sha256": "42e6a88a71ac1bd92ba013d7dc281940121f53feb57bbf93d795e02703b70fea",
+      "original_blob": "c9e4740e42ca263861690a1664c35a85bac9dfe7",
+      "current_blob": "c9e4740e42ca263861690a1664c35a85bac9dfe7",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v1.json",
+      "sha256": "a47dc65f6011626a4ec6f82d178bdf27f10fb020661c1310f9eb5d342aa1b08b",
+      "original_blob": "5dba9fb7b16ed68554ed656c3f56086aa89bc323",
+      "current_blob": "5dba9fb7b16ed68554ed656c3f56086aa89bc323",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v2-review.md",
+      "sha256": "5a840040d0988a427411d4fb52ce909ac46137cb32624eca457c175aa683f316",
+      "original_blob": "11983c47eae50ec34dcebd215bad1bbfe49459b8",
+      "current_blob": "11983c47eae50ec34dcebd215bad1bbfe49459b8",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v2.json",
+      "sha256": "6055787cd50d9926c87d3b1b7295da8af140026a205fc3d433ca203a4d383911",
+      "original_blob": "dbffb7705d39a9c3e95184954a34c1d48b3093b0",
+      "current_blob": "dbffb7705d39a9c3e95184954a34c1d48b3093b0",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v3-review.md",
+      "sha256": "579e28b4df49fc1b7e1c3d3a7285829f3e0a5defbbe0c9e7da99e0825b493743",
+      "original_blob": "6675079a1bafb155ea8d0165c2c2efe3cbf742fe",
+      "current_blob": "6675079a1bafb155ea8d0165c2c2efe3cbf742fe",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v3-screening-context-v1.json",
+      "sha256": "13bf6ff3519645b644f02ca2d1b64a31912927a5bb0c4b9e267b2803e1b0b706",
+      "original_blob": "a93c8c2d9b2cd81a90b181270f5a6917ab060b0d",
+      "current_blob": "a93c8c2d9b2cd81a90b181270f5a6917ab060b0d",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v3.json",
+      "sha256": "107a43ef3eea63e4bb6294f80f3060ab84f2b9c81faec61dca37ccb454526943",
+      "original_blob": "5822287796a8abf895c2f353586a767660da617b",
+      "current_blob": "5822287796a8abf895c2f353586a767660da617b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v4-review.md",
+      "sha256": "1ff0832b7f61578bb431a59384d7698de112c78704573dcd8caa12486704e943",
+      "original_blob": "6d36482b1631544751c2b888d72546dbd82b50ed",
+      "current_blob": "6d36482b1631544751c2b888d72546dbd82b50ed",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v4-screening-context-v1.json",
+      "sha256": "b5462f2a4306198de4621620b05d939ce50178709558a63633302eae746812d9",
+      "original_blob": "f6df6d5f09c75a883be40b212acf4a79de9be1ff",
+      "current_blob": "f6df6d5f09c75a883be40b212acf4a79de9be1ff",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v4.json",
+      "sha256": "390d2bc01520c3422ee37deb76e0302b8d0ce2dc229000c72ca729d56187ed74",
+      "original_blob": "82e8765bbc96d1936a238aadb6e0c0c9bf722a12",
+      "current_blob": "82e8765bbc96d1936a238aadb6e0c0c9bf722a12",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-1-prioritized-screening-context-v1.json",
+      "sha256": "1e4766bf36925c3837a30d16e58d9dc3112496e152f135db2a3bb090ace650c4",
+      "original_blob": "5ce115889a6a07ee43f7049010c4e74a63059631",
+      "current_blob": "5ce115889a6a07ee43f7049010c4e74a63059631",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-1-prioritized.json",
+      "sha256": "18d83503c27b0b802eb5317a04f626a357110fe9fc16cfd62db27d242cb669a3",
+      "original_blob": "0509019c6b00c6f20311dec5e4dd4432df89cc94",
+      "current_blob": "0509019c6b00c6f20311dec5e4dd4432df89cc94",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-1-prioritized.md",
+      "sha256": "26cec66be4f29ea75c07c813494aec2e8bdfc9dd6438d1a85a84caf9f35cd389",
+      "original_blob": "2b093f28a257d7d8b014294a192260cf79bf6d58",
+      "current_blob": "2b093f28a257d7d8b014294a192260cf79bf6d58",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-editorial-refresh-proposal.json",
+      "sha256": "4c4eda364e780acd86ce367b1d7b7bd5854f4c3352f6f15a01b735a649a568e5",
+      "original_blob": "66c9b06aa21748060bd286d5ef349eba2b6a034c",
+      "current_blob": "66c9b06aa21748060bd286d5ef349eba2b6a034c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-editorial-refresh-review.md",
+      "sha256": "c6aa40a5bb70e092d7dcd46532b58bc660d24a5106cb446d3eac5251bc1698cd",
+      "original_blob": "40496853aef22c2316a4de6932a81e3af327d484",
+      "current_blob": "40496853aef22c2316a4de6932a81e3af327d484",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-prioritized-screening-context-v1.json",
+      "sha256": "64ec0a1e00e150a04c69da4eae6499110384bd3299b8ba2e01d582fe95d36a44",
+      "original_blob": "904dae6d3d449ca3aa2f7faab568990e73b3839a",
+      "current_blob": "904dae6d3d449ca3aa2f7faab568990e73b3839a",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-prioritized.json",
+      "sha256": "7850a56bff67178de676ed9cb424ca2af4a069b6937f0ecc00efcc3ccd47474d",
+      "original_blob": "cab60a7eba3c86b1aa664f7bca373a13921463ac",
+      "current_blob": "cab60a7eba3c86b1aa664f7bca373a13921463ac",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-prioritized.md",
+      "sha256": "d32569f4a6fd8e916241ba08e40b9aa994e7eaff6aa6d47ea4ac45000f391e53",
+      "original_blob": "38aca5268ec150628781f3072547b3ee1dd17145",
+      "current_blob": "38aca5268ec150628781f3072547b3ee1dd17145",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-proposal.json",
+      "sha256": "b8e6d160a270201e3cb7fb7116d3bfcfb626db4cf8ba2278494b4af80469ba4d",
+      "original_blob": "d86100a8eafdb4a4961b3eadd5ff2f3177be63dc",
+      "current_blob": "d86100a8eafdb4a4961b3eadd5ff2f3177be63dc",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-review.md",
+      "sha256": "c2b8f268f634b7dd2fe0fb96130e3d33d0a4cd9080ab5abf840378d12faa94d6",
+      "original_blob": "20c2c6d8a7c6e4ba9a55187b7769d02bb4edc0b2",
+      "current_blob": "20c2c6d8a7c6e4ba9a55187b7769d02bb4edc0b2",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/protocol/review-protocol.md",
+      "sha256": "1e846625c872a1a1686186ac7568da1a2096cff33c19b9ef10c6ea4bc334ac3c",
+      "original_blob": "5d0c5fb2d0754df61ff652ea338bd2265cfa108c",
+      "current_blob": "5d0c5fb2d0754df61ff652ea338bd2265cfa108c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-04-complete-development-v2.md",
+      "sha256": "b34fddfd02cf12fae1d9d77cab610e84dfdde4cda4794e06fd49fbb55080f2df",
+      "original_blob": "33b558b3f5228f424b66dda463ed799cab2ffaf9",
+      "current_blob": "33b558b3f5228f424b66dda463ed799cab2ffaf9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-04-development-evaluation-and-schema-diagnosis.md",
+      "sha256": "0f2796c4051b422384f40493910a531fc1b3064f6f536fd9835c77cd99ec00f0",
+      "original_blob": "33ba590089cef38e6a33b0c7d79cb59c2ae0cb14",
+      "current_blob": "33ba590089cef38e6a33b0c7d79cb59c2ae0cb14",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-04-positive-extractor-development.md",
+      "sha256": "95e6b0cba49a08cca5efd4a6ef2b0ca1fc5d875e6ef239fa776a8e4e71ff3918",
+      "original_blob": "3f7575fe02edf3f3be1ac5a80f298c39f6cbcb4e",
+      "current_blob": "3f7575fe02edf3f3be1ac5a80f298c39f6cbcb4e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-09-deduplication-v1-category-diagnostic.md",
+      "sha256": "3c3c2810ad17c26f039cf5abb69036b654a52b2c130b705315a638e5e94efe90",
+      "original_blob": "eaa45f20db815c3f9ca559104cda88f940b6d931",
+      "current_blob": "eaa45f20db815c3f9ca559104cda88f940b6d931",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-09-openalex-sparse-abstract-correction.md",
+      "sha256": "2e7d80f395e32731a2988cf4ff35348310d53339f775b2446b5da6140d4a5f8e",
+      "original_blob": "1295ed9a8296d9c8b8eadc1e6f26cd637d74c848",
+      "current_blob": "1295ed9a8296d9c8b8eadc1e6f26cd637d74c848",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-09-primary-acquisition-v2.md",
+      "sha256": "9c37f78e3f91a635519a792957f9c180b1c0cc780d0db59d84bb713ee614babc",
+      "original_blob": "676e972acad091105e0f8dae0e5d588ed48e587c",
+      "current_blob": "676e972acad091105e0f8dae0e5d588ed48e587c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-11-broad-acquisition-v3.md",
+      "sha256": "605acaf33cddd3c30b431420e0595f2e538133578b06b18b943680554281ca14",
+      "original_blob": "3c53afaa8fe3a535fc26c348f70a2dfdb87c4f97",
+      "current_blob": "3c53afaa8fe3a535fc26c348f70a2dfdb87c4f97",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-12-corpus-metadata-successor.md",
+      "sha256": "a0b8ac8777994afc3dacdaf32388b7ff4737559bae890692660c1a4b51228519",
+      "original_blob": "019954c4a958318ddd2260fa181479b53786e7bb",
+      "current_blob": "019954c4a958318ddd2260fa181479b53786e7bb",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/run-records/2026-09-28-broad-map-v5-1-production.md",
+      "sha256": "20787d23ac422e1c4b7d1e000974d9f220386f5953dbb4eef66e4ebee26f5e82",
+      "original_blob": "096f446e5faa64512e01a1c55ac022e6fd3c66cd",
+      "current_blob": "096f446e5faa64512e01a1c55ac022e6fd3c66cd",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/screening/README.md",
+      "sha256": "7baeb8d9089a0c27448aeb11cbe989ef1f631ed7bb797af687ba2ca39eabf6b2",
+      "original_blob": "a51f08b28baaeebbce3415e3f11d32a8cd46409c",
+      "current_blob": "a51f08b28baaeebbce3415e3f11d32a8cd46409c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/README.md",
+      "sha256": "f3bc329389d59d1c4c82c52004c5a38cc0435e3e0aea5046b702d914e3bdf5c2",
+      "original_blob": "fac5ed9d8cf00e5de18d799f7a0d2a59cc0d33cc",
+      "current_blob": "fac5ed9d8cf00e5de18d799f7a0d2a59cc0d33cc",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/arxiv-evidence.json",
+      "sha256": "0d6ff6c3096038d2fd8e35dff8fea934a62b1470cd9ec01a283a8c149e15b4dd",
+      "original_blob": "6f23a2cc7c2c0154bbf5598d37f3067a52a3a789",
+      "current_blob": "6f23a2cc7c2c0154bbf5598d37f3067a52a3a789",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/arxiv-pilot-v1.json",
+      "sha256": "b50799eec0ee2743cc31d8d2304eee3526407d0e7391dfe35bbb3110b7b85f17",
+      "original_blob": "b80443a1c62f9810c2c4b10aa2031dd4f51222b6",
+      "current_blob": "b80443a1c62f9810c2c4b10aa2031dd4f51222b6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-evidence-combined.json",
+      "sha256": "7ff0bd80f489c29b545abb145f5f637de8984d7c4a79484a0149a0f1f28967e5",
+      "original_blob": "f9a080541a2ee1839b645f7be3346cadb1f438d1",
+      "current_blob": "f9a080541a2ee1839b645f7be3346cadb1f438d1",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-evidence-v2.json",
+      "sha256": "88f2ab786b87c55d241151c38228f45951947192e64a98da9098bab71b6e802b",
+      "original_blob": "954a13ef237df0b78e69261f4b5bd788968862f2",
+      "current_blob": "954a13ef237df0b78e69261f4b5bd788968862f2",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-evidence-v3.json",
+      "sha256": "ebbc65bde8202bdade80510ada785715a14a9543fb7b977bea487d9cd5e71b32",
+      "original_blob": "ff5ec6e8c7dc660ad324d0f78344eb73d6f6a853",
+      "current_blob": "ff5ec6e8c7dc660ad324d0f78344eb73d6f6a853",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-evidence-v4.json",
+      "sha256": "aa9d5dc9413a3eab4c94e489971dbc164f242f49ed6139d57a6c4fa28845b6b8",
+      "original_blob": "44907d4dd180b00858c4245c565a774ff718205c",
+      "current_blob": "44907d4dd180b00858c4245c565a774ff718205c",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-evidence-v5.json",
+      "sha256": "c0d71f22573fd5052d76690721481c1a98c629a05b5f3edfff74488b16a21c5d",
+      "original_blob": "bfb4a1cb238fceb45dcb33c0917bb672852afc92",
+      "current_blob": "bfb4a1cb238fceb45dcb33c0917bb672852afc92",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-multidoi-pilot-v4.json",
+      "sha256": "6d115287632f0cd16fb6f07da85972768e6bc858b348bc95f2ad40c3cc4127c3",
+      "original_blob": "21fba109cba1febc9366de501bcfd726d37db8d8",
+      "current_blob": "21fba109cba1febc9366de501bcfd726d37db8d8",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-pilot-v1.json",
+      "sha256": "ba27e7df63193015ac1537a4f796b72d9bc24e5660f47ab6ddad9d9490caabb2",
+      "original_blob": "96a0a86120c8ddba96ef7de9339152b7c72cc298",
+      "current_blob": "96a0a86120c8ddba96ef7de9339152b7c72cc298",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-sici-pilot-v5.json",
+      "sha256": "b0e290d1ddc0acd1b9b946b769f5e0849fe7ade6d2175e419c40ca41e8b5d64d",
+      "original_blob": "03545c66a644a39f961e33ff0b614ab18de4f815",
+      "current_blob": "03545c66a644a39f961e33ff0b614ab18de4f815",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-sici-pilot-v5.md",
+      "sha256": "d634f4b0915ac2463820f7f093382bd6147250e5acdece5bf9c34bf9ee69b132",
+      "original_blob": "c4ee74229f735ec04a2e8aea30bfc4f6a6959197",
+      "current_blob": "c4ee74229f735ec04a2e8aea30bfc4f6a6959197",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-split-pilot-v3.json",
+      "sha256": "efbbbae79b3c508a94004d320ea68c5ae57958e870f3e5c644c2385411a99c80",
+      "original_blob": "d36d9936db933eb8714733e5ac82c2fe1ec4a024",
+      "current_blob": "d36d9936db933eb8714733e5ac82c2fe1ec4a024",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/dblp-split-pilot-v3.md",
+      "sha256": "37aaa7827216dc5befa4b749dd96bf5b067f682930801eba6c52ab2add876f8d",
+      "original_blob": "a9b7c1e55196c0a718bed37122df8aa7399b65fb",
+      "current_blob": "a9b7c1e55196c0a718bed37122df8aa7399b65fb",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-consensus-membership-v3.json",
+      "sha256": "c053468d6a9f2d6f7bb4df8d90c6e38bd20b228b9b41c90bb1cb59f26b29a457",
+      "original_blob": "b383a25a61562b528d15450773d28f8e4ba46faa",
+      "current_blob": "b383a25a61562b528d15450773d28f8e4ba46faa",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-consensus-volume-v3.json",
+      "sha256": "9db080ee927597ca2d8f1b819bfebbebd7b428315668a163c2e885a4518d6ef8",
+      "original_blob": "80a98df5ab325df9272ffa1ddbc9789222a940ad",
+      "current_blob": "80a98df5ab325df9272ffa1ddbc9789222a940ad",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-evidence.json",
+      "sha256": "3f51f8dde46f8ba89b31a9dd4e991f8b1d02a941b3d5d5aded4f223edf807082",
+      "original_blob": "07416dcf414c0de42c5263e7bb23f5e89fd76b79",
+      "current_blob": "07416dcf414c0de42c5263e7bb23f5e89fd76b79",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-membership-v2-title-abstract.json",
+      "sha256": "e5648ee4f58bef020734962d2adf3c120aa6d0ebffc0e19c1b2d7aef3d6c98e9",
+      "original_blob": "5faeb10b8ddfd83e74abe6b994b8d292a90c0967",
+      "current_blob": "5faeb10b8ddfd83e74abe6b994b8d292a90c0967",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-membership-v2.json",
+      "sha256": "60ad00324638b98be0c7de36e843baed7fd98bab1fbd4fd49e47554dbd6530cc",
+      "original_blob": "18ee7d723ef7680743fe707cb920407ee4406920",
+      "current_blob": "18ee7d723ef7680743fe707cb920407ee4406920",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-volume-v1-title-abstract.json",
+      "sha256": "db26c7a1ca329b7654163abe71dcd3d8eaa45d3e795649504b91b96ca79ff5e3",
+      "original_blob": "61a108fd77b4667cbfe1350e7a3ade14970b605e",
+      "current_blob": "61a108fd77b4667cbfe1350e7a3ade14970b605e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/openalex-volume-v1.json",
+      "sha256": "19933761c11e2d6ef5ac925ddceb2968b46deed44831ea3a06e9d1d001c51da0",
+      "original_blob": "686b4a5102a5e28a2f2f3348e9b17899491e9e6f",
+      "current_blob": "686b4a5102a5e28a2f2f3348e9b17899491e9e6f",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/results.md",
+      "sha256": "1f5e3649ec7750c04abe6d0a448470dd768c33ce39cc6c153e9a9e271116bee5",
+      "original_blob": "08d44e6fead068b1bd0fbea04bbb862d99ec02ac",
+      "current_blob": "08d44e6fead068b1bd0fbea04bbb862d99ec02ac",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-07/seeds.json",
+      "sha256": "4afbe3b46c13c399c0e1ee5e9511ebb33e04d5f4384a0d96e27142374ee62043",
+      "original_blob": "f47f54e924cb4de0f3a3b784d85eaf6846f9d770",
+      "current_blob": "f47f54e924cb4de0f3a3b784d85eaf6846f9d770",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/README.md",
+      "sha256": "e03e81a3342d51a14115d7b9833634e70fdfce299b37fa3a06e0e916e2ca9fd9",
+      "original_blob": "e16b7fd9cc96dcf576318f990b22ab99263812c9",
+      "current_blob": "e16b7fd9cc96dcf576318f990b22ab99263812c9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/baseline-challenge-64.json",
+      "sha256": "1b964cce01eceefa765874f22733a628795a1fe8cd815deed700ef2b659612cc",
+      "original_blob": "3e0f26226bd710d7de825919f2260a8a38085c03",
+      "current_blob": "3e0f26226bd710d7de825919f2260a8a38085c03",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/flache-reference-edges-v2.json",
+      "sha256": "d176f43f2c5c511d7a9e2349291053d967b1cf542dfc13714c874ff0f7469745",
+      "original_blob": "b10225db8aa6b1f38ce8d3cb038d53888d5a8bfc",
+      "current_blob": "b10225db8aa6b1f38ce8d3cb038d53888d5a8bfc",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/flache-reference-edges.json",
+      "sha256": "5b5cae67f92d334e9abacc40f64618ce1d214a796122cce19fbf26c28b13a145",
+      "original_blob": "1e0212ab4f3db105c28a4419aaa81e1aa18e1fa1",
+      "current_blob": "1e0212ab4f3db105c28a4419aaa81e1aa18e1fa1",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/four-leads-postfreeze-reconciliation.json",
+      "sha256": "fbd47faac75b98eaa10db14a88dc76ef7b94ae13b6e8c3b9f35e32de02756613",
+      "original_blob": "456e24cacdd55b0c9c6f83bbb962dc3cc1b70511",
+      "current_blob": "456e24cacdd55b0c9c6f83bbb962dc3cc1b70511",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/huang-zhang-2026-postfreeze-lead.json",
+      "sha256": "53cf2b31d15c73d3f9495bb14377b192f5b920da92e079f5092b6b98226ac463",
+      "original_blob": "50569f8a35f0eb9a1e7454bdb744774620cb0a22",
+      "current_blob": "50569f8a35f0eb9a1e7454bdb744774620cb0a22",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/neurocomputing-reference-edges.json",
+      "sha256": "ac2931e98aa203fcd3d0d7baa288183e878bbcd5853a4e8abb3d44aae4a289dc",
+      "original_blob": "2147118bfc415fb9247e3378d0c976ead6dd4407",
+      "current_blob": "2147118bfc415fb9247e3378d0c976ead6dd4407",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/query-expansion-proposal.json",
+      "sha256": "23b689b599a87b230b204048c9e71d494ba54d1bdb7afba37fa961a3d74d4730",
+      "original_blob": "b13f3f4481a4667f6ecd2cbf39624398e5dcc2f7",
+      "current_blob": "b13f3f4481a4667f6ecd2cbf39624398e5dcc2f7",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/starnini-reference-edges.json",
+      "sha256": "4f46896898b0551f96c92ee5da7f09ac9ff8143f0812fce737b8e5e1dc0cc230",
+      "original_blob": "32f8ba3ce8523c3d2f70a9c6c1d146b51aa65f7e",
+      "current_blob": "32f8ba3ce8523c3d2f70a9c6c1d146b51aa65f7e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/starnini-unresolved-reference-links.json",
+      "sha256": "96ac037ae0b1ba39c3614b5ca0cd2ccbda67146d0cf4f71400e5dfd9ee4096a0",
+      "original_blob": "5f9c4b343f77dfc7bb83168cdc3e5495c073441e",
+      "current_blob": "5f9c4b343f77dfc7bb83168cdc3e5495c073441e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-11-coverage/supplementary-evidence-inventory.md",
+      "sha256": "c4cce2e996bdfd90196073d59c7d61ebd71c6a7c5b6677fc0a64b12f1a78023e",
+      "original_blob": "0dbe412bddd3e64bef676fe61524fd2a14e71d8a",
+      "current_blob": "0dbe412bddd3e64bef676fe61524fd2a14e71d8a",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-12-area-map/README.md",
+      "sha256": "0e8a710d4f24d876814bc5d61e94cf23e9bbc692cebbb881948f320124852903",
+      "original_blob": "bb95c23e9e1251dab0735adf70ab6072c05933b3",
+      "current_blob": "bb95c23e9e1251dab0735adf70ab6072c05933b3",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-12-area-map/additional-missing-title-evidence.md",
+      "sha256": "b0757bdf81f84602e4b6064e7f8cf5ba9b74b148941ccd6dd4fdde13172aafa0",
+      "original_blob": "a80cad48bf12f6d247b1e107d0bd30aaf83f976e",
+      "current_blob": "a80cad48bf12f6d247b1e107d0bd30aaf83f976e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-12-area-map/evidence-map.json",
+      "sha256": "d307582d8a2ccd7fc6ff251c442f839a19a560b7084c2dec302a04d584266637",
+      "original_blob": "0225de1e8e555211e5802a835cdce5cbad8182ad",
+      "current_blob": "0225de1e8e555211e5802a835cdce5cbad8182ad",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-12-area-map/missing-title-evidence.md",
+      "sha256": "d87d7178e7de2b84c0f007cfa00fff1fe6c5775cfa5e5d632051c69bd79c59f7",
+      "original_blob": "de1a7d3c8ae6c02b47447211cfce16b54ba1f88e",
+      "current_blob": "de1a7d3c8ae6c02b47447211cfce16b54ba1f88e",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-12-area-map/queries-v3.json",
+      "sha256": "e7159c031ed11b08230e1fd6468b82d555f8edd50d89479ecd954f85c3745508",
+      "original_blob": "69065b9d307ff86a09911cba71bb2898867eff99",
+      "current_blob": "69065b9d307ff86a09911cba71bb2898867eff99",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/search-design/2026-09-12-area-map/reference-exceptions.md",
+      "sha256": "6049c73954863c7f025972e6f1b453c9581995878a89b6a33bbb9e617268794e",
+      "original_blob": "32692f18453ea45c357a158b0e202f588f8b8041",
+      "current_blob": "32692f18453ea45c357a158b0e202f588f8b8041",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-openalex-pagination-audit.json",
+      "sha256": "8da07f1c6dddd62d8b4af424c032deeec9828de29e255f371bbced78a118b6f5",
+      "original_blob": "616013ef43b55e4cd42ef7bb9dc532243b4f55d8",
+      "current_blob": "616013ef43b55e4cd42ef7bb9dc532243b4f55d8",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-acquisition-results.json",
+      "sha256": "8c77483798c616545af4f22f2ff77e78b5e892cfcba3d95ae1090a6a5d4e2c07",
+      "original_blob": "e2022aab6d00b04e7f0587493e40ad7c0abf3ed9",
+      "current_blob": "e2022aab6d00b04e7f0587493e40ad7c0abf3ed9",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-challenge-64-results.json",
+      "sha256": "537634c9f90747b90f2de88f13aed12ce6d8b13d5758c6e9455c3537b682835f",
+      "original_blob": "3d37b1e57e9ac0d347f01ff34484b69edd71131a",
+      "current_blob": "3d37b1e57e9ac0d347f01ff34484b69edd71131a",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-corpus-pending-metadata.json",
+      "sha256": "03981e02b2ec25f82aba52fde7393e5a7fc23dec5538dd42d37df147e5a1e196",
+      "original_blob": "a49a25090cf9656dbf03f492e7d8e8477713d758",
+      "current_blob": "a49a25090cf9656dbf03f492e7d8e8477713d758",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-corpus-proposals.json",
+      "sha256": "171c88dd0d8aac4adc0da4b0466895a40c640bc37dae286cc5716673ed98b554",
+      "original_blob": "908d8e73fc3aa16c3624f58eaf7f3845322d96e3",
+      "current_blob": "908d8e73fc3aa16c3624f58eaf7f3845322d96e3",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-missing-title-records.json",
+      "sha256": "612ed4c855dbe8d80c2c8b31fbada0559e1ed6055233a787f2a4f7a50340684c",
+      "original_blob": "77e0553f7e4332a53ef0a6053107d5297184e630",
+      "current_blob": "77e0553f7e4332a53ef0a6053107d5297184e630",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/2026-09-12-v3-preparation-diagnostic.json",
+      "sha256": "12921726f6611482373c486e9015c3311feb3656c2720fdfb7e09abc3c9158e2",
+      "original_blob": "f0b0159e00b70c2cf05cb6b5ac9263799549ea55",
+      "current_blob": "f0b0159e00b70c2cf05cb6b5ac9263799549ea55",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/searches/README.md",
+      "sha256": "241762ab2459e0037b675b6cca2a892c90c9161635e1fa4525fb7559c79532e2",
+      "original_blob": "c4a9224a7211304ae47b655f55bba60be249d430",
+      "current_blob": "c4a9224a7211304ae47b655f55bba60be249d430",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/README.md",
+      "sha256": "5f1e44519be2cb096d452fa7fa64830db2f5e6b9c09ef08ba55c53e42ce03f70",
+      "original_blob": "e2ff2031075cf2d2a9c043c674f4599b7cfee7a0",
+      "current_blob": "e2ff2031075cf2d2a9c043c674f4599b7cfee7a0",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/README.md",
+      "sha256": "f60249ea7f2217a8e06342ccc1e98e47d9c9a19b0105379b741a50440af61f80",
+      "original_blob": "90ff167e7cf1ef15fcf3b64ef0d88bf6d48e8e05",
+      "current_blob": "90ff167e7cf1ef15fcf3b64ef0d88bf6d48e8e05",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/codebook-v1.1.json",
+      "sha256": "be492f99a2a0f8ed4981fb69b9b046e57d004fc1adbfe67182603d61e8689173",
+      "original_blob": "16734a687bb46d7712670226d0cf8b282075b8a1",
+      "current_blob": "16734a687bb46d7712670226d0cf8b282075b8a1",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/M1_saturation_trajectory.pdf",
+      "sha256": "413913a749425c3ad3c4143af990ee4f3880d62f03ba2d374b3951fd4d9043ed",
+      "original_blob": "7afdfd9c7681ed76c2b06f5a11d8f96ab5b1c760",
+      "current_blob": "7afdfd9c7681ed76c2b06f5a11d8f96ab5b1c760",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/M1_saturation_trajectory.png",
+      "sha256": "ca5519c607354c652f41cffd456d95ede1687627c3648bd9743e4e18fdc5db66",
+      "original_blob": "564dfbef7a8155efe2e0186589ad4f92ce66e815",
+      "current_blob": "564dfbef7a8155efe2e0186589ad4f92ce66e815",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/M2_category_shares.pdf",
+      "sha256": "769e25da91778f9b3a80f2ca598410a4562be3e41f6887a996e39a5b9b3b0c31",
+      "original_blob": "86dcbbf24e29388f7590669e7744568c66c4c55b",
+      "current_blob": "86dcbbf24e29388f7590669e7744568c66c4c55b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/M2_category_shares.png",
+      "sha256": "8bc52f837a13defefe9b3322ed3f27b44ccea553bfd650071ebec7ecc3abacfc",
+      "original_blob": "6a1c750e8165c73240929f868cba34442204209b",
+      "current_blob": "6a1c750e8165c73240929f868cba34442204209b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/T_M1_transitions.csv",
+      "sha256": "5afa5e25e954ad122cf2648dc0027a369ce78ecde4301a9371c00b8c87e95fea",
+      "original_blob": "49b80a301beef78bb88e67f6c9278eaedcd2b512",
+      "current_blob": "49b80a301beef78bb88e67f6c9278eaedcd2b512",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/T_M1_transitions.tex",
+      "sha256": "f103bffc404ee4bff51746264de91ad9b914693a3e7246901e37b60e1a595fb6",
+      "original_blob": "f65b847439c233c5d931537d714be99837a6753d",
+      "current_blob": "f65b847439c233c5d931537d714be99837a6753d",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/figures/manifest.json",
+      "sha256": "1008a15a653927f9776213ef65d87c9df3f12d6c977a5c932dbd88bbae5ab389",
+      "original_blob": "62018bcdcced3d74a93045f3b1607be8539784ca",
+      "current_blob": "62018bcdcced3d74a93045f3b1607be8539784ca",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/report.md",
+      "sha256": "ae891297d605d3fe786500b444ad3253b5531ff9cbcb6c9cdae0aedffa3049c4",
+      "original_blob": "18e056fea63c21b5ba7c812418d3be1ffde88203",
+      "current_blob": "18e056fea63c21b5ba7c812418d3be1ffde88203",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/saturation-0014-audit.json",
+      "sha256": "be85da147ae7fb64adb09fcfb1ebfefb9064633c1aa406074260e4febdb71c26",
+      "original_blob": "5c158d43b5d49bedf8923dfbcfc470b0ae7f1910",
+      "current_blob": "5c158d43b5d49bedf8923dfbcfc470b0ae7f1910",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/saturation-0014.json",
+      "sha256": "61650abfb7495909ef6b71f4e4ad7f79dcfab2df556d641fac3aab3775d2d1d9",
+      "original_blob": "bec89f15306df469463923a947202ad9fc92d973",
+      "current_blob": "bec89f15306df469463923a947202ad9fc92d973",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/series.json",
+      "sha256": "bd17861913b43817ab0870d002942ad17d8049dc89c985e5b7825a95142ddb69",
+      "original_blob": "2d3b82baa299119d7d7cc94cfe61ee1fcedc3956",
+      "current_blob": "2d3b82baa299119d7d7cc94cfe61ee1fcedc3956",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/PRISMA-ScR.md",
+      "sha256": "0b1e23f0ac4a7dfd74628824ccae7d35b008c9de7196bbc78171b9a5b91d0aa3",
+      "original_blob": "a8c63203212b330bef8373f9f9403cc4770ddb32",
+      "current_blob": "a8c63203212b330bef8373f9f9403cc4770ddb32",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/README.md",
+      "sha256": "5fb4f4609960a6796592c23fc60bf38b604db23f034269dc83a51c0fbfce2d51",
+      "original_blob": "1ec57d99902d4bcd982472244511a0f3bd692834",
+      "current_blob": "1ec57d99902d4bcd982472244511a0f3bd692834",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/REPRODUCIBILITY.md",
+      "sha256": "d9b934d4200e7fa10b2b3988e18afe6d6ce8935af1cbcb455e0cbb9968f73859",
+      "original_blob": "95d8b7ae80d401464978be1c6f13e97292d6bbe5",
+      "current_blob": "95d8b7ae80d401464978be1c6f13e97292d6bbe5",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/calibration-round2-aggregates.json",
+      "sha256": "855c6a3f0b9b2a0781e731928317ebe903935b0b169a0912a072ff6ba3ffa500",
+      "original_blob": "ded9f2b33b483ffc3c332fa6ecd5a5286ee83819",
+      "current_blob": "ded9f2b33b483ffc3c332fa6ecd5a5286ee83819",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/category-comparison.csv",
+      "sha256": "0ec71478cf70bac2bb4c7591ffbb478b0aff779280c07b9855f70233dc3a0144",
+      "original_blob": "577acdfbc203672788ec01ab60f4002f2563a7e4",
+      "current_blob": "577acdfbc203672788ec01ab60f4002f2563a7e4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/category-shares-without-secondary.json",
+      "sha256": "1b282bd1e5d95bf97be3443657da5b54c543f70ffe8f3fedbd04d59bbe162fae",
+      "original_blob": "26f994bf87a807a012d469749aca0f9b4cf3ae6d",
+      "current_blob": "26f994bf87a807a012d469749aca0f9b4cf3ae6d",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/comparison.md",
+      "sha256": "e9f06b0c287f6c31cf46d5676a1f6503326fae0a60f0bf3601bcf3d07f723e4e",
+      "original_blob": "495464deebcd690dc921d6f5382145c06da880e4",
+      "current_blob": "495464deebcd690dc921d6f5382145c06da880e4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/denominators-comparison.json",
+      "sha256": "2870af38cf64cb61a4a9532f735743770292db3c174395fad17a84c2e37a0d82",
+      "original_blob": "8a33775a992d677ed3c409389ec585d875b15ee6",
+      "current_blob": "8a33775a992d677ed3c409389ec585d875b15ee6",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/flow-reconciliation.json",
+      "sha256": "764423a2e6ba64c2d9c1781f658269b4a2825e9e3baa132dcba1e4a62faefa02",
+      "original_blob": "d31aa267782f155b14472ad0979c72274972b367",
+      "current_blob": "d31aa267782f155b14472ad0979c72274972b367",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/glossary-and-captions.md",
+      "sha256": "9c379e0107725486b02ed94f01ef9654ecbc92ace07e6ab685d719f2c4bd51c8",
+      "original_blob": "98c90d9cbd8cf76e4441c72ac6b0a15e129cf610",
+      "current_blob": "98c90d9cbd8cf76e4441c72ac6b0a15e129cf610",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/provenance.json",
+      "sha256": "e941858c8a8b025e3441ed1191a9daff5a9add7e3c6da5f9a71e6889e9eb98f6",
+      "original_blob": "dfd7cc563624f21f990084a079523dc7a5390c6b",
+      "current_blob": "dfd7cc563624f21f990084a079523dc7a5390c6b",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/rebuild_aggregates.py",
+      "sha256": "db9e6981a79a8e8e288330137ea677e27ea2334f679db1180f5df266493f41b7",
+      "original_blob": "42b44b66b6270b2169e9588fc83e3f00ee510110",
+      "current_blob": "42b44b66b6270b2169e9588fc83e3f00ee510110",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/report.md",
+      "sha256": "7f667d3ee2ce9563113cdbd4f00bba88685528f6d54add148ca9fb704c95ff57",
+      "original_blob": "a6cd0daef7a44e87e9ec074463da0889e923fdcd",
+      "current_blob": "a6cd0daef7a44e87e9ec074463da0889e923fdcd",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/series-without-secondary.json",
+      "sha256": "d5fa29f4e4b7b975fbe672ae80bbb5d664ede61887b64a59f9aa5bd2bb757a61",
+      "original_blob": "98dba53dd0d624ac0ddab054bfaf0d2d4dcb2db4",
+      "current_blob": "98dba53dd0d624ac0ddab054bfaf0d2d4dcb2db4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/stopping-comparison.json",
+      "sha256": "ca4e89c31dd508c9ba05a573585c5812e77b68a2c856152af25f8fd599e877f3",
+      "original_blob": "ea0243545c1bdb53f08d5813709f7f6e40609ad4",
+      "current_blob": "ea0243545c1bdb53f08d5813709f7f6e40609ad4",
+      "relationship": "unchanged"
+    },
+    {
+      "path": "studies/ic-2026-2027/research/literature/synthesis/map-v5-1-2026-09-28/successor-1/verification.md",
+      "sha256": "d18ea1e610ed4d5e9a67069f695cce3604e0b5e4d9330ee38b37badaa2699dfa",
+      "original_blob": "804fa0ea712dac9b7371955ae48d8e3f229fa5c9",
+      "current_blob": "804fa0ea712dac9b7371955ae48d8e3f229fa5c9",
       "relationship": "unchanged"
     },
     {
@@ -5915,5 +7238,11 @@
       "relationship": "unchanged"
     }
   ],
-  "manifest_self_reference": "This file is covered by the published Git tree; it does not recursively hash itself."
+  "manifest_self_reference": "This file is covered by the published Git tree; it does not recursively hash itself.",
+  "amendments": [
+    {
+      "date": "2026-11-09",
+      "change": "restored 194 unchanged literature-map files under studies/ic-2026-2027/research/literature/ from revision cbf7d721; removed untracked .DS_Store entries"
+    }
+  ]
 }

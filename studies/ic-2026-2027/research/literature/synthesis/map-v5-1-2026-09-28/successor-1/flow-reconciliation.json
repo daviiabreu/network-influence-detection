@@ -1,0 +1,314 @@
+{
+  "exclusion_reasons": {
+    "final_reason_not_verified": 649,
+    "no_computational_model": 1014,
+    "no_scholarly_product": 12,
+    "not_human_opinion_domain": 133,
+    "outside_date_or_language": 12
+  },
+  "identity_reduction": 557,
+  "included_distinct": 4167,
+  "not_screened": 35089,
+  "phases": [
+    {
+      "before_existing_recovery": {
+        "exclude": 247,
+        "include": 48,
+        "uncertain": 105
+      },
+      "cumulative_distinct_included": 48,
+      "excluded_proposals": 247,
+      "identity_reduction": 0,
+      "included_proposals": 48,
+      "new_distinct_included": 48,
+      "overlap_with_prior_phases": 0,
+      "phase": "calibration-cohorts",
+      "screened": 400,
+      "uncertain_proposals": 105,
+      "within_phase_identity_reduction": 0
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 822,
+        "include": 45,
+        "uncertain": 150
+      },
+      "cumulative_distinct_included": 94,
+      "excluded_proposals": 857,
+      "identity_reduction": 2,
+      "included_proposals": 48,
+      "new_distinct_included": 46,
+      "overlap_with_prior_phases": 0,
+      "phase": "layer0",
+      "screened": 1017,
+      "uncertain_proposals": 112,
+      "within_phase_identity_reduction": 2
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 8,
+        "include": 296,
+        "uncertain": 196
+      },
+      "cumulative_distinct_included": 401,
+      "excluded_proposals": 14,
+      "identity_reduction": 0,
+      "included_proposals": 307,
+      "new_distinct_included": 307,
+      "overlap_with_prior_phases": 0,
+      "phase": "batch-0001",
+      "screened": 500,
+      "uncertain_proposals": 179,
+      "within_phase_identity_reduction": 0
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 4,
+        "include": 373,
+        "uncertain": 123
+      },
+      "cumulative_distinct_included": 718,
+      "excluded_proposals": 6,
+      "identity_reduction": 69,
+      "included_proposals": 386,
+      "new_distinct_included": 317,
+      "overlap_with_prior_phases": 0,
+      "phase": "batch-0002",
+      "screened": 500,
+      "uncertain_proposals": 108,
+      "within_phase_identity_reduction": 69
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 6,
+        "include": 410,
+        "uncertain": 84
+      },
+      "cumulative_distinct_included": 1068,
+      "excluded_proposals": 9,
+      "identity_reduction": 67,
+      "included_proposals": 417,
+      "new_distinct_included": 350,
+      "overlap_with_prior_phases": 11,
+      "phase": "batch-0003",
+      "screened": 500,
+      "uncertain_proposals": 74,
+      "within_phase_identity_reduction": 56
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 6,
+        "include": 407,
+        "uncertain": 87
+      },
+      "cumulative_distinct_included": 1422,
+      "excluded_proposals": 6,
+      "identity_reduction": 53,
+      "included_proposals": 407,
+      "new_distinct_included": 354,
+      "overlap_with_prior_phases": 10,
+      "phase": "batch-0004",
+      "screened": 500,
+      "uncertain_proposals": 87,
+      "within_phase_identity_reduction": 43
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 14,
+        "include": 390,
+        "uncertain": 96
+      },
+      "cumulative_distinct_included": 1769,
+      "excluded_proposals": 14,
+      "identity_reduction": 43,
+      "included_proposals": 390,
+      "new_distinct_included": 347,
+      "overlap_with_prior_phases": 9,
+      "phase": "batch-0005",
+      "screened": 500,
+      "uncertain_proposals": 96,
+      "within_phase_identity_reduction": 34
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 19,
+        "include": 362,
+        "uncertain": 119
+      },
+      "cumulative_distinct_included": 2079,
+      "excluded_proposals": 19,
+      "identity_reduction": 52,
+      "included_proposals": 362,
+      "new_distinct_included": 310,
+      "overlap_with_prior_phases": 15,
+      "phase": "batch-0006",
+      "screened": 500,
+      "uncertain_proposals": 119,
+      "within_phase_identity_reduction": 37
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 16,
+        "include": 353,
+        "uncertain": 131
+      },
+      "cumulative_distinct_included": 2394,
+      "excluded_proposals": 16,
+      "identity_reduction": 38,
+      "included_proposals": 353,
+      "new_distinct_included": 315,
+      "overlap_with_prior_phases": 8,
+      "phase": "batch-0007",
+      "screened": 500,
+      "uncertain_proposals": 131,
+      "within_phase_identity_reduction": 30
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 22,
+        "include": 345,
+        "uncertain": 133
+      },
+      "cumulative_distinct_included": 2694,
+      "excluded_proposals": 22,
+      "identity_reduction": 45,
+      "included_proposals": 345,
+      "new_distinct_included": 300,
+      "overlap_with_prior_phases": 8,
+      "phase": "batch-0008",
+      "screened": 500,
+      "uncertain_proposals": 133,
+      "within_phase_identity_reduction": 37
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 24,
+        "include": 318,
+        "uncertain": 158
+      },
+      "cumulative_distinct_included": 2976,
+      "excluded_proposals": 24,
+      "identity_reduction": 36,
+      "included_proposals": 318,
+      "new_distinct_included": 282,
+      "overlap_with_prior_phases": 14,
+      "phase": "batch-0009",
+      "screened": 500,
+      "uncertain_proposals": 158,
+      "within_phase_identity_reduction": 22
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 42,
+        "include": 309,
+        "uncertain": 149
+      },
+      "cumulative_distinct_included": 3261,
+      "excluded_proposals": 42,
+      "identity_reduction": 24,
+      "included_proposals": 309,
+      "new_distinct_included": 285,
+      "overlap_with_prior_phases": 6,
+      "phase": "batch-0010",
+      "screened": 500,
+      "uncertain_proposals": 149,
+      "within_phase_identity_reduction": 18
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 51,
+        "include": 296,
+        "uncertain": 153
+      },
+      "cumulative_distinct_included": 3530,
+      "excluded_proposals": 51,
+      "identity_reduction": 27,
+      "included_proposals": 296,
+      "new_distinct_included": 269,
+      "overlap_with_prior_phases": 5,
+      "phase": "batch-0011",
+      "screened": 500,
+      "uncertain_proposals": 153,
+      "within_phase_identity_reduction": 22
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 68,
+        "include": 243,
+        "uncertain": 189
+      },
+      "cumulative_distinct_included": 3744,
+      "excluded_proposals": 68,
+      "identity_reduction": 29,
+      "included_proposals": 243,
+      "new_distinct_included": 214,
+      "overlap_with_prior_phases": 6,
+      "phase": "batch-0012",
+      "screened": 500,
+      "uncertain_proposals": 189,
+      "within_phase_identity_reduction": 23
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 60,
+        "include": 247,
+        "uncertain": 193
+      },
+      "cumulative_distinct_included": 3952,
+      "excluded_proposals": 60,
+      "identity_reduction": 39,
+      "included_proposals": 247,
+      "new_distinct_included": 208,
+      "overlap_with_prior_phases": 8,
+      "phase": "batch-0013",
+      "screened": 500,
+      "uncertain_proposals": 193,
+      "within_phase_identity_reduction": 31
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 83,
+        "include": 231,
+        "uncertain": 186
+      },
+      "cumulative_distinct_included": 4150,
+      "excluded_proposals": 83,
+      "identity_reduction": 33,
+      "included_proposals": 231,
+      "new_distinct_included": 198,
+      "overlap_with_prior_phases": 8,
+      "phase": "batch-0014",
+      "screened": 500,
+      "uncertain_proposals": 186,
+      "within_phase_identity_reduction": 25
+    },
+    {
+      "before_existing_recovery": {
+        "exclude": 282,
+        "include": 17,
+        "uncertain": 101
+      },
+      "cumulative_distinct_included": 4167,
+      "excluded_proposals": 282,
+      "identity_reduction": 0,
+      "included_proposals": 17,
+      "new_distinct_included": 17,
+      "overlap_with_prior_phases": 0,
+      "phase": "remainder",
+      "screened": 400,
+      "uncertain_proposals": 101,
+      "within_phase_identity_reduction": 0
+    }
+  ],
+  "proposals": 43906,
+  "totals": {
+    "exclude": 1820,
+    "include": 4724,
+    "uncertain": 2273
+  },
+  "uncertainty_availability": {
+    "abstract_present": 71,
+    "availability_unverified": 55,
+    "no_abstract_in_bound_task": 2147
+  }
+}

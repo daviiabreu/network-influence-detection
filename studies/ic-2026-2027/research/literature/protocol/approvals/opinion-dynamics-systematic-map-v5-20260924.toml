@@ -1,0 +1,22 @@
+# Davi answered "aprovar tudo" to the exact v5 editorial-policy question in
+# IC - Coordenacao central on 2026-09-24. The presented subject was the
+# 4c4eda...568e5 amendment only: documented bibliographic-identification
+# sources and explicit untitled representation. No individual metadata choice,
+# result, new acquisition, or later Africa Today source was approved.
+# The contract's authorization enum is retained; this approval does not
+# initiate search execution or broaden the unchanged scientific scope.
+schema_version = "1"
+approval_id = "systematic-map-v5-editorial-identification-20260924"
+decision = "approved"
+authorization = "systematic_review_search_execution"
+approved_at = 2026-09-24T13:02:04+00:00
+subject_path = "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v5-editorial-refresh-proposal.json"
+protocol_id = "opinion-dynamics-systematic-map-v5"
+protocol_version = "5.0.0"
+protocol_status = "review_candidate"
+protocol_sha256 = "4c4eda364e780acd86ce367b1d7b7bd5854f4c3352f6f15a01b735a649a568e5"
+repository_commit = "a952582f47798c80404dbd39ae8b79fe82a02657"
+
+[[approvers]]
+role = "research_owner"
+name = "Davi Abreu da Silveira"

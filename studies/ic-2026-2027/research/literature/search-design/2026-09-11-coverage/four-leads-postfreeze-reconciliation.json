@@ -1,0 +1,227 @@
+{
+  "status": "postfreeze_lead_reconciliation",
+  "compared_at": "2026-09-12T01:53:57.692622+00:00",
+  "baseline_observations": 22404,
+  "baseline_sha256": "f1136eda2f2a3a181f71b1372669b7ec7db0c4b521ec22e98ee3be35b69e2860",
+  "draft_protocol_sha256": "0c9f6fb356705b19a88d5f262d870ef6094b16686121eb2fefc0e984d41e4b48",
+  "selection_provenance": "Four leads supplied by the broad_venues agent after the 64-candidate challenge and its baseline comparison were frozen. Existing candidates remain in the frozen set only once; these leads do not expand its denominator or form an independent retest.",
+  "leads": [
+    {
+      "lead_id": "icwsm2026-simulating",
+      "doi": "10.1609/icwsm.v20i1.42655",
+      "publisher_title": "Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data",
+      "primary_source_url": "https://ojs.aaai.org/index.php/ICWSM/article/view/42655",
+      "doi_match_count": 2,
+      "normalized_title_only_match_count": 2,
+      "matches": [
+        {
+          "record_id": "observation.af08365211661f170d9ee98efed3e3d63fffafebb0d4e618b7950fb196d9898d",
+          "title": "Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data",
+          "identifiers": [
+            "doi:10.1609/icwsm.v20i1.42655",
+            "openalex:W4415251582"
+          ],
+          "source_id": "openalex",
+          "search_id": "search.openalex.q01",
+          "publication_year": 2026,
+          "raw_artifact_sha256": "7874ab012cf150f21d4b701c5583bd4ce65ee5772ab7940289f818d7dedee23c",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v20i1.42655"
+        },
+        {
+          "record_id": "observation.4d112f9b32829dfcc6f14043dd53fa7b7035fbcfd82558704e3bc8969cbea098",
+          "title": "Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data",
+          "identifiers": [
+            "doi:10.1609/icwsm.v20i1.42655",
+            "openalex:W4415251582"
+          ],
+          "source_id": "openalex",
+          "search_id": "search.openalex.q10",
+          "publication_year": 2026,
+          "raw_artifact_sha256": "71ab23939c4ebc6b5c0f86dd9491a4f1325502956a7974d0535a54c7d52e539d",
+          "landing_page_url": "https://doi.org/10.1609/icwsm.v20i1.42655"
+        },
+        {
+          "record_id": "observation.ef79ce2c6e3346fce2606d0e587e01bf7933bc96327a976ea959feeae56d5548",
+          "title": "Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data",
+          "identifiers": [
+            "arxiv:2509.18985",
+            "category:cs.SI"
+          ],
+          "source_id": "arxiv",
+          "search_id": "search.arxiv.q01",
+          "publication_year": 2025,
+          "raw_artifact_sha256": "fd81dc42743fb92cb22695d839e790c801ed6936873b30ec25a64f202e9a9a5a",
+          "landing_page_url": "https://arxiv.org/abs/2509.18985"
+        },
+        {
+          "record_id": "observation.5ca9a9aeb1a31eee04bba0bfb1cf7aa0a9dfcfd2664094955d7464b6a7be79cc",
+          "title": "Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data",
+          "identifiers": [
+            "arxiv:2509.18985",
+            "category:cs.SI"
+          ],
+          "source_id": "arxiv",
+          "search_id": "search.arxiv.q10",
+          "publication_year": 2025,
+          "raw_artifact_sha256": "59c2ae1bc16240b6dc58fed4124ee59ccaf5caf70714ae947d1fd5cd357fbf3f",
+          "landing_page_url": "https://arxiv.org/abs/2509.18985"
+        }
+      ],
+      "frozen_challenge_candidate_ids": [],
+      "draft_v3_exact_metadata_search": null,
+      "screening_status": "pending; no scientific inclusion/exclusion established",
+      "publisher_publication_date": "2026-05-25",
+      "evidence_note": "Publisher page inspected through web tool; metadata and identity only, no final eligibility assessment.",
+      "recovery_recommendation": "Existing baseline observations identified; retain source-specific identity evidence and pending eligibility.",
+      "related_preprint": {
+        "identifier": "arxiv:2509.18985",
+        "source_url": "https://arxiv.org/abs/2509.18985",
+        "first_submitted": "2025-09-23",
+        "latest_version_at_check": "v2",
+        "latest_revision": "2026-04-03",
+        "identity_status": "Same title and author set; original observations and both source versions retained, not a manual merge decision."
+      }
+    },
+    {
+      "lead_id": "naacl2025-funding",
+      "doi": "10.18653/v1/2025.findings-naacl.101",
+      "publisher_title": "Biases in Opinion Dynamics in Multi-Agent Systems of Large Language Models: A Case Study on Funding Allocation",
+      "primary_source_url": "https://aclanthology.org/2025.findings-naacl.101/",
+      "doi_match_count": 3,
+      "normalized_title_only_match_count": 0,
+      "matches": [
+        {
+          "record_id": "observation.52a10dbb74e537811b1f5d74e5cfec23d2c45ef6fef078b87fde67cec9a25480",
+          "title": "Biases in Opinion Dynamics in Multi-Agent Systems of Large Language Models: A Case Study on Funding Allocation.",
+          "identifiers": [
+            "dblp:conf/naacl/CisnerosVelarde25",
+            "doi:10.18653/v1/2025.findings-naacl.101"
+          ],
+          "source_id": "dblp",
+          "search_id": "search.dblp.q01",
+          "publication_year": 2025,
+          "raw_artifact_sha256": "dca219e4c6fa5181476a5bd2ac320feb974a5e7057145e775d34459665a88108",
+          "landing_page_url": "https://dblp.org/rec/conf/naacl/CisnerosVelarde25"
+        },
+        {
+          "record_id": "observation.6664407e208ea51913237555c3055328b7429db9d842e15990a34ff80b67f5b9",
+          "title": "Biases in Opinion Dynamics in Multi-Agent Systems of Large Language Models: A Case Study on Funding Allocation",
+          "identifiers": [
+            "doi:10.18653/v1/2025.findings-naacl.101",
+            "openalex:W4411113253"
+          ],
+          "source_id": "openalex",
+          "search_id": "search.openalex.q01",
+          "publication_year": 2025,
+          "raw_artifact_sha256": "0a194e1d1797a329edcd789aeff20eadd123057c2b53308cb19514b66c5c2d2d",
+          "landing_page_url": "https://doi.org/10.18653/v1/2025.findings-naacl.101"
+        },
+        {
+          "record_id": "observation.8b591c1f8ef4c915027153253ade7ca62eb2202b5ba313a4f70475c4ea563f9f",
+          "title": "Biases in Opinion Dynamics in Multi-Agent Systems of Large Language Models: A Case Study on Funding Allocation",
+          "identifiers": [
+            "doi:10.18653/v1/2025.findings-naacl.101",
+            "openalex:W4411113253"
+          ],
+          "source_id": "openalex",
+          "search_id": "search.openalex.q10",
+          "publication_year": 2025,
+          "raw_artifact_sha256": "71ab23939c4ebc6b5c0f86dd9491a4f1325502956a7974d0535a54c7d52e539d",
+          "landing_page_url": "https://doi.org/10.18653/v1/2025.findings-naacl.101"
+        }
+      ],
+      "frozen_challenge_candidate_ids": [
+        "llm-allocation"
+      ],
+      "draft_v3_exact_metadata_search": "metadata.crossref.doi.0881",
+      "screening_status": "pending; no scientific inclusion/exclusion established",
+      "publisher_publication_date": "2025-04",
+      "evidence_note": "Publisher page inspected through web tool; metadata and identity only, no final eligibility assessment.",
+      "recovery_recommendation": "Existing baseline observations identified; retain source-specific identity evidence and pending eligibility."
+    },
+    {
+      "lead_id": "scirep2026-dissemination",
+      "doi": "10.1038/s41598-026-44206-z",
+      "publisher_title": "Public opinion dissemination simulation based on large language model multi-agent systems",
+      "primary_source_url": "https://www.nature.com/articles/s41598-026-44206-z",
+      "doi_match_count": 1,
+      "normalized_title_only_match_count": 0,
+      "matches": [
+        {
+          "record_id": "observation.43565a90e6c064ba2dd74efe6b85d15316b2f521b2efeba170fae20e54f1b969",
+          "title": "Public opinion dissemination simulation based on large language model multi-agent systems",
+          "identifiers": [
+            "doi:10.1038/s41598-026-44206-z",
+            "openalex:W7149433290"
+          ],
+          "source_id": "openalex",
+          "search_id": "search.openalex.q01",
+          "publication_year": 2026,
+          "raw_artifact_sha256": "10440f8850cd34785aa982306cdab7604ebe4dc3cb725f1bf89599691bdb4dfc",
+          "landing_page_url": "https://doi.org/10.1038/s41598-026-44206-z"
+        }
+      ],
+      "frozen_challenge_candidate_ids": [],
+      "draft_v3_exact_metadata_search": null,
+      "screening_status": "pending; no scientific inclusion/exclusion established",
+      "publisher_publication_date": "2026-04-04",
+      "evidence_note": "Publisher page inspected through web tool; metadata and identity only, no final eligibility assessment.",
+      "recovery_recommendation": "Existing baseline observations identified; retain source-specific identity evidence and pending eligibility."
+    },
+    {
+      "lead_id": "plos2026-conversational-bias",
+      "doi": "10.1371/journal.pone.0355458",
+      "publisher_title": "Unmasking conversational bias in AI multiagent systems",
+      "primary_source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0355458",
+      "doi_match_count": 0,
+      "normalized_title_only_match_count": 0,
+      "matches": [],
+      "frozen_challenge_candidate_ids": [],
+      "draft_v3_exact_metadata_search": null,
+      "screening_status": "pending; no scientific inclusion/exclusion established",
+      "publisher_publication_date": "2026-08-18",
+      "evidence_note": "Publisher page inspected through web tool; metadata and identity only, no final eligibility assessment.",
+      "recovery_recommendation": "Recover DOI 10.1371/journal.pone.0355458 and arXiv id:2501.14844; both publisher title and those identifiers are absent under baseline exact checks. Two manifestations are candidates, not two final included studies.",
+      "related_preprint": {
+        "identifier": "arxiv:2501.14844",
+        "doi": "10.48550/arXiv.2501.14844",
+        "source_url": "https://arxiv.org/abs/2501.14844",
+        "first_submitted": "2025-01-24",
+        "latest_version_at_check": "v3",
+        "latest_revision": "2026-08-13",
+        "baseline_identifier_matches": 0,
+        "identity_status": "Same normalized title and author set; no PLOS DOI displayed on arXiv page. Retain as related-manifestation candidate requiring adjudication rather than infer a canonical merge."
+      }
+    }
+  ],
+  "comparison_artifact_sha256": "4c34c003d15d1f75b8dddbe9e1ab9dca73b96073df8406940ef2f2fdf0f401b1",
+  "additional_identity_sources": [
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0355458",
+      "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0355458",
+      "status": 200,
+      "started_at": "2026-09-12T01:55:48.191392+00:00",
+      "completed_at": "2026-09-12T01:55:48.948914+00:00",
+      "sha256": "173d76857923243e84c2fdfbaf307ec6ac1738f3aea12e68878dd0a13e9e63a5",
+      "bytes": 228106
+    },
+    {
+      "url": "https://arxiv.org/abs/2501.14844",
+      "final_url": "https://arxiv.org/abs/2501.14844",
+      "status": 200,
+      "started_at": "2026-09-12T01:55:49.450871+00:00",
+      "completed_at": "2026-09-12T01:55:49.515115+00:00",
+      "sha256": "0aade760266c16cb2086048008d364a2eb6293771ecc5394cdc913465dd5166e",
+      "bytes": 42185
+    }
+  ],
+  "reconciliation_completed_at": "2026-09-12T01:56:49.905620+00:00",
+  "successor_handoff": {
+    "protocol_file_sha256": "107a43ef3eea63e4bb6294f80f3060ab84f2b9c81faec61dca37ccb454526943",
+    "strategies": {
+      "id:2501.14844": "metadata.arxiv.id.0025",
+      "10.1371/journal.pone.0355458": "metadata.crossref.doi.0849"
+    },
+    "note": "Snapshot of the prepared successor for handoff; source and baseline evidence above remain independent of whether the successor is later approved or executed."
+  }
+}

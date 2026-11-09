@@ -1,0 +1,108 @@
+{
+  "acquisition_receipt": {
+    "sha256": "5aa52db3b98487a17a5c50d246c23e4c97d611a4a1c6c589119c2cf8d29bc675",
+    "size_bytes": 1120
+  },
+  "acquisition_report_sha256": "edfa48474097d7c81e441fdbe5089a924d514deabbb6baf3bbaf60e0df220a11",
+  "acquisition_run_id": "opinion-dynamics-map-v3-broad-20260911-interrupted-1",
+  "acquisition_status": "primary_search_complete",
+  "adjudication_record_pairs": null,
+  "adjudication_work_components": null,
+  "adjudication_work_pairs": null,
+  "baseline_sha256": "6b6e9be98d7639410b7a0026dc2e71e6a16134b45e26a1afb11b36ec36f0a100",
+  "by_source": {
+    "arxiv": {
+      "complete_searches": 48,
+      "incomplete_searches": 0,
+      "issue_codes": {},
+      "observations": 4917,
+      "pages": 90,
+      "provider_identities": 3603,
+      "retained_attempts_in_effective_searches": 93,
+      "searches": 48
+    },
+    "crossref": {
+      "complete_searches": 936,
+      "incomplete_searches": 0,
+      "issue_codes": {},
+      "observations": 935,
+      "pages": 1871,
+      "provider_identities": 935,
+      "retained_attempts_in_effective_searches": 1871,
+      "searches": 936
+    },
+    "dblp": {
+      "complete_searches": 25,
+      "incomplete_searches": 0,
+      "issue_codes": {},
+      "observations": 6153,
+      "pages": 77,
+      "provider_identities": 6001,
+      "retained_attempts_in_effective_searches": 77,
+      "searches": 25
+    },
+    "openalex": {
+      "complete_searches": 18,
+      "incomplete_searches": 0,
+      "issue_codes": {},
+      "observations": 42565,
+      "pages": 435,
+      "provider_identities": 38794,
+      "retained_attempts_in_effective_searches": 435,
+      "searches": 18
+    }
+  },
+  "challenge_64_exact_doi_matches": 64,
+  "challenge_64_thematic_exact_doi_matches": 59,
+  "challenge_input_sha256": "1b964cce01eceefa765874f22733a628795a1fe8cd815deed700ef2b659612cc",
+  "challenge_interpretation": "Coverage regression after deliberate expansion and identifier recovery; not independent recall, eligibility or sensitivity.",
+  "challenge_results_file": "2026-09-12-v3-challenge-64-results.json",
+  "challenge_results_sha256": "d2c5bbe08f4063167fe9c090be27ce2889ac16eb811a56eda2ce0030010af440",
+  "companion_interpretation": "Direct typed identifier evidence links only; not work grouping, conflict resolution or title amendment.",
+  "corpus_run_id": "opinion-dynamics-map-v3-broad-corpus-20260911-interrupted-1",
+  "diagnostic_deduplication_executed": false,
+  "diagnostic_format": "prepared-after-missing-title-failure-1",
+  "diagnostic_new_network_acquisition": false,
+  "execution_code_revision": "c8461e11b9d9d7faec9cda7ccb7bf9106fe953f0",
+  "execution_metadata_sha256": "f9524bb06460a08323772e235f6eb7adb99a1f09a3bf19dce8cc983c37d77bc0",
+  "failure_file_sha256": "587403d78bd7a59270e411097e4b284f1e9ecd91b3cb71f33192be4e99cfdc88",
+  "generated_at": "2026-09-12T06:08:57.089546+00:00",
+  "human_decisions_authored": false,
+  "interpretation": "Read-only preparation diagnostic after a real failed native corpus-stage attempt. Null work counts are unavailable, not zero. Metadata-only publication; no raw pages, abstracts, eligibility decisions or corpus corrections.",
+  "missing_abstract_observations": 14878,
+  "missing_title_observations": 10,
+  "missing_title_records_file": "2026-09-12-v3-missing-title-records.json",
+  "missing_title_without_direct_titled_companion": 9,
+  "missing_titles_sha256": "eaadac740ed13eaa93d55871178e6e2c711544068c5adbf1521b260f91f2e567",
+  "native_corpus_stage_attempted": true,
+  "native_corpus_stage_outcome": "failed_before_deduplication_result",
+  "native_stage_receipt_available": false,
+  "observation_projection": {
+    "sha256": "93c8086aa6b0231fd019291f9bb3984e5e436e629c4424e95ae499729957cc85",
+    "size_bytes": 260139447
+  },
+  "observations": 54570,
+  "operator_sha256": "1442ae4fa629bffdb7186e0bb03d930c906ef1783fcc4a2d658c048e802d0092",
+  "preparation_receipt_file_sha256": "fa934b8b065880228373d76040527a76fc7cdced9c92ebb69a31891485ccf4fa",
+  "projected_records": {
+    "sha256": "772afb69e868ef3fc6cf94e79d3c1b422f11f8fba453621c0092fc65028fa5a1",
+    "size_bytes": 116475949
+  },
+  "proposed_works": null,
+  "protected_file_hashes_and_metadata_unchanged": true,
+  "provider_record_identities": 49333,
+  "public_summary_format": "broad-v3-preparation-diagnostic-metadata-1",
+  "read_only_preparation_replay_equal": true,
+  "readiness_conflicts": null,
+  "recorded_failure": {
+    "at": "2026-09-12T06:07:06.064960+00:00",
+    "error_details_omitted_to_protect_private_inputs": true,
+    "error_type": "IncompleteBibliographicMetadataError",
+    "phase": "corpus_stage",
+    "systematic_review_complete": false
+  },
+  "scientific_eligibility_assessed": false,
+  "source_summary_sha256": "3a30917bf50eef60d45d0326eafe715604b2f2d4c04f1e59aa9689e6838bd3a5",
+  "systematic_review_complete": false,
+  "work_and_adjudication_counts_unavailable_reason": "Native deduplication stopped before a result, stage receipt or queue."
+}

@@ -1,0 +1,412 @@
+{
+  "deduplication_sha256": "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+  "format": "source-bound-corpus-metadata-proposals-1",
+  "metadata_enrichment_performed": false,
+  "metadata_review_candidates": [
+    {
+      "candidate_id": "metadata.v1.0e18d44d37cf2642f10b72ae",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "dbda396f8575115f161712500b4354f5047f646a100207943897b679f5d7d5c1"
+      ],
+      "record_ids": [
+        "observation.c7c3840350af4810af7ace86e2a96b334ab2ff868273f4b1fff97e20d01b19f4"
+      ],
+      "work_id": "work.v2.43351c396ccca39bae01717a"
+    },
+    {
+      "candidate_id": "metadata.v1.2549f65cfc14c6b88e8f661f",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "78ae5fff921e41f382225e956e63082c1c575ffcdf5eebef80536ad6e4b9f568"
+      ],
+      "record_ids": [
+        "observation.c99adadabff7febd3c6b0b704106b7464cfb3ac6e0c9a063c5bb542fc1f37e48"
+      ],
+      "work_id": "work.v2.34b9be3dede102b1618f9628"
+    },
+    {
+      "candidate_id": "metadata.v1.2b16f287360d30fbd72386e5",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "13a44773ab6f8cd2b20c187a89b1be898a89523f88367b6493725666b24a7532"
+      ],
+      "record_ids": [
+        "observation.61f43fecedb0dbf0fc926339631233420e10dd56f03755cb698f879bb7c756c0"
+      ],
+      "work_id": "work.v2.68b38a78b030274e4327db4b"
+    },
+    {
+      "candidate_id": "metadata.v1.8a79703d6ac027039213a5f9",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "b9ffe4ad58e6e095f8c4bc31e6135be983c853f2adf4147e8ffcb2e51c101b0d"
+      ],
+      "record_ids": [
+        "observation.c639248f0936172a71d544531051914a4787e55b69e8ff35f1398122c41b7deb"
+      ],
+      "work_id": "work.v2.822e2c15599b7ea8ea32b51e"
+    },
+    {
+      "candidate_id": "metadata.v1.8b2b44dc633a7d71814adc05",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "8151f58018bee1fa1c03d4e251e913c4d8cd090ccc1437a5167934831867f0a6"
+      ],
+      "record_ids": [
+        "observation.c2e62a6168efcac92e23ac08accedde61f5583165e64c10e0cbb2bf0ec3607ad"
+      ],
+      "work_id": "work.v2.da28e163d6aa1e29945ea182"
+    },
+    {
+      "candidate_id": "metadata.v1.b1a486199ea6c6fee2c9a177",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "d2b076dd497f1dc5dbe916dcfa94357be5af0993db0625c19318041e8ada477a"
+      ],
+      "record_ids": [
+        "observation.102c70989597ea089dab89ed77f9299c4bbc60c84f3af10df9902348f82e5435"
+      ],
+      "work_id": "work.v2.88dd1def024be7a453c6df2f"
+    },
+    {
+      "candidate_id": "metadata.v1.c6b942a2d4575be4a7f3f3b0",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "f4a73e7de81b765db56d91601260517a0b574e5e0a9c5ceb719daafbc8ae8fac"
+      ],
+      "record_ids": [
+        "observation.c92cc0fdcbcb8b26e5d421e7888cdb788765635ced02113aad7f6d5e8c2f3579"
+      ],
+      "work_id": "work.v2.e152588b3504fa1bf0b39a4c"
+    },
+    {
+      "candidate_id": "metadata.v1.d42cd08313775db8cb6ed4cc",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "07eada19b5a66db4a5524e20047269c474dd619ea431e30684a928c6b725206d"
+      ],
+      "record_ids": [
+        "observation.a8822202786493b6caec5761f7f27415ac7c044feeea7a148f88d1212f238c9b"
+      ],
+      "work_id": "work.v2.26bfa8f4d833cac14f231b10"
+    },
+    {
+      "candidate_id": "metadata.v1.ea8185255c7dc5d57ab30655",
+      "disposition": "pending_metadata_review",
+      "missing_fields": [
+        "title"
+      ],
+      "raw_artifact_sha256s": [
+        "0ed8098e260e2376328abca016803f72d37dab58f5ebca1c09ef5a22d593d654"
+      ],
+      "record_ids": [
+        "observation.5c9272239df1810851ae74ea74c294fa27e1fe986d691b913f7e03e22e081b59"
+      ],
+      "work_id": "work.v2.59d8455c664a03aeb09642b5"
+    }
+  ],
+  "note": "Source metadata and proposed identities only; no exclusion, merge, title amendment or approval.",
+  "readiness_conflicts": [
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.0ffb6e9e1e1f6c98e735de8c8859c3cb002e75adaadae2e15b769a4bd13a78b4"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.0a292b87dab05b9d6ac08104"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.d51b10b7d67742a8b9355eba86ce094db0c6a061921a0fc9ffca24c39c93ef7e"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.0cabb1d4b81a24cea2e32b10"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.fe0f76925d93889724b65e753f9e9c640f68246526a74b00f78bbe6ff360f850"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.207e84117323b8b22a0f51ff"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.46673b2b1a8e75ea27a33e8f5a2d6f310d708f3f13181b5be7d39fdf9cd8a316"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.22441ec89b2a3be41c291677"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.30dbc3e36b60904db88cf897ca81b8190433ef1f0a78fd4f42ab0e4ed1731781"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.303828e0b4b15db99f7fa67a"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.5cd7f815e1ae47f8d16eba137876095920ecf81251e1a82d7231fa885ac47bac"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.a39620a3778be2238982976f"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.50ac5c7d18341de4821ffdf33e37850dfd4bc0d99479196c43527cbe369a347b"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.c5b7e2a6c58a7914e5e6e4ce"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.b9810b9084b0ecf6ddcf34478c889337fbe39d1dc7dfec6a59daaf39b7258c9b"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.eab89dfcf72f4f1a2f7deafa"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.63bb749ff6144f583737714fe378f1852cbaaf786355996e2af332ff47aaa33d"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.ee09e0e8fc8e6120b1198a84"
+    },
+    {
+      "conflicting_prioritized_identifier_kinds": [
+        "doi"
+      ],
+      "manifestation_record_ids": [
+        "observation.f52caf21ba5718172127d3998fd1c0d39380baef0ce11a7b0b4ab0cdfcf29513"
+      ],
+      "unprioritized_shared_identifiers": [],
+      "work_id": "work.v2.f98f5b718cb484ff044b85a9"
+    }
+  ],
+  "receipt_sha256": "6b16e1cb9954ee505a592121d697fb58c56b444e3c430c8360301625ceb4dd82",
+  "review_queue_sha256": "f979fdc89063fe3f38ce63dd828540b2a756cacedf68f9066e9b64275d0b9e41",
+  "scientific_eligibility_assessed": false,
+  "untitled_work_proposals": [
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.1023/a:1011486809357",
+        "openalex:W4234781124"
+      ],
+      "manifestation_record_ids": [
+        "observation.a8822202786493b6caec5761f7f27415ac7c044feeea7a148f88d1212f238c9b"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2001,
+      "schema_version": "2",
+      "work_id": "work.v2.26bfa8f4d833cac14f231b10"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.1023/a:1009902810926",
+        "openalex:W1559965799"
+      ],
+      "manifestation_record_ids": [
+        "observation.c99adadabff7febd3c6b0b704106b7464cfb3ac6e0c9a063c5bb542fc1f37e48"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 1999,
+      "schema_version": "2",
+      "work_id": "work.v2.34b9be3dede102b1618f9628"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.5699/slaveasteurorev2.91.4.0934",
+        "openalex:W4256284576"
+      ],
+      "manifestation_record_ids": [
+        "observation.c7c3840350af4810af7ace86e2a96b334ab2ff868273f4b1fff97e20d01b19f4"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2013,
+      "schema_version": "2",
+      "work_id": "work.v2.43351c396ccca39bae01717a"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.2979/africatoday.65.1.08",
+        "openalex:W2924130235"
+      ],
+      "manifestation_record_ids": [
+        "observation.5c9272239df1810851ae74ea74c294fa27e1fe986d691b913f7e03e22e081b59"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2018,
+      "schema_version": "2",
+      "work_id": "work.v2.59d8455c664a03aeb09642b5"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.5699/slaveasteurorev2.93.3.0552",
+        "openalex:W4246007157"
+      ],
+      "manifestation_record_ids": [
+        "observation.61f43fecedb0dbf0fc926339631233420e10dd56f03755cb698f879bb7c756c0"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2015,
+      "schema_version": "2",
+      "work_id": "work.v2.68b38a78b030274e4327db4b"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.51211/joia.v6i2.1513",
+        "openalex:W4225744751"
+      ],
+      "manifestation_record_ids": [
+        "observation.c639248f0936172a71d544531051914a4787e55b69e8ff35f1398122c41b7deb"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2021,
+      "schema_version": "2",
+      "work_id": "work.v2.822e2c15599b7ea8ea32b51e"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.2307/3092578",
+        "openalex:W2464068633"
+      ],
+      "manifestation_record_ids": [
+        "observation.102c70989597ea089dab89ed77f9299c4bbc60c84f3af10df9902348f82e5435"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2003,
+      "schema_version": "2",
+      "work_id": "work.v2.88dd1def024be7a453c6df2f"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.5215/pennmaghistbio.141.1.0092",
+        "openalex:W4230734979"
+      ],
+      "manifestation_record_ids": [
+        "observation.c2e62a6168efcac92e23ac08accedde61f5583165e64c10e0cbb2bf0ec3607ad"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 2017,
+      "schema_version": "2",
+      "work_id": "work.v2.da28e163d6aa1e29945ea182"
+    },
+    {
+      "canonical_title": null,
+      "correction_status": "none_known",
+      "identifiers": [
+        "doi:10.1023/a:1024693130590",
+        "openalex:W4251393931"
+      ],
+      "manifestation_record_ids": [
+        "observation.c92cc0fdcbcb8b26e5d421e7888cdb788765635ced02113aad7f6d5e8c2f3579"
+      ],
+      "merge_basis": "single_record",
+      "metadata_status": "title_unavailable",
+      "publication_types": [
+        "article"
+      ],
+      "publication_year": 1998,
+      "schema_version": "2",
+      "work_id": "work.v2.e152588b3504fa1bf0b39a4c"
+    }
+  ]
+}

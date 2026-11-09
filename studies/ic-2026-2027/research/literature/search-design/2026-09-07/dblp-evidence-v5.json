@@ -1,0 +1,49 @@
+{
+  "schema_version": "1",
+  "purpose": "bounded_query_design_pilot",
+  "measurement_id": "dblp-sici-pilot-v5",
+  "input_protocol": "dblp-sici-pilot-v5.json",
+  "protocol_sha256": "0c9e992bf0dc5bdc5873e0c343116d71963e4022b0dfa4c1a2a4845ef3fcc4a8",
+  "result_sha256": "8bcea4e3ee39f7e950a174603b0533416edf5204378d3f94778bb43c88add540",
+  "offline_replay_matches": true,
+  "report": {
+    "blocking_statuses": [],
+    "found_pairs": 0,
+    "incomplete_pairs": 0,
+    "not_found_pairs": 16,
+    "protocol_sha256": "0c9e992bf0dc5bdc5873e0c343116d71963e4022b0dfa4c1a2a4845ef3fcc4a8",
+    "recall_is_assertable": true,
+    "schema_version": "1",
+    "total_pairs": 16
+  },
+  "queries": [
+    {
+      "search_id": "search.dblp.q04b",
+      "execution_status": "complete",
+      "matched_total": 129,
+      "retained_record_count": 129,
+      "issue_codes": [],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "d6f5ae1af111ebd76bdcddfa6da18162d0c62a1618d27dab5f08ab17333570be",
+          "request_url": "https://sparql.dblp.org/sparql?format=application%2Fsparql-results%2Bjson&query=PREFIX%20dblp%3A%20%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E%20SELECT%20%3Fp%20%3Ftitle%20%3Fyear%20%3Fvenue%20%3Fdoi%20%3FauthorName%20WHERE%20%7B%20%7B%20SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fp%20a%20dblp%3APublication%20%3B%20dblp%3Atitle%20%3Ftitle%20.%20FILTER%28CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22sznajd%22%29%20%7C%7C%20CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22majority%20rule%22%29%29%20%7D%20ORDER%20BY%20%3Fp%20LIMIT%20100%20OFFSET%200%20%7D%20%3Fp%20dblp%3Atitle%20%3Ftitle%20.%20OPTIONAL%20%7B%20%3Fp%20dblp%3AyearOfPublication%20%3Fyear%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3ApublishedIn%20%3Fvenue%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3Adoi%20%3Fdoi%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3AauthoredBy%20%3Fauthor%20.%20%3Fauthor%20dblp%3AprimaryCreatorName%20%3FauthorName%20%7D%20%7D%20ORDER%20BY%20%3Fp",
+          "retrieved_at": "2026-09-08T03:11:05.102636Z",
+          "schema_version": "1",
+          "search_id": "search.dblp.q04b",
+          "source_id": "dblp"
+        },
+        {
+          "page_index": 1,
+          "raw_artifact_sha256": "06e8e16341a26e3a83a1837f58f9ec2da049d0b83edc373fec2cb7a777a1ac53",
+          "request_url": "https://sparql.dblp.org/sparql?format=application%2Fsparql-results%2Bjson&query=PREFIX%20dblp%3A%20%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E%20SELECT%20%3Fp%20%3Ftitle%20%3Fyear%20%3Fvenue%20%3Fdoi%20%3FauthorName%20WHERE%20%7B%20%7B%20SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fp%20a%20dblp%3APublication%20%3B%20dblp%3Atitle%20%3Ftitle%20.%20FILTER%28CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22sznajd%22%29%20%7C%7C%20CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22majority%20rule%22%29%29%20%7D%20ORDER%20BY%20%3Fp%20LIMIT%20100%20OFFSET%20100%20%7D%20%3Fp%20dblp%3Atitle%20%3Ftitle%20.%20OPTIONAL%20%7B%20%3Fp%20dblp%3AyearOfPublication%20%3Fyear%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3ApublishedIn%20%3Fvenue%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3Adoi%20%3Fdoi%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3AauthoredBy%20%3Fauthor%20.%20%3Fauthor%20dblp%3AprimaryCreatorName%20%3FauthorName%20%7D%20%7D%20ORDER%20BY%20%3Fp",
+          "retrieved_at": "2026-09-08T03:11:27.574360Z",
+          "schema_version": "1",
+          "search_id": "search.dblp.q04b",
+          "source_id": "dblp"
+        }
+      ]
+    }
+  ],
+  "seed_matches": []
+}

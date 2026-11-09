@@ -1,0 +1,338 @@
+{
+  "corpus_sha256": "93c8086aa6b0231fd019291f9bb3984e5e436e629c4424e95ae499729957cc85",
+  "diagnostics": {
+    "P": {
+      "curve": [
+        {
+          "found": 0,
+          "k": 100,
+          "recall": 0.0
+        },
+        {
+          "found": 0,
+          "k": 500,
+          "recall": 0.0
+        },
+        {
+          "found": 0,
+          "k": 1000,
+          "recall": 0.0
+        },
+        {
+          "found": 0,
+          "k": 2000,
+          "recall": 0.0
+        },
+        {
+          "found": 3,
+          "k": 5000,
+          "recall": 0.10714285714285714
+        },
+        {
+          "found": 11,
+          "k": 10000,
+          "recall": 0.39285714285714285
+        },
+        {
+          "found": 21,
+          "k": 20000,
+          "recall": 0.75
+        },
+        {
+          "found": 28,
+          "k": 43906,
+          "recall": 1.0
+        }
+      ],
+      "matched": 28,
+      "seed_overlap": 0,
+      "target_count": 28
+    },
+    "P_unseeded": {
+      "curve": [
+        {
+          "found": 0,
+          "k": 100,
+          "recall": 0.0
+        },
+        {
+          "found": 0,
+          "k": 500,
+          "recall": 0.0
+        },
+        {
+          "found": 0,
+          "k": 1000,
+          "recall": 0.0
+        },
+        {
+          "found": 0,
+          "k": 2000,
+          "recall": 0.0
+        },
+        {
+          "found": 3,
+          "k": 5000,
+          "recall": 0.10714285714285714
+        },
+        {
+          "found": 11,
+          "k": 10000,
+          "recall": 0.39285714285714285
+        },
+        {
+          "found": 21,
+          "k": 20000,
+          "recall": 0.75
+        },
+        {
+          "found": 28,
+          "k": 43906,
+          "recall": 1.0
+        }
+      ],
+      "matched": 28,
+      "target_count": 28
+    },
+    "R": {
+      "curve": [
+        {
+          "found": 0,
+          "k": 100,
+          "recall": 0.0
+        },
+        {
+          "found": 2,
+          "k": 500,
+          "recall": 0.08
+        },
+        {
+          "found": 2,
+          "k": 1000,
+          "recall": 0.08
+        },
+        {
+          "found": 10,
+          "k": 2000,
+          "recall": 0.4
+        },
+        {
+          "found": 16,
+          "k": 5000,
+          "recall": 0.64
+        },
+        {
+          "found": 21,
+          "k": 10000,
+          "recall": 0.84
+        },
+        {
+          "found": 25,
+          "k": 20000,
+          "recall": 1.0
+        },
+        {
+          "found": 25,
+          "k": 43906,
+          "recall": 1.0
+        }
+      ],
+      "matched": 25,
+      "seed_overlap": 0,
+      "target_count": 25
+    },
+    "RP": {
+      "curve": [
+        {
+          "found": 0,
+          "k": 100,
+          "recall": 0.0
+        },
+        {
+          "found": 2,
+          "k": 500,
+          "recall": 0.03773584905660377
+        },
+        {
+          "found": 2,
+          "k": 1000,
+          "recall": 0.03773584905660377
+        },
+        {
+          "found": 10,
+          "k": 2000,
+          "recall": 0.18867924528301888
+        },
+        {
+          "found": 19,
+          "k": 5000,
+          "recall": 0.3584905660377358
+        },
+        {
+          "found": 32,
+          "k": 10000,
+          "recall": 0.6037735849056604
+        },
+        {
+          "found": 46,
+          "k": 20000,
+          "recall": 0.8679245283018868
+        },
+        {
+          "found": 53,
+          "k": 43906,
+          "recall": 1.0
+        }
+      ],
+      "matched": 53,
+      "seed_overlap": 0,
+      "target_count": 53
+    },
+    "RP_unseeded": {
+      "curve": [
+        {
+          "found": 0,
+          "k": 100,
+          "recall": 0.0
+        },
+        {
+          "found": 2,
+          "k": 500,
+          "recall": 0.03773584905660377
+        },
+        {
+          "found": 2,
+          "k": 1000,
+          "recall": 0.03773584905660377
+        },
+        {
+          "found": 10,
+          "k": 2000,
+          "recall": 0.18867924528301888
+        },
+        {
+          "found": 19,
+          "k": 5000,
+          "recall": 0.3584905660377358
+        },
+        {
+          "found": 32,
+          "k": 10000,
+          "recall": 0.6037735849056604
+        },
+        {
+          "found": 46,
+          "k": 20000,
+          "recall": 0.8679245283018868
+        },
+        {
+          "found": 53,
+          "k": 43906,
+          "recall": 1.0
+        }
+      ],
+      "matched": 53,
+      "target_count": 53
+    },
+    "R_unseeded": {
+      "curve": [
+        {
+          "found": 0,
+          "k": 100,
+          "recall": 0.0
+        },
+        {
+          "found": 2,
+          "k": 500,
+          "recall": 0.08
+        },
+        {
+          "found": 2,
+          "k": 1000,
+          "recall": 0.08
+        },
+        {
+          "found": 10,
+          "k": 2000,
+          "recall": 0.4
+        },
+        {
+          "found": 16,
+          "k": 5000,
+          "recall": 0.64
+        },
+        {
+          "found": 21,
+          "k": 10000,
+          "recall": 0.84
+        },
+        {
+          "found": 25,
+          "k": 20000,
+          "recall": 1.0
+        },
+        {
+          "found": 25,
+          "k": 43906,
+          "recall": 1.0
+        }
+      ],
+      "matched": 25,
+      "target_count": 25
+    },
+    "focused_seeded": {
+      "curve": [
+        {
+          "found": 5,
+          "k": 100,
+          "recall": 0.038461538461538464
+        },
+        {
+          "found": 23,
+          "k": 500,
+          "recall": 0.17692307692307693
+        },
+        {
+          "found": 33,
+          "k": 1000,
+          "recall": 0.25384615384615383
+        },
+        {
+          "found": 45,
+          "k": 2000,
+          "recall": 0.34615384615384615
+        },
+        {
+          "found": 59,
+          "k": 5000,
+          "recall": 0.45384615384615384
+        },
+        {
+          "found": 65,
+          "k": 10000,
+          "recall": 0.5
+        },
+        {
+          "found": 66,
+          "k": 20000,
+          "recall": 0.5076923076923077
+        },
+        {
+          "found": 68,
+          "k": 43906,
+          "recall": 0.5230769230769231
+        }
+      ],
+      "matched": 68,
+      "target_count": 130
+    }
+  },
+  "limitations": [
+    "Focused inclusions are training diagnostics, not independent recall.",
+    "R/P labels are one-rater diagnostic only, never calibration references.",
+    "Owner-role judgments by agents under delegation, without human verification.",
+    "Citation/peer-review signals absent; quality tie breaks neutral."
+  ],
+  "preparation_manifest_sha256": "de1fb97e435302d05f0f4e3518df180e05b8b95eccef347b8a002c13e8d77eab",
+  "schema_version": "prioritized-ranking-diagnostic-1"
+}

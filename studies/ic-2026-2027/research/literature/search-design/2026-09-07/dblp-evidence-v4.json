@@ -1,0 +1,62 @@
+{
+  "schema_version": "1",
+  "purpose": "bounded_query_design_pilot",
+  "measurement_id": "dblp-multidoi-pilot-v4",
+  "input_protocol": "dblp-multidoi-pilot-v4.json",
+  "protocol_sha256": "37a0d7c0abdae0bedf4fb8263ef7e6ff27de6e66b9e67c5edce02ea318c6549a",
+  "result_sha256": "7c757f020cbcfeb751fa4b5ef78406c42ed90861fd6e54df6b6389e0db736169",
+  "offline_replay_matches": true,
+  "report": {
+    "blocking_statuses": [
+      "page_cap_reached",
+      "provider_error"
+    ],
+    "found_pairs": 0,
+    "incomplete_pairs": 32,
+    "not_found_pairs": 0,
+    "protocol_sha256": "37a0d7c0abdae0bedf4fb8263ef7e6ff27de6e66b9e67c5edce02ea318c6549a",
+    "recall_is_assertable": false,
+    "schema_version": "1",
+    "total_pairs": 32
+  },
+  "queries": [
+    {
+      "search_id": "search.dblp.q04b",
+      "execution_status": "error",
+      "matched_total": null,
+      "retained_record_count": 0,
+      "issue_codes": [],
+      "traces": []
+    },
+    {
+      "search_id": "search.dblp.q06a",
+      "execution_status": "incomplete",
+      "matched_total": 1164,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "traces": [
+        {
+          "page_index": 0,
+          "raw_artifact_sha256": "45a2bec007fd9abfb07d23f578cf5ca2609f55f1d6165ee7e64a51d61461c467",
+          "request_url": "https://sparql.dblp.org/sparql?format=application%2Fsparql-results%2Bjson&query=PREFIX%20dblp%3A%20%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E%20SELECT%20%3Fp%20%3Ftitle%20%3Fyear%20%3Fvenue%20%3Fdoi%20%3FauthorName%20WHERE%20%7B%20%7B%20SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fp%20a%20dblp%3APublication%20%3B%20dblp%3Atitle%20%3Ftitle%20.%20FILTER%28CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22adaptive%20network%22%29%20%7C%7C%20CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22coevolving%20network%22%29%29%20%7D%20ORDER%20BY%20%3Fp%20LIMIT%20100%20OFFSET%200%20%7D%20%3Fp%20dblp%3Atitle%20%3Ftitle%20.%20OPTIONAL%20%7B%20%3Fp%20dblp%3AyearOfPublication%20%3Fyear%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3ApublishedIn%20%3Fvenue%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3Adoi%20%3Fdoi%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3AauthoredBy%20%3Fauthor%20.%20%3Fauthor%20dblp%3AprimaryCreatorName%20%3FauthorName%20%7D%20%7D%20ORDER%20BY%20%3Fp",
+          "retrieved_at": "2026-09-08T02:58:37.422298Z",
+          "schema_version": "1",
+          "search_id": "search.dblp.q06a",
+          "source_id": "dblp"
+        },
+        {
+          "page_index": 1,
+          "raw_artifact_sha256": "b245611df4114f00507edbe25bf2b90b622e159cd80c73d74a7a81a95b186e0a",
+          "request_url": "https://sparql.dblp.org/sparql?format=application%2Fsparql-results%2Bjson&query=PREFIX%20dblp%3A%20%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E%20SELECT%20%3Fp%20%3Ftitle%20%3Fyear%20%3Fvenue%20%3Fdoi%20%3FauthorName%20WHERE%20%7B%20%7B%20SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fp%20a%20dblp%3APublication%20%3B%20dblp%3Atitle%20%3Ftitle%20.%20FILTER%28CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22adaptive%20network%22%29%20%7C%7C%20CONTAINS%28LCASE%28%3Ftitle%29%2C%20%22coevolving%20network%22%29%29%20%7D%20ORDER%20BY%20%3Fp%20LIMIT%20100%20OFFSET%20100%20%7D%20%3Fp%20dblp%3Atitle%20%3Ftitle%20.%20OPTIONAL%20%7B%20%3Fp%20dblp%3AyearOfPublication%20%3Fyear%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3ApublishedIn%20%3Fvenue%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3Adoi%20%3Fdoi%20%7D%20OPTIONAL%20%7B%20%3Fp%20dblp%3AauthoredBy%20%3Fauthor%20.%20%3Fauthor%20dblp%3AprimaryCreatorName%20%3FauthorName%20%7D%20%7D%20ORDER%20BY%20%3Fp",
+          "retrieved_at": "2026-09-08T02:59:00.477986Z",
+          "schema_version": "1",
+          "search_id": "search.dblp.q06a",
+          "source_id": "dblp"
+        }
+      ]
+    }
+  ],
+  "seed_matches": []
+}

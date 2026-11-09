@@ -1,0 +1,189 @@
+{
+  "category_denominator": "all_included_primary_works",
+  "category_extension_rule": "Após camada 0, definir cada código com locador e exemplo; toda extensão posterior registra lote, categoria, racional, evidência e versão sucessora. Reiniciar duas transições de saturação se a codificação mudar.",
+  "counting_unit": "distinct_included_primary_work",
+  "fields": [
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "no_empirical_data_reported",
+        "experiment",
+        "observational_data",
+        "other_data"
+      ],
+      "description": "Empirical datasets, calibration targets, or observed social systems used by the work.",
+      "evidence_locator_required": true,
+      "field_id": "empirical_grounding",
+      "origin": "v4",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "micro_level_evidence",
+        "macro_level_validation",
+        "model_comparison",
+        "other_author_stated_gap"
+      ],
+      "description": "Explicit limitations, unresolved anomalies, and future-work gaps stated by the authors.",
+      "evidence_locator_required": true,
+      "field_id": "evidence_gaps",
+      "origin": "v4",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "assimilation",
+        "bounded_assimilation",
+        "repulsion",
+        "social_learning",
+        "other_mechanism"
+      ],
+      "description": "Mecanismo e regra de atualização; categorias codificadas com evidência localizada.",
+      "evidence_locator_required": true,
+      "field_id": "influence_mechanism",
+      "origin": "v5_layer_zero_frame",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "bounded_confidence",
+        "linear_averaging",
+        "voter",
+        "other_named_family"
+      ],
+      "description": "Opinion-dynamics model family or families studied, including named classical and LLM-agent variants.",
+      "evidence_locator_required": true,
+      "field_id": "model_family",
+      "origin": "v4",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "complete",
+        "spatial",
+        "synthetic_network",
+        "empirical_network",
+        "other_topology"
+      ],
+      "description": "Network, spatial, complete-graph, platform-derived, or other interaction structures.",
+      "evidence_locator_required": true,
+      "field_id": "network_topology",
+      "origin": "v4",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "discrete",
+        "continuous",
+        "multidimensional",
+        "other_representation"
+      ],
+      "description": "Representação da opinião ou crença: estados, dimensionalidade e semântica.",
+      "evidence_locator_required": true,
+      "field_id": "opinion_representation",
+      "origin": "v5_layer_zero_frame",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "consensus",
+        "clustering",
+        "polarization",
+        "persistent_diversity",
+        "other_outcome"
+      ],
+      "description": "Resultados e fenômenos relatados, sem confundir inferência do revisor e afirmação da fonte.",
+      "evidence_locator_required": true,
+      "field_id": "reported_outcomes",
+      "origin": "v5_layer_zero_frame",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "code",
+        "data",
+        "parameters",
+        "seeds",
+        "environment",
+        "not_reported"
+      ],
+      "description": "Availability and identity of code, data, parameters, seeds, environment, and executable reproduction artifacts.",
+      "evidence_locator_required": true,
+      "field_id": "reproducibility_artifacts",
+      "origin": "v4",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "analytical",
+        "simulation",
+        "empirical",
+        "secondary"
+      ],
+      "description": "Tipo de estudo: analítico, simulação, empírico, secundário; secundários são camada 0.",
+      "evidence_locator_required": true,
+      "field_id": "study_design",
+      "origin": "v5_layer_zero_frame",
+      "raw_values_preserved": true
+    },
+    {
+      "category_assignment_status": "not_executed",
+      "category_codes_provisional": [
+        "analytical",
+        "numerical",
+        "empirical_micro",
+        "empirical_macro",
+        "sensitivity",
+        "robustness",
+        "external",
+        "not_reported"
+      ],
+      "description": "Analytical, numerical, empirical, sensitivity, robustness, or external validation performed.",
+      "evidence_locator_required": true,
+      "field_id": "validation_method",
+      "origin": "v4",
+      "raw_values_preserved": true
+    }
+  ],
+  "frame_id": "broad-map-v5-layer-zero-provisional-1",
+  "human_verified": false,
+  "missing_value_policy": "not_reported com evidência é distinto de extração pendente; pendência impede snapshot completo.",
+  "multi_label": true,
+  "owner_limitation": "Juízos de agentes sob delegação sem verificação humana. Este quadro não registra inclusão ou adoção de revisão.",
+  "protocol_id": "opinion-dynamics-systematic-map-v5-prioritized",
+  "schema_version": "prioritized-mapping-frame-1",
+  "sources": [
+    {
+      "id": "v4",
+      "locator": "extraction_fields + objectives",
+      "path": "../../protocol/opinion-dynamics-systematic-map-v4.json"
+    },
+    {
+      "id": "flache2017",
+      "locator": "Abstract; Introduction; Three main approaches; Towards the next frontiers",
+      "read_depth": "HTML text, sections relevant to mechanisms and empirical validation",
+      "url": "https://www.jasss.org/20/4/2.html"
+    },
+    {
+      "id": "lorenz2007",
+      "locator": "Abstract",
+      "read_depth": "abstract only",
+      "url": "https://arxiv.org/abs/0707.1762"
+    },
+    {
+      "id": "castellano2009",
+      "locator": "Abstract",
+      "read_depth": "abstract only",
+      "url": "https://arxiv.org/abs/0710.3256"
+    }
+  ],
+  "status": "provisional_pending_layer_zero_screening_and_coding"
+}

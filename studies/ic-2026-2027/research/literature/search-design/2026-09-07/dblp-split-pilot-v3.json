@@ -1,0 +1,554 @@
+{
+  "amendment_policy": {
+    "requires_affected_artifact_ids": true,
+    "requires_dated_reason": true,
+    "requires_rescreen_decision": true
+  },
+  "completion_criteria": [
+    "All approved source searches reached their stopping rule or have a disclosed incomplete status.",
+    "All deduplication candidates, screening conflicts, unavailable full texts, and extraction conflicts have an owner disposition.",
+    "Every synthesis claim links to validated extractions and preserves conflicting or uncertain evidence.",
+    "PRISMA counts reconcile with the immutable search, deduplication, and screening records."
+  ],
+  "created_on": "2026-09-07",
+  "deduplication_policy": {
+    "exact_identifier_priority": [
+      "dblp",
+      "doi"
+    ],
+    "fuzzy_match_requires_adjudication": true,
+    "preserve_manifestation_types": [
+      "conference_article",
+      "journal_article",
+      "preprint"
+    ],
+    "title_only_auto_merge": false,
+    "work_counting_unit": "scholarly_work"
+  },
+  "eligibility_criteria": [
+    {
+      "criterion_id": "exclude.no_computational_model",
+      "edge_cases": [
+        "A conceptual framework mentions agents but defines no executable or mathematical dynamics.",
+        "A social-media study measures polarization without modeling opinion change."
+      ],
+      "examples": [
+        "A purely qualitative essay about public opinion."
+      ],
+      "kind": "exclusion",
+      "priority": 4,
+      "reason_code": "no_computational_model",
+      "stage": "both",
+      "statement": "Exclude work that neither defines, analyzes, implements, nor empirically evaluates a computational or mathematical model of opinion or belief dynamics."
+    },
+    {
+      "criterion_id": "exclude.no_scholarly_product",
+      "edge_cases": [
+        "A non-archival extended abstract is linked to a later full paper.",
+        "A preprint is the only accessible manifestation of an otherwise eligible work."
+      ],
+      "examples": [
+        "A blog post describing a simulation without a scholarly manuscript."
+      ],
+      "kind": "exclusion",
+      "priority": 2,
+      "reason_code": "no_scholarly_product",
+      "stage": "both",
+      "statement": "Exclude editorials, news, slides, calls for papers, and other non-scholarly products; retain eligible preprints only as manifestations of a scholarly work."
+    },
+    {
+      "criterion_id": "exclude.not_human_opinion_domain",
+      "edge_cases": [
+        "A generic consensus model reports both engineering and human-opinion experiments.",
+        "An LLM-agent study explicitly models human-like belief or opinion change."
+      ],
+      "examples": [
+        "A robot-control consensus protocol with no social interpretation."
+      ],
+      "kind": "exclusion",
+      "priority": 3,
+      "reason_code": "not_human_opinion_domain",
+      "stage": "both",
+      "statement": "Exclude consensus, diffusion, or contagion studies that have no explicit interpretation or evaluation involving human opinions, beliefs, attitudes, or social influence."
+    },
+    {
+      "criterion_id": "exclude.outside_date_or_language",
+      "edge_cases": [
+        "An English abstract accompanies a full text in another language.",
+        "Online-first and issue publication years differ."
+      ],
+      "examples": [
+        "A publication outside the registered date interval."
+      ],
+      "kind": "exclusion",
+      "priority": 1,
+      "reason_code": "outside_date_or_language",
+      "stage": "both",
+      "statement": "Exclude works outside the registered publication interval or without an English full-text manifestation available for screening."
+    },
+    {
+      "criterion_id": "include.computational_opinion_dynamics",
+      "edge_cases": [
+        "Belief, attitude, polarization, consensus, or social-influence terminology is used instead of the phrase opinion dynamics.",
+        "The opinion model is one component of a larger information-diffusion system."
+      ],
+      "examples": [
+        "A bounded-confidence agent-based model with specified update rules.",
+        "A voter-model analysis interpreted as social opinion formation."
+      ],
+      "kind": "inclusion",
+      "priority": 5,
+      "reason_code": "computational_opinion_dynamics",
+      "stage": "both",
+      "statement": "Include scholarly work that defines, analyzes, implements, compares, calibrates, or validates computational or mathematical dynamics of human opinions, beliefs, attitudes, polarization, consensus, or social influence."
+    },
+    {
+      "criterion_id": "include.relevant_study_design",
+      "edge_cases": [
+        "A benchmark paper contributes validation data but no new model.",
+        "A secondary study is mapped for snowballing but is not counted as a primary study."
+      ],
+      "examples": [
+        "An analytical treatment, simulation study, or empirical calibration of an opinion model."
+      ],
+      "kind": "inclusion",
+      "priority": 6,
+      "reason_code": "relevant_study_design",
+      "stage": "full_text",
+      "statement": "Include analytical, simulation, or empirical studies that provide inspectable methods or evidence relevant to the registered mapping questions."
+    }
+  ],
+  "extraction_fields": [
+    {
+      "allowed_values": [],
+      "cardinality": "zero_or_more",
+      "description": "Empirical datasets, calibration targets, or observed social systems used by the work.",
+      "field_id": "empirical_grounding",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "zero_or_more",
+      "description": "Explicit limitations, unresolved anomalies, and future-work gaps stated by the authors.",
+      "field_id": "evidence_gaps",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Opinion-dynamics model family or families studied, including named classical and LLM-agent variants.",
+      "field_id": "model_family",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "zero_or_more",
+      "description": "Network, spatial, complete-graph, platform-derived, or other interaction structures.",
+      "field_id": "network_topology",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "zero_or_more",
+      "description": "Availability and identity of code, data, parameters, seeds, environment, and executable reproduction artifacts.",
+      "field_id": "reproducibility_artifacts",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "text"
+    },
+    {
+      "allowed_values": [],
+      "cardinality": "one_or_more",
+      "description": "Analytical, numerical, empirical, sensitivity, robustness, or external validation performed.",
+      "field_id": "validation_method",
+      "locator_required": true,
+      "required": true,
+      "unit": null,
+      "value_kind": "categorical"
+    }
+  ],
+  "full_text_policy": {
+    "allowed_media_types": [
+      "application/pdf",
+      "text/html"
+    ],
+    "artifact_store_profile": "restricted_content_addressed",
+    "max_bytes": 50000000,
+    "max_pages": 1000,
+    "minimum_ocr_confidence": 0.9,
+    "ocr_policy": "versioned_opt_in",
+    "restricted_content_stays_local": true,
+    "unavailable_disposition": "pending_retrieval"
+  },
+  "information_sources": [
+    {
+      "access_class": "public",
+      "access_method": "public_api",
+      "adapter_id": "dblp_sparql_v1",
+      "adapter_version": "1.0.0",
+      "authority_scope": "Complementary computer-science title discovery over the official DBLP graph.",
+      "credential_required": false,
+      "evidence_urls": [
+        "https://sparql.dblp.org/"
+      ],
+      "export_format": "dblp_sparql_json",
+      "limitations": [
+        "DBLP has no abstracts; registered terms are OR-combined case-insensitive title substrings, not translations of OpenAlex Boolean ranking.",
+        "The legacy dblp.org publication search currently serves an anti-bot challenge; its historical raw pages remain replayable.",
+        "The live graph changes; a deterministic ordering and repeated count do not establish snapshot isolation."
+      ],
+      "maintainer": "dblp computer science bibliography",
+      "name": "DBLP knowledge graph SPARQL",
+      "native_query_syntax": "dblp_sparql_terms",
+      "source_id": "dblp",
+      "source_kind": "bibliographic_database"
+    }
+  ],
+  "objectives": [
+    "Identify evidence gaps that can justify a focused, testable IC contribution without asserting novelty from absence alone.",
+    "Map computational opinion-dynamics model families, assumptions, interaction structures, empirical grounding, and reported outcomes.",
+    "Map validation, robustness, sensitivity, reproducibility, and code or data availability practices."
+  ],
+  "operational_definitions": [
+    {
+      "definition": "Any explicit use of observed data, measured networks, surveys, experiments, platform traces, or empirical targets to specify, calibrate, compare, or validate a model.",
+      "term_id": "empirical_grounding"
+    },
+    {
+      "definition": "A mathematical or computational process in which human opinions, beliefs, attitudes, polarization, consensus, or social influence change through time or interaction.",
+      "term_id": "opinion_dynamics"
+    },
+    {
+      "definition": "Evidence that another researcher can identify the implementation, inputs, parameters, seeds, environment, and steps needed to regenerate reported results.",
+      "term_id": "reproducibility"
+    },
+    {
+      "definition": "A check that model structure, implementation, calibration, predictions, sensitivity, or conclusions are adequate for the stated scientific claim.",
+      "term_id": "validation"
+    }
+  ],
+  "protocol_id": "opinion-dynamics-query-design-dblp-split-v3",
+  "protocol_version": "1.0.0",
+  "quality_criteria": [
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.empirical_validity",
+      "evidence_locator_required": true,
+      "question": "Are calibration targets, empirical comparisons, and their limitations reported well enough to evaluate the claimed real-world validity?",
+      "synthesis_use": "stratify_only"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.model_specification",
+      "evidence_locator_required": true,
+      "question": "Are states, parameters, interaction rules, topology, initial conditions, and outcome definitions specified well enough to assess the model?",
+      "synthesis_use": "describe"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.reproducibility",
+      "evidence_locator_required": true,
+      "question": "Are code, data, parameters, seeds, environment, and execution instructions available or reported sufficiently for independent reproduction?",
+      "synthesis_use": "describe"
+    },
+    {
+      "answer_scale": [
+        "absent",
+        "partial",
+        "reported"
+      ],
+      "applicable_study_types": [
+        "analytical",
+        "empirical",
+        "simulation"
+      ],
+      "criterion_id": "quality.robustness",
+      "evidence_locator_required": true,
+      "question": "Are sensitivity, uncertainty, alternative assumptions, stochastic variability, or out-of-sample behavior assessed in proportion to the claims?",
+      "synthesis_use": "sensitivity_analysis"
+    }
+  ],
+  "reporting_guidelines": [
+    {
+      "guideline_id": "prisma-2020",
+      "url": "https://www.prisma-statement.org/prisma-2020",
+      "version": "2020"
+    },
+    {
+      "guideline_id": "prisma-s",
+      "url": "https://www.equator-network.org/reporting-guidelines/prisma-s/",
+      "version": "2021"
+    }
+  ],
+  "research_owner": "Davi Abreu da Silveira",
+  "review_kind": "systematic_mapping",
+  "review_questions": [
+    {
+      "question": "Which model families, state representations, update rules, and interaction topologies are used in computational opinion dynamics?",
+      "question_id": "rq1"
+    },
+    {
+      "question": "How are computational opinion-dynamics models specified, calibrated, validated, stress-tested, and compared with analytical or empirical evidence?",
+      "question_id": "rq2"
+    },
+    {
+      "question": "Which code, data, parameter, seed, environment, and reporting artifacts are available for reproduction?",
+      "question_id": "rq3"
+    },
+    {
+      "question": "Which limitations, conflicting findings, and under-tested assumptions remain after stratifying by model family, topology, and evidence type?",
+      "question_id": "rq4"
+    }
+  ],
+  "schema_version": "1",
+  "scope": {
+    "grey_literature_policy": "exclude",
+    "languages": [
+      "en"
+    ],
+    "publication_date_from": "1970-01-01",
+    "publication_date_to": "2026-09-07",
+    "publication_types": [
+      "conference_article",
+      "journal_article",
+      "preprint"
+    ],
+    "secondary_study_policy": "map_and_snowball",
+    "study_types": [
+      "analytical",
+      "empirical",
+      "simulation"
+    ]
+  },
+  "screening_policy": {
+    "allowed_judgments": [
+      "exclude",
+      "include",
+      "uncertain"
+    ],
+    "assignment_seed": 20260903,
+    "batch_size": 25,
+    "blind_reviewer_ids": [
+      "screener_a",
+      "screener_b"
+    ],
+    "calibration_record_count": 50,
+    "conflict_adjudicator": "research_owner",
+    "full_text_exclusion_authority": "research_owner",
+    "maximum_calibration_false_exclusions": 0,
+    "minimum_calibration_recall": 0.95,
+    "operational_failure_disposition": "pending_retrieval",
+    "title_abstract_owner_audit_fraction": 0.2
+  },
+  "searches": [
+    {
+      "exact_query": "DeGroot OR Friedkin-Johnsen",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q03a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "linear opinion pool OR opinion pooling",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q03b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "social influence and opinions",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q03c",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "voter model OR q-voter",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q04a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "Sznajd OR majority rule",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q04b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "adaptive network OR coevolving network",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q06a",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    },
+    {
+      "exact_query": "co-evolving network OR coevolution of networks",
+      "execution_window": "Bounded query-design pilot, maximum two pages per literal; incomplete status is not absence and no scientific acquisition is promoted.",
+      "export_procedure": "Retain each raw provider response and its exact request, time, content hash, pagination and normalized observations before the next page. Preserve every occurrence before deduplication.",
+      "filters": [],
+      "locale": "en",
+      "max_pages": 2,
+      "page_size": 100,
+      "partial_result_policy": "mark_incomplete",
+      "retry_policy": "bounded_backoff",
+      "search_id": "search.dblp.q06b",
+      "searched_fields": [
+        "publication"
+      ],
+      "sort": "provider_default",
+      "source_id": "dblp",
+      "stopping_rule": "Complete only at provider-confirmed exhaustion. Preserve partial results and mark incomplete at the 2-page cap, inconsistent pagination/count, malformed response or unresolved provider failure. A cap never establishes absence."
+    }
+  ],
+  "status": "review_candidate",
+  "supersedes": "opinion-dynamics-query-design-dblp-v1",
+  "supplementary_search_policy": {
+    "google_scholar_mode": "manual_supplement_only",
+    "methods": [
+      "backward_citation_chasing",
+      "controlled_acm_digital_library_export",
+      "controlled_ieee_xplore_export",
+      "crossref_identifier_recovery",
+      "forward_citation_chasing",
+      "manual_google_scholar_check",
+      "secondary_study_seed"
+    ],
+    "requires_source_specific_record": true,
+    "stopping_rule": "Run two consecutive citation-chasing rounds with no new eligible work after deduplication. Keep each seed, citation edge, exact query, date and source record. Crossref is identifier/metadata recovery only: at most one 20-record query.bibliographic page per unresolved candidate per recorded attempt, no discovery pagination, no mailto. Davi performs and signs controlled ACM/IEEE exports and audits query-design evidence. Unresolved access or identity remains pending; secondary seeds and the Clifford lineage sentinel never automatically become primary inclusions."
+  },
+  "synthesis_plan": {
+    "counting_unit": "scholarly_work",
+    "meta_analysis_authorized": false,
+    "methods": [
+      "descriptive_evidence_map",
+      "gap_matrix",
+      "narrative_synthesis"
+    ],
+    "minimum_claim_support": 2,
+    "novelty_claim_authorized": false,
+    "planned_strata": [
+      "empirical_grounding",
+      "model_family",
+      "network_topology",
+      "publication_year",
+      "recent_five_years_2021_09_08_to_2026_09_07",
+      "reproducibility_artifacts",
+      "validation_method"
+    ],
+    "preserve_conflicts_and_uncertainty": true,
+    "separate_observation_interpretation_inference": true
+  },
+  "title": "Systematic map of computational opinion-dynamics models, validation, and reproducibility",
+  "update_policy": {
+    "check_corrections_and_retractions": true,
+    "rerun_creates_successor": true,
+    "search_cutoff_required": true
+  }
+}

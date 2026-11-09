@@ -1,0 +1,413 @@
+{
+  "all_raw_normalized_id_orders_equal": true,
+  "extra_repeated_occurrences_within_queries": 84,
+  "interpretation": "All repeats are between pages in the retained provider responses. Declared totals differ from unique IDs for six queries. These differences do not identify missing publications or measure recall.",
+  "new_network_requests": 0,
+  "observations": 42565,
+  "pages": 435,
+  "queries": [
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 24,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "unique_ids_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 24,
+      "last_next_cursor": null,
+      "last_result_count": 40,
+      "meta_count_values": [
+        {
+          "count": 7626,
+          "pages": 77
+        }
+      ],
+      "observations": 7640,
+      "page_count": 77,
+      "search_id": "search.openalex.q01",
+      "unique_openalex_ids": 7616
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 2,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 2,
+      "last_next_cursor": null,
+      "last_result_count": 72,
+      "meta_count_values": [
+        {
+          "count": 870,
+          "pages": 9
+        }
+      ],
+      "observations": 872,
+      "page_count": 9,
+      "search_id": "search.openalex.q02",
+      "unique_openalex_ids": 870
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 3,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 3,
+      "last_next_cursor": null,
+      "last_result_count": 26,
+      "meta_count_values": [
+        {
+          "count": 1223,
+          "pages": 13
+        }
+      ],
+      "observations": 1226,
+      "page_count": 13,
+      "search_id": "search.openalex.q03",
+      "unique_openalex_ids": 1223
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 2,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 2,
+      "last_next_cursor": null,
+      "last_result_count": 89,
+      "meta_count_values": [
+        {
+          "count": 987,
+          "pages": 10
+        }
+      ],
+      "observations": 989,
+      "page_count": 10,
+      "search_id": "search.openalex.q04",
+      "unique_openalex_ids": 987
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 4,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 4,
+      "last_next_cursor": null,
+      "last_result_count": 61,
+      "meta_count_values": [
+        {
+          "count": 1757,
+          "pages": 18
+        }
+      ],
+      "observations": 1761,
+      "page_count": 18,
+      "search_id": "search.openalex.q05",
+      "unique_openalex_ids": 1757
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 0,
+      "flags": [
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 0,
+      "last_next_cursor": null,
+      "last_result_count": 57,
+      "meta_count_values": [
+        {
+          "count": 157,
+          "pages": 2
+        }
+      ],
+      "observations": 157,
+      "page_count": 2,
+      "search_id": "search.openalex.q06",
+      "unique_openalex_ids": 157
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 0,
+      "flags": [
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 0,
+      "last_next_cursor": null,
+      "last_result_count": 55,
+      "meta_count_values": [
+        {
+          "count": 55,
+          "pages": 1
+        }
+      ],
+      "observations": 55,
+      "page_count": 1,
+      "search_id": "search.openalex.q07",
+      "unique_openalex_ids": 55
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 4,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 4,
+      "last_next_cursor": null,
+      "last_result_count": 15,
+      "meta_count_values": [
+        {
+          "count": 1611,
+          "pages": 17
+        }
+      ],
+      "observations": 1615,
+      "page_count": 17,
+      "search_id": "search.openalex.q08",
+      "unique_openalex_ids": 1611
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 1,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 1,
+      "last_next_cursor": null,
+      "last_result_count": 62,
+      "meta_count_values": [
+        {
+          "count": 961,
+          "pages": 10
+        }
+      ],
+      "observations": 962,
+      "page_count": 10,
+      "search_id": "search.openalex.q09",
+      "unique_openalex_ids": 961
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 0,
+      "flags": [
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 0,
+      "last_next_cursor": null,
+      "last_result_count": 14,
+      "meta_count_values": [
+        {
+          "count": 114,
+          "pages": 2
+        }
+      ],
+      "observations": 114,
+      "page_count": 2,
+      "search_id": "search.openalex.q10",
+      "unique_openalex_ids": 114
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 13,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "unique_ids_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 13,
+      "last_next_cursor": null,
+      "last_result_count": 45,
+      "meta_count_values": [
+        {
+          "count": 6638,
+          "pages": 67
+        }
+      ],
+      "observations": 6645,
+      "page_count": 67,
+      "search_id": "search.openalex.q11",
+      "unique_openalex_ids": 6632
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 2,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "unique_ids_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 2,
+      "last_next_cursor": null,
+      "last_result_count": 96,
+      "meta_count_values": [
+        {
+          "count": 2396,
+          "pages": 24
+        }
+      ],
+      "observations": 2396,
+      "page_count": 24,
+      "search_id": "search.openalex.q12",
+      "unique_openalex_ids": 2394
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 3,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 3,
+      "last_next_cursor": null,
+      "last_result_count": 23,
+      "meta_count_values": [
+        {
+          "count": 1320,
+          "pages": 14
+        }
+      ],
+      "observations": 1323,
+      "page_count": 14,
+      "search_id": "search.openalex.q13",
+      "unique_openalex_ids": 1320
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 2,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 2,
+      "last_next_cursor": null,
+      "last_result_count": 3,
+      "meta_count_values": [
+        {
+          "count": 1001,
+          "pages": 11
+        }
+      ],
+      "observations": 1003,
+      "page_count": 11,
+      "search_id": "search.openalex.q14a",
+      "unique_openalex_ids": 1001
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 2,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "unique_ids_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 2,
+      "last_next_cursor": null,
+      "last_result_count": 50,
+      "meta_count_values": [
+        {
+          "count": 2349,
+          "pages": 24
+        }
+      ],
+      "observations": 2350,
+      "page_count": 24,
+      "search_id": "search.openalex.q14b",
+      "unique_openalex_ids": 2348
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 15,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "unique_ids_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 15,
+      "last_next_cursor": null,
+      "last_result_count": 45,
+      "meta_count_values": [
+        {
+          "count": 8733,
+          "pages": 88
+        }
+      ],
+      "observations": 8745,
+      "page_count": 88,
+      "search_id": "search.openalex.q14c",
+      "unique_openalex_ids": 8730
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 3,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 3,
+      "last_next_cursor": null,
+      "last_result_count": 53,
+      "meta_count_values": [
+        {
+          "count": 1750,
+          "pages": 18
+        }
+      ],
+      "observations": 1753,
+      "page_count": 18,
+      "search_id": "search.openalex.q15",
+      "unique_openalex_ids": 1750
+    },
+    {
+      "duplicate_occurrences_within_pages": 0,
+      "excess_duplicate_occurrences": 4,
+      "flags": [
+        "repeated_openalex_ids_in_query",
+        "occurrences_differ_from_stable_meta_count",
+        "unique_ids_differ_from_stable_meta_count",
+        "terminal_null_cursor_with_nonempty_results"
+      ],
+      "ids_repeated_between_pages": 4,
+      "last_next_cursor": null,
+      "last_result_count": 59,
+      "meta_count_values": [
+        {
+          "count": 2956,
+          "pages": 30
+        }
+      ],
+      "observations": 2959,
+      "page_count": 30,
+      "search_id": "search.openalex.q16",
+      "unique_openalex_ids": 2955
+    }
+  ],
+  "queries_with_repeated_ids": 15,
+  "queries_with_unique_ids_different_from_stable_meta_count": 6,
+  "query_count": 18,
+  "run_id": "opinion-dynamics-map-v3-broad-20260911-interrupted-1",
+  "schema_version": "openalex-pagination-audit-metadata-1",
+  "source_audit_sha256": "6bf58336f9248a37a72decb630828c804b19be2a8bc22a253202e266de7db21a",
+  "source_coverage_or_recall_established": false,
+  "source_report_sha256": "edfa48474097d7c81e441fdbe5089a924d514deabbb6baf3bbaf60e0df220a11"
+}

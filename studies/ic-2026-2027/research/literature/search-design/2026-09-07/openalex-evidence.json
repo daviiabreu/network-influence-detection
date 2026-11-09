@@ -1,0 +1,1593 @@
+{
+  "schema_version": "1",
+  "purpose": "query_design_only",
+  "measurement_date_utc": "2026-09-08",
+  "publication_cutoff": "2026-09-07",
+  "private_evidence_root": "$HOME/.local/state/research-workbench/claude-handoff-20260907",
+  "limitations": [
+    "Known seeds used in query development are not an unseen validation set.",
+    "Membership-constrained ranks are not full-search ranks.",
+    "Source result totals may overlap and are not deduplicated corpus size.",
+    "Page-budget exhaustion is incomplete, never absence."
+  ],
+  "measurements": [
+    {
+      "measurement_id": "openalex-membership-v2",
+      "input_protocol": "openalex-membership-v2.json",
+      "protocol_sha256": "7ae7a60847eb546695c6c4be635fe94a48a4c1826ff048faa578d3e6e56c3b1a",
+      "result_sha256": "e568bbbc9e7b23fa64d681b138b82139274c5f6fd9c187f472549b75fde244a1",
+      "offline_replay_matches": true,
+      "report": {
+        "schema_version": "1",
+        "protocol_sha256": "7ae7a60847eb546695c6c4be635fe94a48a4c1826ff048faa578d3e6e56c3b1a",
+        "total_pairs": 160,
+        "found_pairs": 36,
+        "not_found_pairs": 124,
+        "incomplete_pairs": 0,
+        "recall_is_assertable": true,
+        "blocking_statuses": []
+      },
+      "queries": [
+        {
+          "search_id": "probe.openalex.q01",
+          "execution_status": "complete",
+          "matched_total": 11,
+          "retained_record_count": 11,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q01",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%20OR%20%22opinion%20evolution%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:27:55.754340Z",
+              "raw_artifact_sha256": "ab74d600986eb8408cd1cb28c7255bc80bf0109d5d91068a2c5233c4e5161404"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q02",
+          "execution_status": "complete",
+          "matched_total": 5,
+          "retained_record_count": 5,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q02",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%22bounded%20confidence%22%20OR%20%22mixing%20beliefs%22%20OR%20%22bounded-confidence%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:28:06.705781Z",
+              "raw_artifact_sha256": "84dffd257e697f690bf9dd0d3116abcbb541699247882f76a3bff1e13d959975"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q03",
+          "execution_status": "complete",
+          "matched_total": 4,
+          "retained_record_count": 4,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q03",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22reaching%20a%20consensus%22%20OR%20%22linear%20opinion%20pool%22%20OR%20%22opinion%20pooling%22%20OR%20%22social%20influence%20network%22%29%20AND%20%28opinion%20OR%20belief%20OR%20consensus%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:28:17.623726Z",
+              "raw_artifact_sha256": "6f14f2da494d84ad8b7f624c2daa3c99dcbfde29fcb2e3f233c1bc68b660a25b"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q04",
+          "execution_status": "complete",
+          "matched_total": 4,
+          "retained_record_count": 4,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q04",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22voter%20model%22%20OR%20%22q-voter%22%20OR%20%22majority%20rule%22%20OR%20%22closed%20community%22%29%20AND%20%28opinion%20OR%20%22social%20influence%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:28:28.779144Z",
+              "raw_artifact_sha256": "b925670c28652204262770fade3004aec76cc49bed34945a471a632d6b3df424"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q05",
+          "execution_status": "complete",
+          "matched_total": 3,
+          "retained_record_count": 3,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q05",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22dissemination%20of%20culture%22%20OR%20%22cultural%20dissemination%22%20OR%20%22continuous%20opinions%20and%20discrete%20actions%22%29%20AND%20%28opinion%20OR%20belief%20OR%20culture%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:28:39.779901Z",
+              "raw_artifact_sha256": "2aaeecc740974c28d4e75db9485df417dcc4af4e96b6d4346c0010760ffdb8d2"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q06",
+          "execution_status": "complete",
+          "matched_total": 1,
+          "retained_record_count": 1,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q06",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22adaptive%20network%22%20OR%20%22coevolving%20network%22%20OR%20%22co-evolving%20network%22%20OR%20%22coevolution%20of%20networks%22%29%20AND%20%28opinion%20OR%20belief%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:28:50.691645Z",
+              "raw_artifact_sha256": "725bb190aae44ab286006fec0589e996312695b9ec116de4e7596afab131d3d6"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q07",
+          "execution_status": "complete",
+          "matched_total": 0,
+          "retained_record_count": 0,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q07",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22kinetic%20opinion%22%20OR%20%22compromise%20model%22%20OR%20%22Boltzmann-type%22%29%20AND%20%28opinion%20OR%20belief%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:29:01.551246Z",
+              "raw_artifact_sha256": "9428e2f4312b7e91d0e6c03cca8fd58ca05ac0d8c425ab63e9e8816a2b033be1"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q08",
+          "execution_status": "complete",
+          "matched_total": 2,
+          "retained_record_count": 2,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q08",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22biased%20assimilation%22%20OR%20%22negative%20influence%22%20OR%20%22backfire%20effect%22%29%20AND%20%28opinion%20OR%20polarization%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:29:12.389285Z",
+              "raw_artifact_sha256": "3065ccaa8c20fc57e44f59bec1591848b6965e691d5a5e72ba3dc331724840df"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q09",
+          "execution_status": "complete",
+          "matched_total": 5,
+          "retained_record_count": 5,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q09",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%22social%20influence%22%20AND%20%28experiment%20OR%20empirical%20OR%20calibration%20OR%20validation%29%20AND%20%28opinion%20OR%20belief%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:29:23.352737Z",
+              "raw_artifact_sha256": "96407229d64bf598038a36f3ebc186ff5b8c58c6d416376c61ee3fc9a72bb429"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q10",
+          "execution_status": "complete",
+          "matched_total": 1,
+          "retained_record_count": 1,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q10",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&search=%28%22large%20language%20model%22%20OR%20%22LLM-based%20agent%22%20OR%20%22generative%20agent%22%29%20AND%20%28%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:29:34.194193Z",
+              "raw_artifact_sha256": "0eb4faeb4bfbc5639fae6a819a7c915c7fe21be08168f5460f67f17e01cdd01c"
+            }
+          ]
+        }
+      ],
+      "seed_matches": [
+        {
+          "schema_version": "1",
+          "seed_id": "chuang2024",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 9,
+          "manifestation_id": "openalex.2cdd1a2660dc290542be75b3",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "dandekar2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 6,
+          "manifestation_id": "openalex.a69f4cabc18445236d87eef0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "deffuant2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 4,
+          "manifestation_id": "openalex.c9dda99c225015bfc9a79fdb",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 10,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "friedkin1990",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 11,
+          "manifestation_id": "openalex.40185655e68661c22ad0eadf",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "holme2006",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 7,
+          "manifestation_id": "openalex.dc08b65220fd4b74321b5b09",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "lorenz2007",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 2,
+          "manifestation_id": "openalex.c2a37d7a13f9a02099499df7",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "martins2008",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 5,
+          "manifestation_id": "openalex.a71c1149dbac53dbc69e1822",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "moussaid2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 3,
+          "manifestation_id": "openalex.fbed9311229bacd96121b3ee",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "sznajd2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 8,
+          "manifestation_id": "openalex.90edc359bfb66d8fd10e27c0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "deffuant2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 2,
+          "manifestation_id": "openalex.c9dda99c225015bfc9a79fdb",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 4,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "lorenz2007",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 3,
+          "manifestation_id": "openalex.c2a37d7a13f9a02099499df7",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "moussaid2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 5,
+          "manifestation_id": "openalex.fbed9311229bacd96121b3ee",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "dandekar2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 3,
+          "manifestation_id": "openalex.a69f4cabc18445236d87eef0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "degroot1974",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 1,
+          "manifestation_id": "openalex.bb58bfc0e3b586935808848d",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 4,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "friedkin1990",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 2,
+          "manifestation_id": "openalex.40185655e68661c22ad0eadf",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "castellano2009qvoter",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q04",
+          "rank": 1,
+          "manifestation_id": "openalex.b91ca6c1ae1666002a8ece91",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q04",
+          "rank": 3,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "moussaid2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q04",
+          "rank": 2,
+          "manifestation_id": "openalex.fbed9311229bacd96121b3ee",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "sznajd2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q04",
+          "rank": 4,
+          "manifestation_id": "openalex.90edc359bfb66d8fd10e27c0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "axelrod1997",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q05",
+          "rank": 1,
+          "manifestation_id": "openalex.7ab75db422becba1b249d233",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q05",
+          "rank": 3,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "martins2008",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q05",
+          "rank": 2,
+          "manifestation_id": "openalex.a71c1149dbac53dbc69e1822",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "holme2006",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q06",
+          "rank": 1,
+          "manifestation_id": "openalex.dc08b65220fd4b74321b5b09",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "dandekar2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q08",
+          "rank": 1,
+          "manifestation_id": "openalex.a69f4cabc18445236d87eef0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q08",
+          "rank": 2,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "chuang2024",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 5,
+          "manifestation_id": "openalex.2cdd1a2660dc290542be75b3",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "dandekar2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 4,
+          "manifestation_id": "openalex.a69f4cabc18445236d87eef0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 3,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "friedkin1990",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 1,
+          "manifestation_id": "openalex.40185655e68661c22ad0eadf",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "moussaid2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 2,
+          "manifestation_id": "openalex.fbed9311229bacd96121b3ee",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "chuang2024",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q10",
+          "rank": 1,
+          "manifestation_id": "openalex.2cdd1a2660dc290542be75b3",
+          "status": "found_exact_identifier"
+        }
+      ]
+    },
+    {
+      "measurement_id": "openalex-volume-v1",
+      "input_protocol": "openalex-volume-v1.json",
+      "protocol_sha256": "99818dfb8eb6aa789f86a69e83606c98fb6cc82a1dc65ffbeb1f4302fc658f46",
+      "result_sha256": "4af199d3e8dab72e6270a2b4adfe5d824e059fa5794bab3f0033124357a5602d",
+      "offline_replay_matches": true,
+      "report": {
+        "schema_version": "1",
+        "protocol_sha256": "99818dfb8eb6aa789f86a69e83606c98fb6cc82a1dc65ffbeb1f4302fc658f46",
+        "total_pairs": 160,
+        "found_pairs": 5,
+        "not_found_pairs": 0,
+        "incomplete_pairs": 155,
+        "recall_is_assertable": false,
+        "blocking_statuses": [
+          "page_cap_reached"
+        ]
+      },
+      "queries": [
+        {
+          "search_id": "volume.openalex.q01",
+          "execution_status": "incomplete",
+          "matched_total": 25046,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q01",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%20OR%20%22opinion%20evolution%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:29:54.950420Z",
+              "raw_artifact_sha256": "f9b5f759128ed9004860ecf04e08c9b55bf5c5f6656bca104bc5b23a0564b4a6"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q02",
+          "execution_status": "incomplete",
+          "matched_total": 4381,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q02",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%22bounded%20confidence%22%20OR%20%22mixing%20beliefs%22%20OR%20%22bounded-confidence%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:30:06.295627Z",
+              "raw_artifact_sha256": "9c621eb64f06823b83d455e02bcf770a315247a1cbcaf3614f76b2476c732381"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q03",
+          "execution_status": "incomplete",
+          "matched_total": 109288,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q03",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22reaching%20a%20consensus%22%20OR%20%22linear%20opinion%20pool%22%20OR%20%22opinion%20pooling%22%20OR%20%22social%20influence%20network%22%29%20AND%20%28opinion%20OR%20belief%20OR%20consensus%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:30:17.996921Z",
+              "raw_artifact_sha256": "4e5c690eee5ecf8afd2f40ce8405f2e970d9ea732d8974b1999fcd3904da4dd5"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q04",
+          "execution_status": "incomplete",
+          "matched_total": 20946,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q04",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22voter%20model%22%20OR%20%22q-voter%22%20OR%20%22majority%20rule%22%20OR%20%22closed%20community%22%29%20AND%20%28opinion%20OR%20%22social%20influence%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:30:30.242808Z",
+              "raw_artifact_sha256": "72149ede296ab11f2610daccfd34926f53d39a938722fdf59c8674f3ec462e4f"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q05",
+          "execution_status": "incomplete",
+          "matched_total": 9945,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q05",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22dissemination%20of%20culture%22%20OR%20%22cultural%20dissemination%22%20OR%20%22continuous%20opinions%20and%20discrete%20actions%22%29%20AND%20%28opinion%20OR%20belief%20OR%20culture%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:30:41.623624Z",
+              "raw_artifact_sha256": "f61ce886f6441736555896fe6a49667ce2ab713a82afa72d9ed876699768b6b8"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q06",
+          "execution_status": "incomplete",
+          "matched_total": 6957,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q06",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22adaptive%20network%22%20OR%20%22coevolving%20network%22%20OR%20%22co-evolving%20network%22%20OR%20%22coevolution%20of%20networks%22%29%20AND%20%28opinion%20OR%20belief%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:30:53.451129Z",
+              "raw_artifact_sha256": "697721bbc85c6b9c112ccd59de7ba0fd045bf87d956c2e1b43ed9f5f01759d23"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q07",
+          "execution_status": "incomplete",
+          "matched_total": 2653,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q07",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22kinetic%20opinion%22%20OR%20%22compromise%20model%22%20OR%20%22Boltzmann-type%22%29%20AND%20%28opinion%20OR%20belief%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:31:05.182991Z",
+              "raw_artifact_sha256": "b0c39c37bd0046374e2bbb870fe337ae692e4cec1d4b722859dca52b53acb366"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q08",
+          "execution_status": "incomplete",
+          "matched_total": 108519,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q08",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22biased%20assimilation%22%20OR%20%22negative%20influence%22%20OR%20%22backfire%20effect%22%29%20AND%20%28opinion%20OR%20polarization%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:31:17.376142Z",
+              "raw_artifact_sha256": "2ac3ada82972dfff810b5b95966562828e2b35856b54efc1309e260bd7474278"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q09",
+          "execution_status": "incomplete",
+          "matched_total": 99445,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q09",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%22social%20influence%22%20AND%20%28experiment%20OR%20empirical%20OR%20calibration%20OR%20validation%29%20AND%20%28opinion%20OR%20belief%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:31:28.642325Z",
+              "raw_artifact_sha256": "3ffe2bc64cff0c7f30f84ece92b9fe8cfc4a058d46e8213f4bd15d628285559e"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q10",
+          "execution_status": "incomplete",
+          "matched_total": 1143,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q10",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&search=%28%22large%20language%20model%22%20OR%20%22LLM-based%20agent%22%20OR%20%22generative%20agent%22%29%20AND%20%28%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:31:39.594192Z",
+              "raw_artifact_sha256": "d85b22fb60c73add33134654a17929d2bb590ffb634e645958cf570b1cf43ff5"
+            }
+          ]
+        }
+      ],
+      "seed_matches": [
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q01",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q02",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "degroot1974",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q03",
+          "rank": 1,
+          "manifestation_id": "openalex.bb58bfc0e3b586935808848d",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "axelrod1997",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q05",
+          "rank": 1,
+          "manifestation_id": "openalex.7ab75db422becba1b249d233",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "holme2006",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q06",
+          "rank": 1,
+          "manifestation_id": "openalex.dc08b65220fd4b74321b5b09",
+          "status": "found_exact_identifier"
+        }
+      ]
+    },
+    {
+      "measurement_id": "openalex-membership-title-abstract-v1",
+      "input_protocol": "openalex-membership-v2-title-abstract.json",
+      "protocol_sha256": "5b66e5b3ee1035b4a3ca5a8032171b38a7edc31095c30f5a467824d29f6acd43",
+      "result_sha256": "59c001b46bf13eec1811207c3b32ef770ea21a12096184015980da210fc0e7d2",
+      "offline_replay_matches": true,
+      "report": {
+        "schema_version": "1",
+        "protocol_sha256": "5b66e5b3ee1035b4a3ca5a8032171b38a7edc31095c30f5a467824d29f6acd43",
+        "total_pairs": 160,
+        "found_pairs": 22,
+        "not_found_pairs": 138,
+        "incomplete_pairs": 0,
+        "recall_is_assertable": true,
+        "blocking_statuses": []
+      },
+      "queries": [
+        {
+          "search_id": "probe.openalex.q01",
+          "execution_status": "complete",
+          "matched_total": 9,
+          "retained_record_count": 9,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q01",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%20OR%20%22opinion%20evolution%22%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:35:14.907815Z",
+              "raw_artifact_sha256": "b4352fa1b553443ffe450ac769166a3253ee3ad2ed84d6d99d04f18530d16fb6"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q02",
+          "execution_status": "complete",
+          "matched_total": 3,
+          "retained_record_count": 3,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q02",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%22bounded%20confidence%22%20OR%20%22mixing%20beliefs%22%20OR%20%22bounded-confidence%22%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:35:25.897006Z",
+              "raw_artifact_sha256": "def71c69f7e46a79b67904b0ecf41de96d0e495649b7e5cfb105e8f989312513"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q03",
+          "execution_status": "complete",
+          "matched_total": 1,
+          "retained_record_count": 1,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q03",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22reaching%20a%20consensus%22%20OR%20%22linear%20opinion%20pool%22%20OR%20%22opinion%20pooling%22%20OR%20%22social%20influence%20network%22%29%20AND%20%28opinion%20OR%20belief%20OR%20consensus%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:35:36.913037Z",
+              "raw_artifact_sha256": "3a49c094c71f6d2ff02d4d78a415e848d619d11aecabe98b4bab27089a4d9d0e"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q04",
+          "execution_status": "complete",
+          "matched_total": 2,
+          "retained_record_count": 2,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q04",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22voter%20model%22%20OR%20%22q-voter%22%20OR%20%22majority%20rule%22%20OR%20%22closed%20community%22%29%20AND%20%28opinion%20OR%20%22social%20influence%22%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:35:47.885183Z",
+              "raw_artifact_sha256": "78c5d45e03ab1440f7311055142d6c3bd3325a6d0aeaacbf4d7b724a92492fc5"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q05",
+          "execution_status": "complete",
+          "matched_total": 2,
+          "retained_record_count": 2,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q05",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22dissemination%20of%20culture%22%20OR%20%22cultural%20dissemination%22%20OR%20%22continuous%20opinions%20and%20discrete%20actions%22%29%20AND%20%28opinion%20OR%20belief%20OR%20culture%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:35:58.418047Z",
+              "raw_artifact_sha256": "3499918282a7748ad1bb768f9a72d3dbe148c8fa6ad5bb8d2f0dd2ea5f056b58"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q06",
+          "execution_status": "complete",
+          "matched_total": 1,
+          "retained_record_count": 1,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q06",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22adaptive%20network%22%20OR%20%22coevolving%20network%22%20OR%20%22co-evolving%20network%22%20OR%20%22coevolution%20of%20networks%22%29%20AND%20%28opinion%20OR%20belief%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:09.416633Z",
+              "raw_artifact_sha256": "4860fed7112159ef6b277535f0668fe0edcae64145bcd1ccedd18dee05a57d0c"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q07",
+          "execution_status": "complete",
+          "matched_total": 0,
+          "retained_record_count": 0,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q07",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22kinetic%20opinion%22%20OR%20%22compromise%20model%22%20OR%20%22Boltzmann-type%22%29%20AND%20%28opinion%20OR%20belief%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:20.232888Z",
+              "raw_artifact_sha256": "9a9b962947b699573eb6358c5adc2da4a9c7af267ee1e51592ebcbc14f09d7b5"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q08",
+          "execution_status": "complete",
+          "matched_total": 1,
+          "retained_record_count": 1,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q08",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22biased%20assimilation%22%20OR%20%22negative%20influence%22%20OR%20%22backfire%20effect%22%29%20AND%20%28opinion%20OR%20polarization%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:31.065320Z",
+              "raw_artifact_sha256": "28c2c5fdda22d4c38fa3f490eecdb351452d2a30bbb7e44098f890cb35541133"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q09",
+          "execution_status": "complete",
+          "matched_total": 2,
+          "retained_record_count": 2,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q09",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%22social%20influence%22%20AND%20%28experiment%20OR%20empirical%20OR%20calibration%20OR%20validation%29%20AND%20%28opinion%20OR%20belief%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:42.150410Z",
+              "raw_artifact_sha256": "8a715dfa03d3e863ed8a83b1d7c50e0b48947fe7dad73a6644553d85fb722240"
+            }
+          ]
+        },
+        {
+          "search_id": "probe.openalex.q10",
+          "execution_status": "complete",
+          "matched_total": 1,
+          "retained_record_count": 1,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q10",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22large%20language%20model%22%20OR%20%22LLM-based%20agent%22%20OR%20%22generative%20agent%22%29%20AND%20%28%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:52.589121Z",
+              "raw_artifact_sha256": "0f61fab41f98ce397cd95db442fef58d1954a4a16fa383f7d3d8e8bfeda90301"
+            }
+          ]
+        }
+      ],
+      "seed_matches": [
+        {
+          "schema_version": "1",
+          "seed_id": "chuang2024",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 6,
+          "manifestation_id": "openalex.2cdd1a2660dc290542be75b3",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "dandekar2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 8,
+          "manifestation_id": "openalex.a69f4cabc18445236d87eef0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "deffuant2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 7,
+          "manifestation_id": "openalex.c9dda99c225015bfc9a79fdb",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "holme2006",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 9,
+          "manifestation_id": "openalex.dc08b65220fd4b74321b5b09",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "lorenz2007",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 2,
+          "manifestation_id": "openalex.c2a37d7a13f9a02099499df7",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "martins2008",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 4,
+          "manifestation_id": "openalex.a71c1149dbac53dbc69e1822",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "moussaid2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 3,
+          "manifestation_id": "openalex.fbed9311229bacd96121b3ee",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "sznajd2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q01",
+          "rank": 5,
+          "manifestation_id": "openalex.90edc359bfb66d8fd10e27c0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "deffuant2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 2,
+          "manifestation_id": "openalex.c9dda99c225015bfc9a79fdb",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "lorenz2007",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q02",
+          "rank": 3,
+          "manifestation_id": "openalex.c2a37d7a13f9a02099499df7",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "degroot1974",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 1,
+          "manifestation_id": "openalex.bb58bfc0e3b586935808848d",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "castellano2009qvoter",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q04",
+          "rank": 1,
+          "manifestation_id": "openalex.b91ca6c1ae1666002a8ece91",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "sznajd2000",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q04",
+          "rank": 2,
+          "manifestation_id": "openalex.90edc359bfb66d8fd10e27c0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "axelrod1997",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q05",
+          "rank": 1,
+          "manifestation_id": "openalex.7ab75db422becba1b249d233",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "martins2008",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q05",
+          "rank": 2,
+          "manifestation_id": "openalex.a71c1149dbac53dbc69e1822",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "holme2006",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q06",
+          "rank": 1,
+          "manifestation_id": "openalex.dc08b65220fd4b74321b5b09",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "dandekar2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q08",
+          "rank": 1,
+          "manifestation_id": "openalex.a69f4cabc18445236d87eef0",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "flache2017",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 2,
+          "manifestation_id": "openalex.fe8778c1b1a4f758f28802a1",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "moussaid2013",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q09",
+          "rank": 1,
+          "manifestation_id": "openalex.fbed9311229bacd96121b3ee",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "chuang2024",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q10",
+          "rank": 1,
+          "manifestation_id": "openalex.2cdd1a2660dc290542be75b3",
+          "status": "found_exact_identifier"
+        }
+      ]
+    },
+    {
+      "measurement_id": "openalex-volume-title-abstract-v1",
+      "input_protocol": "openalex-volume-v1-title-abstract.json",
+      "protocol_sha256": "3486cc6eaf5948f0f0422ba483d5ea3386043f59cfcc8db4e21b8501b49fc861",
+      "result_sha256": "a503c5b5645e745d6309c39908747a9fae28a2e224b1998db075dd9100a3fb11",
+      "offline_replay_matches": true,
+      "report": {
+        "schema_version": "1",
+        "protocol_sha256": "3486cc6eaf5948f0f0422ba483d5ea3386043f59cfcc8db4e21b8501b49fc861",
+        "total_pairs": 160,
+        "found_pairs": 6,
+        "not_found_pairs": 0,
+        "incomplete_pairs": 154,
+        "recall_is_assertable": false,
+        "blocking_statuses": [
+          "page_cap_reached"
+        ]
+      },
+      "queries": [
+        {
+          "search_id": "volume.openalex.q01",
+          "execution_status": "incomplete",
+          "matched_total": 7629,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q01",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%20OR%20%22opinion%20evolution%22%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:35:52.386153Z",
+              "raw_artifact_sha256": "c1346dbba530a9e579d6e87eaea77b7f9805195c65432deb8b327a896c547662"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q02",
+          "execution_status": "incomplete",
+          "matched_total": 872,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q02",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%22bounded%20confidence%22%20OR%20%22mixing%20beliefs%22%20OR%20%22bounded-confidence%22%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:03.219056Z",
+              "raw_artifact_sha256": "fd74b644936a943a8e5d198305544f9fffcb3f604f2e0d77c40f95d384c5e4b4"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q03",
+          "execution_status": "incomplete",
+          "matched_total": 13856,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q03",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22reaching%20a%20consensus%22%20OR%20%22linear%20opinion%20pool%22%20OR%20%22opinion%20pooling%22%20OR%20%22social%20influence%20network%22%29%20AND%20%28opinion%20OR%20belief%20OR%20consensus%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:14.342619Z",
+              "raw_artifact_sha256": "79344df0bbb5f324ba79fd34d9818940ba2254dfb0e006aa26511d2f6ab36367"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q04",
+          "execution_status": "incomplete",
+          "matched_total": 996,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q04",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22voter%20model%22%20OR%20%22q-voter%22%20OR%20%22majority%20rule%22%20OR%20%22closed%20community%22%29%20AND%20%28opinion%20OR%20%22social%20influence%22%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:24.988559Z",
+              "raw_artifact_sha256": "d57a815cfddea9eaece6e33a06e0ee4e7d13037db35dcbd1a7ae80e49b96336f"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q05",
+          "execution_status": "incomplete",
+          "matched_total": 1771,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q05",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22dissemination%20of%20culture%22%20OR%20%22cultural%20dissemination%22%20OR%20%22continuous%20opinions%20and%20discrete%20actions%22%29%20AND%20%28opinion%20OR%20belief%20OR%20culture%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:36.039577Z",
+              "raw_artifact_sha256": "2c1dcf377e4c5f3caf464c696d4433b4044965285126cb0c28e0c8194a01e16e"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q06",
+          "execution_status": "incomplete",
+          "matched_total": 159,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q06",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22adaptive%20network%22%20OR%20%22coevolving%20network%22%20OR%20%22co-evolving%20network%22%20OR%20%22coevolution%20of%20networks%22%29%20AND%20%28opinion%20OR%20belief%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:46.905095Z",
+              "raw_artifact_sha256": "ba6d060ca35f15f97089aee05f3a6ed487aa2efc8625d2995f6eb3233371e1db"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q07",
+          "execution_status": "incomplete",
+          "matched_total": 54,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q07",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22kinetic%20opinion%22%20OR%20%22compromise%20model%22%20OR%20%22Boltzmann-type%22%29%20AND%20%28opinion%20OR%20belief%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:36:57.420441Z",
+              "raw_artifact_sha256": "c6ab9938607e1abfb2093e0ef7abe05358eecafa711d2d5f3725c8bb1ad25047"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q08",
+          "execution_status": "incomplete",
+          "matched_total": 1628,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q08",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22biased%20assimilation%22%20OR%20%22negative%20influence%22%20OR%20%22backfire%20effect%22%29%20AND%20%28opinion%20OR%20polarization%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:37:08.059538Z",
+              "raw_artifact_sha256": "cbe7caae1c9c1147aa5b0a7350615a608f2806abc21ff36bb0bb8cb710923b9b"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q09",
+          "execution_status": "incomplete",
+          "matched_total": 960,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q09",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%22social%20influence%22%20AND%20%28experiment%20OR%20empirical%20OR%20calibration%20OR%20validation%29%20AND%20%28opinion%20OR%20belief%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:37:18.799480Z",
+              "raw_artifact_sha256": "4d25f041a7d27cfb10a876d3e71019a19e84f7d3177e296cdaf1790c1fd4675f"
+            }
+          ]
+        },
+        {
+          "search_id": "volume.openalex.q10",
+          "execution_status": "incomplete",
+          "matched_total": 112,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "volume.openalex.q10",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22large%20language%20model%22%20OR%20%22LLM-based%20agent%22%20OR%20%22generative%20agent%22%29%20AND%20%28%22opinion%20dynamics%22%20OR%20%22opinion%20formation%22%29%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:37:29.351579Z",
+              "raw_artifact_sha256": "909a76ec46fbe22a1a149a983c881bedeadb7e509cf6cdea169b0efb5d21a545"
+            }
+          ]
+        }
+      ],
+      "seed_matches": [
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q01",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "hegselmann2002",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q02",
+          "rank": 1,
+          "manifestation_id": "openalex.89c46eb697a1defb76e427d8",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "degroot1974",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q03",
+          "rank": 1,
+          "manifestation_id": "openalex.bb58bfc0e3b586935808848d",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "axelrod1997",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q05",
+          "rank": 1,
+          "manifestation_id": "openalex.7ab75db422becba1b249d233",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "holme2006",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q06",
+          "rank": 1,
+          "manifestation_id": "openalex.dc08b65220fd4b74321b5b09",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "chuang2024",
+          "source_id": "openalex",
+          "search_id": "volume.openalex.q10",
+          "rank": 1,
+          "manifestation_id": "openalex.2cdd1a2660dc290542be75b3",
+          "status": "found_exact_identifier"
+        }
+      ]
+    },
+    {
+      "measurement_id": "openalex-consensus-membership-v3",
+      "input_protocol": "openalex-consensus-membership-v3.json",
+      "protocol_sha256": "48405f9e654de2397f2191fbadadfe3559f61df061325a9f2c41937cd471a7dd",
+      "result_sha256": "b5719456e90995255017840ed4bb802b2a9751bf53bea008b7a715bded1d60cf",
+      "offline_replay_matches": true,
+      "report": {
+        "schema_version": "1",
+        "protocol_sha256": "48405f9e654de2397f2191fbadadfe3559f61df061325a9f2c41937cd471a7dd",
+        "total_pairs": 16,
+        "found_pairs": 2,
+        "not_found_pairs": 14,
+        "incomplete_pairs": 0,
+        "recall_is_assertable": true,
+        "blocking_statuses": []
+      },
+      "queries": [
+        {
+          "search_id": "probe.openalex.q03",
+          "execution_status": "complete",
+          "matched_total": 2,
+          "retained_record_count": 2,
+          "issue_codes": [],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q03",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Copenalex_id%3AW1556269759%7CW1579536899%7CW1991442303%7CW1998692453%7CW2019976298%7CW2027514326%7CW2051510192%7CW2058105398%7CW2083689991%7CW2113096089%7CW2124535681%7CW2151789396%7CW2159918425%7CW2765195368%7CW4240828654%7CW4401043540%2Ctitle_and_abstract.search%3A%28%22reaching%20a%20consensus%22%20AND%20probability%29%20OR%20%22linear%20opinion%20pool%22%20OR%20%22opinion%20pooling%22%20OR%20%22social%20influence%20network%22%20OR%20%22social%20influence%20and%20opinions%22%20OR%20%22DeGroot%20model%22%20OR%20%22Friedkin-Johnsen%22%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=100&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:38:46.365181Z",
+              "raw_artifact_sha256": "cd3937352031475c653fb863cfbf4d13c3a69ca4c6465be0cbe1f8dfe7d3e375"
+            }
+          ]
+        }
+      ],
+      "seed_matches": [
+        {
+          "schema_version": "1",
+          "seed_id": "degroot1974",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 1,
+          "manifestation_id": "openalex.bb58bfc0e3b586935808848d",
+          "status": "found_exact_identifier"
+        },
+        {
+          "schema_version": "1",
+          "seed_id": "friedkin1990",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 2,
+          "manifestation_id": "openalex.40185655e68661c22ad0eadf",
+          "status": "found_exact_identifier"
+        }
+      ]
+    },
+    {
+      "measurement_id": "openalex-consensus-volume-v3",
+      "input_protocol": "openalex-consensus-volume-v3.json",
+      "protocol_sha256": "743a2aef6cec0d64dd10d09a501b2571498e3272d708f3dadbb9cf4492f41559",
+      "result_sha256": "75ebc4cc4f93b10eece8202bbd8e982d0bfc6a99f2e25601105b4f46866fbe6d",
+      "offline_replay_matches": true,
+      "report": {
+        "schema_version": "1",
+        "protocol_sha256": "743a2aef6cec0d64dd10d09a501b2571498e3272d708f3dadbb9cf4492f41559",
+        "total_pairs": 16,
+        "found_pairs": 1,
+        "not_found_pairs": 0,
+        "incomplete_pairs": 15,
+        "recall_is_assertable": false,
+        "blocking_statuses": [
+          "page_cap_reached"
+        ]
+      },
+      "queries": [
+        {
+          "search_id": "probe.openalex.q03",
+          "execution_status": "incomplete",
+          "matched_total": 1225,
+          "retained_record_count": 1,
+          "issue_codes": [
+            "page_cap_reached"
+          ],
+          "traces": [
+            {
+              "schema_version": "1",
+              "source_id": "openalex",
+              "search_id": "probe.openalex.q03",
+              "page_index": 0,
+              "request_url": "https://api.openalex.org/works?filter=from_publication_date%3A1970-01-01%2Ctitle_and_abstract.search%3A%28%22reaching%20a%20consensus%22%20AND%20probability%29%20OR%20%22linear%20opinion%20pool%22%20OR%20%22opinion%20pooling%22%20OR%20%22social%20influence%20network%22%20OR%20%22social%20influence%20and%20opinions%22%20OR%20%22DeGroot%20model%22%20OR%20%22Friedkin-Johnsen%22%2Cto_publication_date%3A2026-09-07%2Ctype%3Aarticle%7Cconference-paper%7Cpreprint%7Creview&cursor=%2A&per-page=1&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ctype%2Clanguage%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index",
+              "retrieved_at": "2026-09-08T01:38:47.403367Z",
+              "raw_artifact_sha256": "7c4904a0cb46639db6b5f1c4b603a03fa44f7024773aa67141091f5c6c9779c2"
+            }
+          ]
+        }
+      ],
+      "seed_matches": [
+        {
+          "schema_version": "1",
+          "seed_id": "degroot1974",
+          "source_id": "openalex",
+          "search_id": "probe.openalex.q03",
+          "rank": 1,
+          "manifestation_id": "openalex.bb58bfc0e3b586935808848d",
+          "status": "found_exact_identifier"
+        }
+      ]
+    }
+  ]
+}

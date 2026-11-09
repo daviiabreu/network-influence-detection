@@ -1,0 +1,2198 @@
+{
+  "schema_version": "1",
+  "purpose": "cross_measurement_query_design_projection",
+  "limitations": [
+    "Separate bounded diagnostics at different times, not a new acquisition or canonical study corpus.",
+    "Each literal retained at most two pages of 100 records; the candidate review protocol declares a different operational cap.",
+    "Per-query absence is not source-wide absence when other queries remain incomplete.",
+    "Counts overlap; retained records are not deduplicated scholarly works."
+  ],
+  "measurements": [
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "evidence_file": "dblp-evidence-v2.json",
+      "result_sha256": "d6608435fcf8d4280bdb441b2e34adeea7f26d562bdd80ea21bdc9f4a6550a8c"
+    },
+    {
+      "measurement_id": "dblp-split-pilot-v3",
+      "evidence_file": "dblp-evidence-v3.json",
+      "result_sha256": "7900453d205186c502b8e082f30fdb4b902a79faac7430b11f78287a9fb6589d"
+    },
+    {
+      "measurement_id": "dblp-multidoi-pilot-v4",
+      "evidence_file": "dblp-evidence-v4.json",
+      "result_sha256": "7c757f020cbcfeb751fa4b5ef78406c42ed90861fd6e54df6b6389e0db736169"
+    },
+    {
+      "measurement_id": "dblp-sici-pilot-v5",
+      "evidence_file": "dblp-evidence-v5.json",
+      "result_sha256": "8bcea4e3ee39f7e950a174603b0533416edf5204378d3f94778bb43c88add540"
+    }
+  ],
+  "queries": [
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q01",
+      "execution_status": "incomplete",
+      "matched_total": 1267,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "pages": 2
+    },
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q02",
+      "execution_status": "complete",
+      "matched_total": 159,
+      "retained_record_count": 159,
+      "issue_codes": [],
+      "pages": 2
+    },
+    {
+      "measurement_id": "dblp-split-pilot-v3",
+      "search_id": "search.dblp.q03a",
+      "execution_status": "complete",
+      "matched_total": 90,
+      "retained_record_count": 90,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-split-pilot-v3",
+      "search_id": "search.dblp.q03b",
+      "execution_status": "complete",
+      "matched_total": 26,
+      "retained_record_count": 26,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-split-pilot-v3",
+      "search_id": "search.dblp.q03c",
+      "execution_status": "complete",
+      "matched_total": 0,
+      "retained_record_count": 0,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-split-pilot-v3",
+      "search_id": "search.dblp.q04a",
+      "execution_status": "complete",
+      "matched_total": 101,
+      "retained_record_count": 101,
+      "issue_codes": [],
+      "pages": 2
+    },
+    {
+      "measurement_id": "dblp-sici-pilot-v5",
+      "search_id": "search.dblp.q04b",
+      "execution_status": "complete",
+      "matched_total": 129,
+      "retained_record_count": 129,
+      "issue_codes": [],
+      "pages": 2
+    },
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q05",
+      "execution_status": "complete",
+      "matched_total": 14,
+      "retained_record_count": 14,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-multidoi-pilot-v4",
+      "search_id": "search.dblp.q06a",
+      "execution_status": "incomplete",
+      "matched_total": 1164,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "pages": 2
+    },
+    {
+      "measurement_id": "dblp-split-pilot-v3",
+      "search_id": "search.dblp.q06b",
+      "execution_status": "complete",
+      "matched_total": 9,
+      "retained_record_count": 9,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q07",
+      "execution_status": "complete",
+      "matched_total": 12,
+      "retained_record_count": 12,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q08",
+      "execution_status": "complete",
+      "matched_total": 61,
+      "retained_record_count": 61,
+      "issue_codes": [],
+      "pages": 1
+    },
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q09",
+      "execution_status": "incomplete",
+      "matched_total": 1068,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "pages": 2
+    },
+    {
+      "measurement_id": "dblp-pilot-v2",
+      "search_id": "search.dblp.q10",
+      "execution_status": "incomplete",
+      "matched_total": 318,
+      "retained_record_count": 200,
+      "issue_codes": [
+        "page_cap_reached"
+      ],
+      "pages": 2
+    }
+  ],
+  "retained_record_count": 1401,
+  "retained_page_count": 21,
+  "query_execution_status_counts": {
+    "incomplete": 4,
+    "complete": 10
+  },
+  "pair_status_counts": {
+    "page_cap_reached": 63,
+    "not_found_in_page_budget": 158,
+    "found_exact_identifier": 3
+  },
+  "recall_is_assertable": false,
+  "cells": [
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q01",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": "dblp.5fb9ccc6391fe220ce53bccb",
+      "rank": 31,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q02",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03a",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03b",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q03c",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04a",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q04b",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q05",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06a",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q06b",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q07",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": "dblp.ca72c3ee2061062321fd76ea",
+      "rank": 55,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q08",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "not_found_in_page_budget"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q09",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "axelrod1997",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "castellano2009qvoter",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "castellano2009rmp",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": "dblp.4c7cb1d95efbec7f4a60ae06",
+      "rank": 85,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "chuang2024",
+      "source_id": "dblp",
+      "status": "found_exact_identifier"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "clifford1973",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "dandekar2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "deffuant2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "degroot1974",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "flache2017",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "friedkin1990",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "hegselmann2002",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "holme2006",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "lorenz2007",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "martins2008",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "moussaid2013",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    },
+    {
+      "manifestation_id": null,
+      "rank": null,
+      "schema_version": "1",
+      "search_id": "search.dblp.q10",
+      "seed_id": "sznajd2000",
+      "source_id": "dblp",
+      "status": "page_cap_reached"
+    }
+  ]
+}

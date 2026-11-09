@@ -1,0 +1,309 @@
+{
+  "authorizes_execution": false,
+  "by_decile": [
+    {
+      "decile": 1,
+      "reference_counts": {
+        "include": 15,
+        "uncertain": 5
+      },
+      "screener_a": {
+        "positive_predictions": {
+          "exclude": 1,
+          "include": 14
+        },
+        "predicted_counts": {
+          "exclude": 1,
+          "include": 16,
+          "uncertain": 3
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {
+          "include": 15
+        },
+        "predicted_counts": {
+          "include": 15,
+          "uncertain": 5
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 2,
+      "reference_counts": {
+        "exclude": 10,
+        "include": 4,
+        "uncertain": 6
+      },
+      "screener_a": {
+        "positive_predictions": {
+          "include": 3,
+          "uncertain": 1
+        },
+        "predicted_counts": {
+          "exclude": 7,
+          "include": 8,
+          "uncertain": 5
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {
+          "include": 4
+        },
+        "predicted_counts": {
+          "exclude": 11,
+          "include": 4,
+          "uncertain": 5
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 3,
+      "reference_counts": {
+        "exclude": 17,
+        "include": 2,
+        "uncertain": 1
+      },
+      "screener_a": {
+        "positive_predictions": {
+          "include": 2
+        },
+        "predicted_counts": {
+          "exclude": 16,
+          "include": 3,
+          "uncertain": 1
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {
+          "include": 2
+        },
+        "predicted_counts": {
+          "exclude": 17,
+          "include": 2,
+          "uncertain": 1
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 4,
+      "reference_counts": {
+        "exclude": 18,
+        "include": 1,
+        "uncertain": 1
+      },
+      "screener_a": {
+        "positive_predictions": {
+          "include": 1
+        },
+        "predicted_counts": {
+          "exclude": 16,
+          "include": 2,
+          "uncertain": 2
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {
+          "include": 1
+        },
+        "predicted_counts": {
+          "exclude": 18,
+          "include": 1,
+          "uncertain": 1
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 5,
+      "reference_counts": {
+        "exclude": 18,
+        "include": 1,
+        "uncertain": 1
+      },
+      "screener_a": {
+        "positive_predictions": {
+          "include": 1
+        },
+        "predicted_counts": {
+          "exclude": 17,
+          "include": 2,
+          "uncertain": 1
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {
+          "include": 1
+        },
+        "predicted_counts": {
+          "exclude": 18,
+          "include": 1,
+          "uncertain": 1
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 6,
+      "reference_counts": {
+        "exclude": 17,
+        "uncertain": 3
+      },
+      "screener_a": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 17,
+          "uncertain": 3
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 17,
+          "uncertain": 3
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 7,
+      "reference_counts": {
+        "exclude": 15,
+        "uncertain": 5
+      },
+      "screener_a": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 15,
+          "include": 1,
+          "uncertain": 4
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 15,
+          "uncertain": 5
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 8,
+      "reference_counts": {
+        "exclude": 12,
+        "uncertain": 8
+      },
+      "screener_a": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 12,
+          "uncertain": 8
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 12,
+          "uncertain": 8
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 9,
+      "reference_counts": {
+        "exclude": 15,
+        "uncertain": 5
+      },
+      "screener_a": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 15,
+          "uncertain": 5
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 15,
+          "uncertain": 5
+        }
+      },
+      "works": 20
+    },
+    {
+      "decile": 10,
+      "reference_counts": {
+        "exclude": 5,
+        "uncertain": 15
+      },
+      "screener_a": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 5,
+          "uncertain": 15
+        }
+      },
+      "screener_b": {
+        "positive_predictions": {},
+        "predicted_counts": {
+          "exclude": 5,
+          "uncertain": 15
+        }
+      },
+      "works": 20
+    }
+  ],
+  "metrics": {
+    "screener_a": {
+      "exact_include_count": 21,
+      "exact_include_recall": 0.9130434782608695,
+      "exact_include_wilson_95": [
+        0.7320401892425634,
+        0.9758199955157796
+      ],
+      "false_exclusions": 1,
+      "pass": true,
+      "positive_references": 23,
+      "recall": 0.9565217391304348,
+      "recall_wilson_95": [
+        0.7900884492974114,
+        0.9922833338565469
+      ],
+      "retained_includes": 22,
+      "uncertain_rate": 0.235
+    },
+    "screener_b": {
+      "exact_include_count": 23,
+      "exact_include_recall": 1.0,
+      "exact_include_wilson_95": [
+        0.8568833815495731,
+        1
+      ],
+      "false_exclusions": 0,
+      "pass": true,
+      "positive_references": 23,
+      "recall": 1.0,
+      "recall_wilson_95": [
+        0.8568833815495731,
+        1
+      ],
+      "retained_includes": 23,
+      "uncertain_rate": 0.245
+    }
+  },
+  "pass": true,
+  "reference_counts": {
+    "exclude": 127,
+    "include": 23,
+    "uncertain": 50
+  },
+  "schema_version": "prioritized-calibration-metrics-1",
+  "scope": "agreement_with_owner_adopted_ai_reference",
+  "stage": "title_abstract",
+  "work_count": 200
+}

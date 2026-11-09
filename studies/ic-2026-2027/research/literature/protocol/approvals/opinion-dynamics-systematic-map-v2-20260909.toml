@@ -1,0 +1,17 @@
+# Recorded from the Research Owner continuation instruction of 2026-09-09.
+# Basis: research/decisions/2026-09-09-systematic-map-v2-search-authorization.md.
+schema_version = "1"
+approval_id = "systematic-map-v2-search-20260909"
+decision = "approved"
+authorization = "systematic_review_search_execution"
+approved_at = 2026-09-09T18:55:00+00:00
+subject_path = "studies/ic-2026-2027/research/literature/protocol/opinion-dynamics-systematic-map-v2.json"
+protocol_id = "opinion-dynamics-systematic-map-v2"
+protocol_version = "2.0.0"
+protocol_status = "review_candidate"
+protocol_sha256 = "540ed755dd2ac4fe979975f737b89075945023f9fb14688e2010a773331f45ed"
+repository_commit = "7c1e6940a7a38d436ff13534e81d1e0f85e22748"
+
+[[approvers]]
+role = "research_owner"
+name = "Davi Abreu da Silveira"

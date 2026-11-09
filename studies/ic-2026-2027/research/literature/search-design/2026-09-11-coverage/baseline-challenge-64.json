@@ -1,0 +1,2157 @@
+{
+  "schema_version": "coverage-challenge-1",
+  "status": "exploratory_baseline_audit",
+  "summary": {
+    "computed_at": "2026-09-12T01:33:25.024688+00:00",
+    "frozen_selection_sha256": "fc461eafdf04bc28dca3fc844638ddb624eda4162833dbf933ed1f78179c820a",
+    "source_records_sha256": "f1136eda2f2a3a181f71b1372669b7ec7db0c4b521ec22e98ee3be35b69e2860",
+    "source_observations": 22404,
+    "candidate_count": 64,
+    "doi_matched": 38,
+    "title_only_matched": 2,
+    "unmatched": 24,
+    "metadata_pending": 0,
+    "development_seed_doi_overlap": 0,
+    "canonical_deduplication_executed": false,
+    "scientific_inclusion_established": false
+  },
+  "full_private_comparison_sha256": "91237446f4975f297341b53d1e3ec66734eb83b5451300dac39a79bbf78ec4fc",
+  "candidate_selection_frozen_at": "2026-09-12T01:28:48.202885+00:00",
+  "claims": {
+    "independent_of_development_seed_dois": true,
+    "blind_held_out_evaluation": false,
+    "probabilistic_recall_estimate": false,
+    "canonical_inclusion": false
+  },
+  "candidates": [
+    {
+      "candidate_id": "rmp-ref-039",
+      "doi": "10.1126/sciadv.adu9368",
+      "title": [
+        "Emergent social conventions and collective bias in LLM populations"
+      ],
+      "family": "llm_conventions",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib39",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            16
+          ]
+        ]
+      },
+      "container_title": [
+        "Science Advances"
+      ],
+      "primary_url": "https://www.science.org/doi/10.1126/sciadv.adu9368",
+      "metadata_sha256": "297458b49c70d7b67c8a0962d07ae3fbb9797118dbc29dd1947f5f739183561a",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": "Boundary: conventions in artificial populations; verify human-opinion interpretation."
+    },
+    {
+      "candidate_id": "rmp-ref-053",
+      "doi": "10.1080/0022250X.2018.1517761",
+      "title": [
+        "Opinion polarization by learning from social feedback"
+      ],
+      "family": "reinforcement_social_feedback",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib53",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            10
+          ]
+        ]
+      },
+      "container_title": [
+        "The Journal of Mathematical Sociology"
+      ],
+      "primary_url": "https://www.tandfonline.com/doi/full/10.1080/0022250X.2018.1517761",
+      "metadata_sha256": "bba4ccb572e12ccb3b83323d3eefc0e60c204a5f7f39ef4e7b74a3e80be472cf",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.arxiv.q02",
+        "search.arxiv.q08",
+        "search.openalex.q01",
+        "search.openalex.q02",
+        "search.openalex.q08"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-065",
+      "doi": "10.1088/1742-5468/2006/06/P06014",
+      "title": [
+        "Sharp transition towards shared vocabularies in multi-agent systems"
+      ],
+      "family": "naming_game",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib65",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2006,
+            6,
+            23
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Statistical Mechanics: Theory and Experiment"
+      ],
+      "primary_url": "https://iopscience.iop.org/article/10.1088/1742-5468/2006/06/P06014",
+      "metadata_sha256": "ae9923a6581a03e87bb2b35d5ab6977d2af9ebc9751f5aa3cd38befca5e4930e",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": "Boundary: linguistic conventions; consensus alone does not establish domain eligibility."
+    },
+    {
+      "candidate_id": "rmp-ref-071",
+      "doi": "10.1145/3589334.3645713",
+      "title": [
+        "Optimal Engagement-Diversity Tradeoffs in Social Media"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib71",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            13
+          ]
+        ]
+      },
+      "container_title": [
+        "Proceedings of the ACM Web Conference 2024"
+      ],
+      "primary_url": "https://dl.acm.org/doi/10.1145/3589334.3645713",
+      "metadata_sha256": "568437b39de8081ddd13d33bd348e6c9b7e719259d2d284ee75f7cd93d3ee1f2",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": "Boundary: exposure/engagement optimization; verify actual opinion-change dynamics."
+    },
+    {
+      "candidate_id": "rmp-ref-072",
+      "doi": "10.1103/PhysRevLett.124.048301",
+      "title": [
+        "Modeling Echo Chambers and Polarization Dynamics in Social Networks"
+      ],
+      "family": "nonlinear_polarization",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib72",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            27
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review Letters"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevLett.124.048301",
+      "metadata_sha256": "53c10839aa0bfc7e971f054e01e483dbc2e764f8f8d4de10fc38c99c98a6bc9d",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q09",
+        "search.openalex.q09"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-078",
+      "doi": "10.1103/PhysRevE.108.054304",
+      "title": [
+        "Effect of collaborative-filtering-based recommendation algorithms on opinion polarization"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib78",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            6
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.108.054304",
+      "metadata_sha256": "e2fb121a773eb81c741daddf2304205ba0438c368a4eea7ec8c6bc78eb145c57",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-162",
+      "doi": "10.1609/icwsm.v16i1.19275",
+      "title": [
+        "The Effect of People Recommenders on Echo Chambers and Polarization"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib162",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            31
+          ]
+        ]
+      },
+      "container_title": [
+        "Proceedings of the International AAAI Conference on Web and Social Media"
+      ],
+      "primary_url": "https://ojs.aaai.org/index.php/ICWSM/article/view/19275",
+      "metadata_sha256": "06faea4654336a42a9e63f82df973b6efe0c4645b9cb4742ae4c6312de4319ce",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-193",
+      "doi": "10.1103/PhysRevResearch.2.043117",
+      "title": [
+        "Emergence of polarization in a voter model with personalized information"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib193",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            22
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review Research"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevResearch.2.043117",
+      "metadata_sha256": "f3b4580de17e4d54716c81442401dcaba879d308a40e1d6e69c79b5216a50883",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q04",
+        "search.openalex.q01",
+        "search.openalex.q04"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-245",
+      "doi": "10.1016/j.ins.2021.12.069",
+      "title": [
+        "Modelling how social network algorithms can influence opinion polarization"
+      ],
+      "family": "attraction_repulsion",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib245",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4
+          ]
+        ]
+      },
+      "container_title": [
+        "Information Sciences"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0020025521012901",
+      "metadata_sha256": "863632b0967598328d67b7ddd01a9ae3856530d86e1319df58cf69eff434eadc",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-250",
+      "doi": "10.1080/0022250X.2010.532261",
+      "title": [
+        "Small Worlds and Cultural Polarization"
+      ],
+      "family": "negative_influence",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib250",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            1,
+            25
+          ]
+        ]
+      },
+      "container_title": [
+        "The Journal of Mathematical Sociology"
+      ],
+      "primary_url": "http://www.tandfonline.com/doi/abs/10.1080/0022250X.2010.532261",
+      "metadata_sha256": "f7d7458714ab56dec0544b186fad84602d6175d15b4fe70dd1b7d31ae7a62a16",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": "Related baseline preprint physics/0604196 exists, but identity with the 2011 article is unestablished."
+    },
+    {
+      "candidate_id": "rmp-ref-266",
+      "doi": "10.18564/jasss.4566",
+      "title": [
+        "Cascades Across Networks Are Sufficient for the Formation of Echo Chambers: An Agent-Based Model"
+      ],
+      "family": "bayesian_echo_chambers",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib266",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Artificial Societies and Social Simulation"
+      ],
+      "primary_url": "http://jasss.soc.surrey.ac.uk/24/3/1.html",
+      "metadata_sha256": "4416c288ce7e10ad91d1fe0369e05b83f2e3ddd85b037fded42c94027870c7d4",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-269",
+      "doi": "10.1016/j.physa.2015.10.006",
+      "title": [
+        "Opinion formation and bi-polarization with biased assimilation and homophily"
+      ],
+      "family": "argument_exchange",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib269",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2
+          ]
+        ]
+      },
+      "container_title": [
+        "Physica A: Statistical Mechanics and its Applications"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0378437115008511",
+      "metadata_sha256": "9123c7794953a841c840f97713dad07855ed9584cfee77470ba276630fd70d42",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q08"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-275",
+      "doi": "10.1016/0022-2496(86)90019-2",
+      "title": [
+        "Majority rule, hierarchical structures, and democratic totalitarianism: A statistical approach"
+      ],
+      "family": "majority_rule",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib275",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            12
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Mathematical Psychology"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/0022249686900192",
+      "metadata_sha256": "b56d475d310b1ed29076b5c53e2a80eee4ad0a23c810c12f839e5ff056069053",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-279",
+      "doi": "10.1016/j.physa.2003.10.041",
+      "title": [
+        "Contrarian deterministic effects on opinion dynamics: “the hung elections scenario”"
+      ],
+      "family": "contrarian",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib279",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2004,
+            2
+          ]
+        ]
+      },
+      "container_title": [
+        "Physica A: Statistical Mechanics and its Applications"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0378437103009695",
+      "metadata_sha256": "6330a7b84f9a9875718d5759b8e9da14b98bcbd83012f9badcc553ef4bda66f3",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-365",
+      "doi": "10.1103/PhysRevE.101.022305",
+      "title": [
+        "Adaptive voter model on simplicial complexes"
+      ],
+      "family": "higher_order_adaptive",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib365",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            12
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.101.022305",
+      "metadata_sha256": "e86f54468e84a4254c784c2b7d55184292b86ee2522befee15b61e71c26e0e5f",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q04",
+        "search.openalex.q04"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-372",
+      "doi": "10.1038/s42005-022-00845-y",
+      "title": [
+        "Group interactions modulate critical mass dynamics in social convention"
+      ],
+      "family": "committed_minorities",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib372",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            18
+          ]
+        ]
+      },
+      "container_title": [
+        "Communications Physics"
+      ],
+      "primary_url": "https://www.nature.com/articles/s42005-022-00845-y",
+      "metadata_sha256": "aa62f6553023846df292dcfe13e2cdc3865de6e0d4fb6ee899d2ba66ea2a9e4b",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-417",
+      "doi": "10.1103/PhysRevE.111.L052301",
+      "title": [
+        "Competition between group interactions and nonlinearity in voter dynamics on hypergraphs"
+      ],
+      "family": "higher_order_voter",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib417",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            16
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.111.L052301",
+      "metadata_sha256": "4663c63d4d8e0c2f51b21b9d7ac8049ccd3b66a59877bdd4805c057d3e65d371",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-516",
+      "doi": "10.1103/PhysRevE.78.036104",
+      "title": [
+        "Mobility and social network effects on extremist opinions"
+      ],
+      "family": "bayesian_beliefs",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib516",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            9,
+            4
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.78.036104",
+      "metadata_sha256": "cceea686ec54cae4b04486488a4a79aae5c17af043a87ebff04d2ec30428dd18",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-569",
+      "doi": "10.1371/journal.pone.0074516",
+      "title": [
+        "Differentiation without Distancing. Explaining Bi-Polarization of Opinions without Negative Influence"
+      ],
+      "family": "argument_exchange",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib569",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            27
+          ]
+        ]
+      },
+      "container_title": [
+        "PLoS ONE"
+      ],
+      "primary_url": "https://dx.plos.org/10.1371/journal.pone.0074516",
+      "metadata_sha256": "2940887dfaee9a24aca893a6ed8395ca153820a06cf6c788f7a39b6c054b922f",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q08",
+        "search.openalex.q09"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-576",
+      "doi": "10.1103/PhysRevE.104.064305",
+      "title": [
+        "Consensus dynamics on temporal hypergraphs"
+      ],
+      "family": "temporal_higher_order",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib576",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            15
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.104.064305",
+      "metadata_sha256": "86aa0f7b61dc1a85ef7bfedaca230b53cafafa9aede1090b0e581fa2d5dfebd2",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": "Verify social interpretation of the mathematical dynamics in full text."
+    },
+    {
+      "candidate_id": "rmp-ref-577",
+      "doi": "10.1103/PhysRevE.101.032310",
+      "title": [
+        "Multibody interactions and nonlinear consensus dynamics on networked systems"
+      ],
+      "family": "higher_order_consensus",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib577",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            3,
+            30
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.101.032310",
+      "metadata_sha256": "ed9c9cb4d523927ca5ae9fe4b7e661e1b9c94de83e92c11d00daa67275b2e1b3",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": "Verify social interpretation and mechanism in full text."
+    },
+    {
+      "candidate_id": "rmp-ref-610",
+      "doi": "10.1007/s41109-022-00495-7",
+      "title": [
+        "Modeling algorithmic bias: simplicial complexes and evolving network topologies"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib610",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            16
+          ]
+        ]
+      },
+      "container_title": [
+        "Applied Network Science"
+      ],
+      "primary_url": "https://appliednetsci.springeropen.com/articles/10.1007/s41109-022-00495-7",
+      "metadata_sha256": "65cfdb5c66b90d79314a89de21f175921d3d42e0d6ffd1c3942c635f5985b879",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-611",
+      "doi": "10.1038/s41598-023-39725-y",
+      "title": [
+        "Mass media impact on opinion evolution in biased digital environments: a bounded confidence model"
+      ],
+      "family": "media_algorithmic_interplay",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib611",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            5
+          ]
+        ]
+      },
+      "container_title": [
+        "Scientific Reports"
+      ],
+      "primary_url": "https://www.nature.com/articles/s41598-023-39725-y",
+      "metadata_sha256": "f566799df25f520c6c346645a720292d6bac47aac94023e00cc6a7b22a587a2b",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-613",
+      "doi": "10.1016/j.physa.2023.129257",
+      "title": [
+        "Fragmentation from group interactions: A higher-order adaptive voter model"
+      ],
+      "family": "higher_order_fragmentation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib613",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            11
+          ]
+        ]
+      },
+      "container_title": [
+        "Physica A: Statistical Mechanics and its Applications"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0378437123008129",
+      "metadata_sha256": "561db8e007eb15bf3437d0eda2cf55f3095a3aa909353ddb8b523fb52a5f4a66",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q04"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-614",
+      "doi": "10.1103/PhysRevE.105.054307",
+      "title": [
+        "Consensus from group interactions: An adaptive voter model on hypergraphs"
+      ],
+      "family": "higher_order_voter",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib614",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            13
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.105.054307",
+      "metadata_sha256": "fbd314c8f1cc882277e4d8bae44c980da2d63e44d4ccf13fc408d2fb4477cff6",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q04",
+        "search.openalex.q04"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-629",
+      "doi": "10.1088/2632-072X/ac340f",
+      "title": [
+        "Opinion formation on social networks with algorithmic bias: dynamics and bias imbalance"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib629",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            16
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Physics: Complexity"
+      ],
+      "primary_url": "https://iopscience.iop.org/article/10.1088/2632-072X/ac340f",
+      "metadata_sha256": "2c592247243da570ad84280f84fba21fc9f8aaeb75b5f7784c49df336186b6ca",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-633",
+      "doi": "10.1103/PhysRevE.104.044312",
+      "title": [
+        "Effect of algorithmic bias and network structure on coexistence, consensus, and polarization of opinions"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib633",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            21
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.104.044312",
+      "metadata_sha256": "0418b9b491c04824132e2e0b46ccd8aa9e20294015fd5254596e326e86cc24d0",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-637",
+      "doi": "10.1038/s41598-019-43830-2",
+      "title": [
+        "Modelling opinion dynamics in the age of algorithmic personalisation"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib637",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            13
+          ]
+        ]
+      },
+      "container_title": [
+        "Scientific Reports"
+      ],
+      "primary_url": "https://www.nature.com/articles/s41598-019-43830-2",
+      "metadata_sha256": "19e1bc2affa3bb3664b5ef0709140641770ba94600849b68e3377f72bcb41be6",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-673",
+      "doi": "10.1088/2632-072X/abcea3",
+      "title": [
+        "Modelling non-linear consensus dynamics on hypergraphs"
+      ],
+      "family": "higher_order_consensus",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib673",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            2
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Physics: Complexity"
+      ],
+      "primary_url": "https://iopscience.iop.org/article/10.1088/2632-072X/abcea3",
+      "metadata_sha256": "3a65971b88018fb392d8c0b3a0ebad4740a364101daebe3a0b16e48a3a9cffda",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-674",
+      "doi": "10.1063/5.0004996",
+      "title": [
+        "A model for the competition between political mono-polarization and bi-polarization"
+      ],
+      "family": "persuasion_compromise",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib674",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+      ],
+      "primary_url": "https://pubs.aip.org/cha/article/30/6/063146/1030257/A-model-for-the-competition-between-political-mono",
+      "metadata_sha256": "40df7691d9302162d45c042c6fcdd5145f8bd9f779ba0ced7121136ed0ff18f1",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-676",
+      "doi": "10.1073/pnas.2102141118",
+      "title": [
+        "Link recommendation algorithms and dynamics of polarization in online social networks"
+      ],
+      "family": "structural_echo_chambers",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib676",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            6
+          ]
+        ]
+      },
+      "container_title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "primary_url": "https://pnas.org/doi/full/10.1073/pnas.2102141118",
+      "metadata_sha256": "5c4cd7b660365701681217468b4174032594d1808b33d26603b6e80d4fbe42b4",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-704",
+      "doi": "10.1088/1742-5468/2010/06/P06005",
+      "title": [
+        "Tipping diffusivity in information accumulation systems: more links, less consensus"
+      ],
+      "family": "reinforcement",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib704",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            6,
+            3
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Statistical Mechanics: Theory and Experiment"
+      ],
+      "primary_url": "https://iopscience.iop.org/article/10.1088/1742-5468/2010/06/P06005",
+      "metadata_sha256": "8fec1cbddc61cabf4c121a248d51e85d1f8e35b5f55ddc03bce89eb776aefe3a",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-725",
+      "doi": "10.1098/rsif.2023.0372",
+      "title": [
+        "Social identity bias and communication network clustering interact to shape patterns of opinion dynamics"
+      ],
+      "family": "bayesian_beliefs",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib725",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of The Royal Society Interface"
+      ],
+      "primary_url": "https://royalsocietypublishing.org/doi/10.1098/rsif.2023.0372",
+      "metadata_sha256": "12d5232ba0160c504c049414bbaf53a09427ed09bb16ce3c3bedf86a91cbe7a8",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-737",
+      "doi": "10.1371/journal.pone.0213246",
+      "title": [
+        "Algorithmic bias amplifies opinion fragmentation and polarization: A bounded confidence model"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib737",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            5
+          ]
+        ]
+      },
+      "container_title": [
+        "PLOS ONE"
+      ],
+      "primary_url": "https://dx.plos.org/10.1371/journal.pone.0213246",
+      "metadata_sha256": "be1b8a90f087622f2d5e07971ba6b9cabf06559d05d71be6c67c4ebfb0e44d96",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.arxiv.q02",
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-775",
+      "doi": "10.1103/PhysRevE.101.012101",
+      "title": [
+        "Role of voting intention in public opinion polarization"
+      ],
+      "family": "persuasion_compromise",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib775",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            2
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.101.012101",
+      "metadata_sha256": "e00e62746a16544513640549896c7458714adde31a52e0334fb5415f4bba19b2",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-812",
+      "doi": "10.1103/physreve.84.011130",
+      "title": [
+        "Social consensus through the influence of committed minorities"
+      ],
+      "family": "committed_minorities",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib812",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            7,
+            22
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.84.011130",
+      "metadata_sha256": "deebeb1fe5f21b1f15b2ac49d69be41320024bd28bf5121787f1279c80c4bfad",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-824",
+      "doi": "10.1145/3589334.3645714",
+      "title": [
+        "Modeling the Impact of Timeline Algorithms on Opinion Dynamics Using Low-rank Updates"
+      ],
+      "family": "algorithmic_mediation",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib824",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            13
+          ]
+        ]
+      },
+      "container_title": [
+        "Proceedings of the ACM Web Conference 2024"
+      ],
+      "primary_url": "https://dl.acm.org/doi/10.1145/3589334.3645714",
+      "metadata_sha256": "469ac2c776713916abefe3c7dbdb1e49799d91715189e3a5f96f4e24794e0ce2",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q03"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-832",
+      "doi": "10.1063/5.0004787",
+      "title": [
+        "A two-layer model for coevolving opinion dynamics and collective decision-making in complex social systems"
+      ],
+      "family": "coupled_opinion_action",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib832",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+      ],
+      "primary_url": "https://pubs.aip.org/cha/article/30/8/083107/1030646/A-two-layer-model-for-coevolving-opinion-dynamics",
+      "metadata_sha256": "4a51f07ce0ad814ab7abc23e7f4449d84ef1f9d4682d176874d894d4c1db984f",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "social-learning-naive",
+      "doi": "10.1257/mic.2.1.112",
+      "title": [
+        "Naïve Learning in Social Networks and the Wisdom of Crowds"
+      ],
+      "family": "social_learning",
+      "discovery_source": "https://topcat.aeaweb.org/articles?id=10.1257%2Fmic.2.1.112",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            2,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "American Economic Journal: Microeconomics"
+      ],
+      "primary_url": "https://pubs.aeaweb.org/doi/10.1257/mic.2.1.112",
+      "metadata_sha256": "32166ab662f0d47033455fc39e68a1f1b548a2c7d3b322f6ea79c42c3c6fe16f",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "social-learning-theory",
+      "doi": "10.3982/ECTA14613",
+      "title": [
+        "A Theory of Non-Bayesian Social Learning"
+      ],
+      "family": "social_learning",
+      "discovery_source": "https://onlinelibrary.wiley.com/doi/10.3982/ECTA14613",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            3
+          ]
+        ]
+      },
+      "container_title": [
+        "Econometrica"
+      ],
+      "primary_url": "http://doi.wiley.com/10.3982/ECTA14613",
+      "metadata_sha256": "9401be28a8e756aa5f8f6ea7720a96d151e09531c90fa1cf1fa04cf17ed96339",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "social-learning-nonbayesian",
+      "doi": "10.1016/j.geb.2012.06.001",
+      "title": [
+        "Non-Bayesian social learning"
+      ],
+      "family": "social_learning",
+      "discovery_source": "https://fling.seas.upenn.edu/~afosr/wiki/uploads/Chaserepository/Repository/Learning_GEB_2012.pdf",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            9
+          ]
+        ]
+      },
+      "container_title": [
+        "Games and Economic Behavior"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0899825612000851",
+      "metadata_sha256": "27c22665e5d6f95c8dbcc04f695ddf7d0dbd97494fbd27671175f49aa9d23418",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "nonlinear-tunable",
+      "doi": "10.1109/TAC.2022.3159527",
+      "title": [
+        "Nonlinear Opinion Dynamics With Tunable Sensitivity"
+      ],
+      "family": "nonlinear_multidimensional",
+      "discovery_source": "https://arxiv.org/abs/2009.04332",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            3
+          ]
+        ]
+      },
+      "container_title": [
+        "IEEE Transactions on Automatic Control"
+      ],
+      "primary_url": "https://ieeexplore.ieee.org/document/9736598/",
+      "metadata_sha256": "cb2846d58b67d356dcb7d5e6d812b8687f8de49bbd9308e628b1d354de877c02",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.dblp.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "llm-allocation",
+      "doi": "10.18653/v1/2025.findings-naacl.101",
+      "title": [
+        "Biases in Opinion Dynamics in Multi-Agent Systems of Large Language Models: A Case Study on Funding Allocation"
+      ],
+      "family": "llm_belief_change",
+      "discovery_source": "https://aclanthology.org/2025.findings-naacl.101/",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "container_title": [
+        "Findings of the Association for Computational Linguistics: NAACL 2025"
+      ],
+      "primary_url": "https://aclanthology.org/2025.findings-naacl.101",
+      "metadata_sha256": "000c877cfd3d3dadf4ec37e2782b086fa3e1d960205e51691a132d1706508de5",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q10"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "recent-hyper-opinion",
+      "doi": "10.1371/journal.pone.0321718",
+      "title": [
+        "An opinion evolution model for online social networks considering higher-order interactions"
+      ],
+      "family": "higher_order_recent",
+      "discovery_source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0321718",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            16
+          ]
+        ]
+      },
+      "container_title": [
+        "PLOS ONE"
+      ],
+      "primary_url": "https://dx.plos.org/10.1371/journal.pone.0321718",
+      "metadata_sha256": "c7aab7ea203d0f4ddee1cd1daf55392c84abb3bd04d85bd2cab08ea7bc932e94",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "recent-multidimensional",
+      "doi": "10.1016/j.chaos.2025.116188",
+      "title": [
+        "Opinion diversity shaped by higher-order interactions on multi-dimensional issues"
+      ],
+      "family": "higher_order_multidimensional",
+      "discovery_source": "https://www.sciencedirect.com/science/article/pii/S0960077925002012",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5
+          ]
+        ]
+      },
+      "container_title": [
+        "Chaos, Solitons &amp; Fractals"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960077925002012",
+      "metadata_sha256": "e568ce9078adde2470b01f1a86dd7fffd4c329a140c9541fd2be5bbb156cce5f",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q03"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "evidence-dempster",
+      "doi": "10.3390/computers13080190",
+      "title": [
+        "Dynamic Opinion Formation in Networks: A Multi-Issue and Evidence-Based Approach"
+      ],
+      "family": "evidential_belief_update",
+      "discovery_source": "https://www.mdpi.com/2073-431X/13/8/190",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            7
+          ]
+        ]
+      },
+      "container_title": [
+        "Computers"
+      ],
+      "primary_url": "https://www.mdpi.com/2073-431X/13/8/190",
+      "metadata_sha256": "66cff8ca792a4379fb3adf1ed622307a39f004248020665c5cc0dee0c6d523dd",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.dblp.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "grand-scale",
+      "doi": "10.1080/0022250X.2025.2529179",
+      "title": [
+        "Grand scale opinion dynamics"
+      ],
+      "family": "multimechanism_recent",
+      "discovery_source": "https://www.tandfonline.com/doi/full/10.1080/0022250X.2025.2529179",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            23
+          ]
+        ]
+      },
+      "container_title": [
+        "The Journal of Mathematical Sociology"
+      ],
+      "primary_url": "https://www.tandfonline.com/doi/full/10.1080/0022250X.2025.2529179",
+      "metadata_sha256": "703f0184afee5716c185262445cc83d468da15a7d8c10edde4b9e81df65fcc61",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "social-power",
+      "doi": "10.15195/v3.a20",
+      "title": [
+        "A Theory of the Evolution of Social Power: Natural Trajectories of Interpersonal Influence Systems along Issue Sequences"
+      ],
+      "family": "social_power",
+      "discovery_source": "https://sociologicalscience.com/articles-v3-20-444/",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "container_title": [
+        "Sociological Science"
+      ],
+      "primary_url": "https://www.sociologicalscience.com/articles-v3-20-444/",
+      "metadata_sha256": "1cebb52767e00d910e73a96505dc2a304dc729d02eea963c3aee33d3c919f875",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-073",
+      "doi": "10.1103/PhysRevX.11.011012",
+      "title": [
+        "Emergence of Polarized Ideological Opinions in Multidimensional Topic Spaces"
+      ],
+      "family": "multidimensional_ideology",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib73",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            20
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review X"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevX.11.011012",
+      "metadata_sha256": "a51defe635ae3c912940571aca3c2f02312288d6fbb46c7987e76a6274a75de7",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-082",
+      "doi": "10.1016/j.automatica.2023.111302",
+      "title": [
+        "Bounded confidence opinion dynamics: A survey"
+      ],
+      "family": "review_control_networks",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib82",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "Automatica"
+      ],
+      "primary_url": "https://linkinghub.elsevier.com/retrieve/pii/S0005109823004661",
+      "metadata_sha256": "5a833be8c00d35fefd39406e196c9fcedb1e29f69fa24d6ef4e794dfd1c57fec",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.dblp.q01",
+        "search.dblp.q02",
+        "search.openalex.q01",
+        "search.openalex.q02"
+      ],
+      "screening_status": "pending",
+      "note": "Secondary review seed; not an automatic primary inclusion."
+    },
+    {
+      "candidate_id": "rmp-ref-124",
+      "doi": "10.1038/srep24775",
+      "title": [
+        "The noisy voter model on complex networks"
+      ],
+      "family": "noisy_voter",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib124",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            20
+          ]
+        ]
+      },
+      "container_title": [
+        "Scientific Reports"
+      ],
+      "primary_url": "https://www.nature.com/articles/srep24775",
+      "metadata_sha256": "b51b8738a39b87571a3faa21109dfe5127fd580ef6bec1837daf73dc988ff057",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp"
+      ],
+      "matched_searches": [
+        "search.dblp.q04a"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-303",
+      "doi": "10.1111/bjso.12286",
+      "title": [
+        "The triple‐filter bubble: Using agent‐based modelling to test a meta‐theoretical framework for the emergence of filter bubbles and echo chambers"
+      ],
+      "family": "filter_bubbles_psychology",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib303",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            12
+          ]
+        ]
+      },
+      "container_title": [
+        "British Journal of Social Psychology"
+      ],
+      "primary_url": "https://bpspsychub.onlinelibrary.wiley.com/doi/10.1111/bjso.12286",
+      "metadata_sha256": "23200a9e7783b31a7f7d688ebcb48754604b22b99ef535c7cbdc207ba00173ed",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-304",
+      "doi": "10.18564/jasss.5204",
+      "title": [
+        "Calibrating an Opinion Dynamics Model to Empirical Opinion Distributions and Transitions"
+      ],
+      "family": "attitude_extremization",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib304",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Artificial Societies and Social Simulation"
+      ],
+      "primary_url": "https://www.jasss.org/26/4/9.html",
+      "metadata_sha256": "097a049529049e9b59341be96efb632f99a8106139f05c1f451063878c89f0a0",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.dblp.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-411",
+      "doi": "10.18564/jasss.5298",
+      "title": [
+        "Polarization on Social Media: Micro-Level Evidence and Macro-Level Implications"
+      ],
+      "family": "communication_modality",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib411",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Artificial Societies and Social Simulation"
+      ],
+      "primary_url": "https://www.jasss.org/27/1/7.html",
+      "metadata_sha256": "e16006e2175c09fe0fd390aaa8d7b42bcc0dd24c2bedea42267dc7a242fd7b4f",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q09"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-444",
+      "doi": "10.18564/jasss.3220",
+      "title": [
+        "Robust Clustering in Generalized Bounded Confidence Models"
+      ],
+      "family": "empirical_responsiveness",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib444",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "container_title": [
+        "Journal of Artificial Societies and Social Simulation"
+      ],
+      "primary_url": "http://jasss.soc.surrey.ac.uk/19/4/7.html",
+      "metadata_sha256": "56136c776441295940ae0560b6ff255c261c698373cdab59f1aa40f5363254c9",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.dblp.q02",
+        "search.openalex.q02"
+      ],
+      "screening_status": "pending",
+      "note": "Audited topic is bounded-confidence heterogeneity; the initial selection label was broader."
+    },
+    {
+      "candidate_id": "rmp-ref-500",
+      "doi": "10.1037/rev0000291",
+      "title": [
+        "Individual attitude change and societal dynamics: Computational experiments with psychological theories."
+      ],
+      "family": "psychological_mechanisms",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib500",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            7
+          ]
+        ]
+      },
+      "container_title": [
+        "Psychological Review"
+      ],
+      "primary_url": "https://doi.apa.org/doi/10.1037/rev0000291",
+      "metadata_sha256": "199ce89a6e38f20c51097ada48eebf9a3d48d7b4802580e86a627f4028718439",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-570",
+      "doi": "10.1371/journal.pcbi.1000959",
+      "title": [
+        "Individualization as Driving Force of Clustering Phenomena in Humans"
+      ],
+      "family": "individualization",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib570",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            10,
+            21
+          ]
+        ]
+      },
+      "container_title": [
+        "PLoS Computational Biology"
+      ],
+      "primary_url": "https://dx.plos.org/10.1371/journal.pcbi.1000959",
+      "metadata_sha256": "09eec3bc1a436fc6bea178e53cad68043a271a76cb3adb868fe1bfdb2720e771",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.arxiv.q09",
+        "search.openalex.q01",
+        "search.openalex.q09"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-620",
+      "doi": "10.1109/TAC.2016.2613905",
+      "title": [
+        "Novel Multidimensional Models of Opinion Dynamics in Social Networks"
+      ],
+      "family": "multidimensional_interdependence",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib620",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5
+          ]
+        ]
+      },
+      "container_title": [
+        "IEEE Transactions on Automatic Control"
+      ],
+      "primary_url": "http://ieeexplore.ieee.org/document/7577815/",
+      "metadata_sha256": "b51f5c16ee01aec7d867fa18eeaac5cd4354cb11026d944d622fb893b7a04b34",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.arxiv.q03",
+        "search.dblp.q01",
+        "search.openalex.q01",
+        "search.openalex.q03"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "rmp-ref-740",
+      "doi": "10.1371/journal.pone.0157948",
+      "title": [
+        "Discrepancy and Disliking Do Not Induce Negative Opinion Shifts"
+      ],
+      "family": "empirical_disagreement",
+      "discovery_source": "https://arxiv.org/html/2507.11521v1#bib.bib740",
+      "discovery_method": "purposeful_reference_challenge_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            22
+          ]
+        ]
+      },
+      "container_title": [
+        "PLOS ONE"
+      ],
+      "primary_url": "https://dx.plos.org/10.1371/journal.pone.0157948",
+      "metadata_sha256": "4a9b328ac58c81a669f9ee50a79c5677d8cfe62dfac9f7ede46146b3d8d1fe0b",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q08",
+        "search.arxiv.q09",
+        "search.openalex.q08",
+        "search.openalex.q09"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "kinetic-toscani",
+      "doi": "10.4310/CMS.2006.v4.n3.a1",
+      "title": [
+        "Kinetic models of opinion formation"
+      ],
+      "family": "kinetic_fokker_planck",
+      "discovery_source": "https://arxiv.org/abs/math-ph/0605052",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      },
+      "container_title": [
+        "Communications in Mathematical Sciences"
+      ],
+      "primary_url": "https://link.intlpress.com/JDetail/1806266242572963842",
+      "metadata_sha256": "a82b437ca1f0a5833e7647bbce8d35911ca9bbc4c1fb02a9b0658a4b72e667c6",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "kinetic-continuous",
+      "doi": "10.1137/060658679",
+      "title": [
+        "First‐Order Continuous Models of Opinion Formation"
+      ],
+      "family": "kinetic_first_order",
+      "discovery_source": "https://epubs.siam.org/doi/10.1137/060658679",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            1
+          ]
+        ]
+      },
+      "container_title": [
+        "SIAM Journal on Applied Mathematics"
+      ],
+      "primary_url": "https://epubs.siam.org/doi/10.1137/060658679",
+      "metadata_sha256": "c7b15b2b74b4fc3606328c9ca3ee6a158e3ffc01badf92289829f2e11a416e2f",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "dblp",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.dblp.q01",
+        "search.openalex.q01"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "kinetic-conviction",
+      "doi": "10.1103/PhysRevE.92.052818",
+      "title": [
+        "Kinetic models of opinion formation in the presence of personal conviction"
+      ],
+      "family": "kinetic_conviction",
+      "discovery_source": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.92.052818",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            30
+          ]
+        ]
+      },
+      "container_title": [
+        "Physical Review E"
+      ],
+      "primary_url": "https://link.aps.org/doi/10.1103/PhysRevE.92.052818",
+      "metadata_sha256": "a0d7923235eacfbcf526bb3a95862cb898a3d1fc880a749982aae607e22ccf9a",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "arxiv",
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.arxiv.q01",
+        "search.arxiv.q07",
+        "search.openalex.q01",
+        "search.openalex.q07"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "empirical-chacoma",
+      "doi": "10.1371/journal.pone.0140406",
+      "title": [
+        "Opinion Formation by Social Influence: From Experiments to Modeling"
+      ],
+      "family": "empirical_calibration",
+      "discovery_source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140406",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            30
+          ]
+        ]
+      },
+      "container_title": [
+        "PLOS ONE"
+      ],
+      "primary_url": "https://dx.plos.org/10.1371/journal.pone.0140406",
+      "metadata_sha256": "fc2ce7f32d89f3c187762ec6e545f25a8a976da068ee99d1d40c1d10f06dcd82",
+      "baseline_doi_match": true,
+      "baseline_normalized_title_match": true,
+      "matched_sources": [
+        "openalex"
+      ],
+      "matched_searches": [
+        "search.openalex.q01",
+        "search.openalex.q09"
+      ],
+      "screening_status": "pending",
+      "note": ""
+    },
+    {
+      "candidate_id": "belief-logic",
+      "doi": "10.1126/science.aag2624",
+      "title": [
+        "Network science on belief system dynamics under logic constraints"
+      ],
+      "family": "belief_logic_constraints",
+      "discovery_source": "https://www.science.org/doi/10.1126/science.aag2624",
+      "discovery_method": "primary_site_search_before_baseline_membership",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            21
+          ]
+        ]
+      },
+      "container_title": [
+        "Science"
+      ],
+      "primary_url": "https://www.science.org/doi/10.1126/science.aag2624",
+      "metadata_sha256": "b47dc51c636dbb96c386d1ec1e4d924ace453544018cc4b30bd2679dae806afc",
+      "baseline_doi_match": false,
+      "baseline_normalized_title_match": false,
+      "matched_sources": [],
+      "matched_searches": [],
+      "screening_status": "pending",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "acquisition_receipt_sha256": "5aa52db3b98487a17a5c50d246c23e4c97d611a4a1c6c589119c2cf8d29bc675",
+  "all_observations_preserved": true,
+  "component_count_interpretation": "Diagnostic connected components, not merge decisions.",
+  "deduplication": {
+    "access_class": "restricted",
+    "media_type": "application/json",
+    "relative_path": "sha256/41/a5/41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+    "sha256": "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+    "size_bytes": 33702090
+  },
+  "execution_commit": "51e45ce5a725d0a9c83eae5d96ea04c070de078c",
+  "finished_at": "2026-09-12T18:32:00.768169+00:00",
+  "historical_failed_corpus_sha256": "587403d78bd7a59270e411097e4b284f1e9ecd91b3cb71f33192be4e99cfdc88",
+  "human_decisions_authored": false,
+  "identity_candidate_record_pairs": 20964,
+  "identity_candidate_work_components": 4990,
+  "identity_candidate_work_pairs": 10754,
+  "interpretation": "Complete partition of acquired observations into proposed works under unchanged policy 2; pending metadata and identity issues. No accepted canonical corpus, unique-paper count, eligibility or human decisions.",
+  "known_missing_title_without_direct_companion_observations": 9,
+  "metadata_enrichment_performed": false,
+  "metadata_pending_observations": 9,
+  "metadata_review_candidates": 9,
+  "missing_title_diagnostic_sha256": "eaadac740ed13eaa93d55871178e6e2c711544068c5adbf1521b260f91f2e567",
+  "missing_title_observations": 10,
+  "new_cas_artifacts_count": 6,
+  "new_cas_artifacts_sha256": "c157faad6ec7e42ef8c785b34dbddc9986ecb8d9ff0154999a9e88930591fc32",
+  "new_network_acquisition": false,
+  "observations": 54570,
+  "operator_sha256": "1eab283614ffbd907ad998adb0019246b086ffd0f19333cbd2ae7499a8129b60",
+  "pending_metadata_file": "2026-09-12-v3-corpus-pending-metadata.json",
+  "preexisting_baseline_sha256": "2b0cc3347f9dc102805f96c508c969740d0de1e27f574ee2d62197245299007f",
+  "preexisting_file_hashes_and_metadata_unchanged": true,
+  "preparation_receipt_sha256": "fa934b8b065880228373d76040527a76fc7cdced9c92ebb69a31891485ccf4fa",
+  "previous_files_preserved_count": 11804,
+  "proposed_works": 46400,
+  "provider_record_identities": 49333,
+  "public_summary_format": "broad-v3-corpus-proposal-metadata-1",
+  "quality_evidence": {
+    "execution_revision": "51e45ce5a725d0a9c83eae5d96ea04c070de078c",
+    "hosted_ci_passed_claimed": false,
+    "macos_log_sha256": "cab87f67513a9809727645d6485b2f63c4f84e6ee47f66b96082e47b4c6c4d7b",
+    "record_sha256": "8c0fb7ce57876b1142b90e646743c91be1df247c1453b69f663b8a449281fffc",
+    "study_tests_per_environment": 6,
+    "ubuntu_log_sha256": "4d6409fc6681a2a97221994d1a58dc2604b1c0e3dee1a634c9c3f65a254ada3c",
+    "workbench_tests_per_environment": 3498
+  },
+  "read_only_replay_equal": true,
+  "read_only_replay_inventory_unchanged": true,
+  "readiness_conflicts": 10,
+  "receipt_sha256": "6b16e1cb9954ee505a592121d697fb58c56b444e3c430c8360301625ceb4dd82",
+  "replay_inventory_sha256": "30a482af6215b6c93bedb8399e8ba4d81b79990fe42ee6cff78768c9019c1b1d",
+  "review_queue": {
+    "access_class": "restricted",
+    "media_type": "application/json",
+    "relative_path": "sha256/f9/79/f979fdc89063fe3f38ce63dd828540b2a756cacedf68f9066e9b64275d0b9e41",
+    "sha256": "f979fdc89063fe3f38ce63dd828540b2a756cacedf68f9066e9b64275d0b9e41",
+    "size_bytes": 7215806
+  },
+  "run_id": "opinion-dynamics-map-v3-broad-corpus-20260911-metadata-1",
+  "scientific_eligibility_assessed": false,
+  "screening_ready": false,
+  "source_summary_sha256": "e07e53e4484e43026addf46ffd31507440e0300d677f206d54bd965e93c1899c",
+  "stage_outcome": {
+    "content_sha256": "a09f8dd066314aa9f71fd861b9a6ea7622d9f8f518ce180ee0d67d3c7ef964c4",
+    "context_sha256": "4439ab4dcd4e0843b27cdc8ea3a374603422f3b39540c436c2167a15655506ca",
+    "input_artifact_sha256s": [
+      "5aa52db3b98487a17a5c50d246c23e4c97d611a4a1c6c589119c2cf8d29bc675",
+      "fa934b8b065880228373d76040527a76fc7cdced9c92ebb69a31891485ccf4fa"
+    ],
+    "issue_codes": [
+      "bibliographic_metadata_resolution_required",
+      "deduplication_policy_conflict",
+      "scientific_adjudication_required"
+    ],
+    "output_artifact_sha256s": [
+      "41a54060be2206d88b13aa8d0026acca6b6f27342cb77391c8c3462f97b66a53",
+      "f979fdc89063fe3f38ce63dd828540b2a756cacedf68f9066e9b64275d0b9e41"
+    ],
+    "owner_action_id": null,
+    "protocol_sha256": "fa280dff232ec122355755e67785f7f4da8709c2429da7dfb0c6148ec9e25d6f",
+    "recorded_at": "2026-09-12T18:29:05.258058Z",
+    "schema_version": "1",
+    "stage": "corpus_staging",
+    "status": "incomplete"
+  },
+  "stage_status": "incomplete",
+  "systematic_review_complete": false,
+  "titled_proposed_works": 46391,
+  "untitled_proposed_works": 9,
+  "works_in_identity_components": 12025
+}
